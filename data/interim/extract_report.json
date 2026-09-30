@@ -1,0 +1,410 @@
+[
+  {
+    "requested_title": "Darja Varfolomeev",
+    "page": "Darja Varfolomeev",
+    "redirected": false,
+    "revid": 1373562506,
+    "tables": [
+      {
+        "index": 0,
+        "kind": "competition",
+        "headers": [
+          "Year",
+          "Competition Description",
+          "Location",
+          "Music",
+          "Apparatus",
+          "Rank-Final",
+          "Score-Final",
+          "Rank-Qualifying",
+          "Score-Qualifying"
+        ],
+        "n_rows": 5
+      },
+      {
+        "index": 1,
+        "kind": "routine",
+        "headers": [
+          "Year",
+          "Apparatus",
+          "Music Title"
+        ],
+        "n_rows": 35
+      }
+    ],
+    "other_tables": 1,
+    "routine_rows": 35,
+    "competition_rows": 5,
+    "rows_with_notes": 4
+  },
+  {
+    "requested_title": "Boryana Kaleyn",
+    "page": "Boryana Kaleyn",
+    "redirected": false,
+    "revid": 1373559046,
+    "tables": [
+      {
+        "index": 0,
+        "kind": "competition",
+        "headers": [
+          "Year",
+          "Competition Description",
+          "Location",
+          "Music",
+          "Apparatus",
+          "Rank-Final",
+          "Score-Final",
+          "Rank-Qualifying",
+          "Score-Qualifying"
+        ],
+        "n_rows": 10
+      },
+      {
+        "index": 2,
+        "kind": "routine",
+        "headers": [
+          "Year",
+          "Apparatus",
+          "Music title"
+        ],
+        "n_rows": 34
+      }
+    ],
+    "other_tables": 1,
+    "routine_rows": 33,
+    "competition_rows": 10,
+    "rows_with_notes": 2
+  },
+  {
+    "requested_title": "Sofia Raffaeli",
+    "page": "Sofia Raffaeli",
+    "redirected": false,
+    "revid": 1373600847,
+    "tables": [
+      {
+        "index": 1,
+        "kind": "competition",
+        "headers": [
+          "Year",
+          "Competition Description",
+          "Location",
+          "Music",
+          "Apparatus",
+          "Rank-Final",
+          "Score-Final",
+          "Rank-Qualifying",
+          "Score-Qualifying"
+        ],
+        "n_rows": 5
+      },
+      {
+        "index": 2,
+        "kind": "routine",
+        "headers": [
+          "Year",
+          "Apparatus",
+          "Music title"
+        ],
+        "n_rows": 41
+      }
+    ],
+    "other_tables": 2,
+    "routine_rows": 41,
+    "competition_rows": 5,
+    "rows_with_notes": 1
+  },
+  {
+    "requested_title": "Linoy Ashram",
+    "page": "Linoy Ashram",
+    "redirected": false,
+    "revid": 1376099588,
+    "tables": [
+      {
+        "index": 1,
+        "kind": "routine",
+        "headers": [
+          "Year",
+          "Apparatus",
+          "Music title"
+        ],
+        "n_rows": 28
+      },
+      {
+        "index": 2,
+        "kind": "competition",
+        "headers": [
+          "Year",
+          "Competition Description",
+          "Location",
+          "Music",
+          "Apparatus",
+          "Rank-Final",
+          "Score-Final",
+          "Rank-Qualifying",
+          "Score-Qualifying"
+        ],
+        "n_rows": 5
+      }
+    ],
+    "other_tables": 2,
+    "routine_rows": 28,
+    "competition_rows": 5,
+    "rows_with_notes": 1
+  },
+  {
+    "requested_title": "Dina Averina",
+    "page": "Dina Averina",
+    "redirected": false,
+    "revid": 1374054934,
+    "tables": [
+      {
+        "index": 0,
+        "kind": "routine",
+        "headers": [
+          "Year",
+          "Apparatus",
+          "Music title"
+        ],
+        "n_rows": 56
+      },
+      {
+        "index": 1,
+        "kind": "competition",
+        "headers": [
+          "Year",
+          "Competition Description",
+          "Location",
+          "Music",
+          "Apparatus",
+          "Rank-Final",
+          "Score-Final",
+          "Rank-Qualifying",
+          "Score-Qualifying"
+        ],
+        "n_rows": 5
+      }
+    ],
+    "other_tables": 1,
+    "routine_rows": 56,
+    "competition_rows": 5,
+    "rows_with_notes": 2
+  },
+  {
+    "requested_title": "Alina Harnasko",
+    "page": "Alina Harnasko",
+    "redirected": false,
+    "revid": 1373552711,
+    "tables": [
+      {
+        "index": 0,
+        "kind": "routine",
+        "headers": [
+          "Year",
+          "Apparatus",
+          "Music title"
+        ],
+        "n_rows": 53
+      },
+      {
+        "index": 1,
+        "kind": "competition",
+        "headers": [
+          "Year",
+          "Competition Description",
+          "Location",
+          "Music",
+          "Apparatus",
+          "Rank-Final",
+          "Score-Final",
+          "Rank-Qualifying",
+          "Score-Qualifying"
+        ],
+        "n_rows": 5
+      }
+    ],
+    "other_tables": 1,
+    "routine_rows": 44,
+    "competition_rows": 5,
+    "rows_with_notes": 2
+  },
+  {
+    "requested_title": "Margarita Mamun",
+    "page": "Margarita Mamun",
+    "redirected": false,
+    "revid": 1373555774,
+    "tables": [
+      {
+        "index": 0,
+        "kind": "routine",
+        "headers": [
+          "Year",
+          "Apparatus",
+          "Music title"
+        ],
+        "n_rows": 30
+      },
+      {
+        "index": 1,
+        "kind": "competition",
+        "headers": [
+          "Year",
+          "Competition Description",
+          "Location",
+          "Music",
+          "Apparatus",
+          "Rank-Final",
+          "Score-Final",
+          "Rank-Qualifying",
+          "Score-Qualifying"
+        ],
+        "n_rows": 5
+      }
+    ],
+    "other_tables": 1,
+    "routine_rows": 30,
+    "competition_rows": 5,
+    "rows_with_notes": 1
+  },
+  {
+    "requested_title": "Yana Kudryavtseva",
+    "page": "Yana Kudryavtseva",
+    "redirected": false,
+    "revid": 1374552671,
+    "tables": [
+      {
+        "index": 0,
+        "kind": "routine",
+        "headers": [
+          "Year",
+          "Apparatus",
+          "Music title"
+        ],
+        "n_rows": 32
+      },
+      {
+        "index": 2,
+        "kind": "competition",
+        "headers": [
+          "Year",
+          "Competition Description",
+          "Location",
+          "Music",
+          "Apparatus",
+          "Rank-Final",
+          "Score-Final",
+          "Rank-Qualifying",
+          "Score-Qualifying"
+        ],
+        "n_rows": 5
+      }
+    ],
+    "other_tables": 1,
+    "routine_rows": 32,
+    "competition_rows": 5,
+    "rows_with_notes": 6
+  },
+  {
+    "requested_title": "Ganna Rizatdinova",
+    "page": "Hanna Rizatdinova",
+    "redirected": true,
+    "revid": 1373572575,
+    "tables": [
+      {
+        "index": 0,
+        "kind": "routine",
+        "headers": [
+          "Year",
+          "Apparatus",
+          "Music title"
+        ],
+        "n_rows": 29
+      },
+      {
+        "index": 1,
+        "kind": "competition",
+        "headers": [
+          "Year",
+          "Competition Description",
+          "Location",
+          "Music",
+          "Apparatus",
+          "Score-Final",
+          "Score-Qualifying"
+        ],
+        "n_rows": 5
+      },
+      {
+        "index": 2,
+        "kind": "competition",
+        "headers": [
+          "Year",
+          "Competition Description",
+          "Location",
+          "Music",
+          "Apparatus",
+          "Score-Final",
+          "Score-Qualifying"
+        ],
+        "n_rows": 5
+      }
+    ],
+    "other_tables": 0,
+    "routine_rows": 29,
+    "competition_rows": 10,
+    "rows_with_notes": 2
+  },
+  {
+    "requested_title": "Yevgeniya Kanayeva",
+    "page": "Evgeniya Kanaeva",
+    "redirected": true,
+    "revid": 1373567200,
+    "tables": [
+      {
+        "index": 1,
+        "kind": "routine",
+        "headers": [
+          "Year",
+          "Apparatus",
+          "Music title"
+        ],
+        "n_rows": 63
+      },
+      {
+        "index": 3,
+        "kind": "competition",
+        "headers": [
+          "Year",
+          "Competition Description",
+          "Location",
+          "Music",
+          "Apparatus",
+          "Rank-Final",
+          "Score-Final",
+          "Rank-Qualifying",
+          "Score-Qualifying"
+        ],
+        "n_rows": 5
+      },
+      {
+        "index": 4,
+        "kind": "competition",
+        "headers": [
+          "Year",
+          "Competition Description",
+          "Location",
+          "Music",
+          "Apparatus",
+          "Rank-Final",
+          "Score-Final",
+          "Rank-Qualifying",
+          "Score-Qualifying"
+        ],
+        "n_rows": 5
+      }
+    ],
+    "other_tables": 3,
+    "routine_rows": 63,
+    "competition_rows": 10,
+    "rows_with_notes": 7
+  }
+]

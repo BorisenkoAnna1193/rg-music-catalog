@@ -1,0 +1,53 @@
+gymnast_page,competition,year,apparatus,competition_music,routine_year,routine_apparatus,routine_music,similarity,status
+Darja Varfolomeev,Paris 2024,2024,Hoop,"""Jackseye's Tale, Escape from East Berlin, Take You Down"" by Daniel Pemberton",2024,Hoop,"Jackseye's Tale, Escape from East Berlin, Take You Down by Daniel Pemberton",1.00,match
+Darja Varfolomeev,Paris 2024,2024,Ball,"""In the Closet"" by Michael Jackson",2024,Ball,In the Closet by Michael Jackson,1.00,match
+Darja Varfolomeev,Paris 2024,2024,Clubs,"""Batshit - Ilkay Sencan Remix"" by Sofi Tukker",2024,Clubs,Batshit - Ilkay Sencan Remix by Sofi Tukker,1.00,match
+Darja Varfolomeev,Paris 2024,2024,Ribbon,"""Generali"" by HAVASI",2024,Ribbon,Generali by HAVASI,1.00,match
+Boryana Kaleyn,Tokyo 2020,2021,Hoop,"""Kakamora"" from Moana by Mark Mancina",2021,Hoop,"""Kakamora"" (from Moana) by Mark Mancina",1.00,match
+Boryana Kaleyn,Tokyo 2020,2021,Ball,"""Vecheray, Rado"" by Slavi Trifonov",2021,Ball,"""Vecheray, Rado"" by Slavi Trifonov",1.00,match
+Boryana Kaleyn,Tokyo 2020,2021,Clubs,"""3 to Tango"" by Pitbull",2021,Clubs,"""3 to Tango"" by Pitbull",1.00,match
+Boryana Kaleyn,Tokyo 2020,2021,Ribbon,"""Enter Sandman"" by New Orleans Band (the first part is from Mozart's Symphony No. 40)",2021,Ribbon,"""Enter Sandman"" by New Orleans Band (the first part is from Mozart's Symphony No. 40)",1.00,match
+Boryana Kaleyn,Paris 2024,2024,Hoop,"""특(S-Class)"" by Stray Kids",2024,Hoop,"""특(S-Class)"" by Stray Kids",1.00,match
+Boryana Kaleyn,Paris 2024,2024,Ball,"""Never Enough"" (from The Greatest Showman) by Loren Allred",2024,Ball,"""Never Enough"" (from The Greatest Showman) by Loren Allred",1.00,match
+Boryana Kaleyn,Paris 2024,2024,Clubs,"""SOS d'un terrien en détresse"" by Dimash Qudaibergen",2024,Clubs,"""SOS d'un terrien en détresse"" by Dimash Qudaibergen",1.00,match
+Boryana Kaleyn,Paris 2024,2024,Ribbon,"""The Power in Me"" by Emelina Gorcheva",2024,Ribbon,"""The Power in Me"" by Emelina Gorcheva",1.00,match
+Sofia Raffaeli,Paris 2024,2024,Hoop,Rescue by Lauren Daigle,2024,Hoop,Rescue by Lauren Daigle,1.00,match
+Sofia Raffaeli,Paris 2024,2024,Ball,Bella ci dormi by Maria Mazzotta and Pulcinella,2024,Ball,Bella ci dormi by Maria Mazzotta and Pulcinella,1.00,match
+Sofia Raffaeli,Paris 2024,2024,Clubs,"Dark Mirror by Power-Haus, Christian Reindl and Lucie Paradis",2024,Clubs,"Dark Mirror by Power-Haus, Christian Reindl and Lucie Paradis",1.00,match
+Sofia Raffaeli,Paris 2024,2024,Ribbon,Vesoul by Mouron and Terry Truck,2024,Ribbon,Vesoul by Mouron and Terry Truck,1.00,match
+Linoy Ashram,Tokyo 2020,2021,Hoop,"Haste by Really Slow Motion, Giant Apes",2021,Hoop,"Haste by Really Slow Motion, Giant Apes",1.00,match
+Linoy Ashram,Tokyo 2020,2021,Ball,Big in Japan by Ane Brun,2021,Ball,Big in Japan by Ane Brun,1.00,match
+Linoy Ashram,Tokyo 2020,2021,Clubs,"Crazy in Love, Diva, Run The World by Beyoncé, Level Up by Ciara",2021,Clubs,"Crazy in Love, Diva, Run The World by Beyoncé, Level Up by Ciara",1.00,match
+Linoy Ashram,Tokyo 2020,2021,Ribbon,Hava Nagila (Israeli folk song),2021,Ribbon,Hava Nagila an Israeli folk song,0.95,match_fuzzy
+Dina Averina,Tokyo 2020,2021,Hoop,"""Thunderstruck"" by David Garrett",2021,Hoop,"""Thunderstruck"" by David Garrett",1.00,match
+Dina Averina,Tokyo 2020,2021,Ball,"""Symphony No. 6 in B minor, Op. 74"" by Pyotr Tchaikovsky",2021,Ball,"""Symphony No. 6 in B minor, Op. 74"" by Pyotr Tchaikovsky",1.00,match
+Dina Averina,Tokyo 2020,2021,Clubs,"""FOGO"" by Garmiani feat. Julimar Santos",2021,Clubs,"""FOGO"" by Garmiani feat. Julimar Santos",1.00,match
+Dina Averina,Tokyo 2020,2021,Ribbon,"""La Cumparsita"" by Yasmin Levy",2021,Ribbon,"""La Cumparsita"" by Yasmin Levy",1.00,match
+Alina Harnasko,Tokyo 2020,2021,Hoop,Moonlight Sonata by Tommee Profitt,2021,Hoop,Moonlight Sonata by Tommee Profitt,1.00,match
+Alina Harnasko,Tokyo 2020,2021,Ball,The Hardest Button to Button by The White Stripes,2021,Ball,The Hardest Button to Button by The White Stripes,1.00,match
+Alina Harnasko,Tokyo 2020,2021,Clubs,"L'assasymphonie from Mozart, l'Opéra Rock by Florent Mothe",2021,Clubs,"L'assasymphonie from Mozart, l'Opéra Rock by Florent Mothe",1.00,match
+Alina Harnasko,Tokyo 2020,2021,Ribbon,Nocturne by Yuri Vesnyak,2021,Ribbon,Nocturne by Yuri Vesnyak,1.00,match
+Margarita Mamun,Rio 2016,2016,Hoop,Concerto de Berlin by Vladimir Cosma,2016,Hoop (2nd),Concerto de Berlin by Vladimir Cosma,1.00,match
+Margarita Mamun,Rio 2016,2016,Ball,"Morceaux De Fantasie, Op.3:I.Elegie by Mischa Maisky",2016,Ball,"Morceaux De Fantasie, Op.3:I.Elegie by Mischa Maisky",1.00,match
+Margarita Mamun,Rio 2016,2016,Clubs,"We Will Rock You by Queen, Pink",2016,Clubs,"We Will Rock You by Queen, Pink",1.00,match
+Margarita Mamun,Rio 2016,2016,Ribbon,"A New Swan Queen, Night of Terror, Perfection music from The Black Swan by Clint Mansell",2016,Ribbon,"A New Swan Queen, Night of Terror, Perfection music from Black Swan by Clint Mansell",0.98,match_fuzzy
+Yana Kudryavtseva,Rio 2016,2016,Hoop,"""Kon (Slavyanskaya)"" by Khor Turetskogo",2016,Hoop,"""Kon (Slavyanskaya)"" by Khor Turetskogo",1.00,match
+Yana Kudryavtseva,Rio 2016,2016,Ball,"""Piano Concerto No.23 – Adagio"", ""Piano Concerto No. 21 – Andante"", by Wolfgang Amadeus Mozart",2016,Ball,"""Piano Concerto No.23 – Adagio"", ""Piano Concerto No. 21 – Andante from Toy Story 4"", by Wolfgang Amadeus Mozart",0.91,match_fuzzy
+Yana Kudryavtseva,Rio 2016,2016,Clubs,Black Gold by Armand Amar,2016,Clubs,Black Gold by Armand Amar,1.00,match
+Yana Kudryavtseva,Rio 2016,2016,Ribbon,Valse Triste by Jean Sibelius,2016,Ribbon,Valse Triste by Jean Sibelius,1.00,match
+Hanna Rizatdinova,Rio 2016,2016,Ribbon,"Tomorrow Never Comes, Time To Go Crazy by Rishi & Harshil",2016,Ribbon,"Tomorrow Never Comes, Time To Go Crazy by Rishi & Harshil",1.00,match
+Hanna Rizatdinova,Rio 2016,2016,Clubs,"They Don't Care About Us by Olodum, Michael Jackson, David Garrett",2016,Clubs,"They Don't Care About Us by Olodum, Michael Jackson, David Garrett",1.00,match
+Hanna Rizatdinova,Rio 2016,2016,Ball,I Put a Spell on You music from Fifty Shades of Grey by Annie Lennox,2016,Ball,I Put a Spell on You music from Fifty Shades of Grey by Annie Lennox,1.00,match
+Hanna Rizatdinova,Rio 2016,2016,Hoop,"España Caní, España Caní by Manhattan Pops Orchestra, Trio Norté",2016,Hoop,"España Caní, España Caní by Manhattan Pops Orchestra, Trio Norté",1.00,match
+Hanna Rizatdinova,London 2012,2012,Ribbon,Smooth Criminal by 2 Cellos (Sulic & Hauser),2012,Ribbon (second),Smooth Criminal by 2 Cellos (Sulic & Hauser),1.00,match
+Hanna Rizatdinova,London 2012,2012,Ball,The Promise by Secret Garden,2012,Ball,The Promise by Secret Garden,1.00,match
+Hanna Rizatdinova,London 2012,2012,Hoop,The Fast And The Furious: Tokyo Drift by Brian Tyler,2012,Hoop,The Fast And The Furious: Tokyo Drift by Brian Tyler,1.00,match
+Hanna Rizatdinova,London 2012,2012,Clubs,Black Gold by Armand Amar,2012,Clubs,Black Gold by Armand Amar,1.00,match
+Evgeniya Kanaeva,London 2012,2012,Ball,"""Concerto (Ballet)"" (Les Demoiselles de Rochefort OST) by Michel Legrand",2012,Ball (second),"""Concerto (Ballet)"" (Les Demoiselles de Rochefort OST), by Michel Legrand",1.00,match
+Evgeniya Kanaeva,London 2012,2012,Ribbon,"""Fantasie Impromptu No 66"" by Frédéric Chopin",2012,Ribbon,"""Fantasie Impromptu"", by Frédéric Chopin",0.93,match_fuzzy
+Evgeniya Kanaeva,London 2012,2012,Hoop,"""The Rite of Spring"" by Igor Stravinsky",2012,Hoop (third),"""The Rite of Spring"", by Igor Stravinsky",1.00,match
+Evgeniya Kanaeva,London 2012,2012,Clubs,"""Poeta (remix)"" original by Vincente Amigo | remix by Maxime Rodriguez",2012,Clubs,"""Poeta (remix)"", original by Vicente Amigo, remix by Maxime Rodriguez",0.99,match_fuzzy
+Evgeniya Kanaeva,Beijing 2008,2008,Ribbon,Moscow Nights by Vasily Solovyov-Sedoi,2008,Ribbon,"""Moscow Nights"", by Igor Krutoy, composed by Vasily Solovyov-Sedoi",0.76,music_differs
+Evgeniya Kanaeva,Beijing 2008,2008,Rope,"""El Conquistador"" by Maxime Rodriguez",2008,Rope,"""El Conquistador"", by Maxime Rodriguez",1.00,match
+Evgeniya Kanaeva,Beijing 2008,2008,Hoop,Tristan & Iseult by Maxime Rodriguez,2008,Hoop,"""Tristan & Iseult"", by Maxime Rodriguez",1.00,match
+Evgeniya Kanaeva,Beijing 2008,2008,Clubs,"""Jota Aragonesa"" by Glinka",2008,Clubs,"""Jota Aragonesa"", by Glinka",1.00,match

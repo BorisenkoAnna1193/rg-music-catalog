@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+# downloaded article HTML: reproducible, no need to commit
+data/raw/
+.env
+.DS_Store
