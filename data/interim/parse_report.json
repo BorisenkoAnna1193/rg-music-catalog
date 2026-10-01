@@ -1,0 +1,26 @@
+{
+  "routines": 391,
+  "routine_status": {
+    "ok": 355,
+    "empty": 15,
+    "partial": 20,
+    "reference": 1
+  },
+  "tracks": 403,
+  "track_status": {
+    "ok": 382,
+    "partial": 20,
+    "reference": 1
+  },
+  "flags": {
+    "comma_in_title": 16,
+    "no_credit": 20,
+    "split_multiple_by": 8,
+    "unbalanced_quote": 2,
+    "slash_split": 7,
+    "remix": 1,
+    "credit_without_by": 1
+  },
+  "unknown_apparatus": [],
+  "unparsed": []
+}

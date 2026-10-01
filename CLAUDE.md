@@ -8,7 +8,7 @@ A catalog of music used by rhythmic gymnasts, built from English Wikipedia, answ
 
 The owner talks in Russian; code, comments, README and commit messages are in English.
 
-## Current state (step 1 done)
+## Current state (steps 1 and 2 done)
 - `rg_music/wiki_client.py` – polite MediaWiki API client (UA with contact from
   `WIKI_CONTACT`, 1 req/s, maxlag, retries with Retry-After, redirects, revid, disk cache
   in `data/raw/`, git-ignored).
@@ -23,6 +23,13 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   → `data/interim/routines_raw.csv`, `competitions_raw.csv`, `extract_report.json`.
 - `rg_music/crosscheck.py` – compares competition-table music with the routine table
   on the same page → `data/interim/crosscheck.csv`.
+- `rg_music/apparatus.py` – ~40 apparatus spellings → apparatus + variant
+  (first/second/third) + context ("Gala at EC Minsk" → Gala / "EC Minsk"); typos fixed with a note.
+- `rg_music/music_parser.py` – rule-based parser of the music cell → tracks (title, work,
+  artist, performer, notes, flags, status). `rg_music/parse.py` – CLI: `python -m rg_music.parse`
+  → `data/interim/routines_parsed.csv` (one row per routine), `tracks.csv` (one row per track,
+  key `routine_id` = gymnast_page|table_index|row_index), `parse_report.json`.
+  Last run: 391 routines → 403 tracks: 382 ok, 20 partial (all "no credit in source"), 1 reference.
 - Seed: `data/seed_gymnasts.txt` (10 Olympic AA medalists 2008–2024).
   Last run: 391 routine rows, all 10 pages OK; crosscheck 46 match / 5 fuzzy / 1 differs.
 - Tests: `python -m pytest -q` (fixtures mimic real layouts).
@@ -36,24 +43,38 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   (Mamun 2014 hoop names the Adagio; Averina 2018 hoop names only the ballet).
 - Keep raw data untouched in `*_raw.csv`; every cleaning step writes new files.
 
-## Next: step 2 – parse the free-text music cell
-Split into tracks, then each track into title / work / excerpt / composer / performer.
-Formats seen: `"X" by Y`, `X by Y`, `"X", by Y` (Kanaeva), `X as composed by Y`,
-`X, composed by Y by Z`, `X (from Y) by Z`, `X music from Y by Z`,
-`original by A, remix by B`, `(performed by C)`, several tracks joined by `,` `/` `;`
-or " | ", no "by" at all (27 rows), references like "(same music as CariPrato 2007)".
-Plan: regex rules first, report coverage, then an LLM fallback (OpenRouter, strict JSON
-schema, Pydantic validation, cached) for rows the rules cannot parse.
-Also normalise ~40 apparatus spellings: "Hoop (2nd)", "Ribbons", "Clubs (Second)",
-"Gala at EC Minsk", "Clubs (Aeon Cup)", "Gala-2 Ribbons (WCH Patras)" → apparatus +
-variant (first/second/third) + context.
+## Decisions for step 2 (made with the owner)
+- **`artist` = composer + performer credited with "by"**, composer first, comma-separated
+  ("Georgy Sviridov, Alexander Vedernikov & Russian Philharmonic Symphony Orchestra").
+  Separate `performer` only for explicit "performed/conducted by". Telling them apart is
+  left to entity resolution.
+- **`excerpt` column dropped** (rules cannot fill it); the three-level model stays as a
+  goal, add the column back when something can fill it.
+- **Several works in one cell → several tracks with the same `routine_id`**:
+  "A by X and B by Y" (flag `split_multiple_by`), "A / B by X / Y" paired by position
+  (flag `slash_split`); unequal counts stay one-credit-shared and `partial`.
+  Remix: title "Poeta (remix by B)", artist = original artist.
+- **Status**: `partial` only for `no_credit` / `slash_in_credit`; other flags
+  (`comma_in_title`, `credit_without_by`, `unbalanced_quote`, `remix`) are informational.
+- `no_credit` tracks (20, e.g. "Russian Folk", "Basement Jaxx") are kept as is; enrich later
+  from another source.
+- Pipeline layers: `*_raw.csv` → parsed CSV → owner-reviewed CSV (corrections in a separate
+  `overrides.csv` keyed by id, so re-running the parser never loses them) → SQLite loaded
+  idempotently only from the reviewed layer.
+
+## Next
+1. Owner review of `tracks.csv` + `overrides.csv` mechanism.
+2. Second source: rgforum.no music list (archived on Wayback, last snapshot ~2022; the
+   live site does not resolve). Check ToS/robots, 1 req/s; use it to cross-check Wikipedia
+   and to enrich `no_credit` tracks. LLM fallback only if rules prove insufficient.
+3. SQLite schema + loader.
 
 Known source errors worth catching in validation: Averina 2015 "Giselle" attributed to
 Tchaikovsky (it is Adam); "Mvrica" (Mrvica); Kudryavtseva 2016 ball "from Toy Story 4"
 only in one of two tables; Kanaeva 2012 "Fantasie Impromptu No 66" (Op. 66).
 
 ## Later steps
-Entity resolution across gymnasts (rapidfuzz + MusicBrainz + LLM arbiter), validation
+Entity resolution (same music across gymnasts, composer vs. performer) (rapidfuzz + MusicBrainz + LLM arbiter), validation
 (years vs. career from Wikidata, apparatus vocabulary), Wikidata as second source for
-gymnast list, archived rgforum.no via Wayback, exports (CSV/JSON/Google Sheets/SQLite),
+gymnast list, exports (CSV/JSON/Google Sheets/SQLite),
 search UI, Docker + scheduled run + S3.

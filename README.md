@@ -21,7 +21,9 @@ normalisation and entity resolution, not just downloading pages.
   routines, 46 match exactly or near-exactly, 5 match but one season later
   (Tokyo 2020 was held in 2021 – the table labels the Games, not the season),
   1 differs in detail only (composer vs. arranger listed).
-- [ ] Step 2 – parse the free-text music cell into title / composer / performer / work.
+- [x] **Step 2 – parse (rules).** Split the music cell into tracks (title / work / artist /
+  performer) and normalise apparatus (`python -m rg_music.parse`). 391 routines → 403 tracks;
+  20 tracks have no credit in the source. LLM fallback is not needed for the current data.
 - [ ] Step 3 – match the same music across gymnasts.
 - [ ] Step 4 – validation, cross-source checks, export, search UI.
 
@@ -33,6 +35,7 @@ pip install -r requirements.txt
 
 export WIKI_CONTACT="https://github.com/<you>/rg-music-catalog"   # goes into the User-Agent
 python -m rg_music.extract          # pages from data/seed_gymnasts.txt
+python -m rg_music.parse            # raw -> parsed routines and tracks
 python -m pytest -q
 ```
 
@@ -43,6 +46,9 @@ Outputs go to `data/interim/`:
 | `routines_raw.csv` | one row per row of a "Year / Apparatus / Music title" table |
 | `competitions_raw.csv` | rows of competition tables that have a Music column (e.g. Olympics) |
 | `extract_report.json` | what was found on every page: tables, headers, redirects, errors |
+| `routines_parsed.csv` | one row per routine: normalised apparatus / variant / context, parse status |
+| `tracks.csv` | one row per track, keyed by `routine_id`; `flags` show which heuristics were applied |
+| `parse_report.json` | parse coverage and flag counts |
 
 Downloaded HTML is cached in `data/raw/` (git-ignored); `--refresh` re-downloads.
 
