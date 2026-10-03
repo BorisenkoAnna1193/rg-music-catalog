@@ -146,3 +146,20 @@ class WikiClient:
         meta = {k: v for k, v in page.__dict__.items() if k != "html"}
         meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
         return page
+
+    def resolve_titles(self, titles: list[str], batch: int = 50) -> dict[str, tuple[str, int | None]]:
+        """Map every title to (canonical title after redirects, pageid or None if missing)."""
+        out: dict[str, tuple[str, int | None]] = {}
+        unique = list(dict.fromkeys(titles))
+        for i in range(0, len(unique), batch):
+            chunk = unique[i:i + batch]
+            data = self._get({"action": "query", "titles": "|".join(chunk), "redirects": "1"})["query"]
+            step = {m["from"]: m["to"] for m in data.get("normalized", [])}
+            redirect = {m["from"]: m["to"] for m in data.get("redirects", [])}
+            pages = {p["title"]: p for p in data.get("pages", [])}
+            for title in chunk:
+                final = step.get(title, title)
+                final = redirect.get(final, final)
+                page = pages.get(final, {})
+                out[title] = (final, None if page.get("missing") else page.get("pageid"))
+        return out

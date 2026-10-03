@@ -1,0 +1,1063 @@
+﻿alias,country_id,source
+Aruba,ABW,iso_name
+Aruba,ABW,short
+ABW,ABW,iso_alpha3
+Afghanistan,AFG,iso_name
+Islamic Republic of Afghanistan,AFG,iso_official
+Afghanistan,AFG,short
+AFG,AFG,iso_alpha3
+Angola,AGO,iso_name
+Republic of Angola,AGO,iso_official
+Angola,AGO,short
+AGO,AGO,iso_alpha3
+Anguilla,AIA,iso_name
+Anguilla,AIA,short
+AIA,AIA,iso_alpha3
+Åland Islands,ALA,iso_name
+Åland Islands,ALA,short
+ALA,ALA,iso_alpha3
+Albania,ALB,iso_name
+Republic of Albania,ALB,iso_official
+Albania,ALB,short
+ALB,ALB,iso_alpha3
+Andorra,AND,iso_name
+Principality of Andorra,AND,iso_official
+Andorra,AND,short
+AND,AND,iso_alpha3
+United Arab Emirates,ARE,iso_name
+United Arab Emirates,ARE,short
+ARE,ARE,iso_alpha3
+Argentina,ARG,iso_name
+Argentine Republic,ARG,iso_official
+Argentina,ARG,short
+ARG,ARG,iso_alpha3
+Armenia,ARM,iso_name
+Republic of Armenia,ARM,iso_official
+Armenia,ARM,short
+ARM,ARM,iso_alpha3
+American Samoa,ASM,iso_name
+American Samoa,ASM,short
+ASM,ASM,iso_alpha3
+Antarctica,ATA,iso_name
+Antarctica,ATA,short
+ATA,ATA,iso_alpha3
+French Southern Territories,ATF,iso_name
+French Southern Territories,ATF,short
+ATF,ATF,iso_alpha3
+Antigua and Barbuda,ATG,iso_name
+Antigua and Barbuda,ATG,short
+ATG,ATG,iso_alpha3
+Australia,AUS,iso_name
+Australia,AUS,short
+AUS,AUS,iso_alpha3
+Austria,AUT,iso_name
+Republic of Austria,AUT,iso_official
+Austria,AUT,short
+AUT,AUT,iso_alpha3
+Azerbaijan,AZE,iso_name
+Republic of Azerbaijan,AZE,iso_official
+Azerbaijan,AZE,short
+AZE,AZE,iso_alpha3
+Burundi,BDI,iso_name
+Republic of Burundi,BDI,iso_official
+Burundi,BDI,short
+BDI,BDI,iso_alpha3
+Belgium,BEL,iso_name
+Kingdom of Belgium,BEL,iso_official
+Belgium,BEL,short
+BEL,BEL,iso_alpha3
+Benin,BEN,iso_name
+Republic of Benin,BEN,iso_official
+Benin,BEN,short
+BEN,BEN,iso_alpha3
+"Bonaire, Sint Eustatius and Saba",BES,iso_name
+"Bonaire, Sint Eustatius and Saba",BES,iso_official
+Bonaire,BES,short
+BES,BES,iso_alpha3
+Burkina Faso,BFA,iso_name
+Burkina Faso,BFA,short
+BFA,BFA,iso_alpha3
+Bangladesh,BGD,iso_name
+People's Republic of Bangladesh,BGD,iso_official
+Bangladesh,BGD,short
+BGD,BGD,iso_alpha3
+Bulgaria,BGR,iso_name
+Republic of Bulgaria,BGR,iso_official
+Bulgaria,BGR,short
+BGR,BGR,iso_alpha3
+Bahrain,BHR,iso_name
+Kingdom of Bahrain,BHR,iso_official
+Bahrain,BHR,short
+BHR,BHR,iso_alpha3
+Bahamas,BHS,iso_name
+Commonwealth of the Bahamas,BHS,iso_official
+Bahamas,BHS,short
+BHS,BHS,iso_alpha3
+Bosnia and Herzegovina,BIH,iso_name
+Republic of Bosnia and Herzegovina,BIH,iso_official
+Bosnia and Herzegovina,BIH,short
+BIH,BIH,iso_alpha3
+Saint Barthélemy,BLM,iso_name
+Saint Barthélemy,BLM,short
+BLM,BLM,iso_alpha3
+Belarus,BLR,iso_name
+Republic of Belarus,BLR,iso_official
+Belarus,BLR,short
+BLR,BLR,iso_alpha3
+Belize,BLZ,iso_name
+Belize,BLZ,short
+BLZ,BLZ,iso_alpha3
+Bermuda,BMU,iso_name
+Bermuda,BMU,short
+BMU,BMU,iso_alpha3
+"Bolivia, Plurinational State of",BOL,iso_name
+Plurinational State of Bolivia,BOL,iso_official
+Bolivia,BOL,iso_common
+Bolivia,BOL,short
+BOL,BOL,iso_alpha3
+Brazil,BRA,iso_name
+Federative Republic of Brazil,BRA,iso_official
+Brazil,BRA,short
+BRA,BRA,iso_alpha3
+Barbados,BRB,iso_name
+Barbados,BRB,short
+BRB,BRB,iso_alpha3
+Brunei Darussalam,BRN,iso_name
+Brunei,BRN,short
+BRN,BRN,iso_alpha3
+Bhutan,BTN,iso_name
+Kingdom of Bhutan,BTN,iso_official
+Bhutan,BTN,short
+BTN,BTN,iso_alpha3
+Bouvet Island,BVT,iso_name
+Bouvet Island,BVT,short
+BVT,BVT,iso_alpha3
+Botswana,BWA,iso_name
+Republic of Botswana,BWA,iso_official
+Botswana,BWA,short
+BWA,BWA,iso_alpha3
+Central African Republic,CAF,iso_name
+Central African Republic,CAF,short
+CAF,CAF,iso_alpha3
+Canada,CAN,iso_name
+Canada,CAN,short
+CAN,CAN,iso_alpha3
+Cocos (Keeling) Islands,CCK,iso_name
+Cocos (Keeling) Islands,CCK,short
+CCK,CCK,iso_alpha3
+Switzerland,CHE,iso_name
+Swiss Confederation,CHE,iso_official
+Switzerland,CHE,short
+CHE,CHE,iso_alpha3
+Chile,CHL,iso_name
+Republic of Chile,CHL,iso_official
+Chile,CHL,short
+CHL,CHL,iso_alpha3
+China,CHN,iso_name
+People's Republic of China,CHN,iso_official
+China,CHN,short
+CHN,CHN,iso_alpha3
+Côte d'Ivoire,CIV,iso_name
+Republic of Côte d'Ivoire,CIV,iso_official
+Ivory Coast,CIV,short
+CIV,CIV,iso_alpha3
+Cameroon,CMR,iso_name
+Republic of Cameroon,CMR,iso_official
+Cameroon,CMR,short
+CMR,CMR,iso_alpha3
+"Congo, The Democratic Republic of the",COD,iso_name
+DR Congo,COD,short
+COD,COD,iso_alpha3
+Congo,COG,iso_name
+Republic of the Congo,COG,iso_official
+Congo,COG,short
+COG,COG,iso_alpha3
+Cook Islands,COK,iso_name
+Cook Islands,COK,short
+COK,COK,iso_alpha3
+Colombia,COL,iso_name
+Republic of Colombia,COL,iso_official
+Colombia,COL,short
+COL,COL,iso_alpha3
+Comoros,COM,iso_name
+Union of the Comoros,COM,iso_official
+Comoros,COM,short
+COM,COM,iso_alpha3
+Cabo Verde,CPV,iso_name
+Republic of Cabo Verde,CPV,iso_official
+Cape Verde,CPV,short
+CPV,CPV,iso_alpha3
+Costa Rica,CRI,iso_name
+Republic of Costa Rica,CRI,iso_official
+Costa Rica,CRI,short
+CRI,CRI,iso_alpha3
+Cuba,CUB,iso_name
+Republic of Cuba,CUB,iso_official
+Cuba,CUB,short
+CUB,CUB,iso_alpha3
+Curaçao,CUW,iso_name
+Curaçao,CUW,iso_official
+Curaçao,CUW,short
+CUW,CUW,iso_alpha3
+Christmas Island,CXR,iso_name
+Christmas Island,CXR,short
+CXR,CXR,iso_alpha3
+Cayman Islands,CYM,iso_name
+Cayman Islands,CYM,short
+CYM,CYM,iso_alpha3
+Cyprus,CYP,iso_name
+Republic of Cyprus,CYP,iso_official
+Cyprus,CYP,short
+CYP,CYP,iso_alpha3
+Czechia,CZE,iso_name
+Czech Republic,CZE,iso_official
+Czech Republic,CZE,short
+CZE,CZE,iso_alpha3
+Germany,DEU,iso_name
+Federal Republic of Germany,DEU,iso_official
+Germany,DEU,short
+DEU,DEU,iso_alpha3
+Djibouti,DJI,iso_name
+Republic of Djibouti,DJI,iso_official
+Djibouti,DJI,short
+DJI,DJI,iso_alpha3
+Dominica,DMA,iso_name
+Commonwealth of Dominica,DMA,iso_official
+Dominica,DMA,short
+DMA,DMA,iso_alpha3
+Denmark,DNK,iso_name
+Kingdom of Denmark,DNK,iso_official
+Denmark,DNK,short
+DNK,DNK,iso_alpha3
+Dominican Republic,DOM,iso_name
+Dominican Republic,DOM,short
+DOM,DOM,iso_alpha3
+Algeria,DZA,iso_name
+People's Democratic Republic of Algeria,DZA,iso_official
+Algeria,DZA,short
+DZA,DZA,iso_alpha3
+Ecuador,ECU,iso_name
+Republic of Ecuador,ECU,iso_official
+Ecuador,ECU,short
+ECU,ECU,iso_alpha3
+Egypt,EGY,iso_name
+Arab Republic of Egypt,EGY,iso_official
+Egypt,EGY,short
+EGY,EGY,iso_alpha3
+Eritrea,ERI,iso_name
+the State of Eritrea,ERI,iso_official
+Eritrea,ERI,short
+ERI,ERI,iso_alpha3
+Western Sahara,ESH,iso_name
+Western Sahara,ESH,short
+ESH,ESH,iso_alpha3
+Spain,ESP,iso_name
+Kingdom of Spain,ESP,iso_official
+Spain,ESP,short
+ESP,ESP,iso_alpha3
+Estonia,EST,iso_name
+Republic of Estonia,EST,iso_official
+Estonia,EST,short
+EST,EST,iso_alpha3
+Ethiopia,ETH,iso_name
+Federal Democratic Republic of Ethiopia,ETH,iso_official
+Ethiopia,ETH,short
+ETH,ETH,iso_alpha3
+Finland,FIN,iso_name
+Republic of Finland,FIN,iso_official
+Finland,FIN,short
+FIN,FIN,iso_alpha3
+Fiji,FJI,iso_name
+Republic of Fiji,FJI,iso_official
+Fiji,FJI,short
+FJI,FJI,iso_alpha3
+Falkland Islands (Malvinas),FLK,iso_name
+Falkland Islands (Malvinas),FLK,short
+FLK,FLK,iso_alpha3
+France,FRA,iso_name
+French Republic,FRA,iso_official
+France,FRA,short
+FRA,FRA,iso_alpha3
+Faroe Islands,FRO,iso_name
+Faroe Islands,FRO,short
+FRO,FRO,iso_alpha3
+"Micronesia, Federated States of",FSM,iso_name
+Federated States of Micronesia,FSM,iso_official
+Micronesia,FSM,short
+FSM,FSM,iso_alpha3
+Gabon,GAB,iso_name
+Gabonese Republic,GAB,iso_official
+Gabon,GAB,short
+GAB,GAB,iso_alpha3
+United Kingdom,GBR,iso_name
+United Kingdom of Great Britain and Northern Ireland,GBR,iso_official
+United Kingdom,GBR,short
+GBR,GBR,iso_alpha3
+Georgia,GEO,iso_name
+Georgia,GEO,short
+GEO,GEO,iso_alpha3
+Guernsey,GGY,iso_name
+Guernsey,GGY,short
+GGY,GGY,iso_alpha3
+Ghana,GHA,iso_name
+Republic of Ghana,GHA,iso_official
+Ghana,GHA,short
+GHA,GHA,iso_alpha3
+Gibraltar,GIB,iso_name
+Gibraltar,GIB,short
+GIB,GIB,iso_alpha3
+Guinea,GIN,iso_name
+Republic of Guinea,GIN,iso_official
+Guinea,GIN,short
+GIN,GIN,iso_alpha3
+Guadeloupe,GLP,iso_name
+Guadeloupe,GLP,short
+GLP,GLP,iso_alpha3
+Gambia,GMB,iso_name
+Republic of the Gambia,GMB,iso_official
+Gambia,GMB,short
+GMB,GMB,iso_alpha3
+Guinea-Bissau,GNB,iso_name
+Republic of Guinea-Bissau,GNB,iso_official
+Guinea-Bissau,GNB,short
+GNB,GNB,iso_alpha3
+Equatorial Guinea,GNQ,iso_name
+Republic of Equatorial Guinea,GNQ,iso_official
+Equatorial Guinea,GNQ,short
+GNQ,GNQ,iso_alpha3
+Greece,GRC,iso_name
+Hellenic Republic,GRC,iso_official
+Greece,GRC,short
+GRC,GRC,iso_alpha3
+Grenada,GRD,iso_name
+Grenada,GRD,short
+GRD,GRD,iso_alpha3
+Greenland,GRL,iso_name
+Greenland,GRL,short
+GRL,GRL,iso_alpha3
+Guatemala,GTM,iso_name
+Republic of Guatemala,GTM,iso_official
+Guatemala,GTM,short
+GTM,GTM,iso_alpha3
+French Guiana,GUF,iso_name
+French Guiana,GUF,short
+GUF,GUF,iso_alpha3
+Guam,GUM,iso_name
+Guam,GUM,short
+GUM,GUM,iso_alpha3
+Guyana,GUY,iso_name
+Republic of Guyana,GUY,iso_official
+Guyana,GUY,short
+GUY,GUY,iso_alpha3
+Hong Kong,HKG,iso_name
+Hong Kong Special Administrative Region of China,HKG,iso_official
+Hong Kong,HKG,short
+HKG,HKG,iso_alpha3
+Heard Island and McDonald Islands,HMD,iso_name
+Heard Island and McDonald Islands,HMD,short
+HMD,HMD,iso_alpha3
+Honduras,HND,iso_name
+Republic of Honduras,HND,iso_official
+Honduras,HND,short
+HND,HND,iso_alpha3
+Croatia,HRV,iso_name
+Republic of Croatia,HRV,iso_official
+Croatia,HRV,short
+HRV,HRV,iso_alpha3
+Haiti,HTI,iso_name
+Republic of Haiti,HTI,iso_official
+Haiti,HTI,short
+HTI,HTI,iso_alpha3
+Hungary,HUN,iso_name
+Hungary,HUN,iso_official
+Hungary,HUN,short
+HUN,HUN,iso_alpha3
+Indonesia,IDN,iso_name
+Republic of Indonesia,IDN,iso_official
+Indonesia,IDN,short
+IDN,IDN,iso_alpha3
+Isle of Man,IMN,iso_name
+Isle of Man,IMN,short
+IMN,IMN,iso_alpha3
+India,IND,iso_name
+Republic of India,IND,iso_official
+India,IND,short
+IND,IND,iso_alpha3
+British Indian Ocean Territory,IOT,iso_name
+British Indian Ocean Territory,IOT,short
+IOT,IOT,iso_alpha3
+Ireland,IRL,iso_name
+Ireland,IRL,short
+IRL,IRL,iso_alpha3
+"Iran, Islamic Republic of",IRN,iso_name
+Islamic Republic of Iran,IRN,iso_official
+Iran,IRN,iso_common
+Iran,IRN,short
+IRN,IRN,iso_alpha3
+Iraq,IRQ,iso_name
+Republic of Iraq,IRQ,iso_official
+Iraq,IRQ,short
+IRQ,IRQ,iso_alpha3
+Iceland,ISL,iso_name
+Republic of Iceland,ISL,iso_official
+Iceland,ISL,short
+ISL,ISL,iso_alpha3
+Israel,ISR,iso_name
+State of Israel,ISR,iso_official
+Israel,ISR,short
+ISR,ISR,iso_alpha3
+Italy,ITA,iso_name
+Italian Republic,ITA,iso_official
+Italy,ITA,short
+ITA,ITA,iso_alpha3
+Jamaica,JAM,iso_name
+Jamaica,JAM,short
+JAM,JAM,iso_alpha3
+Jersey,JEY,iso_name
+Jersey,JEY,short
+JEY,JEY,iso_alpha3
+Jordan,JOR,iso_name
+Hashemite Kingdom of Jordan,JOR,iso_official
+Jordan,JOR,short
+JOR,JOR,iso_alpha3
+Japan,JPN,iso_name
+Japan,JPN,short
+JPN,JPN,iso_alpha3
+Kazakhstan,KAZ,iso_name
+Republic of Kazakhstan,KAZ,iso_official
+Kazakhstan,KAZ,short
+KAZ,KAZ,iso_alpha3
+Kenya,KEN,iso_name
+Republic of Kenya,KEN,iso_official
+Kenya,KEN,short
+KEN,KEN,iso_alpha3
+Kyrgyzstan,KGZ,iso_name
+Kyrgyz Republic,KGZ,iso_official
+Kyrgyzstan,KGZ,short
+KGZ,KGZ,iso_alpha3
+Cambodia,KHM,iso_name
+Kingdom of Cambodia,KHM,iso_official
+Cambodia,KHM,short
+KHM,KHM,iso_alpha3
+Kiribati,KIR,iso_name
+Republic of Kiribati,KIR,iso_official
+Kiribati,KIR,short
+KIR,KIR,iso_alpha3
+Saint Kitts and Nevis,KNA,iso_name
+Saint Kitts and Nevis,KNA,short
+KNA,KNA,iso_alpha3
+"Korea, Republic of",KOR,iso_name
+South Korea,KOR,iso_common
+South Korea,KOR,short
+KOR,KOR,iso_alpha3
+Kuwait,KWT,iso_name
+State of Kuwait,KWT,iso_official
+Kuwait,KWT,short
+KWT,KWT,iso_alpha3
+Lao People's Democratic Republic,LAO,iso_name
+Laos,LAO,iso_common
+Laos,LAO,short
+LAO,LAO,iso_alpha3
+Lebanon,LBN,iso_name
+Lebanese Republic,LBN,iso_official
+Lebanon,LBN,short
+LBN,LBN,iso_alpha3
+Liberia,LBR,iso_name
+Republic of Liberia,LBR,iso_official
+Liberia,LBR,short
+LBR,LBR,iso_alpha3
+Libya,LBY,iso_name
+Libya,LBY,iso_official
+Libya,LBY,short
+LBY,LBY,iso_alpha3
+Saint Lucia,LCA,iso_name
+Saint Lucia,LCA,short
+LCA,LCA,iso_alpha3
+Liechtenstein,LIE,iso_name
+Principality of Liechtenstein,LIE,iso_official
+Liechtenstein,LIE,short
+LIE,LIE,iso_alpha3
+Sri Lanka,LKA,iso_name
+Democratic Socialist Republic of Sri Lanka,LKA,iso_official
+Sri Lanka,LKA,short
+LKA,LKA,iso_alpha3
+Lesotho,LSO,iso_name
+Kingdom of Lesotho,LSO,iso_official
+Lesotho,LSO,short
+LSO,LSO,iso_alpha3
+Lithuania,LTU,iso_name
+Republic of Lithuania,LTU,iso_official
+Lithuania,LTU,short
+LTU,LTU,iso_alpha3
+Luxembourg,LUX,iso_name
+Grand Duchy of Luxembourg,LUX,iso_official
+Luxembourg,LUX,short
+LUX,LUX,iso_alpha3
+Latvia,LVA,iso_name
+Republic of Latvia,LVA,iso_official
+Latvia,LVA,short
+LVA,LVA,iso_alpha3
+Macao,MAC,iso_name
+Macao Special Administrative Region of China,MAC,iso_official
+Macao,MAC,short
+MAC,MAC,iso_alpha3
+Saint Martin (French part),MAF,iso_name
+Saint Martin (French part),MAF,short
+MAF,MAF,iso_alpha3
+Morocco,MAR,iso_name
+Kingdom of Morocco,MAR,iso_official
+Morocco,MAR,short
+MAR,MAR,iso_alpha3
+Monaco,MCO,iso_name
+Principality of Monaco,MCO,iso_official
+Monaco,MCO,short
+MCO,MCO,iso_alpha3
+"Moldova, Republic of",MDA,iso_name
+Republic of Moldova,MDA,iso_official
+Moldova,MDA,iso_common
+Moldova,MDA,short
+MDA,MDA,iso_alpha3
+Madagascar,MDG,iso_name
+Republic of Madagascar,MDG,iso_official
+Madagascar,MDG,short
+MDG,MDG,iso_alpha3
+Maldives,MDV,iso_name
+Republic of Maldives,MDV,iso_official
+Maldives,MDV,short
+MDV,MDV,iso_alpha3
+Mexico,MEX,iso_name
+United Mexican States,MEX,iso_official
+Mexico,MEX,short
+MEX,MEX,iso_alpha3
+Marshall Islands,MHL,iso_name
+Republic of the Marshall Islands,MHL,iso_official
+Marshall Islands,MHL,short
+MHL,MHL,iso_alpha3
+North Macedonia,MKD,iso_name
+Republic of North Macedonia,MKD,iso_official
+North Macedonia,MKD,short
+MKD,MKD,iso_alpha3
+Mali,MLI,iso_name
+Republic of Mali,MLI,iso_official
+Mali,MLI,short
+MLI,MLI,iso_alpha3
+Malta,MLT,iso_name
+Republic of Malta,MLT,iso_official
+Malta,MLT,short
+MLT,MLT,iso_alpha3
+Myanmar,MMR,iso_name
+Republic of Myanmar,MMR,iso_official
+Myanmar,MMR,short
+MMR,MMR,iso_alpha3
+Montenegro,MNE,iso_name
+Montenegro,MNE,iso_official
+Montenegro,MNE,short
+MNE,MNE,iso_alpha3
+Mongolia,MNG,iso_name
+Mongolia,MNG,short
+MNG,MNG,iso_alpha3
+Northern Mariana Islands,MNP,iso_name
+Commonwealth of the Northern Mariana Islands,MNP,iso_official
+Northern Mariana Islands,MNP,short
+MNP,MNP,iso_alpha3
+Mozambique,MOZ,iso_name
+Republic of Mozambique,MOZ,iso_official
+Mozambique,MOZ,short
+MOZ,MOZ,iso_alpha3
+Mauritania,MRT,iso_name
+Islamic Republic of Mauritania,MRT,iso_official
+Mauritania,MRT,short
+MRT,MRT,iso_alpha3
+Montserrat,MSR,iso_name
+Montserrat,MSR,short
+MSR,MSR,iso_alpha3
+Martinique,MTQ,iso_name
+Martinique,MTQ,short
+MTQ,MTQ,iso_alpha3
+Mauritius,MUS,iso_name
+Republic of Mauritius,MUS,iso_official
+Mauritius,MUS,short
+MUS,MUS,iso_alpha3
+Malawi,MWI,iso_name
+Republic of Malawi,MWI,iso_official
+Malawi,MWI,short
+MWI,MWI,iso_alpha3
+Malaysia,MYS,iso_name
+Malaysia,MYS,short
+MYS,MYS,iso_alpha3
+Mayotte,MYT,iso_name
+Mayotte,MYT,short
+MYT,MYT,iso_alpha3
+Namibia,NAM,iso_name
+Republic of Namibia,NAM,iso_official
+Namibia,NAM,short
+NAM,NAM,iso_alpha3
+New Caledonia,NCL,iso_name
+New Caledonia,NCL,short
+NCL,NCL,iso_alpha3
+Niger,NER,iso_name
+Republic of the Niger,NER,iso_official
+Niger,NER,short
+NER,NER,iso_alpha3
+Norfolk Island,NFK,iso_name
+Norfolk Island,NFK,short
+NFK,NFK,iso_alpha3
+Nigeria,NGA,iso_name
+Federal Republic of Nigeria,NGA,iso_official
+Nigeria,NGA,short
+NGA,NGA,iso_alpha3
+Nicaragua,NIC,iso_name
+Republic of Nicaragua,NIC,iso_official
+Nicaragua,NIC,short
+NIC,NIC,iso_alpha3
+Niue,NIU,iso_name
+Niue,NIU,iso_official
+Niue,NIU,short
+NIU,NIU,iso_alpha3
+Netherlands,NLD,iso_name
+Kingdom of the Netherlands,NLD,iso_official
+Netherlands,NLD,short
+NLD,NLD,iso_alpha3
+Norway,NOR,iso_name
+Kingdom of Norway,NOR,iso_official
+Norway,NOR,short
+NOR,NOR,iso_alpha3
+Nepal,NPL,iso_name
+Federal Democratic Republic of Nepal,NPL,iso_official
+Nepal,NPL,short
+NPL,NPL,iso_alpha3
+Nauru,NRU,iso_name
+Republic of Nauru,NRU,iso_official
+Nauru,NRU,short
+NRU,NRU,iso_alpha3
+New Zealand,NZL,iso_name
+New Zealand,NZL,short
+NZL,NZL,iso_alpha3
+Oman,OMN,iso_name
+Sultanate of Oman,OMN,iso_official
+Oman,OMN,short
+OMN,OMN,iso_alpha3
+Pakistan,PAK,iso_name
+Islamic Republic of Pakistan,PAK,iso_official
+Pakistan,PAK,short
+PAK,PAK,iso_alpha3
+Panama,PAN,iso_name
+Republic of Panama,PAN,iso_official
+Panama,PAN,short
+PAN,PAN,iso_alpha3
+Pitcairn,PCN,iso_name
+Pitcairn,PCN,short
+PCN,PCN,iso_alpha3
+Peru,PER,iso_name
+Republic of Peru,PER,iso_official
+Peru,PER,short
+PER,PER,iso_alpha3
+Philippines,PHL,iso_name
+Republic of the Philippines,PHL,iso_official
+Philippines,PHL,short
+PHL,PHL,iso_alpha3
+Palau,PLW,iso_name
+Republic of Palau,PLW,iso_official
+Palau,PLW,short
+PLW,PLW,iso_alpha3
+Papua New Guinea,PNG,iso_name
+Independent State of Papua New Guinea,PNG,iso_official
+Papua New Guinea,PNG,short
+PNG,PNG,iso_alpha3
+Poland,POL,iso_name
+Republic of Poland,POL,iso_official
+Poland,POL,short
+POL,POL,iso_alpha3
+Puerto Rico,PRI,iso_name
+Puerto Rico,PRI,short
+PRI,PRI,iso_alpha3
+"Korea, Democratic People's Republic of",PRK,iso_name
+Democratic People's Republic of Korea,PRK,iso_official
+North Korea,PRK,iso_common
+North Korea,PRK,short
+PRK,PRK,iso_alpha3
+Portugal,PRT,iso_name
+Portuguese Republic,PRT,iso_official
+Portugal,PRT,short
+PRT,PRT,iso_alpha3
+Paraguay,PRY,iso_name
+Republic of Paraguay,PRY,iso_official
+Paraguay,PRY,short
+PRY,PRY,iso_alpha3
+"Palestine, State of",PSE,iso_name
+the State of Palestine,PSE,iso_official
+Palestine,PSE,short
+PSE,PSE,iso_alpha3
+French Polynesia,PYF,iso_name
+French Polynesia,PYF,short
+PYF,PYF,iso_alpha3
+Qatar,QAT,iso_name
+State of Qatar,QAT,iso_official
+Qatar,QAT,short
+QAT,QAT,iso_alpha3
+Réunion,REU,iso_name
+Réunion,REU,short
+REU,REU,iso_alpha3
+Romania,ROU,iso_name
+Romania,ROU,short
+ROU,ROU,iso_alpha3
+Russian Federation,RUS,iso_name
+Russia,RUS,short
+RUS,RUS,iso_alpha3
+Rwanda,RWA,iso_name
+Rwandese Republic,RWA,iso_official
+Rwanda,RWA,short
+RWA,RWA,iso_alpha3
+Saudi Arabia,SAU,iso_name
+Kingdom of Saudi Arabia,SAU,iso_official
+Saudi Arabia,SAU,short
+SAU,SAU,iso_alpha3
+Sudan,SDN,iso_name
+Republic of the Sudan,SDN,iso_official
+Sudan,SDN,short
+SDN,SDN,iso_alpha3
+Senegal,SEN,iso_name
+Republic of Senegal,SEN,iso_official
+Senegal,SEN,short
+SEN,SEN,iso_alpha3
+Singapore,SGP,iso_name
+Republic of Singapore,SGP,iso_official
+Singapore,SGP,short
+SGP,SGP,iso_alpha3
+South Georgia and the South Sandwich Islands,SGS,iso_name
+South Georgia and the South Sandwich Islands,SGS,short
+SGS,SGS,iso_alpha3
+"Saint Helena, Ascension and Tristan da Cunha",SHN,iso_name
+Saint Helena,SHN,short
+SHN,SHN,iso_alpha3
+Svalbard and Jan Mayen,SJM,iso_name
+Svalbard and Jan Mayen,SJM,short
+SJM,SJM,iso_alpha3
+Solomon Islands,SLB,iso_name
+Solomon Islands,SLB,short
+SLB,SLB,iso_alpha3
+Sierra Leone,SLE,iso_name
+Republic of Sierra Leone,SLE,iso_official
+Sierra Leone,SLE,short
+SLE,SLE,iso_alpha3
+El Salvador,SLV,iso_name
+Republic of El Salvador,SLV,iso_official
+El Salvador,SLV,short
+SLV,SLV,iso_alpha3
+San Marino,SMR,iso_name
+Republic of San Marino,SMR,iso_official
+San Marino,SMR,short
+SMR,SMR,iso_alpha3
+Somalia,SOM,iso_name
+Federal Republic of Somalia,SOM,iso_official
+Somalia,SOM,short
+SOM,SOM,iso_alpha3
+Saint Pierre and Miquelon,SPM,iso_name
+Saint Pierre and Miquelon,SPM,short
+SPM,SPM,iso_alpha3
+Serbia,SRB,iso_name
+Republic of Serbia,SRB,iso_official
+Serbia,SRB,short
+SRB,SRB,iso_alpha3
+South Sudan,SSD,iso_name
+Republic of South Sudan,SSD,iso_official
+South Sudan,SSD,short
+SSD,SSD,iso_alpha3
+Sao Tome and Principe,STP,iso_name
+Democratic Republic of Sao Tome and Principe,STP,iso_official
+Sao Tome and Principe,STP,short
+STP,STP,iso_alpha3
+Suriname,SUR,iso_name
+Republic of Suriname,SUR,iso_official
+Suriname,SUR,short
+SUR,SUR,iso_alpha3
+Slovakia,SVK,iso_name
+Slovak Republic,SVK,iso_official
+Slovakia,SVK,short
+SVK,SVK,iso_alpha3
+Slovenia,SVN,iso_name
+Republic of Slovenia,SVN,iso_official
+Slovenia,SVN,short
+SVN,SVN,iso_alpha3
+Sweden,SWE,iso_name
+Kingdom of Sweden,SWE,iso_official
+Sweden,SWE,short
+SWE,SWE,iso_alpha3
+Eswatini,SWZ,iso_name
+Kingdom of Eswatini,SWZ,iso_official
+Eswatini,SWZ,short
+SWZ,SWZ,iso_alpha3
+Sint Maarten (Dutch part),SXM,iso_name
+Sint Maarten (Dutch part),SXM,iso_official
+Sint Maarten (Dutch part),SXM,short
+SXM,SXM,iso_alpha3
+Seychelles,SYC,iso_name
+Republic of Seychelles,SYC,iso_official
+Seychelles,SYC,short
+SYC,SYC,iso_alpha3
+Syrian Arab Republic,SYR,iso_name
+Syria,SYR,iso_common
+Syria,SYR,short
+SYR,SYR,iso_alpha3
+Turks and Caicos Islands,TCA,iso_name
+Turks and Caicos Islands,TCA,short
+TCA,TCA,iso_alpha3
+Chad,TCD,iso_name
+Republic of Chad,TCD,iso_official
+Chad,TCD,short
+TCD,TCD,iso_alpha3
+Togo,TGO,iso_name
+Togolese Republic,TGO,iso_official
+Togo,TGO,short
+TGO,TGO,iso_alpha3
+Thailand,THA,iso_name
+Kingdom of Thailand,THA,iso_official
+Thailand,THA,short
+THA,THA,iso_alpha3
+Tajikistan,TJK,iso_name
+Republic of Tajikistan,TJK,iso_official
+Tajikistan,TJK,short
+TJK,TJK,iso_alpha3
+Tokelau,TKL,iso_name
+Tokelau,TKL,short
+TKL,TKL,iso_alpha3
+Turkmenistan,TKM,iso_name
+Turkmenistan,TKM,short
+TKM,TKM,iso_alpha3
+Timor-Leste,TLS,iso_name
+Democratic Republic of Timor-Leste,TLS,iso_official
+Timor-Leste,TLS,short
+TLS,TLS,iso_alpha3
+Tonga,TON,iso_name
+Kingdom of Tonga,TON,iso_official
+Tonga,TON,short
+TON,TON,iso_alpha3
+Trinidad and Tobago,TTO,iso_name
+Republic of Trinidad and Tobago,TTO,iso_official
+Trinidad and Tobago,TTO,short
+TTO,TTO,iso_alpha3
+Tunisia,TUN,iso_name
+Republic of Tunisia,TUN,iso_official
+Tunisia,TUN,short
+TUN,TUN,iso_alpha3
+Türkiye,TUR,iso_name
+Republic of Türkiye,TUR,iso_official
+Turkey,TUR,short
+TUR,TUR,iso_alpha3
+Tuvalu,TUV,iso_name
+Tuvalu,TUV,short
+TUV,TUV,iso_alpha3
+"Taiwan, Province of China",TWN,iso_name
+"Taiwan, Province of China",TWN,iso_official
+Taiwan,TWN,iso_common
+Chinese Taipei,TWN,short
+TWN,TWN,iso_alpha3
+"Tanzania, United Republic of",TZA,iso_name
+United Republic of Tanzania,TZA,iso_official
+Tanzania,TZA,iso_common
+Tanzania,TZA,short
+TZA,TZA,iso_alpha3
+Uganda,UGA,iso_name
+Republic of Uganda,UGA,iso_official
+Uganda,UGA,short
+UGA,UGA,iso_alpha3
+Ukraine,UKR,iso_name
+Ukraine,UKR,short
+UKR,UKR,iso_alpha3
+United States Minor Outlying Islands,UMI,iso_name
+United States Minor Outlying Islands,UMI,short
+UMI,UMI,iso_alpha3
+Uruguay,URY,iso_name
+Eastern Republic of Uruguay,URY,iso_official
+Uruguay,URY,short
+URY,URY,iso_alpha3
+United States,USA,iso_name
+United States of America,USA,iso_official
+United States,USA,short
+USA,USA,iso_alpha3
+Uzbekistan,UZB,iso_name
+Republic of Uzbekistan,UZB,iso_official
+Uzbekistan,UZB,short
+UZB,UZB,iso_alpha3
+Holy See (Vatican City State),VAT,iso_name
+Vatican City,VAT,short
+VAT,VAT,iso_alpha3
+Saint Vincent and the Grenadines,VCT,iso_name
+Saint Vincent and the Grenadines,VCT,short
+VCT,VCT,iso_alpha3
+"Venezuela, Bolivarian Republic of",VEN,iso_name
+Bolivarian Republic of Venezuela,VEN,iso_official
+Venezuela,VEN,iso_common
+Venezuela,VEN,short
+VEN,VEN,iso_alpha3
+"Virgin Islands, British",VGB,iso_name
+British Virgin Islands,VGB,iso_official
+Virgin Islands,VGB,short
+VGB,VGB,iso_alpha3
+"Virgin Islands, U.S.",VIR,iso_name
+Virgin Islands of the United States,VIR,iso_official
+Virgin Islands,VIR,short
+VIR,VIR,iso_alpha3
+Viet Nam,VNM,iso_name
+Socialist Republic of Viet Nam,VNM,iso_official
+Vietnam,VNM,iso_common
+Vietnam,VNM,short
+VNM,VNM,iso_alpha3
+Vanuatu,VUT,iso_name
+Republic of Vanuatu,VUT,iso_official
+Vanuatu,VUT,short
+VUT,VUT,iso_alpha3
+Wallis and Futuna,WLF,iso_name
+Wallis and Futuna,WLF,short
+WLF,WLF,iso_alpha3
+Samoa,WSM,iso_name
+Independent State of Samoa,WSM,iso_official
+Samoa,WSM,short
+WSM,WSM,iso_alpha3
+Yemen,YEM,iso_name
+Republic of Yemen,YEM,iso_official
+Yemen,YEM,short
+YEM,YEM,iso_alpha3
+South Africa,ZAF,iso_name
+Republic of South Africa,ZAF,iso_official
+South Africa,ZAF,short
+ZAF,ZAF,iso_alpha3
+Zambia,ZMB,iso_name
+Republic of Zambia,ZMB,iso_official
+Zambia,ZMB,short
+ZMB,ZMB,iso_alpha3
+Zimbabwe,ZWE,iso_name
+Republic of Zimbabwe,ZWE,iso_official
+Zimbabwe,ZWE,short
+ZWE,ZWE,iso_alpha3
+French Afars and Issas,AIDJ,iso_name
+French Afars and Issas,AIDJ,short
+AIDJ,AIDJ,iso_alpha4
+Netherlands Antilles,ANHH,iso_name
+Netherlands Antilles,ANHH,short
+ANHH,ANHH,iso_alpha4
+British Antarctic Territory,BQAQ,iso_name
+British Antarctic Territory,BQAQ,short
+BQAQ,BQAQ,iso_alpha4
+"Burma, Socialist Republic of the Union of",BUMM,iso_name
+Burma,BUMM,short
+BUMM,BUMM,iso_alpha4
+Byelorussian SSR Soviet Socialist Republic,BYAA,iso_name
+Byelorussian SSR,BYAA,short
+BYAA,BYAA,iso_alpha4
+"Czechoslovakia, Czechoslovak Socialist Republic",CSHH,iso_name
+Czechoslovakia,CSHH,short
+CSHH,CSHH,iso_alpha4
+Serbia and Montenegro,CSXX,iso_name
+Serbia and Montenegro,CSXX,short
+CSXX,CSXX,iso_alpha4
+Canton and Enderbury Islands,CTKI,iso_name
+Canton and Enderbury Islands,CTKI,short
+CTKI,CTKI,iso_alpha4
+German Democratic Republic,DDDE,iso_name
+East Germany,DDDE,short
+DDDE,DDDE,iso_alpha4
+Dahomey,DYBJ,iso_name
+Dahomey,DYBJ,short
+DYBJ,DYBJ,iso_alpha4
+French Southern and Antarctic Territories,FQHH,iso_name
+French Southern and Antarctic Territories,FQHH,short
+FQHH,FQHH,iso_alpha4
+"France, Metropolitan",FXFR,iso_name
+France,FXFR,short
+FXFR,FXFR,iso_alpha4
+Gilbert and Ellice Islands,GEHH,iso_name
+Gilbert and Ellice Islands,GEHH,short
+GEHH,GEHH,iso_alpha4
+"Upper Volta, Republic of",HVBF,iso_name
+Upper Volta,HVBF,short
+HVBF,HVBF,iso_alpha4
+Johnston Island,JTUM,iso_name
+Johnston Island,JTUM,short
+JTUM,JTUM,iso_alpha4
+Midway Islands,MIUM,iso_name
+Midway Islands,MIUM,short
+MIUM,MIUM,iso_alpha4
+New Hebrides,NHVU,iso_name
+New Hebrides,NHVU,short
+NHVU,NHVU,iso_alpha4
+Dronning Maud Land,NQAQ,iso_name
+Dronning Maud Land,NQAQ,short
+NQAQ,NQAQ,iso_alpha4
+Neutral Zone,NTHH,iso_name
+Neutral Zone,NTHH,short
+NTHH,NTHH,iso_alpha4
+Pacific Islands (trust territory),PCHH,iso_name
+Pacific Islands (trust territory),PCHH,short
+PCHH,PCHH,iso_alpha4
+US Miscellaneous Pacific Islands,PUUM,iso_name
+US Miscellaneous Pacific Islands,PUUM,short
+PUUM,PUUM,iso_alpha4
+Panama Canal Zone,PZPA,iso_name
+Panama Canal Zone,PZPA,short
+PZPA,PZPA,iso_alpha4
+Southern Rhodesia,RHZW,iso_name
+Southern Rhodesia,RHZW,short
+RHZW,RHZW,iso_alpha4
+Sikkim,SKIN,iso_name
+Sikkim,SKIN,short
+SKIN,SKIN,iso_alpha4
+"USSR, Union of Soviet Socialist Republics",SUHH,iso_name
+Soviet Union,SUHH,short
+SUHH,SUHH,iso_alpha4
+East Timor,TPTL,iso_name
+East Timor,TPTL,short
+TPTL,TPTL,iso_alpha4
+"Viet-Nam, Democratic Republic of",VDVN,iso_name
+Viet-Nam,VDVN,short
+VDVN,VDVN,iso_alpha4
+Wake Island,WKUM,iso_name
+Wake Island,WKUM,short
+WKUM,WKUM,iso_alpha4
+"Yemen, Democratic, People's Democratic Republic of",YDYE,iso_name
+Yemen,YDYE,short
+YDYE,YDYE,iso_alpha4
+"Yugoslavia, (Socialist) Federal Republic of",YUCS,iso_name
+Yugoslavia,YUCS,short
+YUCS,YUCS,iso_alpha4
+"Zaire, Republic of",ZRCD,iso_name
+Zaire,ZRCD,short
+ZRCD,ZRCD,iso_alpha4
+West Germany,DEU,manual
+Federal Republic of Germany,DEU,manual
+East Germany,DDDE,manual
+Soviet Union,SUHH,manual
+Socialist Federal Republic of Yugoslavia,YUCS,manual
+Yugoslavia,YUCS,manual
+Korea,KOR,manual
+Chinese Taipei,TWN,manual
+Great Britain,GBR,manual
+Hong Kong,HKG,manual
+Russian Rhythmic Gymnastics Federation,RUS,manual
+Individual Neutral Athletes,AIN,manual
+GER,DEU,ioc_code
+BUL,BGR,ioc_code
+GRE,GRC,ioc_code
+SLO,SVN,ioc_code
+SUI,CHE,ioc_code
+NED,NLD,ioc_code
+DEN,DNK,ioc_code
+POR,PRT,ioc_code
+CRO,HRV,ioc_code
+LAT,LVA,ioc_code
+INA,IDN,ioc_code
+RSA,ZAF,ioc_code
+UAE,ARE,ioc_code
+TPE,TWN,ioc_code
+URS,SUHH,ioc_code
+TCH,CSHH,ioc_code
+GDR,DDDE,ioc_code
+FRG,DEU,ioc_code
+YUG,YUCS,ioc_code
+MAS,MYS,ioc_code
+SRI,LKA,ioc_code
+CHI,CHL,ioc_code
+URU,URY,ioc_code
+PUR,PRI,ioc_code
+HKG,HKG,ioc_code
+KOS,XKX,ioc_code

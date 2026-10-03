@@ -62,6 +62,24 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   `overrides.csv` keyed by id, so re-running the parser never loses them) → SQLite loaded
   idempotently only from the reviewed layer.
 
+## Decisions for the gymnast list (made with the owner)
+- List of gymnasts = names in individual qualification + individual all-around tables of all
+  World Championships (`rg_music/worlds.py`); identity = Wikipedia article (via redirects).
+- Canonical name hierarchy: FIG name (surname as "Aaaa", "Given Surname") → Wikipedia article
+  title → most frequent/latest table spelling (`rg_music/name_decisions.py`). FIG ids come from
+  Wikidata (P2696/P7440) and only for gymnasts in the review sheet (`rg_music/fig_names.py`).
+- **Country reference** (`rg_music/countries.py`, `data/reference/`): ISO 3166-1 + ISO 3166-3
+  (via pycountry) + aliases (IOC codes, "West Germany" → Germany, "Korea" → South Korea, ...).
+  `country_id` = alpha-3 (current) / alpha-4 (former: SUHH, CSHH, DDDE, YUCS). Free-text countries
+  are matched code → exact → name inside text → most similar (difflib, cutoff 0.84) → none; the
+  method is stored (`wc_country_mapping.csv`) and everything but code/exact is for review.
+  Years are ignored ("Czech Republic" in 1971 stays CZE); year-vs-existence is not validated yet.
+- Same person under two countries (successor states): country = latest championship; entries that
+  are not countries (Individual Neutral Athletes) are skipped when choosing it.
+- Owner-typed cells in `wc_name_review_fig.csv` (empty `decision_basis`) are never overwritten.
+- CSVs the owner opens in Excel are written as utf-8-sig (BOM), otherwise Excel garbles diacritics.
+- Result: `data/interim/wc_gymnasts_final.csv` (1395 people, each with `country_id`).
+
 ## Next
 1. Owner review of `tracks.csv` + `overrides.csv` mechanism.
 2. Second source: rgforum.no music list (archived on Wayback, last snapshot ~2022; the

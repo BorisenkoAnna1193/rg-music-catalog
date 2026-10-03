@@ -1,0 +1,135 @@
+﻿nation_in_table,country_id,country,method,score,appearances
+Chinese Taipei for Olympic Games,TWN,Chinese Taipei,contained,0.9,3
+Andorra,AND,Andorra,exact,1.0,8
+Angola,AGO,Angola,exact,1.0,14
+Argentina,ARG,Argentina,exact,1.0,7
+Armenia,ARM,Armenia,exact,1.0,15
+Aruba,ABW,Aruba,exact,1.0,2
+Australia,AUS,Australia,exact,1.0,37
+Austria,AUT,Austria,exact,1.0,48
+AUT,AUT,Austria,code,1.0,3
+AZE,AZE,Azerbaijan,code,1.0,5
+Azerbaijan,AZE,Azerbaijan,exact,1.0,50
+Belarus,BLR,Belarus,exact,1.0,65
+Belgium,BEL,Belgium,exact,1.0,28
+Belgium (civil),BEL,Belgium,exact,1.0,3
+BLR,BLR,Belarus,code,1.0,6
+Bolivia,BOL,Bolivia,exact,1.0,5
+Bosnia and Herzegovina,BIH,Bosnia and Herzegovina,exact,1.0,6
+Brazil,BRA,Brazil,exact,1.0,51
+BUL,BGR,Bulgaria,code,1.0,5
+Bulgaria,BGR,Bulgaria,exact,1.0,109
+Bulgaria (1967–1971),BGR,Bulgaria,exact,1.0,3
+Canada,CAN,Canada,exact,1.0,69
+Cape Verde,CPV,Cape Verde,exact,1.0,4
+Chile,CHL,Chile,exact,1.0,4
+China,CHN,China,exact,1.0,51
+Chinese Taipei,TWN,Chinese Taipei,exact,1.0,10
+CHN,CHN,China,code,1.0,2
+Colombia,COL,Colombia,exact,1.0,10
+Costa Rica,CRI,Costa Rica,exact,1.0,2
+Croatia,HRV,Croatia,exact,1.0,8
+Cuba,CUB,Cuba,exact,1.0,31
+CYP,CYP,Cyprus,code,1.0,1
+Cyprus,CYP,Cyprus,exact,1.0,16
+Czech Republic,CZE,Czech Republic,exact,1.0,25
+Czechoslovakia,CSHH,Czechoslovakia,exact,1.0,19
+Denmark,DNK,Denmark,exact,1.0,28
+East Germany,DDDE,East Germany,exact,1.0,26
+Egypt,EGY,Egypt,exact,1.0,22
+El Salvador,SLV,El Salvador,exact,1.0,2
+ESP,ESP,Spain,code,1.0,3
+Estonia,EST,Estonia,exact,1.0,28
+Finland,FIN,Finland,exact,1.0,48
+FRA,FRA,France,code,1.0,3
+France,FRA,France,exact,1.0,56
+GEO,GEO,Georgia,code,1.0,1
+Georgia (country),GEO,Georgia,exact,1.0,37
+GER,DEU,Germany,code,1.0,1
+Germany,DEU,Germany,exact,1.0,63
+GRE,GRC,Greece,code,1.0,1
+Greece,GRC,Greece,exact,1.0,37
+Guatemala,GTM,Guatemala,exact,1.0,3
+Hong Kong,HKG,Hong Kong,exact,1.0,2
+HUN,HUN,Hungary,code,1.0,3
+Hungary,HUN,Hungary,exact,1.0,62
+India,IND,India,exact,1.0,12
+Individual Neutral Athletes,AIN,Individual Neutral Athletes,exact,1.0,7
+Indonesia,IDN,Indonesia,exact,1.0,2
+ISR,ISR,Israel,code,1.0,5
+Israel,ISR,Israel,exact,1.0,76
+ITA,ITA,Italy,code,1.0,3
+Italy,ITA,Italy,exact,1.0,82
+Ivory Coast,CIV,Ivory Coast,exact,1.0,2
+Japan,JPN,Japan,exact,1.0,80
+JPN,JPN,Japan,code,1.0,3
+KAZ,KAZ,Kazakhstan,code,1.0,5
+Kazakhstan,KAZ,Kazakhstan,exact,1.0,42
+KOR,KOR,South Korea,code,1.0,1
+Korea,KOR,South Korea,exact,1.0,4
+Kyrgyzstan,KGZ,Kyrgyzstan,exact,1.0,11
+Laos,LAO,Laos,exact,1.0,3
+Latvia,LVA,Latvia,exact,1.0,23
+Lebanon,LBN,Lebanon,exact,1.0,3
+Lithuania,LTU,Lithuania,exact,1.0,22
+Luxembourg,LUX,Luxembourg,exact,1.0,5
+Malaysia,MYS,Malaysia,exact,1.0,14
+Mex,MEX,Mexico,code,1.0,1
+Mexico,MEX,Mexico,exact,1.0,43
+Moldova,MDA,Moldova,exact,1.0,8
+Mongolia,MNG,Mongolia,exact,1.0,4
+Montenegro,MNE,Montenegro,exact,1.0,5
+Namibia,NAM,Namibia,exact,1.0,2
+Netherlands,NLD,Netherlands,exact,1.0,9
+New Zealand,NZL,New Zealand,exact,1.0,31
+North Korea,PRK,North Korea,exact,1.0,24
+North Macedonia,MKD,North Macedonia,exact,1.0,2
+Norway,NOR,Norway,exact,1.0,35
+Paraguay,PRY,Paraguay,exact,1.0,1
+Peru,PER,Peru,exact,1.0,1
+Philippines,PHL,Philippines,exact,1.0,5
+POL,POL,Poland,code,1.0,3
+Poland,POL,Poland,exact,1.0,65
+Portugal,PRT,Portugal,exact,1.0,38
+Puerto Rico,PRI,Puerto Rico,exact,1.0,5
+Romania,ROU,Romania,exact,1.0,51
+ROU,ROU,Romania,code,1.0,1
+RUS,RUS,Russia,code,1.0,6
+Russia,RUS,Russia,exact,1.0,63
+Russian Rhythmic Gymnastics Federation,RUS,Russia,exact,1.0,4
+San Marino,SMR,San Marino,exact,1.0,8
+Serbia,SRB,Serbia,exact,1.0,10
+Singapore,SGP,Singapore,exact,1.0,4
+SLO,SVN,Slovenia,code,1.0,1
+Slovakia,SVK,Slovakia,exact,1.0,15
+Slovenia,SVN,Slovenia,exact,1.0,32
+Socialist Federal Republic of Yugoslavia,YUCS,Yugoslavia,exact,1.0,17
+South Africa,ZAF,South Africa,exact,1.0,20
+South Korea,KOR,South Korea,exact,1.0,35
+Soviet Union,SUHH,Soviet Union,exact,1.0,25
+Spain,ESP,Spain,exact,1.0,80
+Sri Lanka,LKA,Sri Lanka,exact,1.0,5
+Sweden,SWE,Sweden,exact,1.0,39
+Switzerland,CHE,Switzerland,exact,1.0,15
+Syria,SYR,Syria,exact,1.0,2
+Thailand,THA,Thailand,exact,1.0,6
+the Czech Republic,CZE,Czech Republic,exact,1.0,15
+the Netherlands,NLD,Netherlands,exact,1.0,12
+the People's Republic of China,CHN,China,exact,1.0,15
+the Soviet Union,SUHH,Soviet Union,exact,1.0,15
+the United Kingdom,GBR,United Kingdom,exact,1.0,12
+the United States,USA,United States,exact,1.0,13
+Togo,TGO,Togo,exact,1.0,1
+Tunisia,TUN,Tunisia,exact,1.0,1
+Turkey,TUR,Turkey,exact,1.0,21
+UKR,UKR,Ukraine,code,1.0,6
+Ukraine,UKR,Ukraine,exact,1.0,78
+United Kingdom,GBR,United Kingdom,exact,1.0,28
+United States,USA,United States,exact,1.0,59
+USA,USA,United States,code,1.0,1
+UZB,UZB,Uzbekistan,code,1.0,3
+Uzbekistan,UZB,Uzbekistan,exact,1.0,45
+Venezuela,VEN,Venezuela,exact,1.0,2
+Venezuela (1930–2006),VEN,Venezuela,exact,1.0,2
+West Germany,DEU,Germany,exact,1.0,14
+Yugoslavia (1946-1992),YUCS,Yugoslavia,exact,1.0,15
