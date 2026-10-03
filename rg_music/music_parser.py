@@ -34,8 +34,8 @@ REVIEW_FLAGS = {"no_credit", "slash_in_credit"}
 
 _MARKER = re.compile(
     # "original by" / "remix by" only after a comma or "(": mid-title "Remix by X" is not a role
-    r"(?:,\s*|\(\s*)(?P<r1>as\s+composed|composed|performed|conducted|original|remix)\s+by\s+"
-    r"|(?:,\s*|\(\s*|\s+)(?:(?P<r2>as\s+composed|composed|performed|conducted)\s+)?by\s+",
+    r"(?:,\s*|\(\s*)(?P<r1>as\s+composed|composed|performed|conducted|directed|written|arranged|lyrics|original|remix)\s+by\s+"
+    r"|(?:,\s*|\(\s*|\s+)(?:(?P<r2>as\s+composed|composed|performed|conducted|directed|written|arranged|lyrics)\s+)?by\s+",
     re.I,
 )
 _WORK_TAIL = re.compile(
@@ -50,7 +50,8 @@ _SLASH = r"\s/\s?|\s?/\s"
 _BETWEEN_BYS = re.compile(r",\s+|\s+and\s+|\s+&\s+")
 _ROLE = {
     "as composed": "composer", "composed": "composer",
-    "performed": "performer", "conducted": "performer",
+    "performed": "performer", "conducted": "performer", "directed": "performer",
+    "written": "composer", "arranged": "artist", "lyrics": "lyrics",
     "original": "artist", "remix": "remix",
 }
 
@@ -75,6 +76,20 @@ class Track:
 def _mask_quotes(text: str) -> str:
     """Replace everything inside "..." with '_' so separators there are ignored."""
     return re.sub(r'"[^"]*"', lambda m: "_" * len(m.group()), text)
+
+
+_ROLE_WORDS = r"(?:as\s+composed|composed|performed|conducted|directed|written|arranged|lyrics|original|remix)\s+by\b"
+
+
+def _mask(text: str) -> str:
+    """Mask "quotes" and (bracketed notes), so a "by" or "/" inside them is not a credit.
+
+    A bracket that itself starts with a credit - "(performed by X)" - stays visible.
+    """
+    masked = _mask_quotes(text)
+    return re.sub(r"\([^()]*\)",
+                  lambda m: m.group() if re.match(rf"\(\s*{_ROLE_WORDS}", m.group(), re.I) else "_" * len(m.group()),
+                  masked)
 
 
 def _split_masked(text: str, pattern: str) -> list[str]:
@@ -125,15 +140,19 @@ def _with_remix(title: str, remix_by: str) -> str:
     return f"{title} (remix by {remix_by})"
 
 
-def _split_between_bys(text: str, plain: list[re.Match]) -> list[str] | None:
-    """Cut "A by X, B by Y" into ["A by X", "B by Y"] at the last separator between two "by"."""
-    masked, pieces, start = _mask_quotes(text), [], 0
+def _split_between_bys(text: str, masked: str, plain: list[re.Match]) -> list[str] | None:
+    """Cut "A by X, B by Y" into ["A by X", "B by Y"].
+
+    Only when every gap between two "by" holds exactly one possible separator: with
+    "A by X, B and C by Y" the cut could be after X or after B, so the rules do not guess.
+    """
+    pieces, start = [], 0
     for cur, nxt in zip(plain, plain[1:]):
         seps = list(_BETWEEN_BYS.finditer(masked, cur.end(), nxt.start()))
-        if not seps:
+        if len(seps) != 1:
             return None
-        pieces.append(text[start:seps[-1].start()])
-        start = seps[-1].end()
+        pieces.append(text[start:seps[0].start()])
+        start = seps[0].end()
     pieces.append(text[start:])
     return pieces
 
@@ -147,17 +166,27 @@ def _parse_unit(text: str, extra_flags: tuple[str, ...] = ()) -> list[Track]:
         flags.append("unbalanced_quote")
     text = text.strip()
 
-    masked = _mask_quotes(text)
+    masked = _mask(text)
     markers = list(_MARKER.finditer(masked))
     plain = [m for m in markers if not (m.group("r1") or m.group("r2"))]
+    composer_at: set[int] = set()  # markers that credit the composer of a "from X" work
 
     if len(plain) >= 2:
-        if re.search(_SLASH, masked):  # "A by X / B by Y": one unit per slash-separated part
-            return [t for part in _split_masked(text, _SLASH) for t in _parse_unit(part, tuple(flags))]
-        pieces = _split_between_bys(text, plain)
-        if pieces is None:
-            return [Track(raw_text=raw, flags=flags + [MULTIPLE_BY])]
-        return [t for p in pieces for t in _parse_unit(p, (*flags, "split_multiple_by"))]
+        if "/" in masked:  # "A by X/B by Y": one unit per slash-separated part
+            return [t for part in _split_masked(text, r"\s*/\s*") for t in _parse_unit(part, tuple(flags))]
+        between = masked[plain[0].end():plain[1].start()]
+        gaps = [masked[a.end():b.start()] for a, b in zip(plain, plain[1:])]
+        if len(plain) == 2 and re.search(r",\s*(?:music\s+)?from\s", between, re.I):
+            composer_at = {plain[1].start()}  # "..., from The Carnival of the Animals by Saint-Saens"
+        elif all(not _BETWEEN_BYS.search(g) for g in gaps):
+            # no separator at all: "Paris By Night by Bob Sinclar" - earlier "by" belong to the title
+            markers = [m for m in markers if m not in plain[:-1]]
+            flags.append("by_in_title")
+        else:
+            pieces = _split_between_bys(text, masked, plain)
+            if pieces is None:
+                return [Track(raw_text=raw, flags=flags + [MULTIPLE_BY])]
+            return [t for p in pieces for t in _parse_unit(p, (*flags, "split_multiple_by"))]
 
     title_part = (text[:markers[0].start()] if markers else text).strip(" ,")
     track = Track(raw_text=raw, flags=flags)
@@ -181,12 +210,15 @@ def _parse_unit(text: str, extra_flags: tuple[str, ...] = ()) -> list[Track]:
     remix_by = ""
     for i, m in enumerate(markers):
         end = markers[i + 1].start() if i + 1 < len(markers) else len(text)
-        role = _ROLE.get(re.sub(r"\s+", " ", (m.group("r1") or m.group("r2") or "").lower()), "artist")
+        role = "composer" if m.start() in composer_at else \
+            _ROLE.get(re.sub(r"\s+", " ", (m.group("r1") or m.group("r2") or "").lower()), "artist")
         value, notes, work = _clean_value(text[m.end():end])
         track.notes.extend(notes)
         if work and not track.work:
             track.work = work
-        if role == "remix":
+        if role == "lyrics":
+            track.notes.append(f"lyrics by {value}")
+        elif role == "remix":
             remix_by = value
             track.flags.append("remix")
         elif value:
@@ -197,7 +229,7 @@ def _parse_unit(text: str, extra_flags: tuple[str, ...] = ()) -> list[Track]:
     if not composers and len(artists) == 1 and "/" in artists[0]:
         credits = [c.strip() for c in artists[0].split("/") if c.strip()]
         expanded = [p.strip() for t in titles for p in t.split("/") if p.strip()]
-        if len(expanded) == len(credits) > 1:
+        if len(expanded) == len(credits) > 1 and "/" not in track.work:
             titles = expanded
             return _expand(track, titles, credits, remix_by, ["slash_split"])
         track.flags.append("slash_in_credit")

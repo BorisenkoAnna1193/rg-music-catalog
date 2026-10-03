@@ -74,7 +74,7 @@ def cell_text(cell: Tag) -> str:
 
 
 CONTINUATION_RE = re.compile(r"^(by|from|feat\.?|ft\.?|performed|composed|arr\.?)\b|^\(", re.I)
-PLACEHOLDERS = {"—", "–", "-", "?", "n/a", "unknown", "tba"}
+PLACEHOLDERS = {"—", "–", "-", "?", "??", "???", "n/a", "unknown", "unknown music", "tba"}
 
 
 def _own_rows(table: Tag) -> list[Tag]:
@@ -207,6 +207,9 @@ def _rows_from_grid(t_idx, kind, headers, body) -> list[MusicRow]:
             return cells[c] if c is not None and c < len(cells) else ""
 
         year, app, music = get(c_year), get(c_app), get(c_music)
+        # the header repeated in the middle of a table (Kabaeva competition table)
+        if sum(1 for i, name in enumerate(h) if name and get(i).lower() == name) >= 2:
+            continue
         if music.lower() in PLACEHOLDERS:
             music = ""
         if YEAR_RE.match(year):

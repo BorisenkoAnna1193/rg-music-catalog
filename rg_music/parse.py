@@ -21,11 +21,12 @@ from pathlib import Path
 
 from rg_music.apparatus import normalize_apparatus
 from rg_music.music_parser import parse_music
+from rg_music.years import parse_years
 
 INTERIM = Path("data/interim")
 
 ROUTINE_FIELDS = [
-    "routine_id", "gymnast_page", "year", "apparatus", "variant", "context",
+    "routine_id", "gymnast_page", "year", "year_from", "year_to", "apparatus", "variant", "context",
     "apparatus_raw", "music_raw", "music_kind", "n_tracks", "parse_status",
     "competition", "location", "notes", "source_url", "revid",
 ]
@@ -50,6 +51,7 @@ def main(argv: list[str] | None = None) -> int:
         rid = routine_id(row)
         app = normalize_apparatus(row["apparatus"])
         kind, parsed = parse_music(row["music"])
+        years = parse_years(row["year"])
         for n, t in enumerate(parsed, 1):
             tracks.append({
                 "routine_id": rid, "track_no": n, "title": t.title, "work": t.work,
@@ -63,11 +65,14 @@ def main(argv: list[str] | None = None) -> int:
         )
         routines.append({
             "routine_id": rid, "gymnast_page": row["gymnast_page"], "year": row["year"],
+            "year_from": years[0] if years else "", "year_to": years[1] if years else "",
             "apparatus": app.apparatus, "variant": app.variant, "context": app.context,
             "apparatus_raw": row["apparatus"], "music_raw": row["music"], "music_kind": kind,
             "n_tracks": len(parsed), "parse_status": status,
             "competition": row["competition"], "location": row["location"],
-            "notes": ";".join(filter(None, [row["notes"], *app.notes])),
+            "notes": ";".join(filter(None, [row["notes"], *app.notes,
+                                            "season_range" if years and years[0] != years[1] else "",
+                                            "year_unreadable" if not years else ""])),
             "source_url": row["source_url"], "revid": row["revid"],
         })
 

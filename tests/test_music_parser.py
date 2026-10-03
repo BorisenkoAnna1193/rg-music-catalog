@@ -157,9 +157,53 @@ def test_two_bys_split_at_comma():
     ]
 
 
-def test_two_bys_without_any_separator_stay_unparsed():
-    t = one("Foo by Bar by Baz")
-    assert (t.status, t.title) == ("unparsed", "")
+def test_by_inside_the_title_is_not_a_credit():
+    for cell, title, artist in [
+        ("Paris By Night by Bob Sinclar", "Paris By Night", "Bob Sinclar"),
+        ("All By Myself by Celine Dion", "All By Myself", "Celine Dion"),
+        ("Stand by Me by Playing For Change Band", "Stand by Me", "Playing For Change Band"),
+    ]:
+        t = one(cell)
+        assert (t.title, t.artist, t.status) == (title, artist, "ok")
+        assert "by_in_title" in t.flags
+
+
+def test_by_inside_brackets_is_a_note_not_a_credit():
+    t = one("Come Together by the Beatles (cover by Gary Clark Jr. and Junkie XL)")
+    assert (t.title, t.artist, t.notes) == ("Come Together", "the Beatles", ["cover by Gary Clark Jr. and Junkie XL"])
+    t = one("Clair de lune (story told by Carmel Kallemaa) by Claude Debussy")
+    assert t.artist == "Claude Debussy" and "Carmel" in t.title
+
+
+def test_ambiguous_split_is_left_to_the_llm_not_guessed():
+    # the cut could be after "Thomas" or after "Earth": the rules do not guess
+    t = one("Illumination by Jennifer Thomas, Earth and Fire by Udi Harpaz & Ron Klein")
+    assert (t.status, t.title, "multiple_by" in t.flags) == ("unparsed", "", True)
+    t = one("The Pink Panther Theme by Henry Mancini, New York, New York by Frank Sinatra")
+    assert t.status == "unparsed"
+
+
+def test_unambiguous_split_with_a_single_separator():
+    _, tracks = parse_music("Dark Scrape Horror by FreshmanSound, The Code by Nemo")
+    assert [(t.title, t.artist) for t in tracks] == [("Dark Scrape Horror", "FreshmanSound"), ("The Code", "Nemo")]
+
+
+def test_from_work_by_composer_is_one_track():
+    t = one('"Aria", by Giorgia Fumanti, from The Carnival of the Animals by Camille Saint-Saëns')
+    assert (t.title, t.work, t.artist) == ("Aria", "The Carnival of the Animals", "Camille Saint-Saëns, Giorgia Fumanti")
+
+
+def test_lyrics_and_directed_credits():
+    t = one('"Poem" by Alla Pugacheva, lyrics by Marina Tsvetaeva')
+    assert (t.title, t.artist, t.notes) == ("Poem", "Alla Pugacheva", ["lyrics by Marina Tsvetaeva"])
+    t = one("Magnifica Presenze by Orchestra directed by Catalano & Giuseppe Sasso")
+    assert (t.artist, t.performer) == ("Orchestra", "Catalano & Giuseppe Sasso")
+
+
+def test_slash_without_spaces_between_two_credited_tracks():
+    _, tracks = parse_music("Everybody Wants to Rule the World by Lorde/Monsters by Tommee Profitt")
+    assert [(t.title, t.artist) for t in tracks] == [
+        ("Everybody Wants to Rule the World", "Lorde"), ("Monsters", "Tommee Profitt")]
 
 
 def test_unbalanced_quote_is_cleaned_and_flagged():

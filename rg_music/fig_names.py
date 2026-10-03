@@ -54,10 +54,17 @@ class Fetcher:
         raise RuntimeError(f"giving up: {url}")
 
     def wikidata(self, **params) -> dict:
-        data = self._get(WIKIDATA_API, params={"format": "json", "maxlag": "5", **params}).json()
-        if "error" in data:
-            raise RuntimeError(f"Wikidata: {data['error'].get('code')}: {data['error'].get('info')}")
-        return data
+        for attempt in range(1, 6):
+            resp = self._get(WIKIDATA_API, params={"format": "json", "maxlag": "30", **params})
+            data = resp.json()
+            error = data.get("error")
+            if error and error.get("code") == "maxlag":  # the server is lagging: wait as asked and retry
+                time.sleep(float(resp.headers.get("Retry-After", 5 * attempt)))
+                continue
+            if error:
+                raise RuntimeError(f"Wikidata: {error.get('code')}: {error.get('info')}")
+            return data
+        raise RuntimeError("Wikidata: still lagging after 5 attempts")
 
     def fig_name(self, fig_id: str, kind: str) -> str:
         key = f"{kind}:{fig_id}"

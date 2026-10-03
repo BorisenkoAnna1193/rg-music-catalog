@@ -1,0 +1,535 @@
+# Wikipedia articles of gymnasts from World Championships individual tables (wc_gymnasts_final.csv)
+# plus the original 10-gymnast seed. Built by hand-run script, one title per line.
+Adi Asya Katz
+Adilya Tlekenova
+Adriana Dunavska
+África Blesa
+Agnieszka Brandebura
+Agostina Vargas Re
+Aibota Yertaikyzy
+Aimee van Rooyen
+Aino Yamada
+Aiym Meirzhanova
+Aja Jerman
+Akmaral Yerekesheva
+Akshata Shete
+Alba Bautista
+Aleksandra Podgoršek
+Aleksandra Soldatova
+Aleksandra Szutenberg
+Alessia Russo (gymnast)
+Alessia Verstappen
+Alexandra Agiurgiuculese
+Alexandra Kiroi-Bogatyreva
+Alexandra Merkulova
+Alexandra Orlando
+Alexandra Piscupescu
+Alexandra Timoshenko
+Alfia Nazmutdinova
+Alia Yassin Elkatib
+Aliaa Saleh
+Aliaksandra Narkevich
+Alina Adilkhanova
+Alina Chamzina
+Alina Drăgan
+Alina Gozalova
+Alina Harnasko
+Alina Kabaeva
+Alina Maksymenko
+Alise Lebedeva
+Aliya Assymova
+Aliya Garayeva
+Aliya Yussupova
+Alja Ponikvar
+Alma Pedersen
+Almudena Cid
+Alva Svennbeck
+Amalia Lică
+Amina Zaripova
+Amy Kwan
+Ana Bautista
+Ana Luisa Abraham
+Ana Luísa Neiva
+Ana Luiza Filiorianu
+Ana Paula Ribeiro
+Ana Paula Scheffer
+Anahí Sosa
+Anastasia Simakova
+Anastasiia Salos
+Anastasija Grišanina
+Anastasiya Kisse
+Anastasiya Sarantseva
+Anastasiya Serdyukova
+Ancuța Goia
+Andrea Sinkó
+Andreea Stefanescu
+Andreea Verdeș
+Andressa Jardim
+Anelia Ralenkova
+Anette Vaher
+Angélica Kvieczynski
+Anke Abraham
+Anna Alyabyeva
+Anna Bessonova
+Anna Gurbanova
+Anna Kotchneva
+Anna Kwitniewska
+Hanna Rizatdinova
+Anna Sokolova
+Anna-Marie Ondaatje
+Annabelle Kovacs
+Annaliese Dragan
+Anora Davlyatova
+Areti Sinapidou
+Arina Averina
+Arina Charopa
+Arzu Jalilova
+Asal Akhmedova
+Ashari Gill
+Aurélie Lacour
+Ayshan Bayramova
+Begoña Blasco
+Bénédicte Augst
+Berta Miquel
+Bianca Dittrich (gymnast)
+Bianka Panova
+Boryana Kaleyn
+Breanna Labadan
+Bárbara Domingos
+Camilla Feeley
+Camille Martens
+Carmel Kallemaa
+Carmen Acedo
+Carmen Rischer
+Carolina Pascual
+Carolina Rodríguez (gymnast)
+Caroline Weber (gymnast)
+Celeste D'Arcángelo
+Chiara Ianni
+Chisaki Oiwa
+Christiana Rosenberg
+Christiane Klumpp
+Chrystalleni Trikomiti
+Cynthia Valdez
+Dalia Kutkaitė
+Sun Dan (gymnast)
+Daniela Bošanská
+Daniela Munits
+Daniela Picó
+Danielle Prince
+Danijela Simić
+Dara Terzić Šterić
+Daria Atamanov
+Darya Dmitriyeva
+Daria Kondakova
+Darja Varfolomeev
+Darya Sorokina
+Darya Viarenich
+Delphine Ledoux
+Denisa Mailat
+Denisa Sokolovská
+Diamanto Evripidou
+Diana Popova
+Diana Schmiemann
+Diane Simpson-Bundy
+Diliana Georgieva
+Dina Averina
+Dinara Gimatova
+Djamila Rakhmatova
+Doina Stăiculescu
+Dominika Červenková
+Dora Vass
+Dorota Trafankowska
+Durratun Nashihin Rosli
+Edita Schaufler
+Ekaterina Fetisova
+Ekaterina Selezneva
+Kateryna Serebrianska
+Ekaterina Vedeneeva
+Ekaterina Volkova (rhythmic gymnast)
+Elaine Koon
+Elena Karpukhina
+Elena Tkachenko
+Elena Tomas
+Olena Vitrychenko
+Eleni Andriola
+Eleni Kelaiditi
+Eleonora Romanova
+Eliane Sampaio
+Elif Celep
+Eliza Białkowska
+Elizabeth Koleva
+Elizabeth Paisieva
+Elizabeth Popova
+Elizaveta Lugovskikh
+Elizaveta Nazarenkova
+Elzhana Taniyeva
+Emilia Ekandjo
+Emilia Heichel
+Emilie Holte
+Emilie Goldblum
+Emily Beznos
+Emmi Piiroinen
+Erika Akiyama
+Erika Zhailauova
+Erika-Leigh Stirton
+Ester Kreitsman
+Esther Domínguez
+Esther Escolar
+Eunchae Seo
+Eva Brezalieva
+Eva Serrano
+Evelina Atalyants
+Evgenia Pavlina
+Evgeniya Kanaeva
+Evita Griskenas
+Evmorfia Dona
+Fanni Pigniczki
+Farida Bahnas
+Fausta Šostakaitė
+Federica Febbo
+Fidan Gurbanli
+Francesca Fox
+Frankie Jones (gymnast)
+Galima Shugurova
+Galina Beloglazova
+Gemma Frizelle
+Geovanna Santos
+Gim Yun-hee
+Gioia Casali
+Giulia Staccioli
+Giuliana Cusnier
+Grace Legote
+Guo Shasha
+Habiba Marzouk
+Hana Machatová-Bogušovská
+Hana Mičechová
+Hanna Bazhko
+Hanna Laiho
+Hanna Panna Wiesner
+Hanna Rabtsava
+Hannah McKibbin
+Hatice Gokce Emir
+Havana Hopman
+Heather Mann
+Heini Lautala
+Li Hongyang (gymnast)
+Hélène Karbanov
+Iliana Raeva
+Ilona Zeynalova
+Inga Tavdishvili
+Inna Zhukova
+Irene Germini
+Irina Deleanu
+Irina Deriugina
+Irina Devina
+Irina Gabashvili
+Irina Kikkas
+Irina Kovalchuk
+Irina Risenzon
+Irina Tchachina
+Iveta Havlíčková
+Izzah Amzan
+Jade Faulkner
+Jana Alemam
+Jana Berezko-Marggrander
+Janine Murray
+Jasmine Ramilo
+Jasmine Kerber
+Javiera Rubilar
+Jelizaveta Polstjanaja
+Jennifer Colino
+Jessica Howard
+Liu Jiahui (gymnast)
+Jimena Dominguez
+Jiřina Machatová
+Joanna Bodak
+Joanna Mitrosz
+Johanna Gabor
+Jong Chun-sil
+Jouki Tikkanen
+Julene van Rooyen
+Julia Baicheva
+Julia Rosliakova
+Julia Stavickaja
+Julia Trashlieva
+Julie Zetlin
+Julieta Cantaluppi
+Kaho Minagawa
+Karla Diaz (gymnast)
+Karolina Sklenytė
+Katalin Kiss
+Katerina Pisetsky
+Katherine Uchida
+Kati Iina Rantsi
+Katrin Taseva
+Katsiaryna Halkina
+Ketevan Arbolishvili
+Khrystyna Pohranychna
+Kim Chae-woon
+Kimberly Mason
+Krassimira Filipova
+Kristina Guiourova
+Kristina Kliukevičiūtė
+Kristina Radonjić
+Kristina Shikerova
+Krystyna Szczepańska
+Kseniya Moustafaeva
+Lada Pusch
+Lala Yusifova
+Larisa Lukyanenko
+Laura Halford
+Laura Jung
+Laura Lima
+Laura Zacchilli
+Laura Zeng
+Laurabell Kabrits
+Lauren Grüniger
+Ledia Juárez
+Lee Da-ae
+Lee Kyung-hwa
+Lee Ye-won
+Lena Asmus
+Lenka Oulehlová
+Leticia González
+Letizia Cicconcelli
+Li Gyong-hui
+Li Huilin (gymnast)
+Lia Kallio
+Lidiia Iakovleva (gymnast)
+Lili Mizuno
+Lilia Ignatova
+Liliana Lewińska
+Lily Ramonatxo
+Lina Dussan
+Lina Heleika
+Linoy Ashram
+Lisa Ingildeeva
+Lisa Wang
+Liubov Charkashyna
+Liubov Sereda
+Livia Maria Chiariello
+Lori Fung
+Luana Gomes
+Lucía González (gymnast, born 2006)
+Ludmila Savinkova
+Luisa Matsuo
+Maelle Millet
+Magdalena Brzeska
+Maisa Lloret
+Majda Milak
+Małgorzata Roszatycka
+Márcia Lopes
+Marfa Ekimova
+Margarita Kolosov
+Margarita Mamun
+Maria Avgousti
+Maria Borisova (gymnast)
+Maria Daniella Gonzalez
+Maria Gigova
+Maria Kitkarska
+Maria Martin
+Maria Petrova (rhythmic gymnast)
+Maria Ringinen
+Maria Sansaridou
+Mariam Chamilova
+Mariam Selim
+Mariami Kajaia
+Marie Therese Ruud
+Marina Durunda
+Marina Lobatch
+Marina Malpica
+Mariya Mateva
+Marta Bobo
+Marta Cantón
+Mary Fuzesi
+Mary Sanders
+María Añó
+María Jesús Alegre
+Mayte Guzman
+Maëna Millon
+Maša Nikolić
+Megan Chu
+Meital Sumkin
+Melitina Staniouta
+Micaela Imperatori
+Michaela Metallidou
+Miho Yamada (gymnast)
+Mikayla Angeline Yang
+Mila Marinova
+Milena Baldassarri
+Milena Reljin
+Mimi-Isabella Cesar
+Mirano Kita
+Mitsuru Hiraguchi
+Miyabi Akiya
+Mojca Rode
+Mónica Ferrández
+Monija Čebašek
+Monika Míčková
+Montse Manzanares
+Naazmi Johnston
+Narmin Bayramova
+Natalia García
+Natália Gaudio
+Natalia Godunko
+Natalia Kozioł
+Natalia Krachinnekova
+Natalia Lipkovskaya
+Natalia Ovtchinnikova
+Natalie Garcia (gymnast)
+Nathalie Fauquette
+Neshka Robeva
+Neta Rivkin
+Neviana Vladinova
+Ng Joe Ee
+Nicol Ruprecht
+Nicol Voronkov
+Nicol Zelikman
+Nicole Gerdes
+Noemi Peschel
+Norah Demierre
+Nurinisso Usmanova
+Nóra Érfalvy
+Odette Richard
+Olena Diachenko
+Olga Bogdanova (gymnast)
+Olga Gontar
+Olga Kapranova
+Olga Karmansky
+Oriana Viñas
+Oksana Kostina
+Oksana Skaldina
+Panagiota Lytra
+Patria Hume
+Patricia Bezzoubenko
+Polina Berezina
+Polina Horodnycha
+Polina Karika
+Polina Kozitskiy
+Pooja Surve
+Praewa Misato Philaphandeth
+Rachel Ennis
+Rachel Stoyanov
+Rahel Vigdozchik
+Rajani Sharma
+Rebecca Gergalo
+Rebecca Sereda
+Recouvith Bloch
+Regina Weber
+Reina Matsusaka
+Rieko Matsunaga
+Rin Keys
+Rita Araújo
+Romina Laurito
+Rosemarie Halbritter
+Rumyana Stefanova
+Rut Castillo
+Sabina Ashirbayeva
+Sabina Tashkenbaeva
+Sakura Hayakawa
+Salome Pazhava
+Samantha Ferrari
+Sara Kragulj
+Sara Llana
+Sara Rostom
+Sara Staykova
+Selina Zhumatayeva
+Deng Senyue
+Serena Lu
+Shang Rong (gymnast)
+Shelby Kisiel
+Shin Soo-ji
+Shulamit Goldstein
+Zhang Shuo (gymnast)
+Sibongile Mjekula
+Koi Sie Yan
+Silvia Miteva
+Simona Peycheva
+Simone Luiz
+Sofia Hemmings
+Sofia Ilteriakova
+Sofia Raffaeli
+Sohn Ji-in
+Sol Martinez Fainberg
+Son Yeon-jae
+Sophie Crane
+Špela Kratochwill
+Stephani Sherlock
+Stephanie Dimitrova
+Stephanie Sandler
+Stiliana Nikolova
+Sumire Kita
+Susana Mendizábal
+Susanna Marchesi
+Suzanna Shahbazian
+Svetlana Rudalova
+Or Tokayev
+Taisiia Onofriichuk
+Takhmina Ikromova
+Tamara Artić
+Tamara Yerofeeva
+Tara Dragas
+Tatiana Cocsanova
+Tatiana Druchinina
+Tatiana Kravtchenko
+Tatiana Ogrizko
+Tatiana Popova (gymnast)
+Tatyana Volozhanina
+Taylor Tirahardjo
+Teodora Alexandrova
+Teresa Folga
+Teresa Gorospe
+Tharatip Sridee
+Theodora Pallidou
+Tjaša Šeme
+Tsvetelina Stoyanova
+Tuğçe Oylumlu
+Ulyana Trofimova
+Ute Lehmann
+Uzume Kawasaki
+Vafa Huseynova
+Valentina Domenig-Ozimic
+Valeria Kurylskaya
+Vanessa Galindo
+Varvara Filiou
+Venera Zaripova
+Vera Sessina
+Vera Tugolukova
+Veronica Bertolini
+Veronica Navarro
+Victoria Veinberg Filanovsky
+Victoria Vîlcu Buruiană
+Victoria Ystborg
+Viktoria Bengtsson
+Viktoria Bogdanova
+Viktória Fráter
+Viktoria Mazur
+Viktoriia Onopriienko
+Viktoriia Shynkarenko
+Virginia Manzanera
+Vlada Nikolchenko
+Wang Qi (gymnast)
+Wang Xiuyun
+Wang Zihan
+Wang Zilu
+Yana Kudryavtseva
+Yana Tsikaridze
+Yang Yuqing
+Yanika Vartlaan
+Yana Batyrshina
+Yasmine Rostom
+Zhao Yating
+Xiao Yiming
+Yosmina Rakhimova
+Yukari Kawamoto
+Yukari Murata
+Yulia Barsukova
+Yulia Galukhin
+Yulia Raskina
+Zeynab Javadli
+Zhang Doudou
+Zhao Yue (gymnast)
+Zhong Ling (gymnast)
+Zlata Arkatova
+Zohra Aghamirova

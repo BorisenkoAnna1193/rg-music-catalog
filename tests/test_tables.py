@@ -111,3 +111,25 @@ def test_classify_header_variants():
     assert classify(["Year", "Apparatus", "Music Title"]) == "routine"
     assert classify(["Year", "Apparatus", "Music title"]) == "routine"
     assert classify(["Year", "Competition Description", "Location", "Music", "Apparatus"]) == "competition"
+
+
+REPEATED_HEADER = """
+<table class="wikitable">
+<tr><th>Year</th><th>Apparatus</th><th>Music</th></tr>
+<tr><td>2002</td><td>Hoop</td><td>"Carmen" by Bizet</td></tr>
+<tr><th>Year</th><th>Apparatus</th><th>Music</th></tr>
+<tr><td>2003</td><td>Ball</td><td>"Bolero" by Ravel</td></tr>
+</table>
+"""
+
+
+def test_header_repeated_inside_the_table_is_not_a_data_row():
+    _, rows = extract_music_tables(REPEATED_HEADER)
+    assert [(r.year, r.apparatus) for r in rows] == [("2002", "Hoop"), ("2003", "Ball")]
+
+
+def test_placeholders_mean_no_music():
+    html = """<table class="wikitable"><tr><th>Year</th><th>Apparatus</th><th>Music</th></tr>
+    <tr><td>1996</td><td>Hoop</td><td>unknown music</td></tr><tr><td>1997</td><td>Ball</td><td>???</td></tr></table>"""
+    _, rows = extract_music_tables(html)
+    assert [r.music for r in rows] == ["", ""]

@@ -1,40 +1,64 @@
 gymnast_page,competition,year,apparatus,competition_music,routine_year,routine_apparatus,routine_music,similarity,status
-Darja Varfolomeev,Paris 2024,2024,Hoop,"""Jackseye's Tale, Escape from East Berlin, Take You Down"" by Daniel Pemberton",2024,Hoop,"Jackseye's Tale, Escape from East Berlin, Take You Down by Daniel Pemberton",1.00,match
-Darja Varfolomeev,Paris 2024,2024,Ball,"""In the Closet"" by Michael Jackson",2024,Ball,In the Closet by Michael Jackson,1.00,match
-Darja Varfolomeev,Paris 2024,2024,Clubs,"""Batshit - Ilkay Sencan Remix"" by Sofi Tukker",2024,Clubs,Batshit - Ilkay Sencan Remix by Sofi Tukker,1.00,match
-Darja Varfolomeev,Paris 2024,2024,Ribbon,"""Generali"" by HAVASI",2024,Ribbon,Generali by HAVASI,1.00,match
-Boryana Kaleyn,Tokyo 2020,2021,Hoop,"""Kakamora"" from Moana by Mark Mancina",2021,Hoop,"""Kakamora"" (from Moana) by Mark Mancina",1.00,match
-Boryana Kaleyn,Tokyo 2020,2021,Ball,"""Vecheray, Rado"" by Slavi Trifonov",2021,Ball,"""Vecheray, Rado"" by Slavi Trifonov",1.00,match
-Boryana Kaleyn,Tokyo 2020,2021,Clubs,"""3 to Tango"" by Pitbull",2021,Clubs,"""3 to Tango"" by Pitbull",1.00,match
-Boryana Kaleyn,Tokyo 2020,2021,Ribbon,"""Enter Sandman"" by New Orleans Band (the first part is from Mozart's Symphony No. 40)",2021,Ribbon,"""Enter Sandman"" by New Orleans Band (the first part is from Mozart's Symphony No. 40)",1.00,match
-Boryana Kaleyn,Paris 2024,2024,Hoop,"""특(S-Class)"" by Stray Kids",2024,Hoop,"""특(S-Class)"" by Stray Kids",1.00,match
-Boryana Kaleyn,Paris 2024,2024,Ball,"""Never Enough"" (from The Greatest Showman) by Loren Allred",2024,Ball,"""Never Enough"" (from The Greatest Showman) by Loren Allred",1.00,match
-Boryana Kaleyn,Paris 2024,2024,Clubs,"""SOS d'un terrien en détresse"" by Dimash Qudaibergen",2024,Clubs,"""SOS d'un terrien en détresse"" by Dimash Qudaibergen",1.00,match
-Boryana Kaleyn,Paris 2024,2024,Ribbon,"""The Power in Me"" by Emelina Gorcheva",2024,Ribbon,"""The Power in Me"" by Emelina Gorcheva",1.00,match
-Sofia Raffaeli,Paris 2024,2024,Hoop,Rescue by Lauren Daigle,2024,Hoop,Rescue by Lauren Daigle,1.00,match
-Sofia Raffaeli,Paris 2024,2024,Ball,Bella ci dormi by Maria Mazzotta and Pulcinella,2024,Ball,Bella ci dormi by Maria Mazzotta and Pulcinella,1.00,match
-Sofia Raffaeli,Paris 2024,2024,Clubs,"Dark Mirror by Power-Haus, Christian Reindl and Lucie Paradis",2024,Clubs,"Dark Mirror by Power-Haus, Christian Reindl and Lucie Paradis",1.00,match
-Sofia Raffaeli,Paris 2024,2024,Ribbon,Vesoul by Mouron and Terry Truck,2024,Ribbon,Vesoul by Mouron and Terry Truck,1.00,match
-Linoy Ashram,Tokyo 2020,2021,Hoop,"Haste by Really Slow Motion, Giant Apes",2021,Hoop,"Haste by Really Slow Motion, Giant Apes",1.00,match
-Linoy Ashram,Tokyo 2020,2021,Ball,Big in Japan by Ane Brun,2021,Ball,Big in Japan by Ane Brun,1.00,match
-Linoy Ashram,Tokyo 2020,2021,Clubs,"Crazy in Love, Diva, Run The World by Beyoncé, Level Up by Ciara",2021,Clubs,"Crazy in Love, Diva, Run The World by Beyoncé, Level Up by Ciara",1.00,match
-Linoy Ashram,Tokyo 2020,2021,Ribbon,Hava Nagila (Israeli folk song),2021,Ribbon,Hava Nagila an Israeli folk song,0.95,match_fuzzy
-Dina Averina,Tokyo 2020,2021,Hoop,"""Thunderstruck"" by David Garrett",2021,Hoop,"""Thunderstruck"" by David Garrett",1.00,match
-Dina Averina,Tokyo 2020,2021,Ball,"""Symphony No. 6 in B minor, Op. 74"" by Pyotr Tchaikovsky",2021,Ball,"""Symphony No. 6 in B minor, Op. 74"" by Pyotr Tchaikovsky",1.00,match
-Dina Averina,Tokyo 2020,2021,Clubs,"""FOGO"" by Garmiani feat. Julimar Santos",2021,Clubs,"""FOGO"" by Garmiani feat. Julimar Santos",1.00,match
-Dina Averina,Tokyo 2020,2021,Ribbon,"""La Cumparsita"" by Yasmin Levy",2021,Ribbon,"""La Cumparsita"" by Yasmin Levy",1.00,match
+Alexandra Timoshenko,Barcelona 1992,1992,Rope,"Gori, Gori Moya Zvezda music from Russian Romance by Volodymyr Bystryakov",,,,0.00,no_routine_for_apparatus
+Alexandra Timoshenko,Barcelona 1992,1992,Hoop,Main Title / Love Theme music from Wild Orchid by Simon Goldenberg & Geoff MacCormack,,,,0.00,no_routine_for_apparatus
+Alexandra Timoshenko,Barcelona 1992,1992,Ball,I Spoved by Volodymyr Bystryakov,,,,0.00,no_routine_for_apparatus
+Alexandra Timoshenko,Seoul 1988,1988,Ribbon,"Leyenda (from Suite Española) by Isaac Manuel, Francisco Albaniz",,,,0.00,no_routine_for_apparatus
+Alexandra Timoshenko,Seoul 1988,1988,Rope,Summertime (from Porgy and Bess) by George Gershwin,,,,0.00,no_routine_for_apparatus
+Alexandra Timoshenko,Seoul 1988,1988,Clubs,Summertime (from Porgy and Bess) by George Gershwin,,,,0.00,no_routine_for_apparatus
+Aliaksandra Narkevich,London 2012,2012,5 Balls,Allegro Non Molto (Winter) by Antonio Vivaldi,,,,0.00,no_routine_for_apparatus
+Aliaksandra Narkevich,London 2012,2012,3 Ribbons + 2 Hoops,"24 Caprices, Op. 1: Caprice No. 24 in A Minor, Op. 1, No. 24 by Ilya Kaler",,,,0.00,no_routine_for_apparatus
 Alina Harnasko,Tokyo 2020,2021,Hoop,Moonlight Sonata by Tommee Profitt,2021,Hoop,Moonlight Sonata by Tommee Profitt,1.00,match
 Alina Harnasko,Tokyo 2020,2021,Ball,The Hardest Button to Button by The White Stripes,2021,Ball,The Hardest Button to Button by The White Stripes,1.00,match
 Alina Harnasko,Tokyo 2020,2021,Clubs,"L'assasymphonie from Mozart, l'Opéra Rock by Florent Mothe",2021,Clubs,"L'assasymphonie from Mozart, l'Opéra Rock by Florent Mothe",1.00,match
 Alina Harnasko,Tokyo 2020,2021,Ribbon,Nocturne by Yuri Vesnyak,2021,Ribbon,Nocturne by Yuri Vesnyak,1.00,match
-Margarita Mamun,Rio 2016,2016,Hoop,Concerto de Berlin by Vladimir Cosma,2016,Hoop (2nd),Concerto de Berlin by Vladimir Cosma,1.00,match
-Margarita Mamun,Rio 2016,2016,Ball,"Morceaux De Fantasie, Op.3:I.Elegie by Mischa Maisky",2016,Ball,"Morceaux De Fantasie, Op.3:I.Elegie by Mischa Maisky",1.00,match
-Margarita Mamun,Rio 2016,2016,Clubs,"We Will Rock You by Queen, Pink",2016,Clubs,"We Will Rock You by Queen, Pink",1.00,match
-Margarita Mamun,Rio 2016,2016,Ribbon,"A New Swan Queen, Night of Terror, Perfection music from The Black Swan by Clint Mansell",2016,Ribbon,"A New Swan Queen, Night of Terror, Perfection music from Black Swan by Clint Mansell",0.98,match_fuzzy
-Yana Kudryavtseva,Rio 2016,2016,Hoop,"""Kon (Slavyanskaya)"" by Khor Turetskogo",2016,Hoop,"""Kon (Slavyanskaya)"" by Khor Turetskogo",1.00,match
-Yana Kudryavtseva,Rio 2016,2016,Ball,"""Piano Concerto No.23 – Adagio"", ""Piano Concerto No. 21 – Andante"", by Wolfgang Amadeus Mozart",2016,Ball,"""Piano Concerto No.23 – Adagio"", ""Piano Concerto No. 21 – Andante from Toy Story 4"", by Wolfgang Amadeus Mozart",0.91,match_fuzzy
-Yana Kudryavtseva,Rio 2016,2016,Clubs,Black Gold by Armand Amar,2016,Clubs,Black Gold by Armand Amar,1.00,match
-Yana Kudryavtseva,Rio 2016,2016,Ribbon,Valse Triste by Jean Sibelius,2016,Ribbon,Valse Triste by Jean Sibelius,1.00,match
+Alina Kabaeva,Athens 2004,2004,Ribbon,Sphynx by Giampiero Ponte,,,,0.00,no_routine_for_apparatus
+Alina Kabaeva,Athens 2004,2004,Ball,Syrtaki by D. Moutsis,,,,0.00,no_routine_for_apparatus
+Alina Kabaeva,Athens 2004,2004,Hoop,Carmen's entrance and Habanera by Georges Bizet,,,,0.00,no_routine_for_apparatus
+Alina Kabaeva,Athens 2004,2004,Clubs,"Sphynx (Club Mix) by Giampiero Ponte, Moran",,,,0.00,no_routine_for_apparatus
+Alina Kabaeva,Sydney 2000,2000,Ribbon,Dilorom / Yor Yor by Yulduz Usmanova and Shahzod,,,,0.00,no_routine_for_apparatus
+Alina Kabaeva,Sydney 2000,2000,Ball,Felicia by Luis Bravo,,,,0.00,no_routine_for_apparatus
+Alina Kabaeva,Sydney 2000,2000,Hoop,Les Toreadors by Georges Bizet,,,,0.00,no_routine_for_apparatus
+Alina Kabaeva,Sydney 2000,2000,Rope,Tsyganochka,,,,0.00,no_routine_for_apparatus
+Alina Maksymenko,London 2012,2012,Ribbon,Asturias by Joja Wendt,2012,Ribbon,"""Asturias"" by Joja Wendt",1.00,match
+Alina Maksymenko,London 2012,2012,Ball,Mission Impossible Theme by David Garrett,2012,Ball,"""Mission Impossible Theme"" by David Garrett",1.00,match
+Alina Maksymenko,London 2012,2012,Hoop,"Mercy In Darkness, Archangel, Titan Dune by Two Steps From Hell",2012,Hoop,"""Mercy In Darkness"",""Archangel"",""Titan Dune"" by Two Steps from Hell",1.00,match
+Alina Maksymenko,London 2012,2012,Clubs,"Tamacun, Diablo Rojo by Rodrigo y Gabriela",2012,Clubs (New),"""Tamacun"", ""Diablo Rojo"" by Rodrigo Y Gabriela",1.00,match
+Alina Maksymenko,Beijing 2008,2008,5 Ropes,Summer by Antonio Vivaldi,,,,0.00,no_routine_for_apparatus
+Alina Maksymenko,Beijing 2008,2008,3 Hoops / 2 Clubs,Theme music from Avrora by Valeri Tishler,,,,0.00,no_routine_for_apparatus
+Aliya Garayeva,London 2012,2012,Hoop,"Volare by Dean Martin, Bang Bang by Tito Nieves, Quien Como Tu by JJ Vianello",,,,0.00,no_routine_for_apparatus
+Aliya Garayeva,London 2012,2012,Ball,You Can Leave Your Hat On by Joe Cocker,,,,0.00,no_routine_for_apparatus
+Aliya Garayeva,London 2012,2012,Clubs,Nazende sevgilim by Bilen Yildirir,,,,0.00,no_routine_for_apparatus
+Aliya Garayeva,London 2012,2012,Ribbon,"Move, 19 Palqü (Original Mix) by Said Mrad, Backside Artists Vs. Antoine Montana",,,,0.00,no_routine_for_apparatus
+Aliya Garayeva,Beijing 2008,2008,Rope,Danse de Phryné (Walpurgis Night) from Faust by Charles Gounod,,,,0.00,no_routine_for_apparatus
+Aliya Garayeva,Beijing 2008,2008,Hoop,"Monologue: Nurida, Schahriar's Variation, Orgy, Duet: Schahriar And Scheherazade, Mardshana's Dance by Fikret Amirov",,,,0.00,no_routine_for_apparatus
+Aliya Garayeva,Beijing 2008,2008,Clubs,Snakefood / Samb Adagio by Safri duo,,,,0.00,no_routine_for_apparatus
+Aliya Garayeva,Beijing 2008,2008,Ribbon,Tango and Resurgence by Sultan Ali,,,,0.00,no_routine_for_apparatus
+Aliya Yussupova,Beijing 2008,2008,Hoop,Music from Da Vinci Code by Hans Zimmer,,,,0.00,no_routine_for_apparatus
+Aliya Yussupova,Beijing 2008,2008,Rope,Scott & Fran's Paso Doble by David Hirschfelder & The Bogo Pogo Orchestra,,,,0.00,no_routine_for_apparatus
+Aliya Yussupova,Beijing 2008,2008,Clubs,Spartacus by Aram Khatchaturian,,,,0.00,no_routine_for_apparatus
+Aliya Yussupova,Beijing 2008,2008,Ribbon,Artsakh by Ara Gevorkian,,,,0.00,no_routine_for_apparatus
+Aliya Yussupova,Athens 2004,2004,Ball,Mystics Lullaby / Anatolian Deluxe / Marrakesh Night Market by Loreena McKennitt / Turkish Percussion Group,,,,0.00,no_routine_for_apparatus
+Aliya Yussupova,Athens 2004,2004,Hoop,Bolero (Closing Credits) music from Moulin Rouge by Steve Sharples,,,,0.00,no_routine_for_apparatus
+Aliya Yussupova,Athens 2004,2004,Clubs,Ya Habibi Yallah by Alabina,,,,0.00,no_routine_for_apparatus
+Aliya Yussupova,Athens 2004,2004,Ribbon,Op-sa by Esil Dyuran,,,,0.00,no_routine_for_apparatus
+Amina Zaripova,Atlanta 1996,1996,Ribbon,"Kitri, Entrance, Coda music from Don Quixote by Leon Minkus",,,,0.00,no_routine_for_apparatus
+Amina Zaripova,Atlanta 1996,1996,Rope,Theme from Prince Igor by Alexander Borodin,,,,0.00,no_routine_for_apparatus
+Amina Zaripova,Atlanta 1996,1996,Ball,At the Circus / Adagio of Spartacus and Phrygia music from Spartacus by Aram Khatchaturian,,,,0.00,no_routine_for_apparatus
+Amina Zaripova,Atlanta 1996,1996,Clubs,Ole Guapa by Malando,,,,0.00,no_routine_for_apparatus
+Anastasiia Salos,Tokyo 2020,2021,Hoop,Damina by Mgzavrebi,2021,Hoop,Damina by Mgzavrebi,1.00,match
+Anastasiia Salos,Tokyo 2020,2021,Ball,Magic Mirror by Xavier Mortimer & Maxime Rodriguez,2021,Ball,Magic Mirror by Xavier Mortimer & Maxime Rodriguez,1.00,match
+Anastasiia Salos,Tokyo 2020,2021,Clubs,Between Heaven and Earth by Camerata,2021,Clubs,Between Heaven and Earth by Camerata,1.00,match
+Anastasiia Salos,Tokyo 2020,2021,Ribbon,The Flight Attendant by Blake Neely,2021,Ribbon,The Flight Attendant by Blake Neely,1.00,match
+Andreea Stefanescu,London 2012,2012,5 Balls,Black Gold by Armand Amar,,,,0.00,no_routine_for_apparatus
+Andreea Stefanescu,London 2012,2012,3 Ribbons + 2 Hoops,William Tell Overture by Gioachino Rossini,,,,0.00,no_routine_for_apparatus
+Anna Bessonova,Beijing 2008,2008,Ribbon,Hopak (Ukrainian Folk),2008,Ribbon,Hopak (Ukrainian Folk),1.00,match
+Anna Bessonova,Beijing 2008,2008,Rope,Shiro's Estate by Brian Tyler,2008,Rope,Shiro's Estate by Brian Tyler,1.00,match
+Anna Bessonova,Beijing 2008,2008,Hoop,Avrora by Valeri Tishler,2008,Hoop,music from Avrora by Valeri Tishler,0.81,music_differs
+Anna Bessonova,Beijing 2008,2008,Clubs,Gladiator Soundtrack – Barbarian Horde,2008,Clubs,"Gladiator soundtrack – ""Barbarian Horde""",1.00,match
+Anna Bessonova,Athens 2004,2004,Ribbon,Nyah / La Cavalera from Mission Impossible II by Hans Zimmer and Elliot Goldenthal,2004,Ribbon,Nyah / La Cavalera from Mission Impossible II by Hans Zimmer and Elliot Goldenthal,1.00,match
+Anna Bessonova,Athens 2004,2004,Ball,Spartacus by Aram Khachaturian,2004,Ball,Spartacus by Aram Khachaturian,1.00,match
+Anna Bessonova,Athens 2004,2004,Hoop,Molto Meno Mosso | / Allegro – Valse – Allegro – Vivo | / Finale – Andante – Allegro Agitatoo - | Alla Breve – Moderato e Maestoso – Moderato | / Moderato by Tchaikovsky,2004,Hoop,Molto Meno Mosso / Allegro – Valse – Allegro – Vivo / Finale – Andante – Allegro Agitatoo - | Alla Breve – Moderato e Maestoso – Moderato / Moderato by Tchaikovsky,1.00,match
+Anna Bessonova,Athens 2004,2004,Clubs,Mona Lisa Overdrive from Matrix Reloaded by Don Davis & Juno Reactor,2004,Clubs,Mona Lisa Overdrive from The Matrix Reloaded by Don Davis and Juno Reactor,0.97,match_fuzzy
 Hanna Rizatdinova,Rio 2016,2016,Ribbon,"Tomorrow Never Comes, Time To Go Crazy by Rishi & Harshil",2016,Ribbon,"Tomorrow Never Comes, Time To Go Crazy by Rishi & Harshil",1.00,match
 Hanna Rizatdinova,Rio 2016,2016,Clubs,"They Don't Care About Us by Olodum, Michael Jackson, David Garrett",2016,Clubs,"They Don't Care About Us by Olodum, Michael Jackson, David Garrett",1.00,match
 Hanna Rizatdinova,Rio 2016,2016,Ball,I Put a Spell on You music from Fifty Shades of Grey by Annie Lennox,2016,Ball,I Put a Spell on You music from Fifty Shades of Grey by Annie Lennox,1.00,match
@@ -43,6 +67,48 @@ Hanna Rizatdinova,London 2012,2012,Ribbon,Smooth Criminal by 2 Cellos (Sulic & H
 Hanna Rizatdinova,London 2012,2012,Ball,The Promise by Secret Garden,2012,Ball,The Promise by Secret Garden,1.00,match
 Hanna Rizatdinova,London 2012,2012,Hoop,The Fast And The Furious: Tokyo Drift by Brian Tyler,2012,Hoop,The Fast And The Furious: Tokyo Drift by Brian Tyler,1.00,match
 Hanna Rizatdinova,London 2012,2012,Clubs,Black Gold by Armand Amar,2012,Clubs,Black Gold by Armand Amar,1.00,match
+Arina Averina,Tokyo 2020,2021,Hoop,"""The Firebird"" by Igor Stravinsky",2021,Hoop,"""The Firebird"", by Igor Stravinsky",1.00,match
+Arina Averina,Tokyo 2020,2021,Ball,"""Ironside"", ""Crane/White Lightning"", ""Don't Let Me Be Misunderstood"" from Kill Bill, by Quincy Jones, Charles Bernstein & RZA, Santa Esmeralda",2021,Ball,"""Ironside"", ""Crane/White Lightning"", ""Don't Let Me Be Misunderstood"" from Kill Bill, by Quincy Jones, Charles Bernstein & RZA, Santa Esmeralda",1.00,match
+Arina Averina,Tokyo 2020,2021,Clubs,"""Bella Ciao (Música Original de la Serie la Casa de Papel/Money Heist)"", by Manu Pilas",2021,Clubs (first),"""Bella Ciao (Música Original de la Serie la Casa de Papel/Money Heist)"", by Manu Pilas",1.00,match
+Arina Averina,Tokyo 2020,2021,Ribbon,"""Seguidilla"" from Carmen, by Georges Bizet",2021,Ribbon (first),"""Seguidilla"" from Carmen, by Georges Bizet",1.00,match
+Boryana Kaleyn,Tokyo 2020,2021,Hoop,"""Kakamora"" from Moana by Mark Mancina",2021,Hoop,"""Kakamora"" (from Moana) by Mark Mancina",1.00,match
+Boryana Kaleyn,Tokyo 2020,2021,Ball,"""Vecheray, Rado"" by Slavi Trifonov",2021,Ball,"""Vecheray, Rado"" by Slavi Trifonov",1.00,match
+Boryana Kaleyn,Tokyo 2020,2021,Clubs,"""3 to Tango"" by Pitbull",2021,Clubs,"""3 to Tango"" by Pitbull",1.00,match
+Boryana Kaleyn,Tokyo 2020,2021,Ribbon,"""Enter Sandman"" by New Orleans Band (the first part is from Mozart's Symphony No. 40)",2021,Ribbon,"""Enter Sandman"" by New Orleans Band (the first part is from Mozart's Symphony No. 40)",1.00,match
+Boryana Kaleyn,Paris 2024,2024,Hoop,"""특(S-Class)"" by Stray Kids",2024,Hoop,"""특(S-Class)"" by Stray Kids",1.00,match
+Boryana Kaleyn,Paris 2024,2024,Ball,"""Never Enough"" (from The Greatest Showman) by Loren Allred",2024,Ball,"""Never Enough"" (from The Greatest Showman) by Loren Allred",1.00,match
+Boryana Kaleyn,Paris 2024,2024,Clubs,"""SOS d'un terrien en détresse"" by Dimash Qudaibergen",2024,Clubs,"""SOS d'un terrien en détresse"" by Dimash Qudaibergen",1.00,match
+Boryana Kaleyn,Paris 2024,2024,Ribbon,"""The Power in Me"" by Emelina Gorcheva",2024,Ribbon,"""The Power in Me"" by Emelina Gorcheva",1.00,match
+Darya Dmitriyeva,London 2012,2012,Ribbon,Revolutions by Jean Michel Jarre,2012,Ribbon,Revolutions by Jean Michel Jarre,1.00,match
+Darya Dmitriyeva,London 2012,2012,Ball,Ave Maria by Libera | Immortelle by Lara Fabian,2012,Ball,"Ave Maria by Libera, Immortelle by Lara Fabian",1.00,match
+Darya Dmitriyeva,London 2012,2012,Hoop,Piano Concerto No. 2 In C-minor | Op. 18: I. Moderato by Sergei Rachmaninoff,2012,Hoop,"Piano Concerto No. 2 In C-minor, Op. 18: I. Moderato by Sergei Rachmaninoff",1.00,match
+Darya Dmitriyeva,London 2012,2012,Clubs,Beat Machine by Gloria Estefan | The Expert by Yello | Tradition by Unknown,2012,Clubs,Beat Machine / The Expert / Tradition by Gloria Estefan / Yello / Unknown,0.65,music_differs
+Darja Varfolomeev,Paris 2024,2024,Hoop,"""Jackseye's Tale, Escape from East Berlin, Take You Down"" by Daniel Pemberton",2024,Hoop,"Jackseye's Tale, Escape from East Berlin, Take You Down by Daniel Pemberton",1.00,match
+Darja Varfolomeev,Paris 2024,2024,Ball,"""In the Closet"" by Michael Jackson",2024,Ball,In the Closet by Michael Jackson,1.00,match
+Darja Varfolomeev,Paris 2024,2024,Clubs,"""Batshit - Ilkay Sencan Remix"" by Sofi Tukker",2024,Clubs,Batshit - Ilkay Sencan Remix by Sofi Tukker,1.00,match
+Darja Varfolomeev,Paris 2024,2024,Ribbon,"""Generali"" by HAVASI",2024,Ribbon,Generali by HAVASI,1.00,match
+Dina Averina,Tokyo 2020,2021,Hoop,"""Thunderstruck"" by David Garrett",2021,Hoop,"""Thunderstruck"" by David Garrett",1.00,match
+Dina Averina,Tokyo 2020,2021,Ball,"""Symphony No. 6 in B minor, Op. 74"" by Pyotr Tchaikovsky",2021,Ball,"""Symphony No. 6 in B minor, Op. 74"" by Pyotr Tchaikovsky",1.00,match
+Dina Averina,Tokyo 2020,2021,Clubs,"""FOGO"" by Garmiani feat. Julimar Santos",2021,Clubs,"""FOGO"" by Garmiani feat. Julimar Santos",1.00,match
+Dina Averina,Tokyo 2020,2021,Ribbon,"""La Cumparsita"" by Yasmin Levy",2021,Ribbon,"""La Cumparsita"" by Yasmin Levy",1.00,match
+Kateryna Serebrianska,Atlanta 1996,1996,Ribbon,Tipsy Bumblebee,1996,Ribbon,Tipsy Bumblebee by Günter Noris Gala Big Band,0.50,music_differs
+Kateryna Serebrianska,Atlanta 1996,1996,Rope,Kalinka/Katyusha,1996,Rope,Kalinka / Katyusha (Russian traditional),0.62,music_differs
+Kateryna Serebrianska,Atlanta 1996,1996,Ball,Atrocious Romance,1996,Ball,Atrocious Romance,1.00,match
+Kateryna Serebrianska,Atlanta 1996,1996,Clubs,Nur kein genieren,1996,Clubs,Nur kein genieren from Elisabeth,0.69,music_differs
+Ekaterina Vedeneeva,Tokyo 2020,2021,Hoop,"""Libertango"" by The Swingle Singers",2021,Hoop,Libertango by The Swingle Singers,1.00,match
+Ekaterina Vedeneeva,Tokyo 2020,2021,Ball,"""Boléro: Tempo di Bolero"" by London Symphony Orchestra, Claudio Abbado",2021,Ball,"Boléro: Tempo di Bolero by London Symphony Orchestra, Claudio Abbado",1.00,match
+Ekaterina Vedeneeva,Tokyo 2020,2021,Clubs,"""Белый лебедь"" by Tamara Gverdtsiteli",2021,Clubs,Белый лебедь by Tamara Gverdtsiteli,1.00,match
+Ekaterina Vedeneeva,Tokyo 2020,2021,Ribbon,"""Nocturne"" by Tamara Gverdtsiteli, Dmitry Duzhev",2021,Ribbon,"Nocturne by Tamara Gverdtsiteli, Dmitry Duzhev",1.00,match
+Ekaterina Vedeneeva,Paris 2024,2024,Hoop,"""Mind Heist: Evolution"" by Zack Hemsey",2024,Hoop,Mind Heist: Evolution by Zack Hemsey,1.00,match
+Ekaterina Vedeneeva,Paris 2024,2024,Ball,"""Demain n'existe pas"" by Lara Fabian",2024,Ball,Demain n'existe pas by Lara Fabian,1.00,match
+Ekaterina Vedeneeva,Paris 2024,2024,Clubs,"""Swan Lake (Act IV Allegro)"" by Smolensk Symphonic Orchestra",2024,Clubs,"""Swan Lake (Act IV Allegro)"", by Smolensk Symphonic Orchestra",1.00,match
+Ekaterina Vedeneeva,Paris 2024,2024,Ribbon,"""Do not Deny, if Loving"" by Vlad Nezhniy",2024,Ribbon,"Do not Deny, if Loving by Vlad Nezhniy",1.00,match
+Olena Vitrychenko,Sydney 2000,2000,Ribbon,Plaza of Execution / Stealing the Map music from The Mask of Zorro by James Horner,2000,Ribbon,Plaza of Execution / Stealing the Map music from The Mask of Zorro by James Horner,1.00,match
+Olena Vitrychenko,Sydney 2000,2000,Rope,"Sing, Sing, Sing by Benjamin Goodman",1996,Rope,"Sing, Sing, Sing by Benjamin Goodman",1.00,match_but_year_-4
+Olena Vitrychenko,Sydney 2000,2000,Ball,Pink Dream by Anatoly Vekshin,1993,Ball (second),Marche en la by Ennio Morricone,0.37,music_differs
+Olena Vitrychenko,Sydney 2000,2000,Hoop,Toccata and Fugue in D Minor by Vanessa Mae,2000,Hoop,Toccata and Fugue in D Minor by Vanessa Mae,1.00,match
+Olena Vitrychenko,Atlanta 1996,1996,Rope,"Sing, Sing, Sing by Benjamin Goodman",1996,Rope,"Sing, Sing, Sing by Benjamin Goodman",1.00,match
+Olena Vitrychenko,Atlanta 1996,1996,Ball,Pink Dream by Anatoly Vekshin,1993,Ball (second),Marche en la by Ennio Morricone,0.37,music_differs
 Evgeniya Kanaeva,London 2012,2012,Ball,"""Concerto (Ballet)"" (Les Demoiselles de Rochefort OST) by Michel Legrand",2012,Ball (second),"""Concerto (Ballet)"" (Les Demoiselles de Rochefort OST), by Michel Legrand",1.00,match
 Evgeniya Kanaeva,London 2012,2012,Ribbon,"""Fantasie Impromptu No 66"" by Frédéric Chopin",2012,Ribbon,"""Fantasie Impromptu"", by Frédéric Chopin",0.93,match_fuzzy
 Evgeniya Kanaeva,London 2012,2012,Hoop,"""The Rite of Spring"" by Igor Stravinsky",2012,Hoop (third),"""The Rite of Spring"", by Igor Stravinsky",1.00,match
@@ -51,3 +117,126 @@ Evgeniya Kanaeva,Beijing 2008,2008,Ribbon,Moscow Nights by Vasily Solovyov-Sedoi
 Evgeniya Kanaeva,Beijing 2008,2008,Rope,"""El Conquistador"" by Maxime Rodriguez",2008,Rope,"""El Conquistador"", by Maxime Rodriguez",1.00,match
 Evgeniya Kanaeva,Beijing 2008,2008,Hoop,Tristan & Iseult by Maxime Rodriguez,2008,Hoop,"""Tristan & Iseult"", by Maxime Rodriguez",1.00,match
 Evgeniya Kanaeva,Beijing 2008,2008,Clubs,"""Jota Aragonesa"" by Glinka",2008,Clubs,"""Jota Aragonesa"", by Glinka",1.00,match
+Inna Zhukova,Beijing 2008,2008,Ribbon,Fragrant branch of white acacia,2008,Ribbon,Fragrant branch of white acacia (Russian Romance),0.79,music_differs
+Inna Zhukova,Beijing 2008,2008,Rope,Tanguera by Sexteto Mayor,2008,Rope,Tanguera by Sexteto Mayor,1.00,match
+Inna Zhukova,Beijing 2008,2008,Hoop,Porto by Dulce Pontes,2008,Hoop,Porto by Dulce Pontes,1.00,match
+Inna Zhukova,Beijing 2008,2008,Clubs,The Terem Quartet,2008,Clubs (second),Valenki music from Terem by The Terem Quartet,0.55,music_differs
+Inna Zhukova,Athens 2004,2004,Ribbon,Queens from Cirque du Soleil: La Nouba,2004,Ribbon,Queens music from Cirque du Soleil: La Nouba by Benoît Jutras,0.76,music_differs
+Inna Zhukova,Athens 2004,2004,Ball,Green Hornet music from Kill Bill by Al Hirt,2004,Ball,Green Hornet music from Kill Bill by Al Hirt,1.00,match
+Inna Zhukova,Athens 2004,2004,Hoop,Zorba's Dance by LCD (originally Mikis Theodorakis),2004,Hoop,Zorba's Dance by LCD (originally Mikis Theodorakis),1.00,match
+Inna Zhukova,Athens 2004,2004,Clubs,Hu Ha by Montefiori Cocktail,2004,Clubs,Hu Ha by Montefiori Cocktail,1.00,match
+Irina Risenzon,Beijing 2008,2008,Ribbon,Besame Mucho,,,,0.00,no_routine_for_apparatus
+Irina Risenzon,Beijing 2008,2008,Rope,Gabbar/Suleiman music from Vicious Delicious by Said Mrad/Infected Mushroom,,,,0.00,no_routine_for_apparatus
+Irina Risenzon,Beijing 2008,2008,Hoop,Prison Break by Ramin Djawadi,,,,0.00,no_routine_for_apparatus
+Irina Risenzon,Beijing 2008,2008,Clubs,Aa Tayar Hoja by Alka Yagnik,,,,0.00,no_routine_for_apparatus
+Irina Tchachina,Athens 2004,2004,Ribbon,Malagueña Salerosa ( Remix ),2004,Ribbon,Malagueña Salerosa ( Remix ),1.00,match
+Irina Tchachina,Athens 2004,2004,Ball,Harem by Sarah Brightman,2004,Ball,Harem by Sarah Brightman,1.00,match
+Irina Tchachina,Athens 2004,2004,Hoop,Pirates of the Caribbean by Klaus Badelt,2004,Hoop,Pirates of the Caribbean by Klaus Badelt,1.00,match
+Irina Tchachina,Athens 2004,2004,Clubs,Laissez moi me griser by Maurice El Medioni,2004,Clubs,Laissez moi me griser by Maurice El Medioni,1.00,match
+Joanna Mitrosz,London 2012,2012,Ribbon,My Cyganie,,,,0.00,no_routine_for_apparatus
+Joanna Mitrosz,London 2012,2012,Ball,Perhaps Perhaps Perhaps by Pussycat Dolls,,,,0.00,no_routine_for_apparatus
+Joanna Mitrosz,London 2012,2012,Hoop,Tanguera by Sexteto Mayor,,,,0.00,no_routine_for_apparatus
+Joanna Mitrosz,London 2012,2012,Clubs,Sing Sing Sing by Benny Goodman,,,,0.00,no_routine_for_apparatus
+Khrystyna Pohranychna,Youth Olympics,2018,Hoop,"""Voodoo People"" by The Prodigy, ""Shallow Grave"" by Steve Mason Experience",2018,Hoop,"""Voodoo People"" by The Prodigy, ""Shallow Grave"" by Steve Mason Experience",1.00,match
+Khrystyna Pohranychna,Youth Olympics,2018,Ball,"""Believer"" by Chase Holfelder",2018,Ball,"""Believer"" by Chase Holfelder",1.00,match
+Khrystyna Pohranychna,Youth Olympics,2018,Clubs,"""Escape from East Berlin"" by Daniel Pemberton",2018,Clubs,"""Escape from East Berlin"" by Daniel Pemberton",1.00,match
+Khrystyna Pohranychna,Youth Olympics,2018,Ribbon,"""Human"" by Rag'n'Bone Man",2018,Ribbon,"""Human"" by Rag'n'Bone Man",1.00,match
+Khrystyna Pohranychna,Tokyo 2020,2021,Hoop,"""No Good"" by Kaleo, Jökull Júlíusson",2020-2021,Hoop,"""No Good"" by Kaleo, Jökull Júlíusson",1.00,match
+Khrystyna Pohranychna,Tokyo 2020,2021,Ball,"""Toxic"" by Britney Spears",2020-2021,Ball,"""Toxic"" by Britney Spears",1.00,match
+Khrystyna Pohranychna,Tokyo 2020,2021,Clubs,"""Hopak"" by Igor Kornelyuk",2020-2021,Clubs,"""Hopak"" by Igor Kornelyuk",1.00,match
+Khrystyna Pohranychna,Tokyo 2020,2021,Ribbon,"""Bumble Bee Boogie"" by Robert Wells",2020-2021,Ribbon,"""Bumble Bee Boogie"" by Robert Wells",1.00,match
+Linoy Ashram,Tokyo 2020,2021,Hoop,"Haste by Really Slow Motion, Giant Apes",2021,Hoop,"Haste by Really Slow Motion, Giant Apes",1.00,match
+Linoy Ashram,Tokyo 2020,2021,Ball,Big in Japan by Ane Brun,2021,Ball,Big in Japan by Ane Brun,1.00,match
+Linoy Ashram,Tokyo 2020,2021,Clubs,"Crazy in Love, Diva, Run The World by Beyoncé, Level Up by Ciara",2021,Clubs,"Crazy in Love, Diva, Run The World by Beyoncé, Level Up by Ciara",1.00,match
+Linoy Ashram,Tokyo 2020,2021,Ribbon,Hava Nagila (Israeli folk song),2021,Ribbon,Hava Nagila an Israeli folk song,0.95,match_fuzzy
+Liubov Charkashyna,London 2012,2012,Ribbon,Love Story by Francis Lai,2012,Ribbon,Love Story by Francis Lai,1.00,match
+Liubov Charkashyna,London 2012,2012,Ball,Frozen in time by Secret Garden,2012,Ball,Frozen in time by Secret Garden,1.00,match
+Liubov Charkashyna,London 2012,2012,Hoop,Primavera Porteña by Astor Piazzolla,2012,Hoop,Primavera Porteña by Astor Piazzolla,1.00,match
+Liubov Charkashyna,London 2012,2012,Clubs,Caravan by Raimond Pauls,2012,Clubs,Caravan by Raimond Pauls,1.00,match
+Margarita Mamun,Rio 2016,2016,Hoop,Concerto de Berlin by Vladimir Cosma,2016,Hoop (2nd),Concerto de Berlin by Vladimir Cosma,1.00,match
+Margarita Mamun,Rio 2016,2016,Ball,"Morceaux De Fantasie, Op.3:I.Elegie by Mischa Maisky",2016,Ball,"Morceaux De Fantasie, Op.3:I.Elegie by Mischa Maisky",1.00,match
+Margarita Mamun,Rio 2016,2016,Clubs,"We Will Rock You by Queen, Pink",2016,Clubs,"We Will Rock You by Queen, Pink",1.00,match
+Margarita Mamun,Rio 2016,2016,Ribbon,"A New Swan Queen, Night of Terror, Perfection music from The Black Swan by Clint Mansell",2016,Ribbon,"A New Swan Queen, Night of Terror, Perfection music from Black Swan by Clint Mansell",0.98,match_fuzzy
+Marina Lobatch,Seoul 1988,1988,Hoop,Passacaglia in G minor by Georg Frideric Handel,,,,0.00,no_routine_for_apparatus
+Marina Lobatch,Seoul 1988,1988,Clubs,Rhapsody on a Theme of Paganini by Sergei Rachmaninoff,,,,0.00,no_routine_for_apparatus
+Marina Lobatch,Seoul 1988,1988,Ribbon,Theme from Swan Lake by Pyotr Tchaikovsky,,,,0.00,no_routine_for_apparatus
+Milena Baldassarri,Tokyo 2020,2021,Hoop,Mephisto's Lullaby by Yair Albeg Wein & Or Kribos,2021,Hoop (second),Mephisto's Lullaby by Yair Albeg Wein & Or Kribos,1.00,match
+Milena Baldassarri,Tokyo 2020,2021,Ball,"""L'immensità"" by Mina",2021,Ball,L'immensità by Mina,1.00,match
+Milena Baldassarri,Tokyo 2020,2021,Clubs,Bury a Friend by Billie Eilish,2021,Clubs,Bury a Friend by Billie Eilish,1.00,match
+Milena Baldassarri,Tokyo 2020,2021,Ribbon,Elegie: O doux printemps d'autrefois by Joshua Bell,2021,Ribbon,Elegie: O doux printemps d'autrefois by Joshua Bell,1.00,match
+Milena Baldassarri,Paris 2024,2024,Hoop,Hit The Road Jack (Epic Cover) by 2WEI,2024,Hoop,Hit The Road Jack (Epic Cover) by 2WEI,1.00,match
+Milena Baldassarri,Paris 2024,2024,Ball,Formidable by Giordana Angi,2024,Ball,Formidable by Giordana Angi,1.00,match
+Milena Baldassarri,Paris 2024,2024,Clubs,"Don't tell mama by Natasha Richardson, Alan Cumming and Cabaret Ensemble (1998)",2024,Clubs,"Don't tell mama by Natasha Richardson, Alan Cumming and Cabaret Ensemble (1998)",1.00,match
+Milena Baldassarri,Paris 2024,2024,Ribbon,Can you hear the music by Ludwig Göransson and The game is afoot by Eternal Eclipse,2024,Ribbon,Can you hear the music by Ludwig Göransson and The game is afoot by Eternal Eclipse,1.00,match
+Natalia Godunko,Beijing 2008,2008,Hoop,Night On Bald Mountain by Modest Moussorgsky,2008,Hoop,Night on Bald Mountain by Modest Mussorgsky,0.99,match_fuzzy
+Natalia Godunko,Beijing 2008,2008,Rope,Hopak – Ukrainian Folk,2008,Rope,Gopak (Ukrainian traditional),0.72,music_differs
+Natalia Godunko,Beijing 2008,2008,Clubs,"""L'estate"" (Summer) 3. Presto by Vivaldi",2008,Clubs,"""L'estate"" (Summer) 3. Presto music from The Four Seasons Concerto No. 2 in G minor, Op. 8, RV 315 by Vivaldi",0.51,music_differs
+Natalia Godunko,Beijing 2008,2008,Ribbon,Tsiganochka / Gypsy Girl,2008,Ribbon,Tsyganochka,0.61,music_differs
+Natalia Godunko,Athens 2004,2004,Ball,Technologicque Park by Orbital,2004,Ball,Technologicque Park by Orbital,1.00,match
+Natalia Godunko,Athens 2004,2004,Hoop,Spartacus Suite by Aram Khachaturian,2004,Hoop,Suite No. 2: Entrance of the Merchants – Dance of a Roman Courtesan – General Dance | music from Spartacus Suite by Aram Khachaturian,0.45,music_differs
+Natalia Godunko,Athens 2004,2004,Clubs,Tetsujin music from Matrix Revolutions by Juno Reactor & Don Davis,2004,Clubs,Tetsujin music from The Matrix Revolutions by Juno Reactor and Don Davis,0.97,match_fuzzy
+Natalia Godunko,Athens 2004,2004,Ribbon,Bumble Bee Boogie by Robert Wells,2004,Ribbon,Bumble Bee Boogie by Robert Wells,1.00,match
+Neta Rivkin,London 2012,2012,Ribbon,Arez by Stanislav Zeltser,,,,0.00,no_routine_for_apparatus
+Neta Rivkin,London 2012,2012,Ball,Adios by Stanislav Zeltser,,,,0.00,no_routine_for_apparatus
+Neta Rivkin,London 2012,2012,Hoop,"Arabica/Toro-Koko, Pek-Pek by Didulya",,,,0.00,no_routine_for_apparatus
+Neta Rivkin,London 2012,2012,Clubs,Joke Tango by Stanislav Zeltser,,,,0.00,no_routine_for_apparatus
+Neviana Vladinova,Rio 2016,2016,Hoop,"""Schindler's List"" by John Williams",2016,Hoop,"""Schindler's List"" by John Williams",1.00,match
+Neviana Vladinova,Rio 2016,2016,Ball,"""Tanguera"" by Sexteto Mayor",2016,Ball,"""Tanguera"" by Sexteto Mayor",1.00,match
+Neviana Vladinova,Rio 2016,2016,Clubs,"""Mixed - Ouverture, Nostalic, Extreme, Delirium"" by Les Tambours du Bronx",2016,Clubs,"""Mixed - Ouverture, Nostalic, Extreme, Delirium"" by Les Tambours du Bronx",1.00,match
+Neviana Vladinova,Rio 2016,2016,Ribbon,"""Buleria"" by David Bisbal",2016,Ribbon,"""Buleria"" by David Bisbal",1.00,match
+Nicol Zelikman,Tokyo 2020,2021,Hoop,Anya by Deep Purple,2021,Hoop,Anya by Deep Purple,1.00,match
+Nicol Zelikman,Tokyo 2020,2021,Ball,Humanity by Scorpions,2021,Ball,Humanity by Scorpions,1.00,match
+Nicol Zelikman,Tokyo 2020,2021,Clubs,Devil Inside Me (feat. KARRA) by Kshmr Kazza,2021,Clubs,Devil Inside Me (feat. KARRA) by Kshmr Kazza,1.00,match
+Nicol Zelikman,Tokyo 2020,2021,Ribbon,Concerto De Espania by Michael Lides,2021,Ribbon,Concerto De Espania by Michael Lides,1.00,match
+Olga Kapranova,Beijing 2008,2008,Ribbon,Katyusha Remix by DJ Ras Putin,2008,Ribbon,Katyusha Remix by DJ Ras Putin,1.00,match
+Olga Kapranova,Beijing 2008,2008,Rope,Pogonya,2008,Rope,Pogonya,1.00,match
+Olga Kapranova,Beijing 2008,2008,Hoop,"Act 1 – Kitri and Basilio, Variation: Kitri | music from Don Quixote by Leon Minkus",2008,Hoop,"Act 1 – Kitri and Basilio, Variation: Kitri music from Don Quixote by Leon Minkus",1.00,match
+Olga Kapranova,Beijing 2008,2008,Clubs,Swan Lake by Tchaikovsky,2008,Clubs,Introduction: Moderato Assai – Allegro Ma Non Troppo from Swan Lake by Tchaikovsky,0.47,music_differs
+Oksana Skaldina,Barcelona 1992,1992,Rope,Gopak (Ukrainian Traditional Folk),,,,0.00,no_routine_for_apparatus
+Oksana Skaldina,Barcelona 1992,1992,Hoop,Peer Gynt Suite No.1: In The Hall Of The Mountain King music from Peer Gynt by Edvard Grieg,,,,0.00,no_routine_for_apparatus
+Rachel Stoyanov,Paris 2024,2024,5 Hoops,"Chi Mai, Dona Is Sick by Ennio Morricone, Bulgarian Voices",,,,0.00,no_routine_for_apparatus
+Rachel Stoyanov,Paris 2024,2024,3 Ribbons + 2 Balls,Someone else (Acapella)' by Allegro,,,,0.00,no_routine_for_apparatus
+Romina Laurito,London 2012,2012,5 Balls,Black Gold by Armand Amar,,,,0.00,no_routine_for_apparatus
+Romina Laurito,London 2012,2012,3 Ribbons + 2 Hoops,William Tell Overture by Gioachino Rossini,,,,0.00,no_routine_for_apparatus
+Silvia Miteva,London 2012,2012,Ribbon,Almoraima by Paco de Lucia,,,,0.00,no_routine_for_apparatus
+Silvia Miteva,London 2012,2012,Ball,Caruso by Maga Zoltan,,,,0.00,no_routine_for_apparatus
+Silvia Miteva,London 2012,2012,Hoop,"The King And His Sons, Landtrain by Harry Gregson-Williams, Brian Tyler",,,,0.00,no_routine_for_apparatus
+Silvia Miteva,London 2012,2012,Clubs,"Adagio in G minor by Budapest Film Orchestra, Dominic Miller and Nick Ingman",,,,0.00,no_routine_for_apparatus
+Sofia Raffaeli,Paris 2024,2024,Hoop,Rescue by Lauren Daigle,2024,Hoop,Rescue by Lauren Daigle,1.00,match
+Sofia Raffaeli,Paris 2024,2024,Ball,Bella ci dormi by Maria Mazzotta and Pulcinella,2024,Ball,Bella ci dormi by Maria Mazzotta and Pulcinella,1.00,match
+Sofia Raffaeli,Paris 2024,2024,Clubs,"Dark Mirror by Power-Haus, Christian Reindl and Lucie Paradis",2024,Clubs,"Dark Mirror by Power-Haus, Christian Reindl and Lucie Paradis",1.00,match
+Sofia Raffaeli,Paris 2024,2024,Ribbon,Vesoul by Mouron and Terry Truck,2024,Ribbon,Vesoul by Mouron and Terry Truck,1.00,match
+Son Yeon-jae,Rio 2016,2016,Hoop,Valse by Nicolas Jorelle,2016,Hoop,Valse by Nicolas Jorelle,1.00,match
+Son Yeon-jae,Rio 2016,2016,Ball,Parla Piu Piano by Filippa Giordano,2016,Ball,Parla Piu Piano by Filippa Giordano,1.00,match
+Son Yeon-jae,Rio 2016,2016,Clubs,Oye Negra by Terry Snyder,2016,Clubs,Oye Negra by Terry Snyder,1.00,match
+Son Yeon-jae,Rio 2016,2016,Ribbon,"Libertango by Michel Camilo, Tomatito, Cinema Serenade Ensemble",2016,Ribbon,"Libertango by Michel Camilo, Tomatito, Cinema Serenade Ensemble",1.00,match
+Son Yeon-jae,London 2012,2012,Hoop,Pas De Deux by Pyotr Tchaikovsky,2012,Hoop,Pas De Deux by Pyotr Tchaikovsky,1.00,match
+Son Yeon-jae,London 2012,2012,Ball,Charlie Chaplin Soundtrack by Charlie Chaplin,2016,Ball,Parla Piu Piano by Filippa Giordano,0.42,music_differs
+Son Yeon-jae,London 2012,2012,Clubs,Jazz Machine by Black Machine; Only You by Max Greger,2012,Clubs,Jazz Machine by Black Machine; Only You by Max Greger,1.00,match
+Son Yeon-jae,London 2012,2012,Ribbon,Un bel di vedremo from Madame Butterfly by Giacomo Puccini,2012,Ribbon,Un bel di vedremo from Madame Butterfly by Giacomo Puccini,1.00,match
+Tamara Yerofeeva,Sydney 2000,2000,Ribbon,Grand Central (from Carlito's Way) by Patrick Doyle,1999,Ribbon,Grand Central (from Carlito's Way) by Patrick Doyle,1.00,match_but_year_-1
+Tamara Yerofeeva,Sydney 2000,2000,Ball,Ispoved (Confession) by Bustrayakov,2000,Ball,Ispoved (Confession) by Bustrayakov,1.00,match
+Tamara Yerofeeva,Sydney 2000,2000,Hoop,Mr. Mellow / Megalith by T-Square,1999,Hoop,Mr. Mellow / Megalith by T-Square,1.00,match_but_year_-1
+Tamara Yerofeeva,Sydney 2000,2000,Rope,The Saint by Graeme Revell,2000,Rope,Main Theme music from The Saint by Graeme Revell,0.70,music_differs
+Viktoria Mazur,London 2012,2012,5 Balls,Grand Guignol music from Mar Dulce by Bajofondo Tango Club,,,,0.00,no_routine_for_apparatus
+Viktoria Mazur,London 2012,2012,3 Ribbons / 2 Hoops,Espana Cani / Espana Cani by Manhattan Pops Orchestra / Trio Norte,,,,0.00,no_routine_for_apparatus
+Viktoriia Onopriienko,Tokyo 2020,2021,Hoop,"""Giselle"" by Adolphe Charles Adam",2021,Hoop (first),"""Giselle"" by Adolphe Charles Adam",1.00,match
+Viktoriia Onopriienko,Tokyo 2020,2021,Ball,"""Smooth Criminal"" by Michael Jackson",2021,Ball,"""Smooth Criminal"" by Michael Jackson",1.00,match
+Viktoriia Onopriienko,Tokyo 2020,2021,Clubs,"""Back in Black"" by Sershen & Zaritskaya",2021,Clubs,"""Back in Black"" by Sershen & Zaritskaya",1.00,match
+Viktoriia Onopriienko,Tokyo 2020,2021,Ribbon,"""The House Always Wins"" by Christophe Beck",2021,Ribbon (first),"""The House Always Wins"" by Christophe Beck",1.00,match
+Yana Kudryavtseva,Rio 2016,2016,Hoop,"""Kon (Slavyanskaya)"" by Khor Turetskogo",2016,Hoop,"""Kon (Slavyanskaya)"" by Khor Turetskogo",1.00,match
+Yana Kudryavtseva,Rio 2016,2016,Ball,"""Piano Concerto No.23 – Adagio"", ""Piano Concerto No. 21 – Andante"", by Wolfgang Amadeus Mozart",2016,Ball,"""Piano Concerto No.23 – Adagio"", ""Piano Concerto No. 21 – Andante from Toy Story 4"", by Wolfgang Amadeus Mozart",0.91,match_fuzzy
+Yana Kudryavtseva,Rio 2016,2016,Clubs,Black Gold by Armand Amar,2016,Clubs,Black Gold by Armand Amar,1.00,match
+Yana Kudryavtseva,Rio 2016,2016,Ribbon,Valse Triste by Jean Sibelius,2016,Ribbon,Valse Triste by Jean Sibelius,1.00,match
+Yana Batyrshina,Atlanta 1996,1996,Ribbon,Gypsy Dance music from Don Quixote by Leon Minkus,,,,0.00,no_routine_for_apparatus
+Yana Batyrshina,Atlanta 1996,1996,Rope,Moorish Dance from Othello by Machavariani,,,,0.00,no_routine_for_apparatus
+Yana Batyrshina,Atlanta 1996,1996,Ball,Young Prince and Princess from Scheherazade by Nikolay Rimsky-Korsakov,,,,0.00,no_routine_for_apparatus
+Yana Batyrshina,Atlanta 1996,1996,Clubs,Act 1 – Appearance Of Kitri / Act 1 – Variation: Kitri music from Don Quixote by Leon Minkus,,,,0.00,no_routine_for_apparatus
+Yulia Barsukova,Sydney 2000,2000,Ribbon,The Feeling Begins by Peter Gabriel,2000,Ribbon,The Feeling Begins (from The Last Temptation of Christ) by Peter Gabriel,0.67,music_differs
+Yulia Barsukova,Sydney 2000,2000,Ball,The Dying Swan by Saint-Saëns Camille,1999,Ball,The Dying Swan music from Carnival Of The Animals by Saint-Saëns Camille,0.68,music_differs
+Yulia Barsukova,Sydney 2000,2000,Hoop,Nightmare by Ronan Hardiman,2000,Hoop,Nightmare music from Lord of the Dance by Ronan Hardiman,0.65,music_differs
+Yulia Barsukova,Sydney 2000,2000,Rope,Breath of Sax by dj dado feat control X,2000,Rope,Breath of Sax by dj dado feat control X,1.00,match
+Yulia Raskina,Sydney 2000,2000,Ribbon,Underground/ Storm / A New Life | music from The Truman Show,2000,Ribbon,Underground /Storm / A New Life music from The Truman Show by Burkard Dalwitz,0.85,match_fuzzy
+Yulia Raskina,Sydney 2000,2000,Ball,Spain (Malagueña) by Anatoly Vekshin,2000,Ball,Spain (originally Malagueña) by Anatoly Vekshin,0.86,match_fuzzy
+Yulia Raskina,Sydney 2000,2000,Hoop,Manhattan by Anatoly Vekshin,2000,Hoop,Manhattan by Anatoly Vekshin,1.00,match
+Yulia Raskina,Sydney 2000,2000,Rope,Smuglyanochka by Anatoly Vekshin,2000,Rope,Smuglyanochka by Anatoly Vekshin,1.00,match

@@ -1,9 +1,100 @@
 gymnast_page,requested_title,revid,table_index,row_index,year,apparatus,music,competition,location,notes,source_url
-Darja Varfolomeev,Darja Varfolomeev,1373562506,0,0,2024,All-around,,Paris 2024,Paris,music_empty,https://en.wikipedia.org/wiki/Darja_Varfolomeev
-Darja Varfolomeev,Darja Varfolomeev,1373562506,0,1,2024,Hoop,"""Jackseye's Tale, Escape from East Berlin, Take You Down"" by Daniel Pemberton",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Darja_Varfolomeev
-Darja Varfolomeev,Darja Varfolomeev,1373562506,0,2,2024,Ball,"""In the Closet"" by Michael Jackson",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Darja_Varfolomeev
-Darja Varfolomeev,Darja Varfolomeev,1373562506,0,3,2024,Clubs,"""Batshit - Ilkay Sencan Remix"" by Sofi Tukker",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Darja_Varfolomeev
-Darja Varfolomeev,Darja Varfolomeev,1373562506,0,4,2024,Ribbon,"""Generali"" by HAVASI",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Darja_Varfolomeev
+Alexandra Timoshenko,Alexandra Timoshenko,1373551875,0,0,1992,All-around,,Barcelona 1992,Barcelona,music_empty,https://en.wikipedia.org/wiki/Alexandra_Timoshenko
+Alexandra Timoshenko,Alexandra Timoshenko,1373551875,0,1,1992,Prelim,,Barcelona 1992,Barcelona,music_empty,https://en.wikipedia.org/wiki/Alexandra_Timoshenko
+Alexandra Timoshenko,Alexandra Timoshenko,1373551875,0,2,1992,Rope,"Gori, Gori Moya Zvezda music from Russian Romance by Volodymyr Bystryakov",Barcelona 1992,Barcelona,,https://en.wikipedia.org/wiki/Alexandra_Timoshenko
+Alexandra Timoshenko,Alexandra Timoshenko,1373551875,0,3,1992,Hoop,Main Title / Love Theme music from Wild Orchid by Simon Goldenberg & Geoff MacCormack,Barcelona 1992,Barcelona,,https://en.wikipedia.org/wiki/Alexandra_Timoshenko
+Alexandra Timoshenko,Alexandra Timoshenko,1373551875,0,4,1992,Ball,I Spoved by Volodymyr Bystryakov,Barcelona 1992,Barcelona,,https://en.wikipedia.org/wiki/Alexandra_Timoshenko
+Alexandra Timoshenko,Alexandra Timoshenko,1373551875,0,5,1992,Clubs,,Barcelona 1992,Barcelona,music_empty,https://en.wikipedia.org/wiki/Alexandra_Timoshenko
+Alexandra Timoshenko,Alexandra Timoshenko,1373551875,1,0,1988,All-around,,Seoul 1988,Seoul,music_empty,https://en.wikipedia.org/wiki/Alexandra_Timoshenko
+Alexandra Timoshenko,Alexandra Timoshenko,1373551875,1,1,1988,Prelim,,Seoul 1988,Seoul,music_empty,https://en.wikipedia.org/wiki/Alexandra_Timoshenko
+Alexandra Timoshenko,Alexandra Timoshenko,1373551875,1,2,1988,Ribbon,"Leyenda (from Suite Española) by Isaac Manuel, Francisco Albaniz",Seoul 1988,Seoul,,https://en.wikipedia.org/wiki/Alexandra_Timoshenko
+Alexandra Timoshenko,Alexandra Timoshenko,1373551875,1,3,1988,Rope,Summertime (from Porgy and Bess) by George Gershwin,Seoul 1988,Seoul,,https://en.wikipedia.org/wiki/Alexandra_Timoshenko
+Alexandra Timoshenko,Alexandra Timoshenko,1373551875,1,4,1988,Ball,,Seoul 1988,Seoul,music_empty,https://en.wikipedia.org/wiki/Alexandra_Timoshenko
+Alexandra Timoshenko,Alexandra Timoshenko,1373551875,1,5,1988,Clubs,Summertime (from Porgy and Bess) by George Gershwin,Seoul 1988,Seoul,,https://en.wikipedia.org/wiki/Alexandra_Timoshenko
+Aliaksandra Narkevich,Aliaksandra Narkevich,1373552168,0,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Aliaksandra_Narkevich
+Aliaksandra Narkevich,Aliaksandra Narkevich,1373552168,0,1,2012,5 Balls,Allegro Non Molto (Winter) by Antonio Vivaldi,London 2012,London,,https://en.wikipedia.org/wiki/Aliaksandra_Narkevich
+Aliaksandra Narkevich,Aliaksandra Narkevich,1373552168,0,2,2012,3 Ribbons + 2 Hoops,"24 Caprices, Op. 1: Caprice No. 24 in A Minor, Op. 1, No. 24 by Ilya Kaler",London 2012,London,,https://en.wikipedia.org/wiki/Aliaksandra_Narkevich
+Alina Harnasko,Alina Harnasko,1373552711,1,0,2021,all-around,,Tokyo 2020,Tokyo,music_empty;year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Alina_Harnasko
+Alina Harnasko,Alina Harnasko,1373552711,1,1,2021,Hoop,Moonlight Sonata by Tommee Profitt,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Alina_Harnasko
+Alina Harnasko,Alina Harnasko,1373552711,1,2,2021,Ball,The Hardest Button to Button by The White Stripes,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Alina_Harnasko
+Alina Harnasko,Alina Harnasko,1373552711,1,3,2021,Clubs,"L'assasymphonie from Mozart, l'Opéra Rock by Florent Mothe",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Alina_Harnasko
+Alina Harnasko,Alina Harnasko,1373552711,1,4,2021,Ribbon,Nocturne by Yuri Vesnyak,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Alina_Harnasko
+Alina Kabaeva,Alina Kabaeva,1373599818,0,0,2004,All-around,,Athens 2004,Athens,music_empty,https://en.wikipedia.org/wiki/Alina_Kabaeva
+Alina Kabaeva,Alina Kabaeva,1373599818,0,1,2004,Ribbon,Sphynx by Giampiero Ponte,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Alina_Kabaeva
+Alina Kabaeva,Alina Kabaeva,1373599818,0,2,2004,Ball,Syrtaki by D. Moutsis,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Alina_Kabaeva
+Alina Kabaeva,Alina Kabaeva,1373599818,0,3,2004,Hoop,Carmen's entrance and Habanera by Georges Bizet,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Alina_Kabaeva
+Alina Kabaeva,Alina Kabaeva,1373599818,0,4,2004,Clubs,"Sphynx (Club Mix) by Giampiero Ponte, Moran",Athens 2004,Athens,,https://en.wikipedia.org/wiki/Alina_Kabaeva
+Alina Kabaeva,Alina Kabaeva,1373599818,0,6,2000,All-around,,Sydney 2000,Sydney,music_empty,https://en.wikipedia.org/wiki/Alina_Kabaeva
+Alina Kabaeva,Alina Kabaeva,1373599818,0,7,2000,Ribbon,Dilorom / Yor Yor by Yulduz Usmanova and Shahzod,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Alina_Kabaeva
+Alina Kabaeva,Alina Kabaeva,1373599818,0,8,2000,Ball,Felicia by Luis Bravo,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Alina_Kabaeva
+Alina Kabaeva,Alina Kabaeva,1373599818,0,9,2000,Hoop,Les Toreadors by Georges Bizet,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Alina_Kabaeva
+Alina Kabaeva,Alina Kabaeva,1373599818,0,10,2000,Rope,Tsyganochka,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Alina_Kabaeva
+Alina Maksymenko,Alina Maksymenko,1373552912,1,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Alina_Maksymenko
+Alina Maksymenko,Alina Maksymenko,1373552912,1,1,2012,Ribbon,Asturias by Joja Wendt,London 2012,London,,https://en.wikipedia.org/wiki/Alina_Maksymenko
+Alina Maksymenko,Alina Maksymenko,1373552912,1,2,2012,Ball,Mission Impossible Theme by David Garrett,London 2012,London,,https://en.wikipedia.org/wiki/Alina_Maksymenko
+Alina Maksymenko,Alina Maksymenko,1373552912,1,3,2012,Hoop,"Mercy In Darkness, Archangel, Titan Dune by Two Steps From Hell",London 2012,London,,https://en.wikipedia.org/wiki/Alina_Maksymenko
+Alina Maksymenko,Alina Maksymenko,1373552912,1,4,2012,Clubs,"Tamacun, Diablo Rojo by Rodrigo y Gabriela",London 2012,London,,https://en.wikipedia.org/wiki/Alina_Maksymenko
+Alina Maksymenko,Alina Maksymenko,1373552912,2,0,2008,Group All-around,,Beijing 2008,Beijing,music_empty,https://en.wikipedia.org/wiki/Alina_Maksymenko
+Alina Maksymenko,Alina Maksymenko,1373552912,2,1,2008,5 Ropes,Summer by Antonio Vivaldi,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Alina_Maksymenko
+Alina Maksymenko,Alina Maksymenko,1373552912,2,2,2008,3 Hoops / 2 Clubs,Theme music from Avrora by Valeri Tishler,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Alina_Maksymenko
+Aliya Garayeva,Aliya Garayeva,1373553305,0,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Aliya_Garayeva
+Aliya Garayeva,Aliya Garayeva,1373553305,0,1,2012,Hoop,"Volare by Dean Martin, Bang Bang by Tito Nieves, Quien Como Tu by JJ Vianello",London 2012,London,,https://en.wikipedia.org/wiki/Aliya_Garayeva
+Aliya Garayeva,Aliya Garayeva,1373553305,0,2,2012,Ball,You Can Leave Your Hat On by Joe Cocker,London 2012,London,,https://en.wikipedia.org/wiki/Aliya_Garayeva
+Aliya Garayeva,Aliya Garayeva,1373553305,0,3,2012,Clubs,Nazende sevgilim by Bilen Yildirir,London 2012,London,,https://en.wikipedia.org/wiki/Aliya_Garayeva
+Aliya Garayeva,Aliya Garayeva,1373553305,0,4,2012,Ribbon,"Move, 19 Palqü (Original Mix) by Said Mrad, Backside Artists Vs. Antoine Montana",London 2012,London,,https://en.wikipedia.org/wiki/Aliya_Garayeva
+Aliya Garayeva,Aliya Garayeva,1373553305,1,0,2008,All-around,,Beijing 2008,Beijing,music_empty,https://en.wikipedia.org/wiki/Aliya_Garayeva
+Aliya Garayeva,Aliya Garayeva,1373553305,1,1,2008,Rope,Danse de Phryné (Walpurgis Night) from Faust by Charles Gounod,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Aliya_Garayeva
+Aliya Garayeva,Aliya Garayeva,1373553305,1,2,2008,Hoop,"Monologue: Nurida, Schahriar's Variation, Orgy, Duet: Schahriar And Scheherazade, Mardshana's Dance by Fikret Amirov",Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Aliya_Garayeva
+Aliya Garayeva,Aliya Garayeva,1373553305,1,3,2008,Clubs,Snakefood / Samb Adagio by Safri duo,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Aliya_Garayeva
+Aliya Garayeva,Aliya Garayeva,1373553305,1,4,2008,Ribbon,Tango and Resurgence by Sultan Ali,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Aliya_Garayeva
+Aliya Yussupova,Aliya Yussupova,1373553365,0,0,2008,All-around,,Beijing 2008,Beijing,music_empty,https://en.wikipedia.org/wiki/Aliya_Yussupova
+Aliya Yussupova,Aliya Yussupova,1373553365,0,1,2008,Hoop,Music from Da Vinci Code by Hans Zimmer,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Aliya_Yussupova
+Aliya Yussupova,Aliya Yussupova,1373553365,0,2,2008,Rope,Scott & Fran's Paso Doble by David Hirschfelder & The Bogo Pogo Orchestra,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Aliya_Yussupova
+Aliya Yussupova,Aliya Yussupova,1373553365,0,3,2008,Clubs,Spartacus by Aram Khatchaturian,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Aliya_Yussupova
+Aliya Yussupova,Aliya Yussupova,1373553365,0,4,2008,Ribbon,Artsakh by Ara Gevorkian,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Aliya_Yussupova
+Aliya Yussupova,Aliya Yussupova,1373553365,1,0,2004,All-around,,Athens 2004,Athens,music_empty,https://en.wikipedia.org/wiki/Aliya_Yussupova
+Aliya Yussupova,Aliya Yussupova,1373553365,1,1,2004,Ball,Mystics Lullaby / Anatolian Deluxe / Marrakesh Night Market by Loreena McKennitt / Turkish Percussion Group,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Aliya_Yussupova
+Aliya Yussupova,Aliya Yussupova,1373553365,1,2,2004,Hoop,Bolero (Closing Credits) music from Moulin Rouge by Steve Sharples,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Aliya_Yussupova
+Aliya Yussupova,Aliya Yussupova,1373553365,1,3,2004,Clubs,Ya Habibi Yallah by Alabina,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Aliya_Yussupova
+Aliya Yussupova,Aliya Yussupova,1373553365,1,4,2004,Ribbon,Op-sa by Esil Dyuran,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Aliya_Yussupova
+Amina Zaripova,Amina Zaripova,1373554348,0,0,1996,All-around,,Atlanta 1996,Atlanta,music_empty,https://en.wikipedia.org/wiki/Amina_Zaripova
+Amina Zaripova,Amina Zaripova,1373554348,0,1,1996,Ribbon,"Kitri, Entrance, Coda music from Don Quixote by Leon Minkus",Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Amina_Zaripova
+Amina Zaripova,Amina Zaripova,1373554348,0,2,1996,Rope,Theme from Prince Igor by Alexander Borodin,Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Amina_Zaripova
+Amina Zaripova,Amina Zaripova,1373554348,0,3,1996,Ball,At the Circus / Adagio of Spartacus and Phrygia music from Spartacus by Aram Khatchaturian,Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Amina_Zaripova
+Amina Zaripova,Amina Zaripova,1373554348,0,4,1996,Clubs,Ole Guapa by Malando,Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Amina_Zaripova
+Anastasiia Salos,Anastasiia Salos,1373554948,1,0,2021,All-around,,Tokyo 2020,Tokyo,music_empty;year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Anastasiia_Salos
+Anastasiia Salos,Anastasiia Salos,1373554948,1,1,2021,Hoop,Damina by Mgzavrebi,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Anastasiia_Salos
+Anastasiia Salos,Anastasiia Salos,1373554948,1,2,2021,Ball,Magic Mirror by Xavier Mortimer & Maxime Rodriguez,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Anastasiia_Salos
+Anastasiia Salos,Anastasiia Salos,1373554948,1,3,2021,Clubs,Between Heaven and Earth by Camerata,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Anastasiia_Salos
+Anastasiia Salos,Anastasiia Salos,1373554948,1,4,2021,Ribbon,The Flight Attendant by Blake Neely,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Anastasiia_Salos
+Andreea Stefanescu,Andreea Stefanescu,1373555906,0,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Andreea_Stefanescu
+Andreea Stefanescu,Andreea Stefanescu,1373555906,0,1,2012,5 Balls,Black Gold by Armand Amar,London 2012,London,,https://en.wikipedia.org/wiki/Andreea_Stefanescu
+Andreea Stefanescu,Andreea Stefanescu,1373555906,0,2,2012,3 Ribbons + 2 Hoops,William Tell Overture by Gioachino Rossini,London 2012,London,,https://en.wikipedia.org/wiki/Andreea_Stefanescu
+Anna Bessonova,Anna Bessonova,1374354869,1,0,2008,All-around,,Beijing 2008,Beijing,music_empty,https://en.wikipedia.org/wiki/Anna_Bessonova
+Anna Bessonova,Anna Bessonova,1374354869,1,1,2008,Ribbon,Hopak (Ukrainian Folk),Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Anna_Bessonova
+Anna Bessonova,Anna Bessonova,1374354869,1,2,2008,Rope,Shiro's Estate by Brian Tyler,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Anna_Bessonova
+Anna Bessonova,Anna Bessonova,1374354869,1,3,2008,Hoop,Avrora by Valeri Tishler,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Anna_Bessonova
+Anna Bessonova,Anna Bessonova,1374354869,1,4,2008,Clubs,Gladiator Soundtrack – Barbarian Horde,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Anna_Bessonova
+Anna Bessonova,Anna Bessonova,1374354869,2,0,2004,All-around,,Athens 2004,Athens,music_empty,https://en.wikipedia.org/wiki/Anna_Bessonova
+Anna Bessonova,Anna Bessonova,1374354869,2,1,2004,Ribbon,Nyah / La Cavalera from Mission Impossible II by Hans Zimmer and Elliot Goldenthal,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Anna_Bessonova
+Anna Bessonova,Anna Bessonova,1374354869,2,2,2004,Ball,Spartacus by Aram Khachaturian,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Anna_Bessonova
+Anna Bessonova,Anna Bessonova,1374354869,2,3,2004,Hoop,Molto Meno Mosso | / Allegro – Valse – Allegro – Vivo | / Finale – Andante – Allegro Agitatoo - | Alla Breve – Moderato e Maestoso – Moderato | / Moderato by Tchaikovsky,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Anna_Bessonova
+Anna Bessonova,Anna Bessonova,1374354869,2,4,2004,Clubs,Mona Lisa Overdrive from Matrix Reloaded by Don Davis & Juno Reactor,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Anna_Bessonova
+Hanna Rizatdinova,Hanna Rizatdinova,1373572575,1,0,2016,All-around,,Rio 2016,Rio de Janeiro,music_empty,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
+Hanna Rizatdinova,Hanna Rizatdinova,1373572575,1,1,2016,Ribbon,"Tomorrow Never Comes, Time To Go Crazy by Rishi & Harshil",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
+Hanna Rizatdinova,Hanna Rizatdinova,1373572575,1,2,2016,Clubs,"They Don't Care About Us by Olodum, Michael Jackson, David Garrett",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
+Hanna Rizatdinova,Hanna Rizatdinova,1373572575,1,3,2016,Ball,I Put a Spell on You music from Fifty Shades of Grey by Annie Lennox,Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
+Hanna Rizatdinova,Hanna Rizatdinova,1373572575,1,4,2016,Hoop,"España Caní, España Caní by Manhattan Pops Orchestra, Trio Norté",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
+Hanna Rizatdinova,Hanna Rizatdinova,1373572575,2,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
+Hanna Rizatdinova,Hanna Rizatdinova,1373572575,2,1,2012,Ribbon,Smooth Criminal by 2 Cellos (Sulic & Hauser),London 2012,London,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
+Hanna Rizatdinova,Hanna Rizatdinova,1373572575,2,2,2012,Ball,The Promise by Secret Garden,London 2012,London,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
+Hanna Rizatdinova,Hanna Rizatdinova,1373572575,2,3,2012,Hoop,The Fast And The Furious: Tokyo Drift by Brian Tyler,London 2012,London,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
+Hanna Rizatdinova,Hanna Rizatdinova,1373572575,2,4,2012,Clubs,Black Gold by Armand Amar,London 2012,London,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
+Arina Averina,Arina Averina,1373781562,1,0,2021,All-around,,Tokyo 2020,Tokyo,music_empty;year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Arina_Averina
+Arina Averina,Arina Averina,1373781562,1,1,2021,Hoop,"""The Firebird"" by Igor Stravinsky",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Arina_Averina
+Arina Averina,Arina Averina,1373781562,1,2,2021,Ball,"""Ironside"", ""Crane/White Lightning"", ""Don't Let Me Be Misunderstood"" from Kill Bill, by Quincy Jones, Charles Bernstein & RZA, Santa Esmeralda",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Arina_Averina
+Arina Averina,Arina Averina,1373781562,1,3,2021,Clubs,"""Bella Ciao (Música Original de la Serie la Casa de Papel/Money Heist)"", by Manu Pilas",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Arina_Averina
+Arina Averina,Arina Averina,1373781562,1,4,2021,Ribbon,"""Seguidilla"" from Carmen, by Georges Bizet",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Arina_Averina
 Boryana Kaleyn,Boryana Kaleyn,1373559046,0,0,2021,All-around,,Tokyo 2020,Tokyo,music_empty;year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Boryana_Kaleyn
 Boryana Kaleyn,Boryana Kaleyn,1373559046,0,1,2021,Hoop,"""Kakamora"" from Moana by Mark Mancina",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Boryana_Kaleyn
 Boryana Kaleyn,Boryana Kaleyn,1373559046,0,2,2021,Ball,"""Vecheray, Rado"" by Slavi Trifonov",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Boryana_Kaleyn
@@ -14,53 +105,214 @@ Boryana Kaleyn,Boryana Kaleyn,1373559046,0,6,2024,Hoop,"""특(S-Class)"" by Stra
 Boryana Kaleyn,Boryana Kaleyn,1373559046,0,7,2024,Ball,"""Never Enough"" (from The Greatest Showman) by Loren Allred",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Boryana_Kaleyn
 Boryana Kaleyn,Boryana Kaleyn,1373559046,0,8,2024,Clubs,"""SOS d'un terrien en détresse"" by Dimash Qudaibergen",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Boryana_Kaleyn
 Boryana Kaleyn,Boryana Kaleyn,1373559046,0,9,2024,Ribbon,"""The Power in Me"" by Emelina Gorcheva",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Boryana_Kaleyn
-Sofia Raffaeli,Sofia Raffaeli,1373600847,1,0,2024,All-around,,Paris 2024,Paris,music_empty,https://en.wikipedia.org/wiki/Sofia_Raffaeli
-Sofia Raffaeli,Sofia Raffaeli,1373600847,1,1,2024,Hoop,Rescue by Lauren Daigle,Paris 2024,Paris,,https://en.wikipedia.org/wiki/Sofia_Raffaeli
-Sofia Raffaeli,Sofia Raffaeli,1373600847,1,2,2024,Ball,Bella ci dormi by Maria Mazzotta and Pulcinella,Paris 2024,Paris,,https://en.wikipedia.org/wiki/Sofia_Raffaeli
-Sofia Raffaeli,Sofia Raffaeli,1373600847,1,3,2024,Clubs,"Dark Mirror by Power-Haus, Christian Reindl and Lucie Paradis",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Sofia_Raffaeli
-Sofia Raffaeli,Sofia Raffaeli,1373600847,1,4,2024,Ribbon,Vesoul by Mouron and Terry Truck,Paris 2024,Paris,,https://en.wikipedia.org/wiki/Sofia_Raffaeli
-Linoy Ashram,Linoy Ashram,1376099588,2,0,2021,All-around,,Tokyo 2020,Tokyo,music_empty;year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Linoy_Ashram
-Linoy Ashram,Linoy Ashram,1376099588,2,1,2021,Hoop,"Haste by Really Slow Motion, Giant Apes",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Linoy_Ashram
-Linoy Ashram,Linoy Ashram,1376099588,2,2,2021,Ball,Big in Japan by Ane Brun,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Linoy_Ashram
-Linoy Ashram,Linoy Ashram,1376099588,2,3,2021,Clubs,"Crazy in Love, Diva, Run The World by Beyoncé, Level Up by Ciara",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Linoy_Ashram
-Linoy Ashram,Linoy Ashram,1376099588,2,4,2021,Ribbon,Hava Nagila (Israeli folk song),Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Linoy_Ashram
+Darya Dmitriyeva,Darya Dmitriyeva,1373562539,1,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Darya_Dmitriyeva
+Darya Dmitriyeva,Darya Dmitriyeva,1373562539,1,1,2012,Ribbon,Revolutions by Jean Michel Jarre,London 2012,London,,https://en.wikipedia.org/wiki/Darya_Dmitriyeva
+Darya Dmitriyeva,Darya Dmitriyeva,1373562539,1,2,2012,Ball,Ave Maria by Libera | Immortelle by Lara Fabian,London 2012,London,,https://en.wikipedia.org/wiki/Darya_Dmitriyeva
+Darya Dmitriyeva,Darya Dmitriyeva,1373562539,1,3,2012,Hoop,Piano Concerto No. 2 In C-minor | Op. 18: I. Moderato by Sergei Rachmaninoff,London 2012,London,,https://en.wikipedia.org/wiki/Darya_Dmitriyeva
+Darya Dmitriyeva,Darya Dmitriyeva,1373562539,1,4,2012,Clubs,Beat Machine by Gloria Estefan | The Expert by Yello | Tradition by Unknown,London 2012,London,,https://en.wikipedia.org/wiki/Darya_Dmitriyeva
+Darja Varfolomeev,Darja Varfolomeev,1373562506,0,0,2024,All-around,,Paris 2024,Paris,music_empty,https://en.wikipedia.org/wiki/Darja_Varfolomeev
+Darja Varfolomeev,Darja Varfolomeev,1373562506,0,1,2024,Hoop,"""Jackseye's Tale, Escape from East Berlin, Take You Down"" by Daniel Pemberton",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Darja_Varfolomeev
+Darja Varfolomeev,Darja Varfolomeev,1373562506,0,2,2024,Ball,"""In the Closet"" by Michael Jackson",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Darja_Varfolomeev
+Darja Varfolomeev,Darja Varfolomeev,1373562506,0,3,2024,Clubs,"""Batshit - Ilkay Sencan Remix"" by Sofi Tukker",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Darja_Varfolomeev
+Darja Varfolomeev,Darja Varfolomeev,1373562506,0,4,2024,Ribbon,"""Generali"" by HAVASI",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Darja_Varfolomeev
 Dina Averina,Dina Averina,1374054934,1,0,2021,All-around,,Tokyo 2020,Tokyo,music_empty;year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Dina_Averina
 Dina Averina,Dina Averina,1374054934,1,1,2021,Hoop,"""Thunderstruck"" by David Garrett",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Dina_Averina
 Dina Averina,Dina Averina,1374054934,1,2,2021,Ball,"""Symphony No. 6 in B minor, Op. 74"" by Pyotr Tchaikovsky",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Dina_Averina
 Dina Averina,Dina Averina,1374054934,1,3,2021,Clubs,"""FOGO"" by Garmiani feat. Julimar Santos",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Dina_Averina
 Dina Averina,Dina Averina,1374054934,1,4,2021,Ribbon,"""La Cumparsita"" by Yasmin Levy",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Dina_Averina
-Alina Harnasko,Alina Harnasko,1373552711,1,0,2021,all-around,,Tokyo 2020,Tokyo,music_empty;year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Alina_Harnasko
-Alina Harnasko,Alina Harnasko,1373552711,1,1,2021,Hoop,Moonlight Sonata by Tommee Profitt,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Alina_Harnasko
-Alina Harnasko,Alina Harnasko,1373552711,1,2,2021,Ball,The Hardest Button to Button by The White Stripes,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Alina_Harnasko
-Alina Harnasko,Alina Harnasko,1373552711,1,3,2021,Clubs,"L'assasymphonie from Mozart, l'Opéra Rock by Florent Mothe",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Alina_Harnasko
-Alina Harnasko,Alina Harnasko,1373552711,1,4,2021,Ribbon,Nocturne by Yuri Vesnyak,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Alina_Harnasko
+Kateryna Serebrianska,Kateryna Serebrianska,1373585893,1,0,1996,All-around,,Atlanta 1996,Atlanta,music_empty,https://en.wikipedia.org/wiki/Kateryna_Serebrianska
+Kateryna Serebrianska,Kateryna Serebrianska,1373585893,1,1,1996,Ribbon,Tipsy Bumblebee,Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Kateryna_Serebrianska
+Kateryna Serebrianska,Kateryna Serebrianska,1373585893,1,2,1996,Rope,Kalinka/Katyusha,Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Kateryna_Serebrianska
+Kateryna Serebrianska,Kateryna Serebrianska,1373585893,1,3,1996,Ball,Atrocious Romance,Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Kateryna_Serebrianska
+Kateryna Serebrianska,Kateryna Serebrianska,1373585893,1,4,1996,Clubs,Nur kein genieren,Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Kateryna_Serebrianska
+Ekaterina Vedeneeva,Ekaterina Vedeneeva,1373565367,0,0,2021,All-around,,Tokyo 2020,Tokyo,music_empty;year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Ekaterina_Vedeneeva
+Ekaterina Vedeneeva,Ekaterina Vedeneeva,1373565367,0,1,2021,Hoop,"""Libertango"" by The Swingle Singers",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Ekaterina_Vedeneeva
+Ekaterina Vedeneeva,Ekaterina Vedeneeva,1373565367,0,2,2021,Ball,"""Boléro: Tempo di Bolero"" by London Symphony Orchestra, Claudio Abbado",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Ekaterina_Vedeneeva
+Ekaterina Vedeneeva,Ekaterina Vedeneeva,1373565367,0,3,2021,Clubs,"""Белый лебедь"" by Tamara Gverdtsiteli",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Ekaterina_Vedeneeva
+Ekaterina Vedeneeva,Ekaterina Vedeneeva,1373565367,0,4,2021,Ribbon,"""Nocturne"" by Tamara Gverdtsiteli, Dmitry Duzhev",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Ekaterina_Vedeneeva
+Ekaterina Vedeneeva,Ekaterina Vedeneeva,1373565367,0,5,2024,All-around,,Paris 2024,Paris,music_empty,https://en.wikipedia.org/wiki/Ekaterina_Vedeneeva
+Ekaterina Vedeneeva,Ekaterina Vedeneeva,1373565367,0,6,2024,Hoop,"""Mind Heist: Evolution"" by Zack Hemsey",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Ekaterina_Vedeneeva
+Ekaterina Vedeneeva,Ekaterina Vedeneeva,1373565367,0,7,2024,Ball,"""Demain n'existe pas"" by Lara Fabian",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Ekaterina_Vedeneeva
+Ekaterina Vedeneeva,Ekaterina Vedeneeva,1373565367,0,8,2024,Clubs,"""Swan Lake (Act IV Allegro)"" by Smolensk Symphonic Orchestra",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Ekaterina_Vedeneeva
+Ekaterina Vedeneeva,Ekaterina Vedeneeva,1373565367,0,9,2024,Ribbon,"""Do not Deny, if Loving"" by Vlad Nezhniy",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Ekaterina_Vedeneeva
+Olena Vitrychenko,Olena Vitrychenko,1374536476,1,0,2000,All-around,,Sydney 2000,Sydney,music_empty,https://en.wikipedia.org/wiki/Olena_Vitrychenko
+Olena Vitrychenko,Olena Vitrychenko,1374536476,1,1,2000,Ribbon,Plaza of Execution / Stealing the Map music from The Mask of Zorro by James Horner,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Olena_Vitrychenko
+Olena Vitrychenko,Olena Vitrychenko,1374536476,1,2,2000,Rope,"Sing, Sing, Sing by Benjamin Goodman",Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Olena_Vitrychenko
+Olena Vitrychenko,Olena Vitrychenko,1374536476,1,3,2000,Ball,Pink Dream by Anatoly Vekshin,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Olena_Vitrychenko
+Olena Vitrychenko,Olena Vitrychenko,1374536476,1,4,2000,Hoop,Toccata and Fugue in D Minor by Vanessa Mae,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Olena_Vitrychenko
+Olena Vitrychenko,Olena Vitrychenko,1374536476,2,0,1996,All-around,,Atlanta 1996,Atlanta,music_empty,https://en.wikipedia.org/wiki/Olena_Vitrychenko
+Olena Vitrychenko,Olena Vitrychenko,1374536476,2,1,1996,Ribbon,,Atlanta 1996,Atlanta,music_empty,https://en.wikipedia.org/wiki/Olena_Vitrychenko
+Olena Vitrychenko,Olena Vitrychenko,1374536476,2,2,1996,Rope,"Sing, Sing, Sing by Benjamin Goodman",Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Olena_Vitrychenko
+Olena Vitrychenko,Olena Vitrychenko,1374536476,2,3,1996,Ball,Pink Dream by Anatoly Vekshin,Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Olena_Vitrychenko
+Olena Vitrychenko,Olena Vitrychenko,1374536476,2,4,1996,Clubs,,Atlanta 1996,Atlanta,music_empty,https://en.wikipedia.org/wiki/Olena_Vitrychenko
+Evgeniya Kanaeva,Evgeniya Kanaeva,1373567200,3,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
+Evgeniya Kanaeva,Evgeniya Kanaeva,1373567200,3,1,2012,Ball,"""Concerto (Ballet)"" (Les Demoiselles de Rochefort OST) by Michel Legrand",London 2012,London,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
+Evgeniya Kanaeva,Evgeniya Kanaeva,1373567200,3,2,2012,Ribbon,"""Fantasie Impromptu No 66"" by Frédéric Chopin",London 2012,London,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
+Evgeniya Kanaeva,Evgeniya Kanaeva,1373567200,3,3,2012,Hoop,"""The Rite of Spring"" by Igor Stravinsky",London 2012,London,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
+Evgeniya Kanaeva,Evgeniya Kanaeva,1373567200,3,4,2012,Clubs,"""Poeta (remix)"" original by Vincente Amigo | remix by Maxime Rodriguez",London 2012,London,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
+Evgeniya Kanaeva,Evgeniya Kanaeva,1373567200,4,0,2008,All-around,,Beijing 2008,Beijing,music_empty,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
+Evgeniya Kanaeva,Evgeniya Kanaeva,1373567200,4,1,2008,Ribbon,Moscow Nights by Vasily Solovyov-Sedoi,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
+Evgeniya Kanaeva,Evgeniya Kanaeva,1373567200,4,2,2008,Rope,"""El Conquistador"" by Maxime Rodriguez",Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
+Evgeniya Kanaeva,Evgeniya Kanaeva,1373567200,4,3,2008,Hoop,Tristan & Iseult by Maxime Rodriguez,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
+Evgeniya Kanaeva,Evgeniya Kanaeva,1373567200,4,4,2008,Clubs,"""Jota Aragonesa"" by Glinka",Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
+Inna Zhukova,Inna Zhukova,1373574698,2,0,2008,All-around,,Beijing 2008,Beijing,music_empty,https://en.wikipedia.org/wiki/Inna_Zhukova
+Inna Zhukova,Inna Zhukova,1373574698,2,1,2008,Ribbon,Fragrant branch of white acacia,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Inna_Zhukova
+Inna Zhukova,Inna Zhukova,1373574698,2,2,2008,Rope,Tanguera by Sexteto Mayor,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Inna_Zhukova
+Inna Zhukova,Inna Zhukova,1373574698,2,3,2008,Hoop,Porto by Dulce Pontes,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Inna_Zhukova
+Inna Zhukova,Inna Zhukova,1373574698,2,4,2008,Clubs,The Terem Quartet,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Inna_Zhukova
+Inna Zhukova,Inna Zhukova,1373574698,3,0,2004,All-around,,Athens 2004,Athens,music_empty,https://en.wikipedia.org/wiki/Inna_Zhukova
+Inna Zhukova,Inna Zhukova,1373574698,3,1,2004,Ribbon,Queens from Cirque du Soleil: La Nouba,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Inna_Zhukova
+Inna Zhukova,Inna Zhukova,1373574698,3,2,2004,Ball,Green Hornet music from Kill Bill by Al Hirt,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Inna_Zhukova
+Inna Zhukova,Inna Zhukova,1373574698,3,3,2004,Hoop,Zorba's Dance by LCD (originally Mikis Theodorakis),Athens 2004,Athens,,https://en.wikipedia.org/wiki/Inna_Zhukova
+Inna Zhukova,Inna Zhukova,1373574698,3,4,2004,Clubs,Hu Ha by Montefiori Cocktail,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Inna_Zhukova
+Irina Risenzon,Irina Risenzon,1373582091,0,0,2008,All-around,,Beijing 2008,Beijing,music_empty,https://en.wikipedia.org/wiki/Irina_Risenzon
+Irina Risenzon,Irina Risenzon,1373582091,0,1,2008,Ribbon,Besame Mucho,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Irina_Risenzon
+Irina Risenzon,Irina Risenzon,1373582091,0,2,2008,Rope,Gabbar/Suleiman music from Vicious Delicious by Said Mrad/Infected Mushroom,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Irina_Risenzon
+Irina Risenzon,Irina Risenzon,1373582091,0,3,2008,Hoop,Prison Break by Ramin Djawadi,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Irina_Risenzon
+Irina Risenzon,Irina Risenzon,1373582091,0,4,2008,Clubs,Aa Tayar Hoja by Alka Yagnik,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Irina_Risenzon
+Irina Tchachina,Irina Tchachina,1374354787,1,0,2004,All-around,,Athens 2004,Athens,music_empty,https://en.wikipedia.org/wiki/Irina_Tchachina
+Irina Tchachina,Irina Tchachina,1374354787,1,1,2004,Ribbon,Malagueña Salerosa ( Remix ),Athens 2004,Athens,,https://en.wikipedia.org/wiki/Irina_Tchachina
+Irina Tchachina,Irina Tchachina,1374354787,1,2,2004,Ball,Harem by Sarah Brightman,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Irina_Tchachina
+Irina Tchachina,Irina Tchachina,1374354787,1,3,2004,Hoop,Pirates of the Caribbean by Klaus Badelt,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Irina_Tchachina
+Irina Tchachina,Irina Tchachina,1374354787,1,4,2004,Clubs,Laissez moi me griser by Maurice El Medioni,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Irina_Tchachina
+Joanna Mitrosz,Joanna Mitrosz,1373584097,0,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Joanna_Mitrosz
+Joanna Mitrosz,Joanna Mitrosz,1373584097,0,1,2012,Ribbon,My Cyganie,London 2012,London,,https://en.wikipedia.org/wiki/Joanna_Mitrosz
+Joanna Mitrosz,Joanna Mitrosz,1373584097,0,2,2012,Ball,Perhaps Perhaps Perhaps by Pussycat Dolls,London 2012,London,,https://en.wikipedia.org/wiki/Joanna_Mitrosz
+Joanna Mitrosz,Joanna Mitrosz,1373584097,0,3,2012,Hoop,Tanguera by Sexteto Mayor,London 2012,London,,https://en.wikipedia.org/wiki/Joanna_Mitrosz
+Joanna Mitrosz,Joanna Mitrosz,1373584097,0,4,2012,Clubs,Sing Sing Sing by Benny Goodman,London 2012,London,,https://en.wikipedia.org/wiki/Joanna_Mitrosz
+Khrystyna Pohranychna,Khrystyna Pohranychna,1375037663,1,0,2018,All-around,,Youth Olympics,Buenos Aires,music_empty;unknown_olympics,https://en.wikipedia.org/wiki/Khrystyna_Pohranychna
+Khrystyna Pohranychna,Khrystyna Pohranychna,1375037663,1,1,2018,Hoop,"""Voodoo People"" by The Prodigy, ""Shallow Grave"" by Steve Mason Experience",Youth Olympics,Buenos Aires,unknown_olympics,https://en.wikipedia.org/wiki/Khrystyna_Pohranychna
+Khrystyna Pohranychna,Khrystyna Pohranychna,1375037663,1,2,2018,Ball,"""Believer"" by Chase Holfelder",Youth Olympics,Buenos Aires,unknown_olympics,https://en.wikipedia.org/wiki/Khrystyna_Pohranychna
+Khrystyna Pohranychna,Khrystyna Pohranychna,1375037663,1,3,2018,Clubs,"""Escape from East Berlin"" by Daniel Pemberton",Youth Olympics,Buenos Aires,unknown_olympics,https://en.wikipedia.org/wiki/Khrystyna_Pohranychna
+Khrystyna Pohranychna,Khrystyna Pohranychna,1375037663,1,4,2018,Ribbon,"""Human"" by Rag'n'Bone Man",Youth Olympics,Buenos Aires,unknown_olympics,https://en.wikipedia.org/wiki/Khrystyna_Pohranychna
+Khrystyna Pohranychna,Khrystyna Pohranychna,1375037663,2,0,2021,All-around,,Tokyo 2020,Tokyo,music_empty;year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Khrystyna_Pohranychna
+Khrystyna Pohranychna,Khrystyna Pohranychna,1375037663,2,1,2021,Hoop,"""No Good"" by Kaleo, Jökull Júlíusson",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Khrystyna_Pohranychna
+Khrystyna Pohranychna,Khrystyna Pohranychna,1375037663,2,2,2021,Ball,"""Toxic"" by Britney Spears",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Khrystyna_Pohranychna
+Khrystyna Pohranychna,Khrystyna Pohranychna,1375037663,2,3,2021,Clubs,"""Hopak"" by Igor Kornelyuk",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Khrystyna_Pohranychna
+Khrystyna Pohranychna,Khrystyna Pohranychna,1375037663,2,4,2021,Ribbon,"""Bumble Bee Boogie"" by Robert Wells",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Khrystyna_Pohranychna
+Linoy Ashram,Linoy Ashram,1376099588,2,0,2021,All-around,,Tokyo 2020,Tokyo,music_empty;year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Linoy_Ashram
+Linoy Ashram,Linoy Ashram,1376099588,2,1,2021,Hoop,"Haste by Really Slow Motion, Giant Apes",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Linoy_Ashram
+Linoy Ashram,Linoy Ashram,1376099588,2,2,2021,Ball,Big in Japan by Ane Brun,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Linoy_Ashram
+Linoy Ashram,Linoy Ashram,1376099588,2,3,2021,Clubs,"Crazy in Love, Diva, Run The World by Beyoncé, Level Up by Ciara",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Linoy_Ashram
+Linoy Ashram,Linoy Ashram,1376099588,2,4,2021,Ribbon,Hava Nagila (Israeli folk song),Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Linoy_Ashram
+Liubov Charkashyna,Liubov Charkashyna,1375032970,1,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Liubov_Charkashyna
+Liubov Charkashyna,Liubov Charkashyna,1375032970,1,1,2012,Ribbon,Love Story by Francis Lai,London 2012,London,,https://en.wikipedia.org/wiki/Liubov_Charkashyna
+Liubov Charkashyna,Liubov Charkashyna,1375032970,1,2,2012,Ball,Frozen in time by Secret Garden,London 2012,London,,https://en.wikipedia.org/wiki/Liubov_Charkashyna
+Liubov Charkashyna,Liubov Charkashyna,1375032970,1,3,2012,Hoop,Primavera Porteña by Astor Piazzolla,London 2012,London,,https://en.wikipedia.org/wiki/Liubov_Charkashyna
+Liubov Charkashyna,Liubov Charkashyna,1375032970,1,4,2012,Clubs,Caravan by Raimond Pauls,London 2012,London,,https://en.wikipedia.org/wiki/Liubov_Charkashyna
 Margarita Mamun,Margarita Mamun,1373555774,1,0,2016,All-around,,Rio 2016,Rio de Janeiro,music_empty,https://en.wikipedia.org/wiki/Margarita_Mamun
 Margarita Mamun,Margarita Mamun,1373555774,1,1,2016,Hoop,Concerto de Berlin by Vladimir Cosma,Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Margarita_Mamun
 Margarita Mamun,Margarita Mamun,1373555774,1,2,2016,Ball,"Morceaux De Fantasie, Op.3:I.Elegie by Mischa Maisky",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Margarita_Mamun
 Margarita Mamun,Margarita Mamun,1373555774,1,3,2016,Clubs,"We Will Rock You by Queen, Pink",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Margarita_Mamun
 Margarita Mamun,Margarita Mamun,1373555774,1,4,2016,Ribbon,"A New Swan Queen, Night of Terror, Perfection music from The Black Swan by Clint Mansell",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Margarita_Mamun
+Marina Lobatch,Marina Lobatch,1373556541,0,0,1988,All-around,,Seoul 1988,Seoul,music_empty,https://en.wikipedia.org/wiki/Marina_Lobatch
+Marina Lobatch,Marina Lobatch,1373556541,0,1,1988,Prelim,,Seoul 1988,Seoul,music_empty,https://en.wikipedia.org/wiki/Marina_Lobatch
+Marina Lobatch,Marina Lobatch,1373556541,0,2,1988,Rope,,Seoul 1988,Seoul,music_empty,https://en.wikipedia.org/wiki/Marina_Lobatch
+Marina Lobatch,Marina Lobatch,1373556541,0,3,1988,Hoop,Passacaglia in G minor by Georg Frideric Handel,Seoul 1988,Seoul,,https://en.wikipedia.org/wiki/Marina_Lobatch
+Marina Lobatch,Marina Lobatch,1373556541,0,4,1988,Clubs,Rhapsody on a Theme of Paganini by Sergei Rachmaninoff,Seoul 1988,Seoul,,https://en.wikipedia.org/wiki/Marina_Lobatch
+Marina Lobatch,Marina Lobatch,1373556541,0,5,1988,Ribbon,Theme from Swan Lake by Pyotr Tchaikovsky,Seoul 1988,Seoul,,https://en.wikipedia.org/wiki/Marina_Lobatch
+Milena Baldassarri,Milena Baldassarri,1373558767,0,0,2021,All-around,,Tokyo 2020,Tokyo,music_empty;year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Milena_Baldassarri
+Milena Baldassarri,Milena Baldassarri,1373558767,0,1,2021,Hoop,Mephisto's Lullaby by Yair Albeg Wein & Or Kribos,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Milena_Baldassarri
+Milena Baldassarri,Milena Baldassarri,1373558767,0,2,2021,Ball,"""L'immensità"" by Mina",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Milena_Baldassarri
+Milena Baldassarri,Milena Baldassarri,1373558767,0,3,2021,Clubs,Bury a Friend by Billie Eilish,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Milena_Baldassarri
+Milena Baldassarri,Milena Baldassarri,1373558767,0,4,2021,Ribbon,Elegie: O doux printemps d'autrefois by Joshua Bell,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Milena_Baldassarri
+Milena Baldassarri,Milena Baldassarri,1373558767,0,5,2024,All-around,,Paris 2024,Paris,music_empty,https://en.wikipedia.org/wiki/Milena_Baldassarri
+Milena Baldassarri,Milena Baldassarri,1373558767,0,6,2024,Hoop,Hit The Road Jack (Epic Cover) by 2WEI,Paris 2024,Paris,,https://en.wikipedia.org/wiki/Milena_Baldassarri
+Milena Baldassarri,Milena Baldassarri,1373558767,0,7,2024,Ball,Formidable by Giordana Angi,Paris 2024,Paris,,https://en.wikipedia.org/wiki/Milena_Baldassarri
+Milena Baldassarri,Milena Baldassarri,1373558767,0,8,2024,Clubs,"Don't tell mama by Natasha Richardson, Alan Cumming and Cabaret Ensemble (1998)",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Milena_Baldassarri
+Milena Baldassarri,Milena Baldassarri,1373558767,0,9,2024,Ribbon,Can you hear the music by Ludwig Göransson and The game is afoot by Eternal Eclipse,Paris 2024,Paris,,https://en.wikipedia.org/wiki/Milena_Baldassarri
+Natalia Godunko,Natalia Godunko,1373559975,1,0,2008,All-around,,Beijing 2008,Beijing,music_empty,https://en.wikipedia.org/wiki/Natalia_Godunko
+Natalia Godunko,Natalia Godunko,1373559975,1,1,2008,Hoop,Night On Bald Mountain by Modest Moussorgsky,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Natalia_Godunko
+Natalia Godunko,Natalia Godunko,1373559975,1,2,2008,Rope,Hopak – Ukrainian Folk,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Natalia_Godunko
+Natalia Godunko,Natalia Godunko,1373559975,1,3,2008,Clubs,"""L'estate"" (Summer) 3. Presto by Vivaldi",Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Natalia_Godunko
+Natalia Godunko,Natalia Godunko,1373559975,1,4,2008,Ribbon,Tsiganochka / Gypsy Girl,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Natalia_Godunko
+Natalia Godunko,Natalia Godunko,1373559975,2,0,2004,All-around,,Athens 2004,Athens,music_empty,https://en.wikipedia.org/wiki/Natalia_Godunko
+Natalia Godunko,Natalia Godunko,1373559975,2,1,2004,Ball,Technologicque Park by Orbital,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Natalia_Godunko
+Natalia Godunko,Natalia Godunko,1373559975,2,2,2004,Hoop,Spartacus Suite by Aram Khachaturian,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Natalia_Godunko
+Natalia Godunko,Natalia Godunko,1373559975,2,3,2004,Clubs,Tetsujin music from Matrix Revolutions by Juno Reactor & Don Davis,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Natalia_Godunko
+Natalia Godunko,Natalia Godunko,1373559975,2,4,2004,Ribbon,Bumble Bee Boogie by Robert Wells,Athens 2004,Athens,,https://en.wikipedia.org/wiki/Natalia_Godunko
+Neta Rivkin,Neta Rivkin,1373560458,0,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Neta_Rivkin
+Neta Rivkin,Neta Rivkin,1373560458,0,1,2012,Ribbon,Arez by Stanislav Zeltser,London 2012,London,,https://en.wikipedia.org/wiki/Neta_Rivkin
+Neta Rivkin,Neta Rivkin,1373560458,0,2,2012,Ball,Adios by Stanislav Zeltser,London 2012,London,,https://en.wikipedia.org/wiki/Neta_Rivkin
+Neta Rivkin,Neta Rivkin,1373560458,0,3,2012,Hoop,"Arabica/Toro-Koko, Pek-Pek by Didulya",London 2012,London,,https://en.wikipedia.org/wiki/Neta_Rivkin
+Neta Rivkin,Neta Rivkin,1373560458,0,4,2012,Clubs,Joke Tango by Stanislav Zeltser,London 2012,London,,https://en.wikipedia.org/wiki/Neta_Rivkin
+Neviana Vladinova,Neviana Vladinova,1373560465,0,0,2016,All-around,,Rio 2016,Rio de Janeiro,music_empty,https://en.wikipedia.org/wiki/Neviana_Vladinova
+Neviana Vladinova,Neviana Vladinova,1373560465,0,1,2016,Hoop,"""Schindler's List"" by John Williams",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Neviana_Vladinova
+Neviana Vladinova,Neviana Vladinova,1373560465,0,2,2016,Ball,"""Tanguera"" by Sexteto Mayor",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Neviana_Vladinova
+Neviana Vladinova,Neviana Vladinova,1373560465,0,3,2016,Clubs,"""Mixed - Ouverture, Nostalic, Extreme, Delirium"" by Les Tambours du Bronx",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Neviana_Vladinova
+Neviana Vladinova,Neviana Vladinova,1373560465,0,4,2016,Ribbon,"""Buleria"" by David Bisbal",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Neviana_Vladinova
+Nicol Zelikman,Nicol Zelikman,1373913064,1,0,2021,All-around,,Tokyo 2020,Tokyo,music_empty;year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Nicol_Zelikman
+Nicol Zelikman,Nicol Zelikman,1373913064,1,1,2021,Hoop,Anya by Deep Purple,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Nicol_Zelikman
+Nicol Zelikman,Nicol Zelikman,1373913064,1,2,2021,Ball,Humanity by Scorpions,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Nicol_Zelikman
+Nicol Zelikman,Nicol Zelikman,1373913064,1,3,2021,Clubs,Devil Inside Me (feat. KARRA) by Kshmr Kazza,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Nicol_Zelikman
+Nicol Zelikman,Nicol Zelikman,1373913064,1,4,2021,Ribbon,Concerto De Espania by Michael Lides,Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Nicol_Zelikman
+Olga Kapranova,Olga Kapranova,1373780416,1,0,2008,All-around,,Beijing 2008,Beijing,music_empty,https://en.wikipedia.org/wiki/Olga_Kapranova
+Olga Kapranova,Olga Kapranova,1373780416,1,1,2008,Ribbon,Katyusha Remix by DJ Ras Putin,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Olga_Kapranova
+Olga Kapranova,Olga Kapranova,1373780416,1,2,2008,Rope,Pogonya,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Olga_Kapranova
+Olga Kapranova,Olga Kapranova,1373780416,1,3,2008,Hoop,"Act 1 – Kitri and Basilio, Variation: Kitri | music from Don Quixote by Leon Minkus",Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Olga_Kapranova
+Olga Kapranova,Olga Kapranova,1373780416,1,4,2008,Clubs,Swan Lake by Tchaikovsky,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Olga_Kapranova
+Oksana Skaldina,Oksana Skaldina,1373561564,0,0,1992,All-around,,Barcelona 1992,Barcelona,music_empty,https://en.wikipedia.org/wiki/Oksana_Skaldina
+Oksana Skaldina,Oksana Skaldina,1373561564,0,1,1992,Prelim,,Barcelona 1992,Barcelona,music_empty,https://en.wikipedia.org/wiki/Oksana_Skaldina
+Oksana Skaldina,Oksana Skaldina,1373561564,0,2,1992,Rope,Gopak (Ukrainian Traditional Folk),Barcelona 1992,Barcelona,,https://en.wikipedia.org/wiki/Oksana_Skaldina
+Oksana Skaldina,Oksana Skaldina,1373561564,0,3,1992,Hoop,Peer Gynt Suite No.1: In The Hall Of The Mountain King music from Peer Gynt by Edvard Grieg,Barcelona 1992,Barcelona,,https://en.wikipedia.org/wiki/Oksana_Skaldina
+Oksana Skaldina,Oksana Skaldina,1373561564,0,4,1992,Ball,,Barcelona 1992,Barcelona,music_empty,https://en.wikipedia.org/wiki/Oksana_Skaldina
+Oksana Skaldina,Oksana Skaldina,1373561564,0,5,1992,Clubs,,Barcelona 1992,Barcelona,music_empty,https://en.wikipedia.org/wiki/Oksana_Skaldina
+Rachel Stoyanov,Rachel Stoyanov,1374209508,0,0,2024,All-around,,Paris 2024,Paris,music_empty,https://en.wikipedia.org/wiki/Rachel_Stoyanov
+Rachel Stoyanov,Rachel Stoyanov,1374209508,0,1,2024,5 Hoops,"Chi Mai, Dona Is Sick by Ennio Morricone, Bulgarian Voices",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Rachel_Stoyanov
+Rachel Stoyanov,Rachel Stoyanov,1374209508,0,2,2024,3 Ribbons + 2 Balls,Someone else (Acapella)' by Allegro,Paris 2024,Paris,,https://en.wikipedia.org/wiki/Rachel_Stoyanov
+Romina Laurito,Romina Laurito,1373598512,0,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Romina_Laurito
+Romina Laurito,Romina Laurito,1373598512,0,1,2012,5 Balls,Black Gold by Armand Amar,London 2012,London,,https://en.wikipedia.org/wiki/Romina_Laurito
+Romina Laurito,Romina Laurito,1373598512,0,2,2012,3 Ribbons + 2 Hoops,William Tell Overture by Gioachino Rossini,London 2012,London,,https://en.wikipedia.org/wiki/Romina_Laurito
+Silvia Miteva,Silvia Miteva,1373600471,0,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Silvia_Miteva
+Silvia Miteva,Silvia Miteva,1373600471,0,1,2012,Ribbon,Almoraima by Paco de Lucia,London 2012,London,,https://en.wikipedia.org/wiki/Silvia_Miteva
+Silvia Miteva,Silvia Miteva,1373600471,0,2,2012,Ball,Caruso by Maga Zoltan,London 2012,London,,https://en.wikipedia.org/wiki/Silvia_Miteva
+Silvia Miteva,Silvia Miteva,1373600471,0,3,2012,Hoop,"The King And His Sons, Landtrain by Harry Gregson-Williams, Brian Tyler",London 2012,London,,https://en.wikipedia.org/wiki/Silvia_Miteva
+Silvia Miteva,Silvia Miteva,1373600471,0,4,2012,Clubs,"Adagio in G minor by Budapest Film Orchestra, Dominic Miller and Nick Ingman",London 2012,London,,https://en.wikipedia.org/wiki/Silvia_Miteva
+Sofia Raffaeli,Sofia Raffaeli,1373600847,1,0,2024,All-around,,Paris 2024,Paris,music_empty,https://en.wikipedia.org/wiki/Sofia_Raffaeli
+Sofia Raffaeli,Sofia Raffaeli,1373600847,1,1,2024,Hoop,Rescue by Lauren Daigle,Paris 2024,Paris,,https://en.wikipedia.org/wiki/Sofia_Raffaeli
+Sofia Raffaeli,Sofia Raffaeli,1373600847,1,2,2024,Ball,Bella ci dormi by Maria Mazzotta and Pulcinella,Paris 2024,Paris,,https://en.wikipedia.org/wiki/Sofia_Raffaeli
+Sofia Raffaeli,Sofia Raffaeli,1373600847,1,3,2024,Clubs,"Dark Mirror by Power-Haus, Christian Reindl and Lucie Paradis",Paris 2024,Paris,,https://en.wikipedia.org/wiki/Sofia_Raffaeli
+Sofia Raffaeli,Sofia Raffaeli,1373600847,1,4,2024,Ribbon,Vesoul by Mouron and Terry Truck,Paris 2024,Paris,,https://en.wikipedia.org/wiki/Sofia_Raffaeli
+Son Yeon-jae,Son Yeon-jae,1373600948,1,0,2016,All-around,,Rio 2016,Rio de Janeiro,music_empty,https://en.wikipedia.org/wiki/Son_Yeon-jae
+Son Yeon-jae,Son Yeon-jae,1373600948,1,1,2016,Hoop,Valse by Nicolas Jorelle,Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Son_Yeon-jae
+Son Yeon-jae,Son Yeon-jae,1373600948,1,2,2016,Ball,Parla Piu Piano by Filippa Giordano,Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Son_Yeon-jae
+Son Yeon-jae,Son Yeon-jae,1373600948,1,3,2016,Clubs,Oye Negra by Terry Snyder,Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Son_Yeon-jae
+Son Yeon-jae,Son Yeon-jae,1373600948,1,4,2016,Ribbon,"Libertango by Michel Camilo, Tomatito, Cinema Serenade Ensemble",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Son_Yeon-jae
+Son Yeon-jae,Son Yeon-jae,1373600948,2,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Son_Yeon-jae
+Son Yeon-jae,Son Yeon-jae,1373600948,2,1,2012,Hoop,Pas De Deux by Pyotr Tchaikovsky,London 2012,London,,https://en.wikipedia.org/wiki/Son_Yeon-jae
+Son Yeon-jae,Son Yeon-jae,1373600948,2,2,2012,Ball,Charlie Chaplin Soundtrack by Charlie Chaplin,London 2012,London,,https://en.wikipedia.org/wiki/Son_Yeon-jae
+Son Yeon-jae,Son Yeon-jae,1373600948,2,3,2012,Clubs,Jazz Machine by Black Machine; Only You by Max Greger,London 2012,London,,https://en.wikipedia.org/wiki/Son_Yeon-jae
+Son Yeon-jae,Son Yeon-jae,1373600948,2,4,2012,Ribbon,Un bel di vedremo from Madame Butterfly by Giacomo Puccini,London 2012,London,,https://en.wikipedia.org/wiki/Son_Yeon-jae
+Tamara Yerofeeva,Tamara Yerofeeva,1375576326,1,0,2000,All-around,,Sydney 2000,Sydney,music_empty,https://en.wikipedia.org/wiki/Tamara_Yerofeeva
+Tamara Yerofeeva,Tamara Yerofeeva,1375576326,1,1,2000,Ribbon,Grand Central (from Carlito's Way) by Patrick Doyle,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Tamara_Yerofeeva
+Tamara Yerofeeva,Tamara Yerofeeva,1375576326,1,2,2000,Ball,Ispoved (Confession) by Bustrayakov,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Tamara_Yerofeeva
+Tamara Yerofeeva,Tamara Yerofeeva,1375576326,1,3,2000,Hoop,Mr. Mellow / Megalith by T-Square,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Tamara_Yerofeeva
+Tamara Yerofeeva,Tamara Yerofeeva,1375576326,1,4,2000,Rope,The Saint by Graeme Revell,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Tamara_Yerofeeva
+Viktoria Mazur,Viktoria Mazur,1373600318,1,0,2012,Group All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Viktoria_Mazur
+Viktoria Mazur,Viktoria Mazur,1373600318,1,1,2012,5 Balls,Grand Guignol music from Mar Dulce by Bajofondo Tango Club,London 2012,London,,https://en.wikipedia.org/wiki/Viktoria_Mazur
+Viktoria Mazur,Viktoria Mazur,1373600318,1,2,2012,3 Ribbons / 2 Hoops,Espana Cani / Espana Cani by Manhattan Pops Orchestra / Trio Norte,London 2012,London,,https://en.wikipedia.org/wiki/Viktoria_Mazur
+Viktoriia Onopriienko,Viktoriia Onopriienko,1373600373,1,0,2021,All-around,,Tokyo 2020,Tokyo,music_empty;year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Viktoriia_Onopriienko
+Viktoriia Onopriienko,Viktoriia Onopriienko,1373600373,1,1,2021,Hoop,"""Giselle"" by Adolphe Charles Adam",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Viktoriia_Onopriienko
+Viktoriia Onopriienko,Viktoriia Onopriienko,1373600373,1,2,2021,Ball,"""Smooth Criminal"" by Michael Jackson",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Viktoriia_Onopriienko
+Viktoriia Onopriienko,Viktoriia Onopriienko,1373600373,1,3,2021,Clubs,"""Back in Black"" by Sershen & Zaritskaya",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Viktoriia_Onopriienko
+Viktoriia Onopriienko,Viktoriia Onopriienko,1373600373,1,4,2021,Ribbon,"""The House Always Wins"" by Christophe Beck",Tokyo 2020,Tokyo,year_corrected_2020_to_2021,https://en.wikipedia.org/wiki/Viktoriia_Onopriienko
 Yana Kudryavtseva,Yana Kudryavtseva,1374552671,2,0,2016,All-around,,Rio 2016,Rio de Janeiro,music_empty,https://en.wikipedia.org/wiki/Yana_Kudryavtseva
 Yana Kudryavtseva,Yana Kudryavtseva,1374552671,2,1,2016,Hoop,"""Kon (Slavyanskaya)"" by Khor Turetskogo",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Yana_Kudryavtseva
 Yana Kudryavtseva,Yana Kudryavtseva,1374552671,2,2,2016,Ball,"""Piano Concerto No.23 – Adagio"", ""Piano Concerto No. 21 – Andante"", by Wolfgang Amadeus Mozart",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Yana_Kudryavtseva
 Yana Kudryavtseva,Yana Kudryavtseva,1374552671,2,3,2016,Clubs,Black Gold by Armand Amar,Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Yana_Kudryavtseva
 Yana Kudryavtseva,Yana Kudryavtseva,1374552671,2,4,2016,Ribbon,Valse Triste by Jean Sibelius,Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Yana_Kudryavtseva
-Hanna Rizatdinova,Ganna Rizatdinova,1373572575,1,0,2016,All-around,,Rio 2016,Rio de Janeiro,music_empty,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
-Hanna Rizatdinova,Ganna Rizatdinova,1373572575,1,1,2016,Ribbon,"Tomorrow Never Comes, Time To Go Crazy by Rishi & Harshil",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
-Hanna Rizatdinova,Ganna Rizatdinova,1373572575,1,2,2016,Clubs,"They Don't Care About Us by Olodum, Michael Jackson, David Garrett",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
-Hanna Rizatdinova,Ganna Rizatdinova,1373572575,1,3,2016,Ball,I Put a Spell on You music from Fifty Shades of Grey by Annie Lennox,Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
-Hanna Rizatdinova,Ganna Rizatdinova,1373572575,1,4,2016,Hoop,"España Caní, España Caní by Manhattan Pops Orchestra, Trio Norté",Rio 2016,Rio de Janeiro,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
-Hanna Rizatdinova,Ganna Rizatdinova,1373572575,2,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
-Hanna Rizatdinova,Ganna Rizatdinova,1373572575,2,1,2012,Ribbon,Smooth Criminal by 2 Cellos (Sulic & Hauser),London 2012,London,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
-Hanna Rizatdinova,Ganna Rizatdinova,1373572575,2,2,2012,Ball,The Promise by Secret Garden,London 2012,London,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
-Hanna Rizatdinova,Ganna Rizatdinova,1373572575,2,3,2012,Hoop,The Fast And The Furious: Tokyo Drift by Brian Tyler,London 2012,London,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
-Hanna Rizatdinova,Ganna Rizatdinova,1373572575,2,4,2012,Clubs,Black Gold by Armand Amar,London 2012,London,,https://en.wikipedia.org/wiki/Hanna_Rizatdinova
-Evgeniya Kanaeva,Yevgeniya Kanayeva,1373567200,3,0,2012,All-around,,London 2012,London,music_empty,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
-Evgeniya Kanaeva,Yevgeniya Kanayeva,1373567200,3,1,2012,Ball,"""Concerto (Ballet)"" (Les Demoiselles de Rochefort OST) by Michel Legrand",London 2012,London,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
-Evgeniya Kanaeva,Yevgeniya Kanayeva,1373567200,3,2,2012,Ribbon,"""Fantasie Impromptu No 66"" by Frédéric Chopin",London 2012,London,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
-Evgeniya Kanaeva,Yevgeniya Kanayeva,1373567200,3,3,2012,Hoop,"""The Rite of Spring"" by Igor Stravinsky",London 2012,London,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
-Evgeniya Kanaeva,Yevgeniya Kanayeva,1373567200,3,4,2012,Clubs,"""Poeta (remix)"" original by Vincente Amigo | remix by Maxime Rodriguez",London 2012,London,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
-Evgeniya Kanaeva,Yevgeniya Kanayeva,1373567200,4,0,2008,All-around,,Beijing 2008,Beijing,music_empty,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
-Evgeniya Kanaeva,Yevgeniya Kanayeva,1373567200,4,1,2008,Ribbon,Moscow Nights by Vasily Solovyov-Sedoi,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
-Evgeniya Kanaeva,Yevgeniya Kanayeva,1373567200,4,2,2008,Rope,"""El Conquistador"" by Maxime Rodriguez",Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
-Evgeniya Kanaeva,Yevgeniya Kanayeva,1373567200,4,3,2008,Hoop,Tristan & Iseult by Maxime Rodriguez,Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
-Evgeniya Kanaeva,Yevgeniya Kanayeva,1373567200,4,4,2008,Clubs,"""Jota Aragonesa"" by Glinka",Beijing 2008,Beijing,,https://en.wikipedia.org/wiki/Evgeniya_Kanaeva
+Yana Batyrshina,Yana Batyrshina,1376548143,0,0,1996,All-around,,Atlanta 1996,Atlanta,music_empty,https://en.wikipedia.org/wiki/Yana_Batyrshina
+Yana Batyrshina,Yana Batyrshina,1376548143,0,1,1996,Ribbon,Gypsy Dance music from Don Quixote by Leon Minkus,Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Yana_Batyrshina
+Yana Batyrshina,Yana Batyrshina,1376548143,0,2,1996,Rope,Moorish Dance from Othello by Machavariani,Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Yana_Batyrshina
+Yana Batyrshina,Yana Batyrshina,1376548143,0,3,1996,Ball,Young Prince and Princess from Scheherazade by Nikolay Rimsky-Korsakov,Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Yana_Batyrshina
+Yana Batyrshina,Yana Batyrshina,1376548143,0,4,1996,Clubs,Act 1 – Appearance Of Kitri / Act 1 – Variation: Kitri music from Don Quixote by Leon Minkus,Atlanta 1996,Atlanta,,https://en.wikipedia.org/wiki/Yana_Batyrshina
+Yulia Barsukova,Yulia Barsukova,1373602762,1,0,2000,All-around,,Sydney 2000,Sydney,music_empty,https://en.wikipedia.org/wiki/Yulia_Barsukova
+Yulia Barsukova,Yulia Barsukova,1373602762,1,1,2000,Ribbon,The Feeling Begins by Peter Gabriel,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Yulia_Barsukova
+Yulia Barsukova,Yulia Barsukova,1373602762,1,2,2000,Ball,The Dying Swan by Saint-Saëns Camille,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Yulia_Barsukova
+Yulia Barsukova,Yulia Barsukova,1373602762,1,3,2000,Hoop,Nightmare by Ronan Hardiman,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Yulia_Barsukova
+Yulia Barsukova,Yulia Barsukova,1373602762,1,4,2000,Rope,Breath of Sax by dj dado feat control X,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Yulia_Barsukova
+Yulia Raskina,Yulia Raskina,1373602821,1,0,2000,All-around,,Sydney 2000,Sydney,music_empty,https://en.wikipedia.org/wiki/Yulia_Raskina
+Yulia Raskina,Yulia Raskina,1373602821,1,1,2000,Ribbon,Underground/ Storm / A New Life | music from The Truman Show,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Yulia_Raskina
+Yulia Raskina,Yulia Raskina,1373602821,1,2,2000,Ball,Spain (Malagueña) by Anatoly Vekshin,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Yulia_Raskina
+Yulia Raskina,Yulia Raskina,1373602821,1,3,2000,Hoop,Manhattan by Anatoly Vekshin,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Yulia_Raskina
+Yulia Raskina,Yulia Raskina,1373602821,1,4,2000,Rope,Smuglyanochka by Anatoly Vekshin,Sydney 2000,Sydney,,https://en.wikipedia.org/wiki/Yulia_Raskina

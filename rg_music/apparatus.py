@@ -14,6 +14,7 @@ from typing import NamedTuple
 BASE = {
     "hoop": "Hoop", "ball": "Ball", "clubs": "Clubs",
     "ribbon": "Ribbon", "ribbons": "Ribbon", "rope": "Rope", "gala": "Gala",
+    "free-hands": "Free hands", "free hands": "Free hands", "free-hand": "Free hands",
 }
 VARIANTS = {
     "first": "first", "1st": "first",
@@ -22,7 +23,7 @@ VARIANTS = {
 }
 TYPOS = {"Autum": "Autumn"}
 
-_HEAD = re.compile(r"^(hoop|ball|clubs|ribbons?|rope|gala)\b(.*)$", re.I)
+_HEAD = re.compile(r"^(hoop|ball|clubs|ribbons?|rope|gala|free[- ]hands?)\b(.*)$", re.I)
 
 
 class Apparatus(NamedTuple):

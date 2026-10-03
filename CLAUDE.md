@@ -29,9 +29,12 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   artist, performer, notes, flags, status). `rg_music/parse.py` – CLI: `python -m rg_music.parse`
   → `data/interim/routines_parsed.csv` (one row per routine), `tracks.csv` (one row per track,
   key `routine_id` = gymnast_page|table_index|row_index), `parse_report.json`.
-  Last run: 391 routines → 403 tracks: 382 ok, 20 partial (all "no credit in source"), 1 reference.
+  Last full run: 3850 routines → 3943 tracks: 3731 ok, 204 partial, 7 unparsed (ambiguous splits, for the
+  LLM), 1 reference; 286 routines have an empty music cell. `year_from`/`year_to` handle seasons ("2022/2023").
 - Seed: `data/seed_gymnasts.txt` (10 Olympic AA medalists 2008–2024).
-  Last run: 391 routine rows, all 10 pages OK; crosscheck 46 match / 5 fuzzy / 1 differs.
+  `data/seed_wc_gymnasts.txt` = the 533 gymnasts with an article (from `wc_gymnasts_final.csv`);
+  run with `--seed`. Last full run: 533 pages OK, 173 with a routine table, 3850 routine rows;
+  crosscheck on 241 competition rows: 136 match / 10 fuzzy / 3 year-shifted / 21 differ / 71 no routine table.
 - Tests: `python -m pytest -q` (fixtures mimic real layouts).
 
 ## Decisions made with the owner
@@ -90,6 +93,66 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 Known source errors worth catching in validation: Averina 2015 "Giselle" attributed to
 Tchaikovsky (it is Adam); "Mvrica" (Mrvica); Kudryavtseva 2016 ball "from Toy Story 4"
 only in one of two tables; Kanaeva 2012 "Fantasie Impromptu No 66" (Op. 66).
+
+## Findings from the full run on 533 gymnast pages (new tasks)
+- **Coverage is the main limit**: only 173 of 533 articles have a music table. 323 are stubs with no
+  mention of music (median 3 KB), 18 mention music only in prose, 16 have music only in a
+  *competition* table (68 rows not yet in `routines_parsed`). → merge competition rows as a second
+  source; the rgforum.no archive is justified as an additional source; prose could go to the LLM.
+- **Seasons instead of years** (45 rows, 10 pages: "2022/2023", "2017-18", "2010-2012").
+  `year_from`/`year_to` added; open: model as a range in the DB or pick one year.
+- **Music matching** (3939 tracks, 2491 distinct normalised titles, 865 titles used 2+ times):
+  - ASCII-folding makes titles in Cyrillic/Korean/etc. empty (53 tracks): need a Unicode-aware key.
+  - Same title, different performers (Caruso: 4, Feeling Good: 4+). **Decided: "same music" = same
+    work**, not same recording; different excerpts of one work (Swan Lake, Don Quixote) are
+    normal and shown as detail. Risk to handle: one title can be different songs ("Hurt"), so the
+    work key needs the composer/MusicBrainz, not the title alone. Artist spellings also vary
+    ("Cagey String"/"Cagey Strings", "Glee cast"/"Kenny Loggins").
+  - 158 tracks look classical (Op., No., Symphony...): work/excerpt/composer split is needed there.
+- **Parser**: titles containing "by" ("Paris By Night", "Stand by Me") are handled (flag `by_in_title`);
+  ambiguous "A by X, B and C by Y" splits are NOT guessed (7 cells left unparsed for the LLM);
+  181 tracks have no credit (enrich from another source).
+- **Source conflicts exist**: 21 competition rows contradict the routine table (e.g. Vitrychenko 2000:
+  "Pink Dream" vs "Marche en la ..."): needs a validation report, not silent resolution.
+
+## Bilingual dashboard (EN + RU): plan and estimates
+Decided to offer English and Russian. What gets a Russian version:
+- **UI strings**: trivial (i18n dictionary).
+- **apparatus**: a `name_ru` column in the `apparatus` table (7 values); no separate reference.
+- **countries**: ISO translations in pycountry cover 278 of 281 entries, but as long official forms
+  ("Российская Федерация", "Республика Корея", "Китайская провинция Тайвань"): add ~20 short-name
+  overrides (Россия, Южная Корея, Китайский Тайбэй, СССР...); about an hour. Turkey, Yugoslavia missing.
+- **gymnast names**: Wikidata has a Cyrillic label for 163 of the 533 articles (30%): 70-95% for
+  Russia/USSR/Belarus/Ukraine/Bulgaria, ~20-30% elsewhere; none for the 877 gymnasts without an
+  article. Labels need cleaning ("Солдатова, Александра Сергеевна" -> "Александра Солдатова").
+  Plan: `gymnast.name_ru` nullable, fall back to the Latin name; search works on both.
+  Transliteration for the rest is optional and only reliable for Slavic names (Chinese/Spanish no).
+- **classical titles and composers (not started; estimate before deciding)**: ~330 tracks (8%)
+  look classical, ~200 distinct titles, a few dozen composers (the credits are dominated by about
+  20: Tchaikovsky, Bizet, Stravinsky, Khachaturian, Ravel...). Fully automatic lookup is unreliable:
+  Wikidata search finds "Лебединое озеро" and "Пётр Ильич Чайковский" but also returns an insect
+  genus for "Spartacus", the novel for "Don Quixote" and a given name for "Carmen". Proposed
+  criteria: translate only works/composers on a **reviewed whitelist** (classical, ballet, opera,
+  traditional Russian titles), proposals from Wikidata + owner review; never translate pop/rock
+  titles or performers (1872 distinct artist strings); keep Cyrillic song titles as written.
+  Effort about 1-1.5 days, after the `work`/`artist` tables exist (translation belongs on those
+  entities as `name_ru`, not on raw text).
+
+## Ideas and open questions (not decided yet)
+Dashboard for browsing the DB (decide `event` and filters after the first version is drawn):
+- Search/filters: gymnast name, country, year; **apparatus as a filter** is probably convenient
+  (owner leaning yes). Result = the gymnast(s), then their music.
+- **`event` as a badge, not (only) a filter.** Within one year a gymnast can have several music
+  pieces for the same apparatus (e.g. Taisiia Onofriichuk 2026: one ribbon music early in the
+  season, then Carmen). Where the source states the competition, show next to the title and
+  artist a badge such as "performed at World Championships 2026". Where it does not, no badge:
+  `championship_entry` only says the gymnast competed, not with which music or apparatus, so the
+  badge must come from `routine.event_id` (filled from the "competition" column / competition
+  tables), never inferred from the year alone. This is the use case for the optional `event_id`.
+- **YouTube links** under each music result: the video of that gymnast's performance, year and
+  apparatus must match. Schema idea: `video_link(video_id, routine_id, url, source, verified)`;
+  automatic search results (YouTube Data API: key + quota, check its terms) are only candidates
+  until verified; link out rather than embed.
 
 ## Later steps
 Entity resolution (same music across gymnasts, composer vs. performer) (rapidfuzz + MusicBrainz + LLM arbiter), validation

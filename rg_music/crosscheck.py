@@ -19,6 +19,8 @@ from collections import Counter
 from difflib import SequenceMatcher
 from pathlib import Path
 
+from rg_music.years import parse_years
+
 INTERIM = Path("data/interim")
 FUZZY_OK = 0.85
 
@@ -41,6 +43,12 @@ def similarity(a: str, b: str) -> float:
     return SequenceMatcher(None, norm_music(a), norm_music(b)).ratio()
 
 
+def _covers(routine_year: str, year: int) -> bool:
+    """The routine's year (or season, e.g. 2022/2023) includes this year."""
+    span = parse_years(routine_year)
+    return bool(span) and span[0] <= year <= span[1]
+
+
 def main() -> int:
     routines = list(csv.DictReader((INTERIM / "routines_raw.csv").open(encoding="utf-8")))
     comps = [
@@ -57,22 +65,26 @@ def main() -> int:
     out = []
     for c in comps:
         candidates = index.get((c["gymnast_page"], base_apparatus(c["apparatus"])), [])
-        year = int(c["year"])
+        years = parse_years(c["year"])
+        if years is None:
+            continue
+        year = years[0]
         best, best_score = None, 0.0
         for r in candidates:
             score = similarity(c["music"], r["music"])
             # prefer the same season on ties
-            if score > best_score or (score == best_score and best and r["year"] == c["year"]):
+            if score > best_score or (score == best_score and best and _covers(r["year"], year)):
                 best, best_score = r, score
 
         if best is None:
             status = "no_routine_for_apparatus"
         elif best_score < FUZZY_OK:
             status = "music_differs"
-        elif best["year"] == c["year"]:
+        elif _covers(best["year"], year):
             status = "match" if best_score == 1.0 else "match_fuzzy"
         else:
-            status = f"match_but_year_{'+' if int(best['year']) > year else ''}{int(best['year']) - year}"
+            diff = (parse_years(best["year"]) or (year, year))[0] - year
+            status = f"match_but_year_{'+' if diff > 0 else ''}{diff}"
 
         out.append({
             "gymnast_page": c["gymnast_page"],

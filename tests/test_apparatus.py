@@ -14,6 +14,7 @@ from rg_music.apparatus import normalize_apparatus
     ("Clubs at LA Lights", ("Clubs", "", "LA Lights")),
     ("Gala-free hand", ("Gala", "", "free hand")),
     ("Gala-2 Ribbons (WCH Patras)", ("Gala", "", "2 Ribbons; WCH Patras")),
+    ("Free-hands", ("Free hands", "", "")),
 ])
 def test_normalize(raw, expected):
     assert normalize_apparatus(raw)[:3] == expected
