@@ -22,6 +22,7 @@ Usage:
 from __future__ import annotations
 
 import csv
+import gettext
 import re
 import sys
 import unicodedata
@@ -33,7 +34,7 @@ import pycountry
 
 REFERENCE = Path("data/reference")
 FUZZY_CUTOFF = 0.84
-COUNTRY_FIELDS = ["country_id", "name", "iso_name", "alpha2", "alpha3", "alpha4", "status", "valid_until", "note"]
+COUNTRY_FIELDS = ["country_id", "name", "name_ru", "iso_name", "alpha2", "alpha3", "alpha4", "status", "valid_until", "note"]
 ALIAS_FIELDS = ["alias", "country_id", "source"]
 
 # short everyday names where ISO's wording is awkward (everything else: common_name, or the part before the comma)
@@ -43,6 +44,17 @@ SHORT_NAMES = {
     "CIV": "Ivory Coast", "CPV": "Cape Verde", "BRN": "Brunei", "VAT": "Vatican City",
     "SUHH": "Soviet Union", "DDDE": "East Germany", "CSHH": "Czechoslovakia", "YUCS": "Yugoslavia",
     "CSXX": "Serbia and Montenegro", "BYAA": "Byelorussian SSR",
+}
+# Russian short names where the ISO translation is an official long form
+SHORT_NAMES_RU = {
+    "RUS": "Россия", "KOR": "Южная Корея", "PRK": "Северная Корея", "TWN": "Китайский Тайбэй",
+    "SUHH": "СССР", "CSHH": "Чехословакия", "DDDE": "ГДР", "YUCS": "Югославия", "CSXX": "Сербия и Черногория",
+    "BYAA": "Белорусская ССР", "TUR": "Турция", "GBR": "Великобритания", "USA": "США", "VNM": "Вьетнам",
+    "LAO": "Лаос", "SYR": "Сирия", "IRN": "Иран", "MDA": "Молдова", "BOL": "Боливия", "VEN": "Венесуэла",
+    "TZA": "Танзания", "BRN": "Бруней", "COD": "ДР Конго", "COG": "Республика Конго", "PSE": "Палестина",
+    "VAT": "Ватикан", "MKD": "Северная Македония", "CZE": "Чехия", "CIV": "Кот-д'Ивуар", "CPV": "Кабо-Верде",
+    "BIH": "Босния и Герцеговина", "FSM": "Микронезия", "AIN": "Индивидуальные нейтральные атлеты",
+    "HKG": "Гонконг", "ARE": "ОАЭ", "PRI": "Пуэрто-Рико", "MAC": "Макао",
 }
 # IOC codes (as in FIG tables) that differ from ISO alpha-3 / ISO 3166-3
 IOC_TO_ID = {
@@ -85,8 +97,16 @@ def short_name(country, country_id: str) -> str:
     return common or country.name.split(",")[0].strip()
 
 
+def _russian(domain: str):
+    try:
+        return gettext.translation(domain, pycountry.LOCALES_DIR, languages=["ru"]).gettext
+    except OSError:
+        return lambda text: text
+
+
 def build_reference() -> tuple[list[dict], list[dict]]:
     countries, aliases = [], []
+    ru_current, ru_former = _russian("iso3166-1"), _russian("iso3166-3")
 
     def add_aliases(country_id: str, values: list[tuple[str, str]]) -> None:
         for alias, source in values:
@@ -96,20 +116,22 @@ def build_reference() -> tuple[list[dict], list[dict]]:
     for c in pycountry.countries:
         cid = c.alpha_3
         name = short_name(c, cid)
-        countries.append({"country_id": cid, "name": name, "iso_name": c.name, "alpha2": c.alpha_2,
+        countries.append({"country_id": cid, "name": name, "name_ru": SHORT_NAMES_RU.get(cid) or ru_current(c.name),
+                          "iso_name": c.name, "alpha2": c.alpha_2,
                           "alpha3": c.alpha_3, "alpha4": "", "status": "current", "valid_until": "", "note": ""})
         add_aliases(cid, [(c.name, "iso_name"), (getattr(c, "official_name", ""), "iso_official"),
                           (getattr(c, "common_name", ""), "iso_common"), (name, "short"), (c.alpha_3, "iso_alpha3")])
     for h in pycountry.historic_countries:
         cid = h.alpha_4
         name = short_name(h, cid)
-        countries.append({"country_id": cid, "name": name, "iso_name": h.name, "alpha2": "", "alpha3": h.alpha_3,
+        countries.append({"country_id": cid, "name": name, "name_ru": SHORT_NAMES_RU.get(cid) or ru_former(h.name),
+                          "iso_name": h.name, "alpha2": "", "alpha3": h.alpha_3,
                           "alpha4": h.alpha_4, "status": "former",
                           "valid_until": getattr(h, "withdrawal_date", ""), "note": getattr(h, "comment", "") or ""})
         add_aliases(cid, [(h.name, "iso_name"), (name, "short"), (h.alpha_4, "iso_alpha4")])
     for cid, name, note in OTHER_ENTITIES:
-        countries.append({"country_id": cid, "name": name, "iso_name": "", "alpha2": "", "alpha3": "", "alpha4": "",
-                          "status": "other", "valid_until": "", "note": note})
+        countries.append({"country_id": cid, "name": name, "name_ru": SHORT_NAMES_RU.get(cid, ""), "iso_name": "",
+                          "alpha2": "", "alpha3": "", "alpha4": "", "status": "other", "valid_until": "", "note": note})
     for alias, cid, note in MANUAL_ALIASES:
         add_aliases(cid, [(alias, "manual")])
     for code, cid in IOC_TO_ID.items():

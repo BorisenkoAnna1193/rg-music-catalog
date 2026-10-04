@@ -1,0 +1,96 @@
+from rg_music.merge import expand_routines, merge_sources
+from rg_music.years import expand_years
+
+
+def routine(year, apparatus, music, row=0, notes=""):
+    return {"gymnast_page": "A B", "table_index": "1", "row_index": str(row), "year": year, "apparatus": apparatus,
+            "music": music, "notes": notes, "source_url": "u", "revid": "1"}
+
+
+def comp(year, apparatus, music, competition="Athens 2004", location="Athens", row=0):
+    return {"gymnast_page": "A B", "table_index": "0", "row_index": str(row), "year": year, "apparatus": apparatus,
+            "music": music, "competition": competition, "location": location, "notes": "", "source_url": "u",
+            "revid": "1"}
+
+
+def test_expand_years():
+    assert expand_years("2022/2023") == [2022, 2023]
+    assert expand_years("2010-2012") == [2010, 2011, 2012]
+    assert expand_years("2017-18") == [2017, 2018]
+    assert expand_years("Year") == []
+
+
+def test_season_becomes_one_row_per_year_that_differ_only_by_year():
+    rows = expand_routines([routine("2022/2023", "Hoop", '"Forsaken" by Peter Crowley')])
+    assert [(r["routine_id"], r["year"]) for r in rows] == [("A B|1|0#2022", 2022), ("A B|1|0#2023", 2023)]
+    a, b = rows
+    assert {k: v for k, v in a.items() if k not in ("routine_id", "year")} == \
+           {k: v for k, v in b.items() if k not in ("routine_id", "year")}
+    assert a["year_source"] == "2022/2023" and "expanded_from_season" in a["notes"]
+
+
+def test_single_year_keeps_plain_id_and_no_season_note():
+    (row,) = expand_routines([routine("2023", "Ball", "x")])
+    assert (row["routine_id"], row["year"], row["year_source"], row["notes"]) == ("A B|1|0", 2023, "", "")
+
+
+def test_same_performance_in_both_tables_is_merged_and_competition_becomes_an_event():
+    merged, events, stats = merge_sources(
+        [routine("2004", "Ball", "Syrtaki by D. Moutsis")], [comp("2004", "Ball", "Syrtaki by D. Moutsis")])
+    assert len(merged) == 1 and merged[0]["source"] == "both"
+    assert [(e["routine_id"], e["competition"]) for e in events] == [("A B|1|0", "Athens 2004")]
+    assert stats["competition_rows_merged"] == 1
+
+
+def test_one_routine_gets_several_events():
+    _, events, _ = merge_sources(
+        [routine("2004", "Ball", "Syrtaki by D. Moutsis")],
+        [comp("2004", "Ball", "Syrtaki by D. Moutsis"),
+         comp("2004", "Ball", "Syrtaki by D. Moutsis", competition="Worlds 2004", location="Budapest", row=1)])
+    assert [e["competition"] for e in events] == ["Athens 2004", "Worlds 2004"]
+
+
+def test_gymnast_with_only_a_competition_table_gets_new_routines():
+    merged, events, stats = merge_sources([], [comp("2000", "Hoop", "Les Toreadors by Georges Bizet", "Sydney 2000", "Sydney")])
+    assert [(m["year"], m["apparatus"], m["source"]) for m in merged] == [(2000, "Hoop", "competition_table")]
+    assert merged[0]["routine_id"] == "A B|c0|0" and events[0]["competition"] == "Sydney 2000"
+    assert stats["competition_rows_added"] == 1
+
+
+def test_different_music_in_the_same_year_is_added_and_flagged_not_overwritten():
+    merged, _, stats = merge_sources(
+        [routine("2000", "Hoop", "Marche en la by Ennio Morricone")],
+        [comp("2000", "Hoop", "Pink Dream by Anatoly Vekshin", "Sydney 2000", "Sydney")])
+    assert len(merged) == 2
+    assert "differs_from_routine_table" in next(m for m in merged if m["source"] == "competition_table")["notes"]
+    assert stats["added_with_conflict"] == 1
+
+
+def test_event_one_year_off_still_matches_and_keeps_the_routine_year():
+    merged, events, _ = merge_sources(
+        [routine("2020", "Ball", "Strange Birds by Birdy")],
+        [comp("2021", "Ball", "Strange Birds by Birdy", "Tokyo 2020", "Tokyo")])
+    assert len(merged) == 1 and merged[0]["year"] == 2020 and "event_year_differs" in merged[0]["notes"]
+    assert events[0]["event_year"] == 2021
+
+
+def test_rows_without_music_or_single_apparatus_are_skipped():
+    merged, events, stats = merge_sources([], [comp("2004", "Ball", ""), comp("2004", "All-around", "x by y")])
+    assert merged == [] and events == [] and stats["competition_rows_skipped"] == 2
+
+
+def test_same_title_with_different_wrapping_is_the_same_music():
+    merged, _, stats = merge_sources([routine("2008", "Hoop", "music from Avrora by Valeri Tishler")],
+                                     [comp("2008", "Hoop", "Avrora by Valeri Tishler")])
+    assert len(merged) == 1 and stats["competition_rows_merged"] == 1
+
+
+def test_one_track_of_a_multi_track_cell_matches():
+    merged, _, _ = merge_sources([routine("2012", "Clubs", "Beat Machine / The Expert / Tradition by Gloria Estefan")],
+                                 [comp("2012", "Clubs", "Beat Machine by Gloria Estefan")])
+    assert len(merged) == 1
+
+
+def test_expanded_season_drops_the_stale_year_note():
+    rows = expand_routines([routine("2022/2023", "Hoop", "x", notes="year_not_a_year")])
+    assert all("year_not_a_year" not in r["notes"] for r in rows)

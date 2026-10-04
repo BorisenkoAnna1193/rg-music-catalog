@@ -102,3 +102,14 @@ def test_neutral_athletes_status_is_not_chosen_as_latest_country():
     cid, name, history = latest_country(apps, frozenset({"AIN"}))
     assert (cid, name) == ("BLR", "Belarus") and "Individual Neutral Athletes 2026" in history
     assert latest_country(apps[1:], frozenset({"AIN"}))[0] == "AIN"  # nothing else to choose
+
+
+def test_russian_name_and_country_are_attached_and_stay_empty_when_unknown():
+    gymnasts = [{"gymnast_key": "k1", "display_name": "Dina Averina", "wiki_page": "Dina Averina"},
+                {"gymnast_key": "k2", "display_name": "No Page", "wiki_page": ""}]
+    apps = [{"gymnast_key": k, "year": "2019", "stage": "all-around", "nation": "Russia", "country_id": "RUS",
+             "country": "Russia", "name": n} for k, n in (("k1", "Dina Averina"), ("k2", "No Page"))]
+    final = build_final(gymnasts, [], apps, names_ru={"Dina Averina": "Дина Аверина"}, countries_ru={"RUS": "Россия"})
+    by = {r["canonical_name"]: r for r in final}
+    assert (by["Dina Averina"]["name_ru"], by["Dina Averina"]["country_ru"]) == ("Дина Аверина", "Россия")
+    assert by["No Page"]["name_ru"] == ""

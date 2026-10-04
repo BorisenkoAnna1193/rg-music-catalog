@@ -22,3 +22,9 @@ def parse_years(text: str) -> tuple[int, int] | None:
         y = int(t) if len(t) == 4 else int(str(first)[:2] + t)
         years.append(y + 100 if y < first else y)  # "1999-00" -> 2000
     return min(years), max(years)
+
+
+def expand_years(text: str) -> list[int]:
+    """Every year a season covers: "2022/2023" -> [2022, 2023]; "2010-2012" -> [2010, 2011, 2012]; [] if unreadable."""
+    span = parse_years(text)
+    return list(range(span[0], span[1] + 1)) if span else []

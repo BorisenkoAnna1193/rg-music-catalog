@@ -40,7 +40,8 @@ from .fig_names import normalize_fig_name
 from .worlds import _plain, name_key
 
 INTERIM = Path("data/interim")
-FINAL_FIELDS = ["canonical_name", "name_source", "wiki_page", "fig_id", "country_id", "country", "country_history",
+FINAL_FIELDS = ["canonical_name", "name_ru", "name_source", "wiki_page", "fig_id", "country_id", "country", "country_ru",
+                "country_history",
                 "first_year", "last_year", "championships", "years", "spellings", "gymnast_keys"]
 
 
@@ -162,7 +163,11 @@ def decide(review: list[dict], appearances: list[dict]) -> None:
 
 
 def build_final(gymnasts: list[dict], review: list[dict], appearances: list[dict],
-                not_countries: frozenset[str] = frozenset()) -> list[dict]:
+                not_countries: frozenset[str] = frozenset(), names_ru: dict[str, str] | None = None,
+                countries_ru: dict[str, str] | None = None) -> list[dict]:
+    """One row per person. names_ru: wiki_page -> Russian name; countries_ru: country_id -> Russian name
+    (both optional; a missing Russian name stays empty so the UI can fall back to the Latin one)."""
+    names_ru, countries_ru = names_ru or {}, countries_ru or {}
     clusters = Clusters()
     by_group: dict[str, list[dict]] = defaultdict(list)
     for r in review:
@@ -189,11 +194,13 @@ def build_final(gymnasts: list[dict], review: list[dict], appearances: list[dict
             name, source = gs[0]["display_name"], "table"
         years = sorted({int(a["year"]) for a in apps[root]})
         country_id, country, history = latest_country(apps[root], not_countries)
+        page = next((g["wiki_page"] for g in gs if g["wiki_page"]), "")
         out.append({
-            "canonical_name": name, "name_source": source,
-            "wiki_page": next((g["wiki_page"] for g in gs if g["wiki_page"]), ""),
+            "canonical_name": name, "name_ru": names_ru.get(page, ""), "name_source": source,
+            "wiki_page": page,
             "fig_id": next((r["fig_id"] for r in rows if r.get("fig_id")), ""),
-            "country_id": country_id, "country": country, "country_history": history,
+            "country_id": country_id, "country": country, "country_ru": countries_ru.get(country_id, ""),
+            "country_history": history,
             "first_year": years[0], "last_year": years[-1], "championships": len(years),
             "years": ",".join(map(str, years)),
             "spellings": " | ".join(dict.fromkeys(a["name"] for a in apps[root])),
@@ -223,7 +230,10 @@ def main(argv: list[str] | None = None) -> int:
 
     ref = load_reference()
     not_countries = frozenset(cid for cid, c in ref.by_id.items() if c["status"] == "other")
-    final = build_final(_read(args.dir / "wc_gymnasts.csv"), review, appearances, not_countries)
+    ru_file = args.dir / "gymnast_names_ru.csv"
+    names_ru = {r["wiki_page"]: r["name_ru"] for r in _read(ru_file)} if ru_file.exists() else {}
+    countries_ru = {cid: c["name_ru"] for cid, c in ref.by_id.items()}
+    final = build_final(_read(args.dir / "wc_gymnasts.csv"), review, appearances, not_countries, names_ru, countries_ru)
     _write(args.dir / "wc_gymnasts_final.csv", FINAL_FIELDS, final)
 
     n_before = len(_read(args.dir / "wc_gymnasts.csv"))

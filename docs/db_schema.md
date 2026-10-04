@@ -14,12 +14,14 @@ erDiagram
     event ||--o{ championship_entry : "has entries"
     gymnast ||--o{ routine : "performs"
     apparatus ||--o{ routine : "used in"
-    event |o--o{ routine : "held at (optional)"
+    routine ||--o{ routine_event : "performed at"
+    event |o--o{ routine_event : "known championship (optional)"
     routine ||--o{ track : "music of"
 
     country {
         text country_id PK "ISO alpha-3, or alpha-4 for former"
         text name "short name"
+        text name_ru "short Russian name"
         text iso_name
         text alpha2
         text status "current / former / other"
@@ -28,6 +30,7 @@ erDiagram
     gymnast {
         int gymnast_id PK
         text canonical_name "FIG > Wikipedia > table"
+        text name_ru "Wikidata, empty if unknown"
         text name_source
         text wiki_page
         int wikipedia_pageid
@@ -60,21 +63,30 @@ erDiagram
     }
     apparatus {
         int apparatus_id PK
-        text name "Hoop Ball Clubs Ribbon Rope Gala"
+        text name "Hoop Ball Clubs Ribbon Rope Gala FreeHands"
+        text name_ru "Обруч Мяч Булавы ..."
     }
     routine {
-        text routine_id PK "gymnast page, table, row"
+        text routine_id PK "page, table, row (+ #year if a season)"
         int gymnast_id FK
-        int year
+        int year "one row per year of a season"
+        text year_source "2022/2023 if expanded"
         int apparatus_id FK
         text variant "first / second / third"
         text context "gala, event note"
-        text competition
-        int event_id FK "nullable"
         text music_raw "cell as in Wikipedia"
         text parse_status
+        text source "routine_table / competition_table / both"
         text source_url
         int revid "article revision"
+    }
+    routine_event {
+        int routine_event_id PK
+        text routine_id FK
+        text competition "as in the competition table"
+        text location
+        int event_year "year the event was held"
+        int event_id FK "nullable"
     }
     track {
         int track_id PK
@@ -109,7 +121,7 @@ erDiagram
     }
     work {
         int work_id PK
-        text title "Spartacus (ballet)"
+        text title "Spartacus (ballet), unique with composer"
         int composer_id FK
         text musicbrainz_id
     }

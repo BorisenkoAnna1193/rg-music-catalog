@@ -29,8 +29,15 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   artist, performer, notes, flags, status). `rg_music/parse.py` – CLI: `python -m rg_music.parse`
   → `data/interim/routines_parsed.csv` (one row per routine), `tracks.csv` (one row per track,
   key `routine_id` = gymnast_page|table_index|row_index), `parse_report.json`.
-  Last full run: 3850 routines → 3943 tracks: 3731 ok, 204 partial, 7 unparsed (ambiguous splits, for the
-  LLM), 1 reference; 286 routines have an empty music cell. `year_from`/`year_to` handle seasons ("2022/2023").
+  Last full run (after merge): 3964 routines → 4072 tracks: 3497 routines ok, 173 partial, 7 unparsed
+  (ambiguous splits, for the LLM), 286 with an empty music cell.
+- `rg_music/merge.py` – runs between extract and parse: expands seasons into one row per year and merges
+  the competition tables into the routines → `routines_merged.csv`, `routine_events.csv` (many
+  competitions per routine), `merge_report.json`. Pipeline: extract → merge → parse.
+  Last run: 3850 + 50 (season years) + 64 (new from competition tables) = 3964 routines; 165 competition
+  rows merged as events, 4 real conflicts kept as separate rows (flag `differs_from_routine_table`).
+- Russian names: `data/reference/apparatus.csv`, `name_ru` in `data/reference/countries.csv`,
+  `rg_music/names_ru.py` → `data/interim/gymnast_names_ru.csv` (163 of 533 from Wikidata; empty = show Latin).
 - Seed: `data/seed_gymnasts.txt` (10 Olympic AA medalists 2008–2024).
   `data/seed_wc_gymnasts.txt` = the 533 gymnasts with an article (from `wc_gymnasts_final.csv`);
   run with `--seed`. Last full run: 533 pages OK, 173 with a routine table, 3850 routine rows;
@@ -65,6 +72,19 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   `overrides.csv` keyed by id, so re-running the parser never loses them) → SQLite loaded
   idempotently only from the reviewed layer.
 
+## Decisions after the full run (made with the owner)
+- **A season "2022/2023" = the same music in both years**: expanded into one routine row per year that
+  differ only by the year (id `...#2022`, `...#2023`, `year_source` keeps the text, flag `expanded_from_season`).
+- **"Same music" = same work, key = title + composer/artist** (not the title alone, not the recording).
+  Different excerpts of one work are normal.
+- **Competition tables are merged into routines**: same gymnast + apparatus + year (±1) + similar music
+  (whole text, or a track title / work name, or one title inside the other) = the same routine; the
+  competition becomes a `routine_events` row. No match = new routine with `source=competition_table`
+  (Kabaeva-style pages); different music in the same year = new row flagged, never overwritten.
+  One routine can have several events (badge "performed at World Championships").
+- **Bilingual (EN+RU), done now**: apparatus and countries (reference files), gymnast names from Wikidata
+  with Latin fallback. **Postponed**: classical works/composers (needs `work`/`artist` tables).
+
 ## Decisions for the gymnast list (made with the owner)
 - List of gymnasts = names in individual qualification + individual all-around tables of all
   World Championships (`rg_music/worlds.py`); identity = Wikipedia article (via redirects).
@@ -97,10 +117,8 @@ only in one of two tables; Kanaeva 2012 "Fantasie Impromptu No 66" (Op. 66).
 ## Findings from the full run on 533 gymnast pages (new tasks)
 - **Coverage is the main limit**: only 173 of 533 articles have a music table. 323 are stubs with no
   mention of music (median 3 KB), 18 mention music only in prose, 16 have music only in a
-  *competition* table (68 rows not yet in `routines_parsed`). → merge competition rows as a second
-  source; the rgforum.no archive is justified as an additional source; prose could go to the LLM.
-- **Seasons instead of years** (45 rows, 10 pages: "2022/2023", "2017-18", "2010-2012").
-  `year_from`/`year_to` added; open: model as a range in the DB or pick one year.
+  *competition* table (68 rows not yet in `routines_parsed`). → competition rows are merged (done); the rgforum.no archive is justified as an additional source; prose could go to the LLM.
+- **Seasons instead of years** (45 rows, 10 pages): resolved, expanded per year (see decisions).
 - **Music matching** (3939 tracks, 2491 distinct normalised titles, 865 titles used 2+ times):
   - ASCII-folding makes titles in Cyrillic/Korean/etc. empty (53 tracks): need a Unicode-aware key.
   - Same title, different performers (Caruso: 4, Feeling Good: 4+). **Decided: "same music" = same
@@ -112,8 +130,9 @@ only in one of two tables; Kanaeva 2012 "Fantasie Impromptu No 66" (Op. 66).
 - **Parser**: titles containing "by" ("Paris By Night", "Stand by Me") are handled (flag `by_in_title`);
   ambiguous "A by X, B and C by Y" splits are NOT guessed (7 cells left unparsed for the LLM);
   181 tracks have no credit (enrich from another source).
-- **Source conflicts exist**: 21 competition rows contradict the routine table (e.g. Vitrychenko 2000:
-  "Pink Dream" vs "Marche en la ..."): needs a validation report, not silent resolution.
+- **Source conflicts exist**: 4 competition rows (after title-based matching) contradict the routine table
+  (e.g. Vitrychenko 2000: "Pink Dream" vs "Apassionata"; Zhukova 2008): kept as separate flagged rows;
+  needs a validation report, not silent resolution.
 
 ## Bilingual dashboard (EN + RU): plan and estimates
 Decided to offer English and Russian. What gets a Russian version:

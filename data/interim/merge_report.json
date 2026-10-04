@@ -1,0 +1,16 @@
+{
+  "seasons_expanded": 50,
+  "competition_rows_skipped": 88,
+  "competition_rows_added": 64,
+  "added_with_conflict": 4,
+  "competition_rows_merged": 165,
+  "routines_in": 3850,
+  "competition_rows_in": 317,
+  "routines_out": 3964,
+  "events": 229,
+  "by_source": {
+    "routine_table": 3735,
+    "competition_table": 64,
+    "both": 165
+  }
+}

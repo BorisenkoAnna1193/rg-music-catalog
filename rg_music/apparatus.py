@@ -60,3 +60,27 @@ def normalize_apparatus(raw: str) -> Apparatus:
                 notes.append(f"typo_fixed_{typo}_to_{right}")
         fixed.append(part)
     return Apparatus(apparatus, variant, "; ".join(fixed), notes)
+
+
+NAMES_RU = {
+    "Hoop": "Обруч", "Ball": "Мяч", "Clubs": "Булавы", "Ribbon": "Лента", "Rope": "Скакалка",
+    "Gala": "Гала-выступление", "Free hands": "Без предмета",
+}
+
+
+def write_reference(path: str = "data/reference/apparatus.csv") -> list[dict]:
+    """data/reference/apparatus.csv: apparatus (as in routines_parsed.csv) and its Russian name."""
+    import csv
+    from pathlib import Path
+
+    rows = [{"apparatus": name, "name_ru": ru} for name, ru in NAMES_RU.items()]
+    Path(path).parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", newline="", encoding="utf-8-sig") as f:
+        w = csv.DictWriter(f, fieldnames=["apparatus", "name_ru"])
+        w.writeheader()
+        w.writerows(rows)
+    return rows
+
+
+if __name__ == "__main__":
+    print(len(write_reference()), "apparatus -> data/reference/apparatus.csv")
