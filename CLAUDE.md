@@ -44,6 +44,30 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   gymnast count and an `artist_check` (same_author / different_authors / no_credit). 2489 candidate works from
   4075 tracks; 422 are used by 2+ gymnasts (the only ones where matching matters); top: Boléro 13 gymnasts,
   Caravan 10, Feeling Good / Carmen / Caruso / I Put a Spell on You / Swan Lake 8, Malagueña / Smooth Criminal 7.
+- Second pass (`python -m rg_music.works --resolve`) → `track_works.csv`, `works.csv`, `work_merge_review.csv`:
+  owner aliases (`data/manual/work_aliases.csv`, e.g. every "O Fortuna" by Orff = Carmina Burana: O Fortuna),
+  "Composer: Work" (composer_prefix), "Work: Excerpt" and "(from Work)" when that work is a track of its own
+  (credits must overlap), spelling variants (0.95+, same numbers, 10+ chars, not a plural-only difference).
+  2406 works (was 2489), 428 used by 2+ gymnasts. Top: Spartacus 16 gymnasts, Carmen (Bizet) 15, Swan Lake 14,
+  Boléro 13, Caravan 10, Carmen Suite (Shchedrin) 9, Giselle 9, Feeling Good / Caruso / I Put a Spell on You 8,
+  Carmina Burana 7 (15 routines). 130 tracks are assigned by the owner's aliases (Carmina Burana, Carmen, ballets).
+- `rg_music/classical.py` – `is_classical` (1/0) for every work in `works.csv`, plus `classical_basis` and
+  `classical_composer`, for the dashboard filter and the share-by-year chart. Classical = the academic tradition
+  (opera, ballet, concert music, old and 20th century); the flag follows the COMPOSER of the work, not the performer.
+  Evidence in order: `data/manual/classical_overrides.csv` (owner) → composer (alias or any credited name) in
+  `data/manual/classical_composers.csv` (89 names; ensembles named after a composer are skipped; a first name alone
+  does not count) → composer at the start of a title ("Mendelssohn: Violin Concerto") → a STRONG form in a title
+  (Op. N, Symphony, Piano Concerto, Sonata, Requiem, Act III) → default 0. 176 of 2406 works are classical (140 by
+  composer, 14 by composer in title, 22 by title form). Share of routines with a classical track: 31% in 1990-94,
+  13% in 2015-19, 8% in 2020-24, 4% since 2025. Boundaries CONFIRMED by the owner (2026-10): not classical = Piazzolla/tango, Lecuona (Malagueña), Einaudi, film
+  composers, folk (Kalinka, Hopak), Mrvica's own pieces; classical = Gershwin, operetta, rock/cross-over arrangements
+  of classical pieces (Vivaldi Storm, Albinoni in Rock, Moonlight Rumba). Three doubtful flags (Sholay sitar concerto,
+  Trans-Siberian Orchestra overture, Bellini Portreyi Yaparken) are left as they are for the MVP.
+- `rg_music/composers.py` – composer SUGGESTIONS from MusicBrainz for works with 3+ gymnasts →
+  `composer_suggestions.csv` (high 37 / probable 44 / ambiguous 48 / none 17 of 146); never applied automatically.
+  Checked on the top 16: right for Boléro, Caravan, Feeling Good, Caruso, I Put a Spell on You, Malagueña,
+  Smooth Criminal, Summertime, Besame Mucho; wrong or doubtful for Spartacus (Alex North), Swan Lake, Giselle,
+  Don Quixote ("probable" gave Cervantes, the novel's author): ballets are not reliable there.
 - `rg_music/llm_parse.py` – LLM fallback (OpenRouter, strict JSON schema, Pydantic, verbatim check, cache),
   built and tested with a fake transport but **not used**: for 6 cells manual overrides were cheaper than an API
   key + setup (owner's call). Keep it for jobs with many cells (190 tracks without credit, 18 prose-only pages,
@@ -55,6 +79,11 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   run with `--seed`. Last full run: 533 pages OK, 173 with a routine table, 3850 routine rows;
   crosscheck on 241 competition rows: 136 match / 10 fuzzy / 3 year-shifted / 21 differ / 71 no routine table.
 - Tests: `python -m pytest -q` (fixtures mimic real layouts).
+
+## Documentation map
+- `docs/db_schema.md` – planned SQLite schema (two ER diagrams, Mermaid, rendered by GitHub).
+- `docs/pipeline.md` – the process as it went: steps in order, forks, owner decisions, the scripts behind each step.
+- `docs/case_decisions.txt` – decisions in Step / substep / action / result / tech / file_names form (portfolio case).
 
 ## Decisions made with the owner
 - **No separate season year vs. event year.** One year = the year the event was held;
@@ -97,6 +126,21 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 - **Bilingual (EN+RU), done now**: apparatus and countries (reference files), gymnast names from Wikidata
   with Latin fallback. **Postponed**: classical works/composers (needs `work`/`artist` tables).
 
+- **Same title is not always the same work; the credit decides** (`data/manual/work_aliases.csv`, optional
+  `work_key` column). Bizet's opera *Carmen* and Shchedrin's ballet *Carmen Suite* stay SEPARATE works
+  (credits naming Shchedrin come first in the file because they often name Bizet too); Stromae's "Carmen" is another
+  song (`carmen stromae`); "Carmen's Story" (Piaf), "Donna Carmen", "La Habanera" (Yello) are other music;
+  "Carmen Fantasie/Fantasia" (violin) stays separate by default. The six "Carmen" tracks whose author is
+  not Bizet (Arcadian, Antonio de Lucena, Michelle Minke/James Noble, Marcin Patrzalek, "Marcin", none for Zhao
+  Yating) are kept in Carmen with the authors as credited (composer unverified).
+- **Ballet excerpts** (owner, 2026-10): "Adagio" by Khachaturian = Adagio of Spartacus and Phrygia; Bessonova's 2002-2004
+  hoop medley (Molto Meno Mosso / Allegro-Valse-Allegro-Vivo / Finale / Alla Breve-Moderato e Maestoso / Moderato) =
+  Swan Lake; Son Yeon-jae "Pas de Deux" (2011-2012) = The Nutcracker; Averina 2015 "Giselle, Act I: No. 8, Waltz" is
+  credited to Tchaikovsky in the source but is Adam's Giselle (source error, corrected in the alias note). Sabre Dance and
+  Gopak = Gayaneh, Mazurka and Waltz = Masquerade; Amirov's "One Thousand and One Nights" is not Scheherazade;
+  Bond's "Quixote" is not Don Quixote.
+- Melitina Staniouta 2014 "Obsession (On Theme K. Orff. Carmina Burana)" is a separate work (arrangement).
+
 ## Decisions for the gymnast list (made with the owner)
 - List of gymnasts = names in individual qualification + individual all-around tables of all
   World Championships (`rg_music/worlds.py`); identity = Wikipedia article (via redirects).
@@ -116,11 +160,12 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 - Result: `data/interim/wc_gymnasts_final.csv` (1395 people, each with `country_id`).
 
 ## Next
-0. Matching, next passes: (a) 37 near-duplicate title pairs (0.88+, 14 touch works of 2+ gymnasts: "Polovetsian/
-   Polovtsian", "Private Investigation(s)", "Liebestraum/Liebesträume") → fuzzy merge, confirm; (b) the `artist`
-   field mixes composers and performers, so `different_authors` (153 clusters) cannot tell "same song, other
-   performer" from "different song, same title" → composer from MusicBrainz/Wikidata for the 422 multi-gymnast
-   works first (about 7 minutes at 1 request/s), then the `work`/`artist` tables.
+0. Matching, what is left: (a) ballet families are DONE via `data/manual/work_aliases.csv` (Spartacus, Gayaneh,
+   Masquerade, Swan Lake, Nutcracker, Sleeping Beauty, Giselle, Scheherazade, Amirov's One Thousand and One Nights,
+   Don Quixote; each ballet's excerpts go into its own ballet, ballets are never merged with each other); (b) accept the 37 "high"
+   composer suggestions, review "probable"; (c) 23 pairs in `work_merge_review.csv` (short or generic titles,
+   different numbers, roman numerals "1"/"I"); (d) "Carmen"-type clusters where the credits disagree
+   (`artist_check = different_authors`): same title, different song; (e) `work`/`artist` tables in the DB.
 1. Owner review of `tracks.csv` + `overrides.csv` mechanism.
 2. Second source: rgforum.no music list (archived on Wayback, last snapshot ~2022; the
    live site does not resolve). Check ToS/robots, 1 req/s; use it to cross-check Wikipedia
@@ -175,6 +220,9 @@ Decided to offer English and Russian. What gets a Russian version:
   entities as `name_ru`, not on raw text).
 
 ## Ideas and open questions (not decided yet)
+- **Genres instead of classical / not classical**: after the MVP, extend `is_classical` to a genre (classical / folk /
+  film music / pop / rock / jazz / tango ...), probably a `genre` column on `work` with the same evidence-and-basis
+  approach and an owner override file; the share-by-year chart would then show every genre.
 Dashboard for browsing the DB (decide `event` and filters after the first version is drawn):
 - Search/filters: gymnast name, country, year; **apparatus as a filter** is probably convenient
   (owner leaning yes). Result = the gymnast(s), then their music.
