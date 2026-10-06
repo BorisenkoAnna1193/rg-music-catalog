@@ -39,6 +39,11 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 - `data/manual/music_overrides.csv` – tracks of cells the rules cannot split, typed/approved by the owner (keyed
   by the cell text, applied by `parse.py`, win over the rules, status `manual`). The 6 ambiguous cells are
   resolved this way: no `unparsed` tracks are left.
+- `rg_music/works.py` – first pass of music matching → `data/interim/work_candidates.csv`: tracks grouped by a
+  normalised TITLE (any script, ignores accents, "The", brackets, remix/instrumental words), with the distinct
+  gymnast count and an `artist_check` (same_author / different_authors / no_credit). 2489 candidate works from
+  4075 tracks; 422 are used by 2+ gymnasts (the only ones where matching matters); top: Boléro 13 gymnasts,
+  Caravan 10, Feeling Good / Carmen / Caruso / I Put a Spell on You / Swan Lake 8, Malagueña / Smooth Criminal 7.
 - `rg_music/llm_parse.py` – LLM fallback (OpenRouter, strict JSON schema, Pydantic, verbatim check, cache),
   built and tested with a fake transport but **not used**: for 6 cells manual overrides were cheaper than an API
   key + setup (owner's call). Keep it for jobs with many cells (190 tracks without credit, 18 prose-only pages,
@@ -111,6 +116,11 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 - Result: `data/interim/wc_gymnasts_final.csv` (1395 people, each with `country_id`).
 
 ## Next
+0. Matching, next passes: (a) 37 near-duplicate title pairs (0.88+, 14 touch works of 2+ gymnasts: "Polovetsian/
+   Polovtsian", "Private Investigation(s)", "Liebestraum/Liebesträume") → fuzzy merge, confirm; (b) the `artist`
+   field mixes composers and performers, so `different_authors` (153 clusters) cannot tell "same song, other
+   performer" from "different song, same title" → composer from MusicBrainz/Wikidata for the 422 multi-gymnast
+   works first (about 7 minutes at 1 request/s), then the `work`/`artist` tables.
 1. Owner review of `tracks.csv` + `overrides.csv` mechanism.
 2. Second source: rgforum.no music list (archived on Wayback, last snapshot ~2022; the
    live site does not resolve). Check ToS/robots, 1 req/s; use it to cross-check Wikipedia
