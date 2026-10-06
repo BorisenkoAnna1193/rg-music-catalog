@@ -20,6 +20,7 @@ Status of a track:
     ok        title and a credit
     partial   title found but a REVIEW flag is set (no credit, unpaired slashes)
     unparsed  rules gave up; raw_text is kept
+    manual    typed by the owner in data/manual/music_overrides.csv (wins over the rules)
 Other flags (comma_in_title, credit_without_by, unbalanced_quote, remix, ...) are
 informational: the heuristic was applied, the flag shows where.
 """
@@ -68,6 +69,8 @@ class Track:
 
     @property
     def status(self) -> str:
+        if "manual_override" in self.flags:
+            return "manual"
         if MULTIPLE_BY in self.flags or not self.title:
             return "unparsed"
         return "partial" if REVIEW_FLAGS & set(self.flags) else "ok"

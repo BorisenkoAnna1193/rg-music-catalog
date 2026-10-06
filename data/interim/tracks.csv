@@ -498,10 +498,12 @@ Anastasiia Salos|0|1,1,Black Book,,ORI,,,,ok,Black Book by ORI
 Anastasiia Salos|0|2,1,Tribletrouble,,bard beadle,,,,ok,Tribletrouble by bard beadle
 Anastasiia Salos|0|0,1,Horse Races (2023),,UUTAi,,,,ok,Horse Races (2023) by UUTAi
 Anastasiia Salos|0|3,1,Once in the Street,,Nino Katamadze & Insight,,,,ok,Once in the Street by Nino Katamadze & Insight
-Anastasiya Sarantseva|0|12,1,,,,,,multiple_by,unparsed,"Illumination by Jennifer Thomas, Earth and Fire by Udi Harpaz & Ron Klein"
+Anastasiya Sarantseva|0|12,1,Illumination,,Jennifer Thomas,,,manual_override,manual,"Illumination by Jennifer Thomas, Earth and Fire by Udi Harpaz & Ron Klein"
+Anastasiya Sarantseva|0|12,2,Earth and Fire,,Udi Harpaz & Ron Klein,,,manual_override,manual,"Illumination by Jennifer Thomas, Earth and Fire by Udi Harpaz & Ron Klein"
 Anastasiya Sarantseva|0|9,1,Weather Storm,,Craig Armstrong,,,,ok,Weather Storm by Craig Armstrong
 Anastasiya Sarantseva|0|10,1,Rabiosa (Feat. Pitbull),,Shakira,,,,ok,Rabiosa (Feat. Pitbull) by Shakira
-Anastasiya Sarantseva|0|8,1,,,,,,multiple_by,unparsed,"Illumination by Jennifer Thomas, Earth and Fire by Udi Harpaz & Ron Klein"
+Anastasiya Sarantseva|0|8,1,Illumination,,Jennifer Thomas,,,manual_override,manual,"Illumination by Jennifer Thomas, Earth and Fire by Udi Harpaz & Ron Klein"
+Anastasiya Sarantseva|0|8,2,Earth and Fire,,Udi Harpaz & Ron Klein,,,manual_override,manual,"Illumination by Jennifer Thomas, Earth and Fire by Udi Harpaz & Ron Klein"
 Anastasiya Sarantseva|0|11,1,Arrasando,,Thalia,,,,ok,Arrasando by Thalia
 Anastasiya Sarantseva|0|5,1,Seven Nation Army,,SKÁLD,,,,ok,Seven Nation Army by SKÁLD
 Anastasiya Sarantseva|0|6,1,Asereje (Hippy),,Las Ketchup,,,,ok,Asereje (Hippy) by Las Ketchup
@@ -727,8 +729,7 @@ Arina Averina|0|15,1,you should see me in a crown,,Billie Eilish,,,,ok,"""you sh
 Arina Averina|0|9,1,The Firebird,,Igor Stravinsky,,,,ok,"""The Firebird"", by Igor Stravinsky"
 Arina Averina|0|13,1,Seguidilla,Carmen,Georges Bizet,,,,ok,"""Seguidilla"" from Carmen, by Georges Bizet"
 Arina Averina|0|14,1,"Time, Forward!",,"Georgy Sviridov, Alexander Vedernikov & Russian Philharmonic Symphony Orchestra",,,,ok,"""Time, Forward!"", by Alexander Vedernikov & Russian Philharmonic Symphony Orchestra, composed by Georgy Sviridov"
-Arina Averina|0|5,1,Kálmán: Die Csárdásfürstin / Act I -,,"Heia, heia, in den Bergen ist mein Heimatland, Anna Netrebko, Emmanuel Villaume, Prague Philharmonia and Phillharmonic Choir",,,credit_without_by,ok,"""Kálmán: Die Csárdásfürstin / Act I - ""Heia, heia, in den Bergen ist mein Heimatland"" "", by Anna Netrebko, Emmanuel Villaume, Prague Philharmonia and Phillharmonic Choir"
-Arina Averina|0|5,2,,,"Heia, heia, in den Bergen ist mein Heimatland, Anna Netrebko, Emmanuel Villaume, Prague Philharmonia and Phillharmonic Choir",,,credit_without_by,unparsed,"""Kálmán: Die Csárdásfürstin / Act I - ""Heia, heia, in den Bergen ist mein Heimatland"" "", by Anna Netrebko, Emmanuel Villaume, Prague Philharmonia and Phillharmonic Choir"
+Arina Averina|0|5,1,"Act I - Heia, heia, in den Bergen ist mein Heimatland",Die Csárdásfürstin,"Kálmán, Anna Netrebko, Emmanuel Villaume, Prague Philharmonia and Phillharmonic Choir",,,manual_override,manual,"""Kálmán: Die Csárdásfürstin / Act I - ""Heia, heia, in den Bergen ist mein Heimatland"" "", by Anna Netrebko, Emmanuel Villaume, Prague Philharmonia and Phillharmonic Choir"
 Arina Averina|0|6,1,Skyfall,,by Jaimee Paul,,,credit_without_by,ok,"""Skyfall""by Jaimee Paul"
 Arina Averina|0|7,1,"Eugene Onegin, Op. 24, TH 5: Polonaise",,Pyotr Ilyich Tchaikovsky,,,,ok,"""Eugene Onegin, Op. 24, TH 5: Polonaise"", by Pyotr Ilyich Tchaikovsky"
 Arina Averina|0|4,1,Ego,,Willy William,,,,ok,"""Ego"", by Willy William"
@@ -841,12 +842,15 @@ Carmel Kallemaa|0|12,1,"New York, New York (FWB Remix)",,Ray Quinn,,Friends with
 Carmel Kallemaa|0|13,1,La Bamba (song),,Ritchie Valens,,,,ok,La Bamba (song) by Ritchie Valens
 Carmel Kallemaa|0|5,1,Adagio of Spartacus and Phrygia,,Aram Khachaturian,,,split_multiple_by,ok,Adagio of Spartacus and Phrygia by Aram Khachaturian
 Carmel Kallemaa|0|5,2,Feel This Moment,,Pitbull ft. Christina Aguilera,,,split_multiple_by,ok,Feel This Moment by Pitbull ft. Christina Aguilera
-Carmel Kallemaa|0|6,1,,,,,,multiple_by,unparsed,"The Pink Panther Theme by Henry Mancini, New York, New York by Frank Sinatra"
-Carmel Kallemaa|0|7,1,,,,,,multiple_by,unparsed,"Money, Money, Money by The Butterfly Effect, Money, Money, Money (from Mamma Mia!) by Meryl Streep, Julie Walters, Christine Baranski"
+Carmel Kallemaa|0|6,1,The Pink Panther Theme,,Henry Mancini,,,manual_override,manual,"The Pink Panther Theme by Henry Mancini, New York, New York by Frank Sinatra"
+Carmel Kallemaa|0|6,2,"New York, New York",,Frank Sinatra,,,manual_override,manual,"The Pink Panther Theme by Henry Mancini, New York, New York by Frank Sinatra"
+Carmel Kallemaa|0|7,1,"Money, Money, Money",,The Butterfly Effect,,,manual_override,manual,"Money, Money, Money by The Butterfly Effect, Money, Money, Money (from Mamma Mia!) by Meryl Streep, Julie Walters, Christine Baranski"
+Carmel Kallemaa|0|7,2,"Money, Money, Money",Mamma Mia!,"Meryl Streep, Julie Walters, Christine Baranski",,,manual_override,manual,"Money, Money, Money by The Butterfly Effect, Money, Money, Money (from Mamma Mia!) by Meryl Streep, Julie Walters, Christine Baranski"
 Carmel Kallemaa|0|4,1,Gangsta's Paradise,,2WEI,,,split_multiple_by,ok,Gangsta's Paradise by 2WEI
 Carmel Kallemaa|0|4,2,At Last,,Etta James,,,split_multiple_by,ok,At Last by Etta James
 Carmel Kallemaa|0|8,1,La Bamba (song),,Ritchie Valens,,,,ok,La Bamba (song) by Ritchie Valens
-Carmel Kallemaa|0|1,1,,,,,,multiple_by,unparsed,"Live and let die by Paul McCartney and Wings, The Name's Bond... James Bond by David Arnold"
+Carmel Kallemaa|0|1,1,Live and let die,,Paul McCartney and Wings,,,manual_override,manual,"Live and let die by Paul McCartney and Wings, The Name's Bond... James Bond by David Arnold"
+Carmel Kallemaa|0|1,2,The Name's Bond... James Bond,,David Arnold,,,manual_override,manual,"Live and let die by Paul McCartney and Wings, The Name's Bond... James Bond by David Arnold"
 Carmel Kallemaa|0|2,1,Lay All Your Love On Me,,ABBA,,,split_multiple_by,ok,Lay All Your Love On Me by ABBA
 Carmel Kallemaa|0|2,2,Lay All Your Love On Me,Mamma Mia!,"Dominic Cooper, Amanda Seyfried",,,split_multiple_by,ok,"Lay All Your Love On Me (from Mamma Mia!) by Dominic Cooper, Amanda Seyfried"
 Carmel Kallemaa|0|0,1,Unforgettable,,Safari Riot ft. Cara Salimando,,,split_multiple_by,ok,Unforgettable by Safari Riot ft. Cara Salimando
@@ -3615,7 +3619,8 @@ Tara Dragas|1|16,1,Quantum Utopia (feat. Eugene Hütz),,Goran Bregović,,,,ok,Qu
 Tara Dragas|1|14,1,Craw-Fever,,Elvis Presley,,,,ok,Craw-Fever by Elvis Presley
 Tara Dragas|1|17,1,Vegas Rehearsal/That's All Right,,Austin Butler and Elvis Presley,,,,ok,Vegas Rehearsal/That's All Right by Austin Butler and Elvis Presley
 Tara Dragas|1|11,1,Como La Flor (feat. Mayre Martinez) from Scott Bradlee's Postmodern Jukebox,,,,,no_credit,partial,Como La Flor (feat. Mayre Martinez) from Scott Bradlee's Postmodern Jukebox
-Tara Dragas|1|12,1,,,,,,multiple_by,unparsed,"Turn Down for What by DJ Snake, Lil John, Prrrum and Rompe (Instrumental) by Daddy Yankee, Cosculluela"
+Tara Dragas|1|12,1,Turn Down for What,,"DJ Snake, Lil John",,,manual_override,manual,"Turn Down for What by DJ Snake, Lil John, Prrrum and Rompe (Instrumental) by Daddy Yankee, Cosculluela"
+Tara Dragas|1|12,2,Prrrum and Rompe (Instrumental),,"Daddy Yankee, Cosculluela",,,manual_override,manual,"Turn Down for What by DJ Snake, Lil John, Prrrum and Rompe (Instrumental) by Daddy Yankee, Cosculluela"
 Tara Dragas|1|10,1,Guide Me Home,,Freddie Mercury,,,,ok,Guide Me Home by Freddie Mercury
 Tara Dragas|1|13,1,"Fato, mori dušmanke",,Louis,,,comma_in_title,ok,"Fato, mori dušmanke by Louis"
 Tara Dragas|1|6,1,I Want to Know What Love Is,,Mariah Carey,,,,ok,I Want to Know What Love Is by Mariah Carey

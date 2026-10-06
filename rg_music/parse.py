@@ -5,6 +5,8 @@ Usage:
 Input:
     data/interim/routines_merged.csv         (python -m rg_music.merge: seasons expanded, competition
                                               tables merged; the *_raw.csv files are never modified)
+    data/manual/music_overrides.csv          optional, typed by the owner: the tracks of a cell the rules
+                                              cannot split (keyed by the cell text); they win over the rules
 Output:
     data/interim/routines_parsed.csv         one row per routine
     data/interim/tracks.csv                  one row per track, keyed by routine_id
@@ -21,7 +23,7 @@ from collections import Counter
 from pathlib import Path
 
 from rg_music.apparatus import normalize_apparatus
-from rg_music.music_parser import parse_music
+from rg_music.music_parser import Track, parse_music
 
 INTERIM = Path("data/interim")
 
@@ -33,13 +35,42 @@ ROUTINE_FIELDS = [
 TRACK_FIELDS = [
     "routine_id", "track_no", "title", "work", "artist", "performer", "notes", "flags", "status", "raw_text",
 ]
-_SEVERITY = {"ok": 0, "partial": 1, "unparsed": 2}
+_SEVERITY = {"ok": 0, "manual": 0, "partial": 1, "unparsed": 2}
+OVERRIDES = Path("data/manual/music_overrides.csv")
+
+
+def load_overrides(path: Path = OVERRIDES) -> dict[str, list[Track]]:
+    """cell text -> tracks typed by the owner (columns raw_text, track_no, title, work, artist, ...)."""
+    if not path.exists():
+        return {}
+    out: dict[str, list[Track]] = {}
+    for r in sorted(csv.DictReader(path.open(encoding="utf-8-sig")), key=lambda r: (r["raw_text"], int(r["track_no"]))):
+        out.setdefault(r["raw_text"], []).append(Track(
+            raw_text=r["raw_text"], title=r["title"], work=r["work"], artist=r["artist"], performer=r["performer"],
+            notes=[r["notes"]] if r["notes"] else [], flags=["manual_override"]))
+    return out
+
+
+def apply_overrides(tracks: list[Track], overrides: dict[str, list[Track]]) -> list[Track]:
+    """Replace every rules track whose cell text has an override by the owner's tracks."""
+    out: list[Track] = []
+    done: set[str] = set()
+    for t in tracks:
+        if t.raw_text in overrides:
+            if t.raw_text not in done:  # the rules may have produced several tracks from the same text
+                out += overrides[t.raw_text]
+                done.add(t.raw_text)
+        else:
+            out.append(t)
+    return out
 
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--dir", type=Path, default=INTERIM)
+    ap.add_argument("--overrides", type=Path, default=OVERRIDES)
     args = ap.parse_args(argv)
+    overrides = load_overrides(args.overrides)
 
     rows = list(csv.DictReader((args.dir / "routines_merged.csv").open(encoding="utf-8")))
     routines, tracks = [], []
@@ -47,6 +78,7 @@ def main(argv: list[str] | None = None) -> int:
         rid = row["routine_id"]
         app = normalize_apparatus(row["apparatus"])
         kind, parsed = parse_music(row["music"])
+        parsed = apply_overrides(parsed, overrides)
         for n, t in enumerate(parsed, 1):
             tracks.append({
                 "routine_id": rid, "track_no": n, "title": t.title, "work": t.work,

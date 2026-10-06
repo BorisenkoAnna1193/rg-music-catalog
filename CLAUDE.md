@@ -36,6 +36,13 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   competitions per routine), `merge_report.json`. Pipeline: extract → merge → parse.
   Last run: 3850 + 50 (season years) + 64 (new from competition tables) = 3964 routines; 165 competition
   rows merged as events, 4 real conflicts kept as separate rows (flag `differs_from_routine_table`).
+- `data/manual/music_overrides.csv` – tracks of cells the rules cannot split, typed/approved by the owner (keyed
+  by the cell text, applied by `parse.py`, win over the rules, status `manual`). The 6 ambiguous cells are
+  resolved this way: no `unparsed` tracks are left.
+- `rg_music/llm_parse.py` – LLM fallback (OpenRouter, strict JSON schema, Pydantic, verbatim check, cache),
+  built and tested with a fake transport but **not used**: for 6 cells manual overrides were cheaper than an API
+  key + setup (owner's call). Keep it for jobs with many cells (190 tracks without credit, 18 prose-only pages,
+  classical-name proposals). Needs `OPENROUTER_API_KEY` (env or git-ignored `.env`); `--dry-run` shows the request.
 - Russian names: `data/reference/apparatus.csv`, `name_ru` in `data/reference/countries.csv`,
   `rg_music/names_ru.py` → `data/interim/gymnast_names_ru.csv` (163 of 533 from Wikidata; empty = show Latin).
 - Seed: `data/seed_gymnasts.txt` (10 Olympic AA medalists 2008–2024).
