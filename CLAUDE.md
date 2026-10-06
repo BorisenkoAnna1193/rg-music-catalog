@@ -83,6 +83,8 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 ## Documentation map
 - `docs/db_schema.md` – planned SQLite schema (two ER diagrams, Mermaid, rendered by GitHub).
 - `docs/pipeline.md` – the process as it went: steps in order, forks, owner decisions, the scripts behind each step.
+- `docs/plan_morning.md` – the plan for the next session: pending owner decisions and the Russian-version checks
+  (gymnast names; classical works and composers only, never pop).
 - `docs/case_decisions.txt` – decisions in Step / substep / action / result / tech / file_names form (portfolio case).
 
 ## Decisions made with the owner
