@@ -218,6 +218,23 @@ def test_reference_and_empty():
     assert kind == "reference" and tracks[0].notes == ["same music as CariPrato 2007"]
 
 
+def test_a_cell_saying_the_music_is_unknown_has_no_tracks():
+    assert parse_music("????") == ("unknown", [])
+    assert parse_music("Unknown")[0] == "unknown"
+
+
+def test_question_marks_as_title_or_credit_mean_unknown():
+    t = one("Rinascita by ?")
+    assert (t.title, t.artist, t.status) == ("Rinascita", "", "partial")
+    assert {"unknown_credit", "no_credit"} <= set(t.flags)
+    _, tracks = parse_music('"Canto Elvolvente" / ??? by Carrapicho')
+    assert [(t.title, t.artist, t.status) for t in tracks] == [
+        ("Canto Elvolvente", "Carrapicho", "ok"), ("", "Carrapicho", "unknown")]
+    _, tracks = parse_music("Beat Machine / The Expert / Tradition by Gloria Estefan / Yello / Unknown")
+    assert [(t.title, t.artist) for t in tracks][-1] == ("Tradition", "")
+    assert "Who Put the Bomp?" == one("Who Put the Bomp? by The Overtones").title
+
+
 def test_remix_inside_title_is_not_a_role():
     t = one("Batshit - Ilkay Sencan Remix by Sofi Tukker")
     assert (t.title, t.artist, t.status) == ("Batshit - Ilkay Sencan Remix", "Sofi Tukker", "ok")

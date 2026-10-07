@@ -19,8 +19,10 @@ Several works in one cell become several tracks (same routine_id):
 Status of a track:
     ok        title and a credit
     partial   title found but a REVIEW flag is set (no credit, unpaired slashes)
+    unknown   the source says the title is unknown ("???"); "by ?" / "Unknown" as a credit = no credit
     unparsed  rules gave up; raw_text is kept
     manual    typed by the owner in data/manual/music_overrides.csv (wins over the rules)
+A cell that is only "????" or "unknown" is kind 'unknown' (no tracks): the music is not known, not missing.
 Other flags (comma_in_title, credit_without_by, unbalanced_quote, remix, ...) are
 informational: the heuristic was applied, the flag shows where.
 """
@@ -47,6 +49,7 @@ _WORK_TAIL = re.compile(
 )
 _OST = re.compile(r"\(?\s*(?P<w>[^()]+?)\s*(?:\(?\s*(?:OST|Original Television Soundtrack)\s*\)?)\s*\)?$", re.I)
 _REFERENCE = re.compile(r"^\(?\s*same music as", re.I)
+_UNKNOWN = re.compile(r"^(?:\?+|unknown)$", re.I)  # the source's way of saying "not known"
 _SLASH = r"\s/\s?|\s?/\s"
 _BETWEEN_BYS = re.compile(r",\s+|\s+and\s+|\s+&\s+")
 _ROLE = {
@@ -71,6 +74,8 @@ class Track:
     def status(self) -> str:
         if "manual_override" in self.flags:
             return "manual"
+        if "unknown_title" in self.flags:
+            return "unknown"
         if MULTIPLE_BY in self.flags or not self.title:
             return "unparsed"
         return "partial" if REVIEW_FLAGS & set(self.flags) else "ok"
@@ -197,7 +202,12 @@ def _parse_unit(text: str, extra_flags: tuple[str, ...] = ()) -> list[Track]:
     # titles (+ shared work) ---------------------------------------------------
     if title_part.startswith('"'):
         titles = [t.strip() for t in re.findall(r'"([^"]*)"', title_part)]
-        _interpret_remainder(re.sub(r'"[^"]*"', "", title_part), track)
+        rem = re.sub(r'"[^"]*"', "", title_part)
+        # what is left between quoted titles: bare slashes ('"A" / "B"') or unquoted titles ('"A" / ???'), not a credit
+        if re.fullmatch(r"(?:\s*/\s*[^/,()]+)+", rem):
+            titles += [x.strip() for x in rem.split("/") if x.strip()]
+            rem = ""
+        _interpret_remainder(rem, track)
     else:
         if m := _WORK_TAIL.search(title_part):
             track.work = next(g for g in m.groups() if g).strip(' "')
@@ -248,22 +258,28 @@ def _expand(track: Track, titles: list[str], credits: list[str], remix_by: str, 
         return [track]
     out = []
     for title, credit in zip(titles, credits):
-        title = title.strip(' "')
+        title, extra = title.strip(' "'), []
+        if _UNKNOWN.match(title):
+            title, extra = "", ["unknown_title"]
+        if _UNKNOWN.match(credit.strip()):
+            credit, extra = "", [*extra, "unknown_credit"] + ([] if track.performer else ["no_credit"])
         out.append(replace(
             track,
-            title=_with_remix(title, remix_by) if remix_by else title,
+            title=_with_remix(title, remix_by) if remix_by and title else title,
             artist=credit,
             notes=list(track.notes),
-            flags=[*track.flags, *flags],
+            flags=[*track.flags, *flags, *extra],
         ))
     return out
 
 
 def parse_music(cell: str) -> tuple[str, list[Track]]:
-    """Return (kind, tracks); kind is 'empty', 'reference' or 'tracks'."""
+    """Return (kind, tracks); kind is 'empty', 'unknown', 'reference' or 'tracks'."""
     cell = cell.strip().replace("“", '"').replace("”", '"')
     if not cell:
         return "empty", []
+    if _UNKNOWN.match(cell.strip(' "')):
+        return "unknown", []
     if _REFERENCE.match(cell):
         return "reference", [Track(raw_text=cell, notes=[cell.strip("() ")])]
     units = _split_masked(cell, r"\s*;\s*|\s+\|\s+")

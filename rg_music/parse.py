@@ -35,7 +35,7 @@ ROUTINE_FIELDS = [
 TRACK_FIELDS = [
     "routine_id", "track_no", "title", "work", "artist", "performer", "notes", "flags", "status", "raw_text",
 ]
-_SEVERITY = {"ok": 0, "manual": 0, "partial": 1, "unparsed": 2}
+_SEVERITY = {"ok": 0, "manual": 0, "unknown": 1, "partial": 2, "unparsed": 3}
 OVERRIDES = Path("data/manual/music_overrides.csv")
 
 
@@ -79,6 +79,8 @@ def main(argv: list[str] | None = None) -> int:
         app = normalize_apparatus(row["apparatus"])
         kind, parsed = parse_music(row["music"])
         parsed = apply_overrides(parsed, overrides)
+        if any("manual_override" in t.flags for t in parsed):
+            kind = "tracks"  # e.g. a "(same music as ...)" reference the owner expanded into its tracks
         for n, t in enumerate(parsed, 1):
             tracks.append({
                 "routine_id": rid, "track_no": n, "title": t.title, "work": t.work,

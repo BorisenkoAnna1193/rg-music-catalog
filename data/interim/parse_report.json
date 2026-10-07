@@ -1,30 +1,32 @@
 {
-  "routines": 3964,
+  "routines": 3962,
   "routine_status": {
-    "ok": 3497,
+    "ok": 3487,
     "empty": 286,
-    "partial": 173,
-    "manual": 7,
-    "reference": 1
+    "partial": 176,
+    "manual": 11,
+    "unknown": 2
   },
-  "tracks": 4077,
+  "tracks": 4075,
   "track_status": {
-    "ok": 3851,
-    "partial": 212,
-    "manual": 13,
-    "reference": 1
+    "ok": 3839,
+    "partial": 215,
+    "manual": 20,
+    "unknown": 1
   },
   "flags": {
-    "no_credit": 182,
+    "no_credit": 185,
     "comma_in_title": 154,
     "by_in_title": 9,
     "slash_in_credit": 30,
     "slash_split": 76,
+    "unknown_credit": 5,
     "split_multiple_by": 56,
-    "manual_override": 13,
-    "credit_without_by": 38,
+    "manual_override": 20,
+    "credit_without_by": 17,
     "unbalanced_quote": 16,
-    "remix": 4
+    "remix": 4,
+    "unknown_title": 1
   },
   "unknown_apparatus": [],
   "unparsed": []

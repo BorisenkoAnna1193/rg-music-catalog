@@ -206,7 +206,7 @@ Alexandra Agiurgiuculese|1|18,1,Tokyo Drift,,Teriyaki Boyz,,,,ok,Tokyo Drift by 
 Alexandra Agiurgiuculese|1|16,1,Für Elise,,Hidden Citizens,,,,ok,Für Elise by Hidden Citizens
 Alexandra Agiurgiuculese|1|19,1,You're the One That I Want,,"Alex & Sierra, Olivia Newton-John",,,,ok,"You're the One That I Want by Alex & Sierra, Olivia Newton-John"
 Alexandra Agiurgiuculese|1|20,1,Bury a Friend,,Billie Eilish,,,,ok,Bury a Friend by Billie Eilish
-Alexandra Agiurgiuculese|1|22,1,Rinascita,,?,,,,ok,Rinascita by ?
+Alexandra Agiurgiuculese|1|22,1,Rinascita,,,,,unknown_credit;no_credit,partial,Rinascita by ?
 Alexandra Agiurgiuculese|1|23,1,Tokyo Drift,,Teriyaki Boyz,,,,ok,Tokyo Drift by Teriyaki Boyz
 Alexandra Agiurgiuculese|1|21,1,Für Elise,,Hidden Citizens,,,,ok,Für Elise by Hidden Citizens
 Alexandra Agiurgiuculese|1|24,1,You're The One That I Want,,"Alex & Sierra, Olivia Newton-John",,,,ok,"You're The One That I Want by Alex & Sierra, Olivia Newton-John"
@@ -1093,7 +1093,7 @@ Darya Dmitriyeva|0|1,1,Ave Maria,,Libera,,,split_multiple_by,ok,Ave Maria by Lib
 Darya Dmitriyeva|0|1,2,Immortelle,,Lara Fabian,,,split_multiple_by,ok,Immortelle by Lara Fabian
 Darya Dmitriyeva|0|2,1,Beat Machine,,Gloria Estefan,,,slash_split,ok,Beat Machine / The Expert / Tradition by Gloria Estefan / Yello / Unknown
 Darya Dmitriyeva|0|2,2,The Expert,,Yello,,,slash_split,ok,Beat Machine / The Expert / Tradition by Gloria Estefan / Yello / Unknown
-Darya Dmitriyeva|0|2,3,Tradition,,Unknown,,,slash_split,ok,Beat Machine / The Expert / Tradition by Gloria Estefan / Yello / Unknown
+Darya Dmitriyeva|0|2,3,Tradition,,,,,slash_split;unknown_credit;no_credit,partial,Beat Machine / The Expert / Tradition by Gloria Estefan / Yello / Unknown
 Darya Dmitriyeva|0|0,1,"Piano Concerto No. 2 In C-minor, Op. 18: I. Moderato",,Sergei Rachmaninoff,,,,ok,"Piano Concerto No. 2 In C-minor, Op. 18: I. Moderato by Sergei Rachmaninoff"
 Darya Dmitriyeva|0|3,1,Revolutions,,Jean Michel Jarre,,,,ok,Revolutions by Jean Michel Jarre
 Darya Viarenich|0|7,1,Por Una Cabeza,,Sumi Jo,,,,ok,Por Una Cabeza by Sumi Jo
@@ -1357,11 +1357,11 @@ Eunchae Seo|0|4,1,Your Idol,,Saja Boys,,,,ok,Your Idol by Saja Boys
 Eva Brezalieva|0|29,1,Winter Days December,,Vadim Kiselev,,,,ok,Winter Days December by Vadim Kiselev
 Eva Brezalieva|0|30,1,Shot Me Down,,David Guetta ft. Skylar Grey,,,,ok,Shot Me Down by David Guetta ft. Skylar Grey
 Eva Brezalieva|0|28,1,Samba Do Mundo,,Gregor Salto Feat. Saxsymbol & Todorov,,,,ok,Samba Do Mundo by Gregor Salto Feat. Saxsymbol & Todorov
-Eva Brezalieva|0|25,1,Nothing Else Matters,,?,,,,ok,Nothing Else Matters by ?
+Eva Brezalieva|0|25,1,Nothing Else Matters,,,,,unknown_credit;no_credit,partial,Nothing Else Matters by ?
 Eva Brezalieva|0|26,1,Carmen Suite Ballet: II. Dance,,Boston Pops Orchestra,,,,ok,Carmen Suite Ballet: II. Dance by Boston Pops Orchestra
 Eva Brezalieva|0|27,1,Who Wants To Live Forever,,Queen / The Tenors feat. Lindsey Stirling,,,slash_in_credit,partial,Who Wants To Live Forever by Queen / The Tenors feat. Lindsey Stirling
 Eva Brezalieva|0|24,1,I Love Rock 'N Roll,,Joan Jett,,,,ok,I Love Rock 'N Roll by Joan Jett
-Eva Brezalieva|0|21,1,Nothing Else Matters,,?,,,,ok,Nothing Else Matters by ?
+Eva Brezalieva|0|21,1,Nothing Else Matters,,,,,unknown_credit;no_credit,partial,Nothing Else Matters by ?
 Eva Brezalieva|0|22,1,Carmen Suite Ballet: II. Dance,,Boston Pops Orchestra,,,,ok,Carmen Suite Ballet: II. Dance by Boston Pops Orchestra
 Eva Brezalieva|0|20,1,The 5th,,David Garrett,,,,ok,The 5th by David Garrett
 Eva Brezalieva|0|23,1,El amor brujo: Danza Rituel del Fuego,,Manuel de Falla,,,,ok,El amor brujo: Danza Rituel del Fuego by Manuel de Falla
@@ -1421,7 +1421,7 @@ Evgeniya Kanaeva|1|38,1,La forza del destino,,"Pompon Finkelstein, Giuseppe Verd
 Evgeniya Kanaeva|1|41,1,Walls of Akendora,,Keiko Matsui,,,,ok,"""Walls of Akendora"", by Keiko Matsui"
 Evgeniya Kanaeva|1|37,1,Ivan Petrovich Larionov,,,,,no_credit,partial,Ivan Petrovich Larionov
 Evgeniya Kanaeva|1|32,1,Jota Aragonesa,,Glinka,,,,ok,"""Jota Aragonesa"", by Glinka"
-Evgeniya Kanaeva|1|33,1,,,,,same music as CariPrato 2007,,reference,(same music as CariPrato 2007)
+Evgeniya Kanaeva|1|33,1,Song #1,,Serebro,,expanded from the reference: same music as Kanaeva 2007 Gala 'CariPrato with Ermakova',manual_override,manual,(same music as CariPrato 2007)
 Evgeniya Kanaeva|1|35,1,Kadril Veselaya,,Svetoch,,,,ok,"""Kadril Veselaya"", by Svetoch"
 Evgeniya Kanaeva|1|36,1,You are in My September,,Igor Krotoy,,,,ok,"""You are in My September"", by Igor Krotoy"
 Evgeniya Kanaeva|1|31,1,Tristan & Iseult,,Maxime Rodriguez,,,,ok,"""Tristan & Iseult"", by Maxime Rodriguez"
@@ -2304,7 +2304,7 @@ Luana Gomes|0|3,1,Who Wants To Live Forever,,Queen / Who Wants To Live Forever,,
 "Lucía González (gymnast, born 2006)|0|14",2,Pump Up The Jam,,Technotronic,,,,ok,Pump Up The Jam by Technotronic
 "Lucía González (gymnast, born 2006)|0|12",1,Can You Hold Me,,NF,,,,ok,Can You Hold Me by NF
 "Lucía González (gymnast, born 2006)|0|15",1,Poem Without Words 2 - Journey By Night,,Anne Clark,,,by_in_title,ok,Poem Without Words 2 - Journey By Night by Anne Clark
-"Lucía González (gymnast, born 2006)|0|9",1,Lucia,,?,,,,ok,Lucia by ?
+"Lucía González (gymnast, born 2006)|0|9",1,Lucia,,,,,unknown_credit;no_credit,partial,Lucia by ?
 "Lucía González (gymnast, born 2006)|0|10",1,Space Jam,,Quad City DJ's,,,,ok,Space Jam by Quad City DJ's
 "Lucía González (gymnast, born 2006)|0|10",2,Pump Up The Jam,,Technotronic,,,,ok,Pump Up The Jam by Technotronic
 "Lucía González (gymnast, born 2006)|0|8",1,We Found Love (Album Version),,Calvin Harris feat Rihanna,,,,ok,We Found Love (Album Version) by Calvin Harris feat Rihanna
@@ -2767,29 +2767,29 @@ Natalia García|0|18,1,Tango Amore,,Edvin Marton,,,,ok,"""Tango Amore"" by Edvin
 Natalia García|0|16,1,Flamenco bolero,,Maurice Ravel,,,,ok,"""Flamenco bolero"" by Maurice Ravel"
 Natalia García|0|19,1,Tsigani,,Yildiz Ibrahimova,,,,ok,"""Tsigani"" by Yildiz Ibrahimova"
 Natalia García|0|21,1,Agua y vino,,Nuevo Tango Ensamble,,,,ok,"""Agua y vino"" by Nuevo Tango Ensamble"
-Natalia García|0|20,1,Una patada en los huevos,,"/, Alberto Iglesias",,,credit_without_by,ok,"""Una patada en los huevos"" / ""La identidad inaccesible"" by Alberto Iglesias"
-Natalia García|0|20,2,La identidad inaccesible,,"/, Alberto Iglesias",,,credit_without_by,ok,"""Una patada en los huevos"" / ""La identidad inaccesible"" by Alberto Iglesias"
+Natalia García|0|20,1,Una patada en los huevos,,Alberto Iglesias,,,,ok,"""Una patada en los huevos"" / ""La identidad inaccesible"" by Alberto Iglesias"
+Natalia García|0|20,2,La identidad inaccesible,,Alberto Iglesias,,,,ok,"""Una patada en los huevos"" / ""La identidad inaccesible"" by Alberto Iglesias"
 Natalia García|0|25,1,I Put A Spell On You,,Nina Simone,,,,ok,"""I Put A Spell On You"" by Nina Simone"
 Natalia García|0|26,1,Atardecer,,Josemi Carmona,,,,ok,"""Atardecer"" by Josemi Carmona"
 Natalia García|0|27,1,Baluarte de los mártires,,"Carles Benavent, Jorge Pardo, Manolo Carrasco, Tino di Geraldo",,,,ok,"""Baluarte de los mártires"" by Carles Benavent, Jorge Pardo, Manolo Carrasco, Tino di Geraldo"
 Natalia García|0|27,2,Cómo se anda en el campo,,"Jorge Pardo, Manolito Soler, Manolo Carrasco",,,,ok,"""Cómo se anda en el campo"" by Jorge Pardo, Manolito Soler, Manolo Carrasco"
 Natalia García|0|29,1,"Papa, Can You Hear Me?",,Itzhak Perlman,,,,ok,"""Papa, Can You Hear Me?"" by Itzhak Perlman"
-Natalia García|0|30,1,Hit By a Brick,,"/  /, The Atomic Fireballs",,,credit_without_by,ok,"""Hit By a Brick"" / ""Lover Lies"" / ""Drink Drank Drunk"" by The Atomic Fireballs"
-Natalia García|0|30,2,Lover Lies,,"/  /, The Atomic Fireballs",,,credit_without_by,ok,"""Hit By a Brick"" / ""Lover Lies"" / ""Drink Drank Drunk"" by The Atomic Fireballs"
-Natalia García|0|30,3,Drink Drank Drunk,,"/  /, The Atomic Fireballs",,,credit_without_by,ok,"""Hit By a Brick"" / ""Lover Lies"" / ""Drink Drank Drunk"" by The Atomic Fireballs"
+Natalia García|0|30,1,Hit By a Brick,,The Atomic Fireballs,,,,ok,"""Hit By a Brick"" / ""Lover Lies"" / ""Drink Drank Drunk"" by The Atomic Fireballs"
+Natalia García|0|30,2,Lover Lies,,The Atomic Fireballs,,,,ok,"""Hit By a Brick"" / ""Lover Lies"" / ""Drink Drank Drunk"" by The Atomic Fireballs"
+Natalia García|0|30,3,Drink Drank Drunk,,The Atomic Fireballs,,,,ok,"""Hit By a Brick"" / ""Lover Lies"" / ""Drink Drank Drunk"" by The Atomic Fireballs"
 Natalia García|0|28,1,Mujer latina,,Thalía,,,,ok,"""Mujer latina"" by Thalía"
 Natalia García|0|33,1,"Papa, Can You Hear Me?",,Itzhak Perlman,,,,ok,"""Papa, Can You Hear Me?"" by Itzhak Perlman"
-Natalia García|0|34,1,Hit By a Brick,,"/  /, The Atomic Fireballs",,,credit_without_by,ok,"""Hit By a Brick"" / ""Lover Lies"" / ""Drink Drank Drunk"" by The Atomic Fireballs"
-Natalia García|0|34,2,Lover Lies,,"/  /, The Atomic Fireballs",,,credit_without_by,ok,"""Hit By a Brick"" / ""Lover Lies"" / ""Drink Drank Drunk"" by The Atomic Fireballs"
-Natalia García|0|34,3,Drink Drank Drunk,,"/  /, The Atomic Fireballs",,,credit_without_by,ok,"""Hit By a Brick"" / ""Lover Lies"" / ""Drink Drank Drunk"" by The Atomic Fireballs"
+Natalia García|0|34,1,Hit By a Brick,,The Atomic Fireballs,,,,ok,"""Hit By a Brick"" / ""Lover Lies"" / ""Drink Drank Drunk"" by The Atomic Fireballs"
+Natalia García|0|34,2,Lover Lies,,The Atomic Fireballs,,,,ok,"""Hit By a Brick"" / ""Lover Lies"" / ""Drink Drank Drunk"" by The Atomic Fireballs"
+Natalia García|0|34,3,Drink Drank Drunk,,The Atomic Fireballs,,,,ok,"""Hit By a Brick"" / ""Lover Lies"" / ""Drink Drank Drunk"" by The Atomic Fireballs"
 Natalia García|0|32,1,Mujer latina,,Thalía,,,,ok,"""Mujer latina"" by Thalía"
-Natalia García|0|35,1,Rise of the Instruments,,"/, Balázs Havasi",,,credit_without_by,ok,"""Rise of the Instruments"" / ""The Storm"" by Balázs Havasi"
-Natalia García|0|35,2,The Storm,,"/, Balázs Havasi",,,credit_without_by,ok,"""Rise of the Instruments"" / ""The Storm"" by Balázs Havasi"
+Natalia García|0|35,1,Rise of the Instruments,,Balázs Havasi,,,,ok,"""Rise of the Instruments"" / ""The Storm"" by Balázs Havasi"
+Natalia García|0|35,2,The Storm,,Balázs Havasi,,,,ok,"""Rise of the Instruments"" / ""The Storm"" by Balázs Havasi"
 Natalia García|0|37,1,Arte y compás,,Manolo Carrasco,,,,ok,"""Arte y compás"" by Manolo Carrasco"
-Natalia García|0|38,1,Partition,,"/  /  /, Beyoncé",,,credit_without_by,ok,"""Partition"" / ""Ring the Alarm"" / ""Naughty Girl"" / ""Crazy in Love"" by Beyoncé"
-Natalia García|0|38,2,Ring the Alarm,,"/  /  /, Beyoncé",,,credit_without_by,ok,"""Partition"" / ""Ring the Alarm"" / ""Naughty Girl"" / ""Crazy in Love"" by Beyoncé"
-Natalia García|0|38,3,Naughty Girl,,"/  /  /, Beyoncé",,,credit_without_by,ok,"""Partition"" / ""Ring the Alarm"" / ""Naughty Girl"" / ""Crazy in Love"" by Beyoncé"
-Natalia García|0|38,4,Crazy in Love,,"/  /  /, Beyoncé",,,credit_without_by,ok,"""Partition"" / ""Ring the Alarm"" / ""Naughty Girl"" / ""Crazy in Love"" by Beyoncé"
+Natalia García|0|38,1,Partition,,Beyoncé,,,,ok,"""Partition"" / ""Ring the Alarm"" / ""Naughty Girl"" / ""Crazy in Love"" by Beyoncé"
+Natalia García|0|38,2,Ring the Alarm,,Beyoncé,,,,ok,"""Partition"" / ""Ring the Alarm"" / ""Naughty Girl"" / ""Crazy in Love"" by Beyoncé"
+Natalia García|0|38,3,Naughty Girl,,Beyoncé,,,,ok,"""Partition"" / ""Ring the Alarm"" / ""Naughty Girl"" / ""Crazy in Love"" by Beyoncé"
+Natalia García|0|38,4,Crazy in Love,,Beyoncé,,,,ok,"""Partition"" / ""Ring the Alarm"" / ""Naughty Girl"" / ""Crazy in Love"" by Beyoncé"
 Natalia García|0|36,1,The Christ Trilogy,,Balázs Havasi,,,,ok,"""The Christ Trilogy"" by Balázs Havasi"
 Natalia García|0|41,1,De frente,,Silvia Pérez Cruz,,,,ok,"""De frente"" by Silvia Pérez Cruz"
 Natalia García|0|42,1,Mongolia,,Armand Amar,,,,ok,"""Mongolia"" by Armand Amar"
@@ -2833,7 +2833,6 @@ Natalia Godunko|0|6,1,L'estate,"The Four Seasons Concerto No. 2 in G minor, Op. 
 Natalia Godunko|0|4,1,Night on Bald Mountain,,Modest Mussorgsky,,,,ok,Night on Bald Mountain by Modest Mussorgsky
 Natalia Godunko|0|7,1,Tsyganochka,,,,,no_credit,partial,Tsyganochka
 Natalia Godunko|0|5,1,Gopak (Ukrainian traditional),,,,,no_credit,partial,Gopak (Ukrainian traditional)
-Natalia Godunko|c1|2,1,Hopak – Ukrainian Folk,,,,,no_credit,partial,Hopak – Ukrainian Folk
 Natalia Godunko|0|2,1,Palladio,Escala,Escala,,,,ok,Palladio music from Escala by Escala
 Natalia Godunko|0|0,1,Smooth Criminal,Encore!,David Garrett,,,,ok,Smooth Criminal music from Encore! by David Garrett
 Natalia Godunko|0|3,1,Grand Guignol,Mar dulce,Bajofondo,,,,ok,"""Grand Guignol"" from Mar dulce by Bajofondo"
@@ -3056,7 +3055,6 @@ Patricia Bezzoubenko|0|7,1,The Show Must Go On,,Queen,,,,ok,The Show Must Go On 
 Patricia Bezzoubenko|0|1,1,I Put a Spell on You,Fifty Shades of Grey,Annie Lennox,,,,ok,I Put a Spell on You music from Fifty Shades of Grey by Annie Lennox
 Patricia Bezzoubenko|0|2,1,Misirlou,,David Garrett,,,split_multiple_by,ok,Misirlou by David Garrett
 Patricia Bezzoubenko|0|2,2,Rise,,Safri Duo,,,split_multiple_by,ok,Rise by Safri Duo
-Patricia Bezzoubenko|0|0,1,????,,,,,no_credit,partial,????
 Patricia Bezzoubenko|0|3,1,Mas que Nada,,Chilled Jazz Masters,,,,ok,Mas que Nada by Chilled Jazz Masters
 Polina Berezina|1|1,1,Everything,,Sean Christopher,,,,ok,Everything by Sean Christopher
 Polina Berezina|1|2,1,March of the Magicians,,Lorenzo Castellarin,,,,ok,March of the Magicians by Lorenzo Castellarin
@@ -3374,7 +3372,6 @@ Son Yeon-jae|0|22,1,Samb adagio,,Safri Duo,,,,ok,Samb adagio by Safri Duo
 Son Yeon-jae|0|20,1,Pas De Deux,,Pyotr Tchaikovsky,,,,ok,Pas De Deux by Pyotr Tchaikovsky
 Son Yeon-jae|0|23,1,Young Prince and Princess,Scheherazade,Nikolai Rimsky-Korsakov,,,,ok,Young Prince and Princess music from Scheherazade by Nikolai Rimsky-Korsakov
 Son Yeon-jae|0|17,1,Limelight Theme,,André Rieu,,,,ok,Limelight Theme by André Rieu
-Son Yeon-jae|c2|2,1,Charlie Chaplin Soundtrack,,Charlie Chaplin,,,,ok,Charlie Chaplin Soundtrack by Charlie Chaplin
 Son Yeon-jae|0|18,1,Jazz Machine,,Black Machine,,,,ok,Jazz Machine by Black Machine
 Son Yeon-jae|0|18,2,Only You,,Max Greger,,,,ok,Only You by Max Greger
 Son Yeon-jae|0|16,1,Pas De Deux,,Pyotr Tchaikovsky,,,,ok,Pas De Deux by Pyotr Tchaikovsky
@@ -3850,7 +3847,8 @@ Viktoria Mazur|0|3,1,Scared Money,,Christophe Beck,,,,ok,"""Scared Money"", ""Th
 Viktoria Mazur|0|3,2,The House Always Wins,,Christophe Beck,,,,ok,"""Scared Money"", ""The House Always Wins"", ""Agent Shavers"" by Christophe Beck"
 Viktoria Mazur|0|3,3,Agent Shavers,,Christophe Beck,,,,ok,"""Scared Money"", ""The House Always Wins"", ""Agent Shavers"" by Christophe Beck"
 Viktoriia Onopriienko|0|1,1,Fever,,Peggy Lee,,,,ok,"""Fever"" by Peggy Lee"
-Viktoriia Onopriienko|0|2,1,Canto Elvolvente,,"/ ???, Carrapicho",,,credit_without_by,ok,"""Canto Elvolvente"" / ??? by Carrapicho"
+Viktoriia Onopriienko|0|2,1,Canto Elvolvente,,Carrapicho,,,,ok,"""Canto Elvolvente"" / ??? by Carrapicho"
+Viktoriia Onopriienko|0|2,2,,,Carrapicho,,,unknown_title,unknown,"""Canto Elvolvente"" / ??? by Carrapicho"
 Viktoriia Onopriienko|0|0,1,My Way,,Andre Rieu,,,,ok,"""My Way"" by Andre Rieu"
 Viktoriia Onopriienko|0|3,1,Velocity,,Nathan Lanier,,,,ok,"""Velocity"" by Nathan Lanier"
 Viktoriia Onopriienko|0|5,1,Fever,,Peggy Lee,,,,ok,"""Fever"" by Peggy Lee"
@@ -3920,18 +3918,18 @@ Wang Zihan|0|0,1,Mission: Impossible,,"Dubdogz, Zuffo, Rhōden",,,,ok,"Mission: 
 Wang Zihan|0|3,1,Preeminence,,Audiomachine,,,,ok,Preeminence by Audiomachine
 Wang Zilu|1|17#2020,1,四季歌,,Beijing Livetion Orchestra,,,,ok,四季歌 by Beijing Livetion Orchestra
 Wang Zilu|1|18#2020,1,Tetsujin,,"Juno Reactor, Don Davis",,,,ok,"""Tetsujin"" by Juno Reactor, Don Davis"
-Wang Zilu|1|16#2020,1,Despair,,"/, Hans Zimmer and PP Music/九州同-关大洲-2022",,,credit_without_by,ok,"""Despair"" / ""Escape from Slavery"" by Hans Zimmer and PP Music/九州同-关大洲-2022"
-Wang Zilu|1|16#2020,2,Escape from Slavery,,"/, Hans Zimmer and PP Music/九州同-关大洲-2022",,,credit_without_by,ok,"""Despair"" / ""Escape from Slavery"" by Hans Zimmer and PP Music/九州同-关大洲-2022"
+Wang Zilu|1|16#2020,1,Despair,,Hans Zimmer and PP Music,,"also credited: 九州同-关大洲-2022 (arrangement or upload source, unclear)",manual_override,manual,"""Despair"" / ""Escape from Slavery"" by Hans Zimmer and PP Music/九州同-关大洲-2022"
+Wang Zilu|1|16#2020,2,Escape from Slavery,,Hans Zimmer and PP Music,,"also credited: 九州同-关大洲-2022 (arrangement or upload source, unclear)",manual_override,manual,"""Despair"" / ""Escape from Slavery"" by Hans Zimmer and PP Music/九州同-关大洲-2022"
 Wang Zilu|1|19#2020,1,Romani Holiday (Antonius Remix),,Hans Zimmer,,,,ok,"""Romani Holiday (Antonius Remix)"" by Hans Zimmer"
 Wang Zilu|1|17#2021,1,四季歌,,Beijing Livetion Orchestra,,,,ok,四季歌 by Beijing Livetion Orchestra
 Wang Zilu|1|18#2021,1,Tetsujin,,"Juno Reactor, Don Davis",,,,ok,"""Tetsujin"" by Juno Reactor, Don Davis"
-Wang Zilu|1|16#2021,1,Despair,,"/, Hans Zimmer and PP Music/九州同-关大洲-2022",,,credit_without_by,ok,"""Despair"" / ""Escape from Slavery"" by Hans Zimmer and PP Music/九州同-关大洲-2022"
-Wang Zilu|1|16#2021,2,Escape from Slavery,,"/, Hans Zimmer and PP Music/九州同-关大洲-2022",,,credit_without_by,ok,"""Despair"" / ""Escape from Slavery"" by Hans Zimmer and PP Music/九州同-关大洲-2022"
+Wang Zilu|1|16#2021,1,Despair,,Hans Zimmer and PP Music,,"also credited: 九州同-关大洲-2022 (arrangement or upload source, unclear)",manual_override,manual,"""Despair"" / ""Escape from Slavery"" by Hans Zimmer and PP Music/九州同-关大洲-2022"
+Wang Zilu|1|16#2021,2,Escape from Slavery,,Hans Zimmer and PP Music,,"also credited: 九州同-关大洲-2022 (arrangement or upload source, unclear)",manual_override,manual,"""Despair"" / ""Escape from Slavery"" by Hans Zimmer and PP Music/九州同-关大洲-2022"
 Wang Zilu|1|19#2021,1,Romani Holiday (Antonius Remix),,Hans Zimmer,,,,ok,"""Romani Holiday (Antonius Remix)"" by Hans Zimmer"
 Wang Zilu|1|17#2022,1,四季歌,,Beijing Livetion Orchestra,,,,ok,四季歌 by Beijing Livetion Orchestra
 Wang Zilu|1|18#2022,1,Tetsujin,,"Juno Reactor, Don Davis",,,,ok,"""Tetsujin"" by Juno Reactor, Don Davis"
-Wang Zilu|1|16#2022,1,Despair,,"/, Hans Zimmer and PP Music/九州同-关大洲-2022",,,credit_without_by,ok,"""Despair"" / ""Escape from Slavery"" by Hans Zimmer and PP Music/九州同-关大洲-2022"
-Wang Zilu|1|16#2022,2,Escape from Slavery,,"/, Hans Zimmer and PP Music/九州同-关大洲-2022",,,credit_without_by,ok,"""Despair"" / ""Escape from Slavery"" by Hans Zimmer and PP Music/九州同-关大洲-2022"
+Wang Zilu|1|16#2022,1,Despair,,Hans Zimmer and PP Music,,"also credited: 九州同-关大洲-2022 (arrangement or upload source, unclear)",manual_override,manual,"""Despair"" / ""Escape from Slavery"" by Hans Zimmer and PP Music/九州同-关大洲-2022"
+Wang Zilu|1|16#2022,2,Escape from Slavery,,Hans Zimmer and PP Music,,"also credited: 九州同-关大洲-2022 (arrangement or upload source, unclear)",manual_override,manual,"""Despair"" / ""Escape from Slavery"" by Hans Zimmer and PP Music/九州同-关大洲-2022"
 Wang Zilu|1|19#2022,1,Romani Holiday (Antonius Remix),,Hans Zimmer,,,,ok,"""Romani Holiday (Antonius Remix)"" by Hans Zimmer"
 Wang Zilu|1|13,1,Nagashi,,Jigoku Shoujo,,,,ok,Nagashi by Jigoku Shoujo
 Wang Zilu|1|14,1,To Dwell on Dreams,,Audiomachine,,,,ok,To Dwell on Dreams by Audiomachine

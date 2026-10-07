@@ -18,6 +18,8 @@ Rules (decided with the owner):
   * Otherwise the competition row becomes a new routine (source "competition_table"); when the
     routine table has other music for that apparatus and year, the new row is flagged
     differs_from_routine_table so that conflicts are visible, not silently resolved.
+  * The owner can say that two rows with different wording are one routine (data/manual/same_routine.csv:
+    gymnast_page, year, apparatus, competition_music, routine_music): merged as above, note same_routine_by_owner.
   * Competition rows without music, or without a single apparatus (all-around), only describe
     participation and are skipped.
 
@@ -40,6 +42,7 @@ from rg_music.music_parser import parse_music
 from rg_music.years import expand_years, parse_years
 
 INTERIM = Path("data/interim")
+SAME_ROUTINE = Path("data/manual/same_routine.csv")
 MERGED_FIELDS = ["routine_id", "gymnast_page", "table_index", "row_index", "year", "year_source", "apparatus",
                  "music", "source", "notes", "source_url", "revid"]
 EVENT_FIELDS = ["routine_id", "competition", "location", "event_year", "source_row"]
@@ -61,6 +64,15 @@ def music_score(a: str, b: str) -> float:
             contained = min(len(nx), len(ny)) >= 4 and (f" {nx} " in f" {ny} " or f" {ny} " in f" {nx} ")
             best = max(best, similarity(x, y), 0.9 if contained else 0.0)
     return best
+
+
+def load_same_routine(path: Path = SAME_ROUTINE) -> set[tuple]:
+    """Owner's list: (gymnast_page, year, apparatus, competition music, routine music) that are one routine."""
+    if not path.exists():
+        return set()
+    return {(r["gymnast_page"], int(r["year"]), normalize_apparatus(r["apparatus"]).apparatus,
+             r["competition_music"].strip(), r["routine_music"].strip())
+            for r in csv.DictReader(path.open(encoding="utf-8-sig"))}
 
 
 def _base_id(row: dict, prefix: str = "") -> str:
@@ -89,7 +101,8 @@ def expand_routines(rows: list[dict]) -> list[dict]:
     return out
 
 
-def merge_sources(routines: list[dict], competitions: list[dict]) -> tuple[list[dict], list[dict], dict]:
+def merge_sources(routines: list[dict], competitions: list[dict],
+                  same_routine: set[tuple] = frozenset()) -> tuple[list[dict], list[dict], dict]:
     merged = expand_routines(routines)
     events: list[dict] = []
     seen_events: set[tuple] = set()
@@ -117,11 +130,14 @@ def merge_sources(routines: list[dict], competitions: list[dict]) -> tuple[list[
                 if m["music"] and normalize_apparatus(m["apparatus"]).apparatus == app and isinstance(m["year"], int)]
         near = [(music_score(c["music"], m["music"]), -abs(m["year"] - year), m) for m in pool if abs(m["year"] - year) <= 1]
         best = max(near, key=lambda t: (t[0], t[1]), default=None)
-        if best and best[0] >= FUZZY_OK:
-            m = best[2]
+        owner = next((t for t in near if (c["gymnast_page"], year, app, c["music"].strip(), t[2]["music"].strip())
+                      in same_routine), None)
+        if owner or (best and best[0] >= FUZZY_OK):
+            m = (owner or best)[2]
             m["source"] = "both" if m["source"] == "routine_table" else m["source"]
-            if m["year"] != year:
-                m["notes"] = ";".join(filter(None, [m["notes"], "event_year_differs"]))
+            extra = (["event_year_differs"] if m["year"] != year else []) + (["same_routine_by_owner"] if owner else [])
+            if extra:
+                m["notes"] = ";".join(filter(None, [m["notes"], *extra]))
             add_event(m["routine_id"], c, year)
             stats["competition_rows_merged"] += 1
             continue
@@ -158,7 +174,7 @@ def main(argv: list[str] | None = None) -> int:
 
     read = lambda name: list(csv.DictReader((args.dir / name).open(encoding="utf-8")))  # noqa: E731
     routines, competitions = read("routines_raw.csv"), read("competitions_raw.csv")
-    merged, events, stats = merge_sources(routines, competitions)
+    merged, events, stats = merge_sources(routines, competitions, load_same_routine())
 
     _write_csv(args.dir / "routines_merged.csv", MERGED_FIELDS, merged)
     _write_csv(args.dir / "routine_events.csv", EVENT_FIELDS, events)

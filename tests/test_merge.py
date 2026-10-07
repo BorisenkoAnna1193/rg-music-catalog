@@ -94,3 +94,13 @@ def test_one_track_of_a_multi_track_cell_matches():
 def test_expanded_season_drops_the_stale_year_note():
     rows = expand_routines([routine("2022/2023", "Hoop", "x", notes="year_not_a_year")])
     assert all("year_not_a_year" not in r["notes"] for r in rows)
+
+
+def test_owner_can_merge_rows_whose_wording_differs():
+    r, c = routine("2008", "Rope", "Gopak (Ukrainian traditional)"), comp("2008", "Rope", "Hopak – Ukrainian Folk")
+    merged, _, _ = merge_sources([r], [c])
+    assert len(merged) == 2 and "differs_from_routine_table" in merged[1]["notes"]
+    same = {("A B", 2008, "Rope", "Hopak – Ukrainian Folk", "Gopak (Ukrainian traditional)")}
+    merged, events, _ = merge_sources([r], [c], same)
+    assert len(merged) == 1 and merged[0]["source"] == "both" and "same_routine_by_owner" in merged[0]["notes"]
+    assert events[0]["routine_id"] == merged[0]["routine_id"]

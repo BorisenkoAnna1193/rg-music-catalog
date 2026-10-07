@@ -29,13 +29,16 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   artist, performer, notes, flags, status). `rg_music/parse.py` – CLI: `python -m rg_music.parse`
   → `data/interim/routines_parsed.csv` (one row per routine), `tracks.csv` (one row per track,
   key `routine_id` = gymnast_page|table_index|row_index), `parse_report.json`.
-  Last full run (after merge): 3964 routines → 4072 tracks: 3497 routines ok, 173 partial, 7 unparsed
-  (ambiguous splits, for the LLM), 286 with an empty music cell.
+  Last full run (2026-10-07): 3962 routines → 4075 tracks: 3487 routines ok, 176 partial, 11 manual, 2 unknown,
+  286 with an empty music cell. "????" / "Unknown" mean unknown: a whole cell → kind `unknown` (no tracks), a title →
+  track status `unknown`, a credit ("by ?") → empty artist, flags `unknown_credit` + `no_credit`.
 - `rg_music/merge.py` – runs between extract and parse: expands seasons into one row per year and merges
   the competition tables into the routines → `routines_merged.csv`, `routine_events.csv` (many
   competitions per routine), `merge_report.json`. Pipeline: extract → merge → parse.
-  Last run: 3850 + 50 (season years) + 64 (new from competition tables) = 3964 routines; 165 competition
-  rows merged as events, 4 real conflicts kept as separate rows (flag `differs_from_routine_table`).
+  Last run (2026-10-07): 3850 + 50 (season years) + 62 (new from competition tables) = 3962 routines; 167 competition
+  rows merged as events, 2 real conflicts kept as separate rows (flag `differs_from_routine_table`).
+  `data/manual/same_routine.csv` (owner): rows worded differently that are one routine (Godunko 2008 Rope Gopak/Hopak,
+  Son Yeon-jae 2012 Ball Limelight/Chaplin), keyed by gymnast + year + apparatus + both music texts.
 - `data/manual/music_overrides.csv` – tracks of cells the rules cannot split, typed/approved by the owner (keyed
   by the cell text, applied by `parse.py`, win over the rules, status `manual`). The 6 ambiguous cells are
   resolved this way: no `unparsed` tracks are left.
@@ -48,7 +51,7 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   owner aliases (`data/manual/work_aliases.csv`, e.g. every "O Fortuna" by Orff = Carmina Burana: O Fortuna),
   "Composer: Work" (composer_prefix), "Work: Excerpt" and "(from Work)" when that work is a track of its own
   (credits must overlap), spelling variants (0.95+, same numbers, 10+ chars, not a plural-only difference).
-  2406 works (was 2489), 428 used by 2+ gymnasts. Top: Spartacus 16 gymnasts, Carmen (Bizet) 15, Swan Lake 14,
+  2405 works (was 2489), 427 used by 2+ gymnasts. Top: Spartacus 16 gymnasts, Carmen (Bizet) 15, Swan Lake 14,
   Boléro 13, Caravan 10, Carmen Suite (Shchedrin) 9, Giselle 9, Feeling Good / Caruso / I Put a Spell on You 8,
   Carmina Burana 7 (15 routines). 130 tracks are assigned by the owner's aliases (Carmina Burana, Carmen, ballets).
 - `rg_music/classical.py` – `is_classical` (1/0) for every work in `works.csv`, plus `classical_basis` and
@@ -143,6 +146,37 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   Bond's "Quixote" is not Don Quixote.
 - Melitina Staniouta 2014 "Obsession (On Theme K. Orff. Carmina Burana)" is a separate work (arrangement).
 
+## Decisions for the `work` table (owner, 2026-10-07; not implemented yet)
+- Fields: `name_en`, `name_ru`, `author_en`, `author_ru`, `author_type` (`composer` / `performer` / `folk` /
+  `unknown`), `author_source` (owner / rule / musicbrainz / credit). Empty `name_ru`/`author_ru` = show the English one.
+  The performer of a given routine stays on the track, not on the work. `author_type` also drives checks (a
+  `performer` work whose author no track credits = probably different songs merged).
+- Author by kind: classical = composer; jazz standards and tango = composer; folk = "folk music" / "народная музыка"
+  (`folk`); pop song = performer (on the `version`, see below), NOT the songwriters from MusicBrainz; if the original and the best-known performer
+  differ, take the one the gymnasts perform to (I Will Always Love You = Whitney Houston). Song written for a film
+  (composer and singer differ, My Heart Will Go On) = who sings: people search by the singer they heard.
+- **Versions are not merged** (owner, 2026-10-07): the performer is kept as the source states it (David Garrett and
+  Michael Jackson for Smooth Criminal; Muse and Bublé for Feeling Good). Dashboard idea: pick "Feeling Good" →
+  branches per performer → who used that version and when.
+- **Two levels: `work` → `version` → `track`** (owner, 2026-10-07). `version` = work + performer exactly as credited,
+  with `version_type` (original / cover / remix / arrangement / cast / unknown); no separate "creator" field
+  (musical composer = `work.author`, singers/remixer = `version.performer`). Pop works show NO author in the header,
+  only the version branches (so `author` on a pop `work` is empty; label in lists = title + main performer).
+  Classical credited only to the composer → version performer `unknown` (the composer never counts as a performer).
+- **Same title + different performers = different works until there is evidence**: owner alias → MusicBrainz
+  recording→work link → original author named in the cell → classical: same composer. No evidence = kept apart.
+- **`from_title` + `from_type`** (film / musical / series / game) on `work`, ONLY for music written for it
+  (Skyfall, The Mask of Zorro, Chicago, Titanic → My Heart Will Go On). Old songs that merely appear in a film
+  (Caravan in Ocean's 13, Bella Ciao in Money Heist, Paint It Black in Wednesday) do not count for the film ranking.
+- Dashboard rankings: top performers (`version.performer`), top composers (`work.author` where `author_type =
+  composer`), top films (`work.from_title`).
+- Russian names: classical AND folk titles are translated (Gopak → Гопак); pop titles and performers are not.
+- English spelling for the Ukrainian folk dance: "Gopak" (gopak / hopak / hopak ukrainian folk = one folk work;
+  Khachaturian's Gopak stays in Gayaneh).
+- "Storm": Otyken, Havasi and Burkard Dalwitz are separate works (Otyken is unrelated to Vivaldi).
+- Kanaeva 2008 Clubs "LA Lights" "(same music as CariPrato 2007)" → expand to "Song #1" by Serebro (with a note).
+- A cell that says the music is unknown ("????", Bezzoubenko) → no track title, status `unknown`.
+
 ## Decisions for the gymnast list (made with the owner)
 - List of gymnasts = names in individual qualification + individual all-around tables of all
   World Championships (`rg_music/worlds.py`); identity = Wikipedia article (via redirects).
@@ -194,7 +228,7 @@ only in one of two tables; Kanaeva 2012 "Fantasie Impromptu No 66" (Op. 66).
 - **Parser**: titles containing "by" ("Paris By Night", "Stand by Me") are handled (flag `by_in_title`);
   ambiguous "A by X, B and C by Y" splits are NOT guessed (7 cells left unparsed for the LLM);
   181 tracks have no credit (enrich from another source).
-- **Source conflicts exist**: 4 competition rows (after title-based matching) contradict the routine table
+- **Source conflicts exist**: 4 competition rows (2 after the owner's same_routine.csv) (after title-based matching) contradict the routine table
   (e.g. Vitrychenko 2000: "Pink Dream" vs "Apassionata"; Zhukova 2008): kept as separate flagged rows;
   needs a validation report, not silent resolution.
 
