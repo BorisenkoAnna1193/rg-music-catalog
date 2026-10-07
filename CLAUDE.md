@@ -51,7 +51,7 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   owner aliases (`data/manual/work_aliases.csv`, e.g. every "O Fortuna" by Orff = Carmina Burana: O Fortuna),
   "Composer: Work" (composer_prefix), "Work: Excerpt" and "(from Work)" when that work is a track of its own
   (credits must overlap), spelling variants (0.95+, same numbers, 10+ chars, not a plural-only difference).
-  2405 works (was 2489), 427 used by 2+ gymnasts. Top: Spartacus 16 gymnasts, Carmen (Bizet) 15, Swan Lake 14,
+  2402 works (was 2489), 427 used by 2+ gymnasts. Top: Spartacus 16 gymnasts, Carmen (Bizet) 15, Swan Lake 14,
   Boléro 13, Caravan 10, Carmen Suite (Shchedrin) 9, Giselle 9, Feeling Good / Caruso / I Put a Spell on You 8,
   Carmina Burana 7 (15 routines). 130 tracks are assigned by the owner's aliases (Carmina Burana, Carmen, ballets).
 - `rg_music/classical.py` – `is_classical` (1/0) for every work in `works.csv`, plus `classical_basis` and
@@ -145,6 +145,9 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   Gopak = Gayaneh, Mazurka and Waltz = Masquerade; Amirov's "One Thousand and One Nights" is not Scheherazade;
   Bond's "Quixote" is not Don Quixote.
 - Melitina Staniouta 2014 "Obsession (On Theme K. Orff. Carmina Burana)" is a separate work (arrangement).
+- Limelight (owner, 2026-10-07): "Terry's Theme", "The Terry Theme From Limelight", "Limelight (Main Theme)",
+  "Limelight Theme" = one work, Chaplin's theme from the film (key `limelight chaplin`, 5 gymnasts); Billy Vaughn,
+  André Rieu etc. are versions.
 
 ## Decisions for the `work` table (owner, 2026-10-07; not implemented yet)
 - Fields: `name_en`, `name_ru`, `author_en`, `author_ru`, `author_type` (`composer` / `performer` / `folk` /
