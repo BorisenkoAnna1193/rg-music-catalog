@@ -155,3 +155,15 @@ def test_spellings_of_one_performer_are_one_version():
     rows, works, _ = resolve_works(tracks, routines, [])
     assert len({r["version_key"] for r in rows}) == 2 and all(w["n_versions"] == 1 for w in works)
     assert {r["work_key"] for r in rows} == {"run the world", "california dreamin"}
+
+
+def test_groups_that_musicbrainz_shows_to_be_one_song_are_joined_again():
+    routines = {k: {"gymnast_page": k.upper(), "year": "2020"} for k in "abcd"}
+    tracks = [track("a", "Smooth Criminal", "Michael Jackson"), track("b", "Smooth Criminal", "David Garrett"),
+              track("c", "Smooth Criminal", "2 Cellos"), track("d", "Smooth Criminal", "Aubrey Logan")]
+    links = {"smooth criminal ~ michael jackson": "w1", "smooth criminal ~ david garrett": "w1", "smooth criminal ~ 2 cellos": "w1"}
+    rows, works, _ = resolve_works(tracks, routines, [], links)
+    key = {r["routine_id"]: (r["work_key"], r["same_title"]) for r in rows}
+    assert key["a"] == key["b"] == key["c"] == ("smooth criminal", "joined_by_musicbrainz")
+    assert key["d"] == ("smooth criminal ~ aubrey logan", "split_by_credit")  # no evidence: stays apart
+    assert next(w for w in works if w["work_key"] == "smooth criminal")["n_versions"] == 3

@@ -3,27 +3,27 @@
   "routine_status": {
     "ok": 3487,
     "empty": 286,
-    "partial": 176,
-    "manual": 11,
+    "partial": 174,
+    "manual": 13,
     "unknown": 2
   },
   "tracks": 4075,
   "track_status": {
     "ok": 3839,
-    "partial": 215,
-    "manual": 20,
+    "partial": 213,
+    "manual": 22,
     "unknown": 1
   },
   "flags": {
-    "no_credit": 185,
-    "comma_in_title": 154,
+    "no_credit": 183,
+    "comma_in_title": 148,
     "by_in_title": 9,
     "slash_in_credit": 30,
     "slash_split": 76,
     "unknown_credit": 5,
     "split_multiple_by": 56,
-    "manual_override": 20,
-    "credit_without_by": 17,
+    "manual_override": 22,
+    "credit_without_by": 7,
     "unbalanced_quote": 16,
     "remix": 4,
     "unknown_title": 1

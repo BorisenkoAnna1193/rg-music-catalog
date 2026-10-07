@@ -238,3 +238,8 @@ def test_question_marks_as_title_or_credit_mean_unknown():
 def test_remix_inside_title_is_not_a_role():
     t = one("Batshit - Ilkay Sencan Remix by Sofi Tukker")
     assert (t.title, t.artist, t.status) == ("Batshit - Ilkay Sencan Remix", "Sofi Tukker", "ok")
+
+
+def test_comma_music_by_is_a_credit_not_part_of_the_title():
+    t = one("Feeling Good, music by Muse")
+    assert (t.title, t.artist, t.status) == ("Feeling Good", "Muse", "ok")

@@ -26,7 +26,9 @@ its own; spelling variants of one title
 Then (owner, 2026-10-07) one title with credits that share no name is split into DIFFERENT works until there is
 evidence that it is one song: "Storm" by Otyken and "The Storm" by Havasi are two works. Evidence: an owner alias
 (never split), one classical composer credited in the group and a title that is not generic ("Für Elise" by Hidden
-Citizens stays Beethoven's; "Requiem", "Nocturne", "Ave Maria" are split), later MusicBrainz. Tracks without a credit
+Citizens stays Beethoven's; "Requiem", "Nocturne", "Ave Maria" are split), MusicBrainz: split groups that
+python -m rg_music.mb_works linked to one MusicBrainz work are joined again (data/interim/work_mb_links.csv; the owner
+can refuse a join in data/manual/work_mb_rejects.csv, column work_key). Tracks without a credit
 stay with the title when it has one credited group, otherwise they form "<title> ~ no credit".
 A version = work + performer as credited (the composer of the work is not a performer: "by Maurice Ravel" alone is
 an unknown recording); spellings of one performer ("Beyoncé"/"Beyonce") are one version.
@@ -246,13 +248,43 @@ def _credit_groups(rows: list[dict]) -> list[list[dict]]:
     return list(groups.values())
 
 
-def split_by_credit(rows: list[dict], composers: list) -> list[dict]:
-    """Same work_key, credits with no name in common -> separate work keys "<key> ~ <main credit>"."""
+MB_LINKS = INTERIM / "work_mb_links.csv"
+MB_REJECTS = Path("data/manual/work_mb_rejects.csv")
+
+
+def load_mb_links(path: Path = MB_LINKS, rejects: Path = MB_REJECTS) -> dict[str, str]:
+    """split work_key -> MusicBrainz work id, without the joins the owner refused."""
+    if not path.exists():
+        return {}
+    refused = {r["work_key"] for r in csv.DictReader(rejects.open(encoding="utf-8-sig"))} if rejects.exists() else set()
+    return {r["work_key"]: r["mb_work_id"] for r in csv.DictReader(path.open(encoding="utf-8-sig"))
+            if r["mb_work_id"] and r["work_key"] not in refused}
+
+
+def _join_by_musicbrainz(key: str, rs: list[dict], mb_links: dict[str, str]) -> None:
+    """Split groups of one title that are one MusicBrainz work become one work again: the plain title when that is
+    the only join of the title, else "<title> ~ <credit of its biggest group>"."""
+    sizes = Counter(r["work_key"] for r in rs)
+    per_work: dict[str, list[str]] = defaultdict(list)
+    for k in sizes:
+        if k in mb_links:
+            per_work[mb_links[k]].append(k)
+    joins = [ks for ks in per_work.values() if len(ks) > 1]
+    for ks in joins:
+        target = key if len(joins) == 1 else max(ks, key=lambda k: (sizes[k], k))
+        for r in rs:
+            if r["work_key"] in ks:
+                r.update(work_key=target, same_title="joined_by_musicbrainz")
+
+
+def split_by_credit(rows: list[dict], composers: list, mb_links: dict[str, str] | None = None) -> list[dict]:
+    """Same work_key, credits with no name in common -> separate work keys "<key> ~ <main credit>"; then the groups
+    MusicBrainz shows to be one work are joined again."""
     from rg_music.classical import composer_of  # lazy: classical imports this module
 
     by_key: dict[str, list[dict]] = defaultdict(list)
     for r in rows:
-        r.update(title_cluster=r["work_key"], same_title="")
+        r.update(title_cluster=r["work_key"], same_title="", split_key="")
         if r["method"] != "alias":  # the owner has decided these
             by_key[r["work_key"]].append(r)
     for key, rs in by_key.items():
@@ -273,6 +305,8 @@ def split_by_credit(rows: list[dict], composers: list) -> list[dict]:
         for r in rs:
             if id(r) not in ids:
                 r.update(work_key=f"{key} ~ no credit", same_title="split_by_credit")
+            r["split_key"] = r["work_key"]  # kept after a join: mb_works checks the groups by this key
+        _join_by_musicbrainz(key, rs, mb_links or {})
     return rows
 
 
@@ -303,7 +337,8 @@ def version_type(title: str, performer: str) -> str:
     return "unknown"
 
 
-def resolve_works(tracks: list[dict], routines: dict[str, dict], aliases: list[dict]) -> tuple[list[dict], list[dict], list[dict]]:
+def resolve_works(tracks: list[dict], routines: dict[str, dict], aliases: list[dict],
+                  mb_links: dict[str, str] | None = None) -> tuple[list[dict], list[dict], list[dict]]:
     """-> (track_works, works, merge_review). Order of rules: owner aliases, "Work: Excerpt", spelling variants, title,
     then one title with unrelated credits is split. Every track_works row also gets its version (performer)."""
     usable = [t for t in tracks if title_key(t["title"]) and t["routine_id"] in routines]
@@ -349,7 +384,7 @@ def resolve_works(tracks: list[dict], routines: dict[str, dict], aliases: list[d
     from rg_music.classical import classify, load_composers, load_overrides  # lazy: classical imports this module
 
     classical_composers, classical_overrides = load_composers(), load_overrides()
-    rows = split_by_credit(rows, classical_composers)
+    rows = split_by_credit(rows, classical_composers, mb_links)
     by_key: dict[str, list[dict]] = defaultdict(list)
     for r in rows:
         by_key[r["work_key"]].append(r)
@@ -415,9 +450,10 @@ def build_splits(rows: list[dict], routines: dict[str, dict]) -> list[dict]:
     for key, rs in by.items():
         parts: dict[str, list[dict]] = defaultdict(list)
         for r in rs:
-            parts[r["work_key"] if r["same_title"] == "split_by_credit" else r["performer"] or "(composer only)"].append(r)
+            parts[r["work_key"] if r["same_title"] != "kept_classical_title" else r["performer"] or "(composer only)"].append(r)
         out.append({
-            "title_key": key, "decision": rs[0]["same_title"],
+            "title_key": key, "decision": next((d for d in ("kept_classical_title", "joined_by_musicbrainz")
+                                                if any(r["same_title"] == d for r in rs)), "split_by_credit"),
             "n_gymnasts": len({routines[r["routine_id"]]["gymnast_page"] for r in rs}), "n_parts": len(parts),
             "parts": " | ".join(f"{p} ({len({routines[r['routine_id']]['gymnast_page'] for r in prs})})"
                                 for p, prs in sorted(parts.items(), key=lambda kv: -len(kv[1]))),
@@ -426,7 +462,7 @@ def build_splits(rows: list[dict], routines: dict[str, dict]) -> list[dict]:
 
 
 TRACK_WORK_FIELDS = ["routine_id", "track_no", "title", "artist", "work_key", "work", "excerpt", "composer", "method",
-                     "title_cluster", "same_title", "performer", "version_key", "version_type"]
+                     "title_cluster", "same_title", "split_key", "performer", "version_key", "version_type"]
 WORK_FIELDS = ["work_key", "work", "composer", "n_gymnasts", "n_routines", "n_tracks", "n_versions", "first_year",
                "last_year", "excerpts", "title_variants", "artists", "artist_check", "is_classical", "classical_basis",
                "classical_composer"]
@@ -439,7 +475,7 @@ REVIEW_FIELDS = ["title_a", "title_b", "similarity", "gymnasts_a", "gymnasts_b",
 def main_resolve() -> int:
     read = lambda name: list(csv.DictReader((INTERIM / name).open(encoding="utf-8")))  # noqa: E731
     tracks, routines = read("tracks.csv"), {r["routine_id"]: r for r in read("routines_parsed.csv")}
-    track_works, works, review = resolve_works(tracks, routines, load_aliases())
+    track_works, works, review = resolve_works(tracks, routines, load_aliases(), load_mb_links())
     versions, splits = build_versions(track_works, routines), build_splits(track_works, routines)
     for name, fields, data in (("track_works.csv", TRACK_WORK_FIELDS, track_works), ("works.csv", WORK_FIELDS, works),
                                ("versions.csv", VERSION_FIELDS, versions), ("work_splits.csv", SPLIT_FIELDS, splits),
@@ -453,7 +489,7 @@ def main_resolve() -> int:
           f"how tracks were assigned: {dict(methods)}; pairs left for review: {len(review)}")
     decisions = Counter(s["decision"] for s in splits)
     print(f"{len(versions)} versions; titles with unrelated credits: {dict(decisions)} "
-          f"({sum(s['n_parts'] for s in splits if s['decision'] == 'split_by_credit')} works after the split)")
+          f"({sum(s['n_parts'] for s in splits if s['decision'] != 'kept_classical_title')} works after split and join)")
     return 0
 
 

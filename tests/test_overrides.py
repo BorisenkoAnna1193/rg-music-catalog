@@ -41,5 +41,5 @@ def test_missing_overrides_file_means_no_overrides(tmp_path):
 
 def test_the_real_overrides_file_covers_every_cell_the_rules_leave_unparsed():
     overrides = load_overrides()
-    assert len(overrides) == 8  # 6 ambiguous cells, 1 expanded "(same music as ...)" reference, 1 slash credit
+    assert len(overrides) == 9  # 6 ambiguous cells, a "(same music as ...)" reference, a slash credit, a performer found by ear
     assert all(all(t.title and t.status == "manual" for t in tracks) for tracks in overrides.values())

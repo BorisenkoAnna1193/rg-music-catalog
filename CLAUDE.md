@@ -55,13 +55,25 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   Boléro 13, Caravan 10, Carmen Suite (Shchedrin) 9, Giselle 9, Feeling Good / Caruso / I Put a Spell on You 8,
   Carmina Burana 7 (15 routines). 130 tracks are assigned by the owner's aliases (Carmina Burana, Carmen, ballets).
   Then (2026-10-07) one title with credits that share no name is SPLIT into works `"<title> ~ <main credit>"` until there
-  is evidence (owner alias; one classical composer and a non-generic title; MusicBrainz next), and every track gets a
+  is evidence (owner alias; one classical composer and a non-generic title; MusicBrainz), and every track gets a
   version (work + performer as credited, minus the work's composer; spellings folded). Outputs `versions.csv`,
-  `work_splits.csv` (every title with unrelated credits: `split_by_credit` or `kept_classical_title`). Last run:
-  2617 works, 358 used by 2+ gymnasts (427 before the split: covers are apart until MusicBrainz joins them),
-  2785 versions, 124 titles split into 339 works, 16 classical titles kept whole (Boléro, Carmen, Für Elise...),
-  181 classical works. Known false splits for the MusicBrainz step: a credit naming the composer of a song
-  (Consuelo Velázquez, Piazzolla), one performer in two scripts (Мария Чайковская / Maria Tchaikovskaya).
+  `work_splits.csv` (per title: `split_by_credit`, `joined_by_musicbrainz` or `kept_classical_title`).
+- `rg_music/mb_works.py` – MusicBrainz evidence for the split groups (by `split_key`, so reruns are stable):
+  recording by that performer → its work; the credit names a writer of a work with that title (credited_author);
+  second pass: the performer is among the recordings of that work (covers often lack the recording → work link).
+  A name matches only if every word of the first credited name is in the MusicBrainz name (no first-name-only match).
+  → `work_mb_links.csv`, `work_mb_proposals.csv`. `works.py --resolve` joins split groups with one MusicBrainz work,
+  unless refused in `data/manual/work_mb_rejects.csv` (column `work_key`). **Order: works → works --resolve →
+  mb_works → works --resolve.** Last run: 308 split groups, evidence for 144; 37 titles joined, 8 confirmed as
+  different songs (Hello: Adele / Lionel Richie; Requiem; Main Title), 74 without evidence. Result: 2544 works,
+  376 used by 2+ gymnasts, 2778 versions. MusicBrainz has duplicate works, so "apart" can be wrong (Toxic: 2WEI /
+  Britney Spears).
+  Owner checks by ear (2026-10-07), in `work_aliases.csv`: every Caravan = the jazz standard (Tizol / Ellington), every
+  Libertango = Piazzolla, every Bésame Mucho = Velázquez (remixes too); Malagueña = two works: the song (Connie
+  Francis, Caterina Valente, Brian Setzer for Verdeș 2017-18, performer found by ear) and Lecuona's piece (Stanley
+  Black); Ave Maria = Schubert (Schubert, Vitas, 2WEI/Kallemaa) and "Vavilov/Caccini" (Libera, Wortley/Baldassarri;
+  composed by Vladimir Vavilov, attributed to Caccini: the owner wants both names with a slash); "Caruso from Voice"
+  by Neal Schon (Kapranova 2009 Ball) = Lucio Dalla's Caruso. Result: 2543 works, 376 used by 2+ gymnasts.
 - `rg_music/classical.py` – `is_classical` (1/0) for every work in `works.csv`, plus `classical_basis` and
   `classical_composer`, for the dashboard filter and the share-by-year chart. Classical = the academic tradition
   (opera, ballet, concert music, old and 20th century); the flag follows the COMPOSER of the work, not the performer.

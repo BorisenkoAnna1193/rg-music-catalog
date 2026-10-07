@@ -37,7 +37,7 @@ REVIEW_FLAGS = {"no_credit", "slash_in_credit"}
 
 _MARKER = re.compile(
     # "original by" / "remix by" only after a comma or "(": mid-title "Remix by X" is not a role
-    r"(?:,\s*|\(\s*)(?P<r1>as\s+composed|composed|performed|conducted|directed|written|arranged|lyrics|original|remix)\s+by\s+"
+    r"(?:,\s*|\(\s*)(?P<r1>as\s+composed|composed|performed|conducted|directed|written|arranged|lyrics|original|remix|music)\s+by\s+"
     r"|(?:,\s*|\(\s*|\s+)(?:(?P<r2>as\s+composed|composed|performed|conducted|directed|written|arranged|lyrics)\s+)?by\s+",
     re.I,
 )
@@ -56,7 +56,7 @@ _ROLE = {
     "as composed": "composer", "composed": "composer",
     "performed": "performer", "conducted": "performer", "directed": "performer",
     "written": "composer", "arranged": "artist", "lyrics": "lyrics",
-    "original": "artist", "remix": "remix",
+    "original": "artist", "remix": "remix", "music": "artist",
 }
 
 

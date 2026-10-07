@@ -531,12 +531,12 @@ Anastasiya Serdyukova|0|3,1,Confessa,,Adriano Celentano,,,,ok,Confessa by Adrian
 Andreea Verdeș|0|1,1,Show Me How You Burlesque,,Christina Aguilera,,,,ok,Show Me How You Burlesque by Christina Aguilera
 Andreea Verdeș|0|2,1,Suat'a,,Okay Temiz,,,,ok,Suat'a by Okay Temiz
 Andreea Verdeș|0|0,1,OST from Master & Margarita,,Igor Korneliuk,,,,ok,OST from Master & Margarita by Igor Korneliuk
-Andreea Verdeș|0|3,1,Malagueña,,,,,no_credit,partial,Malagueña
+Andreea Verdeș|0|3,1,Malagueña,,Brian Setzer,,performer not in the source; identified by the owner by listening (Verdeș 2017-2018),manual_override,manual,Malagueña
 Andreea Verdeș|0|5,1,I Will Not Die,,Ingrid Kup,,,,ok,I Will Not Die by Ingrid Kup
 Andreea Verdeș|0|6,1,I Love Señoritas,,Alex Swings Oscar Sings!,,,,ok,I Love Señoritas by Alex Swings Oscar Sings!
 Andreea Verdeș|0|4,1,Night On Bald Mountain,,Sir Adrian Boult,,,slash_split,ok,Night On Bald Mountain/Night On Disco Mountain by Sir Adrian Boult/David Shire
 Andreea Verdeș|0|4,2,Night On Disco Mountain,,David Shire,,,slash_split,ok,Night On Bald Mountain/Night On Disco Mountain by Sir Adrian Boult/David Shire
-Andreea Verdeș|0|7,1,Malagueña,,,,,no_credit,partial,Malagueña
+Andreea Verdeș|0|7,1,Malagueña,,Brian Setzer,,performer not in the source; identified by the owner by listening (Verdeș 2017-2018),manual_override,manual,Malagueña
 Andreea Verdeș|0|9,1,Aire,,Leslie Grace,,,,ok,Aire by Leslie Grace
 Andreea Verdeș|0|10,1,Suat'a,,Okay Temiz,,,,ok,Suat'a by Okay Temiz
 Andreea Verdeș|0|8,1,Night On Bald Mountain,,Sir Adrian Boult,,,slash_split,ok,Night On Bald Mountain/Night On Disco Mountain by Sir Adrian Boult/David Shire
@@ -1189,16 +1189,16 @@ Dina Averina|0|1,1,Toxic,,2WEI,,,,ok,"""Toxic"" by 2WEI"
 Dina Averina|0|2,1,Bolero,,,,,no_credit,partial,"""Bolero"""
 Dina Averina|0|0,1,Butterflies and Hurricanes,,Muse,,,,ok,"""Butterflies and Hurricanes"" by Muse"
 Djamila Rakhmatova|0|12,1,"Etude in D-sharp minor, Op. 8, No. 12",Alexander Scriabin,Maksim Mrvica,,,,ok,"Etude in D-sharp minor, Op. 8, No. 12, music from Alexander Scriabin by Maksim Mrvica"
-Djamila Rakhmatova|0|15,1,"Tarareando, music",,Orchestra di Piazza Vittorio,,,comma_in_title,ok,"Tarareando, music by Orchestra di Piazza Vittorio"
-Djamila Rakhmatova|0|9,1,"La Morocha, music",,Hector Varela,,,comma_in_title,ok,"La Morocha, music by Hector Varela"
+Djamila Rakhmatova|0|15,1,Tarareando,,Orchestra di Piazza Vittorio,,,,ok,"Tarareando, music by Orchestra di Piazza Vittorio"
+Djamila Rakhmatova|0|9,1,La Morocha,,Hector Varela,,,,ok,"La Morocha, music by Hector Varela"
 Djamila Rakhmatova|0|8,1,"Etude in D-sharp minor, Op. 8, No. 12",Alexander Scriabin,Maksim Mrvica,,,,ok,"Etude in D-sharp minor, Op. 8, No. 12, music from Alexander Scriabin by Maksim Mrvica"
 Djamila Rakhmatova|0|11,1,Otchi Tchornia (Dark Eyes),"Deer Hunter, (Russian traditional)",,,,no_credit,partial,"Otchi Tchornia (Dark Eyes), music from Deer Hunter, (Russian traditional)"
 Djamila Rakhmatova|0|6,1,Uzbek traditional,,,,,no_credit,partial,Uzbek traditional
-Djamila Rakhmatova|0|4,1,"Gone with the Wind Suite, music",,Max Steiner,,,comma_in_title,ok,"Gone with the Wind Suite, music by Max Steiner"
-Djamila Rakhmatova|0|7,1,"Dark Eyes, music",,André Rieu,,,comma_in_title,ok,"Dark Eyes, music by André Rieu"
-Djamila Rakhmatova|0|1,1,"Feeling Good, music",,Muse,,,comma_in_title,ok,"Feeling Good, music by Muse"
+Djamila Rakhmatova|0|4,1,Gone with the Wind Suite,,Max Steiner,,,,ok,"Gone with the Wind Suite, music by Max Steiner"
+Djamila Rakhmatova|0|7,1,Dark Eyes,,André Rieu,,,,ok,"Dark Eyes, music by André Rieu"
+Djamila Rakhmatova|0|1,1,Feeling Good,,Muse,,,,ok,"Feeling Good, music by Muse"
 Djamila Rakhmatova|0|2,1,Uzbek traditional,,,,,no_credit,partial,Uzbek traditional
-Djamila Rakhmatova|0|0,1,"Carmen, music",,Georges Bizet,,,comma_in_title,ok,"Carmen, music by Georges Bizet"
+Djamila Rakhmatova|0|0,1,Carmen,,Georges Bizet,,,,ok,"Carmen, music by Georges Bizet"
 Djamila Rakhmatova|0|3,1,"A New Swan Queen, Night Of Terror, Perfection",,,,,comma_in_title;no_credit,partial,"A New Swan Queen, Night Of Terror, Perfection"
 Djamila Rakhmatova|0|3,2,music from The Black Swan,,Clint Mansell,,,,ok,music from The Black Swan by Clint Mansell
 Ekaterina Selezneva|0|1,1,London,,Zemfira,,,,ok,"""London"", by Zemfira"
@@ -2054,22 +2054,22 @@ Khrystyna Pohranychna|0|31,1,Devil and Angel,,Maxime Rodriguez,,,,ok,"""Devil an
 Khrystyna Pohranychna|0|32,1,Mutation,,Cirque de Soleil,,,,ok,"""Mutation"" by Cirque de Soleil"
 Khrystyna Pohranychna|0|30,1,The Illusionist,,Maxime Rodriguez,,,,ok,"""The Illusionist"" by Maxime Rodriguez"
 Khrystyna Pohranychna|0|33,1,Rock Around The Clock,,Bill Haley,,,,ok,"""Rock Around The Clock"" by Bill Haley"
-Kseniya Moustafaeva|0|33,1,The 5th,,"music, David Garrett",,,credit_without_by,ok,"""The 5th"", music by David Garrett"
+Kseniya Moustafaeva|0|33,1,The 5th,,David Garrett,,,,ok,"""The 5th"", music by David Garrett"
 Kseniya Moustafaeva|0|34,1,Mission Imposible,,,,,no_credit,partial,Mission Imposible
 Kseniya Moustafaeva|0|32,1,The 5th,,David Garrett,,,,ok,The 5th by David Garrett
 Kseniya Moustafaeva|0|35,1,The Circle Dance,,Didulya,,,,ok,"""The Circle Dance"" by Didulya"
-Kseniya Moustafaeva|0|29,1,Primavera,,"music, Corciolli",,,credit_without_by,ok,"""Primavera"", music by Corciolli"
-Kseniya Moustafaeva|0|30,1,Land Of A Thousand Dances,,"music, Jessica Mauboy",,,credit_without_by,ok,"""Land Of A Thousand Dances"", music by Jessica Mauboy"
-Kseniya Moustafaeva|0|28,1,Game On,"Madagascar 3, music",Hans Zimmer,,,,ok,"""Game On"", music from Madagascar 3, music by Hans Zimmer"
-Kseniya Moustafaeva|0|31,1,"United We Stand, Divided We Fall",,"music, Two Steps from Hell",,,credit_without_by,ok,"""United We Stand, Divided We Fall"", music by Two Steps from Hell"
-Kseniya Moustafaeva|0|25,1,Code Name Vivaldi,,"music, The Piano Guys",,,credit_without_by,ok,"""Code Name Vivaldi"", music by The Piano Guys"
-Kseniya Moustafaeva|0|26,1,Mutation,,"music, Cirque du Soleil",,,credit_without_by,ok,"""Mutation"", music by Cirque du Soleil"
-Kseniya Moustafaeva|0|24,1,Flute,,"music, New World Sound, Thomas Newson",,,credit_without_by,ok,"""Flute"", music by New World Sound, Thomas Newson"
-Kseniya Moustafaeva|0|27,1,Carnavalera,,"music, Havana Delirio",,,credit_without_by,ok,"""Carnavalera"", music by Havana Delirio"
+Kseniya Moustafaeva|0|29,1,Primavera,,Corciolli,,,,ok,"""Primavera"", music by Corciolli"
+Kseniya Moustafaeva|0|30,1,Land Of A Thousand Dances,,Jessica Mauboy,,,,ok,"""Land Of A Thousand Dances"", music by Jessica Mauboy"
+Kseniya Moustafaeva|0|28,1,Game On,Madagascar 3,Hans Zimmer,,,,ok,"""Game On"", music from Madagascar 3, music by Hans Zimmer"
+Kseniya Moustafaeva|0|31,1,"United We Stand, Divided We Fall",,Two Steps from Hell,,,,ok,"""United We Stand, Divided We Fall"", music by Two Steps from Hell"
+Kseniya Moustafaeva|0|25,1,Code Name Vivaldi,,The Piano Guys,,,,ok,"""Code Name Vivaldi"", music by The Piano Guys"
+Kseniya Moustafaeva|0|26,1,Mutation,,Cirque du Soleil,,,,ok,"""Mutation"", music by Cirque du Soleil"
+Kseniya Moustafaeva|0|24,1,Flute,,"New World Sound, Thomas Newson",,,,ok,"""Flute"", music by New World Sound, Thomas Newson"
+Kseniya Moustafaeva|0|27,1,Carnavalera,,Havana Delirio,,,,ok,"""Carnavalera"", music by Havana Delirio"
 Kseniya Moustafaeva|0|21,1,Ne me quitte pas,,Jacques Brel,,,,ok,"""Ne me quitte pas"" by Jacques Brel"
-Kseniya Moustafaeva|0|22,1,Mutation,,"music, Cirque du Soleil",,,credit_without_by,ok,"""Mutation"", music by Cirque du Soleil"
+Kseniya Moustafaeva|0|22,1,Mutation,,Cirque du Soleil,,,,ok,"""Mutation"", music by Cirque du Soleil"
 Kseniya Moustafaeva|0|20,1,Sling The Decks,,The Crystal Method,,,,ok,"""Sling The Decks"", by The Crystal Method"
-Kseniya Moustafaeva|0|23,1,Elements (Orchestral Version),,"music, Lindsey Stirling",,,credit_without_by,ok,"""Elements (Orchestral Version)"", music by Lindsey Stirling"
+Kseniya Moustafaeva|0|23,1,Elements (Orchestral Version),,Lindsey Stirling,,,,ok,"""Elements (Orchestral Version)"", music by Lindsey Stirling"
 Kseniya Moustafaeva|0|17,1,In the Middle Somewhat Elevated,,Thom Willems,,,,ok,"""In the Middle Somewhat Elevated"" by Thom Willems"
 Kseniya Moustafaeva|0|18,1,Escape From East Berlin,The Man from U.N.C.L.E,Daniel Pemberton,,,,ok,"""Escape From East Berlin"", music from The Man from U.N.C.L.E by Daniel Pemberton"
 Kseniya Moustafaeva|0|16,1,Song on the Beach,,Arcade Fire,,,,ok,"""Song on the Beach"", by Arcade Fire"
