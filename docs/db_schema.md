@@ -95,7 +95,7 @@ erDiagram
         text title
         text artist_text "composer and by-credit"
         text performer_text
-        int work_id FK "see the music diagram"
+        int version_id FK "see the music diagram (version -> work)"
         int excerpt_id FK "nullable"
         text match_method "alias / colon_prefix / from_work / title ..."
         text status "ok / partial / manual / reference"
@@ -106,13 +106,17 @@ erDiagram
 
 ## Music: works, excerpts and the classical flag (built; artists planned)
 
-`work` and `excerpt` come from `works.csv` / `track_works.csv` (2 406 works, 75 excerpts). `artist` and `track_credit`
-are planned: today the credit stays text in `track.artist_text`.
+`work`, `version` and `excerpt` come from `works.csv` / `versions.csv` / `track_works.csv` (2 617 works, 2 785 versions).
+A version is the work as performed by one performer, exactly as the source credits it (Feeling Good → Muse, Michael
+Bublé...); the dashboard opens a work into its versions. `artist` and `track_credit` are planned: today the credit stays
+text in `track.artist_text`. Planned `work` fields (owner, 2026-10-07): `name_en/name_ru`, `author_en/author_ru`,
+`author_type` (composer / performer / folk / unknown), `from_title` + `from_type` (film / musical / series / game).
 
 ```mermaid
 erDiagram
     work ||--o{ excerpt : "has parts"
-    work ||--o{ track : "is"
+    work ||--o{ version : "performed as"
+    version ||--o{ track : "is"
     excerpt |o--o{ track : "is (if stated)"
     artist |o--o{ work : "composes"
     track ||--o{ track_credit : "credited (planned)"
@@ -127,6 +131,12 @@ erDiagram
         text classical_basis "manual / composer / composer_in_title / title_keyword / default"
         text classical_composer "composer that made it classical"
     }
+    version {
+        int version_id PK
+        int work_id FK
+        text performer "as credited; empty = only the composer named"
+        text version_type "original / cover / remix / arrangement / cast / unknown"
+    }
     excerpt {
         int excerpt_id PK
         int work_id FK
@@ -134,7 +144,7 @@ erDiagram
     }
     track {
         int track_id PK
-        int work_id FK
+        int version_id FK
         int excerpt_id FK "nullable: unknown stays unknown"
     }
     artist {

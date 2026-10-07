@@ -54,6 +54,14 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   2402 works (was 2489), 427 used by 2+ gymnasts. Top: Spartacus 16 gymnasts, Carmen (Bizet) 15, Swan Lake 14,
   Boléro 13, Caravan 10, Carmen Suite (Shchedrin) 9, Giselle 9, Feeling Good / Caruso / I Put a Spell on You 8,
   Carmina Burana 7 (15 routines). 130 tracks are assigned by the owner's aliases (Carmina Burana, Carmen, ballets).
+  Then (2026-10-07) one title with credits that share no name is SPLIT into works `"<title> ~ <main credit>"` until there
+  is evidence (owner alias; one classical composer and a non-generic title; MusicBrainz next), and every track gets a
+  version (work + performer as credited, minus the work's composer; spellings folded). Outputs `versions.csv`,
+  `work_splits.csv` (every title with unrelated credits: `split_by_credit` or `kept_classical_title`). Last run:
+  2617 works, 358 used by 2+ gymnasts (427 before the split: covers are apart until MusicBrainz joins them),
+  2785 versions, 124 titles split into 339 works, 16 classical titles kept whole (Boléro, Carmen, Für Elise...),
+  181 classical works. Known false splits for the MusicBrainz step: a credit naming the composer of a song
+  (Consuelo Velázquez, Piazzolla), one performer in two scripts (Мария Чайковская / Maria Tchaikovskaya).
 - `rg_music/classical.py` – `is_classical` (1/0) for every work in `works.csv`, plus `classical_basis` and
   `classical_composer`, for the dashboard filter and the share-by-year chart. Classical = the academic tradition
   (opera, ballet, concert music, old and 20th century); the flag follows the COMPOSER of the work, not the performer.

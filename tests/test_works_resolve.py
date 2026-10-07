@@ -97,7 +97,9 @@ def test_from_work_links_an_excerpt_only_when_the_work_is_a_track_of_its_own():
     rows, works, _ = resolve_works(tracks, routines, [])
     by = {r["routine_id"]: r for r in rows}
     assert (by["b"]["work_key"], by["b"]["excerpt"], by["b"]["method"]) == ("spartacus", "At the Circus", "from_work")
-    assert by["d"]["method"] == "title" and by["d"]["work_key"] == "money money money"  # "Mamma Mia!" is only the source
+    assert by["d"]["method"] == "title"  # "Mamma Mia!" is only the source
+    # ABBA and Meryl Streep share no name: kept apart until there is evidence (MusicBrainz) that it is one song
+    assert (by["c"]["work_key"], by["d"]["work_key"]) == ("money money money ~ abba", "money money money ~ meryl streep")
     assert next(w for w in works if w["work_key"] == "spartacus")["n_gymnasts"] == 2
 
 
@@ -117,3 +119,39 @@ def test_same_title_different_authors_can_be_different_works_and_the_credit_deci
     assert key["a"] == key["d"] == key["e"] == "carmen"          # Bizet's opera (d: Bizet's own suite) and the unverified one
     assert key["b"] == "carmen stromae" and key["c"] == "carmen suite"
     assert next(w for w in works if w["work_key"] == "carmen stromae")["work"] == "Carmen (Stromae)"
+
+
+def test_one_title_with_unrelated_credits_is_split_into_works_and_a_lone_uncredited_track_gets_its_own():
+    routines = {k: {"gymnast_page": k.upper(), "year": "2020"} for k in "abcde"}
+    tracks = [track("a", "Storm", "Otyken"), track("b", "The Storm", "Balázs Havasi"), track("c", "The storm", "Havasi"),
+              track("d", "Storm", ""), track("e", "Caravan", "Duke Ellington")]
+    rows, works, _ = resolve_works(tracks, routines, [])
+    key = {r["routine_id"]: r["work_key"] for r in rows}
+    assert key["a"] == "storm ~ otyken" and key["b"] == key["c"] == "storm ~ balazs havasi"
+    assert key["d"] == "storm ~ no credit" and key["e"] == "caravan"
+    assert next(w for w in works if w["work_key"] == "storm ~ balazs havasi")["n_gymnasts"] == 2
+
+
+def test_one_classical_composer_keeps_a_specific_title_together_but_not_a_generic_one():
+    routines = {k: {"gymnast_page": k.upper(), "year": "2020"} for k in "abcdef"}
+    tracks = [track("a", "Für Elise", "Beethoven"), track("b", "Fur Elise", "Hidden Citizens"),
+              track("c", "Requiem", "Mozart"), track("d", "Requiem", "Alma"),
+              track("e", "Bolero", "Maurice Ravel"), track("f", "Boléro", "London Symphony Orchestra, Maurice Ravel")]
+    rows, works, _ = resolve_works(tracks, routines, [])
+    by = {r["routine_id"]: r for r in rows}
+    assert by["a"]["work_key"] == by["b"]["work_key"] == "fur elise" and by["b"]["same_title"] == "kept_classical_title"
+    assert by["c"]["work_key"] != by["d"]["work_key"]
+    # versions: the composer is not a performer; "by Maurice Ravel" alone is an unknown recording
+    assert (by["a"]["performer"], by["b"]["performer"]) == ("", "Hidden Citizens")
+    assert by["e"]["version_key"] == "bolero | unknown" and by["f"]["performer"] == "London Symphony Orchestra"
+    assert next(w for w in works if w["work_key"] == "fur elise")["n_versions"] == 2
+
+
+def test_spellings_of_one_performer_are_one_version():
+    routines = {k: {"gymnast_page": k.upper(), "year": "2020"} for k in "abcde"}
+    tracks = [track("a", "Run the World (Girls)", "Beyoncé"), track("b", "Run the World", "Beyonce"),
+              track("c", "Run the World", "The Beyonce"), track("d", "California Dreamin'", "33Tours"),
+              track("e", "California Dreamin'", "33 Tours")]
+    rows, works, _ = resolve_works(tracks, routines, [])
+    assert len({r["version_key"] for r in rows}) == 2 and all(w["n_versions"] == 1 for w in works)
+    assert {r["work_key"] for r in rows} == {"run the world", "california dreamin"}
