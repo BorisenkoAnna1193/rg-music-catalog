@@ -1,15 +1,18 @@
 {
   "seasons_expanded": 50,
+  "excluded_by_owner": [
+    "Arina Averina|0|16"
+  ],
   "competition_rows_skipped": 88,
   "competition_rows_added": 62,
   "added_with_conflict": 2,
   "competition_rows_merged": 167,
   "routines_in": 3850,
   "competition_rows_in": 317,
-  "routines_out": 3962,
+  "routines_out": 3961,
   "events": 229,
   "by_source": {
-    "routine_table": 3733,
+    "routine_table": 3732,
     "competition_table": 62,
     "both": 167
   }

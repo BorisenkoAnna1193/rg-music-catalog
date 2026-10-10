@@ -1,0 +1,398 @@
+﻿row_id,title_no,title,title_gymnasts,group,evidence,gymnast,year,apparatus,source_text,decision,owner_note,work_key,routine_id,track_no
+1,1,Feeling Good,9,A,MusicBrainz: Anthony Newley,Elizaveta Nazarenkova,2012,Ribbon,Feeling Good music from Origin of Symmetry by Muse,A,,feeling good,Elizaveta Nazarenkova|0|19,1
+2,1,Feeling Good,9,A,MusicBrainz: Anthony Newley,Veronica Bertolini,2012,Ball,Feeling good / Guarda che luna by Muse / Roberto Romagnoli,A,,feeling good,Veronica Bertolini|0|21,1
+3,1,Feeling Good,9,A,MusicBrainz: Anthony Newley,Veronica Bertolini,2013,Ball,Feeling good / Guarda che luna by Muse / Roberto Romagnoli,A,,feeling good,Veronica Bertolini|0|17,1
+4,1,Feeling Good,9,A,MusicBrainz: Anthony Newley,Djamila Rakhmatova,2014,Ball,"Feeling Good, music by Muse",A,,feeling good,Djamila Rakhmatova|0|1,1
+5,1,Feeling Good,9,A,MusicBrainz: Anthony Newley,Jouki Tikkanen,2017,Ball,Feeling Good by Michael Buble,A,,feeling good,Jouki Tikkanen|0|9,1
+6,1,Feeling Good,9,A,MusicBrainz: Anthony Newley,Margarita Kolosov,2023,Ball,Feeling Good by Muse,A,,feeling good,Margarita Kolosov|0|13,1
+7,1,Feeling Good,9,A,MusicBrainz: Anthony Newley,Margarita Kolosov,2024,Ball,Feeling Good by Muse,A,,feeling good,Margarita Kolosov|0|9,1
+8,1,Feeling Good,9,A,MusicBrainz: Anthony Newley,Polina Karika,2025,Clubs,Feeling Good by Michael Bublé,A,,feeling good,Polina Karika|0|6,1
+9,1,Feeling Good,9,A,MusicBrainz: Anthony Newley,Anastasia Simakova,2026,Ball,Feeling good by Jennifer Hudson,A,,feeling good,Anastasia Simakova|0|1,1
+10,1,Feeling Good,9,A,MusicBrainz: Anthony Newley,Polina Karika,2026,Clubs,Feeling Good by Michael Bublé,A,,feeling good,Polina Karika|0|2,1
+11,1,Feeling Good,9,B,none,Emmi Piiroinen,2026,Hoop,"Feeling Good by Apashe, Cherry Lena",B,,feeling good ~ apashe cherry lena,Emmi Piiroinen|0|0,1
+12,1,Feeling Good,9,C,none,Aibota Yertaikyzy,2026,Ball,Feeling Good by J Ram,C,,feeling good ~ j ram,Aibota Yertaikyzy|0|2,1
+13,2,Caruso,8,A,MusicBrainz: Lucio Dalla,Silvia Miteva,2012,Ball,Caruso by Maga Zoltan,A,,caruso,Silvia Miteva|c0|2,1
+14,2,Caruso,8,A,MusicBrainz: Lucio Dalla,Elizaveta Nazarenkova,2013,Ball,Caruso by Katherine Jenkins,A,,caruso,Elizaveta Nazarenkova|0|13,1
+15,2,Caruso,8,A,MusicBrainz: Lucio Dalla,Hanna Rizatdinova,2014,Hoop,Caruso by Luciano Pavarotti,A,,caruso,Hanna Rizatdinova|0|8,1
+16,2,Caruso,8,A,MusicBrainz: Lucio Dalla,Ekaterina Vedeneeva,2017,Ribbon,"""Caruso"" by Lara Fabian",A,,caruso,Ekaterina Vedeneeva|1|39,1
+17,2,Caruso,8,A,MusicBrainz: Lucio Dalla,Maelle Millet,2022,Ball,Caruso by Lara Fabian,A,,caruso,Maelle Millet|0|9,1
+18,2,Caruso,8,A,MusicBrainz: Lucio Dalla,Polina Karika,2025,Ball,Caruso by Luciano Pavarotti,A,,caruso,Polina Karika|0|5,1
+19,2,Caruso,8,B,none,Agostina Vargas Re,2025,Ball,Caruso by Benedetta Caretta,B,,caruso ~ benedetta caretta,Agostina Vargas Re|0|5,1
+20,2,Caruso,8,C,none,Sumire Kita,2018,Hoop,Caruso by Filippa Giordano,C,,caruso ~ filippa giordano,Sumire Kita|0|13,1
+21,3,I Put A Spell On You,8,A,MusicBrainz: Screamin’ Jay Hawkins,Natalia García,2013,Ball,"""I Put A Spell On You"" by Nina Simone",A,,i put a spell on you,Natalia García|0|25,1
+22,3,I Put A Spell On You,8,A,MusicBrainz: Screamin’ Jay Hawkins,Hanna Rizatdinova,2016,Ball,I Put a Spell on You music from Fifty Shades of Grey by Annie Lennox,A,,i put a spell on you,Hanna Rizatdinova|0|1,1
+23,3,I Put A Spell On You,8,A,MusicBrainz: Screamin’ Jay Hawkins,Patricia Bezzoubenko,2016,Ball,I Put a Spell on You music from Fifty Shades of Grey by Annie Lennox,A,,i put a spell on you,Patricia Bezzoubenko|0|1,1
+24,3,I Put A Spell On You,8,A,MusicBrainz: Screamin’ Jay Hawkins,Alina Gozalova,2020,Ball,I Put a Spell On You by Jay Hawkins,A,,i put a spell on you,Alina Gozalova|0|9,1
+25,3,I Put A Spell On You,8,A,MusicBrainz: Screamin’ Jay Hawkins,"Lucía González (gymnast, born 2006)",2020,Ball,I Put a Spell On You by Screamin' Jay Hawkins,A,,i put a spell on you,"Lucía González (gymnast, born 2006)|0|25",1
+26,3,I Put A Spell On You,8,A,MusicBrainz: Screamin’ Jay Hawkins,Elzhana Taniyeva,2021,Ball,I Put A Spell On You by Garou,A,,i put a spell on you,Elzhana Taniyeva|1|5,1
+27,3,I Put A Spell On You,8,A,MusicBrainz: Screamin’ Jay Hawkins,Milena Baldassarri,2022,Ribbon,I Put A Spell On You by Garou,A,,i put a spell on you,Milena Baldassarri|2|12,1
+28,3,I Put A Spell On You,8,B,no credit,Daniela Munits,2023,Ribbon,I Put A Spell On You,B,,i put a spell on you ~ no credit,Daniela Munits|0|16,1
+29,4,Smooth Criminal,7,A,MusicBrainz: Michael Jackson,Deng Senyue,2009,Rope,Smooth criminal by David Garrett,A,,smooth criminal,Deng Senyue|2|22,1
+30,4,Smooth Criminal,7,A,MusicBrainz: Michael Jackson,Deng Senyue,2010,Rope,Smooth criminal by David Garrett,A,,smooth criminal,Deng Senyue|2|18,1
+31,4,Smooth Criminal,7,A,MusicBrainz: Michael Jackson,Natalia Godunko,2010,Hoop,Smooth Criminal music from Encore! by David Garrett,A,,smooth criminal,Natalia Godunko|0|0,1
+32,4,Smooth Criminal,7,A,MusicBrainz: Michael Jackson,Deng Senyue,2011,Clubs,Smooth criminal by David Garrett,A,,smooth criminal,Deng Senyue|2|14,1
+33,4,Smooth Criminal,7,A,MusicBrainz: Michael Jackson,Deng Senyue,2012,Clubs,Smooth criminal by David Garrett,A,,smooth criminal,Deng Senyue|2|10,1
+34,4,Smooth Criminal,7,A,MusicBrainz: Michael Jackson,Hanna Rizatdinova,2012,Ribbon,Smooth Criminal by 2 Cellos (Sulic & Hauser),A,,smooth criminal,Hanna Rizatdinova|0|20,1
+35,4,Smooth Criminal,7,A,MusicBrainz: Michael Jackson,Viktoriia Onopriienko,2020,Ball,"""Smooth Criminal"" by Michael Jackson",A,,smooth criminal,Viktoriia Onopriienko|0|11,1
+36,4,Smooth Criminal,7,A,MusicBrainz: Michael Jackson,Zhao Yating,2020,Clubs,Smooth Criminal (Inmortal Version) by Michael Jackson,A,,smooth criminal,Zhao Yating|0|14,1
+37,4,Smooth Criminal,7,A,MusicBrainz: Michael Jackson,Viktoriia Onopriienko,2021,Ball,"""Smooth Criminal"" by Michael Jackson",A,,smooth criminal,Viktoriia Onopriienko|0|17,1
+38,4,Smooth Criminal,7,A,MusicBrainz: Michael Jackson,Suzanna Shahbazian,2024,Hoop,Smooth Criminal by David Garrett,A,,smooth criminal,Suzanna Shahbazian|0|8,1
+39,4,Smooth Criminal,7,B,none,Emilia Heichel,2024,Ribbon,Smooth Criminal (Michael Jackson Cover) by Aubrey Logan,B,,smooth criminal ~ aubrey logan,Emilia Heichel|0|11,1
+40,5,El Tango de Roxanne,6,A,MusicBrainz: Sting / Craig Pearce / Mariano Mores / Baz Luhrmann,Tamara Yerofeeva,2003,Clubs,El Tango de Roxanne music from Moulin Rouge! by Ewan McGregor & Jose Feliciano & Jacek Koman,A,,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,Tamara Yerofeeva|0|6,1
+41,5,El Tango de Roxanne,6,A,MusicBrainz: Sting / Craig Pearce / Mariano Mores / Baz Luhrmann,Tamara Yerofeeva,2004,Clubs,El Tango de Roxanne music from Moulin Rouge! by Ewan McGregor & Jose Feliciano & Jacek Koman,A,,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,Tamara Yerofeeva|0|2,1
+42,5,El Tango de Roxanne,6,A,MusicBrainz: Sting / Craig Pearce / Mariano Mores / Baz Luhrmann,Celeste D'Arcángelo,2024,Hoop,"El Tango De Roxanne by José Feliciano, Ewan McGregor, Jacek Koman",A,,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,Celeste D'Arcángelo|0|8,1
+43,5,El Tango de Roxanne,6,A,MusicBrainz: Sting / Craig Pearce / Mariano Mores / Baz Luhrmann,Bárbara Domingos,2025,Ribbon,El Tango de Roxanne by José Feliciano & Ewan McGregror & Jacek Koman,A,,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,Bárbara Domingos|0|7,1
+44,5,El Tango de Roxanne,6,A,MusicBrainz: Sting / Craig Pearce / Mariano Mores / Baz Luhrmann,Celeste D'Arcángelo,2025,Hoop,"El Tango De Roxanne by José Feliciano, Ewan McGregor, Jacek Koman",A,,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,Celeste D'Arcángelo|0|4,1
+45,5,El Tango de Roxanne,6,A,MusicBrainz: Sting / Craig Pearce / Mariano Mores / Baz Luhrmann,Maša Nikolić,2025,Ball,"El Tango de Roxanne by José Feliciano, Ewan McGregor & Jacek Koman",A,,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,Maša Nikolić|0|5,1
+46,5,El Tango de Roxanne,6,A,MusicBrainz: Sting / Craig Pearce / Mariano Mores / Baz Luhrmann,Celeste D'Arcángelo,2026,Hoop,"El Tango De Roxanne by José Feliciano, Ewan McGregor, Jacek Koman",A,,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,Celeste D'Arcángelo|0|0,1
+47,5,El Tango de Roxanne,6,A,MusicBrainz: Sting / Craig Pearce / Mariano Mores / Baz Luhrmann,Maša Nikolić,2026,Ball,"El Tango de Roxanne by José Feliciano, Ewan McGregor & Jacek Koman",A,,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,Maša Nikolić|0|1,1
+48,5,El Tango de Roxanne,6,B,none,Sofia Raffaeli,2025,Ribbon,El Tango De Roxanne by Roxane Del,B,,el tango de roxanne ~ roxane del,Sofia Raffaeli|2|9,1
+49,5,El Tango de Roxanne,6,C,no credit,Darya Dmitriyeva,2009,Hoop,El Tango de Roxanne music from Moulin Rouge,C,,el tango de roxanne ~ no credit,Darya Dmitriyeva|0|13,1
+50,6,La Cumparsita,6,A,MusicBrainz: Gerardo Matos Rodríguez,Katsiaryna Halkina,2013,Ball,La Cumparsita by Ensemble Contraste,A,,la cumparsita,Katsiaryna Halkina|0|38,1
+51,6,La Cumparsita,6,A,MusicBrainz: Gerardo Matos Rodríguez,Dina Averina,2020,Ribbon,"""La Cumparsita"" by Yasmin Levy",A,,la cumparsita,Dina Averina|0|23,1
+52,6,La Cumparsita,6,A,MusicBrainz: Gerardo Matos Rodríguez,Dina Averina,2021,Ribbon,"""La Cumparsita"" by Yasmin Levy",A,,la cumparsita,Dina Averina|0|14,1
+53,6,La Cumparsita,6,B,none,Alexandra Agiurgiuculese,2019,Ribbon,La Cumparsita by Milva,B,,la cumparsita ~ milva,Alexandra Agiurgiuculese|1|12,1
+54,6,La Cumparsita,6,B,none,Wang Zilu,2025,Ribbon,La Cumparsita (Questo Tango) by Milva-乐,B,,la cumparsita ~ milva,Wang Zilu|1|7,1
+55,6,La Cumparsita,6,C,none,Sakura Hayakawa,2016,Clubs,La cumparsita by Danny Malando,C,,la cumparsita ~ danny malando,Sakura Hayakawa|1|2,1
+56,6,La Cumparsita,6,D,none,Yana Kudryavtseva,2015,Ribbon,La Cumparsita by Ikuko Kawai,D,,la cumparsita ~ ikuko kawai,Yana Kudryavtseva|0|7,1
+57,7,Adiós,5,A,MusicBrainz,Amalia Lică,2021,Clubs,Adiós by Benjamin Clementine,A,,adios ~ benjamin clementine,Amalia Lică|0|23,1
+58,7,Adiós,5,A,MusicBrainz,Amalia Lică,2022,Clubs,Adiós by Benjamin Clementine,A,,adios ~ benjamin clementine,Amalia Lică|0|19,1
+59,7,Adiós,5,A,MusicBrainz,Anastasia Simakova,2023,Ribbon,Adiós by Benjamin Clementine,A,,adios ~ benjamin clementine,Anastasia Simakova|0|15,1
+60,7,Adiós,5,A,MusicBrainz,Eva Brezalieva,2023,Hoop,Adiós by Benjamin Clementine,A,,adios ~ benjamin clementine,Eva Brezalieva|0|12,1
+61,7,Adiós,5,A,MusicBrainz,Evita Griskenas,2023,Hoop,Adiós by Benjamin Clementine,A,,adios ~ benjamin clementine,Evita Griskenas|1|12,1
+62,7,Adiós,5,B,none,Neta Rivkin,2012,Ball,Adios by Stanislav Zeltser,B,,adios ~ stanislav zeltser,Neta Rivkin|c0|2,1
+63,8,España Caní,5,A,MusicBrainz: Pascual Marquina Narro,Irina Tchachina,1997,Ribbon,Espana Cani by Narro Pascual Marquina,A,,espana cani ~ narro pascual marquina,Irina Tchachina|0|38,1
+64,8,España Caní,5,A,MusicBrainz: Pascual Marquina Narro,Irina Tchachina,1998,Ribbon,Espana Cani by Narro Pascual Marquina,A,,espana cani ~ narro pascual marquina,Irina Tchachina|0|34,1
+65,8,España Caní,5,A,MusicBrainz: Pascual Marquina Narro,Arina Averina,2020,Hoop,"""España Cañi"", by Andre Rieu & Johann Strauss Orchestra, composed by Pascual Marquina Narro",A,,espana cani ~ narro pascual marquina,Arina Averina|0|17,1
+66,8,España Caní,5,A,MusicBrainz: Pascual Marquina Narro,Vlada Nikolchenko,2020,Ribbon,España cañí by Pascual Marquina Narro,A,,espana cani ~ narro pascual marquina,Vlada Nikolchenko|0|12,1
+67,8,España Caní,5,A,MusicBrainz: Pascual Marquina Narro,Vlada Nikolchenko,2021,Ribbon,España cañí by Pascual Marquina Narro,A,,espana cani ~ narro pascual marquina,Vlada Nikolchenko|0|6,1
+68,8,España Caní,5,B,none,Alexandra Merkulova,2011,Ribbon,Espana cani by Cincinnati Pops Orchestra,B,,espana cani ~ manhattan pops orchestra trio norte,Alexandra Merkulova|0|15,1
+69,8,España Caní,5,B,none,Alina Maksymenko,2011,Ribbon,"""España Caní"", ""España Caní"" by Manhattan Pops Orchestra, Trio Norté",B,,espana cani ~ manhattan pops orchestra trio norte,Alina Maksymenko|0|12,1
+70,8,España Caní,5,B,none,Alina Maksymenko,2011,Ribbon,"""España Caní"", ""España Caní"" by Manhattan Pops Orchestra, Trio Norté",B,,espana cani ~ manhattan pops orchestra trio norte,Alina Maksymenko|0|12,2
+71,9,Flamenco,5,A,none,Neviana Vladinova,2019,Clubs,"""Flamenco"" by Timmy Trumpet & Jetfire & Rage",A,,flamenco ~ timmy trumpet jetfire,Neviana Vladinova|1|2,1
+72,9,Flamenco,5,A,none,Emmi Piiroinen,2022,Ribbon,Flamenco (feat. Rage) [Extended Mix] by Timmy Trumpet & JETFIRE,A,,flamenco ~ timmy trumpet jetfire,Emmi Piiroinen|0|19,1
+73,9,Flamenco,5,A,none,Emmi Piiroinen,2023,Ribbon,Flamenco (feat. Rage) [Extended Mix] by Timmy Trumpet & JETFIRE,A,,flamenco ~ timmy trumpet jetfire,Emmi Piiroinen|0|15,1
+74,9,Flamenco,5,B,none,Carolina Rodríguez (gymnast),2002,Hoop,Flamenco by Didulya,B,,flamenco ~ didulya,Carolina Rodríguez (gymnast)|0|52,1
+75,9,Flamenco,5,B,none,Kaho Minagawa,2013,Hoop,Flamenco by Didulya,B,,flamenco ~ didulya,Kaho Minagawa|0|24,1
+76,9,Flamenco,5,C,none,Alexandra Merkulova,2013,Hoop,Flamenco by Pepe Romero,C,,flamenco ~ pepe romero,Alexandra Merkulova|0|0,1
+77,10,Love Story,5,A,MusicBrainz: Francis Lai,Liubov Charkashyna,2012,Ribbon,Love Story by Francis Lai,A,,love story,Liubov Charkashyna|0|3,1
+78,10,Love Story,5,A,MusicBrainz: Francis Lai,Tatyana Volozhanina,2022,Ribbon,(Where Do I Begin) Love Story by Shirley Bassey,A,,love story,Tatyana Volozhanina|0|23,1
+79,10,Love Story,5,A,MusicBrainz: Francis Lai,Tatyana Volozhanina,2023,Ribbon,(Where Do I Begin) Love Story by Shirley Bassey,A,,love story,Tatyana Volozhanina|0|27,1
+80,10,Love Story,5,A,MusicBrainz: Francis Lai,Lauren Grüniger,2025,Ball,(Where Do I Begin) Love Story by Shirley Bassey,A,,love story,Lauren Grüniger|0|5,1
+81,10,Love Story,5,B,MusicBrainz: Skalpovich / Indila,Lada Pusch,2023,Ball,Love Story by Indila,B,,love story ~ indila,Lada Pusch|0|13,1
+82,10,Love Story,5,B,MusicBrainz: Skalpovich / Indila,Lada Pusch,2024,Ball,Love Story by Indila,B,,love story ~ indila,Lada Pusch|0|9,1
+83,10,Love Story,5,C,none,Vera Sessina,2005,Ribbon,Love Story by Arthur Fidler & Boston Pops Orchestra,C,,love story ~ arthur fidler boston pops orchestra,Vera Sessina|0|19,1
+84,11,Main Title,5,A,MusicBrainz: Blake Neely,Anette Vaher,2025,Hoop,Main Title (The Flight Attendant) by Blake Neely,A,,main title ~ blake neely,Anette Vaher|0|0,1
+85,11,Main Title,5,A,MusicBrainz: Blake Neely,Sofia Raffaeli,2026,Ball,The Double Theme - Version 1 / Main Title (The Flight Attendant) by Blake Neely,A,,main title ~ blake neely,Sofia Raffaeli|2|3,2
+86,11,Main Title,5,B,none,Takhmina Ikromova,2023,Hoop,"""Main Title"" from The Queen's Gambit, ""Piano by Candlelight"", ""Prodigy"" by Carlos Rafael Rivera, Carl Doy, Kōtarō Nakagawa",B,,main title ~ carlos rafael rivera carl doy kotaro nakagawa,Takhmina Ikromova|0|12,1
+87,11,Main Title,5,C,none,Alexandra Timoshenko,1992,Hoop,Main Title / Love Theme music from Wild Orchid by Simon Goldenberg & Geoff MacCormack,C,,main title ~ simon goldenberg geoff maccormack,Alexandra Timoshenko|c0|3,1
+88,11,Main Title,5,D,MusicBrainz,Tamara Yerofeeva,2000,Hoop,Main Title music from Enemy of the State by Trevor Rabin & Harry Gregson-Williams,D,,main title ~ trevor rabin harry gregson williams,Tamara Yerofeeva|0|16,1
+89,12,Perhaps Perhaps Perhaps,5,A,MusicBrainz: Osvaldo Farrés,Joanna Mitrosz,2012,Ball,Perhaps Perhaps Perhaps by Pussycat Dolls,A,,perhaps perhaps perhaps ~ pussycat dolls,Joanna Mitrosz|c0|2,1
+90,12,Perhaps Perhaps Perhaps,5,A,MusicBrainz: Osvaldo Farrés,Arina Charopa,2013,Clubs,"Perhaps, Perhaps, Perhaps by The Pussycat Dolls",A,,perhaps perhaps perhaps ~ pussycat dolls,Arina Charopa|0|10,1
+91,12,Perhaps Perhaps Perhaps,5,A,MusicBrainz: Osvaldo Farrés,Marfa Ekimova,2022,Ball,Perhaps Perhaps Perhaps by The Pussycat Dolls,A,,perhaps perhaps perhaps ~ pussycat dolls,Marfa Ekimova|0|13,1
+92,12,Perhaps Perhaps Perhaps,5,A,MusicBrainz: Osvaldo Farrés,Marfa Ekimova,2023,Ball,Perhaps Perhaps Perhaps by The Pussycat Dolls,A,,perhaps perhaps perhaps ~ pussycat dolls,Marfa Ekimova|0|9,1
+93,12,Perhaps Perhaps Perhaps,5,A,MusicBrainz: Osvaldo Farrés,Akmaral Yerekesheva,2025,Ball,"Perhaps, perhaps, perhaps by The Pussycat Dolls",A,,perhaps perhaps perhaps ~ pussycat dolls,Akmaral Yerekesheva|0|5,1
+94,12,Perhaps Perhaps Perhaps,5,B,none,Sabina Ashirbayeva,2013,Ribbon,"Perhaps, Perhaps, Perhaps by Mantovani",B,,perhaps perhaps perhaps ~ mantovani,Sabina Ashirbayeva|0|19,1
+95,13,Requiem,5,A,none,Anastasiia Salos,2024,Ribbon,Requiem by Aram MP3 & Forsh,A,,requiem ~ aram mp3 forsh,Anastasiia Salos|0|7,1
+96,13,Requiem,5,A,none,Aiym Meirzhanova,2025,Ribbon,"Requiem by Aram Mp3, Forsh",A,,requiem ~ aram mp3 forsh,Aiym Meirzhanova|0|7,1
+97,13,Requiem,5,B,MusicBrainz,Ekaterina Vedeneeva,2018,Clubs,Requiem by Alma,B,,requiem ~ alma,Ekaterina Vedeneeva|1|34,1
+98,13,Requiem,5,C,none,Vera Sessina,2006,Ribbon,Requiem by Mozart,C,,requiem ~ mozart,Vera Sessina|0|15,1
+99,13,Requiem,5,D,MusicBrainz: Paul O’Neill,Kaho Minagawa,2014,Hoop,Overture / Requiem (The Fifth) / Fate by Trans-Siberian Orchestra,D,,requiem ~ trans siberian orchestra,Kaho Minagawa|0|20,2
+100,14,Who Wants To Live Forever,5,A,none,Evgeniya Kanaeva,2010,Gala,"""Who Wants to Live Forever"", by Queen, Sarah Brightman version",A,,who wants to live forever ~ tenors,Evgeniya Kanaeva|1|21,1
+101,14,Who Wants To Live Forever,5,A,none,Eva Brezalieva,2020,Ribbon,Who Wants To Live Forever by Queen / The Tenors feat. Lindsey Stirling,A,,who wants to live forever ~ tenors,Eva Brezalieva|0|27,1
+102,14,Who Wants To Live Forever,5,A,none,Suzanna Shahbazian,2025,Ball,Who Wants To Live Forever by The Tenors,A,,who wants to live forever ~ tenors,Suzanna Shahbazian|0|5,2
+103,14,Who Wants To Live Forever,5,A,none,Luana Gomes,2026,Ribbon,Who Wants To Live Forever by Queen / Who Wants To Live Forever (Stranger Things Remix),A,,who wants to live forever ~ tenors,Luana Gomes|0|3,1
+104,14,Who Wants To Live Forever,5,A,none,Suzanna Shahbazian,2026,Ball,Who Wants To Live Forever by The Tenors,A,,who wants to live forever ~ tenors,Suzanna Shahbazian|0|1,2
+105,14,Who Wants To Live Forever,5,B,MusicBrainz: Brian May,Viktoriia Onopriienko,2021,Hoop,"""Who Wants To Live Forever?"" by David Garrett",B,,who wants to live forever ~ david garrett,Viktoriia Onopriienko|0|16,1
+106,15,Another One Bites the Dust,4,A,MusicBrainz: John Deacon,Alexandra Agiurgiuculese,2018,Ribbon,The Wall/ Another One Bites the Dust by Pink Floyd/ Queen,A,,another one bites the dust ~ queen,Alexandra Agiurgiuculese|1|8,2
+107,15,Another One Bites the Dust,4,A,MusicBrainz: John Deacon,Vlada Nikolchenko,2019,Ball,Another One Bites the Dust by Queen,A,,another one bites the dust ~ queen,Vlada Nikolchenko|0|16,1
+108,15,Another One Bites the Dust,4,A,MusicBrainz: John Deacon,Vlada Nikolchenko,2020,Ball,Another One Bites the Dust by Queen,A,,another one bites the dust ~ queen,Vlada Nikolchenko|0|9,1
+109,15,Another One Bites the Dust,4,A,MusicBrainz: John Deacon,Lia Kallio,2025,Ribbon,Another One Bites The Dust by Queen,A,,another one bites the dust ~ queen,Lia Kallio|0|7,1
+110,15,Another One Bites the Dust,4,B,none,Arina Averina,2023,Hoop,"""Another One Bites The Dust"" by Alexander Jean",B,,another one bites the dust ~ alexander jean,Arina Averina|0|0,1
+111,15,Another One Bites the Dust,4,C,none,Alexandra Agiurgiuculese,2017,Ribbon,Another One Bites the Dust by Pink Floyd,C,,another one bites the dust ~ pink floyd,Alexandra Agiurgiuculese|1|4,2
+112,16,Eye of the Tiger (Cover),4,A,none,Maëna Millon,2019,Hoop,Eye of the Tiger (Cover) by 2Cellos,A,,eye of the tiger ~ 2cellos,Maëna Millon|0|20,1
+113,16,Eye of the Tiger (Cover),4,A,none,Katrin Taseva,2020,Hoop,Eye Of The Tiger by 2Cellos,A,,eye of the tiger ~ 2cellos,Katrin Taseva|0|0#2020,1
+114,16,Eye of the Tiger (Cover),4,A,none,Maëna Millon,2020,Hoop,Eye of the Tiger (Cover) by 2Cellos,A,,eye of the tiger ~ 2cellos,Maëna Millon|0|16#2020,1
+115,16,Eye of the Tiger (Cover),4,A,none,Katrin Taseva,2021,Hoop,Eye Of The Tiger by 2Cellos,A,,eye of the tiger ~ 2cellos,Katrin Taseva|0|0#2021,1
+116,16,Eye of the Tiger (Cover),4,A,none,Maëna Millon,2021,Hoop,Eye of the Tiger (Cover) by 2Cellos,A,,eye of the tiger ~ 2cellos,Maëna Millon|0|16#2021,1
+117,16,Eye of the Tiger (Cover),4,B,none,Daniela Munits,2021,Ribbon,Eye of the Tiger/ Eye of the Tiger (House) by Survivors/Djemadelgado,B,,eye of the tiger ~ djemadelgado,Daniela Munits|0|24,2
+118,16,Eye of the Tiger (Cover),4,C,none,Daniela Munits,2021,Ribbon,Eye of the Tiger/ Eye of the Tiger (House) by Survivors/Djemadelgado,C,,eye of the tiger ~ survivors,Daniela Munits|0|24,1
+119,16,Eye of the Tiger (Cover),4,D,none,Hanna Panna Wiesner,2025,Ball,"Eye of the Tiger by Tommee Profitt, FJØRA, Joseph William Morgan",D,,eye of the tiger ~ tommee profitt fjøra joseph william morgan,Hanna Panna Wiesner|0|5,1
+120,17,Footloose,4,A,MusicBrainz: Kenny Loggins,Adi Asya Katz,2021,Clubs,Footloose by Glee Cast,A,,footloose,Adi Asya Katz|0|10,1
+121,17,Footloose,4,A,MusicBrainz: Kenny Loggins,Rin Keys,2023,Ribbon,Footloose by Kenny Loggins,A,,footloose,Rin Keys|0|3,1
+122,17,Footloose,4,B,no credit,Linoy Ashram,2018,Clubs,Footloose (Glee cast version),B,,footloose ~ no credit,Linoy Ashram|1|14,1
+123,17,Footloose,4,B,no credit,Panagiota Lytra,2021,Clubs,Footloose (Glee Cast Version),B,,footloose ~ no credit,Panagiota Lytra|0|23,1
+124,18,Guarda che luna,4,A,none,Milena Baldassarri,2016,Ball,Guarda che luna by Petra Magoni,A,,guarda che luna ~ petra magoni,Milena Baldassarri|2|37,1
+125,18,Guarda che luna,4,A,none,Victoria Veinberg Filanovsky,2016,Ball,"Guarda Che Luna by Petra Magoni, Ferruccio Spinetti",A,,guarda che luna ~ petra magoni,Victoria Veinberg Filanovsky|0|6,1
+126,18,Guarda che luna,4,A,none,Milena Baldassarri,2017,Ball,Guarda che luna by Petra Magoni,A,,guarda che luna ~ petra magoni,Milena Baldassarri|2|32,1
+127,18,Guarda che luna,4,B,none,Veronica Bertolini,2012,Ball,Feeling good / Guarda che luna by Muse / Roberto Romagnoli,B,,guarda che luna ~ roberto romagnoli,Veronica Bertolini|0|21,2
+128,18,Guarda che luna,4,B,none,Veronica Bertolini,2013,Ball,Feeling good / Guarda che luna by Muse / Roberto Romagnoli,B,,guarda che luna ~ roberto romagnoli,Veronica Bertolini|0|17,2
+129,18,Guarda che luna,4,C,none,Emmi Piiroinen,2023,Ball,Guarda che luna by Kvatro,C,,guarda che luna ~ kvatro,Emmi Piiroinen|0|13,1
+130,19,Hava Nagila,4,A,none,Jouki Tikkanen,2017,Clubs,Hava Nagila by Andre Rieu,A,,hava nagila ~ andre rieu,Jouki Tikkanen|0|10,1
+131,19,Hava Nagila,4,B,none,Alexandra Agiurgiuculese,2016,Rope,Hava Nagila by DJ Jacob,B,,hava nagila ~ dj jacob,Alexandra Agiurgiuculese|1|3,1
+132,19,Hava Nagila,4,C,MusicBrainz,Arina Averina,2016,Ball,"""Hava Nagila"" by London Festival Orchestra & Chorus",C,,hava nagila ~ london festival orchestra chorus,Arina Averina|0|43,1
+133,19,Hava Nagila,4,D,no credit,Ulyana Trofimova,2009,Rope,Hava Nagila,D,,hava nagila ~ no credit,Ulyana Trofimova|0|15,1
+134,19,Hava Nagila,4,D,no credit,Ulyana Trofimova,2010,Rope,Hava Nagila,D,,hava nagila ~ no credit,Ulyana Trofimova|0|11,1
+135,20,Hey Pachuco,4,A,MusicBrainz: Royal Crown Revue,Vera Sessina,2002,Clubs,Hey Pachuco! by Royal Crown Revue,A,,hey pachuco ~ royal crown revue,Vera Sessina|0|30,1
+136,20,Hey Pachuco,4,A,MusicBrainz: Royal Crown Revue,Evgeniya Kanaeva,2004,Clubs,"""Hey Pachuco"" (The Mask OST), by Royal Crown Revue",A,,hey pachuco ~ royal crown revue,Evgeniya Kanaeva|1|56,1
+137,20,Hey Pachuco,4,A,MusicBrainz: Royal Crown Revue,Dina Averina,2018,Clubs,"""Hey! Pachuco!"" from The Mask (film) by Royal Crown Revue",A,,hey pachuco ~ royal crown revue,Dina Averina|0|34,1
+138,20,Hey Pachuco,4,B,none,Ulyana Trofimova,2011,Clubs,Horizon Part I / Hey Pachuco / My Humps by Safri Duo / DJ Ruslan Nigmatullin / Black Eyed Peas,B,,hey pachuco ~ dj ruslan nigmatullin,Ulyana Trofimova|0|7,2
+139,21,Hit the Road Jack,4,A,MusicBrainz: Percy Mayfield,Salome Pazhava,2015,Ribbon,Hit the Road Jack by Ray Charles,A,,hit the road jack,Salome Pazhava|0|28,1
+140,21,Hit the Road Jack,4,A,MusicBrainz: Percy Mayfield,Jelizaveta Polstjanaja,2020,Ribbon,Hey Momma / Hit the Road Jack by Pentatonix,A,,hit the road jack,Jelizaveta Polstjanaja|0|9,2
+141,21,Hit the Road Jack,4,B,none,Milena Baldassarri,2024,Hoop,Hit The Road Jack (Epic Cover) by 2WEI,B,,hit the road jack ~ 2wei,Milena Baldassarri|2|0,1
+142,21,Hit the Road Jack,4,C,no credit,Fanni Pigniczki,2024,Ball,Hit the Road Jack,C,,hit the road jack ~ no credit,Fanni Pigniczki|0|33,1
+143,22,Kalinka,4,A,MusicBrainz,Patricia Bezzoubenko,2014,Ball,Kalinka (Russian folk) by Ivan Larionov,A,,kalinka,Patricia Bezzoubenko|0|9,1
+144,22,Kalinka,4,A,MusicBrainz,Dina Averina,2015,Clubs,"""Kalinka"" by André Rieu",A,,kalinka,Dina Averina|0|50,1
+145,22,Kalinka,4,A,MusicBrainz,Patricia Bezzoubenko,2015,Ball,Kalinka (Russian folk) by Ivan Larionov,A,,kalinka,Patricia Bezzoubenko|0|5,1
+146,22,Kalinka,4,B,none,Dina Averina,2018,Ribbon,"""Kalinka"" by Nikolay Baskov",B,,kalinka ~ nikolay baskov,Dina Averina|0|36,1
+147,22,Kalinka,4,C,no credit,Kateryna Serebrianska,1995,Rope,Kalinka / Katyusha (Russian traditional),C,,kalinka ~ no credit,Kateryna Serebrianska|0|13,1
+148,22,Kalinka,4,C,no credit,Kateryna Serebrianska,1996,Rope,Kalinka / Katyusha (Russian traditional),C,,kalinka ~ no credit,Kateryna Serebrianska|0|9,1
+149,22,Kalinka,4,C,no credit,Olga Kapranova,2006,Clubs,Karapet Dance / Kalinka (Russian & Ukrainian Traditionals),C,,kalinka ~ no credit,Olga Kapranova|0|14,2
+150,23,Kiss,4,A,MusicBrainz: Prince,Nicol Ruprecht,2016,Ribbon,Kiss by Prince,A,,kiss ~ prince,Nicol Ruprecht|0|23,1
+151,23,Kiss,4,A,MusicBrainz: Prince,Sohn Ji-in,2022,Ball,"""Kiss"" by Prince (Cover)",A,,kiss ~ prince,Sohn Ji-in|0|10,1
+152,23,Kiss,4,A,MusicBrainz: Prince,Maëna Millon,2024,Clubs,Kiss by Prince,A,,kiss ~ prince,Maëna Millon|0|10,1
+153,23,Kiss,4,B,none,Jimena Dominguez,2023,Hoop,A Kiss by Phonograph Sympho-Jazz,B,,kiss ~ phonograph sympho jazz,Jimena Dominguez|0|12,1
+154,23,Kiss,4,B,none,Jimena Dominguez,2024,Hoop,A Kiss by Phonograph Sympho-Jazz,B,,kiss ~ phonograph sympho jazz,Jimena Dominguez|0|8,1
+155,24,Mama,4,A,MusicBrainz,Marina Durunda,2013,Ball,Mama music from Был Месяц Май by Paul Mauriat,A,,mama,Marina Durunda|0|17,1
+156,24,Mama,4,A,MusicBrainz,Aleksandra Soldatova,2016,Ball,"""Mama"", by Dalida",A,,mama,Aleksandra Soldatova|0|25,1
+157,24,Mama,4,A,MusicBrainz,Aleksandra Soldatova,2020,Gala,"""Mama"", by Dalida",A,,mama,Aleksandra Soldatova|0|2,1
+158,24,Mama,4,A,MusicBrainz,Vera Tugolukova,2023,Ball,"""Mama"" by Dalida",A,,mama,Vera Tugolukova|1|14,1
+159,24,Mama,4,B,none,Stiliana Nikolova,2023,Hoop,Mama by Gianna Nannini,B,,mama ~ gianna nannini,Stiliana Nikolova|0|16,1
+160,25,The Phantom of the Opera,4,A,MusicBrainz: Andrew Lloyd Webber,Kateryna Serebrianska,1993,Hoop,Phantom of the Opera by Andrew Lloyd Webber,A,,phantom of the opera,Kateryna Serebrianska|0|21,1
+161,25,The Phantom of the Opera,4,A,MusicBrainz: Andrew Lloyd Webber,Aleksandra Soldatova,2016,Hoop,"""Phantasia"" from The Phantom of the Opera, by Sarah Chang, Julian Lloyd Webber",A,,phantom of the opera,Aleksandra Soldatova|0|24,1
+162,25,The Phantom of the Opera,4,A,MusicBrainz: Andrew Lloyd Webber,Tatyana Volozhanina,2023,Hoop,The Phantom of the Opera by Nightwish,A,,phantom of the opera,Tatyana Volozhanina|0|24,1
+163,25,The Phantom of the Opera,4,B,none,Boryana Kaleyn,2019,Hoop,"""The Phantom of the Opera"" by Prague Cello Quartet",B,,phantom of the opera ~ prague cello quartet,Boryana Kaleyn|2|21,1
+164,26,Sweet Dreams (Are Made of This),4,A,MusicBrainz: Eurythmics / Dave Stewart / Annie Lennox,Eleonora Romanova,2014,Clubs,"Sweet Dreams (Cazette Mix, Scott Remedy Edit) by Tanghetto, Avicii",A,,sweet dreams,Eleonora Romanova|0|6,1
+165,26,Sweet Dreams (Are Made of This),4,A,MusicBrainz: Eurythmics / Dave Stewart / Annie Lennox,Ekaterina Vedeneeva,2016,Hoop,Sweet Dreams (Are Made of This) by Emily Browning,A,,sweet dreams,Ekaterina Vedeneeva|1|40,1
+166,26,Sweet Dreams (Are Made of This),4,B,none,Adi Asya Katz,2023,Hoop,Sweet Dreams (Are Made of This) by Kat León,B,,sweet dreams ~ kat leon,Adi Asya Katz|0|0,1
+167,26,Sweet Dreams (Are Made of This),4,B,none,Aibota Yertaikyzy,2026,Ball,Sweet Dreams (Are Made of This) by Kat Leon,B,,sweet dreams ~ kat leon,Aibota Yertaikyzy|0|3,1
+168,27,Bad Guy,3,A,MusicBrainz: FINNEAS / Billie Eilish,Lily Ramonatxo,2021,Ball,"""Bad Guy"" by Billie Eilish",A,,bad guy,Lily Ramonatxo|0|13,1
+169,27,Bad Guy,3,A,MusicBrainz: FINNEAS / Billie Eilish,Hanna Panna Wiesner,2023,Ball,Bad Guy by Postmodern Jukebox,A,,bad guy,Hanna Panna Wiesner|0|14,1
+170,27,Bad Guy,3,A,MusicBrainz: FINNEAS / Billie Eilish,Hanna Panna Wiesner,2024,Ball,Bad Guy by Postmodern Jukebox,A,,bad guy,Hanna Panna Wiesner|0|9,1
+171,27,Bad Guy,3,B,none,Takhmina Ikromova,2024,Ball,Bad Guy by KONG.,B,,bad guy ~ kong,Takhmina Ikromova|0|9,1
+172,28,Believer,3,A,MusicBrainz: Mattias Larsson / Justin Tranter / Daniel Platzman / Ben McKee / Wayne Sermon / Dan Reynolds / Robin Fredriksson,Khrystyna Pohranychna,2018,Ball,"""Believer"" by Chase Holfelder",A,,believer ~ chase holfelder,Khrystyna Pohranychna|0|11,1
+173,28,Believer,3,B,none,Alja Ponikvar,2025,Ball,Believer by Christina,B,,believer ~ christina,Alja Ponikvar|0|5,1
+174,28,Believer,3,C,none,Alessia Verstappen,2024,Hoop,Believer by Tommee Profitt feat. Colton Dixon,C,,believer ~ tommee profitt feat colton dixon,Alessia Verstappen|0|4,1
+175,29,California Dreamin',3,A,none,Salome Pazhava,2019,Clubs,Carlifornia Dreamin by 33 Tours,A,,california dreamin ~ 33tours,Salome Pazhava|0|11,1
+176,29,California Dreamin',3,A,none,Suzanna Shahbazian,2025,Ribbon,California Dreamin' by 33Tours,A,,california dreamin ~ 33tours,Suzanna Shahbazian|0|7,1
+177,29,California Dreamin',3,A,none,Suzanna Shahbazian,2026,Ribbon,California Dreamin' by 33Tours,A,,california dreamin ~ 33tours,Suzanna Shahbazian|0|3,1
+178,29,California Dreamin',3,B,MusicBrainz: Michelle Phillips / John Phillips,Berta Miquel,2024,Ball,California Dreamin' by Sia,B,,california dreamin ~ sia,Berta Miquel|0|9,1
+179,29,California Dreamin',3,B,MusicBrainz: Michelle Phillips / John Phillips,Berta Miquel,2025,Ball,California Dreamin' by Sia,B,,california dreamin ~ sia,Berta Miquel|0|5,1
+180,30,Carol Of The Bells,3,A,MusicBrainz,Katsiaryna Halkina,2016,Ball,Carol Of The Bells by The Piano Guys,A,,carol of the bells,Katsiaryna Halkina|0|24,1
+181,30,Carol Of The Bells,3,A,MusicBrainz,Fausta Šostakaitė,2022,Hoop,Carol of the Bells by Libera (Christmas album),A,,carol of the bells,Fausta Šostakaitė|0|4,1
+182,30,Carol Of The Bells,3,B,none,Milena Baldassarri,2018,Ribbon,Carol Of The Bells by Tommee Profit,B,,carol of the bells ~ tommee profit,Milena Baldassarri|2|30,1
+183,31,Circle Of Life,3,A,none,Bárbara Domingos,2023,Hoop,"Circle Of Life by Carmen Twillie, Lebo M.",A,,circle of life ~ carmen twillie lebo m,Bárbara Domingos|0|13,1
+184,31,Circle Of Life,3,A,none,Bárbara Domingos,2024,Hoop,"Circle Of Life by Carmen Twillie, Lebo M.",A,,circle of life ~ carmen twillie lebo m,Bárbara Domingos|0|9,1
+185,31,Circle Of Life,3,A,none,Bárbara Domingos,2025,Hoop,"Circle Of Life by Carmen Twillie, Lebo M.",A,,circle of life ~ carmen twillie lebo m,Bárbara Domingos|0|4,1
+186,31,Circle Of Life,3,B,none,Takhmina Ikromova,2019,Ribbon,Mi Bombón (Extended Remix) / Circle of Life (District 78 Remix) by Caba and Lion King,B,,circle of life ~ caba and lion king,Takhmina Ikromova|0|32,2
+187,31,Circle Of Life,3,C,none,Evelina Atalyants,2023,Ball,"""Break Out"", ""Circle of Life (Remix)"", ""In Da Getto"" by Swingrowers, District 78, J Balvin & Skrillex",C,,circle of life ~ swingrowers district 78 j balvin skrillex,Evelina Atalyants|0|5,2
+188,32,Cleopatra,3,A,MusicBrainz,Evgeniya Kanaeva,2012,Hoop,"""Egypt Is Yours For Only One Day"" (Cleopatra OST), ""To Speed You on Your Way"", ""In The Eyes of the Gods We Are One"" by Trevor Jones",A,,cleopatra ~ trevor jones,Evgeniya Kanaeva|1|1,1
+189,32,Cleopatra,3,A,MusicBrainz,Evgeniya Kanaeva,2012,Hoop,"""Egypt Is Yours For Only One Day"" (Cleopatra OST), ""To Speed You on Your Way"", ""In The Eyes of the Gods We Are One"" by Trevor Jones",A,,cleopatra ~ trevor jones,Evgeniya Kanaeva|1|1,2
+190,32,Cleopatra,3,A,MusicBrainz,Evgeniya Kanaeva,2012,Hoop,"""Egypt Is Yours For Only One Day"" (Cleopatra OST), ""To Speed You on Your Way"", ""In The Eyes of the Gods We Are One"" by Trevor Jones",A,,cleopatra ~ trevor jones,Evgeniya Kanaeva|1|1,3
+191,32,Cleopatra,3,A,MusicBrainz,Elzhana Taniyeva,2022,Ribbon,Cleopatra by Trevor Jones,A,,cleopatra ~ trevor jones,Elzhana Taniyeva|1|11,1
+192,32,Cleopatra,3,B,MusicBrainz,Hatice Gokce Emir,2025,Ribbon,Cleopatra by Efendi,B,,cleopatra ~ efendi,Hatice Gokce Emir|0|7,1
+193,33,Cry Me a River,3,A,MusicBrainz: Timbaland / Scott Storch / Justin Timberlake,Sabina Ashirbayeva,2017,Ball,Cry Me a River music from Justin Timberlake by Eklipse,A,,cry me a river ~ eklipse,Sabina Ashirbayeva|0|1,1
+194,33,Cry Me a River,3,A,MusicBrainz: Timbaland / Scott Storch / Justin Timberlake,Sumire Kita,2017,Ribbon,Cry Me a River (violin version) music from Justin Timberlake's Justified (album) by EKLIPSE,A,,cry me a river ~ eklipse,Sumire Kita|0|20,1
+195,33,Cry Me a River,3,B,MusicBrainz: Arthur Hamilton,Berta Miquel,2024,Hoop,Cry Me a River by Michael Bublé,B,,cry me a river ~ michael buble,Berta Miquel|0|8,1
+196,33,Cry Me a River,3,B,MusicBrainz: Arthur Hamilton,Berta Miquel,2025,Hoop,Cry Me a River by Michael Bublé,B,,cry me a river ~ michael buble,Berta Miquel|0|4,1
+197,34,El Cumbanchero,3,A,none,Lauren Grüniger,2025,Clubs,El Cumbanchero by Lucie Arnaz,A,,el cumbanchero ~ lucie arnaz,Lauren Grüniger|0|6,1
+198,34,El Cumbanchero,3,B,none,"Lucía González (gymnast, born 2006)",2021,Clubs,El Cumbanchero (Instrumental) by Rey Casas,B,,el cumbanchero ~ rey casas,"Lucía González (gymnast, born 2006)|0|22",1
+199,34,El Cumbanchero,3,C,none,Reina Matsusaka,2024,Hoop,El Cumbanchero by Tokyo Kosei Wind Orchestra,C,,el cumbanchero ~ tokyo kosei wind orchestra,Reina Matsusaka|0|4,1
+200,35,Granada,3,A,MusicBrainz: Agustín Lara,Victoria Veinberg Filanovsky,2017,Hoop,Granada by Caterina Valente,A,,granada,Victoria Veinberg Filanovsky|0|0,1
+201,35,Granada,3,A,MusicBrainz: Agustín Lara,Celeste D'Arcángelo,2023,Ribbon,Granada by Luciano Pavarotti,A,,granada,Celeste D'Arcángelo|0|15,1
+202,35,Granada,3,A,MusicBrainz: Agustín Lara,Celeste D'Arcángelo,2024,Ribbon,Granada by Luciano Pavarotti,A,,granada,Celeste D'Arcángelo|0|11,1
+203,35,Granada,3,B,MusicBrainz: Agustín Lara,Aleksandra Soldatova,2018,Hoop,"""Granada"" by Stanley Black",B,,granada ~ stanley black,Aleksandra Soldatova|0|8,1
+204,36,Historia de un amor,3,A,none,Alina Harnasko,2018,Ball,Historia de un amor by Brendon Stoun,A,,historia de un amor ~ brendon stoun,Alina Harnasko|0|42,1
+205,36,Historia de un amor,3,B,MusicBrainz: Carlos Eleta Almarán,Sakura Hayakawa,2015,Clubs,Historia de un Amor by Carlos Eleta Almarán,B,,historia de un amor ~ carlos eleta almaran,Sakura Hayakawa|1|6,1
+206,36,Historia de un amor,3,C,none,Victoria Veinberg Filanovsky,2015,Hoop,Historia De Un Amor by Perez Prado,C,,historia de un amor ~ perez prado,Victoria Veinberg Filanovsky|0|9,1
+207,36,Historia de un amor,3,D,no credit,Victoria Veinberg Filanovsky,2017,Ball,Historia de un Amor (acoustic version),D,,historia de un amor ~ no credit,Victoria Veinberg Filanovsky|0|2,1
+208,37,I Will Survive,3,A,none,Milena Baldassarri,2016,Hoop,I will survive by Igudesman & Joo,A,,i will survive ~ igudesman joo,Milena Baldassarri|2|36,1
+209,37,I Will Survive,3,A,none,Milena Baldassarri,2017,Hoop,I will survive by Igudesman & Joo,A,,i will survive ~ igudesman joo,Milena Baldassarri|2|31,1
+210,37,I Will Survive,3,B,none,Yulia Raskina,1999,Rope,I Will Survive by Anatoly Vekshin (originally Gloria Gainor),B,,i will survive ~ anatoly vekshin,Yulia Raskina|0|9,1
+211,37,I Will Survive,3,C,MusicBrainz: Freddie Perren / Dino Fekaris,Anastasiia Salos,2023,Ribbon,I Will Survive by Musica Nuda,C,,i will survive ~ musica nuda,Anastasiia Salos|0|11,1
+212,38,L'eté indien,3,A,none,Ekaterina Vedeneeva,2015,Ribbon,L'eté indien by Piano Bar Band,A,,l ete indien ~ piano bar band,Ekaterina Vedeneeva|1|47,1
+213,38,L'eté indien,3,A,none,Ekaterina Vedeneeva,2016,Ribbon,L'eté indien by Piano Bar Band,A,,l ete indien ~ piano bar band,Ekaterina Vedeneeva|1|43,1
+214,38,L'eté indien,3,B,MusicBrainz: Graham Johnson / Toto Cutugno / Pasquale Losito,Evgeniya Kanaeva,2011,Hoop,"""L'Ete Indien"", by Joe Dassin",B,,l ete indien ~ joe dassin,Evgeniya Kanaeva|1|8,1
+215,38,L'eté indien,3,C,none,Jouki Tikkanen,2013,Ball,L'ete Indien by Quadro Nuevo,C,,l ete indien ~ quadro nuevo,Jouki Tikkanen|0|25,1
+216,39,La bohème,3,A,MusicBrainz: Charles Aznavour,Margarita Mamun,2012,Hoop,La Bohème (instrumental) by Charles Aznavour,A,,la boheme ~ charles aznavour,Margarita Mamun|0|21,1
+217,39,La bohème,3,A,MusicBrainz: Charles Aznavour,Evita Griskenas,2024,Ribbon,La bohème by Charles Aznavour,A,,la boheme ~ charles aznavour,Evita Griskenas|1|11,1
+218,39,La bohème,3,B,none,Yana Kudryavtseva,2014,Ball,La Bohème by Ornella Vanoni,B,,la boheme ~ ornella vanoni,Yana Kudryavtseva|0|10,1
+219,40,Mein Herr,3,A,MusicBrainz: John Kander,Nicol Ruprecht,2018,Clubs,Mein Herr by Liza Minnelli,A,,mein herr,Nicol Ruprecht|0|14,1
+220,40,Mein Herr,3,A,MusicBrainz: John Kander,Stiliana Nikolova,2025,Hoop,Mein Herr by Ute Lemper,A,,mein herr,Stiliana Nikolova|0|6,1
+221,40,Mein Herr,3,B,none,Vera Tugolukova,2025,Ball,Mein Herr by Kelli Barrett & The Kit Kat Girls,B,,mein herr ~ kelli barrett the kit kat girls,Vera Tugolukova|1|5,1
+222,41,Mission Imposible,3,A,none,Wang Zihan,2025,Hoop,"Mission: Impossible by Dubdogz, Zuffo, Rhōden",A,,mission impossible ~ dubdogz zuffo rhoden,Wang Zihan|0|0,1
+223,41,Mission Imposible,3,B,none,Liubov Charkashyna,2011,Hoop,Mission Impossible by Maxime Rodriguez,B,,mission impossible ~ maxime rodriguez,Liubov Charkashyna|0|5,1
+224,41,Mission Imposible,3,C,no credit,Kseniya Moustafaeva,2012,Clubs,Mission Imposible,C,,mission impossible ~ no credit,Kseniya Moustafaeva|0|34,1
+225,42,"Money, Money, Money",3,A,MusicBrainz: Benny Andersson / Björn Ulvaeus,Margarita Mamun,2012,Ribbon,"""Money Money Money"" music from royal philharmonic orchestra plays Pink Floyd by The royal philharmonic orchestra",A,,money money money,Margarita Mamun|0|25,1
+226,42,"Money, Money, Money",3,A,MusicBrainz: Benny Andersson / Björn Ulvaeus,Stiliana Nikolova,2019,Rope,"Money, Money, Money by Meryl Streep & Julie Walters & Christine Baranski",A,,money money money,Stiliana Nikolova|0|33,1
+227,42,"Money, Money, Money",3,A,MusicBrainz: Benny Andersson / Björn Ulvaeus,Stiliana Nikolova,2020,Rope,"Money, Money, Money by Meryl Streep & Julie Walters & Christine Baranski",A,,money money money,Stiliana Nikolova|0|29,1
+228,42,"Money, Money, Money",3,A,MusicBrainz: Benny Andersson / Björn Ulvaeus,Carmel Kallemaa,2024,Clubs,"Money, Money, Money by The Butterfly Effect, Money, Money, Money (from Mamma Mia!) by Meryl Streep, Julie Walters, Christine Baranski",A,,money money money,Carmel Kallemaa|0|7,2
+229,42,"Money, Money, Money",3,B,none,Carmel Kallemaa,2024,Clubs,"Money, Money, Money by The Butterfly Effect, Money, Money, Money (from Mamma Mia!) by Meryl Streep, Julie Walters, Christine Baranski",B,,money money money ~ butterfly effect,Carmel Kallemaa|0|7,1
+230,43,Never Enough,3,A,MusicBrainz: Justin Paul / Benj Pasek,Kaho Minagawa,2019,Ball,Never Enough by Loren Allred,A,,never enough ~ loren allred,Kaho Minagawa|0|1,1
+231,43,Never Enough,3,A,MusicBrainz: Justin Paul / Benj Pasek,Boryana Kaleyn,2024,Ball,"""Never Enough"" (from The Greatest Showman) by Loren Allred",A,,never enough ~ loren allred,Boryana Kaleyn|2|2,1
+232,43,Never Enough,3,B,none,Marina Durunda,2016,Ribbon,Never Enough (Eurovision 2012 Caspian Mix) by Emin Agalarov,B,,never enough ~ emin agalarov,Marina Durunda|0|7,1
+233,44,Nocturne,3,A,MusicBrainz,Inna Zhukova,2003,Ball,Nocturne by Chopin,A,,nocturne ~ chopin,Inna Zhukova|1|22,1
+234,44,Nocturne,3,B,none,Ekaterina Vedeneeva,2021,Ribbon,"Nocturne by Tamara Gverdtsiteli, Dmitry Duzhev",B,,nocturne ~ tamara gverdtsiteli dmitry duzhev,Ekaterina Vedeneeva|1|22,1
+235,44,Nocturne,3,C,none,Alina Harnasko,2021,Ribbon,Nocturne by Yuri Vesnyak,C,,nocturne ~ yuri vesnyak,Alina Harnasko|0|29,1
+236,45,Overture,3,A,none,Jasmine Kerber,2012,Clubs,"Overture, music from The Barber of Seville by London Philharmonic Orchestra and David Parry",A,,overture ~ london philharmonic orchestra and david parry,Jasmine Kerber|0|10,1
+237,45,Overture,3,A,none,Jasmine Kerber,2013,Clubs,"Overture, music from The Barber of Seville by London Philharmonic Orchestra and David Parry",A,,overture ~ london philharmonic orchestra and david parry,Jasmine Kerber|0|6,1
+238,45,Overture,3,B,none,Katrin Taseva,2018,Clubs,"""Overture (from Jesus Christ Superstar)"" by Andrew Lloyd Webber",B,,overture ~ andrew lloyd webber,Katrin Taseva|0|11,1
+239,45,Overture,3,C,MusicBrainz,Kaho Minagawa,2014,Hoop,Overture / Requiem (The Fifth) / Fate by Trans-Siberian Orchestra,C,,overture ~ trans siberian orchestra,Kaho Minagawa|0|20,1
+240,46,Padam Padam,3,A,MusicBrainz: Norbert Glanzberg,Evgeniya Kanaeva,2009,Ribbon,"""Padam Padam"", by Edith Piaf",A,,padam padam,Evgeniya Kanaeva|1|27,1
+241,46,Padam Padam,3,A,MusicBrainz: Norbert Glanzberg,Yana Kudryavtseva,2013,Ribbon,"""Padam Padam"" by Mireille Mathieu",A,,padam padam,Yana Kudryavtseva|0|18,1
+242,46,Padam Padam,3,B,no credit,"Lucía González (gymnast, born 2006)",2021,Ribbon,Padam Padam,B,,padam padam ~ no credit,"Lucía González (gymnast, born 2006)|0|23",1
+243,47,Paint It Black (feat. Rånya) [Epic Trailer Version],3,A,none,Liliana Lewińska,2025,Hoop,Paint It Black (feat. Rånya) [Epic Trailer Version] by Hidden Citizens,A,,paint it black ~ hidden citizens,Liliana Lewińska|0|6,1
+244,47,Paint It Black (feat. Rånya) [Epic Trailer Version],3,B,MusicBrainz: Keith Richards / Mick Jagger,Nicol Zelikman,2018,Hoop,Paint it Black by Ramin DJawadi,B,,paint it black ~ ramin djawadi,Nicol Zelikman|0|8,1
+245,47,Paint It Black (feat. Rånya) [Epic Trailer Version],3,C,no credit,Maëna Millon,2018,Hoop,Paint It Black (Cover),C,,paint it black ~ no credit,Maëna Millon|0|24,1
+246,48,The Pink Panther Theme,3,A,MusicBrainz: Henry Mancini,Natalia García,2007,Ball,"""The Pink Panther Theme"" by Henry Mancini",A,,pink panther theme ~ henry mancini,Natalia García|0|2,1
+247,48,The Pink Panther Theme,3,A,MusicBrainz: Henry Mancini,Carmel Kallemaa,2024,Ball,"The Pink Panther Theme by Henry Mancini, New York, New York by Frank Sinatra",A,,pink panther theme ~ henry mancini,Carmel Kallemaa|0|6,1
+248,48,The Pink Panther Theme,3,B,none,Sofia Raffaeli,2018,Ball,The Pink Panther Theme by The City of Prague Philharmonic Orchestra,B,,pink panther theme ~ city of prague philharmonic orchestra,Sofia Raffaeli|2|38,1
+249,49,Prologue,3,A,none,Amalia Lică,2024,Hoop,Prologue by Woodkid,A,,prologue ~ woodkid,Amalia Lică|0|9,1
+250,49,Prologue,3,A,none,Amalia Lică,2025,Hoop,Prologue by Woodkid,A,,prologue ~ woodkid,Amalia Lică|0|5,1
+251,49,Prologue,3,B,none,Hanna Panna Wiesner,2025,Clubs,Prologue (from Beauty and the Beast) by Alala,B,,prologue ~ alala,Hanna Panna Wiesner|0|6,1
+252,49,Prologue,3,C,MusicBrainz,Aiym Meirzhanova,2025,Clubs,Prologue (From Raya and the Last Dragon) by James Newton Howard,C,,prologue ~ james newton howard,Aiym Meirzhanova|0|6,1
+253,50,Pump Up The Jam,3,A,MusicBrainz: Patrick de Meyer / Thomas de Quincey,"Lucía González (gymnast, born 2006)",2023,Clubs,Pump Up The Jam by Technotronic,A,,pump up the jam,"Lucía González (gymnast, born 2006)|0|14",2
+254,50,Pump Up The Jam,3,A,MusicBrainz: Patrick de Meyer / Thomas de Quincey,"Lucía González (gymnast, born 2006)",2024,Clubs,Pump Up The Jam by Technotronic,A,,pump up the jam,"Lucía González (gymnast, born 2006)|0|10",2
+255,50,Pump Up The Jam,3,A,MusicBrainz: Patrick de Meyer / Thomas de Quincey,Sofia Ilteriakova,2024,Ball,Pump Up the Jam by The Lost Fingers,A,,pump up the jam,Sofia Ilteriakova|0|10,1
+256,50,Pump Up The Jam,3,A,MusicBrainz: Patrick de Meyer / Thomas de Quincey,Taisiia Onofriichuk,2026,Ribbon,Pump up the Jam by Crazy Frog,A,,pump up the jam,Taisiia Onofriichuk|1|23,2
+257,50,Pump Up The Jam,3,B,none,Taisiia Onofriichuk,2026,Ribbon,Pump up the Jam (Club Mix) by Bodybangers,B,,pump up the jam ~ bodybangers,Taisiia Onofriichuk|1|23,1
+258,50,Pump Up The Jam,3,C,none,Taisiia Onofriichuk,2026,Ribbon,Pump up the Jam (feat. HOSANNA) by Gabry Ponte,C,,pump up the jam ~ gabry ponte,Taisiia Onofriichuk|1|23,4
+259,50,Pump Up The Jam,3,D,none,Taisiia Onofriichuk,2026,Ribbon,Pump up the Jam by Thomas Gold,D,,pump up the jam ~ thomas gold,Taisiia Onofriichuk|1|23,3
+260,51,The Ride (Instrumental),3,A,none,Adi Asya Katz,2021,Ribbon,The Ride (Instrumental) by James Horner,A,,ride ~ james horner,Adi Asya Katz|0|11,1
+261,51,The Ride (Instrumental),3,B,MusicBrainz,Darja Varfolomeev,2020,Rope,Ride by ZZ WARD feat Gary Clark jr,B,,ride ~ zz ward feat gary clark jr,Darja Varfolomeev|1|27,1
+262,51,The Ride (Instrumental),3,C,no credit,Anna Bessonova,2006,Clubs,Plaza of Execution / Leave No Witnesses / The Ride / The Fencing Lesson / The Mask of Zorro,C,,ride ~ no credit,Anna Bessonova|0|14,3
+263,52,Rock Around the Clock,3,A,MusicBrainz: Jimmy De Knight / Max C. Freedman,Panagiota Lytra,2021,Ribbon,Rock Around the Clock by Bill Haley & His Comets,A,,rock around the clock ~ bill haley his comets,Panagiota Lytra|0|24,1
+264,52,Rock Around the Clock,3,A,MusicBrainz: Jimmy De Knight / Max C. Freedman,Panagiota Lytra,2022,Ribbon,Rock Around the Clock by Bill Haley & His Comets,A,,rock around the clock ~ bill haley his comets,Panagiota Lytra|0|20,1
+265,52,Rock Around the Clock,3,A,MusicBrainz: Jimmy De Knight / Max C. Freedman,Khrystyna Pohranychna,2025,Ribbon,"""Rock Around The Clock"" by Bill Haley",A,,rock around the clock ~ bill haley his comets,Khrystyna Pohranychna|0|33,1
+266,52,Rock Around the Clock,3,B,none,Daniela Munits,2022,Ribbon,Rock Around the Clock / Blue Suede Shoes / Jailhouse Rock / Hound Dog / Tutti Frutti / Be Bop a Lulla / Pour le Rock and Roll by Dany Brillant,B,,rock around the clock ~ dany brillant,Daniela Munits|0|20,1
+267,53,"Sing, Sing, Sing",3,A,none,Olena Vitrychenko,1995,Rope,"Sing, Sing, Sing by Benjamin Goodman",A,,sing sing sing ~ benjamin goodman,Olena Vitrychenko|0|25,1
+268,53,"Sing, Sing, Sing",3,A,none,Olena Vitrychenko,1996,Rope,"Sing, Sing, Sing by Benjamin Goodman",A,,sing sing sing ~ benjamin goodman,Olena Vitrychenko|0|21,1
+269,53,"Sing, Sing, Sing",3,A,none,Olena Vitrychenko,2000,Rope,"Sing, Sing, Sing by Benjamin Goodman",A,,sing sing sing ~ benjamin goodman,Olena Vitrychenko|c1|2,1
+270,53,"Sing, Sing, Sing",3,A,none,Joanna Mitrosz,2012,Clubs,Sing Sing Sing by Benny Goodman,A,,sing sing sing ~ benjamin goodman,Joanna Mitrosz|c0|4,1
+271,53,"Sing, Sing, Sing",3,B,none,Natalia Godunko,2002,Rope,Sing! Sing! Sing! (Part 1) / Sing! Sing! Sing! (Part 2) by Bob Fosse,B,,sing sing sing ~ bob fosse,Natalia Godunko|0|30,1
+272,53,"Sing, Sing, Sing",3,B,none,Natalia Godunko,2002,Rope,Sing! Sing! Sing! (Part 1) / Sing! Sing! Sing! (Part 2) by Bob Fosse,B,,sing sing sing ~ bob fosse,Natalia Godunko|0|30,2
+273,54,Tango,3,A,none,Kaho Minagawa,2013,Ball,Tango / Resurgence by Sultan Ali,A,,tango ~ sultan ali,Kaho Minagawa|0|25,1
+274,54,Tango,3,A,none,Kaho Minagawa,2014,Ball,Tango by Sultan Ali,A,,tango ~ sultan ali,Kaho Minagawa|0|21,1
+275,54,Tango,3,B,none,Evgeniya Kanaeva,2010,Ribbon,"""Tango"", by Denis SungHô, Soledad Group",B,,tango ~ denis sungho soledad group,Evgeniya Kanaeva|1|18,1
+276,54,Tango,3,C,none,Liubov Charkashyna,2009,Rope,Tango by Konstantin Meladze,C,,tango ~ konstantin meladze,Liubov Charkashyna|0|16,1
+277,55,Volare,3,A,MusicBrainz: Domenico Modugno,Aliya Garayeva,2012,Hoop,Volare by Dean Martin,A,,volare ~ dean martin,Aliya Garayeva|c0|1,1
+278,55,Volare,3,B,none,Dina Averina,2017,Ball,"""Volare"", from Circus album by DJ BoBo",B,,volare ~ dj bobo,Dina Averina|0|39,1
+279,55,Volare,3,C,none,Arina Averina,2014,Hoop,"""Volare"", ""Bang Bang"", ""Quien Como Tu"" by JJ Vianello, Tito Nieves, Enzo Diaz",C,,volare ~ jj vianello tito nieves enzo diaz,Arina Averina|0|50,1
+280,56,We Found Love (Rihanna Cover),3,A,none,Emilia Heichel,2025,Hoop,"We Found Love (Rihanna Cover) by 2WEI, Ali Christenhusz, Tiffany Aris",A,,we found love ~ 2wei ali christenhusz tiffany aris,Emilia Heichel|0|4,1
+281,56,We Found Love (Rihanna Cover),3,A,none,Emilia Heichel,2026,Hoop,"We Found Love (Rihanna Cover) by 2WEI, Ali Christenhusz, Tiffany Aris",A,,we found love ~ 2wei ali christenhusz tiffany aris,Emilia Heichel|0|0,1
+282,56,We Found Love (Rihanna Cover),3,B,none,"Lucía González (gymnast, born 2006)",2024,Hoop,We Found Love (Album Version) by Calvin Harris feat Rihanna,B,,we found love ~ calvin harris feat rihanna,"Lucía González (gymnast, born 2006)|0|8",1
+283,56,We Found Love (Rihanna Cover),3,B,none,"Lucía González (gymnast, born 2006)",2025,Hoop,We Found Love (Album Version) by Calvin Harris feat Rihanna,B,,we found love ~ calvin harris feat rihanna,"Lucía González (gymnast, born 2006)|0|4",1
+284,56,We Found Love (Rihanna Cover),3,C,none,Aja Jerman,2019,Clubs,"We Found Love by Nora En Pure, Ashibah",C,,we found love ~ nora en pure ashibah,Aja Jerman|0|2,1
+285,57,Winter,3,A,none,Liubov Charkashyna,2004,Ribbon,Winter by Bond,A,,winter ~ bond,Liubov Charkashyna|0|37,1
+286,57,Winter,3,B,none,Alja Ponikvar,2026,Ribbon,Winter by Duomo,B,,winter ~ duomo,Alja Ponikvar|0|3,1
+287,57,Winter,3,C,none,Zhao Yating,2020,Ribbon,Winter (Four Seasons) by Ulytau,C,,winter ~ ulytau,Zhao Yating|0|15,1
+288,58,All By Myself,2,A,none,Kaho Minagawa,2016,Hoop,All By Myself by Larry Dalton,A,,all by myself ~ larry dalton,Kaho Minagawa|0|12,1
+289,58,All By Myself,2,A,none,Kaho Minagawa,2017,Hoop,All By Myself by Larry Dalton,A,,all by myself ~ larry dalton,Kaho Minagawa|0|8,1
+290,58,All By Myself,2,B,MusicBrainz: Сергей Васильевич Рахманинов / Eric Carmen,Geovanna Santos,2023,Ball,All By Myself by Celine Dion,B,,all by myself ~ celine dion,Geovanna Santos|0|9,1
+291,59,Batucada,2,A,none,Alexandra Agiurgiuculese,2016,Clubs,Batucada / Besame Mucho (Dub Mix) by The Booty Jocks / Buddha Bar,A,,batucada ~ booty jocks,Alexandra Agiurgiuculese|1|0,1
+292,59,Batucada,2,B,MusicBrainz,Patricia Bezzoubenko,2013,Clubs,"Batucada (Latino Percussion Mix)"" by DJ Dero",B,,batucada ~ dj dero,Patricia Bezzoubenko|0|14,1
+293,60,Belleville Rendez-Vous,2,A,none,Megan Chu,2024,Ribbon,Belleville Rendez-Vous by Robert Wells,A,,belleville rendez vous ~ robert wells,Megan Chu|0|11,1
+294,60,Belleville Rendez-Vous,2,A,none,Megan Chu,2025,Ribbon,Belleville Rendez-Vous by Robert Wells,A,,belleville rendez vous ~ robert wells,Megan Chu|0|7,1
+295,60,Belleville Rendez-Vous,2,A,none,Megan Chu,2026,Ribbon,Belleville Rendez-Vous by Robert Wells,A,,belleville rendez vous ~ robert wells,Megan Chu|0|3,1
+296,60,Belleville Rendez-Vous,2,B,none,Anastasiia Salos,2018,Ribbon,Belleville Rendez-Vous (from The Triplets of Belleville) by Béatrice Bonifassi,B,,belleville rendez vous ~ beatrice bonifassi,Anastasiia Salos|0|31,1
+297,61,Chopin,2,A,none,Sumire Kita,2014,Ball,Chopin by Edvin Marton,A,,chopin ~ edvin marton,Sumire Kita|0|26,1
+298,61,Chopin,2,A,none,Sumire Kita,2015,Ball,Chopin by Edvin Marton,A,,chopin ~ edvin marton,Sumire Kita|0|23#2015,1
+299,61,Chopin,2,A,none,Sumire Kita,2016,Ball,Chopin by Edvin Marton,A,,chopin ~ edvin marton,Sumire Kita|0|23#2016,1
+300,61,Chopin,2,B,none,Ekaterina Selezneva,2019,Ball,"Chopin, by Elena Vaenga",B,,chopin ~ elena vaenga,Ekaterina Selezneva|0|5,1
+301,62,The Color Of The Night,2,A,none,Ekaterina Vedeneeva,2018,Ribbon,The Color Of The Night by Lauren Christy,A,,colour of the night ~ lauren christy,Ekaterina Vedeneeva|1|35,1
+302,62,The Color Of The Night,2,B,none,Melitina Staniouta,2015,Gala,The Colour Of The Night by Stepan Mezentsev,B,,colour of the night ~ stepan mezentsev,Melitina Staniouta|0|10,1
+303,63,Dark Angel,2,A,none,Ana Luiza Filiorianu,2013,Ribbon,Dark Angel by Edvin Marton,A,,dark angel ~ edvin marton,Ana Luiza Filiorianu|0|20,1
+304,63,Dark Angel,2,A,none,Ana Luiza Filiorianu,2014,Ribbon,Dark Angel by Edvin Marton,A,,dark angel ~ edvin marton,Ana Luiza Filiorianu|0|16,1
+305,63,Dark Angel,2,B,none,Maelle Millet,2021,Ribbon,Dark Angel (Original Mix) by 8 O'clock,B,,dark angel ~ 8 o clock,Maelle Millet|0|15,1
+306,64,Dona Francisquita – Fandango,2,A,none,Panagiota Lytra,2022,Clubs,"Doña Francisquita: ""Fadango"" by Amadeo Vives",A,,dona francisquita fandango ~ amadeo vives,Panagiota Lytra|0|19,1
+307,64,Dona Francisquita – Fandango,2,B,none,Margarita Mamun,2013,Hoop,"Dona Francisquita – Fandango by Maria Bayo, Plácido Domingo, Alfredo Kraus",B,,dona francisquita fandango ~ maria bayo placido domingo alfredo kraus,Margarita Mamun|0|17,1
+308,65,A Dream,2,A,MusicBrainz,Kaho Minagawa,2017,Ribbon,"A Dream by Charles Gerhardt, Christian Steiner, RCA Symphony Orchestra",A,,dream ~ charles gerhardt christian steiner rca symphony orchestra,Kaho Minagawa|0|11,1
+309,65,A Dream,2,B,none,Kateryna Serebrianska,1995,Ball,Dream by Vladimir Bustriakov,B,,dream ~ vladimir bustriakov,Kateryna Serebrianska|0|12,1
+310,66,El Choclo,2,A,none,Celeste D'Arcángelo,2018,Ball,El Choclo by Destiny Quartet,A,,el choclo ~ destiny quartet,Celeste D'Arcángelo|0|29,1
+311,66,El Choclo,2,A,none,Celeste D'Arcángelo,2019,Ball,El Choclo by Destiny Quartet,A,,el choclo ~ destiny quartet,Celeste D'Arcángelo|0|25,1
+312,66,El Choclo,2,A,none,Celeste D'Arcángelo,2021,Ball,El Choclo by Destiny Quartet,A,,el choclo ~ destiny quartet,Celeste D'Arcángelo|0|21,1
+313,66,El Choclo,2,B,none,Anastasiia Salos,2024,Clubs,El Choclo (Arr. E. Runge and J. Ammon) by Cello Project,B,,el choclo ~ cello project,Anastasiia Salos|0|6,1
+314,67,Everything,2,A,none,Berta Miquel,2022,Hoop,Everything by Safri Duo,A,,everything ~ safri duo,Berta Miquel|0|16,1
+315,67,Everything,2,B,none,Polina Berezina,2016,Ball,Everything by Sean Christopher,B,,everything ~ sean christopher,Polina Berezina|1|1,1
+316,68,Hallelujah,2,A,none,Fanni Pigniczki,2016,Hoop,Hallelujah by Rob Landes,A,,hallelujah ~ rob landes,Fanni Pigniczki|0|0,1
+317,68,Hallelujah,2,A,none,Fanni Pigniczki,2017,Hoop,Hallelujah by Rob Landes,A,,hallelujah ~ rob landes,Fanni Pigniczki|0|4,1
+318,68,Hallelujah,2,B,MusicBrainz: Leonard Cohen,Alexandra Agiurgiuculese,2017,Ball,Hallelujah by Susan Boyle,B,,hallelujah ~ susan boyle,Alexandra Agiurgiuculese|1|6,1
+319,69,Havana,2,A,MusicBrainz: Walter Afanasieff / Kenny G,Alexandra Merkulova,2012,Ball,Havana by Kenny G,A,,havana ~ kenny g,Alexandra Merkulova|0|9,1
+320,69,Havana,2,B,none,Jimena Dominguez,2023,Ribbon,Havana (from Havana) by Linda Eder,B,,havana ~ linda eder,Jimena Dominguez|0|15,1
+321,70,Hello,2,A,MusicBrainz: Greg Kurstin / Adele,Olena Diachenko,2017,Ball,Hello by Adele,A,,hello ~ adele,Olena Diachenko|0|13,1
+322,70,Hello,2,B,MusicBrainz: James Anthony Carmichael / Lionel Richie,Stiliana Nikolova,2024,Hoop,Hello by Lionel Richie,B,,hello ~ lionel richie,Stiliana Nikolova|0|11,1
+323,71,Hound Dog,2,A,none,Daniela Munits,2022,Ribbon,Rock Around the Clock / Blue Suede Shoes / Jailhouse Rock / Hound Dog / Tutti Frutti / Be Bop a Lulla / Pour le Rock and Roll by Dany Brillant,A,,hound dog ~ dany brillant,Daniela Munits|0|20,4
+324,71,Hound Dog,2,B,none,Sofia Ilteriakova,2025,Ribbon,Hound Dog by Tonya Graves,B,,hound dog ~ tonya graves,Sofia Ilteriakova|0|8,1
+325,72,I'm So Excited,2,A,none,Lauren Grüniger,2024,Ribbon,I'm So Excited by Sound Of Legend,A,,i m so excited ~ sound of legend,Lauren Grüniger|0|11,1
+326,72,I'm So Excited,2,A,none,Lauren Grüniger,2025,Ribbon,I'm So Excited by Sound Of Legend,A,,i m so excited ~ sound of legend,Lauren Grüniger|0|7,1
+327,72,I'm So Excited,2,A,none,Lauren Grüniger,2026,Ribbon,I'm So Excited by Sound Of Legend,A,,i m so excited ~ sound of legend,Lauren Grüniger|0|3,1
+328,72,I'm So Excited,2,B,none,Boryana Kaleyn,2019,Clubs,"""I'm So Excited (Instrumental)"" by Retro Spectres",B,,i m so excited ~ retro spectres,Boryana Kaleyn|2|24,1
+329,73,I Will Never Forget You,2,A,none,Ekaterina Selezneva,2020,Ribbon,"I Will Never Forget You, by Alexey Rybnikov",A,,i will never forget you ~ alexey rybnikov,Ekaterina Selezneva|0|16,1
+330,73,I Will Never Forget You,2,B,none,Marina Durunda,2013,Ribbon,I Will Never Forget You (Я тебя никогда не забуду) by Dmitriy Malikov,B,,i will never forget you ~ dmitriy malikov,Marina Durunda|0|19,1
+331,74,Il Mondo,2,A,none,Geovanna Santos,2022,Ball,Il Mondo by Il Volo,A,,il mondo ~ il volo,Geovanna Santos|0|13,1
+332,74,Il Mondo,2,B,none,Sofia Raffaeli,2023,Ball,"""Il mondo"" by Jacopo Rossetto",B,,il mondo ~ jacopo rossetto,Sofia Raffaeli|2|15,1
+333,75,Irna,2,A,none,Hatice Gokce Emir,2023,Ribbon,Irna / Valsapena from Cirque du Soleil discography by Alegría,A,,irna ~ alegria,Hatice Gokce Emir|0|15,1
+334,75,Irna,2,B,MusicBrainz: René Dupéré,Jana Alemam,2026,Hoop,Irna / Valsapena by Cirque du Soleil,B,,irna ~ cirque du soleil,Jana Alemam|0|0,1
+335,76,Jailhouse Rock,2,A,none,Daniela Munits,2022,Ribbon,Rock Around the Clock / Blue Suede Shoes / Jailhouse Rock / Hound Dog / Tutti Frutti / Be Bop a Lulla / Pour le Rock and Roll by Dany Brillant,A,,jailhouse rock ~ dany brillant,Daniela Munits|0|20,3
+336,76,Jailhouse Rock,2,B,MusicBrainz: Mike Stoller,Viktoriia Onopriienko,2023,Ball,"""Jailhouse Rock"" by Elvis Presley",B,,jailhouse rock ~ elvis presley,Viktoriia Onopriienko|0|28,1
+337,77,Kadril Veselaya,2,A,none,Evgeniya Kanaeva,2007,Gala,"""Kadril Veselaya"", by Svetoch",A,,kadril veselaya ~ svetoch,Evgeniya Kanaeva|1|43,1
+338,77,Kadril Veselaya,2,A,none,Evgeniya Kanaeva,2008,Gala,"""Kadril Veselaya"", by Svetoch",A,,kadril veselaya ~ svetoch,Evgeniya Kanaeva|1|35,1
+339,77,Kadril Veselaya,2,A,none,Evgeniya Kanaeva,2009,Rope,"""Kadril Veselaya"", by Svetoch",A,,kadril veselaya ~ svetoch,Evgeniya Kanaeva|1|22,1
+340,77,Kadril Veselaya,2,B,none,Aleksandra Soldatova,2016,Clubs,"""Kadril Veselaya"" (Russian: Весёлая кадриль), by Kravtet Sisters and Anna Litvinenko",B,,kadril veselaya ~ kravtet sisters and anna litvinenko,Aleksandra Soldatova|0|26,1
+341,78,La Bayadere,2,A,none,Sakura Hayakawa,2014,Ribbon,La Bayadere by London Symphony Orchestra,A,,la bayadere ~ london symphony orchestra,Sakura Hayakawa|1|11,1
+342,78,La Bayadere,2,A,none,Sakura Hayakawa,2015,Ribbon,La Bayadere by London Symphony Orchestra,A,,la bayadere ~ london symphony orchestra,Sakura Hayakawa|1|7,1
+343,78,La Bayadere,2,B,none,Arina Averina,2018,Hoop,"""La Bayadere (Act 2 No. 29)"", by Richard Bonynge & English Chamber Orchestra",B,,la bayadere ~ richard bonynge english chamber orchestra,Arina Averina|0|30,1
+344,79,Land of 1000 Dances,2,A,none,Zhao Yating,2022,Clubs,Land of 1000 Dances (feat. Chris Thompson) by Siggi Schwars & The Legends,A,,land of 1000 dances ~ siggi schwars the legends,Zhao Yating|0|6,1
+345,79,Land of 1000 Dances,2,B,MusicBrainz: Fats Domino / Chris Kenner,Mikayla Angeline Yang,2025,Ribbon,Land of 1000 Dances by Wilson Pickett,B,,land of 1000 dances ~ wilson pickett,Mikayla Angeline Yang|0|3,1
+346,80,Mas que nada,2,A,MusicBrainz: Jorge Ben Jor,Jasmine Kerber,2012,Ribbon,"Mas que nada, music from Rio OST by Brasil '66 & Sergio Mendes",A,,mas que nada ~ brasil 66 sergio mendes,Jasmine Kerber|0|11,1
+347,80,Mas que nada,2,B,none,Patricia Bezzoubenko,2016,Ribbon,Mas que Nada by Chilled Jazz Masters,B,,mas que nada ~ chilled jazz masters,Patricia Bezzoubenko|0|3,1
+348,80,Mas que nada,2,C,no credit,Jasmine Kerber,2013,Ribbon,Mas Que Nada,C,,mas que nada ~ no credit,Jasmine Kerber|0|7,1
+349,81,Men In Black,2,A,none,Lala Yusifova,2013,Ribbon,Men In Black by Alexey Garnizov,A,,men in black ~ alexey garnizov,Lala Yusifova|0|11,1
+350,81,Men In Black,2,B,none,Ilona Zeynalova,2022,Ribbon,Men In Black by Hollywood Pictures Orchestra,B,,men in black ~ hollywood pictures orchestra,Ilona Zeynalova|0|11,1
+351,82,Middle Of The Night,2,A,MusicBrainz: Andrew Wells / RØMANS / Elley Duhé,Lada Pusch,2026,Ribbon,MIDDLE OF THE NIGHT by Elley Duhé,A,,middle of the night ~ elley duhe,Lada Pusch|0|3,1
+352,82,Middle Of The Night,2,B,none,Hélène Karbanov,2023,Clubs,"""Middle Of The Night"" by Power-Haus, Tom Evans, Joel Sunny",B,,middle of the night ~ power haus tom evans joel sunny,Hélène Karbanov|0|14,1
+353,83,Never Tear Us Apart,2,A,MusicBrainz: Andrew Farriss / Michael Hutchence,Bárbara Domingos,2025,Ball,Never Tear Us Apart (from Fifty Shades Freed) by Bishop Briggs,A,,never tear us apart ~ bishop briggs,Bárbara Domingos|0|5,1
+354,83,Never Tear Us Apart,2,A,MusicBrainz: Andrew Farriss / Michael Hutchence,Bárbara Domingos,2026,Ball,Never Tear Us Apart (from Fifty Shades Freed) by Bishop Briggs,A,,never tear us apart ~ bishop briggs,Bárbara Domingos|0|1,1
+355,83,Never Tear Us Apart,2,B,none,Andreea Verdeș,2024,Ribbon,Never Tear Us Apart by Never Tear Us Apart,B,,never tear us apart ~ never tear us apart,Andreea Verdeș|0|31,1
+356,84,Pistolero,2,A,MusicBrainz: Dave Grusin,Jouki Tikkanen,2012,Hoop,Pistolero by Dave Grusin,A,,pistolero ~ dave grusin,Jouki Tikkanen|0|28,1
+357,84,Pistolero,2,B,MusicBrainz: Steve Stevens / Ben Watkins,Carolina Rodríguez (gymnast),2003,Clubs,Pistolero by Juno Reactor,B,,pistolero ~ juno reactor,Carolina Rodríguez (gymnast)|0|50,1
+358,85,Por una Cabeza,2,A,MusicBrainz: Carlos Gardel,Daria Kondakova,2009,Ball,Por una Cabeza by Itzhak Perlman,A,,por una cabeza ~ itzhak perlman,Daria Kondakova|0|15,1
+359,85,Por una Cabeza,2,B,none,Darya Viarenich,2025,Ball,Por Una Cabeza by Sumi Jo,B,,por una cabeza ~ sumi jo,Darya Viarenich|0|7,1
+360,86,Romance,2,A,none,Alina Harnasko,2017,Ball,Romance by Dmitri Shostakovich,A,,romance ~ dmitri shostakovich,Alina Harnasko|0|46,1
+361,86,Romance,2,B,none,Katsiaryna Halkina,2012,Ribbon,Romance by Georgy Sviridov,B,,romance ~ georgy sviridov,Katsiaryna Halkina|0|44,1
+362,87,Runnin' (Lose It All),2,A,none,Kseniya Moustafaeva,2021,Ribbon,Runnin by Ludwig Görannson feat A$AP Rocky & Jacob Banks,A,,runnin ~ ludwig gorannson feat a ap rocky jacob banks,Kseniya Moustafaeva|0|3,1
+363,87,Runnin' (Lose It All),2,B,MusicBrainz: Carla Marie Williams / Jonny Coffer / Shahid Khan / Beyoncé / Dean McIntosh,Fausta Šostakaitė,2022,Ball,"Runnin' (Lose It All) by Naughty Boy, Beyonce, Arrow Benjamin",B,,runnin ~ naughty boy beyonce arrow benjamin,Fausta Šostakaitė|0|5,1
+364,88,Samba Do Mundo,2,A,none,Vera Tugolukova,2025,Clubs,Nao Deixe O Samba Morrer / Samba Do Mundo (Fatboy Slim Presents Gregor Salto) [feat. Saxsymbol & Todorov] by Alcione,A,,samba do mundo ~ alcione,Vera Tugolukova|1|6,2
+365,88,Samba Do Mundo,2,B,none,Eva Brezalieva,2019,Rope,Samba Do Mundo by Gregor Salto Feat. Saxsymbol & Todorov,B,,samba do mundo ~ gregor salto feat saxsymbol todorov,Eva Brezalieva|0|28,1
+366,89,Smells Like Teen Spirit,2,A,MusicBrainz: Kurt Cobain / Dave Grohl / Krist Novoselic,Margarita Kolosov,2026,Ribbon,Smells Like Teen Spirit by Nirvana,A,,smells like teen spirit ~ nirvana,Margarita Kolosov|0|3,1
+367,89,Smells Like Teen Spirit,2,B,none,Anette Vaher,2025,Ball,"Smells Like Teen Spirit by Tommee Profitt, Fleurie",B,,smells like teen spirit ~ tommee profitt fleurie,Anette Vaher|0|1,1
+368,90,Song for the Little Sparrow (Ouverture),2,A,none,Katsiaryna Halkina,2017,Ribbon,Song for the Little Sparrow by Abel Korzeniowski,A,,song for the little sparrow ~ abel korzeniowski,Katsiaryna Halkina|0|21,1
+369,90,Song for the Little Sparrow (Ouverture),2,B,none,Evita Griskenas,2026,Hoop,Song for the Little Sparrow (Ouverture) by Patricia Kaas,B,,song for the little sparrow ~ patricia kaas,Evita Griskenas|1|0,1
+370,91,"Sunrise, Sunset",2,A,none,Liubov Charkashyna,2009,Hoop,"Sunrise, Sunset by Roby Lakatos",A,,sunrise sunset ~ roby lakatos,Liubov Charkashyna|0|14,1
+371,91,"Sunrise, Sunset",2,A,none,Liubov Charkashyna,2010,Hoop,"Sunrise, Sunset by Roby Lakatos",A,,sunrise sunset ~ roby lakatos,Liubov Charkashyna|0|10,1
+372,91,"Sunrise, Sunset",2,B,none,Ekaterina Vedeneeva,2018,Ball,"Sunrise, Sunset by Fiddler on the Roof",B,,sunrise sunset ~ fiddler on the roof,Ekaterina Vedeneeva|1|33,1
+373,92,Tango de Amor,2,A,none,Sofia Raffaeli,2020,Ribbon,"""Tango de Amor"" (The Addams Family OST) by Nathan Lane, Bebe Neuwirth",A,,tango de amor ~ nathan lane bebe neuwirth,Sofia Raffaeli|2|32,1
+374,92,Tango de Amor,2,A,none,Sofia Raffaeli,2021,Ribbon,"""Tango de Amor"" (The Addams Family OST) by Nathan Lane, Bebe Neuwirth",A,,tango de amor ~ nathan lane bebe neuwirth,Sofia Raffaeli|2|27,1
+375,92,Tango de Amor,2,B,none,Sumire Kita,2017,Ball,Tango D'amor by Tango Jointz,B,,tango de amor ~ tango jointz,Sumire Kita|0|18,1
+376,93,Theme From Love Story,2,A,none,Eleonora Romanova,2015,Hoop,Theme From Love Story by 101 Strings Orchestra,A,,theme from love story ~ 101 strings orchestra,Eleonora Romanova|0|1,1
+377,93,Theme From Love Story,2,B,MusicBrainz: Francis Lai,Liliana Lewińska,2021,Ball,Theme From Love Story (Finale) by Francis Lai,B,,theme from love story ~ francis lai,Liliana Lewińska|0|25,1
+378,94,Tico Tico,2,A,MusicBrainz: Zequinha de Abreu,Darja Varfolomeev,2019,Clubs,Tico Tico by Dalida,A,,tico tico ~ dalida,Darja Varfolomeev|1|33,1
+379,94,Tico Tico,2,B,none,Polina Karika,2025,Ribbon,Tico-Tico by K.T. Sullivan,B,,tico tico ~ k t sullivan,Polina Karika|0|7,1
+380,95,Toxic,2,A,MusicBrainz: Cathy Dennis / Christian Karlsson / Pontus Winnberg / Henrik Jonback,Khrystyna Pohranychna,2020,Ball,"""Toxic"" by Britney Spears",A,,toxic ~ britney spears,Khrystyna Pohranychna|0|19#2020,1
+381,95,Toxic,2,A,MusicBrainz: Cathy Dennis / Christian Karlsson / Pontus Winnberg / Henrik Jonback,Khrystyna Pohranychna,2021,Ball,"""Toxic"" by Britney Spears",A,,toxic ~ britney spears,Khrystyna Pohranychna|0|19#2021,1
+382,95,Toxic,2,B,MusicBrainz,Dina Averina,2023,Ball,"""Toxic"" by 2WEI",B,,toxic ~ 2wei,Dina Averina|0|1,1
+383,96,Trouble,2,A,MusicBrainz,Darja Varfolomeev,2025,Ribbon,Trouble by Jake Warren & Dana Kelson,A,,trouble ~ jake warren dana kelson,Darja Varfolomeev|1|8,1
+384,96,Trouble,2,A,MusicBrainz,Darja Varfolomeev,2026,Ribbon,Trouble by Jake Warren & Dana Kelson,A,,trouble ~ jake warren dana kelson,Darja Varfolomeev|1|4,1
+385,96,Trouble,2,B,MusicBrainz: Mike Stoller,Lily Ramonatxo,2023,Hoop,"""Trouble"" by Alan Cumming",B,,trouble ~ alan cumming,Lily Ramonatxo|0|4,1
+386,97,The Tsar's Bride: Overture,2,A,none,Jelizaveta Polstjanaja,2020,Hoop,"The Tsar's Bride: Overture by Евгений Светланов, Оркестр Большого театра",A,,tsar s bride overture ~ евгении светланов оркестр большого театра,Jelizaveta Polstjanaja|0|5,1
+387,97,The Tsar's Bride: Overture,2,A,none,Jelizaveta Polstjanaja,2021,Hoop,"The Tsar's Bride: Overture by Евгений Светланов, Оркестр Большого театра",A,,tsar s bride overture ~ евгении светланов оркестр большого театра,Jelizaveta Polstjanaja|0|10,1
+388,97,The Tsar's Bride: Overture,2,B,none,Mikayla Angeline Yang,2023,Ribbon,The Tsar's Bride: Overture by Orchestra of the Bolshoi Theatre & Fouat Mansourov,B,,tsar s bride overture ~ orchestra of the bolshoi theatre fouat mansourov,Mikayla Angeline Yang|0|11,1
+389,98,Поговори со мной,2,A,none,Katsiaryna Halkina,2019,Gala,Поговори со мной (Talk to me) by Maria Tchaikovskaya,A,,поговори со мнои ~ maria tchaikovskaya,Katsiaryna Halkina|0|12,1
+390,98,Поговори со мной,2,B,none,Ekaterina Vedeneeva,2022,Ribbon,Поговори со мной by Мария Чайковская,B,,поговори со мнои ~ мария чаиковская,Ekaterina Vedeneeva|1|17,1
+391,98,Поговори со мной,2,C,none,Ekaterina Vedeneeva,2023,Ball,Поговори со мной by Марія Чайковська,C,,поговори со мнои ~ марія чаиковська,Ekaterina Vedeneeva|1|8,1
+392,99,Я тебя никогда не забудуn,2,A,none,Melitina Staniouta,2012,Ball,Я тебя никогда не забуду (I will never forget you) by Aleksandr Marshal & Ariana,A,,я тебя никогда не забудуn ~ aleksandr marshal ariana,Melitina Staniouta|0|23,1
+393,99,Я тебя никогда не забудуn,2,B,none,Ekaterina Vedeneeva,2023,Ribbon,Я тебя никогда не забудуn by Тамара Гвердцители and Д. Дюжев (Tamara Gverdtsiteli and Dmitry Duzhev),B,,я тебя никогда не забудуn ~ тамара гвердцители and д дюжев,Ekaterina Vedeneeva|1|10,1
+394,100,Holding Out For A Hero,1,A,MusicBrainz: Jim Steinman,Berta Miquel,2023,Clubs,Holding Out For a Hero by Bonnie Tyler,A,,holding out for a hero ~ bonnie tyler,Berta Miquel|0|14,2
+395,100,Holding Out For A Hero,1,B,none,Berta Miquel,2023,Clubs,Holding Out For A Hero (from Shrek 2) by Zympzz,B,,holding out for a hero ~ zympzz,Berta Miquel|0|14,1
+396,101,Largo Al Factotum,1,A,none,Arina Averina,2020,Hoop,"""Largo Al Factotum"", by Denis Matsuev & Filippa Giordano",A,,largo al factotum ~ denis matsuev filippa giordano,Arina Averina|0|16,1
+397,101,Largo Al Factotum,1,B,none,Arina Averina,2018,Clubs,"""Largo Al Factotum"", by Pietro Spagnoli",B,,largo al factotum ~ pietro spagnoli,Arina Averina|0|33,1

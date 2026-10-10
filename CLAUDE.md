@@ -74,6 +74,21 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   Black); Ave Maria = Schubert (Schubert, Vitas, 2WEI/Kallemaa) and "Vavilov/Caccini" (Libera, Wortley/Baldassarri;
   composed by Vladimir Vavilov, attributed to Caccini: the owner wants both names with a slash); "Caruso from Voice"
   by Neal Schon (Kapranova 2009 Ball) = Lucio Dalla's Caruso. Result: 2543 works, 376 used by 2+ gymnasts.
+- `rg_music/work_review.py` – review sheet of the titles still split after MusicBrainz (one row per track, groups
+  lettered A, B..., `decision` pre-filled with the own letter) → `work_split_review.csv`, uploaded to Google Sheets for
+  the owner; `--import <sheet as csv>` → `data/manual/work_review_decisions.csv` (split_key → join_to + owner_note),
+  applied by `works.py --resolve` after the MusicBrainz joins; a title that becomes one work gets the plain title key.
+  Owner's review of 2026-10-10: all 101 titles checked, 104 decisions (most covers joined: Caruso, La Cumparsita,
+  Kalinka, Hava Nagila...; kept apart e.g. Believer by Christina, Mission Impossible by Maxime Rodriguez, Hello,
+  Requiem). Also: "Winter by Bond" (Charkashyna 2004) = Bond's "Wintersun" (Borisova hoop 2025-26); "I Will Never
+  Forget You" / "Я тебя никогда не забуду" = one song, Rybnikov's romance from Juno and Avos (4 gymnasts);
+  "Theme From Love Story" and Fiedler's "Love Story Theme" = Francis Lai's Love Story (7 gymnasts).
+  Several cuts of one work by different performers in ONE routine are shown as one version, `version_type = medley`
+  (owner: Onofriichuk 2026 Pump up the Jam = Bodybangers / Crazy Frog / Thomas Gold / Gabry Ponte).
+  Result: 2439 works, 413 used by 2+ gymnasts, 2768 versions.
+- `data/manual/routine_exclusions.csv` – routines the source states wrongly, dropped in `merge.py` (raw files keep
+  them, `merge_report.json` lists them): Arina Averina 2020 Hoop (first) "Largo Al Factotum" (owner found no such
+  routine). 3961 routines.
 - `rg_music/classical.py` – `is_classical` (1/0) for every work in `works.csv`, plus `classical_basis` and
   `classical_composer`, for the dashboard filter and the share-by-year chart. Classical = the academic tradition
   (opera, ballet, concert music, old and 20th century); the flag follows the COMPOSER of the work, not the performer.
@@ -200,6 +215,17 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 - Kanaeva 2008 Clubs "LA Lights" "(same music as CariPrato 2007)" → expand to "Song #1" by Serebro (with a note).
 - A cell that says the music is unknown ("????", Bezzoubenko) → no track title, status `unknown`.
 
+## FIG rule on music with words (owner, 2026-10-08; not implemented yet)
+- Before 2013 no music with words; 2013-2016 words allowed in 1 of the 4 routines of a season; 2017-2021 in 2 of 4;
+  from 2022 no limit. So a pop song in a pre-2013 routine was an instrumental / remix / vocalise version even when the
+  source credits the original singer ("Feeling Good by Muse", Nazarenkova 2012).
+- Use: same WORK (Nazarenkova 2012 and Kolosov 2023 are both Feeling Good), but a different VERSION: pre-2013 pop
+  versions get `version_type = instrumental` with a basis "inferred from the FIG rule". Implement together with the
+  owner's work_split_review decisions.
+- Not now (owner): a report of routines that break the rule (vocal pre-2013, too many vocal routines in a season).
+- Open: are vocalises without words (Caravan by Antonella Ruggiero) and Gala/exhibition routines outside the rule?
+- Videos (later): search for the video of the gymnast's performance, not for the music on YouTube.
+
 ## Decisions for the gymnast list (made with the owner)
 - List of gymnasts = names in individual qualification + individual all-around tables of all
   World Championships (`rg_music/worlds.py`); identity = Wikipedia article (via redirects).
@@ -216,6 +242,11 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   are not countries (Individual Neutral Athletes) are skipped when choosing it.
 - Owner-typed cells in `wc_name_review_fig.csv` (empty `decision_basis`) are never overwritten.
 - CSVs the owner opens in Excel are written as utf-8-sig (BOM), otherwise Excel garbles diacritics.
+- **Owner review sheets live in Google Drive**, folder `rg_music` (id `1HOkycl3RAW9tFOP0Z5_-uhVUE0t2JLET`): the owner
+  cannot edit CSVs comfortably. A sheet is uploaded through the Drive connector (CSV → Google Sheet; no Sheets editor
+  connector, so no formatting), checked by exporting it back as CSV, and decisions are read back the same way.
+  `work_split_review` (id `1TnTbY10EPqylQ5OrtdXxnR_PGScr4y4EDNlv4s71Bfc`) = `python -m rg_music.work_review` without the
+  technical columns; rows map back by `row_id` to `data/interim/work_split_review.csv`.
 - Result: `data/interim/wc_gymnasts_final.csv` (1395 people, each with `country_id`).
 
 ## Next

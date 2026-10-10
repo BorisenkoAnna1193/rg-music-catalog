@@ -104,3 +104,9 @@ def test_owner_can_merge_rows_whose_wording_differs():
     merged, events, _ = merge_sources([r], [c], same)
     assert len(merged) == 1 and merged[0]["source"] == "both" and "same_routine_by_owner" in merged[0]["notes"]
     assert events[0]["routine_id"] == merged[0]["routine_id"]
+
+
+def test_owner_can_exclude_a_routine_the_source_states_wrongly():
+    rows = [routine("2020", "Hoop (first)", '"Largo Al Factotum", by Denis Matsuev', row=1), routine("2020", "Ball", "x", row=2)]
+    merged, _, stats = merge_sources(rows, [], exclusions={("A B", "2020", "Hoop (first)", '"Largo Al Factotum", by Denis Matsuev')})
+    assert [m["routine_id"] for m in merged] == ["A B|1|2"] and stats["excluded_by_owner"] == ["A B|1|1"]

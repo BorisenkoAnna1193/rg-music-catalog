@@ -28,10 +28,12 @@ evidence that it is one song: "Storm" by Otyken and "The Storm" by Havasi are tw
 (never split), one classical composer credited in the group and a title that is not generic ("Für Elise" by Hidden
 Citizens stays Beethoven's; "Requiem", "Nocturne", "Ave Maria" are split), MusicBrainz: split groups that
 python -m rg_music.mb_works linked to one MusicBrainz work are joined again (data/interim/work_mb_links.csv; the owner
-can refuse a join in data/manual/work_mb_rejects.csv, column work_key). Tracks without a credit
+can refuse a join in data/manual/work_mb_rejects.csv, column work_key), then the owner's joins from the review sheet
+(data/manual/work_review_decisions.csv, python -m rg_music.work_review --import). Tracks without a credit
 stay with the title when it has one credited group, otherwise they form "<title> ~ no credit".
 A version = work + performer as credited (the composer of the work is not a performer: "by Maurice Ravel" alone is
-an unknown recording); spellings of one performer ("Beyoncé"/"Beyonce") are one version.
+an unknown recording); spellings of one performer ("Beyoncé"/"Beyonce") are one version. Several cuts of one work by
+different performers in one routine (Pump up the Jam by Bodybangers / Crazy Frog / ...) are one version, "medley".
 """
 
 from __future__ import annotations
@@ -249,6 +251,7 @@ def _credit_groups(rows: list[dict]) -> list[list[dict]]:
 
 
 MB_LINKS = INTERIM / "work_mb_links.csv"
+OWNER_JOINS = Path("data/manual/work_review_decisions.csv")
 MB_REJECTS = Path("data/manual/work_mb_rejects.csv")
 
 
@@ -259,6 +262,24 @@ def load_mb_links(path: Path = MB_LINKS, rejects: Path = MB_REJECTS) -> dict[str
     refused = {r["work_key"] for r in csv.DictReader(rejects.open(encoding="utf-8-sig"))} if rejects.exists() else set()
     return {r["work_key"]: r["mb_work_id"] for r in csv.DictReader(path.open(encoding="utf-8-sig"))
             if r["mb_work_id"] and r["work_key"] not in refused}
+
+
+def load_owner_joins(path: Path = OWNER_JOINS) -> dict[str, str]:
+    """split_key -> split_key of the group the owner joined it to (data/manual/work_review_decisions.csv)."""
+    if not path.exists():
+        return {}
+    return {r["split_key"]: r["join_to"] for r in csv.DictReader(path.open(encoding="utf-8-sig")) if r["join_to"]}
+
+
+def _join_by_owner(key: str, rs: list[dict], owner_joins: dict[str, str]) -> None:
+    """The owner's joins from the review sheet; a title that becomes one work takes the plain title as its key."""
+    final = {r["split_key"]: r["work_key"] for r in rs}
+    for r in rs:
+        if (to := owner_joins.get(r["split_key"])) and to in final:
+            r.update(work_key=final[to], same_title="joined_by_owner")
+    if len({r["work_key"] for r in rs}) == 1:
+        for r in rs:
+            r["work_key"] = key
 
 
 def _join_by_musicbrainz(key: str, rs: list[dict], mb_links: dict[str, str]) -> None:
@@ -277,7 +298,8 @@ def _join_by_musicbrainz(key: str, rs: list[dict], mb_links: dict[str, str]) -> 
                 r.update(work_key=target, same_title="joined_by_musicbrainz")
 
 
-def split_by_credit(rows: list[dict], composers: list, mb_links: dict[str, str] | None = None) -> list[dict]:
+def split_by_credit(rows: list[dict], composers: list, mb_links: dict[str, str] | None = None,
+                    owner_joins: dict[str, str] | None = None) -> list[dict]:
     """Same work_key, credits with no name in common -> separate work keys "<key> ~ <main credit>"; then the groups
     MusicBrainz shows to be one work are joined again."""
     from rg_music.classical import composer_of  # lazy: classical imports this module
@@ -307,6 +329,7 @@ def split_by_credit(rows: list[dict], composers: list, mb_links: dict[str, str] 
                 r.update(work_key=f"{key} ~ no credit", same_title="split_by_credit")
             r["split_key"] = r["work_key"]  # kept after a join: mb_works checks the groups by this key
         _join_by_musicbrainz(key, rs, mb_links or {})
+        _join_by_owner(key, rs, owner_joins or {})
     return rows
 
 
@@ -338,7 +361,8 @@ def version_type(title: str, performer: str) -> str:
 
 
 def resolve_works(tracks: list[dict], routines: dict[str, dict], aliases: list[dict],
-                  mb_links: dict[str, str] | None = None) -> tuple[list[dict], list[dict], list[dict]]:
+                  mb_links: dict[str, str] | None = None,
+                  owner_joins: dict[str, str] | None = None) -> tuple[list[dict], list[dict], list[dict]]:
     """-> (track_works, works, merge_review). Order of rules: owner aliases, "Work: Excerpt", spelling variants, title,
     then one title with unrelated credits is split. Every track_works row also gets its version (performer)."""
     usable = [t for t in tracks if title_key(t["title"]) and t["routine_id"] in routines]
@@ -384,7 +408,7 @@ def resolve_works(tracks: list[dict], routines: dict[str, dict], aliases: list[d
     from rg_music.classical import classify, load_composers, load_overrides  # lazy: classical imports this module
 
     classical_composers, classical_overrides = load_composers(), load_overrides()
-    rows = split_by_credit(rows, classical_composers, mb_links)
+    rows = split_by_credit(rows, classical_composers, mb_links, owner_joins)
     by_key: dict[str, list[dict]] = defaultdict(list)
     for r in rows:
         by_key[r["work_key"]].append(r)
@@ -415,6 +439,15 @@ def resolve_works(tracks: list[dict], routines: dict[str, dict], aliases: list[d
             r["performer"] = performer_of(r["artist"], w["composer"] or w["classical_composer"], classical_composers)
             r["version_key"] = f"{w['work_key']} | {performer_key(r['performer'])}"
             r["version_type"] = version_type(r["title"], r["performer"])
+        per_routine: dict[str, list[dict]] = defaultdict(list)
+        for r in rs:
+            per_routine[r["routine_id"]].append(r)
+        for group in per_routine.values():  # owner: several cuts of one song in one routine are shown as one version
+            names = list(dict.fromkeys(r["performer"] for r in group if r["performer"]))
+            if len(names) > 1:
+                joined = " / ".join(names)
+                for r in group:
+                    r.update(performer=joined, version_key=f"{w['work_key']} | {performer_key(joined)}", version_type="medley")
         w["n_versions"] = len({r["version_key"] for r in rs})
     works.sort(key=lambda r: (-r["n_gymnasts"], -r["n_routines"], r["work_key"]))
     return rows, works, review
@@ -452,7 +485,7 @@ def build_splits(rows: list[dict], routines: dict[str, dict]) -> list[dict]:
         for r in rs:
             parts[r["work_key"] if r["same_title"] != "kept_classical_title" else r["performer"] or "(composer only)"].append(r)
         out.append({
-            "title_key": key, "decision": next((d for d in ("kept_classical_title", "joined_by_musicbrainz")
+            "title_key": key, "decision": next((d for d in ("kept_classical_title", "joined_by_owner", "joined_by_musicbrainz")
                                                 if any(r["same_title"] == d for r in rs)), "split_by_credit"),
             "n_gymnasts": len({routines[r["routine_id"]]["gymnast_page"] for r in rs}), "n_parts": len(parts),
             "parts": " | ".join(f"{p} ({len({routines[r['routine_id']]['gymnast_page'] for r in prs})})"
@@ -475,7 +508,7 @@ REVIEW_FIELDS = ["title_a", "title_b", "similarity", "gymnasts_a", "gymnasts_b",
 def main_resolve() -> int:
     read = lambda name: list(csv.DictReader((INTERIM / name).open(encoding="utf-8")))  # noqa: E731
     tracks, routines = read("tracks.csv"), {r["routine_id"]: r for r in read("routines_parsed.csv")}
-    track_works, works, review = resolve_works(tracks, routines, load_aliases(), load_mb_links())
+    track_works, works, review = resolve_works(tracks, routines, load_aliases(), load_mb_links(), load_owner_joins())
     versions, splits = build_versions(track_works, routines), build_splits(track_works, routines)
     for name, fields, data in (("track_works.csv", TRACK_WORK_FIELDS, track_works), ("works.csv", WORK_FIELDS, works),
                                ("versions.csv", VERSION_FIELDS, versions), ("work_splits.csv", SPLIT_FIELDS, splits),

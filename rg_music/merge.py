@@ -20,6 +20,8 @@ Rules (decided with the owner):
     differs_from_routine_table so that conflicts are visible, not silently resolved.
   * The owner can say that two rows with different wording are one routine (data/manual/same_routine.csv:
     gymnast_page, year, apparatus, competition_music, routine_music): merged as above, note same_routine_by_owner.
+  * The owner can exclude a routine that the source states wrongly (data/manual/routine_exclusions.csv: gymnast_page,
+    year, apparatus, music as in the raw table, reason). The raw files keep it; merge_report lists it.
   * Competition rows without music, or without a single apparatus (all-around), only describe
     participation and are skipped.
 
@@ -43,6 +45,7 @@ from rg_music.years import expand_years, parse_years
 
 INTERIM = Path("data/interim")
 SAME_ROUTINE = Path("data/manual/same_routine.csv")
+EXCLUSIONS = Path("data/manual/routine_exclusions.csv")
 MERGED_FIELDS = ["routine_id", "gymnast_page", "table_index", "row_index", "year", "year_source", "apparatus",
                  "music", "source", "notes", "source_url", "revid"]
 EVENT_FIELDS = ["routine_id", "competition", "location", "event_year", "source_row"]
@@ -75,6 +78,14 @@ def load_same_routine(path: Path = SAME_ROUTINE) -> set[tuple]:
             for r in csv.DictReader(path.open(encoding="utf-8-sig"))}
 
 
+def load_exclusions(path: Path = EXCLUSIONS) -> set[tuple]:
+    """Owner's list of routines the source states wrongly: (gymnast_page, year, apparatus, music) as in the raw table."""
+    if not path.exists():
+        return set()
+    return {(r["gymnast_page"], r["year"].strip(), r["apparatus"].strip(), r["music"].strip())
+            for r in csv.DictReader(path.open(encoding="utf-8-sig"))}
+
+
 def _base_id(row: dict, prefix: str = "") -> str:
     return f"{row['gymnast_page']}|{prefix}{row['table_index']}|{row['row_index']}"
 
@@ -101,12 +112,16 @@ def expand_routines(rows: list[dict]) -> list[dict]:
     return out
 
 
-def merge_sources(routines: list[dict], competitions: list[dict],
-                  same_routine: set[tuple] = frozenset()) -> tuple[list[dict], list[dict], dict]:
+def merge_sources(routines: list[dict], competitions: list[dict], same_routine: set[tuple] = frozenset(),
+                  exclusions: set[tuple] = frozenset()) -> tuple[list[dict], list[dict], dict]:
+    excluded = [r for r in routines if (r["gymnast_page"], r["year"].strip(), r["apparatus"].strip(), r["music"].strip())
+                in exclusions]
+    routines = [r for r in routines if r not in excluded]
     merged = expand_routines(routines)
     events: list[dict] = []
     seen_events: set[tuple] = set()
     stats = Counter(seasons_expanded=len(merged) - len(routines))
+    stats["excluded_by_owner"] = [_base_id(r) for r in excluded]
 
     def add_event(routine_id: str, c: dict, year: int) -> None:
         key = (routine_id, c["competition"], c["location"], year)
@@ -174,7 +189,7 @@ def main(argv: list[str] | None = None) -> int:
 
     read = lambda name: list(csv.DictReader((args.dir / name).open(encoding="utf-8")))  # noqa: E731
     routines, competitions = read("routines_raw.csv"), read("competitions_raw.csv")
-    merged, events, stats = merge_sources(routines, competitions, load_same_routine())
+    merged, events, stats = merge_sources(routines, competitions, load_same_routine(), load_exclusions())
 
     _write_csv(args.dir / "routines_merged.csv", MERGED_FIELDS, merged)
     _write_csv(args.dir / "routine_events.csv", EVENT_FIELDS, events)
