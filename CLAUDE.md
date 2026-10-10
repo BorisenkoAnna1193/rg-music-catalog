@@ -86,6 +86,8 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   Several cuts of one work by different performers in ONE routine are shown as one version, `version_type = medley`
   (owner: Onofriichuk 2026 Pump up the Jam = Bodybangers / Crazy Frog / Thomas Gold / Gabry Ponte).
   Result: 2439 works, 413 used by 2+ gymnasts, 2768 versions.
+  Original performers recorded so far (for `version_type` original / cover in step 4): All By Myself = Eric Carmen
+  (1975); Larry Dalton (Minagawa 2016-17) and Celine Dion (Santos 2023) are versions.
 - `data/manual/routine_exclusions.csv` – routines the source states wrongly, dropped in `merge.py` (raw files keep
   them, `merge_report.json` lists them): Arina Averina 2020 Hoop (first) "Largo Al Factotum" (owner found no such
   routine). 3961 routines.
