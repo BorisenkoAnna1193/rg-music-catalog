@@ -360,9 +360,31 @@ def version_type(title: str, performer: str) -> str:
     return "unknown"
 
 
+def load_authors(path: Path = Path("data/manual/work_authors.csv")) -> dict[str, dict]:
+    """work_key -> the owner-reviewed author row (python -m rg_music.work_authors --import)."""
+    if not path.exists():
+        return {}
+    return {r["work_key"]: r for r in csv.DictReader(path.open(encoding="utf-8-sig"))}
+
+
+def _version_of_author(r: dict, a: dict, routine: dict) -> None:
+    """original / cover from the work's original performer; the FIG rule (no words in a routine on an apparatus before
+    2013) makes a pre-2013 version of a song with words an instrumental one, a version of its own."""
+    from rg_music.mb_works import same_name  # lazy: mb_works imports this module
+
+    if r["performer"] and a.get("original_performer") and r["version_type"] == "unknown":
+        o = a["original_performer"]
+        r["version_type"] = "original" if same_name(o, r["performer"]) or same_name(r["performer"], o) else "cover"
+    year = str(routine.get("year", ""))
+    if (a.get("author_type") == "performer" and a.get("has_lyrics") == "yes" and year.isdigit() and int(year) < 2013
+            and routine.get("apparatus") not in ("Gala", "")):
+        r["version_type"] = "instrumental"
+        r["version_key"] += " | instrumental"
+
+
 def resolve_works(tracks: list[dict], routines: dict[str, dict], aliases: list[dict],
-                  mb_links: dict[str, str] | None = None,
-                  owner_joins: dict[str, str] | None = None) -> tuple[list[dict], list[dict], list[dict]]:
+                  mb_links: dict[str, str] | None = None, owner_joins: dict[str, str] | None = None,
+                  authors: dict[str, dict] | None = None) -> tuple[list[dict], list[dict], list[dict]]:
     """-> (track_works, works, merge_review). Order of rules: owner aliases, "Work: Excerpt", spelling variants, title,
     then one title with unrelated credits is split. Every track_works row also gets its version (performer)."""
     usable = [t for t in tracks if title_key(t["title"]) and t["routine_id"] in routines]
@@ -416,6 +438,7 @@ def resolve_works(tracks: list[dict], routines: dict[str, dict], aliases: list[d
     for key, rs in by_key.items():
         titles = Counter(r["work"] or r["title"] for r in rs)
         shown = next((r["work"] for r in rs if r["method"] == "alias"), "") or titles.most_common(1)[0][0]
+        shown = re.sub(r"\s*\((?:cover|instrumental)\)\s*$", "", shown, flags=re.I) or shown
         for r in rs:
             r["work"] = shown
         rr = [routines[r["routine_id"]] for r in rs]
@@ -429,16 +452,20 @@ def resolve_works(tracks: list[dict], routines: dict[str, dict], aliases: list[d
             "title_variants": len({r["title"] for r in rs}), "artists": " | ".join(f"{a} ({n})" for a, n in artists.most_common(4)),
             "artist_check": artist_check(list(artists)),
         })
-        composer = works[-1]["composer"]
+        a = (authors or {}).get(key, {})
+        works[-1].update({f: a.get(f, "") for f in AUTHOR_COLUMNS}, author_source=a.get("source", ""))
+        composer = works[-1]["composer"] or (a.get("author", "") if a.get("author_type") == "composer" else "")
         is_classical, basis, who = classify(key, composer, list(artists), [r["title"] for r in rs] + [shown],
                                             classical_composers, classical_overrides)
         works[-1].update(is_classical=is_classical, classical_basis=basis, classical_composer=who or composer if is_classical else "")
     for w in works:
         rs = by_key[w["work_key"]]
         for r in rs:
-            r["performer"] = performer_of(r["artist"], w["composer"] or w["classical_composer"], classical_composers)
+            own = w["composer"] or w["classical_composer"] or (w["author"] if w["author_type"] == "composer" else "")
+            r["performer"] = performer_of(r["artist"], own, classical_composers)
             r["version_key"] = f"{w['work_key']} | {performer_key(r['performer'])}"
             r["version_type"] = version_type(r["title"], r["performer"])
+            _version_of_author(r, (authors or {}).get(w["work_key"], {}), routines[r["routine_id"]])
         per_routine: dict[str, list[dict]] = defaultdict(list)
         for r in rs:
             per_routine[r["routine_id"]].append(r)
@@ -494,11 +521,12 @@ def build_splits(rows: list[dict], routines: dict[str, dict]) -> list[dict]:
     return sorted(out, key=lambda r: (r["decision"], -r["n_gymnasts"], r["title_key"]))
 
 
+AUTHOR_COLUMNS = ["author_type", "author", "original_performer", "from_title", "from_type", "has_lyrics"]
 TRACK_WORK_FIELDS = ["routine_id", "track_no", "title", "artist", "work_key", "work", "excerpt", "composer", "method",
                      "title_cluster", "same_title", "split_key", "performer", "version_key", "version_type"]
 WORK_FIELDS = ["work_key", "work", "composer", "n_gymnasts", "n_routines", "n_tracks", "n_versions", "first_year",
                "last_year", "excerpts", "title_variants", "artists", "artist_check", "is_classical", "classical_basis",
-               "classical_composer"]
+               "classical_composer", *AUTHOR_COLUMNS, "author_source"]
 VERSION_FIELDS = ["version_key", "work_key", "work", "performer", "version_type", "n_gymnasts", "n_routines",
                   "first_year", "last_year", "used_by"]
 SPLIT_FIELDS = ["title_key", "decision", "n_gymnasts", "n_parts", "parts"]
@@ -508,7 +536,8 @@ REVIEW_FIELDS = ["title_a", "title_b", "similarity", "gymnasts_a", "gymnasts_b",
 def main_resolve() -> int:
     read = lambda name: list(csv.DictReader((INTERIM / name).open(encoding="utf-8")))  # noqa: E731
     tracks, routines = read("tracks.csv"), {r["routine_id"]: r for r in read("routines_parsed.csv")}
-    track_works, works, review = resolve_works(tracks, routines, load_aliases(), load_mb_links(), load_owner_joins())
+    track_works, works, review = resolve_works(tracks, routines, load_aliases(), load_mb_links(), load_owner_joins(),
+                                               load_authors())
     versions, splits = build_versions(track_works, routines), build_splits(track_works, routines)
     for name, fields, data in (("track_works.csv", TRACK_WORK_FIELDS, track_works), ("works.csv", WORK_FIELDS, works),
                                ("versions.csv", VERSION_FIELDS, versions), ("work_splits.csv", SPLIT_FIELDS, splits),

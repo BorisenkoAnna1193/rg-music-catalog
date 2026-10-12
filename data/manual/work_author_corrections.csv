@@ -1,0 +1,35 @@
+﻿work_key,field,value,reason
+romani holiday,from_title,Sherlock Holmes: A Game of Shadows,Claude 2026-10-12: typo 'Scherlock'; Romani Holiday is from the 2011 sequel's score
+new swan queen night of terror perfection,from_title,Black Swan,Claude 2026-10-12: typo 'Balck Swan'
+new swan queen night of terror perfection,author_type,composer,Claude 2026-10-12: film score: the owner's rule makes the composer the author
+new swan queen night of terror perfection,author,Clint Mansell,Claude 2026-10-12: composer of the Black Swan score
+escape from slavery,from_title,12 Years a Slave,Claude 2026-10-12: capitalisation
+bumble bee boogie,author,Nikolai Rimsky-Korsakov,Claude 2026-10-12: full name as in classical_composers.csv
+tsar s bride overture,author,Nikolai Rimsky-Korsakov,Claude 2026-10-12: full name as in classical_composers.csv
+mutation,from_title,Cirque du Soleil,Claude 2026-10-12: typo 'Cirque de Soleil'
+overture and all that jazz,author_type,composer,Claude 2026-10-12: musical: the owner's rule makes the composer the author
+overture and all that jazz,author,John Kander,"Claude 2026-10-12: composer of Chicago (music), Fred Ebb lyrics"
+mission impossible ~ dubdogz zuffo rhoden,author_type,composer,Claude 2026-10-12: film/TV theme: composer rule
+mission impossible ~ dubdogz zuffo rhoden,author,Lalo Schifrin,Claude 2026-10-12: composer of the Mission: Impossible theme
+angry birds main theme,author_type,composer,Claude 2026-10-12: game music: composer rule
+angry birds main theme,author,Ari Pulkkinen,Claude 2026-10-12: composer of the Angry Birds theme
+unstoppable,original_performer,E.S. Posthumus,"Claude 2026-10-12: E.S. Posthumus' own instrumental (2008), not Sia's song 'Unstoppable' (the '?' MusicBrainz match was another song)"
+caravan,from_title,,Claude 2026-10-12: old song (1936) only used in Ocean's 13: the owner's rule does not count it for films
+caravan,from_type,,
+mas que nada,from_title,,Claude 2026-10-12: old song (1963) only used in Rio: the owner's rule does not count it for films
+mas que nada,from_type,,
+game on,from_type,film,"Claude 2026-10-12: Madagascar 3 is a film, not a game"
+game on,author_type,composer,Claude 2026-10-12: film score
+game on,author,Hans Zimmer,Claude 2026-10-12: credited composer of the Madagascar 3 score
+la cumparsita,author_type,composer,Claude 2026-10-12: tango: the owner's rule makes the composer the author
+la cumparsita,author,Gerardo Matos Rodríguez,Claude 2026-10-12: MusicBrainz writer
+por una cabeza,author_type,composer,Claude 2026-10-12: tango: the owner's rule makes the composer the author
+por una cabeza,author,Carlos Gardel,Claude 2026-10-12: MusicBrainz writer (music; lyrics Alfredo Le Pera)
+carnavalera,author_type,composer,Claude 2026-10-12: tango (milonga): the owner's rule makes the composer the author
+carnavalera,author,Sebastián Piana,Claude 2026-10-12: MusicBrainz writer (music; lyrics Homero Manzi)
+misirlou,author_type,performer,"2026-10-12, owner: one music with Miserlou"
+misirlou,original_performer,Dick Dale,"2026-10-12, owner: show the best-known version, Dick Dale (1962), as the original"
+la zarzamora,author,folk music,"2026-10-12, owner: folk includes folk motifs, paso doble, Spanish music"
+la zarzamora,original_performer,Paco de Lucía,"2026-10-12, owner: Paco de Lucía is the performer"
+mutation,from_title,,"2026-10-12, owner: no 'performance' source type"
+mutation,from_type,,

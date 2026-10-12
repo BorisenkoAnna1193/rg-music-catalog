@@ -88,6 +88,21 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   Result: 2439 works, 413 used by 2+ gymnasts, 2768 versions.
   Original performers recorded so far (for `version_type` original / cover in step 4): All By Myself = Eric Carmen
   (1975); Larry Dalton (Minagawa 2016-17) and Celine Dion (Santos 2023) are versions.
+- `rg_music/work_authors.py` – step 4: author proposals for the 434 works used by 2+ gymnasts or classical without a
+  composer → `work_author_proposals.csv`: MusicBrainz work (known link / credited writer / the only one with that title;
+  "most recorded" is shown with "?" and never used), its type, lyrics (language zxx = no words, for the FIG rule),
+  writers; proposal author_type folk / composer / performer / unknown by the owner's rules, `from_title` hint only when a
+  cell says OST / film / musical... or MusicBrainz type is Soundtrack / Musical. First run: composer 119, performer
+  147, folk 7, unknown 161. Review sheet `work_authors_review` in Drive (id `1ycH9XztMTMCqewczNgMVHkS0VCJGsDAU0dV-DxWQD_Q`,
+  379 rows: classical with a known composer and owner-alias composers are not in it), rows map back by `row_id`.
+  `--import <sheet csv>` → `data/manual/work_authors.csv` (434 works; owner 39 rows on 2026-10-12, proposal 340, rule 55):
+  folk → author "folk music"; a name typed as author of a `performer` work, or "original: X" in owner_note, is the
+  ORIGINAL performer; `data/manual/work_author_corrections.csv` (Claude's fixes with reasons: typos, film/TV/musical
+  scores and tango → composer, old songs only used in a film → no from_title) is applied on top.
+  `works.py --resolve` adds author_type / author / original_performer / from_title / from_type / has_lyrics /
+  author_source to works.csv; a composer author makes a work classical when listed (Smetana, Rimsky-Korsakov:
+  187 classical works); version_type original / cover from the original performer; FIG rule: a song with words
+  (MusicBrainz) in a pre-2013 routine on an apparatus (not Gala) is an `instrumental` version of its own (43 tracks).
 - `data/manual/routine_exclusions.csv` – routines the source states wrongly, dropped in `merge.py` (raw files keep
   them, `merge_report.json` lists them): Arina Averina 2020 Hoop (first) "Largo Al Factotum" (owner found no such
   routine). 3961 routines.
@@ -211,6 +226,13 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 - Dashboard rankings: top performers (`version.performer`), top composers (`work.author` where `author_type =
   composer`), top films (`work.from_title`).
 - Russian names: classical AND folk titles are translated (Gopak → Гопак); pop titles and performers are not.
+- **Folk** (owner, 2026-10-12) = not only music written by the people but folk motifs, paso doble, Spanish music
+  (La Zarzamora: folk, Paco de Lucía is the performer).
+- **from_title, owner's exception (2026-10-12):** when a piece was written for a series / musical but is known from a
+  film, show the better-known source: Green Hornet → Kill Bill, Mission: Impossible → film, Chicago → film. Only one
+  source per work (two would complicate the film ranking). No "performance" type (Cirque du Soleil shows).
+- Misirlou = Miserlou (Caroline Campbell & William Joseph is the Pulp Fiction cover; David Garrett): one work,
+  original = Dick Dale (the best-known version).
 - English spelling for the Ukrainian folk dance: "Gopak" (gopak / hopak / hopak ukrainian folk = one folk work;
   Khachaturian's Gopak stays in Gayaneh).
 - "Storm": Otyken, Havasi and Burkard Dalwitz are separate works (Otyken is unrelated to Vivaldi).
@@ -225,7 +247,8 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   versions get `version_type = instrumental` with a basis "inferred from the FIG rule". Implement together with the
   owner's work_split_review decisions.
 - Not now (owner): a report of routines that break the rule (vocal pre-2013, too many vocal routines in a season).
-- Open: are vocalises without words (Caravan by Antonella Ruggiero) and Gala/exhibition routines outside the rule?
+- Vocalises without words were allowed before 2013 (Caravan by Antonella Ruggiero is fine); Gala / exhibition routines
+  are outside the rule, words allowed there (owner, 2026-10-12, "as far as I remember").
 - Videos (later): search for the video of the gymnast's performance, not for the music on YouTube.
 
 ## Decisions for the gymnast list (made with the owner)

@@ -185,3 +185,28 @@ def test_several_cuts_of_one_song_in_one_routine_are_one_medley_version():
     rows, works, _ = resolve_works(tracks, routines, [], {"pump up the jam ~ bodybangers": "w", "pump up the jam ~ crazy frog": "w"})
     assert {(r["work_key"], r["performer"], r["version_type"]) for r in rows} == {("pump up the jam", "Bodybangers / Crazy Frog", "medley")}
     assert works[0]["n_versions"] == 1
+
+
+def test_author_rows_give_original_cover_and_the_pre_2013_instrumental_version():
+    routines = {"a": {"gymnast_page": "A", "year": "2012", "apparatus": "Ribbon"},
+                "b": {"gymnast_page": "B", "year": "2023", "apparatus": "Ball"},
+                "c": {"gymnast_page": "C", "year": "2024", "apparatus": "Hoop"},
+                "d": {"gymnast_page": "D", "year": "2010", "apparatus": "Gala"}}
+    tracks = [track("a", "Feeling Good", "Muse"), track("b", "Feeling Good", "Muse"), track("c", "Feeling Good", "Michael Bublé"),
+              track("d", "Feeling Good", "Muse")]
+    authors = {"feeling good": {"author_type": "performer", "author": "", "original_performer": "Muse", "has_lyrics": "yes",
+                                "from_title": "", "from_type": "", "source": "owner"}}
+    links = {"feeling good ~ muse": "w", "feeling good ~ michael buble": "w"}
+    rows, works, _ = resolve_works(tracks, routines, [], links, {}, authors)
+    by = {r["routine_id"]: r for r in rows}
+    assert by["a"]["version_type"] == "instrumental" and by["a"]["version_key"].endswith("| instrumental")
+    assert (by["b"]["version_type"], by["c"]["version_type"], by["d"]["version_type"]) == ("original", "cover", "original")
+    assert works[0]["original_performer"] == "Muse" and works[0]["n_versions"] == 3
+
+
+def test_a_composer_from_the_author_rows_makes_a_work_classical():
+    routines = {"a": {"gymnast_page": "A", "year": "2020", "apparatus": "Hoop"}}
+    authors = {"dance of the comedians": {"author_type": "composer", "author": "Bedřich Smetana", "source": "owner"}}
+    rows, works, _ = resolve_works([track("a", "Dance of The Comedians", "The Manhattan Pops Orchestra")], routines, [], {}, {}, authors)
+    assert (works[0]["is_classical"], works[0]["classical_composer"]) == (1, "Bedrich Smetana")
+    assert rows[0]["performer"] == "The Manhattan Pops Orchestra"
