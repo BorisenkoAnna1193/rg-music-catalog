@@ -394,6 +394,10 @@ Dashboard for browsing the DB (decide `event` and filters after the first versio
   `championship_entry` only says the gymnast competed, not with which music or apparatus, so the
   badge must come from `routine.event_id` (filled from the "competition" column / competition
   tables), never inferred from the year alone. This is the use case for the optional `event_id`.
+- **YouTube, stage 1 done (2026-10-13):** every routine has "Find on YouTube": a YouTube search URL built in the page
+  (gymnast, apparatus, season, short music title; Russian query on the Russian page). Nothing is fetched from YouTube.
+  Stage 2 (optional): candidates from the YouTube Data API (key + ~100 searches/day free), verified by the owner,
+  shown as "Watch". Scraping YouTube search is against its terms: not done.
 - **YouTube links** under each music result: the video of that gymnast's performance, year and
   apparatus must match. Schema idea: `video_link(video_id, routine_id, url, source, verified)`;
   automatic search results (YouTube Data API: key + quota, check its terms) are only candidates
