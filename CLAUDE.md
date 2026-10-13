@@ -347,7 +347,12 @@ Decided to offer English and Russian. What gets a Russian version:
   #home #gymnasts #gymnast-N #music #work-N #rankings, EN/RU, light only like the mockups, both ranking modes); it computes every
   statistic in the browser. Pipeline end: `python -m rg_music.db && python -m rg_music.site_export`.
 - Published: claude.ai artifact https://claude.ai/artifact/2Hz5iyZiwAmbv2N35ManNv (republish `site/app.html` with
-  files {"data.json": "site/data.json"}); GitHub Pages via `.github/workflows/pages.yml` once a GitHub repo exists.
+  files {"data.json": "site/data.json"}) and GitHub Pages https://borisenkoanna1193.github.io/rg-music-catalog/
+  (repo https://github.com/BorisenkoAnna1193/rg-music-catalog, public; `.github/workflows/pages.yml` redeploys on every
+  push to main that changes site/; Pages source = GitHub Actions).
+- Git: commits use the GitHub noreply address 152020947+BorisenkoAnna1193@users.noreply.github.com (history rewritten
+  before the first push; the old history is only in the local branch `backup-before-email-rewrite`, never pushed).
+  Pushing uses the passphrase-free key ~/.ssh/id_ed25519_github (~/.ssh/config, Host github.com).
 
 ## Second language of Wikipedia (probe 2026-10-13, not integrated yet)
 - `rg_music/native_wiki.py` probes the gymnast's home-language Wikipedia (+ Russian for ex-USSR) for music tables →
