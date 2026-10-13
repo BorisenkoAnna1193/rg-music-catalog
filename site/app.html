@@ -1,0 +1,473 @@
+<title>RG Music Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: one centred column, pill tabs on top; every apparatus keeps one colour across all views.
+   One light look on purpose (direction D chosen by the owner); every colour is still set explicitly. */
+:root { color-scheme: light;
+  --bg: #FFFFFF; --fg: #1A1B1E; --muted: #5F6168; --line: #E3E4E8; --soft: #F1F2F4; --field: #F6F7F9;
+  --ink: #1A1B1E; --on-ink: #FFFFFF; --link: #2F5BEA;
+  --hoop: #2F5BEA; --ball: #E8833A; --clubs: #0E9F8E; --ribbon: #B24BD6; --rope: #8A8D96; --gala: #1A1B1E;
+  --font: 'Manrope', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+/* Always keep room for the scrollbar: a longer Russian page must not shift the centred column sideways */
+html { overflow-y: scroll; scrollbar-gutter: stable; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 15px; line-height: 1.45; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--link); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+.wrap { max-width: 1200px; margin: 0 auto; padding-inline: 24px; padding-block: 0 64px; }
+@media (max-width: 600px) { .wrap { padding-inline: 16px; } }
+header.top { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; min-height: 76px; }
+.logo { font-weight: 800; font-size: 17px; letter-spacing: -.01em; }
+.tabs { display: flex; flex-wrap: wrap; gap: 4px; background: var(--soft); border-radius: 24px; padding: 4px; }
+.tab { font-size: 14px; font-weight: 600; min-height: 40px; display: inline-flex; align-items: center; padding: 0 16px; border-radius: 20px; color: var(--fg); }
+.tab[aria-current="page"] { background: var(--ink); color: var(--on-ink); }
+.lang { margin-left: auto; display: flex; background: var(--soft); border-radius: 22px; padding: 4px; }
+.lang button { font: inherit; font-size: 13px; font-weight: 700; min-height: 36px; min-width: 44px; border: 0; border-radius: 18px; cursor: pointer; background: transparent; color: var(--muted); }
+.lang button[aria-pressed="true"] { background: var(--bg); color: var(--fg); }
+h1 { font-size: clamp(34px, 5vw, 52px); font-weight: 800; letter-spacing: -.03em; line-height: 1.05; margin: 28px 0 8px; text-wrap: balance; }
+h2 { font-size: 16px; font-weight: 700; margin: 0 0 12px; }
+.muted { color: var(--muted); }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.small { font-size: 13px; }
+.sub { margin: 0 0 20px; color: var(--muted); }
+.panel { border: 1px solid var(--line); border-radius: 16px; padding: 22px; min-width: 0; }
+.row { display: flex; flex-wrap: wrap; gap: 16px; }
+.grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); }
+.kpis { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); margin-block: 20px; }
+.kpi b { display: block; font-size: 32px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.search { width: 100%; box-sizing: border-box; font: inherit; font-size: 17px; min-height: 52px; padding: 0 20px; border: 1px solid var(--line); border-radius: 26px; background: var(--field); color: var(--fg); }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-block: 16px 20px; }
+.filters .search { flex: 1 1 260px; width: auto; min-height: 44px; font-size: 15px; }
+.both { display: inline-grid; }
+.both > span { grid-area: 1 / 1; text-align: center; }
+.both > .ghost { visibility: hidden; }
+/* Fixed widths: a native select grows to its longest option, and Russian country names are longer */
+select.pill { width: 12.5em; flex: none; max-width: 100%; }
+#c-gyms { width: 15em; }
+.pill, select.pill { font: inherit; font-size: 14px; min-height: 40px; padding: 0 16px; border-radius: 20px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.pill[aria-pressed="true"] { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
+.bar { display: flex; gap: 3px; height: 8px; }
+.bar span { border-radius: 4px; }
+.card { display: block; border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px; min-width: 0; }
+.card:hover { border-color: var(--muted); color: inherit; }
+.card .t { font-weight: 700; font-size: 16px; }
+.badge { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 10px; background: var(--soft); white-space: nowrap; }
+.list-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); }
+.rank { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 9px 0; border-top: 1px solid var(--line); }
+.meter { display: block; height: 4px; border-radius: 2px; background: var(--ink); margin-top: 6px; }
+.num { font-variant-numeric: tabular-nums; font-weight: 700; text-align: right; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); padding: 10px 8px 10px 0; }
+td { padding: 11px 8px 11px 0; border-top: 1px solid var(--line); vertical-align: top; }
+.scroll { overflow-x: auto; }
+.season h3 { font-size: 22px; font-weight: 800; margin: 28px 0 12px; }
+.routine { border-top-width: 4px; }
+.app-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.timeline { display: grid; align-items: end; height: 110px; border-bottom: 1px solid var(--fg); min-width: 640px; }
+.timeline div { display: flex; flex-direction: column-reverse; align-items: center; gap: 3px; padding-bottom: 6px; }
+.timeline span { width: 11px; height: 11px; border-radius: 50%; }
+.years { display: grid; min-width: 640px; margin-top: 6px; }
+.years span { font-size: 11px; text-align: center; color: var(--muted); }
+.chart { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 8px; align-items: end; height: 220px; }
+.chart div { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 100%; font-size: 12px; font-weight: 700; }
+.chart i { width: 100%; border-radius: 6px 6px 0 0; background: var(--ink); margin-top: 4px; }
+.chart-x { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 8px; margin-top: 6px; font-size: 10px; text-align: center; color: var(--muted); }
+.results { display: grid; gap: 4px; margin-top: 10px; }
+.results a { padding: 8px 12px; border-radius: 10px; background: var(--soft); }
+.more { margin-top: 16px; }
+footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 24px; }
+footer a { text-decoration: underline; }
+@media (prefers-reduced-motion: no-preference) { .card, .pill { transition: border-color .15s, background .15s; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="#home">RG Music</a>
+    <nav class="tabs" id="tabs" aria-label="Main"></nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" id="lang-en" aria-pressed="true">EN</button>
+      <button type="button" id="lang-ru" aria-pressed="false">RU</button>
+    </div>
+  </header>
+  <main id="view"><p class="muted">Loading the catalogue…</p></main>
+  <footer id="foot"></footer>
+</div>
+
+<script>
+(() => {
+  const T = {
+    en: { home: 'Home', gymnasts: 'Gymnasts', music: 'Music', rankings: 'Rankings', h1: 'What rhythmic gymnasts perform to',
+      search: 'Search gymnasts and music', searchMusic: 'Title, composer or performer', searchName: 'Name, in Latin or Cyrillic',
+      gymWithMusic: 'gymnasts with known music', allGyms: 'gymnasts from the World Championships', onlyMusic: 'Only with known music',
+      wc: 'World Championships', musicUnknown: 'Music not known yet', noMusicNote: 'Her Wikipedia article has no information about her music yet.',
+      noArticle: 'There is no Wikipedia article about her yet; she is known from World Championship results.', works: 'works', routines: 'routines with known music', seasons: 'seasons',
+      byApp: 'Routines by apparatus', top: 'Most used music', topNote: 'Number = gymnasts; bar = routines by apparatus',
+      share: 'Classical share of routines', shareNote: 'Five-year periods; the last one is not finished.',
+      allCountries: 'All countries', allDecades: 'All decades', allApp: 'All apparatus', all: 'All', more: 'Show more',
+      gym: 'gymnasts', rou: 'routines', ver: 'versions', recNotStated: 'Recording not stated', noExcerpt: '—',
+      season: 'Season', apparatus: 'Apparatus', gymnast: 'Gymnast', excerpt: 'Excerpt', recording: 'Recording',
+      bySeason: 'Routines by season', versions: 'Versions', excerpts: 'Excerpts', fromWiki: 'Wikipedia article',
+      countBy: 'Count by', byGym: 'By gymnasts', byRou: 'By routines',
+      exG: 'How many different gymnasts chose it.', exR: 'How often it was heard: every routine counts, so the same music on another apparatus or in another season counts again.',
+      boards: [['Music', 'Works'], ['Performers', 'Whose version the gymnast uses'], ['Composers', 'Classical, jazz, tango, film, musical'], ['Films', 'Music written for a film, musical or game']],
+      kpiG: 'gymnasts', kpiR: 'routines', kpiV: 'versions', kinds: { classical: 'Classical', song: 'Song', film: 'Film', folk: 'Folk', other: 'Other' }, songAuthor: n => `song · ${n} version${n === 1 ? '' : 's'}`,
+      vt: { original: 'original', cover: 'cover', remix: 'remix', medley: 'medley', cast: 'cast', instrumental: 'instrumental', arrangement: 'arrangement', unknown: '' },
+      found: 'Found', nothing: 'Nothing found.', notFound: 'This page does not exist.', back: 'Back to home', events: 'Performed at',
+      source: 'Data: English Wikipedia (CC BY-SA 4.0) and MusicBrainz (CC0). Music identified and reviewed by hand; Russian names in progress.', built: 'Built' },
+    ru: { home: 'Главная', gymnasts: 'Гимнастки', music: 'Музыка', rankings: 'Рейтинги', h1: 'Под какую музыку выступают гимнастки',
+      search: 'Поиск гимнасток и музыки', searchMusic: 'Название, композитор или исполнитель', searchName: 'Имя латиницей или кириллицей',
+      gymWithMusic: 'гимнасток с известной музыкой', allGyms: 'гимнасток с чемпионатов мира', onlyMusic: 'Только с известной музыкой',
+      wc: 'Чемпионаты мира', musicUnknown: 'Музыка пока неизвестна', noMusicNote: 'В статье Википедии о ней пока нет сведений о музыке.',
+      noArticle: 'Статьи в Википедии о ней пока нет; она известна по результатам чемпионатов мира.', works: 'произведений', routines: 'программ с известной музыкой', seasons: 'сезоны',
+      byApp: 'Программы по предметам', top: 'Самая популярная музыка', topNote: 'Число — гимнастки; полоска — программы по предметам',
+      share: 'Доля классики в программах', shareNote: 'Пятилетия; последнее ещё не закончилось.',
+      allCountries: 'Все страны', allDecades: 'Все десятилетия', allApp: 'Все предметы', all: 'Все', more: 'Показать ещё',
+      gym: 'гимн.', rou: 'прогр.', ver: 'версий', recNotStated: 'Запись не указана', noExcerpt: '—',
+      season: 'Сезон', apparatus: 'Предмет', gymnast: 'Гимнастка', excerpt: 'Фрагмент', recording: 'Запись',
+      bySeason: 'Программы по сезонам', versions: 'Версии', excerpts: 'Фрагменты', fromWiki: 'Статья в Википедии',
+      countBy: 'Считать по', byGym: 'По гимнасткам', byRou: 'По программам',
+      exG: 'Сколько разных гимнасток выбрали эту музыку.', exR: 'Как часто она звучала: считается каждая программа — та же музыка на другом предмете или в следующем сезоне засчитывается ещё раз.',
+      boards: [['Музыка', 'Произведения'], ['Исполнители', 'Чью версию использует гимнастка'], ['Композиторы', 'Классика, джаз, танго, кино, мюзиклы'], ['Фильмы', 'Музыка, написанная для фильма, мюзикла или игры']],
+      kpiG: 'гимнасток', kpiR: 'программ', kpiV: 'версий', kinds: { classical: 'Классика', song: 'Песня', film: 'Кино', folk: 'Народная', other: 'Другое' }, songAuthor: n => `песня · версий: ${n}`,
+      vt: { original: 'оригинал', cover: 'кавер', remix: 'ремикс', medley: 'попурри', cast: 'актёры', instrumental: 'инструментал', arrangement: 'аранжировка', unknown: '' },
+      found: 'Найдено', nothing: 'Ничего не найдено.', notFound: 'Такой страницы нет.', back: 'На главную', events: 'Выступления',
+      source: 'Данные: английская Википедия (CC BY-SA 4.0) и MusicBrainz (CC0). Музыка сопоставлена и проверена вручную; русские названия дополняются.', built: 'Собрано' }
+  };
+  const APP_COLOR = ['--hoop', '--ball', '--clubs', '--ribbon', '--rope', '--gala', '--rope'];
+  const view = document.getElementById('view');
+  let D = null, lang = 'en';
+  try { lang = localStorage.getItem('rg-lang') === 'ru' ? 'ru' : 'en'; } catch (e) {}
+  const ui = { gym: {}, music: { kind: '', app: -1, dec: 0, q: '', shown: 60 }, gyms: { q: '', country: '', dec: 0, music: false }, rank: { mode: 'gymnasts', dec: 0, app: -1 }, work: { ex: -1 }, home: { q: '' } };
+
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const fold = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const t = () => T[lang];
+  // A label holding both languages in one grid cell: its width is the longer one, so switching language moves nothing
+  const both = (en, ruText) => `<span class="both"><span${lang === 'en' ? '' : ' class="ghost" aria-hidden="true"'}>${esc(en)}</span><span${lang === 'ru' ? '' : ' class="ghost" aria-hidden="true"'}>${esc(ruText)}</span></span>`;
+  const bothKey = (k, sub) => sub ? both(T.en[sub][k], T.ru[sub][k]) : both(T.en[k], T.ru[k]);
+  const ru = () => lang === 'ru';
+  const color = a => `var(${APP_COLOR[a] || '--rope'})`;
+  const fmt = n => n.toLocaleString(ru() ? 'ru-RU' : 'en-US');
+
+  // ---------- data and indexes ----------
+  function index(d) {
+    d.gymRoutines = d.gymnasts.map(() => []);
+    d.workRoutines = d.works.map(() => new Set());
+    d.workTracks = d.works.map(() => []);
+    d.versionRoutines = d.versions.map(() => new Set());
+    d.routines.forEach((r, i) => {
+      d.gymRoutines[r[0]].push(i);
+      r[5].forEach(([v, e, title]) => {
+        const w = d.versions[v][0];
+        d.workRoutines[w].add(i); d.workTracks[w].push([i, v, e, title]); d.versionRoutines[v].add(i);
+      });
+    });
+    d.workStats = d.works.map((w, i) => {
+      const rs = [...d.workRoutines[i]], gs = new Set(rs.map(r => d.routines[r][0]));
+      const split = {}; rs.forEach(r => { const a = d.routines[r][2]; split[a] = (split[a] || 0) + 1; });
+      const ys = rs.map(r => d.routines[r][1]).filter(Boolean);
+      return { g: gs.size, n: rs.length, split, y0: Math.min(...ys), y1: Math.max(...ys), versions: new Set(d.workTracks[i].map(x => x[1])).size };
+    });
+    d.order = d.works.map((_, i) => i).sort((a, b) => d.workStats[b].g - d.workStats[a].g || d.workStats[b].n - d.workStats[a].n);
+    return d;
+  }
+  const gName = i => { const g = D.gymnasts[i]; return ru() && g[1] ? g[1] : g[0]; };
+  const gOther = i => { const g = D.gymnasts[i]; return ru() ? (g[1] ? g[0] : '') : g[1]; };
+  const country = c => { const x = D.countries[c]; return x ? (ru() && x[1] ? x[1] : x[0]) : ''; };
+  const appName = a => { const x = D.apparatus[a]; return x ? (ru() && x[1] ? x[1] : x[0]) : ''; };
+  const wName = i => { const w = D.works[i]; return ru() && w[1] ? w[1] : w[0]; };
+  const wAuthor = i => { const w = D.works[i]; if (w[4] === 'performer' || !w[2]) return t().songAuthor(D.workStats[i].versions); return ru() && w[3] ? w[3] : w[2]; };
+  const splitBar = split => `<span class="bar" aria-hidden="true">${Object.keys(split).sort((a, b) => a - b).map(a => `<span style="flex:${split[a]} 1 0;background:${color(+a)}"></span>`).join('')}</span>`;
+  const decadeOk = (y, dec) => !dec || (y >= dec && y < dec + 10);
+  const decades = () => [1990, 2000, 2010, 2020];
+  const decLabel = d => ru() ? `${d}-е` : `${d}s`;
+
+  // ---------- pages ----------
+  function home() {
+    const s = t(), total = D.routines.length, apps = {};
+    D.routines.forEach(r => { if (r[2] >= 0 && r[2] <= 4) apps[r[2]] = (apps[r[2]] || 0) + 1; });
+    const ys = D.routines.map(r => r[1]).filter(Boolean);
+    const periods = [];
+    for (let p = 1990; p <= 2025; p += 5) {
+      const rs = D.routines.filter(r => r[1] >= p && r[1] < p + 5);
+      if (rs.length < 20) continue;
+      const c = rs.filter(r => r[5].some(([v]) => D.works[D.versions[v][0]][5] === 'classical')).length;
+      periods.push([p === 2025 ? '2025–' : `${p}–${String(p + 4).slice(2)}`, Math.round(c / rs.length * 100)]);
+    }
+    const maxP = Math.max(...periods.map(p => p[1]));
+    return `<h1>${esc(s.h1)}</h1>
+      <label for="q-home" class="vh">${esc(s.search)}</label>
+      <input id="q-home" class="search" type="search" placeholder="${esc(s.search)}" value="${esc(ui.home.q)}" autocomplete="off">
+      <div id="home-results" class="results"></div>
+      <div class="kpis">
+        <div class="panel kpi"><b>${D.gymRoutines.filter(rs => rs.length).length}</b><span class="muted">${esc(s.gymWithMusic)}</span></div>
+        <div class="panel kpi"><b>${fmt(D.works.length)}</b><span class="muted">${esc(s.works)}</span></div>
+        <div class="panel kpi"><b>${fmt(total)}</b><span class="muted">${esc(s.routines)}</span></div>
+        <div class="panel kpi"><b>${Math.min(...ys)}–${Math.max(...ys)}</b><span class="muted">${esc(s.seasons)}</span></div>
+      </div>
+      <section class="panel"><h2>${esc(s.byApp)}</h2>
+        <div class="bar" style="height:16px" role="img" aria-label="${esc(s.byApp)}">${[0, 1, 2, 3, 4].map(a => `<span style="flex:${apps[a] || 0} 1 0;background:${color(a)}"></span>`).join('')}</div>
+        <div class="row small" style="margin-top:12px">${[0, 1, 2, 3, 4].map(a => `<span style="display:flex;align-items:center;gap:6px"><span class="dot" style="background:${color(a)}"></span>${esc(appName(a))} <span class="muted">${fmt(apps[a] || 0)}</span></span>`).join('')}</div>
+      </section>
+      <div class="row" style="margin-top:16px">
+        <section class="panel" style="flex:1.4 1 480px"><h2>${esc(s.top)}</h2>
+          ${D.order.slice(0, 10).map(i => `<div class="list-row" style="grid-template-columns:minmax(0,1fr) minmax(80px,160px) 32px">
+            <div><a href="#work-${i}" style="font-weight:700">${esc(wName(i))}</a><div class="muted small">${esc(wAuthor(i))}</div></div>
+            ${splitBar(D.workStats[i].split)}<span class="num">${D.workStats[i].g}</span></div>`).join('')}
+          <p class="muted small" style="margin:10px 0 0">${esc(s.topNote)}</p>
+        </section>
+        <section class="panel" style="flex:1 1 340px"><h2>${esc(s.share)}</h2>
+          <div class="chart" style="--n:${periods.length}" role="img" aria-label="${esc(s.share)}: ${periods.map(p => p[0] + ' ' + p[1] + '%').join(', ')}">
+            ${periods.map(p => `<div>${p[1]}%<i style="height:${Math.round(p[1] / maxP * 170)}px"></i></div>`).join('')}</div>
+          <div class="chart-x" style="--n:${periods.length}">${periods.map(p => `<span>${p[0]}</span>`).join('')}</div>
+          <p class="muted small" style="margin:10px 0 0">${esc(s.shareNote)}</p>
+        </section>
+      </div>`;
+  }
+  function homeSearch() {
+    const q = fold(ui.home.q).trim(), box = document.getElementById('home-results');
+    if (!box) return;
+    if (q.length < 2) { box.innerHTML = ''; return; }
+    const gs = D.gymnasts.map((g, i) => i).filter(i => fold(D.gymnasts[i][0]).includes(q) || fold(D.gymnasts[i][1]).includes(q)).slice(0, 6);
+    const ws = D.order.filter(i => { const w = D.works[i]; return fold(w[0]).includes(q) || fold(w[1]).includes(q) || fold(w[2]).includes(q) || fold(w[3]).includes(q); }).slice(0, 8);
+    box.innerHTML = gs.length + ws.length === 0 ? `<p class="muted">${esc(t().nothing)}</p>` :
+      gs.map(i => `<a href="#gymnast-${i}"><b>${esc(gName(i))}</b> <span class="muted small">${esc(country(D.gymnasts[i][2]))}</span></a>`).join('') +
+      ws.map(i => `<a href="#work-${i}"><b>${esc(wName(i))}</b> <span class="muted small">${esc(wAuthor(i))} · ${D.workStats[i].g} ${esc(t().gym)}</span></a>`).join('');
+  }
+
+  const wcLine = i => { const ys = D.gymnasts[i][4]; return ys.length ? `${t().wc}: ${ys.length > 1 ? ys[0] + '–' + ys[ys.length - 1] : ys[0]} (${ys.length})` : ''; };
+  function gymnasts() {
+    const s = t(), f = ui.gyms, q = fold(f.q);
+    const withMusic = D.gymRoutines.filter(rs => rs.length).length;
+    const list = D.gymnasts.map((g, i) => i).filter(i => {
+      const g = D.gymnasts[i];
+      if (f.music && !D.gymRoutines[i].length) return false;
+      if (q && !fold(g[0]).includes(q) && !fold(g[1]).includes(q)) return false;
+      if (f.country && g[2] !== f.country) return false;
+      if (f.dec && !D.gymRoutines[i].some(r => decadeOk(D.routines[r][1], f.dec)) && !g[4].some(y => decadeOk(y, f.dec))) return false;
+      return true;
+    }).sort((a, b) => D.gymRoutines[b].length - D.gymRoutines[a].length || D.gymnasts[b][4].length - D.gymnasts[a][4].length || gName(a).localeCompare(gName(b)));
+    const countries = [...new Set(D.gymnasts.map(g => g[2]).filter(Boolean))].sort((a, b) => country(a).localeCompare(country(b)));
+    return `<h1>${esc(s.gymnasts)}</h1><p class="sub">${fmt(D.gymnasts.length)} ${esc(s.allGyms)} · ${withMusic} ${esc(s.gymWithMusic)}</p>
+      <div class="filters">
+        <label for="q-gyms" class="vh">${esc(s.searchName)}</label>
+        <input id="q-gyms" class="search" type="search" placeholder="${esc(s.searchName)}" value="${esc(f.q)}" autocomplete="off">
+        <label for="c-gyms" class="vh">${esc(s.allCountries)}</label>
+        <select id="c-gyms" class="pill"><option value="">${esc(s.allCountries)}</option>${countries.map(c => `<option value="${c}"${c === f.country ? ' selected' : ''}>${esc(country(c))}</option>`).join('')}</select>
+        <label for="d-gyms" class="vh">${esc(s.allDecades)}</label>
+        <select id="d-gyms" class="pill"><option value="0">${esc(s.allDecades)}</option>${[1960, 1970, 1980].concat(decades()).map(d => `<option value="${d}"${d === f.dec ? ' selected' : ''}>${decLabel(d)}</option>`).join('')}</select>
+        <button type="button" class="pill" data-only="1" aria-pressed="${f.music}">${bothKey('onlyMusic')}</button>
+      </div>
+      <p class="muted small">${esc(s.found)}: ${list.length}</p>
+      <div class="grid">${list.map(i => {
+        const rs = D.gymRoutines[i], ys = rs.map(r => D.routines[r][1]).filter(Boolean), split = {};
+        rs.forEach(r => { const a = D.routines[r][2]; split[a] = (split[a] || 0) + 1; });
+        if (!rs.length) return `<a class="card" href="#gymnast-${i}"><div class="t">${esc(gName(i))}</div>
+          <div class="muted small">${esc(country(D.gymnasts[i][2]))}${wcLine(i) ? ' · ' + esc(wcLine(i)) : ''}</div>
+          <div class="muted small" style="margin-top:10px">${esc(s.musicUnknown)}</div></a>`;
+        return `<a class="card" href="#gymnast-${i}"><div style="display:flex;justify-content:space-between;gap:8px"><span class="t">${esc(gName(i))}</span><span class="num">${rs.length}</span></div>
+          <div class="muted small">${esc(country(D.gymnasts[i][2]))}${ys.length ? ' · ' + Math.min(...ys) + '–' + Math.max(...ys) : ''}</div>
+          <div style="margin-top:12px">${splitBar(split)}</div></a>`;
+      }).join('')}</div>`;
+  }
+
+  function trackLine(v, e, title) {
+    const w = D.versions[v][0], perf = D.versions[v][1], name = wName(w), wt = D.works[w];
+    const extra = title && fold(title) !== fold(wt[0]) && fold(title) !== fold(wt[1]) && !ru() ? title : (e >= 0 ? D.excerpts[e][1] : '');
+    const by = [wt[4] === 'performer' ? '' : (ru() && wt[3] ? wt[3] : wt[2]), perf].filter(Boolean).join(' · ');
+    return `<div style="margin-top:6px"><a href="#work-${w}" style="font-weight:700">${esc(name)}</a>${extra ? `<div class="small">${esc(extra)}</div>` : ''}<div class="muted small">${esc(by)}</div></div>`;
+  }
+  function gymnast(i) {
+    const s = t(), g = D.gymnasts[i]; if (!g) return notFound();
+    const rs = D.gymRoutines[i], years = [...new Set(rs.map(r => D.routines[r][1]))].sort((a, b) => b - a);
+    const pick = ui.gym[i] || 0;
+    const shown = pick ? years.filter(y => y === pick) : years;
+    const wiki = g[3] ? ` · <a href="${esc(g[3])}" target="_blank" rel="noopener" style="text-decoration:underline">${esc(s.fromWiki)}</a>` : '';
+    const head = `<p class="muted small" style="margin-top:12px"><a href="#gymnasts">${esc(s.gymnasts)}</a> / ${esc(gName(i))}</p>
+      <h1 style="margin-top:6px">${esc(gName(i))}</h1>`;
+    if (!rs.length) return `${head}<p class="sub">${esc(country(g[2]))}${gOther(i) ? ' · ' + esc(gOther(i)) : ''}${wcLine(i) ? ' · ' + esc(wcLine(i)) : ''}${wiki}</p>
+      <section class="panel" style="max-width:640px"><h2>${esc(s.musicUnknown)}</h2><p class="muted" style="margin:0">${esc(g[3] ? s.noMusicNote : s.noArticle)}</p></section>`;
+    return `${head}
+      <p class="sub">${esc(country(g[2]))}${gOther(i) ? ' · ' + esc(gOther(i)) : ''} · ${years.length ? Math.min(...years) + '–' + Math.max(...years) : ''} · ${rs.length} ${esc(s.rou)}${wcLine(i) ? ' · ' + esc(wcLine(i)) : ''}${wiki}</p>
+      <div class="filters"><button type="button" class="pill" data-year="0" aria-pressed="${!pick}">${bothKey('all')}</button>${years.map(y => `<button type="button" class="pill" data-year="${y}" aria-pressed="${pick === y}">${y}</button>`).join('')}</div>
+      ${shown.map(y => `<section class="season"><h3>${y}</h3><div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr))">
+        ${rs.filter(r => D.routines[r][1] === y).sort((a, b) => D.routines[a][2] - D.routines[b][2]).map(r => {
+          const R = D.routines[r];
+          return `<div class="card routine" style="border-top-color:${color(R[2])}"><div class="app-label">${esc(appName(R[2]))}${R[3] ? ' · ' + esc(R[3]) : ''}</div>
+            ${R[5].map(([v, e, title]) => trackLine(v, e, title)).join('')}
+            ${R[6].length ? `<div class="muted small" style="margin-top:8px">${esc(s.events)}: ${esc(R[6].join(', '))}</div>` : ''}</div>`;
+        }).join('')}</div></section>`).join('')}`;
+  }
+
+  function music() {
+    const s = t(), f = ui.music, q = fold(f.q);
+    const list = D.order.filter(i => {
+      const w = D.works[i];
+      if (f.kind && w[5] !== f.kind) return false;
+      if (q && ![w[0], w[1], w[2], w[3], w[6]].some(x => fold(x).includes(q)) && !D.workTracks[i].some(([, v]) => fold(D.versions[v][1]).includes(q))) return false;
+      if (f.app >= 0 && !D.workStats[i].split[f.app]) return false;
+      if (f.dec && ![...D.workRoutines[i]].some(r => decadeOk(D.routines[r][1], f.dec))) return false;
+      return true;
+    });
+    const kinds = ['', 'classical', 'song', 'film', 'folk'];
+    return `<h1>${esc(s.music)}</h1><p class="sub">${fmt(D.works.length)} ${esc(s.works)} · ${esc(s.topNote)}</p>
+      <div class="filters">
+        <label for="q-music" class="vh">${esc(s.searchMusic)}</label>
+        <input id="q-music" class="search" type="search" placeholder="${esc(s.searchMusic)}" value="${esc(f.q)}" autocomplete="off">
+        ${kinds.map(k => `<button type="button" class="pill" data-kind="${k}" aria-pressed="${f.kind === k}">${k ? bothKey(k, 'kinds') : bothKey('all')}</button>`).join('')}
+        <label for="a-music" class="vh">${esc(s.allApp)}</label>
+        <select id="a-music" class="pill"><option value="-1">${esc(s.allApp)}</option>${[0, 1, 2, 3, 4].map(a => `<option value="${a}"${a === f.app ? ' selected' : ''}>${esc(appName(a))}</option>`).join('')}</select>
+        <label for="d-music" class="vh">${esc(s.allDecades)}</label>
+        <select id="d-music" class="pill"><option value="0">${esc(s.allDecades)}</option>${decades().map(d => `<option value="${d}"${d === f.dec ? ' selected' : ''}>${decLabel(d)}</option>`).join('')}</select>
+      </div>
+      <p class="muted small">${esc(s.found)}: ${fmt(list.length)}</p>
+      <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr))">${list.slice(0, f.shown).map(i => {
+        const st = D.workStats[i];
+        return `<a class="card" href="#work-${i}"><div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start"><span class="t">${esc(wName(i))}</span><span class="badge">${esc(s.kinds[D.works[i][5]])}</span></div>
+          <div class="muted small">${esc(wAuthor(i))}</div><div style="margin-top:10px">${splitBar(st.split)}</div>
+          <div class="small" style="margin-top:8px"><b>${st.g}</b> <span class="muted">${esc(s.gym)}</span> · <b>${st.n}</b> <span class="muted">${esc(s.rou)}</span></div></a>`;
+      }).join('')}</div>
+      ${list.length > f.shown ? `<button type="button" class="pill more" id="more-music">${esc(s.more)}</button>` : ''}`;
+  }
+
+  function work(i) {
+    const s = t(), w = D.works[i]; if (!w) return notFound();
+    const st = D.workStats[i], ex = ui.work.ex;
+    const tracks = D.workTracks[i].filter(x => ex < 0 || x[2] === ex);
+    const exCount = {}; D.workTracks[i].forEach(x => { if (x[2] >= 0) exCount[x[2]] = (exCount[x[2]] || 0) + 1; });
+    const vCount = {}; D.workTracks[i].forEach(x => { vCount[x[1]] = (vCount[x[1]] || new Set()).add(x[0]); });
+    const y0 = st.y0, y1 = st.y1, span = y1 - y0 + 1;
+    const cols = Array.from({ length: span }, (_, k) => y0 + k);
+    const dots = y => [...new Set(tracks.filter(x => D.routines[x[0]][1] === y).map(x => x[0]))].map(r => `<span style="background:${color(D.routines[r][2])}"></span>`).join('');
+    const other = ru() ? (w[1] ? w[0] : '') : w[1];
+    const from = w[6] ? ` · ${esc(w[6])}` : '';
+    const seen = new Set();
+    const rows = tracks.filter(x => !seen.has(x[0]) && seen.add(x[0])).sort((a, b) => D.routines[b[0]][1] - D.routines[a[0]][1]);
+    return `<p class="muted small" style="margin-top:12px"><a href="#music">${esc(s.music)}</a> / ${esc(wName(i))}</p>
+      <h1 style="margin-top:6px">${esc(wName(i))}</h1>
+      <p class="sub">${esc(wAuthor(i))} · ${esc(s.kinds[w[5]])}${from}${other ? ' · ' + esc(other) : ''}</p>
+      <div class="kpis">
+        <div class="panel kpi"><b>${st.g}</b><span class="muted">${esc(s.kpiG)}</span></div>
+        <div class="panel kpi"><b>${st.n}</b><span class="muted">${esc(s.kpiR)}</span></div>
+        <div class="panel kpi"><b>${st.versions}</b><span class="muted">${esc(s.kpiV)}</span></div>
+        <div class="panel kpi"><b>${y0 === y1 ? y0 : y0 + '–' + y1}</b><span class="muted">${esc(s.seasons)}</span></div>
+      </div>
+      <section class="panel"><h2>${esc(s.bySeason)}</h2><div class="scroll">
+        <div class="timeline" style="grid-template-columns:repeat(${span},minmax(0,1fr))" role="img" aria-label="${esc(s.bySeason)} ${y0}–${y1}">${cols.map(y => `<div>${dots(y)}</div>`).join('')}</div>
+        <div class="years" style="grid-template-columns:repeat(${span},minmax(0,1fr))">${cols.map(y => `<span>${span <= 12 || y % 4 === 0 ? y : ''}</span>`).join('')}</div></div>
+        <div class="row small" style="margin-top:12px">${[0, 1, 2, 3, 4].filter(a => st.split[a]).map(a => `<span style="display:flex;align-items:center;gap:6px"><span class="dot" style="background:${color(a)}"></span>${esc(appName(a))}</span>`).join('')}</div>
+      </section>
+      ${Object.keys(exCount).length ? `<div class="filters"><button type="button" class="pill" data-ex="-1" aria-pressed="${ex < 0}">${bothKey('all')}</button>${Object.keys(exCount).map(e => `<button type="button" class="pill" data-ex="${e}" aria-pressed="${ex === +e}">${esc(D.excerpts[e][1])} <span class="muted">${exCount[e]}</span></button>`).join('')}</div>` : ''}
+      <div class="row" style="margin-top:16px">
+        <section class="panel" style="flex:1 1 300px"><h2>${esc(s.versions)}</h2>
+          ${Object.keys(vCount).sort((a, b) => vCount[b].size - vCount[a].size).map(v => `<div class="list-row"><div>${esc(D.versions[v][1] || s.recNotStated)}${s.vt[D.versions[v][2]] ? ` <span class="badge">${esc(s.vt[D.versions[v][2]])}</span>` : ''}</div><span class="num">${vCount[v].size}</span></div>`).join('')}
+        </section>
+        <section class="panel" style="flex:2 1 460px"><div class="scroll"><table><thead><tr><th>${esc(s.gymnast)}</th><th>${esc(s.season)}</th><th>${esc(s.apparatus)}</th><th>${esc(s.excerpt)}</th><th>${esc(s.recording)}</th></tr></thead><tbody>
+          ${rows.map(([r, v, e]) => { const R = D.routines[r]; return `<tr><td><a href="#gymnast-${R[0]}" style="font-weight:700">${esc(gName(R[0]))}</a></td><td>${R[1]}</td>
+            <td><span style="display:inline-flex;align-items:center;gap:6px"><span class="dot" style="background:${color(R[2])}"></span>${esc(appName(R[2]))}</span></td>
+            <td class="muted">${esc(e >= 0 ? D.excerpts[e][1] : s.noExcerpt)}</td><td class="muted">${esc(D.versions[v][1] || '—')}</td></tr>`; }).join('')}
+        </tbody></table></div></section>
+      </div>`;
+  }
+
+  function rankings() {
+    const s = t(), f = ui.rank, R = f.mode === 'routines';
+    const ok = r => decadeOk(D.routines[r][1], f.dec) && (f.app < 0 || D.routines[r][2] === f.app);
+    const boards = [new Map(), new Map(), new Map(), new Map()];
+    const add = (m, key, label, r) => { if (!key) return; const x = m.get(key) || { label, g: new Set(), n: new Set() }; x.g.add(D.routines[r][0]); x.n.add(r); m.set(key, x); };
+    D.routines.forEach((Ro, r) => {
+      if (!ok(r)) return;
+      Ro[5].forEach(([v]) => {
+        const w = D.versions[v][0], W = D.works[w];
+        add(boards[0], 'w' + w, `<a href="#work-${w}">${esc(wName(w))}</a>`, r);
+        D.versions[v][1].split(' / ').filter(Boolean).forEach(p => add(boards[1], p, esc(p), r));
+        if (W[4] === 'composer' && W[2]) add(boards[2], W[2], esc(ru() && W[3] ? W[3] : W[2]), r);
+        if (W[6]) add(boards[3], W[6], esc(W[6]), r);
+      });
+    });
+    const top = m => [...m.values()].sort((a, b) => R ? b.n.size - a.n.size || b.g.size - a.g.size : b.g.size - a.g.size || b.n.size - a.n.size).slice(0, 10);
+    return `<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px">
+        <h1>${esc(s.rankings)}</h1>
+        <div class="filters" style="margin:0">
+          <div class="lang" role="group" aria-label="${esc(s.countBy)}" style="margin:0">
+            <button type="button" data-mode="gymnasts" aria-pressed="${!R}">${bothKey('byGym')}</button>
+            <button type="button" data-mode="routines" aria-pressed="${R}">${bothKey('byRou')}</button>
+          </div>
+          <label for="d-rank" class="vh">${esc(s.allDecades)}</label>
+          <select id="d-rank" class="pill"><option value="0">${esc(s.allDecades)}</option>${decades().map(d => `<option value="${d}"${d === f.dec ? ' selected' : ''}>${decLabel(d)}</option>`).join('')}</select>
+          <label for="a-rank" class="vh">${esc(s.allApp)}</label>
+          <select id="a-rank" class="pill"><option value="-1">${esc(s.allApp)}</option>${[0, 1, 2, 3, 4].map(a => `<option value="${a}"${a === f.app ? ' selected' : ''}>${esc(appName(a))}</option>`).join('')}</select>
+        </div></div>
+      <p class="sub">${esc(R ? s.exR : s.exG)}</p>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))">${boards.map((m, k) => {
+        const items = top(m), max = items.length ? (R ? items[0].n.size : items[0].g.size) : 1;
+        return `<section class="panel"><h2 style="font-size:20px;margin:0">${esc(s.boards[k][0])}</h2><p class="muted small" style="margin:4px 0 12px">${esc(s.boards[k][1])}</p>
+          ${items.map((x, j) => { const main = R ? x.n.size : x.g.size, other = R ? x.g.size : x.n.size;
+            return `<div class="rank"><span class="muted small">${j + 1}</span><span style="min-width:0;font-weight:600">${x.label}<span class="meter" style="width:${Math.round(main / max * 100)}%"></span></span>
+              <span class="num">${main}<span class="muted small" style="display:block;font-weight:400">${other} ${esc(R ? s.gym : s.rou)}</span></span></div>`; }).join('') || `<p class="muted">${esc(s.nothing)}</p>`}</section>`;
+      }).join('')}</div>`;
+  }
+  const notFound = () => `<h1>${esc(t().notFound)}</h1><p><a href="#home" style="text-decoration:underline">${esc(t().back)}</a></p>`;
+
+  // ---------- routing and events ----------
+  function route() {
+    const h = (location.hash || '#home').slice(1);
+    const m = h.match(/^(gymnast|work)-(\d+)$/);
+    const page = m ? m[1] : (['home', 'gymnasts', 'music', 'rankings'].includes(h) ? h : (h ? 'missing' : 'home'));
+    const tab = { home: 'home', gymnasts: 'gymnasts', gymnast: 'gymnasts', music: 'music', work: 'music', rankings: 'rankings' }[page];
+    document.getElementById('tabs').innerHTML = ['home', 'gymnasts', 'music', 'rankings'].map(k => `<a class="tab" href="#${k}"${k === tab ? ' aria-current="page"' : ''}>${bothKey(k)}</a>`).join('');
+    document.documentElement.lang = lang;
+    view.innerHTML = page === 'home' ? home() : page === 'gymnasts' ? gymnasts() : page === 'music' ? music() : page === 'rankings' ? rankings()
+      : page === 'gymnast' ? gymnast(+m[2]) : page === 'work' ? work(+m[2]) : notFound();
+    if (page === 'home') homeSearch();
+    document.getElementById('foot').innerHTML = `<span>${esc(t().source)}</span><span>${esc(t().built)}: ${esc(D.built)}</span>`;
+    document.title = 'RG Music Catalog';
+    ['en', 'ru'].forEach(l => document.getElementById('lang-' + l).setAttribute('aria-pressed', String(lang === l)));
+  }
+  function rerender(focusId) {
+    const el = focusId && document.getElementById(focusId), pos = el && el.selectionStart;
+    route();
+    const again = focusId && document.getElementById(focusId);
+    if (again) { again.focus(); if (pos != null && again.setSelectionRange) again.setSelectionRange(pos, pos); }
+  }
+  view.addEventListener('input', e => {
+    const id = e.target.id;
+    if (id === 'q-home') { ui.home.q = e.target.value; homeSearch(); }
+    if (id === 'q-gyms') { ui.gyms.q = e.target.value; rerender(id); }
+    if (id === 'q-music') { ui.music.q = e.target.value; ui.music.shown = 60; rerender(id); }
+  });
+  view.addEventListener('change', e => {
+    const id = e.target.id, v = e.target.value;
+    if (id === 'c-gyms') ui.gyms.country = v;
+    else if (id === 'd-gyms') ui.gyms.dec = +v;
+    else if (id === 'a-music') { ui.music.app = +v; ui.music.shown = 60; }
+    else if (id === 'd-music') { ui.music.dec = +v; ui.music.shown = 60; }
+    else if (id === 'd-rank') ui.rank.dec = +v;
+    else if (id === 'a-rank') ui.rank.app = +v;
+    else return;
+    rerender(id);
+  });
+  view.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    const h = (location.hash || '').match(/^#(gymnast|work)-(\d+)$/);
+    if (b.dataset.year !== undefined && h) { ui.gym[+h[2]] = +b.dataset.year; route(); }
+    else if (b.dataset.kind !== undefined) { ui.music.kind = b.dataset.kind; ui.music.shown = 60; route(); }
+    else if (b.dataset.ex !== undefined) { ui.work.ex = +b.dataset.ex; route(); }
+    else if (b.dataset.mode) { ui.rank.mode = b.dataset.mode; route(); }
+    else if (b.dataset.only) { ui.gyms.music = !ui.gyms.music; route(); }
+    else if (b.id === 'more-music') { ui.music.shown += 60; route(); }
+  });
+  window.addEventListener('hashchange', () => { ui.work.ex = -1; route(); window.scrollTo(0, 0); });
+  ['en', 'ru'].forEach(l => document.getElementById('lang-' + l).addEventListener('click', () => {
+    lang = l; try { localStorage.setItem('rg-lang', l); } catch (e) {} if (D) route();
+  }));
+
+  // index.html (GitHub Pages, a file opened from disk) carries the data inline; the claude.ai page reads data.json
+  (window.RG_DATA ? Promise.resolve(window.RG_DATA) : fetch('data.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }))
+    .then(d => { D = index(d); route(); })
+    .catch(() => { view.innerHTML = '<p>The catalogue data could not be loaded (data.json). Reload the page to try again.</p>'; });
+})();
+</script>

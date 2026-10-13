@@ -1,4 +1,4 @@
-"""Polite client for the MediaWiki Action API (en.wikipedia.org).
+"""Polite client for the MediaWiki Action API (en.wikipedia.org by default; any language with ``lang``).
 
 Follows the Wikimedia API etiquette:
   * a descriptive User-Agent with a way to contact the author;
@@ -26,6 +26,10 @@ import requests
 log = logging.getLogger(__name__)
 
 API_URL = "https://en.wikipedia.org/w/api.php"
+
+
+def api_url(lang: str) -> str:
+    return f"https://{lang}.wikipedia.org/w/api.php"
 DEFAULT_CONTACT = "https://github.com/your-username/rg-music-catalog"
 
 
@@ -37,10 +41,11 @@ class WikiPage:
     revid: int
     html: str
     fetched_at: str
+    lang: str = "en"
 
     @property
     def url(self) -> str:
-        return "https://en.wikipedia.org/wiki/" + self.title.replace(" ", "_")
+        return f"https://{self.lang}.wikipedia.org/wiki/" + self.title.replace(" ", "_")
 
 
 class WikiError(RuntimeError):
@@ -48,7 +53,13 @@ class WikiError(RuntimeError):
 
 
 def _cache_key(title: str) -> str:
-    return re.sub(r"[^A-Za-z0-9._-]+", "_", title.strip())
+    """File name for a cached page. ASCII titles keep the original readable key; any other title (Cyrillic, Greek,
+    Chinese...) adds a hash of the title, since dropping its letters would make every such title the same file."""
+    key = re.sub(r"[^A-Za-z0-9._-]+", "_", title.strip())
+    if title.strip().isascii():
+        return key
+    import hashlib
+    return f"{key.strip('_')[:40]}_{hashlib.sha1(title.strip().encode('utf-8')).hexdigest()[:12]}".lstrip("_")
 
 
 class WikiClient:
@@ -59,8 +70,11 @@ class WikiClient:
         max_retries: int = 5,
         timeout: float = 30.0,
         contact: str | None = None,
+        lang: str = "en",
     ) -> None:
-        self.cache_dir = Path(cache_dir)
+        self.lang = lang
+        # English pages keep the original cache layout; other languages get a folder of their own (data/raw/es/...)
+        self.cache_dir = Path(cache_dir) if lang == "en" else Path(cache_dir) / lang
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.min_delay = min_delay
         self.max_retries = max_retries
@@ -84,7 +98,7 @@ class WikiClient:
         for attempt in range(1, self.max_retries + 1):
             self._throttle()
             try:
-                resp = self.session.get(API_URL, params=params, timeout=self.timeout)
+                resp = self.session.get(api_url(self.lang), params=params, timeout=self.timeout)
             except requests.RequestException as exc:
                 delay = 2**attempt
                 log.warning("network error (%s), retry %d in %ss", exc, attempt, delay)
@@ -141,6 +155,7 @@ class WikiClient:
             revid=parsed["revid"],
             html=parsed["text"],
             fetched_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            lang=self.lang,
         )
         html_path.write_text(page.html, encoding="utf-8")
         meta = {k: v for k, v in page.__dict__.items() if k != "html"}
@@ -162,4 +177,30 @@ class WikiClient:
                 final = redirect.get(final, final)
                 page = pages.get(final, {})
                 out[title] = (final, None if page.get("missing") else page.get("pageid"))
+        return out
+
+    def langlinks(self, titles: list[str], batch: int = 50) -> dict[str, dict[str, str]]:
+        """Map every title (after redirects) to {language code: title of the same article in that language}."""
+        out: dict[str, dict[str, str]] = {}
+        unique = list(dict.fromkeys(titles))
+        for i in range(0, len(unique), batch):
+            chunk = unique[i:i + batch]
+            params = {"action": "query", "titles": "|".join(chunk), "redirects": "1", "prop": "langlinks", "lllimit": "max"}
+            moved: dict[str, str] = {}
+            while True:
+                data = self._get(params)
+                query = data["query"]
+                for m in query.get("normalized", []) + query.get("redirects", []):
+                    moved[m["from"]] = m["to"]
+                for page in query.get("pages", []):
+                    links = out.setdefault(page["title"], {})
+                    for link in page.get("langlinks", []):
+                        links[link["lang"]] = link["title"]
+                if "continue" not in data:
+                    break
+                params = {**params, **data["continue"]}
+            for title in chunk:  # also answer under the title as asked
+                final = moved.get(moved.get(title, title), moved.get(title, title))
+                if final != title and final in out:
+                    out[title] = out[final]
         return out

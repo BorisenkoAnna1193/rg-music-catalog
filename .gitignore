@@ -7,3 +7,6 @@ data/raw/
 .env
 .DS_Store
 .claude/
+
+# built from the CSV layers by python -m rg_music.db
+data/catalog.sqlite

@@ -265,6 +265,9 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   Years are ignored ("Czech Republic" in 1971 stays CZE); year-vs-existence is not validated yet.
 - Same person under two countries (successor states): country = latest championship; entries that
   are not countries (Individual Neutral Athletes) are skipped when choosing it.
+- AIN is never a country (owner, 2026-10-13): gymnasts who competed only as AIN get their real country from
+  `data/manual/gymnast_country_overrides.csv` (Maria Borisova, Sofia Ilteriakova → RUS; Darya Viarenich → BLR), applied
+  in `db.py`; without an override the country stays empty.
 - Owner-typed cells in `wc_name_review_fig.csv` (empty `decision_basis`) are never overwritten.
 - CSVs the owner opens in Excel are written as utf-8-sig (BOM), otherwise Excel garbles diacritics.
 - **Owner review sheets live in Google Drive**, folder `rg_music` (id `1HOkycl3RAW9tFOP0Z5_-uhVUE0t2JLET`): the owner
@@ -333,6 +336,44 @@ Decided to offer English and Russian. What gets a Russian version:
   titles or performers (1872 distinct artist strings); keep Cyrillic song titles as written.
   Effort about 1-1.5 days, after the `work`/`artist` tables exist (translation belongs on those
   entities as `name_ru`, not on raw text).
+
+## MVP (2026-10-13)
+- `rg_music/db.py` → `data/catalog.sqlite` (git-ignored, rebuilt from the CSV layers; FK-checked): country, apparatus,
+  gymnast, routine, routine_event, work (+ name_ru, author_ru, author_type, from_title, has_lyrics), version, excerpt,
+  track. Russian names: `data/manual/work_names_ru.csv` (55 works) and `composer_names_ru.csv` (61 composers), only the
+  ones Claude is sure of (source `claude`); the owner reviews and completes them later.
+- `rg_music/site_export.py` → `site/data.json` (compact, references by list position, ~460 KB) and `site/index.html`
+  (= `site/app.html` wrapped into a full document). `site/app.html` is the whole static site (vanilla JS, hash routes
+  #home #gymnasts #gymnast-N #music #work-N #rankings, EN/RU, light only like the mockups, both ranking modes); it computes every
+  statistic in the browser. Pipeline end: `python -m rg_music.db && python -m rg_music.site_export`.
+- Published: claude.ai artifact https://claude.ai/artifact/2Hz5iyZiwAmbv2N35ManNv (republish `site/app.html` with
+  files {"data.json": "site/data.json"}); GitHub Pages via `.github/workflows/pages.yml` once a GitHub repo exists.
+
+## Second language of Wikipedia (probe 2026-10-13, not integrated yet)
+- `rg_music/native_wiki.py` probes the gymnast's home-language Wikipedia (+ Russian for ex-USSR) for music tables →
+  `data/interim/native_wiki_probe.csv`. Result: 297 of 533 have a home-language article, 25 with a music table;
+  15 gymnasts would get music for the first time (+~190 rows; 12 Spanish: Almudena Cid 55, Jennifer Colino 26,
+  Esther Domínguez 21...; Alina Kabaeva from ru; Shin Soo-ji from ko), 6 more seasons elsewhere. Other languages add
+  almost nothing.
+- Plan (owner agreed in principle): English first, home language only fills missing routines (same rule as the
+  competition-table merge), conflicts kept as flagged rows. **Spanish content must be translated to English** (the
+  site is EN/RU): titles and credit words ("de", "compuesto por"), apparatus (Aro, Pelota, Mazas, Cinta, Cuerda).
+- WikiClient now takes `lang` (cache in data/raw/<lang>/) and has `langlinks()`; cache keys of non-ASCII titles carry
+  a hash (they used to collide: every Cyrillic title was one file).
+
+## Dashboard decisions (owner, 2026-10-13)
+- Style: direction **D · Apparatus** (Manrope, rounded cards, pill tabs, one colour per apparatus: hoop #2F5BEA, ball
+  #E8833A, clubs #0E9F8E, ribbon #B24BD6, rope #8A8D96). Mockups: claude.ai artifact
+  https://claude.ai/artifact/PfpVE3fW8DyDnPuQNZm2Kv (pages "D · Apparatus — EN" / "— RU"; EN/RU switch on every screen).
+- Tabs: Home, Gymnasts, Gymnast page, Music, Work page, Rankings (music, performers, composers, films).
+- **All gymnasts are shown** (owner, 2026-10-13): all 1395 World Championship gymnasts are in the database and on the
+  site; without known music a card / page shows country, World Championship years and "music not known yet" (with or
+  without a Wikipedia article). Filter "Only with known music" is off by default.
+- Rankings count **both** by gymnasts and by routines (switch). Routines = every routine row: the same music on another
+  apparatus or in the next season counts again ("how often it was heard"); Carmen leads by routines (22), Spartacus
+  by gymnasts (16).
+- RU: UI, countries, apparatus, classical + folk titles and composers translated; pop titles, performers, films stay;
+  gymnasts without a Russian name are shown in Latin.
 
 ## Ideas and open questions (not decided yet)
 - **Genres instead of classical / not classical**: after the MVP, extend `is_classical` to a genre (classical / folk /
