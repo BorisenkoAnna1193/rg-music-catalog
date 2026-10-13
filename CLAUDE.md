@@ -278,6 +278,16 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 - Result: `data/interim/wc_gymnasts_final.csv` (1395 people, each with `country_id`).
 
 ## Next
+Owner's additions (2026-10-13):
+- **Junior / senior periods.** Split a gymnast's routines into junior and senior seasons and let every music statistic
+  (rankings, classical share, music lists) filter by it. Possible evidence: birth year (Wikidata P569) against the FIG
+  age limit of that period (the limits changed over the years: check them), and labels in the source ("(Individual
+  júnior)" in the Spanish tables, "Junior" in English ones). To decide with the owner: the age rule per period.
+- **Group routines.** A catalogue of group exercises: no gymnast names, the team = country + year + apparatus
+  combination (5 hoops, 3 ribbons + 2 balls...) + music; members optional. The owner is looking for a source with group
+  music. Schema idea: `group_routine(country_id, year, apparatus_combo, music...)` sharing work / version / track.
+- YouTube stage 2 postponed (owner): search links only for now.
+
 0. Matching, what is left: (a) ballet families are DONE via `data/manual/work_aliases.csv` (Spartacus, Gayaneh,
    Masquerade, Swan Lake, Nutcracker, Sleeping Beauty, Giselle, Scheherazade, Amirov's One Thousand and One Nights,
    Don Quixote; each ballet's excerpts go into its own ballet, ballets are never merged with each other); (b) accept the 37 "high"
