@@ -8,7 +8,16 @@ A catalog of music used by rhythmic gymnasts, built from English Wikipedia, answ
 
 The owner talks in Russian; code, comments, README and commit messages are in English.
 
-## Current state (steps 1 and 2 done)
+## Status (2026-10-19) — start here
+- **MVP is published**: https://borisenkoanna1193.github.io/rg-music-catalog/ (public, GitHub Pages) and
+  https://claude.ai/artifact/2Hz5iyZiwAmbv2N35ManNv (private). Repo https://github.com/BorisenkoAnna1193/rg-music-catalog,
+  `main` in sync, 213 tests pass. 1,395 gymnasts (185 with music), 3,674 routines with music, 2,438 works, 2,772 versions.
+- **Next session plan, pending owner actions and the proposed order: `docs/plan_next_session.md`.** Short version:
+  PayPal Donate link → `SUPPORT_URL` in `site/app.html`; Spanish + Russian Wikipedia as a second source (translated to
+  English); Russian names review; genres for "Other"; junior/senior split; group routines.
+- The owner works in Russian, reviews tables in Google Sheets (Drive folder rg_music), not in CSV files.
+
+## Current state (module by module; numbers as of each step)
 - `rg_music/wiki_client.py` – polite MediaWiki API client (UA with contact from
   `WIKI_CONTACT`, 1 req/s, maxlag, retries with Retry-After, redirects, revid, disk cache
   in `data/raw/`, git-ignored).
@@ -136,10 +145,10 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 - Tests: `python -m pytest -q` (fixtures mimic real layouts).
 
 ## Documentation map
-- `docs/db_schema.md` – planned SQLite schema (two ER diagrams, Mermaid, rendered by GitHub).
-- `docs/pipeline.md` – the process as it went: steps in order, forks, owner decisions, the scripts behind each step.
-- `docs/plan_morning.md` – the plan for the next session: pending owner decisions and the Russian-version checks
-  (gymnast names; classical works and composers only, never pop).
+- `docs/db_schema.md` – SQLite schema (ER diagrams, Mermaid; the MVP tables are built by `rg_music/db.py`).
+- `docs/pipeline.md` – the process as it went: steps 1–18 in order, forks, owner decisions, the scripts behind each step,
+  and the full rebuild order.
+- `docs/plan_next_session.md` – where we stopped, what waits for the owner, the proposed order of the next tasks.
 - `docs/case_decisions.txt` – decisions in Step / substep / action / result / tech / file_names form (portfolio case).
 
 ## Decisions made with the owner
@@ -201,7 +210,7 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   "Limelight Theme" = one work, Chaplin's theme from the film (key `limelight chaplin`, 5 gymnasts); Billy Vaughn,
   André Rieu etc. are versions.
 
-## Decisions for the `work` table (owner, 2026-10-07; not implemented yet)
+## Decisions for the `work` table (owner, 2026-10-07; implemented 2026-10-12)
 - Fields: `name_en`, `name_ru`, `author_en`, `author_ru`, `author_type` (`composer` / `performer` / `folk` /
   `unknown`), `author_source` (owner / rule / musicbrainz / credit). Empty `name_ru`/`author_ru` = show the English one.
   The performer of a given routine stays on the track, not on the work. `author_type` also drives checks (a
@@ -239,7 +248,7 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 - Kanaeva 2008 Clubs "LA Lights" "(same music as CariPrato 2007)" → expand to "Song #1" by Serebro (with a note).
 - A cell that says the music is unknown ("????", Bezzoubenko) → no track title, status `unknown`.
 
-## FIG rule on music with words (owner, 2026-10-08; not implemented yet)
+## FIG rule on music with words (owner, 2026-10-08; implemented 2026-10-12 as instrumental versions)
 - Before 2013 no music with words; 2013-2016 words allowed in 1 of the 4 routines of a season; 2017-2021 in 2 of 4;
   from 2022 no limit. So a pop song in a pre-2013 routine was an instrumental / remix / vocalise version even when the
   source credits the original singer ("Feeling Good by Muse", Nazarenkova 2012).
@@ -288,17 +297,16 @@ Owner's additions (2026-10-13):
   music. Schema idea: `group_routine(country_id, year, apparatus_combo, music...)` sharing work / version / track.
 - YouTube stage 2 postponed (owner): search links only for now.
 
-0. Matching, what is left: (a) ballet families are DONE via `data/manual/work_aliases.csv` (Spartacus, Gayaneh,
-   Masquerade, Swan Lake, Nutcracker, Sleeping Beauty, Giselle, Scheherazade, Amirov's One Thousand and One Nights,
-   Don Quixote; each ballet's excerpts go into its own ballet, ballets are never merged with each other); (b) accept the 37 "high"
-   composer suggestions, review "probable"; (c) 23 pairs in `work_merge_review.csv` (short or generic titles,
-   different numbers, roman numerals "1"/"I"); (d) "Carmen"-type clusters where the credits disagree
-   (`artist_check = different_authors`): same title, different song; (e) `work`/`artist` tables in the DB.
-1. Owner review of `tracks.csv` + `overrides.csv` mechanism.
-2. Second source: rgforum.no music list (archived on Wayback, last snapshot ~2022; the
-   live site does not resolve). Check ToS/robots, 1 req/s; use it to cross-check Wikipedia
-   and to enrich `no_credit` tracks. LLM fallback only if rules prove insufficient.
-3. SQLite schema + loader.
+Open work (details and order in `docs/plan_next_session.md`):
+1. Home-language Wikipedia as a second source: Spanish (12 gymnasts) and Russian (Kabaeva) tables, translated to
+   English, merged by the competition-table rule (English first, conflicts flagged).
+2. Russian names: owner review of the 55 works / 61 composers Claude translated, then the rest of classical and folk.
+3. 122 popular works with an unknown author (sheet `work_authors_review`), genres for "Other" (jazz, tango, film).
+4. Junior / senior split; group routines (above).
+5. Later: rgforum.no archive (check ToS/robots, 1 req/s), YouTube stage 2, typo-tolerant search on the site,
+   23 pairs in `work_merge_review.csv` (short titles, roman numerals), Russian Wikipedia for ex-USSR gymnasts.
+Done since the plan was first written: ballet families, work/version model, MusicBrainz evidence, owner reviews,
+authors, SQLite, the site.
 
 Known source errors worth catching in validation: Averina 2015 "Giselle" attributed to
 Tchaikovsky (it is Adam); "Mvrica" (Mrvica); Kudryavtseva 2016 ball "from Toy Story 4"

@@ -49,10 +49,25 @@ flowchart TD
     SUG[("composer_suggestions.csv<br/>на подтверждение")]:::data
   end
 
-  subgraph F5["Фаза 5 · В плане"]
+  subgraph F5["Фаза 5 · Версии, MusicBrainz и проверка владелицей"]
+    S13["<b>13 · Разные авторы = разные произведения,</b><br/>пока нет доказательства; версии исполнителей<br/>works.py --resolve"]:::step
+    S14["<b>14 · Доказательства из MusicBrainz</b><br/>запись → произведение<br/>mb_works.py"]:::step
+    R3{{"Проверка владелицей в Google Таблице<br/>work_split_review → work_review_decisions.csv"}}:::owner
+    S15["<b>15 · Авторы, «из фильма», есть ли слова</b><br/>work_authors.py"]:::step
+    R4{{"Проверка авторов в Google Таблице<br/>work_authors.csv + corrections"}}:::owner
+    V[("works.csv · versions.csv<br/>2 438 произведений · 2 772 версии")]:::data
+  end
+
+  subgraph F6["Фаза 6 · MVP"]
+    DB["<b>16 · SQLite</b> только из проверенного слоя<br/>db.py → data/catalog.sqlite"]:::step
+    EXP["<b>17 · Данные для сайта</b><br/>site_export.py → site/data.json, index.html"]:::step
+    DASH["<b>18 · Сайт EN/RU</b> (стиль D)<br/>site/app.html → GitHub Pages + claude.ai"]:::step
+  end
+
+  subgraph F7["Фаза 7 · В плане"]
+    NAT["Родная Википедия гимнастки<br/>(испанская, русская; разведка native_wiki.py)"]:::planned
     RGF["Второй источник<br/>rgforum.no (архив)"]:::planned
-    DB["<b>13 · Загрузка в SQLite</b><br/>только проверенные данные"]:::planned
-    DASH["<b>14 · Дашборд EN и RU</b><br/>фильтры, плашки, ссылки YouTube"]:::planned
+    JR["Юниоры / взрослые,<br/>групповые упражнения"]:::planned
   end
 
   WP --> S1
@@ -96,10 +111,22 @@ flowchart TD
   S12 -.-> SUG
   SUG -.->|"принять надёжные"| S10
 
-  RGF -.->|"новый источник"| S7
-  W --> DB
+  W --> S13
+  S13 --> S14
+  S14 -->|"склейки по MusicBrainz"| S13
+  S13 --> R3
+  R3 -->|"решения"| S13
+  S13 --> S15
+  S15 --> R4
+  R4 --> V
+  V --> DB
   FIN --> DB
-  DB --> DASH
+  DB --> EXP
+  EXP --> DASH
+
+  NAT -.->|"новый источник"| S7
+  RGF -.->|"новый источник"| S7
+  JR -.-> DB
 
   classDef src fill:#e9eef0,stroke:#5a6e72,color:#16282b
   classDef data fill:#ffffff,stroke:#5a6e72,color:#16282b
@@ -126,10 +153,19 @@ flowchart TD
 | 10 | Произведения, проход 2: фрагменты, опечатки, правила владелицы | works.py --resolve · work_aliases.csv | track_works.csv, works.csv, work_merge_review.csv |
 | 11 | Признак «классика» (1 или 0) | classical.py · classical_composers.csv | works.csv (is_classical, classical_basis) |
 | 12 | Композиторы как предложения из MusicBrainz | composers.py | composer_suggestions.csv |
-| 13–14 | Загрузка в SQLite и дашборд (в плане) | — | — |
+| 13 | Одно название с разными авторами = разные произведения до доказательства; версии (исполнитель как в источнике) | works.py --resolve | versions.csv, work_splits.csv |
+| 14 | Доказательства из MusicBrainz: запись → произведение, автор в ячейке, исполнитель среди записей | mb_works.py | work_mb_links.csv, work_mb_proposals.csv |
+| 14а | Проверка разделённых названий владелицей (Google Таблица) | work_review.py --import | data/manual/work_review_decisions.csv |
+| 15 | Авторы, «из фильма», есть ли слова; проверка владелицей; правило FIG (до 2013 без слов) | work_authors.py (--import) | work_author_proposals.csv → data/manual/work_authors.csv, work_author_corrections.csv |
+| 16 | SQLite только из проверенного слоя | db.py | data/catalog.sqlite (в git не хранится) |
+| 17 | Данные для сайта | site_export.py | site/data.json, site/index.html |
+| 18 | Сайт EN/RU, публикация | site/app.html · .github/workflows/pages.yml | GitHub Pages, claude.ai |
+| — | Разведка: родная Википедия гимнастки | native_wiki.py | native_wiki_probe.csv |
 
 Branches and loops:
 - Step 3 starts after step 2 of the first run: a bigger gymnast list was needed (the loop back is step 6 on 533 gymnasts).
 - Step 4 runs only for names the review sheet marks as disputed (a fork).
 - Six ambiguous music cells: manual split chosen, the LLM module (`llm_parse.py`) was written and tested but not used.
 - Step 10 loops with the owner's rules (`work_aliases.csv`); composer suggestions (step 12) are not applied until accepted.
+- Steps 13–14 loop: split by credit → MusicBrainz evidence → join; what has no evidence goes to the owner's sheet (14а).
+- Order of a full rebuild after step 8: `works` → `works --resolve` → `mb_works` → `works --resolve` → `db` → `site_export`.
