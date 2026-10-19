@@ -378,6 +378,9 @@ Decided to offer English and Russian. What gets a Russian version:
 - Git: commits use the GitHub noreply address 152020947+BorisenkoAnna1193@users.noreply.github.com (history rewritten
   before the first push; the old history is only in the local branch `backup-before-email-rewrite`, never pushed).
   Pushing uses the key ~/.ssh/id_ed25519_github (~/.ssh/config, Host github.com).
+  **Never `git push --all` / `--mirror`** (owner, 2026-10-19): only main is pushed. Enforced locally by deny rules in
+  `.claude/settings.json` and by `.git/hooks/pre-push` (refuses any ref but main and any commit not made with the noreply
+  address); neither file is in the repository, so a fresh clone needs them again.
 
 ## Second language of Wikipedia (step 19, integrated 2026-10-19)
 - `rg_music/native_wiki.py` probes the gymnast's home-language Wikipedia (+ Russian for ex-USSR) for music tables →
