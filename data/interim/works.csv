@@ -72,6 +72,7 @@ ninja,Ninja,,3,6,6,1,2008,2022,,1,Maxime Rodriguez (6),same_author,0,default,,un
 rise,Rise,,3,6,6,1,2005,2023,,1,Safri Duo (6),same_author,0,default,,unknown,,,,,,proposal
 turandot,Turandot,,3,6,6,1,2007,2018,Nessun dorma (4),2,Giacomo Puccini (5),same_author,1,composer,Giacomo Puccini,composer,Giacomo Puccini,,,,yes,rule
 bensonhurst blues,Bensonhurst Blues,,3,5,5,1,2020,2023,,1,Oscar Benton (5),same_author,0,default,,performer,,,,,yes,proposal
+black cat white cat,"Black Cat, White Cat",,3,5,5,3,2001,2014,Bubamara (ladybug) (1),2,"Nele Karajlić, Vojislav Aralica & Dejan Sparavalo (2) | Goran Bregovic (2) | Dejan Sparavalo (1)",different_authors,0,default,,,,,,,,
 california dreamin,California Dreamin',,3,5,5,2,2019,2026,,2,Sia (2) | 33Tours (2) | 33 Tours (1),different_authors,0,default,,performer,,,,,yes,proposal
 circle of life,Circle Of Life,,3,5,5,3,2019,2025,,3,"Carmen Twillie, Lebo M (3) | Swingrowers, District 78, J Balvin & Skrillex (1) | Caba and Lion King (1)",different_authors,0,default,,performer,,,,,yes,proposal
 fanatico master,Fanatico Master,,3,5,5,1,2011,2021,,1,John Corigliano / Edvin Marton & Ari Zakaryan (5),same_author,0,default,,composer,Edvin Marton & Ari Zakaryan,,,,,owner
@@ -179,7 +180,6 @@ all by myself,All By Myself,,2,3,3,2,2016,2023,,1,Larry Dalton (2) | Celine Dion
 another cha cha,Another Cha Cha,,2,3,3,1,2014,2016,,1,Santa Esmeralda (3),same_author,0,default,,performer,,,,,,proposal
 attack,Attack,,2,3,3,1,2002,2006,,1,Hans Zimmer (3),same_author,0,default,,unknown,,,,,,proposal
 black betty,Black Betty,,2,3,3,1,2020,2026,,1,Ram Jam (3),same_author,0,default,,folk,folk music,,,,yes,proposal
-black cat white cat ~ nele karajlic vojislav aralica dejan sparavalo,"Black Cat, White Cat",,2,3,3,2,2001,2014,Bubamara (ladybug) (1),2,"Nele Karajlić, Vojislav Aralica & Dejan Sparavalo (2) | Dejan Sparavalo (1)",same_author,0,default,,,,,,,,
 boat chase,Boat Chase,,2,3,3,1,2009,2019,,1,John Powell (3),same_author,0,default,,composer,John Powell,,,,,proposal
 brothers in arms,Brothers in Arms (Extended Version),,2,3,3,1,2020,2025,,2,Junkie XL (3),same_author,0,default,,composer,Junkie XL,,,,,proposal
 buleria,Buleria,,2,3,3,1,2016,2017,,1,David Bisbal (3),same_author,0,default,,unknown,,,,,,proposal
@@ -222,6 +222,7 @@ lovely,Lovely,,2,3,3,2,2022,2026,,2,"Lauren Babic & Jordan Radvansky (2) | Billi
 malaguena lecuona,Malagueña,Ernesto Lecuona,2,3,3,1,2018,2021,,1,Stanley Black (3),same_author,0,default,,composer,Ernesto Lecuona,,,,,rule
 mas que nada,Mas que nada,,2,3,3,3,2012,2016,,3,Brasil '66 & Sergio Mendes (1) | Chilled Jazz Masters (1),different_authors,0,default,,performer,,,,,yes,proposal
 maybe i maybe you,Maybe I Maybe You,,2,3,3,1,2014,2024,,1,Scorpions (3),same_author,0,default,,performer,,,,,yes,proposal
+memory,Memory,,2,3,3,2,1984,2026,,1,Joseph William Morgan (2) | Andrew Lloyd Webber (1),different_authors,0,default,,,,,,,,
 mesecina,Mesecina,,2,3,3,1,1998,2026,,1,Goran Bregović (3),same_author,0,default,,,,,,,,
 mystic moon,Mystic Moon,,2,3,3,1,2002,2011,,2,Bowfire (3),same_author,0,default,,unknown,,,,,,proposal
 never tear us apart,Never Tear Us Apart,,2,3,3,2,2024,2026,,1,Bishop Briggs (2) | Never Tear Us Apart (1),different_authors,0,default,,performer,,,,,yes,proposal
@@ -544,7 +545,6 @@ between heaven and earth,Between Heaven and Earth,,1,2,2,1,2020,2021,,1,Camerata
 bhootni ke,Bhootni Ke,,1,2,2,1,2009,2010,,1,Daler Mehndi (2),same_author,0,default,,,,,,,,
 big band feat nicolle rochette charlie magoo,Big Band (Electro Swing English Radio Edit) (feat. Nicolle Rochette & Charlie Magoo,,1,2,2,1,2018,2019,,1,Bart&Baker (2),same_author,0,default,,,,,,,,
 birimbau,Birimbau,,1,2,2,1,1997,1998,,1,Rene Dupere (2),same_author,0,default,,,,,,,,
-black cat white cat ~ goran bregovic,"Black Cat, White Cat",,1,2,2,1,2003,2004,,1,Goran Bregovic (2),same_author,0,default,,,,,,,,
 black heart,Black Heart,,1,2,2,1,2025,2026,,1,Jake Warren & Dana Kelson (2),same_author,0,default,,,,,,,,
 black or white,Black Or White,,1,2,2,1,2013,2014,,1,Michael Jackson (2),same_author,0,default,,,,,,,,
 black orpheus,Black Orpheus,,1,2,2,1,2013,2014,,1,Aziza Mustafa Zadeh (2),same_author,0,default,,,,,,,,
@@ -751,7 +751,6 @@ marche en la,Marche en la,,1,2,2,1,1993,1994,,1,Ennio Morricone (2),same_author,
 maria,María,,1,2,2,1,2011,2012,,1,"Felix Gray from the play ""Don Juan"" (2)",same_author,0,default,,,,,,,,
 marta s dance the russian dervish,Marta's Dance – The Russian Dervish,,1,2,2,1,1997,1998,,1,Bill Whelan (2),same_author,0,default,,,,,,,,
 melo g,Melo G,,1,2,2,1,2001,2002,,1,G-Spott (2),same_author,0,default,,,,,,,,
-memory ~ joseph william morgan,Memory,,1,2,2,1,2025,2026,,1,Joseph William Morgan (2),same_author,0,default,,,,,,,,
 mercy,Mercy (Remix),,1,2,2,1,2022,2023,,1,Duffy (2),same_author,0,default,,,,,,,,
 merry christmas mr lawrence,Merry Christmas Mr Lawrence,,1,2,2,1,2020,2021,,1,Ryuichi Sakamoto (2),same_author,0,default,,,,,,,,
 mi amor,Mi Amor,,1,2,2,1,2015,2016,,1,Benise (2),same_author,0,default,,,,,,,,
@@ -1834,7 +1833,6 @@ melagholia mou,Melagholia Mou,,1,1,1,1,2003,2003,,1,Giorgos Alkaios (1),same_aut
 melody from orpheus and eurydice,Melody from Orpheus and Eurydice,,1,1,1,1,2021,2021,,1,The duet I (1),same_author,0,default,,,,,,,,
 melody of heartbeat,Melody of Heartbeat,,1,1,1,1,2018,2018,,1,Artem Uzunov (1),same_author,0,default,,,,,,,,
 memorial,Memorial,,1,1,1,1,2014,2014,,1,Michael Nyman (1),same_author,0,default,,,,,,,,
-memory ~ andrew lloyd webber,Memory,,1,1,1,1,1984,1984,,1,Andrew Lloyd Webber (1),same_author,0,default,,,,,,,,
 mendelssohn violin concerto in e minor op 64 1 allegro molto appassionato,"Mendelssohn: Violin Concerto In E Minor, Op. 64 – 1. Allegro Molto Appassionato",,1,1,1,1,2014,2014,,1,"Anne-Sophie Mutter, Berliner Philharmoniker, Herbert Von Karajan (1)",same_author,1,composer_in_title,Felix Mendelssohn,,,,,,,
 mephisto s lullaby,Mephisto's Lullaby,,1,1,1,1,2021,2021,,1,Yair Albeg Wein & Or Kribos (1),same_author,0,default,,,,,,,,
 mephisto s lullaby xtortion audio,Mephisto's Lullaby Xtortion Audio,,1,1,1,1,2023,2023,,1,,no_credit,0,default,,,,,,,,

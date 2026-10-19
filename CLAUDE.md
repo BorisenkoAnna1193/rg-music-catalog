@@ -425,8 +425,10 @@ Decided to offer English and Russian. What gets a Russian version:
   work_split_review_new.csv from `work_review --new`; import with `--import <csv> --review work_split_review_new.csv`,
   which now ADDS to work_review_decisions.csv instead of overwriting it, and refuses a sheet whose source_text differs).
   Not pushed to GitHub until the owner has reviewed them (owner, 2026-10-19).
-- New titles split by credit, for the owner's review (kept apart until then): Angel, Black Cat White Cat (Bregović vs
-  the film's composers), Feelings, Hero, Matador, Memory (Lloyd Webber vs Joseph William Morgan), Music, Rondo.
+- Owner's review of the new same-title works (work_split_review_new, 2026-10-20): Black Cat, White Cat = one work (the
+  melody from Kusturica's film; Bregović, Karajlić/Aralica/Sparavalo and Sparavalo's Bubamara joined); Joseph William
+  Morgan's Memory = a remix of Memory from Cats (joined); Angel, Feelings, Hero, Matador, Music, Rondo stay apart. 2593 works.
+  native_translation_review came back with no marks in decision / english_corrected / owner_note (asked the owner).
 - WikiClient takes `lang` (cache in data/raw/<lang>/) and has `langlinks()`; cache keys of non-ASCII titles carry
   a hash (they used to collide: every Cyrillic title was one file).
 - Pipeline: `native_wiki` (probe, network) → `native_extract` → `merge` → `parse` → works... The site footer names

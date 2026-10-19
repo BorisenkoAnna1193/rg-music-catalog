@@ -1,26 +1,36 @@
 {
  "counts_head": {
-  "routines": 4195,
-  "works": 2596,
-  "versions": 2948,
-  "gymnasts_with_music": 196
- },
- "counts_now": {
   "routines": 4191,
   "works": 2595,
   "versions": 2946,
   "gymnasts_with_music": 196
  },
- "split_changes": [],
+ "counts_now": {
+  "routines": 4191,
+  "works": 2593,
+  "versions": 2946,
+  "gymnasts_with_music": 196
+ },
+ "split_changes": [
+  {
+   "title": "black cat white cat",
+   "before": "split_by_credit",
+   "after": "joined_by_owner",
+   "flag": ""
+  },
+  {
+   "title": "memory",
+   "before": "split_by_credit",
+   "after": "joined_by_owner",
+   "flag": ""
+  }
+ ],
  "suspicious_joins": [],
  "timings": {
-  "merge": 0.490867209,
-  "parse": 0.257278875,
-  "works": 0.16348420900000005,
-  "resolve": 70.550732542,
-  "db": 0.3405392079999956,
-  "site_export": 0.15354529100000036,
-  "tests": 1.2963958750000018
+  "resolve": 72.92292725,
+  "db": 0.3162008749999927,
+  "site_export": 0.14083787500000255,
+  "tests": 1.4448137090000017
  },
  "failed_stage": "",
  "base": "HEAD"

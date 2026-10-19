@@ -1,27 +1,27 @@
 ﻿title_a,title_b,similarity,gymnasts_a,gymnasts_b,artists_a,artists_b,why_not_merged
 piano concerto no 2 in c minor op 18 1 moderato,piano concerto no 2 in c minor op 18 i moderato,0.98,1,2,"Valentina Lisitsa, London Symphony Orchestra & Michael Francis",Sergei Rachmaninoff | Sviatoslav Richter,different numbers
+revolution,revolutions,0.95,3,2,Eternal Eclipse,Jean Michel Jarre | Jean-Michel Jarre,short or generic title
 main title,main titles,0.95,6,1,Blake Neely | Brad Fiedel,Danny Elfman,short or generic title
 never tear us apart,never teas us apart,0.95,2,1,Bishop Briggs | Never Tear Us Apart,Bishop Briggs,similarity below 0.95
-revolution,revolutions,0.95,3,2,Eternal Eclipse,Jean Michel Jarre | Jean-Michel Jarre,short or generic title
 nostalgia,nostalgias,0.95,2,1,Yanni,Juan Carlos Cobián,short or generic title
 tango cumparsita,tango kumparsita,0.94,1,1,Bulevard Tango Club,DJ Valer,similarity below 0.95
 emigrant,emigrante,0.94,1,1,Tanghetto,Tanghetto,short or generic title
 strange,stranger,0.93,1,1,Apollo Gee-ze,"Dimash Kudaybergen, Igor Krutoy",short or generic title
-rhapsody on a theme of paganini,rhapsody on a theme of paganini op 4,0.93,3,1,"Vladimir Ashkenazy, London Symphony Orchestra, André Previn | Sergei Rachmaninoff",Sergei Rachmaninoff,different numbers
-carmen fantasia,carmen fantasie,0.93,1,1,Maxim Vengerov,David Garrett,similarity below 0.95
-farruca,farrucas,0.93,2,1,Manuel de Falla | Paco de Lucía,Pepe Romero,short or generic title
 caravan,caravane,0.93,10,1,The Brian Setzer Orchestra | Michel Camilo / Jorge Pardo,Radar,short or generic title
+carmen fantasia,carmen fantasie,0.93,1,1,Maxim Vengerov,David Garrett,similarity below 0.95
 monster,monsters,0.93,1,1,Astrix & Infected Mushroom,Tommee Profitt,short or generic title
+rhapsody on a theme of paganini,rhapsody on a theme of paganini op 4,0.93,3,1,"Vladimir Ashkenazy, London Symphony Orchestra, André Previn | Sergei Rachmaninoff",Sergei Rachmaninoff,different numbers
+farruca,farrucas,0.93,2,1,Manuel de Falla | Paco de Lucía,Pepe Romero,short or generic title
 toccata and fugue in d minor,toccata fugue in d minor,0.92,4,1,Johann Sebastian Bach | Vanessa Mae,Johann Sebastian Bach,similarity below 0.95
-latin,latino,0.91,1,1,Alessandro Olivato,Anatoly Vekshin,short or generic title
-queen,queens,0.91,1,1,,Benoît Jutras,short or generic title
-hey pachico,hey pachuco,0.91,1,4,"Majas Band, Kseniya Shamarina, Ivonna Freidmane",Royal Crown Revue | DJ Ruslan Nigmatullin,similarity below 0.95
-taka yak ti,taka yak ty,0.91,1,1,Okean Elzy,Okean Elzy,similarity below 0.95
 dream,dreams,0.91,2,1,"Charles Gerhardt, Christian Steiner, RCA Symphony Orchestra | Vladimir Bustriakov",ZHU & NERO | ZHU & NER,short or generic title
-symphony no 5 in c minor op 67,symphony no 6 in b minor op 74,0.9,1,2,Ludwig van Beethoven,Pyotr Ilyich Tchaikovsky | Pyotr Tchaikovsky,different numbers
+hey pachico,hey pachuco,0.91,1,4,"Majas Band, Kseniya Shamarina, Ivonna Freidmane",Royal Crown Revue | DJ Ruslan Nigmatullin,similarity below 0.95
+latin,latino,0.91,1,1,Alessandro Olivato,Anatoly Vekshin,short or generic title
+taka yak ti,taka yak ty,0.91,1,1,Okean Elzy,Okean Elzy,similarity below 0.95
+queen,queens,0.91,1,1,,Benoît Jutras,short or generic title
 man with the harmonica,man with the harmonica song,0.9,1,1,Ennio Morricone,Ennio Morricone,similarity below 0.95
+symphony no 5 in c minor op 67,symphony no 6 in b minor op 74,0.9,1,2,Ludwig van Beethoven,Pyotr Ilyich Tchaikovsky | Pyotr Tchaikovsky,different numbers
 feeling begins,he feeling begins,0.9,1,1,Peter Gabriel,Peter Gabriel,similarity below 0.95
 nocturne in c sharp minor,nocturne no 20 in c sharp minor,0.89,1,1,Chopin,Frédéric Chopin,different numbers
-oh pretty woman,pretty woman,0.89,1,1,Roy Orbison,,similarity below 0.95
 gravitational forces,gravitational forces inst,0.89,1,1,ITG Studios,"Drew J Lerdal, ASCAP",similarity below 0.95
+oh pretty woman,pretty woman,0.89,1,1,Roy Orbison,,similarity below 0.95
 new dorp new york,new york new york,0.88,1,1,SBTRKT feat. Ezra Koenig,Ray Quinn | Frank Sinatra,similarity below 0.95
