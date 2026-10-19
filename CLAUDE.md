@@ -304,7 +304,10 @@ Owner's additions (2026-10-13):
 - **Group routines.** A catalogue of group exercises: no gymnast names, the team = country + year + apparatus
   combination (5 hoops, 3 ribbons + 2 balls...) + music; members optional. The owner is looking for a source with group
   music. Schema idea: `group_routine(country_id, year, apparatus_combo, music...)` sharing work / version / track.
-- YouTube stage 2 postponed (owner): search links only for now.
+- YouTube stage 2 dropped (owner, 2026-10-20): the search links are enough; no YouTube Data API.
+- Planned (owner, 2026-10-20): a new home page (a richer dashboard; the classical-music statistics shown differently) and an
+  "About" tab in EN/RU: the project, every data source with its licence, and credit to the people who kept them (the
+  rgforum archive).
 
 Open work (details and order in `docs/plan_next_session.md`):
 1. Home-language Wikipedia as a second source: Spanish (12 gymnasts) and Russian (Kabaeva) tables, translated to
