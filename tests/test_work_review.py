@@ -32,3 +32,21 @@ def test_owner_sheet_becomes_decisions_per_split_group():
     got = import_decisions(sheet, review, tws, "test")
     assert [(r["split_key"], r["join_to"], r["owner_note"]) for r in got] == [
         ("caruso ~ b", "caruso ~ a", "same song"), ("caruso ~ c", "", "a different song")]
+
+
+def test_a_sheet_that_does_not_match_the_local_rows_is_refused():
+    import pytest
+    from rg_music.work_review import import_decisions
+    review = [{"row_id": "1", "title_no": "1", "group": "A", "routine_id": "a", "track_no": "1", "source_text": "Caruso by X"}]
+    tws = [{"routine_id": "a", "track_no": "1", "title_cluster": "caruso", "split_key": "caruso ~ x"}]
+    with pytest.raises(ValueError):
+        import_decisions([{"row_id": "1", "decision": "A", "owner_note": "", "source_text": "Hello by Y"}], review, tws, "t")
+
+
+def test_second_round_keeps_earlier_decisions_and_has_only_new_titles():
+    from rg_music.work_review import merge_decisions, only_new_titles
+    old = [{"title_cluster": "caruso", "split_key": "caruso ~ b", "join_to": "caruso ~ a", "owner_note": "", "source": "1"}]
+    new = [{"title_cluster": "hero", "split_key": "hero ~ b", "join_to": "", "owner_note": "other song", "source": "2"}]
+    assert [r["split_key"] for r in merge_decisions(old, new)] == ["caruso ~ b", "hero ~ b"]
+    rows = [{"row_id": 1, "title_no": 1, "work_key": "caruso ~ a"}, {"row_id": 2, "title_no": 2, "work_key": "hero ~ b"}]
+    assert only_new_titles(rows, [{"work_key": "caruso ~ a"}]) == [{"row_id": 1, "title_no": 1, "work_key": "hero ~ b"}]

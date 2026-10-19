@@ -7,16 +7,19 @@ of the group the track really belongs to (B -> A = "this is the same song as A")
 `owner_note` is free text. Titles are sorted by the number of gymnasts, the most used first. `row_id` numbers the
 rows: the owner edits a Google Sheets copy without the technical columns, and decisions come back by row_id.
 
-The sheet is never overwritten once it exists (the owner types into it): pass --force to rebuild it.
+The sheet is never overwritten once it exists (the owner types into it): pass --force to rebuild it. --new writes a
+second-round sheet (work_split_review_new.csv) with only the titles that are not in the first one: titles split for the
+first time after new data came in (the Spanish Wikipedia, step 19).
 
 The owner fills it in Google Sheets (Drive folder rg_music). --import reads that sheet, exported as CSV, and writes
 the owner's decisions to data/manual/work_review_decisions.csv: one row per split group whose letter changed
-(join_to = a split_key of the target group) or that has a note. works.py --resolve applies them. Groups are keyed
+(join_to = a split_key of the target group) or that has a note. Decisions of earlier rounds stay; a group decided again
+takes the new decision. works.py --resolve applies them. Groups are keyed
 by split_key ("<title> ~ <main credit>"), which comes from the credits, so the decisions survive a rerun.
 
 Usage:
-    python -m rg_music.work_review [--force]
-    python -m rg_music.work_review --import <sheet exported as csv>
+    python -m rg_music.work_review [--force | --new]
+    python -m rg_music.work_review --import <sheet exported as csv> [--review work_split_review_new.csv]
 Reads  data/interim/track_works.csv, routines_parsed.csv, tracks.csv, work_mb_links.csv
 Writes data/interim/work_split_review.csv (utf-8 with BOM), or data/manual/work_review_decisions.csv with --import
 """
@@ -77,6 +80,10 @@ def import_decisions(sheet: list[dict], review: list[dict], track_works: list[di
     """Owner's sheet (row_id, group, decision, owner_note) -> one decision per split group."""
     split = {(t["routine_id"], t["track_no"]): t for t in track_works}
     local = {r["row_id"]: r for r in review}
+    moved = [r["row_id"] for r in sheet if r.get("source_text") is not None
+             and r["source_text"].strip() != local.get(r["row_id"], {}).get("source_text", "").strip()]
+    if moved:  # the sheet is not the local review file (rows sorted, typed over, or uploaded with a copying error)
+        raise ValueError(f"sheet rows do not match {len(moved)} local rows, e.g. row_id {moved[:5]}")
     key_of = lambda row_id: split[(local[row_id]["routine_id"], local[row_id]["track_no"])]  # noqa: E731
     target: dict[tuple, str] = {}  # (title_no, letter) -> a split_key of that group
     for r in review:
@@ -96,17 +103,40 @@ def import_decisions(sheet: list[dict], review: list[dict], track_works: list[di
     return sorted(out.values(), key=lambda r: (r["title_cluster"], r["split_key"]))
 
 
+def merge_decisions(old: list[dict], new: list[dict]) -> list[dict]:
+    """Earlier rounds stay; a split group decided again takes the new decision."""
+    keep = {r["split_key"]: r for r in old}
+    keep.update({r["split_key"]: r for r in new})
+    return sorted(keep.values(), key=lambda r: (r["title_cluster"], r["split_key"]))
+
+
+def only_new_titles(rows: list[dict], first_round: list[dict]) -> list[dict]:
+    """Titles the owner has not seen yet, renumbered (title_no, row_id) for a sheet of their own."""
+    seen = {r["work_key"].split(" ~ ")[0] for r in first_round}
+    out, numbers = [], {}
+    for r in rows:
+        if r["work_key"].split(" ~ ")[0] in seen:
+            continue
+        numbers.setdefault(r["title_no"], len(numbers) + 1)
+        out.append({**r, "row_id": len(out) + 1, "title_no": numbers[r["title_no"]]})
+    return out
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--dir", type=Path, default=INTERIM)
     ap.add_argument("--force", action="store_true", help="rebuild even if the sheet exists (owner's edits are lost)")
+    ap.add_argument("--new", action="store_true", help="only the titles that are not in work_split_review.csv")
     ap.add_argument("--import", dest="sheet", type=Path, help="the owner's sheet exported as CSV")
+    ap.add_argument("--review", default="work_split_review.csv", help="the local review file the sheet was made from")
     args = ap.parse_args(argv)
-    target = args.dir / "work_split_review.csv"
+    target = args.dir / ("work_split_review_new.csv" if args.new else "work_split_review.csv")
     read = lambda name: list(csv.DictReader((args.dir / name).open(encoding="utf-8-sig")))  # noqa: E731
     if args.sheet:
         sheet = list(csv.DictReader(args.sheet.open(encoding="utf-8-sig")))
-        rows = import_decisions(sheet, read("work_split_review.csv"), read("track_works.csv"), f"owner sheet {args.sheet.name}")
+        new = import_decisions(sheet, read(args.review), read("track_works.csv"), f"owner sheet {args.sheet.name}")
+        old = list(csv.DictReader(DECISIONS.open(encoding="utf-8-sig"))) if DECISIONS.exists() else []
+        rows = merge_decisions(old, new)
         with DECISIONS.open("w", newline="", encoding="utf-8-sig") as f:
             w = csv.DictWriter(f, fieldnames=DECISION_FIELDS)
             w.writeheader()
@@ -121,6 +151,8 @@ def main(argv: list[str] | None = None) -> int:
     cells = {(t["routine_id"], t["track_no"]): t["raw_text"] for t in read("tracks.csv")}
     links = {r["work_key"]: r for r in read("work_mb_links.csv")}
     rows = build_review(read("track_works.csv"), routines, cells, links)
+    if args.new:
+        rows = only_new_titles(rows, read("work_split_review.csv"))
     with target.open("w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()

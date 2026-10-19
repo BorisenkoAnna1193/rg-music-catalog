@@ -408,6 +408,15 @@ Decided to offer English and Russian. What gets a Russian version:
   (Dubuc & Lessard). "rondo" added to GENERIC_TITLES (Dupéré's Rondo from Mystère is not Schnittke's). Owner decisions
   of `work_review_decisions.csv` now find their group by the WORDS of the split key (a new track had changed
   "espana cani ~ narro pascual marquina" into "... pascual marquina narro" and undid the owner's join).
+- Owner review sheets (2026-10-19, Drive folder rg_music): `native_translation_review` (id
+  `1NIRZhaIrhqifIoYHsNXmkxg_CXXmZxdRaGMu1iNfyn0`, 178 rows = data/interim/native_translation_review.csv; columns decision /
+  english_corrected / owner_note; an importer is still to write: check `original` + `english_claude` against the local
+  file row by row first, the upload was not diffed), `native_conflict_review` (id `1-mZpytKcu-zVCL4mxz-o4zERrmNGidMLC4-3fJrticI`,
+  8 rows = native_conflict_review.csv, decision pre-filled `both`: both / english only / spanish only / same routine;
+  diffed after upload: identical), `work_split_review_new` (id `1LJKwl6GmK6iG30GRAC7VDeV-Ett-SwcIYHnhW7OJtig`, 22 rows =
+  work_split_review_new.csv from `work_review --new`; import with `--import <csv> --review work_split_review_new.csv`,
+  which now ADDS to work_review_decisions.csv instead of overwriting it, and refuses a sheet whose source_text differs).
+  Not pushed to GitHub until the owner has reviewed them (owner, 2026-10-19).
 - New titles split by credit, for the owner's review (kept apart until then): Angel, Black Cat White Cat (Bregović vs
   the film's composers), Feelings, Hero, Matador, Memory (Lloyd Webber vs Joseph William Morgan), Music, Rondo.
 - WikiClient takes `lang` (cache in data/raw/<lang>/) and has `langlinks()`; cache keys of non-ASCII titles carry
