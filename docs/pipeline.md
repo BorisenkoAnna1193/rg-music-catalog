@@ -55,7 +55,7 @@ flowchart TD
     R3{{"Проверка владелицей в Google Таблице<br/>work_split_review → work_review_decisions.csv"}}:::owner
     S15["<b>15 · Авторы, «из фильма», есть ли слова</b><br/>work_authors.py"]:::step
     R4{{"Проверка авторов в Google Таблице<br/>work_authors.csv + corrections"}}:::owner
-    V[("works.csv · versions.csv<br/>2 438 произведений · 2 772 версии")]:::data
+    V[("works.csv · versions.csv<br/>2 593 произведения · 2 946 версий")]:::data
   end
 
   subgraph F6["Фаза 6 · MVP"]
@@ -64,8 +64,15 @@ flowchart TD
     DASH["<b>18 · Сайт EN/RU</b> (стиль D)<br/>site/app.html → GitHub Pages + claude.ai"]:::step
   end
 
-  subgraph F7["Фаза 7 · В плане"]
-    NAT["Родная Википедия гимнастки<br/>(испанская, русская; разведка native_wiki.py)"]:::planned
+  subgraph F7["Фаза 7 · Второй источник: родная Википедия"]
+    P19["Разведка: какие статьи на родном языке есть<br/>native_wiki.py"]:::step
+    S19["<b>19 · Таблицы родной Википедии</b><br/>(испанская; русская только заполняет пробелы)<br/>native_extract.py"]:::step
+    TR{{"Перевод ячеек на английский (Claude)<br/>→ проверка владелицей в Google Таблице<br/>native_music_en.csv"}}:::owner
+    CF{{"Расхождения с английскими статьями<br/>и новые одноимённые названия<br/>native_conflict_decisions.csv · work_review_decisions.csv"}}:::owner
+    S20["<b>20 · Прогон этапов и сравнение с прошлым коммитом</b><br/>pipeline.py"]:::step
+  end
+
+  subgraph F8["Фаза 8 · В плане"]
     RGF["Второй источник<br/>rgforum.no (архив)"]:::planned
     JR["Юниоры / взрослые,<br/>групповые упражнения"]:::planned
   end
@@ -124,7 +131,14 @@ flowchart TD
   DB --> EXP
   EXP --> DASH
 
-  NAT -.->|"новый источник"| S7
+  WP --> P19
+  P19 --> S19
+  S19 --> TR
+  TR -->|"английская формулировка"| S7
+  S7 -->|"другая музыка в тот же год"| CF
+  CF -->|"решения"| S7
+  S13 -->|"новые одноимённые"| CF
+  S20 -.->|"проверка после каждой пересборки"| V
   RGF -.->|"новый источник"| S7
   JR -.-> DB
 
@@ -162,6 +176,8 @@ flowchart TD
 | 18 | Сайт EN/RU, публикация | site/app.html · .github/workflows/pages.yml | GitHub Pages, claude.ai |
 | — | Разведка: родная Википедия гимнастки | native_wiki.py | native_wiki_probe.csv |
 | 19 | Родная Википедия как второй источник: испанские таблицы с переводом на английский, русские только заполняют пробелы | native_extract.py · merge.py · data/manual/native_music_en.csv | native_routines_raw.csv → routines_merged.csv (source native_wiki_es / _ru), native_music_todo.csv |
+| 19а | Проверка владелицей (Google Таблицы): 178 переводов, 8 расхождений, 8 новых одноимённых названий (второй раунд) | work_review.py --new / --import --review · merge.py | native_music_en.csv (reviewed_by), native_conflict_decisions.csv, work_review_decisions.csv |
+| 20 | Прогон этапов одной командой: время каждого этапа и сравнение с прошлым коммитом (потерянные решения владелицы, подозрительные склейки) | pipeline.py | pipeline_report.json; журнал docs/session_efficiency.md |
 
 Branches and loops:
 - Step 3 starts after step 2 of the first run: a bigger gymnast list was needed (the loop back is step 6 on 533 gymnasts).
@@ -170,4 +186,5 @@ Branches and loops:
 - Step 10 loops with the owner's rules (`work_aliases.csv`); composer suggestions (step 12) are not applied until accepted.
 - Steps 13–14 loop: split by credit → MusicBrainz evidence → join; what has no evidence goes to the owner's sheet (14а).
 - Step 19 enters before the merge: `native_extract` → `merge` → `parse`; a cell without an English wording is not merged and is listed in `native_music_todo.csv`.
-- Order of a full rebuild after step 8: `works` → `works --resolve` → `mb_works` → `works --resolve` → `db` → `site_export`.
+- Order of a full rebuild: `python -m rg_music.pipeline --from native_extract --mb` = `native_extract` → `merge` → `parse` → `works` → `works --resolve` → `mb_works` → `works --resolve` → `db` → `site_export` → tests, then a comparison with the last commit. Without `--mb` the MusicBrainz links already cached are used.
+- Step 19а loops: the owner's decisions go back into `merge.py` (conflicts) and `works.py --resolve` (same-title works); `pipeline.py` shows that only the decided items changed.

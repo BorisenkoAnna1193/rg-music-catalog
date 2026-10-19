@@ -1,82 +1,67 @@
 # rg-music-catalog
 
-A searchable catalog of the music used by rhythmic gymnasts in their routines,
-built from English Wikipedia.
+A searchable catalogue of the music used by rhythmic gymnasts in their routines, built from Wikipedia and MusicBrainz.
 
-Two questions it should answer:
+**Live site (EN/RU):** https://borisenkoanna1193.github.io/rg-music-catalog/
+
+It answers two questions:
 
 1. **Gymnast → music**: what did a gymnast perform to, by season and apparatus?
 2. **Music → gymnasts**: who used a given piece, in which year, with which apparatus?
 
-The second question is the hard part. The same music is written down in many
-different ways across articles, so the project is mostly about data cleaning,
+The second question is the hard part. The same music is written down in many ways across articles ("Carmen", "Carmen
+Suite", "Habanera from Carmen", the same title for two unrelated songs), so the project is mostly data cleaning,
 normalisation and entity resolution, not just downloading pages.
 
-## Status
+## What is in it
 
-- [x] **Step 1 – extract.** Download gymnast articles through the MediaWiki API
-  and dump their music tables as-is.
-- [x] **Cross-check** the routine table against the competition (Olympic) table on
-  the same page (`python -m rg_music.crosscheck`). First run on 10 pages: 52 Olympic
-  routines, 46 match exactly or near-exactly, 5 match but one season later
-  (Tokyo 2020 was held in 2021 – the table labels the Games, not the season),
-  1 differs in detail only (composer vs. arranger listed).
-- [x] **Step 2 – parse (rules).** Split the music cell into tracks (title / work / artist /
-  performer) and normalise apparatus (`python -m rg_music.parse`). 391 routines → 403 tracks;
-  20 tracks have no credit in the source. LLM fallback is not needed for the current data.
-- [ ] Step 3 – match the same music across gymnasts.
-- [ ] Step 4 – validation, cross-source checks, export, search UI.
+| | |
+|---|---|
+| Gymnasts | 1,395: everyone in the individual results of the World Championships 1963–2026; 196 with known music |
+| Routines | 4,191 routine-years (a season "2022/2023" counts once per year) |
+| Works | 2,593, with 2,946 versions (performers as the source credits them) |
+| Sources | English Wikipedia (533 gymnast articles); Spanish Wikipedia adds 229 routines for 15 Spanish gymnasts; Russian Wikipedia 2 routines; MusicBrainz as evidence for matching |
 
-## Quick start
+## Pipeline
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-
 export WIKI_CONTACT="https://github.com/<you>/rg-music-catalog"   # goes into the User-Agent
-python -m rg_music.extract          # pages from data/seed_gymnasts.txt
-python -m rg_music.parse            # raw -> parsed routines and tracks
-python -m pytest -q
+
+python -m rg_music.extract --seed data/seed_wc_gymnasts.txt   # English articles -> raw tables
+python -m rg_music.native_wiki                                 # which home-language articles exist
+python -m rg_music.pipeline --from native_extract --mb         # everything else, then tests
 ```
 
-Outputs go to `data/interim/`:
+`rg_music.pipeline` runs the stages below, times them and compares the result with the last commit, so a change that
+undoes an earlier decision fails the run instead of slipping through.
 
-| file | contents |
-|---|---|
-| `routines_raw.csv` | one row per row of a "Year / Apparatus / Music title" table |
-| `competitions_raw.csv` | rows of competition tables that have a Music column (e.g. Olympics) |
-| `extract_report.json` | what was found on every page: tables, headers, redirects, errors |
-| `routines_parsed.csv` | one row per routine: normalised apparatus / variant / context, parse status |
-| `tracks.csv` | one row per track, keyed by `routine_id`; `flags` show which heuristics were applied |
-| `parse_report.json` | parse coverage and flag counts |
+| Stage | Module | What it does |
+|---|---|---|
+| extract | `extract.py`, `wiki_client.py`, `tables.py` | MediaWiki API, 1 request/s, cache; every music table is expanded into a grid (rowspan/colspan) before columns are mapped by header |
+| gymnast list | `worlds.py`, `countries.py`, `name_decisions.py` | names from 42 World Championships, one person per Wikipedia article, ISO country codes |
+| native_extract | `native_extract.py` | music tables of the gymnast's home-language Wikipedia, apparatus and age categories translated |
+| merge | `merge.py` | seasons into years; competition tables and home-language rows only fill gaps; conflicts are kept as flagged rows |
+| parse | `parse.py`, `music_parser.py` | a music cell into tracks: title, work, artist, performer, with flags for every heuristic |
+| works / resolve | `works.py` | tracks grouped into works; one title with unrelated credits stays split until there is evidence |
+| mb_works | `mb_works.py` | MusicBrainz evidence: recording → work, credited writer |
+| db, site_export | `db.py`, `site_export.py` | SQLite catalogue and the data of the static site (`site/app.html`) |
 
-Downloaded HTML is cached in `data/raw/` (git-ignored); `--refresh` re-downloads.
+## Design choices
 
-## How the extractor works
+- **Raw data is never edited.** Every step writes new files; corrections live in `data/manual/*.csv`, keyed so that a
+  rerun keeps them. Heuristic fixes are flagged in `notes` / `flags`, not applied silently.
+- **A human decides the doubtful cases.** Ambiguous matches, translations and source conflicts go to a review sheet
+  (Google Sheets); the decisions come back as CSV and are applied on every rebuild.
+- **Same title is not the same work.** "Hello" by Adele and by Lionel Richie stay apart; covers join only with evidence
+  (an alias decided by a person, a MusicBrainz link, or one classical composer).
+- **Three levels of music:** work (Spartacus, Khachaturian) → excerpt (Adagio of Spartacus and Phrygia) → version (a
+  performer). An excerpt that the source does not name is stored as unknown, never assumed.
 
-- **Polite API client** (`rg_music/wiki_client.py`): descriptive User-Agent,
-  one request per second, `maxlag`, retries with exponential backoff that respect
-  `Retry-After`, redirects followed (`Ganna Rizatdinova` → `Hanna Rizatdinova`),
-  revision id stored for every page so later runs can be incremental.
-- **Layout-agnostic table parser** (`rg_music/tables.py`): the tables are
-  hand-edited and their layout drifts between pages – years spanning several
-  rows, a year sitting alone in its own row, footnotes, several tracks separated
-  by line breaks. Every table is first expanded into a plain grid
-  (`rowspan`/`colspan` resolved) and only then columns are mapped by header text.
-  Rows that needed a heuristic fix are flagged in the `notes` column rather than
-  silently patched.
+More detail: `docs/pipeline.md` (the process step by step, with a diagram) and `docs/case_decisions.txt` (decisions and
+their reasons). Tests: `python -m pytest -q` (228, fixtures mimic real table layouts).
 
-## Data model (planned)
+## Licences
 
-Matching music needs three levels, not one:
-
-```
-work      Spartacus (ballet), Aram Khachaturian
-  excerpt   Ballet Suite No. 2: Adagio of Spartacus and Phrygia
-    recording  a specific performance / arrangement
-```
-
-Two gymnasts using "Spartacus" does not mean they used the same music: Mamun's
-2014 hoop names the Adagio, Averina's 2018 hoop names only the ballet. When an
-excerpt is not specified it is stored as *unknown*, never assumed equal to
-another excerpt.
+Data from Wikipedia is CC BY-SA 4.0; MusicBrainz data is CC0.

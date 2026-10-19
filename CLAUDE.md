@@ -8,14 +8,16 @@ A catalog of music used by rhythmic gymnasts, built from English Wikipedia, answ
 
 The owner talks in Russian; code, comments, README and commit messages are in English.
 
-## Status (2026-10-19) — start here
-- **MVP is published**: https://borisenkoanna1193.github.io/rg-music-catalog/ (public, GitHub Pages) and
-  https://claude.ai/artifact/2Hz5iyZiwAmbv2N35ManNv (private). Repo https://github.com/BorisenkoAnna1193/rg-music-catalog,
-  `main` in sync, 213 tests pass. 1,395 gymnasts (185 with music), 3,674 routines with music, 2,438 works, 2,772 versions.
-- **Next session plan, pending owner actions and the proposed order: `docs/plan_next_session.md`.** Short version:
-  PayPal Donate link → `SUPPORT_URL` in `site/app.html`; Spanish + Russian Wikipedia as a second source (translated to
-  English); Russian names review; genres for "Other"; junior/senior split; group routines.
+## Status (2026-10-20) — start here
+- **Published** (step 19 included, 2026-10-20): https://borisenkoanna1193.github.io/rg-music-catalog/ (public, GitHub Pages)
+  and https://claude.ai/artifact/2Hz5iyZiwAmbv2N35ManNv (private). Repo https://github.com/BorisenkoAnna1193/rg-music-catalog,
+  `main` in sync, 228 tests pass. 1,395 gymnasts (196 with music), 4,191 routine-years (229 from Spanish and 2 from Russian
+  Wikipedia), 2,593 works, 2,946 versions.
+- **Next session plan, pending owner actions and the proposed order: `docs/plan_next_session.md`.** Read
+  `docs/session_efficiency.md` first (owner: measure whether the applied proposals helped).
+- Rebuild: `python -m rg_music.pipeline --from merge` (add `--mb` for MusicBrainz); it compares the result with HEAD.
 - The owner works in Russian, reviews tables in Google Sheets (Drive folder rg_music), not in CSV files.
+- **Never `git push --all` / `--mirror`**; push only main, only after the owner's OK.
 
 ## Current state (module by module; numbers as of each step)
 - `rg_music/wiki_client.py` – polite MediaWiki API client (UA with contact from
@@ -153,7 +155,7 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 - `docs/session_efficiency.md` – efficiency log: per-session numbers, Claude's optimization proposals and their status
   (owner, 2026-10-19: apply them by default, measure their effect in the next session).
 - `docs/db_schema.md` – SQLite schema (ER diagrams, Mermaid; the MVP tables are built by `rg_music/db.py`).
-- `docs/pipeline.md` – the process as it went: steps 1–18 in order, forks, owner decisions, the scripts behind each step,
+- `docs/pipeline.md` – the process as it went: steps 1–20 in order, forks, owner decisions, the scripts behind each step,
   and the full rebuild order.
 - `docs/plan_next_session.md` – where we stopped, what waits for the owner, the proposed order of the next tasks.
 - `docs/case_decisions.txt` – decisions in Step / substep / action / result / tech / file_names form (portfolio case).
@@ -408,7 +410,8 @@ Decided to offer English and Russian. What gets a Russian version:
   wording are not merged and are listed in `data/interim/native_music_todo.csv` (empty now). **Russian rows only fill
   gaps** (`COMPARE_LANGS = {"es"}`): the Russian articles mirror the English ones (the rest is the same music in
   Cyrillic); a few real conflicts exist (Arina Averina 2015 Ribbon Paquita vs Rio Rita) — a validation report later.
-- Result: 234 routines added (232 es, 2 ru: Romanova 2018, Dina Averina 2023 Ribbon), 11 gymnasts get music for the
+- Result: 234 routines added (232 es, 2 ru: Romanova 2018, Dina Averina 2023 Ribbon; after the owner's conflict decisions
+  229 es + 2 ru, 4191 routines), 11 gymnasts get music for the
   first time (Almudena Cid 76 routine-years, Jennifer Colino 32, Esther Domínguez 22, Carolina Pascual 17, Carmen Acedo
   15...), 196 gymnasts with music (was 185). 3961 → 4195 routines, 2596 works, 2948 versions.
 - Matching after the Spanish tracks (Claude, notes in `work_aliases.csv`): "Ave Maria" by Vavilov → Ave Maria
