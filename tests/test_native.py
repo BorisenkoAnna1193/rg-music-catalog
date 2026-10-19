@@ -89,3 +89,19 @@ def test_russian_rows_are_not_compared_with_other_english_music():
     added, todo, stats = merge_native([english(2015, "Ball", "Boléro by Maurice Ravel")],
                                       [native("2015", "Мяч", "Болеро — Морис Равель", lang="ru")], {})
     assert not added and not todo and stats["native_rows_not_compared"] == 1
+
+
+def test_owner_decisions_on_conflicts_keep_both_drop_native_or_drop_english():
+    pool = [{**english(2005, "Ribbon", "Caravan by Michel Camilo"), "routine_id": "en1"},
+            {**english(2005, "Clubs", "Por ti by Ruben Moran"), "routine_id": "en2"},
+            {**english(2003, "Clubs", "Pistolero by Juno Reactor"), "routine_id": "en3"}]
+    rows = [native("2005", "Cinta", "«Montserrat».", row=0), native("2005", "Mazas", "«Conte».", row=1),
+            native("2003", "Mazas", "«Quixote».", row=2)]
+    tr = {("es", "«Montserrat»."): "Montserrat by Bajofondo", ("es", "«Conte»."): "Conte d'Amour by Zbigniew Preisner",
+          ("es", "«Quixote»."): "Quixote by Bond"}
+    decisions = {"A B|es0|0": {"decision": "english"}, "A B|es0|1": {"decision": "spanish", "english_routine_ids": "en2"},
+                 "A B|es0|2": {"decision": "both"}}
+    added, _, stats = merge_native(pool, rows, tr, decisions)
+    assert [(r["routine_id"], r["notes"].split(";")[-1]) for r in added] == [
+        ("A B|es0|1", "chosen_by_owner_over_english"), ("A B|es0|2", "kept_both_by_owner")]
+    assert stats["dropped_english"] == ["en2"] and stats["native_rows_rejected_by_owner"] == 1

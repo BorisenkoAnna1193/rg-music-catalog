@@ -1,171 +1,27 @@
 {
  "counts_head": {
-  "routines": 3961,
-  "works": 2438,
-  "versions": 2772,
-  "gymnasts_with_music": 185
- },
- "counts_now": {
   "routines": 4195,
   "works": 2596,
   "versions": 2948,
   "gymnasts_with_music": 196
  },
- "split_changes": [
-  {
-   "title": "angel",
-   "before": "",
-   "after": "split_by_credit",
-   "flag": ""
-  },
-  {
-   "title": "black cat white cat",
-   "before": "",
-   "after": "split_by_credit",
-   "flag": ""
-  },
-  {
-   "title": "danza ritual del fuego",
-   "before": "",
-   "after": "kept_classical_title",
-   "flag": ""
-  },
-  {
-   "title": "farruca",
-   "before": "",
-   "after": "kept_classical_title",
-   "flag": ""
-  },
-  {
-   "title": "feelings",
-   "before": "",
-   "after": "split_by_credit",
-   "flag": ""
-  },
-  {
-   "title": "flight of the bumblebee",
-   "before": "",
-   "after": "kept_classical_title",
-   "flag": ""
-  },
-  {
-   "title": "hero",
-   "before": "",
-   "after": "split_by_credit",
-   "flag": ""
-  },
-  {
-   "title": "matador",
-   "before": "",
-   "after": "split_by_credit",
-   "flag": ""
-  },
-  {
-   "title": "meditation",
-   "before": "",
-   "after": "kept_classical_title",
-   "flag": ""
-  },
-  {
-   "title": "memory",
-   "before": "",
-   "after": "split_by_credit",
-   "flag": ""
-  },
-  {
-   "title": "music",
-   "before": "",
-   "after": "split_by_credit",
-   "flag": ""
-  },
-  {
-   "title": "rondo",
-   "before": "",
-   "after": "split_by_credit",
-   "flag": ""
-  }
- ],
- "suspicious_joins": [
-  {
-   "work_key": "ave maria vavilov caccini",
-   "title": "Ave Maria",
-   "artist": "Vladimir Vavilov",
-   "routine_id": "Almudena Cid|es0|33#2004"
-  },
-  {
-   "work_key": "ave maria vavilov caccini",
-   "title": "Ave Maria",
-   "artist": "Vladimir Vavilov",
-   "routine_id": "Almudena Cid|es0|33#2005"
-  },
-  {
-   "work_key": "flight of the bumblebee",
-   "title": "Flight of the Bumblebee",
-   "artist": "Nikolai Rimsky-Korsakov",
-   "routine_id": "Ana Bautista|es0|0"
-  },
-  {
-   "work_key": "farruca",
-   "title": "Farruca (Miller's Dance)",
-   "artist": "Manuel de Falla",
-   "routine_id": "Ana Bautista|es0|4"
-  },
-  {
-   "work_key": "adagio in g minor",
-   "title": "Adagio in G Minor",
-   "artist": "Remo Giazotto",
-   "routine_id": "Carolina Pascual|es0|1"
-  },
-  {
-   "work_key": "danza ritual del fuego",
-   "title": "Danza ritual del fuego",
-   "artist": "Manuel de Falla",
-   "routine_id": "Carolina Pascual|es0|9"
-  },
-  {
-   "work_key": "tango jalousie",
-   "title": "Tango Jalousie",
-   "artist": "Jacob Gade",
-   "routine_id": "Carolina Rodríguez (gymnast)|es0|4#2001"
-  },
-  {
-   "work_key": "tango jalousie",
-   "title": "Tango Jalousie",
-   "artist": "Jacob Gade",
-   "routine_id": "Carolina Rodríguez (gymnast)|es0|4#2002"
-  },
-  {
-   "work_key": "por una cabeza",
-   "title": "Por una cabeza",
-   "artist": "Carlos Gardel",
-   "routine_id": "Esther Domínguez|es0|1"
-  },
-  {
-   "work_key": "meditation",
-   "title": "Méditation",
-   "artist": "Jules Massenet",
-   "routine_id": "Maisa Lloret|es0|0"
-  },
-  {
-   "work_key": "tango jalousie",
-   "title": "Tango Jalousie",
-   "artist": "Jacob Gade",
-   "routine_id": "Marta Cantón|es0|0"
-  },
-  {
-   "work_key": "eye of the tiger",
-   "title": "Eye of the Tiger",
-   "artist": "Survivor",
-   "routine_id": "Marta Cantón|es0|4"
-  },
-  {
-   "work_key": "mutation",
-   "title": "Mutation",
-   "artist": "Guy Dubuc & Marc Lessard",
-   "routine_id": "Polina Berezina|es0|2"
-  }
- ],
- "timings": {},
+ "counts_now": {
+  "routines": 4191,
+  "works": 2595,
+  "versions": 2946,
+  "gymnasts_with_music": 196
+ },
+ "split_changes": [],
+ "suspicious_joins": [],
+ "timings": {
+  "merge": 0.490867209,
+  "parse": 0.257278875,
+  "works": 0.16348420900000005,
+  "resolve": 70.550732542,
+  "db": 0.3405392079999956,
+  "site_export": 0.15354529100000036,
+  "tests": 1.2963958750000018
+ },
  "failed_stage": "",
- "base": "266237b"
+ "base": "HEAD"
 }

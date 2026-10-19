@@ -28,7 +28,10 @@ Rules (decided with the owner):
     stays the main source. A row whose gymnast, apparatus and year have no English routine is added (source
     native_wiki_<lang>, the English wording from data/manual/native_music_en.csv, note translated_from_<lang>); a row
     with the same music as an English routine is only counted; a row with other music than every English routine of
-    that apparatus and year is added and flagged differs_from_english_article (only for languages in COMPARE_LANGS). A cell without an English wording is
+    that apparatus and year is added and flagged differs_from_english_article (only for languages in COMPARE_LANGS).
+    The owner's decisions on those conflicts (data/manual/native_conflict_decisions.csv, keyed by the native routine_id):
+    both = keep both rows (note kept_both_by_owner instead of the flag); english = the native row is not added;
+    spanish = the native row is added and the English routines named in english_routine_ids are dropped. A cell without an English wording is
     not merged and is listed in native_music_todo.csv. Group routines, rows without music and rows without a readable
     year are skipped (counted in merge_report.json).
 
@@ -56,6 +59,7 @@ INTERIM = Path("data/interim")
 SAME_ROUTINE = Path("data/manual/same_routine.csv")
 EXCLUSIONS = Path("data/manual/routine_exclusions.csv")
 NATIVE_MUSIC = Path("data/manual/native_music_en.csv")
+NATIVE_DECISIONS = Path("data/manual/native_conflict_decisions.csv")
 NATIVE_UNKNOWN = PLACEHOLDERS | {"desconocida", "desconocido", "неизвестно"}
 # Languages whose rows are also compared with the English routines of the same apparatus and year. The Russian articles
 # mirror the English ones (342 rows with the same music; the other rows checked are the same music written in Cyrillic),
@@ -213,9 +217,19 @@ def _same_music(native: str, english: str, music_en: str) -> bool:
     return any(len(t) >= 4 and f" {t} " in text for t in titles)
 
 
-def merge_native(merged: list[dict], native: list[dict], translations: dict[tuple[str, str], str]
-                 ) -> tuple[list[dict], list[dict], dict]:
-    """Home-language rows that fill gaps of the English routines -> (new routines, cells to translate, stats)."""
+def load_native_decisions(path: Path = NATIVE_DECISIONS) -> dict[str, dict]:
+    """Owner's decisions on native rows that differ from the English article: native routine_id -> row."""
+    if not path.exists():
+        return {}
+    return {r["routine_id"]: r for r in csv.DictReader(path.open(encoding="utf-8-sig"))}
+
+
+def merge_native(merged: list[dict], native: list[dict], translations: dict[tuple[str, str], str],
+                 decisions: dict[str, dict] | None = None) -> tuple[list[dict], list[dict], dict]:
+    """Home-language rows that fill gaps of the English routines -> (new routines, cells to translate, stats).
+    English routines the owner rejected in favour of a native row are listed in stats["dropped_english"]."""
+    decisions = decisions or {}
+    dropped: list[str] = []
     stats: Counter = Counter()
     english: dict[tuple, list[dict]] = {}
     for m in merged:
@@ -254,16 +268,27 @@ def merge_native(merged: list[dict], native: list[dict], translations: dict[tupl
                 stats["native_rows_untranslated"] += 1
                 continue
             seasonal = len(years) > 1
+            routine_id = f"{base}#{y}" if seasonal else base
+            decision = decisions.get(routine_id, {}).get("decision", "") if pool else ""
+            if decision == "english":
+                stats["native_rows_rejected_by_owner"] += 1
+                continue
+            conflict = {"both": "kept_both_by_owner", "spanish": "chosen_by_owner_over_english"}.get(
+                decision, "differs_from_english_article" if pool else "")
+            if decision == "spanish":
+                dropped += [i for i in decisions[routine_id]["english_routine_ids"].split("; ") if i]
             notes = [f"translated_from_{lang}"] + ([f"category_{year.category.replace(' ', '_')}"] if year.category else []) \
-                + (["expanded_from_season"] if seasonal else []) + (["differs_from_english_article"] if pool else [])
+                + (["expanded_from_season"] if seasonal else []) + ([conflict] if conflict else [])
             added.append({
-                "routine_id": f"{base}#{y}" if seasonal else base, "gymnast_page": r["gymnast_page"],
+                "routine_id": routine_id, "gymnast_page": r["gymnast_page"],
                 "table_index": f"{lang}{r['table_index']}", "row_index": r["row_index"], "year": y,
                 "year_source": year.text if seasonal else "", "apparatus": app.text, "music": music_en,
                 "source": f"native_wiki_{lang}", "notes": ";".join(notes), "source_url": r["source_url"],
                 "revid": r["revid"],
             })
-            stats["native_rows_added_with_conflict" if pool else "native_rows_added"] += 1
+            stats[f"native_rows_{decision or 'added'}_by_owner" if decision else
+                  "native_rows_added_with_conflict" if pool else "native_rows_added"] += 1
+    stats["dropped_english"] = dropped
     return added, todo, dict(stats)
 
 
@@ -284,7 +309,9 @@ def main(argv: list[str] | None = None) -> int:
     merged, events, stats = merge_sources(routines, competitions, load_same_routine(), load_exclusions())
     native_path = args.dir / "native_routines_raw.csv"
     if native_path.exists():
-        added, todo, native_stats = merge_native(merged, read("native_routines_raw.csv"), load_native_music())
+        added, todo, native_stats = merge_native(merged, read("native_routines_raw.csv"), load_native_music(),
+                                                 load_native_decisions())
+        merged = [m for m in merged if m["routine_id"] not in set(native_stats["dropped_english"])]
         merged = sorted(merged + added, key=lambda m: (m["gymnast_page"], m["year"] if isinstance(m["year"], int) else 0,
                                                        m["apparatus"], m["routine_id"]))
         stats.update(native_stats)

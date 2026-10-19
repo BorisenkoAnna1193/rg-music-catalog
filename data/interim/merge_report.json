@@ -13,16 +13,21 @@
   "native_rows_added": 226,
   "native_rows_unreadable": 10,
   "native_group_rows_skipped": 10,
-  "native_rows_added_with_conflict": 8,
+  "native_rows_both_by_owner": 4,
+  "native_rows_rejected_by_owner": 3,
+  "native_rows_spanish_by_owner": 1,
+  "dropped_english": [
+    "Carolina Rodríguez (gymnast)|0|46"
+  ],
   "routines_in": 3850,
   "competition_rows_in": 317,
-  "routines_out": 4195,
+  "routines_out": 4191,
   "events": 229,
   "by_source": {
-    "routine_table": 3732,
+    "routine_table": 3731,
     "competition_table": 62,
     "both": 167,
-    "native_wiki_es": 232,
+    "native_wiki_es": 229,
     "native_wiki_ru": 2
   }
 }

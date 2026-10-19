@@ -1,15 +1,15 @@
 {
-  "routines": 4195,
+  "routines": 4191,
   "routine_status": {
-    "ok": 3706,
+    "ok": 3702,
     "empty": 286,
     "partial": 188,
     "manual": 13,
     "unknown": 2
   },
-  "tracks": 4366,
+  "tracks": 4362,
   "track_status": {
-    "ok": 4116,
+    "ok": 4112,
     "partial": 227,
     "manual": 22,
     "unknown": 1
