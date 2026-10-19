@@ -1,6 +1,7 @@
 ﻿title_cluster,n_groups,n_found,proposal,joined,apart,not_found
 adios,2,1,no evidence,,adios ~ benjamin clementine,adios ~ stanislav zeltser
 all by myself,2,1,no evidence,,all by myself ~ celine dion,all by myself ~ larry dalton
+angel,2,0,no evidence,,,angel ~ manolo carrasco saint petersburg virtuoso symphony orchestra || angel ~ ralph fridge
 another one bites the dust,3,1,no evidence,,another one bites the dust ~ queen,another one bites the dust ~ alexander jean || another one bites the dust ~ pink floyd
 bad guy,3,2,join,bad guy ~ billie eilish + bad guy ~ postmodern jukebox,,bad guy ~ kong
 batucada,2,1,no evidence,,batucada ~ dj dero,batucada ~ booty jocks
@@ -8,6 +9,7 @@ be italian,2,2,join,be italian ~ fergie + be italian ~ maury yeston,,
 believer,3,1,no evidence,,believer ~ chase holfelder,believer ~ christina || believer ~ tommee profitt feat colton dixon
 bella ciao,3,3,join,bella ciao ~ david garrett + bella ciao ~ goran bregovic and his wedding and funeral orchestra + bella ciao ~ manu pilas,,
 belleville rendez vous,2,0,no evidence,,,belleville rendez vous ~ beatrice bonifassi || belleville rendez vous ~ robert wells
+black cat white cat,2,1,no evidence,,black cat white cat ~ goran bregovic,black cat white cat ~ nele karajlic vojislav aralica dejan sparavalo
 california dreamin,2,1,no evidence,,california dreamin ~ sia,california dreamin ~ 33tours
 carol of the bells,3,2,join,carol of the bells ~ libera + carol of the bells ~ piano guys,,carol of the bells ~ tommee profit
 caruso,6,4,join,caruso ~ katherine jenkins + caruso ~ lara fabian + caruso ~ luciano pavarotti + caruso ~ maga zoltan,,caruso ~ benedetta caretta || caruso ~ filippa giordano
@@ -24,10 +26,11 @@ dream,2,1,no evidence,,dream ~ charles gerhardt christian steiner rca symphony o
 el choclo,2,0,no evidence,,,el choclo ~ cello project || el choclo ~ destiny quartet
 el cumbanchero,3,0,no evidence,,,el cumbanchero ~ lucie arnaz || el cumbanchero ~ rey casas || el cumbanchero ~ tokyo kosei wind orchestra
 el tango de roxanne,3,1,no evidence,,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,el tango de roxanne ~ no credit || el tango de roxanne ~ roxane del
-espana cani,2,1,no evidence,,espana cani ~ narro pascual marquina,espana cani ~ manhattan pops orchestra trio norte
+espana cani,2,1,no evidence,,espana cani ~ pascual marquina narro,espana cani ~ manhattan pops orchestra trio norte
 everything,2,0,no evidence,,,everything ~ safri duo || everything ~ sean christopher
-eye of the tiger,4,0,no evidence,,,eye of the tiger ~ 2cellos || eye of the tiger ~ djemadelgado || eye of the tiger ~ survivors || eye of the tiger ~ tommee profitt fjøra joseph william morgan
+eye of the tiger,5,2,join,eye of the tiger ~ 2cellos + eye of the tiger ~ survivor,,eye of the tiger ~ djemadelgado || eye of the tiger ~ survivors || eye of the tiger ~ tommee profitt fjøra joseph william morgan
 feeling good,5,3,join,feeling good ~ jennifer hudson + feeling good ~ michael buble + feeling good ~ muse,,feeling good ~ apashe cherry lena || feeling good ~ j ram
+feelings,2,1,no evidence,,feelings ~ morris albert,feelings ~ edvin marton
 fever,3,3,join,fever ~ bette midler + fever ~ fine frenzy + fever ~ peggy lee,,
 flamenco,3,0,no evidence,,,flamenco ~ didulya || flamenco ~ pepe romero || flamenco ~ timmy trumpet jetfire
 footloose,3,2,join,footloose ~ glee cast + footloose ~ kenny loggins,,footloose ~ no credit
@@ -37,6 +40,7 @@ hallelujah,2,1,no evidence,,hallelujah ~ susan boyle,hallelujah ~ rob landes
 hava nagila,4,1,no evidence,,hava nagila ~ london festival orchestra chorus,hava nagila ~ andre rieu || hava nagila ~ dj jacob || hava nagila ~ no credit
 havana,2,1,no evidence,,havana ~ kenny g,havana ~ linda eder
 hello,2,2,apart,,hello ~ adele || hello ~ lionel richie,
+hero,2,1,no evidence,,hero ~ mariah carey,hero ~ hans zimmer john powell
 hey pachuco,2,1,no evidence,,hey pachuco ~ royal crown revue,hey pachuco ~ dj ruslan nigmatullin
 historia de un amor,4,1,no evidence,,historia de un amor ~ carlos eleta almaran,historia de un amor ~ brendon stoun || historia de un amor ~ no credit || historia de un amor ~ perez prado
 hit the road jack,4,2,join,hit the road jack ~ pentatonix + hit the road jack ~ ray charles,,hit the road jack ~ 2wei || hit the road jack ~ no credit
@@ -61,14 +65,17 @@ lay all your love on me,2,2,join,lay all your love on me ~ abba + lay all your l
 let s get loud,2,2,join,let s get loud ~ camila cabello nicholas galitzine idina menzel cinderella cast + let s get loud ~ jennifer lopez,,
 love story,4,3,join,love story ~ francis lai + love story ~ shirley bassey,love story ~ indila,love story ~ arthur fidler boston pops orchestra
 lovely,2,2,join,lovely ~ billie eilish khalid + lovely ~ lauren babic jordan radvansky,,
-main title,4,2,apart,,main title ~ blake neely || main title ~ trevor rabin harry gregson williams,main title ~ carlos rafael rivera carl doy kotaro nakagawa || main title ~ simon goldenberg geoff maccormack
+main title,5,3,apart,,main title ~ blake neely || main title ~ brad fiedel || main title ~ trevor rabin harry gregson williams,main title ~ carlos rafael rivera carl doy kotaro nakagawa || main title ~ simon goldenberg geoff maccormack
 mama,3,2,join,mama ~ dalida + mama ~ paul mauriat,,mama ~ gianna nannini
 mas que nada,3,1,no evidence,,mas que nada ~ brasil 66 sergio mendes,mas que nada ~ chilled jazz masters || mas que nada ~ no credit
+matador,2,0,no evidence,,,matador ~ bernardo bonezzi || matador ~ non stop producer series and marnik
 mein herr,3,2,join,mein herr ~ liza minnelli + mein herr ~ ute lemper,,mein herr ~ kelli barrett the kit kat girls
+memory,2,1,no evidence,,memory ~ andrew lloyd webber,memory ~ joseph william morgan
 men in black,2,0,no evidence,,,men in black ~ alexey garnizov || men in black ~ hollywood pictures orchestra
 middle of the night,2,1,no evidence,,middle of the night ~ elley duhe,middle of the night ~ power haus tom evans joel sunny
 mission impossible,3,0,no evidence,,,mission impossible ~ dubdogz zuffo rhoden || mission impossible ~ maxime rodriguez || mission impossible ~ no credit
 money money money,3,2,join,money money money ~ meryl streep julie walters christine baranski + money money money ~ royal philharmonic orchestra,,money money money ~ butterfly effect
+music,2,1,no evidence,,music ~ john miles,music ~ various artists carlinhos brown miriam makeba gloria estefan
 never enough,2,1,no evidence,,never enough ~ loren allred,never enough ~ emin agalarov
 never tear us apart,2,1,no evidence,,never tear us apart ~ bishop briggs,never tear us apart ~ never tear us apart
 new york new york,2,2,join,new york new york ~ frank sinatra + new york new york ~ ray quinn,,
@@ -81,13 +88,14 @@ perhaps perhaps perhaps,2,1,no evidence,,perhaps perhaps perhaps ~ pussycat doll
 phantom of the opera,3,2,join,phantom of the opera ~ andrew lloyd webber + phantom of the opera ~ nightwish,,phantom of the opera ~ prague cello quartet
 pink panther theme,2,1,no evidence,,pink panther theme ~ henry mancini,pink panther theme ~ city of prague philharmonic orchestra
 pistolero,2,2,apart,,pistolero ~ dave grusin || pistolero ~ juno reactor,
-por una cabeza,2,1,no evidence,,por una cabeza ~ itzhak perlman,por una cabeza ~ sumi jo
+por una cabeza,3,2,join,por una cabeza ~ carlos gardel + por una cabeza ~ itzhak perlman,,por una cabeza ~ sumi jo
 prologue,3,1,no evidence,,prologue ~ james newton howard,prologue ~ alala || prologue ~ woodkid
 pump up the jam,6,3,join,pump up the jam ~ crazy frog + pump up the jam ~ lost fingers + pump up the jam ~ technotronic,,pump up the jam ~ bodybangers || pump up the jam ~ gabry ponte || pump up the jam ~ thomas gold
 requiem,4,2,apart,,requiem ~ alma || requiem ~ trans siberian orchestra,requiem ~ aram mp3 forsh || requiem ~ mozart
 ride,3,1,no evidence,,ride ~ zz ward feat gary clark jr,ride ~ james horner || ride ~ no credit
 rock around the clock,2,1,no evidence,,rock around the clock ~ bill haley his comets,rock around the clock ~ dany brillant
 romance,2,0,no evidence,,,romance ~ dmitri shostakovich || romance ~ georgy sviridov
+rondo,2,0,no evidence,,,rondo ~ alfred schnittke || rondo ~ rene dupere benoit jutras
 runnin,2,1,no evidence,,runnin ~ naughty boy beyonce arrow benjamin,runnin ~ ludwig gorannson feat a ap rocky jacob banks
 samba do mundo,2,0,no evidence,,,samba do mundo ~ alcione || samba do mundo ~ gregor salto feat saxsymbol todorov
 seven nation army,3,3,join,seven nation army ~ postmodern jukebox + seven nation army ~ skald + seven nation army ~ white stripes,,
@@ -101,7 +109,6 @@ sunrise sunset,2,0,no evidence,,,sunrise sunset ~ fiddler on the roof || sunrise
 sweet dreams,3,2,join,sweet dreams ~ emily browning + sweet dreams ~ tanghetto avicii,,sweet dreams ~ kat leon
 tango,3,0,no evidence,,,tango ~ denis sungho soledad group || tango ~ konstantin meladze || tango ~ sultan ali
 tango de amor,2,0,no evidence,,,tango de amor ~ nathan lane bebe neuwirth || tango de amor ~ tango jointz
-theme from love story,2,1,no evidence,,theme from love story ~ francis lai,theme from love story ~ 101 strings orchestra
 thunderstruck,2,2,join,thunderstruck ~ david garrett + thunderstruck ~ hinder,,
 tico tico,2,1,no evidence,,tico tico ~ dalida,tico tico ~ k t sullivan
 total eclipse of the heart,2,2,join,total eclipse of the heart ~ bonnie tyler + total eclipse of the heart ~ westlife,,

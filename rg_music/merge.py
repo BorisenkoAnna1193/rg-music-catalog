@@ -24,6 +24,13 @@ Rules (decided with the owner):
     year, apparatus, music as in the raw table, reason). The raw files keep it; merge_report lists it.
   * Competition rows without music, or without a single apparatus (all-around), only describe
     participation and are skipped.
+  * Home-language Wikipedia (native_routines_raw.csv, step 19) comes last and only fills gaps: the English article
+    stays the main source. A row whose gymnast, apparatus and year have no English routine is added (source
+    native_wiki_<lang>, the English wording from data/manual/native_music_en.csv, note translated_from_<lang>); a row
+    with the same music as an English routine is only counted; a row with other music than every English routine of
+    that apparatus and year is added and flagged differs_from_english_article (only for languages in COMPARE_LANGS). A cell without an English wording is
+    not merged and is listed in native_music_todo.csv. Group routines, rows without music and rows without a readable
+    year are skipped (counted in merge_report.json).
 
 Usage:
     python -m rg_music.merge
@@ -41,11 +48,20 @@ from pathlib import Path
 from rg_music.apparatus import normalize_apparatus
 from rg_music.crosscheck import FUZZY_OK, norm_music, similarity
 from rg_music.music_parser import parse_music
+from rg_music.native_extract import split_year, translate_apparatus
+from rg_music.tables import PLACEHOLDERS
 from rg_music.years import expand_years, parse_years
 
 INTERIM = Path("data/interim")
 SAME_ROUTINE = Path("data/manual/same_routine.csv")
 EXCLUSIONS = Path("data/manual/routine_exclusions.csv")
+NATIVE_MUSIC = Path("data/manual/native_music_en.csv")
+NATIVE_UNKNOWN = PLACEHOLDERS | {"desconocida", "desconocido", "неизвестно"}
+# Languages whose rows are also compared with the English routines of the same apparatus and year. The Russian articles
+# mirror the English ones (342 rows with the same music; the other rows checked are the same music written in Cyrillic),
+# so Russian rows only fill gaps until a translation of those cells is worth it.
+COMPARE_LANGS = {"es"}
+TODO_FIELDS = ["lang", "music_native", "reason", "gymnast_page", "year", "apparatus", "english_music", "source_url"]
 MERGED_FIELDS = ["routine_id", "gymnast_page", "table_index", "row_index", "year", "year_source", "apparatus",
                  "music", "source", "notes", "source_url", "revid"]
 EVENT_FIELDS = ["routine_id", "competition", "location", "event_year", "source_row"]
@@ -175,6 +191,82 @@ def merge_sources(routines: list[dict], competitions: list[dict], same_routine: 
     return merged, events, dict(stats)
 
 
+def _clean(cell: str) -> str:
+    """Native cells end in zero-width spaces now and then (after a footnote): not part of the text."""
+    return cell.replace("\u200b", "").strip()
+
+
+def load_native_music(path: Path = NATIVE_MUSIC) -> dict[tuple[str, str], str]:
+    """English wording of home-language music cells: (lang, music as in the native table) -> music_en."""
+    if not path.exists():
+        return {}
+    return {(r["lang"], _clean(r["music_native"])): r["music_en"].strip()
+            for r in csv.DictReader(path.open(encoding="utf-8-sig")) if r["music_en"].strip()}
+
+
+def _same_music(native: str, english: str, music_en: str) -> bool:
+    """The English wording when there is one; without it, an English title found whole in the native text."""
+    if music_en:
+        return music_score(music_en, english) >= FUZZY_OK
+    text = f" {norm_music(native)} "
+    titles = [norm_music(n) for t in parse_music(english)[1] for n in (t.title, t.work) if n]
+    return any(len(t) >= 4 and f" {t} " in text for t in titles)
+
+
+def merge_native(merged: list[dict], native: list[dict], translations: dict[tuple[str, str], str]
+                 ) -> tuple[list[dict], list[dict], dict]:
+    """Home-language rows that fill gaps of the English routines -> (new routines, cells to translate, stats)."""
+    stats: Counter = Counter()
+    english: dict[tuple, list[dict]] = {}
+    for m in merged:
+        if m["music"] and isinstance(m["year"], int):
+            key = (m["gymnast_page"], m["year"], normalize_apparatus(m["apparatus"]).apparatus)
+            english.setdefault(key, []).append(m)
+    added, todo = [], []
+    for r in native:
+        lang, music = r["lang"], _clean(r["music"])
+        year, app = split_year(r["year"]), translate_apparatus(r["apparatus"], lang)
+        years = expand_years(year.text)
+        if app.kind == "group" or year.category == "group":
+            stats["native_group_rows_skipped"] += 1
+            continue
+        if not music or music.rstrip(".").lower() in NATIVE_UNKNOWN:
+            stats["native_rows_without_music"] += 1
+            continue
+        if app.kind != "individual" or not years:
+            stats["native_rows_unreadable"] += 1
+            continue
+        music_en = translations.get((lang, music), "")
+        base = f"{r['gymnast_page']}|{lang}{r['table_index']}|{r['row_index']}"
+        apparatus = normalize_apparatus(app.text).apparatus
+        for y in years:
+            pool = english.get((r["gymnast_page"], y, apparatus), [])
+            if any(_same_music(music, m["music"], music_en) for m in pool):
+                stats["native_rows_same_as_english"] += 1
+                continue
+            if pool and lang not in COMPARE_LANGS:
+                stats["native_rows_not_compared"] += 1
+                continue
+            if not music_en:
+                todo.append({"lang": lang, "music_native": music, "reason": "differs" if pool else "new",
+                             "gymnast_page": r["gymnast_page"], "year": y, "apparatus": app.text,
+                             "english_music": " || ".join(m["music"] for m in pool), "source_url": r["source_url"]})
+                stats["native_rows_untranslated"] += 1
+                continue
+            seasonal = len(years) > 1
+            notes = [f"translated_from_{lang}"] + ([f"category_{year.category.replace(' ', '_')}"] if year.category else []) \
+                + (["expanded_from_season"] if seasonal else []) + (["differs_from_english_article"] if pool else [])
+            added.append({
+                "routine_id": f"{base}#{y}" if seasonal else base, "gymnast_page": r["gymnast_page"],
+                "table_index": f"{lang}{r['table_index']}", "row_index": r["row_index"], "year": y,
+                "year_source": year.text if seasonal else "", "apparatus": app.text, "music": music_en,
+                "source": f"native_wiki_{lang}", "notes": ";".join(notes), "source_url": r["source_url"],
+                "revid": r["revid"],
+            })
+            stats["native_rows_added_with_conflict" if pool else "native_rows_added"] += 1
+    return added, todo, dict(stats)
+
+
 def _write_csv(path: Path, fields: list[str], rows: list[dict]) -> None:
     with path.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields)
@@ -190,6 +282,13 @@ def main(argv: list[str] | None = None) -> int:
     read = lambda name: list(csv.DictReader((args.dir / name).open(encoding="utf-8")))  # noqa: E731
     routines, competitions = read("routines_raw.csv"), read("competitions_raw.csv")
     merged, events, stats = merge_sources(routines, competitions, load_same_routine(), load_exclusions())
+    native_path = args.dir / "native_routines_raw.csv"
+    if native_path.exists():
+        added, todo, native_stats = merge_native(merged, read("native_routines_raw.csv"), load_native_music())
+        merged = sorted(merged + added, key=lambda m: (m["gymnast_page"], m["year"] if isinstance(m["year"], int) else 0,
+                                                       m["apparatus"], m["routine_id"]))
+        stats.update(native_stats)
+        _write_csv(args.dir / "native_music_todo.csv", TODO_FIELDS, todo)
 
     _write_csv(args.dir / "routines_merged.csv", MERGED_FIELDS, merged)
     _write_csv(args.dir / "routine_events.csv", EVENT_FIELDS, events)

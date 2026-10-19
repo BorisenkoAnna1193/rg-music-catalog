@@ -1,0 +1,39 @@
+{
+  "pages": {
+    "ru:Солдатова, Александра Сергеевна": 52,
+    "ru:Наркевич, Александра Сергеевна": 0,
+    "ru:Горносько, Алина Александровна": 44,
+    "ru:Кабаева, Алина Маратовна": 0,
+    "es:Almudena Cid": 55,
+    "es:Ana Bautista": 5,
+    "ru:Аверина, Арина Алексеевна": 52,
+    "es:Carmen Acedo (gimnasta)": 12,
+    "es:Carolina Pascual": 16,
+    "es:Carolina Rodríguez (gimnasta)": 45,
+    "ru:Аверина, Дина Алексеевна": 52,
+    "ru:Романова, Элеонора Алексеевна": 13,
+    "es:Esther Domínguez": 21,
+    "es:Esther Escolar": 11,
+    "ru:Канаева, Евгения Олеговна": 63,
+    "es:Jennifer Colino": 26,
+    "es:Maisa Lloret": 6,
+    "ru:Мамун, Маргарита": 26,
+    "es:Marta Bobo": 3,
+    "es:Marta Cantón": 5,
+    "es:Mónica Ferrández": 8,
+    "es:Natalia García Timofeeva": 31,
+    "es:Polina Berezina": 15,
+    "es:Sara Llana": 12,
+    "es:Virginia Manzanera": 3,
+    "ru:Кудрявцева, Яна Алексеевна": 31,
+    "ru:Барсукова, Юлия Владимировна": 20
+  },
+  "rows": {
+    "ru": 353,
+    "es": 274
+  },
+  "pages_without_a_routine_table": [
+    "ru:Наркевич, Александра Сергеевна",
+    "ru:Кабаева, Алина Маратовна"
+  ]
+}

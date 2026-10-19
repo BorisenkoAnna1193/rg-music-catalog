@@ -161,6 +161,7 @@ flowchart TD
 | 17 | Данные для сайта | site_export.py | site/data.json, site/index.html |
 | 18 | Сайт EN/RU, публикация | site/app.html · .github/workflows/pages.yml | GitHub Pages, claude.ai |
 | — | Разведка: родная Википедия гимнастки | native_wiki.py | native_wiki_probe.csv |
+| 19 | Родная Википедия как второй источник: испанские таблицы с переводом на английский, русские только заполняют пробелы | native_extract.py · merge.py · data/manual/native_music_en.csv | native_routines_raw.csv → routines_merged.csv (source native_wiki_es / _ru), native_music_todo.csv |
 
 Branches and loops:
 - Step 3 starts after step 2 of the first run: a bigger gymnast list was needed (the loop back is step 6 on 533 gymnasts).
@@ -168,4 +169,5 @@ Branches and loops:
 - Six ambiguous music cells: manual split chosen, the LLM module (`llm_parse.py`) was written and tested but not used.
 - Step 10 loops with the owner's rules (`work_aliases.csv`); composer suggestions (step 12) are not applied until accepted.
 - Steps 13–14 loop: split by credit → MusicBrainz evidence → join; what has no evidence goes to the owner's sheet (14а).
+- Step 19 enters before the merge: `native_extract` → `merge` → `parse`; a cell without an English wording is not merged and is listed in `native_music_todo.csv`.
 - Order of a full rebuild after step 8: `works` → `works --resolve` → `mb_works` → `works --resolve` → `db` → `site_export`.

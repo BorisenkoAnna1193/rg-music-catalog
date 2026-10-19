@@ -178,6 +178,15 @@ def test_owner_joins_from_the_review_sheet_and_a_title_that_becomes_one_work_get
     assert [r["same_title"] for r in rows] == ["split_by_credit", "joined_by_owner", "joined_by_owner"]
 
 
+def test_owner_join_still_applies_when_new_tracks_change_the_word_order_of_the_main_credit():
+    routines = {k: {"gymnast_page": k.upper(), "year": "2020"} for k in "abcd"}
+    tracks = [track("a", "España Cañí", "Manhattan Pops Orchestra"), track("b", "España Cañí", "Narro Pascual Marquina"),
+              track("c", "España Cañí", "Pascual Marquina Narro"), track("d", "España Cañí", "Pascual Marquina Narro")]
+    joins = {"espana cani ~ manhattan pops orchestra": "espana cani ~ narro pascual marquina"}  # decided before c and d came
+    rows, _, _ = resolve_works(tracks, routines, [], {}, joins)
+    assert {r["work_key"] for r in rows} == {"espana cani"}
+
+
 def test_several_cuts_of_one_song_in_one_routine_are_one_medley_version():
     routines = {"a": {"gymnast_page": "A", "year": "2026"}}
     tracks = [{**track("a", "Pump up the Jam (Club Mix)", "Bodybangers"), "track_no": "1"},

@@ -7,13 +7,22 @@
   "competition_rows_added": 62,
   "added_with_conflict": 2,
   "competition_rows_merged": 167,
+  "native_rows_same_as_english": 346,
+  "native_rows_not_compared": 110,
+  "native_rows_without_music": 20,
+  "native_rows_added": 226,
+  "native_rows_unreadable": 10,
+  "native_group_rows_skipped": 10,
+  "native_rows_added_with_conflict": 8,
   "routines_in": 3850,
   "competition_rows_in": 317,
-  "routines_out": 3961,
+  "routines_out": 4195,
   "events": 229,
   "by_source": {
     "routine_table": 3732,
     "competition_table": 62,
-    "both": 167
+    "both": 167,
+    "native_wiki_es": 232,
+    "native_wiki_ru": 2
   }
 }

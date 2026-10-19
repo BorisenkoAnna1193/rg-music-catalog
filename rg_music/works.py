@@ -230,7 +230,7 @@ def _credit_names(tracks: list[dict]) -> set[str]:
 GENERIC_TITLES = {
     "adagio", "ave maria", "ballade", "barcarolle", "berceuse", "concerto", "elegy", "etude", "fantasia", "fantasy",
     "finale", "intermezzo", "introduction", "lullaby", "main theme", "main title", "march", "nocturne", "overture",
-    "prelude", "requiem", "rhapsody", "romance", "serenade", "sonata", "suite", "tango", "theme", "valse", "waltz",
+    "prelude", "requiem", "rhapsody", "romance", "rondo", "serenade", "sonata", "suite", "tango", "theme", "valse", "waltz",
 }
 _CREDIT_SPLIT = r",|&|/|;| and "
 
@@ -271,11 +271,18 @@ def load_owner_joins(path: Path = OWNER_JOINS) -> dict[str, str]:
     return {r["split_key"]: r["join_to"] for r in csv.DictReader(path.open(encoding="utf-8-sig")) if r["join_to"]}
 
 
+def _words(split_key: str) -> frozenset[str]:
+    """A split key as a set of words: the main credit of a group can change its word order when new tracks come in
+    ("narro pascual marquina" -> "pascual marquina narro"), and the owner's decision must still find the group."""
+    return frozenset(split_key.split())
+
+
 def _join_by_owner(key: str, rs: list[dict], owner_joins: dict[str, str]) -> None:
     """The owner's joins from the review sheet; a title that becomes one work takes the plain title as its key."""
-    final = {r["split_key"]: r["work_key"] for r in rs}
+    final = {_words(r["split_key"]): r["work_key"] for r in rs}
+    joins = {_words(k): _words(v) for k, v in owner_joins.items()}
     for r in rs:
-        if (to := owner_joins.get(r["split_key"])) and to in final:
+        if (to := joins.get(_words(r["split_key"]))) and to in final:
             r.update(work_key=final[to], same_title="joined_by_owner")
     if len({r["work_key"] for r in rs}) == 1:
         for r in rs:

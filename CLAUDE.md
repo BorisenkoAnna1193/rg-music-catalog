@@ -112,6 +112,8 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   author_source to works.csv; a composer author makes a work classical when listed (Smetana, Rimsky-Korsakov:
   187 classical works); version_type original / cover from the original performer; FIG rule: a song with words
   (MusicBrainz) in a pre-2013 routine on an apparatus (not Gala) is an `instrumental` version of its own (43 tracks).
+- `rg_music/native_extract.py` – step 19: music tables of the home-language Wikipedia (Spanish; Russian fills gaps only),
+  translated to English via `data/manual/native_music_en.csv`, merged in `merge.py` (see "Second language" below).
 - `data/manual/routine_exclusions.csv` – routines the source states wrongly, dropped in `merge.py` (raw files keep
   them, `merge_report.json` lists them): Arina Averina 2020 Hoop (first) "Largo Al Factotum" (owner found no such
   routine). 3961 routines.
@@ -372,17 +374,46 @@ Decided to offer English and Russian. What gets a Russian version:
   before the first push; the old history is only in the local branch `backup-before-email-rewrite`, never pushed).
   Pushing uses the passphrase-free key ~/.ssh/id_ed25519_github (~/.ssh/config, Host github.com).
 
-## Second language of Wikipedia (probe 2026-10-13, not integrated yet)
+## Second language of Wikipedia (step 19, integrated 2026-10-19)
 - `rg_music/native_wiki.py` probes the gymnast's home-language Wikipedia (+ Russian for ex-USSR) for music tables →
-  `data/interim/native_wiki_probe.csv`. Result: 297 of 533 have a home-language article, 25 with a music table;
-  15 gymnasts would get music for the first time (+~190 rows; 12 Spanish: Almudena Cid 55, Jennifer Colino 26,
-  Esther Domínguez 21...; Alina Kabaeva from ru; Shin Soo-ji from ko), 6 more seasons elsewhere. Other languages add
-  almost nothing.
-- Plan (owner agreed in principle): English first, home language only fills missing routines (same rule as the
-  competition-table merge), conflicts kept as flagged rows. **Spanish content must be translated to English** (the
-  site is EN/RU): titles and credit words ("de", "compuesto por"), apparatus (Aro, Pelota, Mazas, Cinta, Cuerda).
-- WikiClient now takes `lang` (cache in data/raw/<lang>/) and has `langlinks()`; cache keys of non-ASCII titles carry
+  `data/interim/native_wiki_probe.csv` (297 of 533 have a home-language article). The probe counted any table whose
+  header mentions music, so navigation boxes slipped in: Kabaeva (ru: Duma members) and Shin Soo-ji (ko: a TV show) have
+  NO music table; Narkevich (ru) has only a group table.
+- `rg_music/native_extract.py` reads only `wikitable`s with year + apparatus + music headers (es "Año / Aparatos /
+  Música", ru "Год / Предмет / Музык...") → `data/interim/native_routines_raw.csv` (627 rows, kept as they are). Vocabulary
+  in code: apparatus (Aro, Pelota, Mazas, Cinta, Cuerda, Manos libres; "Ejercicio de exhibición (...)" = Gala with the
+  apparatus list; Russian Обруч... and "(первая версия)"/"(1)" = first), notes ("Inicio de temporada" = start of
+  season, "JJ. OO. de Sídney" = Sydney 2000 Olympics; gala company lists longer than 3 → "A, B and others"), year
+  category ("Individual júnior" → junior, "infantil"/"alevín" → pre-junior, "Conjunto" → group). A number of apparatus
+  ("5 cintas", "3 aros y 2 pelotas") = group routine, never merged into the individual catalogue.
+- Music cells are Spanish prose, so they are NOT translated by rules: `data/manual/native_music_en.csv` (lang,
+  music_native, music_en, translated_by, note) holds the English wording of every needed cell in English-Wikipedia style
+  ("Tango Jalousie by Jacob Gade, performed by André Rieu"; films as '"Title" (Film OST)' or "(from Film)" for lists of
+  quoted titles, which the parser cannot read with OST), 178 cells typed by Claude (`translated_by = claude`, to be
+  reviewed by the owner), each checked with the parser. Source typos fixed with a note (10 Dolar, Gloria Stefan,
+  Borislav Slavnov). Zero-width spaces at the end of cells are dropped.
+- `merge.py` (after the competition merge): English stays the main source. Same gymnast + apparatus + year as an English
+  routine with the same music → only counted (346); no English routine → added (`source = native_wiki_<lang>`, notes
+  `translated_from_<lang>`, `category_junior` / `category_pre-junior`, `expanded_from_season`); other music than every
+  English routine of that apparatus and year → added and flagged `differs_from_english_article` (8, all Carolina
+  Rodríguez + Sara Llana 2015, mostly seasons "2005-2006" against an English single year). Cells without an English
+  wording are not merged and are listed in `data/interim/native_music_todo.csv` (empty now). **Russian rows only fill
+  gaps** (`COMPARE_LANGS = {"es"}`): the Russian articles mirror the English ones (the rest is the same music in
+  Cyrillic); a few real conflicts exist (Arina Averina 2015 Ribbon Paquita vs Rio Rita) — a validation report later.
+- Result: 234 routines added (232 es, 2 ru: Romanova 2018, Dina Averina 2023 Ribbon), 11 gymnasts get music for the
+  first time (Almudena Cid 76 routine-years, Jennifer Colino 32, Esther Domínguez 22, Carolina Pascual 17, Carmen Acedo
+  15...), 196 gymnasts with music (was 185). 3961 → 4195 routines, 2596 works, 2948 versions.
+- Matching after the Spanish tracks (Claude, notes in `work_aliases.csv`): "Ave Maria" by Vavilov → Ave Maria
+  (Vavilov/Caccini); every "Tango Jalousie" = Jacob Gade; "Mutation" credited to Cirque du Soleil = Amaluna's Mutation
+  (Dubuc & Lessard). "rondo" added to GENERIC_TITLES (Dupéré's Rondo from Mystère is not Schnittke's). Owner decisions
+  of `work_review_decisions.csv` now find their group by the WORDS of the split key (a new track had changed
+  "espana cani ~ narro pascual marquina" into "... pascual marquina narro" and undid the owner's join).
+- New titles split by credit, for the owner's review (kept apart until then): Angel, Black Cat White Cat (Bregović vs
+  the film's composers), Feelings, Hero, Matador, Memory (Lloyd Webber vs Joseph William Morgan), Music, Rondo.
+- WikiClient takes `lang` (cache in data/raw/<lang>/) and has `langlinks()`; cache keys of non-ASCII titles carry
   a hash (they used to collide: every Cyrillic title was one file).
+- Pipeline: `native_wiki` (probe, network) → `native_extract` → `merge` → `parse` → works... The site footer names
+  Spanish and Russian Wikipedia as sources (CC BY-SA).
 
 ## Dashboard decisions (owner, 2026-10-13)
 - Style: direction **D · Apparatus** (Manrope, rounded cards, pill tabs, one colour per apparatus: hoop #2F5BEA, ball
