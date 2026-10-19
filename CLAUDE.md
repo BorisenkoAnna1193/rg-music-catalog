@@ -428,7 +428,8 @@ Decided to offer English and Russian. What gets a Russian version:
 - Owner's review of the new same-title works (work_split_review_new, 2026-10-20): Black Cat, White Cat = one work (the
   melody from Kusturica's film; Bregović, Karajlić/Aralica/Sparavalo and Sparavalo's Bubamara joined); Joseph William
   Morgan's Memory = a remix of Memory from Cats (joined); Angel, Feelings, Hero, Matador, Music, Rondo stay apart. 2593 works.
-  native_translation_review came back with no marks in decision / english_corrected / owner_note (asked the owner).
+  native_translation_review: the owner checked all 178 translations and found no errors (2026-10-20); column
+  `reviewed_by` in native_music_en.csv. The site shows only the English wording (no Spanish text).
 - WikiClient takes `lang` (cache in data/raw/<lang>/) and has `langlinks()`; cache keys of non-ASCII titles carry
   a hash (they used to collide: every Cyrillic title was one file).
 - Pipeline: `native_wiki` (probe, network) → `native_extract` → `merge` → `parse` → works... The site footer names
