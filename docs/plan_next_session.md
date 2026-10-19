@@ -9,6 +9,8 @@
 - Что сделано по шагам и почему: `docs/case_decisions.txt` (шаги 1–19) и `docs/pipeline.md` (схема).
 
 ## Как всё пересобрать
+Одной командой (время этапов и сравнение с прошлым коммитом): `python -m rg_music.pipeline --from merge` (`--mb` — с MusicBrainz, нужна сеть).
+По шагам:
 ```
 python -m rg_music.native_extract && python -m rg_music.merge && python -m rg_music.parse   # таблицы, слияние, разбор
 python -m rg_music.works && python -m rg_music.works --resolve   # произведения и версии
@@ -17,6 +19,9 @@ python -m rg_music.db && python -m rg_music.site_export           # SQLite и д
 python -m pytest -q
 ```
 После изменения `site/` — коммит и `git push`: GitHub Pages пересоберётся сам. Версию на claude.ai Claude публикует заново из `site/app.html` вместе с `site/data.json`.
+
+## В начале сессии Claude
+Читает `docs/session_efficiency.md` и в конце сравнивает цифры с прошлой сессией.
 
 ## Ждёт тебя
 1. **PayPal.** Когда PayPal подтвердит аккаунт: paypal.com/donate/buttons → создать кнопку → вкладка Link → прислать ссылку вида `https://www.paypal.com/donate/?hosted_button_id=…`. Claude впишет её в константу `SUPPORT_URL` в `site/app.html`. Кнопку Sponsor на GitHub (`.github/FUNDING.yml`) — позже.

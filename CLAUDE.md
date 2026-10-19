@@ -145,8 +145,13 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   run with `--seed`. Last full run: 533 pages OK, 173 with a routine table, 3850 routine rows;
   crosscheck on 241 competition rows: 136 match / 10 fuzzy / 3 year-shifted / 21 differ / 71 no routine table.
 - Tests: `python -m pytest -q` (fixtures mimic real layouts).
+- `rg_music/pipeline.py` – runs the pipeline from a stage (`--from merge`, `--mb` for MusicBrainz once), times the stages
+  and compares the result with a commit (`--check --base HEAD`): counts, split decisions (LOST_OWNER_DECISION fails the
+  run), new tracks joined to a work whose credits share no name → `data/interim/pipeline_report.json`.
 
 ## Documentation map
+- `docs/session_efficiency.md` – efficiency log: per-session numbers, Claude's optimization proposals and their status
+  (owner, 2026-10-19: apply them by default, measure their effect in the next session).
 - `docs/db_schema.md` – SQLite schema (ER diagrams, Mermaid; the MVP tables are built by `rg_music/db.py`).
 - `docs/pipeline.md` – the process as it went: steps 1–18 in order, forks, owner decisions, the scripts behind each step,
   and the full rebuild order.
