@@ -210,7 +210,7 @@ def fuzzy_groups(info: dict[str, dict]) -> tuple[dict[str, str], list[dict]]:
         root = uf.find(k)
         if root not in best or (info[k]["gymnasts"], info[k]["tracks"], k) > (info[best[root]]["gymnasts"], info[best[root]]["tracks"], best[root]):
             best[root] = k
-    return {k: best[uf.find(k)] for k in info}, sorted(review, key=lambda r: -r["similarity"])
+    return {k: best[uf.find(k)] for k in info}, sorted(review, key=lambda r: (-r["similarity"], r["title_a"], r["title_b"]))
 
 
 def _credit_names(tracks: list[dict]) -> set[str]:
