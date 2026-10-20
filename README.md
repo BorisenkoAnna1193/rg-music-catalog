@@ -18,8 +18,8 @@ normalisation and entity resolution, not just downloading pages.
 | | |
 |---|---|
 | Gymnasts | 1,395: everyone in the individual results of the World Championships 1963–2026; 196 with known music |
-| Routines | 4,191 routine-years (a season "2022/2023" counts once per year) |
-| Works | 2,593, with 2,946 versions (performers as the source credits them) |
+| Routines | 4,197 routine-years (a season "2022/2023" counts once per year) |
+| Works | 2,595, with 2,948 versions (performers as the source credits them) |
 | Sources | English Wikipedia (533 gymnast articles); Spanish Wikipedia adds 229 routines for 15 Spanish gymnasts; Russian Wikipedia 2 routines; MusicBrainz as evidence for matching |
 
 ## Pipeline

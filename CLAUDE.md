@@ -9,10 +9,10 @@ A catalog of music used by rhythmic gymnasts, built from English Wikipedia, answ
 The owner talks in Russian; code, comments, README and commit messages are in English.
 
 ## Status (2026-10-20) — start here
-- **Published** (step 19 included, 2026-10-20): https://borisenkoanna1193.github.io/rg-music-catalog/ (public, GitHub Pages)
-  and https://claude.ai/artifact/2Hz5iyZiwAmbv2N35ManNv (private). Repo https://github.com/BorisenkoAnna1193/rg-music-catalog,
-  `main` in sync, 228 tests pass. 1,395 gymnasts (196 with music), 4,191 routine-years (229 from Spanish and 2 from Russian
-  Wikipedia), 2,593 works, 2,946 versions.
+- **Published** (steps 19–22, 2026-10-20; release `v0.2.0`): https://borisenkoanna1193.github.io/rg-music-catalog/ (public,
+  GitHub Pages) and https://claude.ai/artifact/2Hz5iyZiwAmbv2N35ManNv (private). Repo https://github.com/BorisenkoAnna1193/rg-music-catalog,
+  `main` in sync, 237 tests pass. 1,395 gymnasts (196 with music), 4,197 routine-years (229 from Spanish and 2 from Russian
+  Wikipedia), 2,595 works, 2,948 versions.
 - **Next session plan, pending owner actions and the proposed order: `docs/plan_next_session.md`.** Read
   `docs/session_efficiency.md` first (owner: measure whether the applied proposals helped).
 - Rebuild: `python -m rg_music.pipeline --from merge` (add `--mb` for MusicBrainz); it compares the result with HEAD.
