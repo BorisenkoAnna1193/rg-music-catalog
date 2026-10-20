@@ -179,6 +179,8 @@ Two project subagents in `.claude/agents/` (shared in git; the rest of `.claude/
 The main chat relays both reports to the owner; the agents never commit.
 
 ## Documentation map
+- **Local only** (git-ignored since 2026-10-20, owner): plan_next_session.md, pipeline.md, case_decisions.txt, steps/, tasks/,
+  session_efficiency.md, acceptance_criteria.md. They are on the owner's disk only; never `git add -f` them. db_schema.md stays public.
 - `docs/tasks/` – one file per task (for task-verifier); `docs/acceptance_criteria.md` – criteria per step;
   `docs/steps/rg_music_cat_doc_step_<N>.md` – code guide per step.
 - `docs/session_efficiency.md` – efficiency log: per-session numbers, Claude's optimization proposals and their status

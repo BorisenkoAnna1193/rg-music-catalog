@@ -59,8 +59,8 @@ undoes an earlier decision fails the run instead of slipping through.
 - **Three levels of music:** work (Spartacus, Khachaturian) → excerpt (Adagio of Spartacus and Phrygia) → version (a
   performer). An excerpt that the source does not name is stored as unknown, never assumed.
 
-More detail: `docs/pipeline.md` (the process step by step, with a diagram) and `docs/case_decisions.txt` (decisions and
-their reasons). Tests: `python -m pytest -q` (228, fixtures mimic real table layouts).
+The database schema is described in `docs/db_schema.md`. Tests: `python -m pytest -q` (fixtures mimic real table
+layouts).
 
 ## Good to know
 

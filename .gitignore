@@ -12,3 +12,12 @@ data/raw/
 
 # built from the CSV layers by python -m rg_music.db
 data/catalog.sqlite
+
+# working documents stay on the owner's computer (owner, 2026-10-20); docs/db_schema.md stays public
+docs/plan_next_session.md
+docs/pipeline.md
+docs/case_decisions.txt
+docs/steps/
+docs/tasks/
+docs/session_efficiency.md
+docs/acceptance_criteria.md
