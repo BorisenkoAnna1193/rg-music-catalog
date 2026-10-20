@@ -110,6 +110,10 @@ def load_exclusions(path: Path = EXCLUSIONS) -> set[tuple]:
             for r in csv.DictReader(path.open(encoding="utf-8-sig"))}
 
 
+def _exclusion_key(row: dict) -> tuple:
+    return row["gymnast_page"], row["year"].strip(), row["apparatus"].strip(), row["music"].strip()
+
+
 def _sort_key(m: dict) -> tuple:
     """Output order: gymnast, year (an unreadable year first), apparatus, id."""
     return m["gymnast_page"], m["year"] if isinstance(m["year"], int) else 0, m["apparatus"], m["routine_id"]
@@ -143,14 +147,14 @@ def expand_routines(rows: list[dict]) -> list[dict]:
 
 def merge_sources(routines: list[dict], competitions: list[dict], same_routine: set[tuple] = frozenset(),
                   exclusions: set[tuple] = frozenset()) -> tuple[list[dict], list[dict], dict]:
-    excluded = [r for r in routines if (r["gymnast_page"], r["year"].strip(), r["apparatus"].strip(), r["music"].strip())
-                in exclusions]
+    excluded = [r for r in routines if _exclusion_key(r) in exclusions]
     routines = [r for r in routines if r not in excluded]
     merged = expand_routines(routines)
     events: list[dict] = []
     seen_events: set[tuple] = set()
     stats = Counter(seasons_expanded=len(merged) - len(routines))
     stats["excluded_by_owner"] = [_base_id(r) for r in excluded]
+    used_same: set[tuple] = set()
 
     def add_event(routine_id: str, c: dict, year: int) -> None:
         key = (routine_id, c["competition"], c["location"], year)
@@ -174,8 +178,10 @@ def merge_sources(routines: list[dict], competitions: list[dict], same_routine: 
                 if m["music"] and normalize_apparatus(m["apparatus"]).apparatus == app and isinstance(m["year"], int)]
         near = [(music_score(c["music"], m["music"]), -abs(m["year"] - year), m) for m in pool if abs(m["year"] - year) <= 1]
         best = max(near, key=lambda t: (t[0], t[1]), default=None)
-        owner = next((t for t in near if (c["gymnast_page"], year, app, c["music"].strip(), t[2]["music"].strip())
-                      in same_routine), None)
+        owner_key = lambda t: (c["gymnast_page"], year, app, c["music"].strip(), t[2]["music"].strip())  # noqa: E731
+        owner = next((t for t in near if owner_key(t) in same_routine), None)
+        if owner:
+            used_same.add(owner_key(owner))
         if owner or (best and best[0] >= FUZZY_OK):
             m = (owner or best)[2]
             m["source"] = "both" if m["source"] == "routine_table" else m["source"]
@@ -200,6 +206,9 @@ def merge_sources(routines: list[dict], competitions: list[dict], same_routine: 
         stats["added_with_conflict"] += "differs_from_routine_table" in new["notes"]
 
     merged.sort(key=_sort_key)
+    stats["unused_owner_rows"] = (
+        [f"routine_exclusions: {' | '.join(k)}" for k in sorted(exclusions - {_exclusion_key(r) for r in excluded})]
+        + [f"same_routine: {' | '.join(map(str, k))}" for k in sorted(set(same_routine) - used_same)])
     return merged, events, dict(stats)
 
 
@@ -238,6 +247,7 @@ def merge_native(merged: list[dict], native: list[dict], translations: dict[tupl
     English routines the owner rejected in favour of a native row are listed in stats["dropped_english"]."""
     decisions = decisions or {}
     dropped: list[str] = []
+    used: set[str] = set()
     stats: Counter = Counter()
     english: dict[tuple, list[dict]] = {}
     for m in merged:
@@ -278,6 +288,8 @@ def merge_native(merged: list[dict], native: list[dict], translations: dict[tupl
             seasonal = len(years) > 1
             routine_id = f"{base}#{y}" if seasonal else base
             decision = decisions.get(routine_id, {}).get("decision", "") if pool else ""
+            if decision:
+                used.add(routine_id)
             if decision == "english":
                 stats["native_rows_rejected_by_owner"] += 1
                 continue
@@ -297,6 +309,7 @@ def merge_native(merged: list[dict], native: list[dict], translations: dict[tupl
             stats[f"native_rows_{decision}_by_owner" if decision else
                   "native_rows_added_with_conflict" if pool else "native_rows_added"] += 1
     stats["dropped_english"] = dropped
+    stats["unused_owner_rows"] = [f"native_conflict_decisions: {k}" for k in sorted(set(decisions) - used)]
     return added, todo, dict(stats)
 
 
@@ -321,6 +334,7 @@ def main(argv: list[str] | None = None) -> int:
                                                  load_native_decisions())
         dropped = set(native_stats["dropped_english"])
         merged = sorted([m for m in merged if m["routine_id"] not in dropped] + added, key=_sort_key)
+        native_stats["unused_owner_rows"] = stats["unused_owner_rows"] + native_stats["unused_owner_rows"]
         stats.update(native_stats)
         _write_csv(args.dir / "native_music_todo.csv", TODO_FIELDS, todo)
 

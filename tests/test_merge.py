@@ -110,3 +110,12 @@ def test_owner_can_exclude_a_routine_the_source_states_wrongly():
     rows = [routine("2020", "Hoop (first)", '"Largo Al Factotum", by Denis Matsuev', row=1), routine("2020", "Ball", "x", row=2)]
     merged, _, stats = merge_sources(rows, [], exclusions={("A B", "2020", "Hoop (first)", '"Largo Al Factotum", by Denis Matsuev')})
     assert [m["routine_id"] for m in merged] == ["A B|1|2"] and stats["excluded_by_owner"] == ["A B|1|1"]
+
+
+def test_owner_rows_that_match_nothing_are_reported():
+    r, c = routine("2008", "Rope", "Gopak"), comp("2008", "Rope", "Hopak")
+    same = {("A B", 2008, "Rope", "Hopak", "Gopak"), ("A B", 2009, "Ball", "old text", "older text")}
+    stale = ("A B", "2020", "Hoop", "text before the article was edited")
+    _, _, stats = merge_sources([r], [c], same, exclusions={stale})
+    assert stats["unused_owner_rows"] == ["routine_exclusions: A B | 2020 | Hoop | text before the article was edited",
+                                          "same_routine: A B | 2009 | Ball | old text | older text"]

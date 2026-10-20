@@ -105,3 +105,12 @@ def test_owner_decisions_on_conflicts_keep_both_drop_native_or_drop_english():
     assert [(r["routine_id"], r["notes"].split(";")[-1]) for r in added] == [
         ("A B|es0|1", "chosen_by_owner_over_english"), ("A B|es0|2", "kept_both_by_owner")]
     assert stats["dropped_english"] == ["en2"] and stats["native_rows_rejected_by_owner"] == 1
+
+
+def test_owner_decisions_that_match_nothing_are_reported():
+    pool = [{**english(2005, "Ribbon", "Caravan by Michel Camilo"), "routine_id": "en1"}]
+    rows = [native("2005", "Cinta", "«Montserrat».")]
+    tr = {("es", "«Montserrat»."): "Montserrat by Bajofondo"}
+    decisions = {"A B|es0|0": {"decision": "both"}, "A B|es0|9": {"decision": "english"}}
+    _, _, stats = merge_native(pool, rows, tr, decisions)
+    assert stats["unused_owner_rows"] == ["native_conflict_decisions: A B|es0|9"]

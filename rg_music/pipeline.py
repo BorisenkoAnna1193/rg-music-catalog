@@ -95,6 +95,11 @@ def suspicious_joins(old: list[dict], new: list[dict]) -> list[dict]:
     return out
 
 
+def unused_owner_rows(path: Path = INTERIM / "merge_report.json") -> list[str]:
+    """Owner's rows in data/manual/ that matched nothing in the last merge (the source text changed?)."""
+    return json.loads(path.read_text(encoding="utf-8")).get("unused_owner_rows", []) if path.exists() else []
+
+
 def compare_with_head(base: str = "HEAD") -> dict:
     files = {name: INTERIM / f"{name}.csv" for name in ("routines_merged", "works", "versions", "work_splits", "track_works")}
     old = {k: _head(p, base) for k, p in files.items()}
@@ -104,6 +109,7 @@ def compare_with_head(base: str = "HEAD") -> dict:
         "counts_now": counts(new["routines_merged"], new["works"], new["versions"]),
         "split_changes": split_changes(old["work_splits"], new["work_splits"]),
         "suspicious_joins": suspicious_joins(old["track_works"], new["track_works"]),
+        "unused_owner_rows": unused_owner_rows(),
     }
 
 
@@ -114,6 +120,8 @@ def print_report(report: dict) -> None:
         print(f"  split decision  {c['title']}: {c['before'] or '-'} -> {c['after'] or '-'} {c['flag']}")
     for j in report["suspicious_joins"]:
         print(f"  check join      {j['title']} by {j['artist']} -> work '{j['work_key']}' ({j['routine_id']})")
+    for row in report.get("unused_owner_rows", []):
+        print(f"  unused owner row  {row}")
     if "timings" in report:
         print("timings: " + ", ".join(f"{k} {v:.0f}s" for k, v in report["timings"].items()))
 
