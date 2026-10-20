@@ -18,6 +18,8 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 - Rebuild: `python -m rg_music.pipeline --from merge` (add `--mb` for MusicBrainz); it compares the result with HEAD.
 - The owner works in Russian, reviews tables in Google Sheets (Drive folder rg_music), not in CSV files.
 - **Never `git push --all` / `--mirror`**; push only main, only after the owner's OK.
+- Site changes: draft on the private claude.ai artifact → the owner comments on the page → apply, republish, resolve the
+  thread → push to GitHub only when she says it can be published (owner, 2026-10-20).
 
 ## Current state (module by module; numbers as of each step)
 - `rg_music/wiki_client.py` – polite MediaWiki API client (UA with contact from
