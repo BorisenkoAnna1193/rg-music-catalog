@@ -35,6 +35,42 @@ def read_titles(path: Path) -> list[str]:
     return [ln.strip() for ln in lines if ln.strip() and not ln.startswith("#")]
 
 
+def page_rows(page, requested_title: str) -> tuple[list[dict], list[dict], dict]:
+    """Music table rows of one article -> (routine rows, competition rows, report entry)."""
+    infos, rows = extract_music_tables(page.html)
+    info = dict(
+        page=page.title,
+        redirected=page.title != requested_title,
+        revid=page.revid,
+        tables=[i.__dict__ for i in infos if i.kind != "other"],
+        other_tables=len([i for i in infos if i.kind == "other"]),
+        routine_rows=sum(r.table_kind == "routine" for r in rows),
+        competition_rows=sum(r.table_kind == "competition" for r in rows),
+        rows_with_notes=sum(bool(r.notes) for r in rows),
+    )
+    routine_rows, comp_rows = [], []
+    for r in rows:
+        if r.table_kind == "competition":
+            r.competition, r.year, event_notes = normalize_event(r.competition, r.location, r.year)
+            r.notes.extend(event_notes)
+        rec = {
+            "gymnast_page": page.title,
+            "requested_title": requested_title,
+            "revid": page.revid,
+            "table_index": r.table_index,
+            "row_index": r.row_index,
+            "year": r.year,
+            "apparatus": r.apparatus,
+            "music": r.music,
+            "competition": r.competition,
+            "location": r.location,
+            "notes": ";".join(r.notes),
+            "source_url": page.url,
+        }
+        (routine_rows if r.table_kind == "routine" else comp_rows).append(rec)
+    return routine_rows, comp_rows, info
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--seed", type=Path, default=Path("data/seed_gymnasts.txt"))
@@ -60,38 +96,11 @@ def main(argv: list[str] | None = None) -> int:
             report.append(entry)
             continue
 
-        infos, rows = extract_music_tables(page.html)
-        entry.update(
-            page=page.title,
-            redirected=page.title != title,
-            revid=page.revid,
-            tables=[i.__dict__ for i in infos if i.kind != "other"],
-            other_tables=len([i for i in infos if i.kind == "other"]),
-            routine_rows=sum(r.table_kind == "routine" for r in rows),
-            competition_rows=sum(r.table_kind == "competition" for r in rows),
-            rows_with_notes=sum(bool(r.notes) for r in rows),
-        )
+        routines, competitions, info = page_rows(page, title)
+        entry.update(info)
         report.append(entry)
-
-        for r in rows:
-            if r.table_kind == "competition":
-                r.competition, r.year, event_notes = normalize_event(r.competition, r.location, r.year)
-                r.notes.extend(event_notes)
-            rec = {
-                "gymnast_page": page.title,
-                "requested_title": title,
-                "revid": page.revid,
-                "table_index": r.table_index,
-                "row_index": r.row_index,
-                "year": r.year,
-                "apparatus": r.apparatus,
-                "music": r.music,
-                "competition": r.competition,
-                "location": r.location,
-                "notes": ";".join(r.notes),
-                "source_url": page.url,
-            }
-            (routine_rows if r.table_kind == "routine" else comp_rows).append(rec)
+        routine_rows += routines
+        comp_rows += competitions
 
     _write_csv(args.out / "routines_raw.csv", routine_rows)
     _write_csv(args.out / "competitions_raw.csv", comp_rows)

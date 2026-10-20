@@ -179,6 +179,22 @@ class WikiClient:
                 out[title] = (final, None if page.get("missing") else page.get("pageid"))
         return out
 
+    def revids(self, titles: list[str], batch: int = 50) -> dict[str, int | None]:
+        """Map every title to the id of its latest revision (after redirects; None if the page is missing)."""
+        out: dict[str, int | None] = {}
+        unique = list(dict.fromkeys(titles))
+        for i in range(0, len(unique), batch):
+            chunk = unique[i:i + batch]
+            query = self._get({"action": "query", "titles": "|".join(chunk), "redirects": "1",
+                               "prop": "revisions", "rvprop": "ids"})["query"]
+            moved = {m["from"]: m["to"] for m in query.get("normalized", []) + query.get("redirects", [])}
+            latest = {p["title"]: (p.get("revisions") or [{}])[0].get("revid") for p in query.get("pages", [])}
+            for title in chunk:
+                final = moved.get(title, title)
+                final = moved.get(final, final)
+                out[title] = latest.get(final)
+        return out
+
     def langlinks(self, titles: list[str], batch: int = 50) -> dict[str, dict[str, str]]:
         """Map every title (after redirects) to {language code: title of the same article in that language}."""
         out: dict[str, dict[str, str]] = {}

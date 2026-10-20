@@ -154,6 +154,17 @@ The owner talks in Russian; code, comments, README and commit messages are in En
 - `rg_music/pipeline.py` – runs the pipeline from a stage (`--from merge`, `--mb` for MusicBrainz once), times the stages
   and compares the result with a commit (`--check --base HEAD`): counts, split decisions (LOST_OWNER_DECISION fails the
   run), new tracks joined to a work whose credits share no name → `data/interim/pipeline_report.json`.
+- `rg_music/update.py` – step 22, update from Wikipedia with no silent changes (owner, 2026-10-20). Latest revisions of all
+  tracked articles (50 per request) → changed ones downloaded into `data/raw/_update/` (the main cache is not touched) →
+  rows compared by CONTENT (year, apparatus, music, competition), not position. Music where there was none (a new
+  row, or an empty / "??" / "Unknown" placeholder filled in), in ANY year = `new_music`, accepted by rule and listed
+  until the owner has seen it (`reviewed`); known music replaced (`changed`) or gone (`removed`)
+  → `data/interim/update_review.csv` for the owner (Drive sheet; `update --import <csv>`, decision accept/reject or
+  принять/отклонить). Decisions in `data/manual/wiki_updates.csv` (rows as JSON), applied by `merge.py` on top of the raw
+  files; a rejected change is not shown again; an accepted change whose old row is gone → `unused_owner_rows`. Run by
+  hand (owner: no schedule). Never refresh with `extract --refresh` (it overwrites the raw files).
+  `merge_report.json` → `unused_owner_rows`: owner rows (exclusions, same_routine, native conflicts, wiki_updates) that
+  matched nothing, printed by `pipeline.py`.
 
 ## Agents (owner, 2026-10-20)
 Two project subagents in `.claude/agents/` (shared in git; the rest of `.claude/` stays local):

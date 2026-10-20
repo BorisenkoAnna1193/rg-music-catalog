@@ -178,8 +178,10 @@ flowchart TD
 | 19 | Родная Википедия как второй источник: испанские таблицы с переводом на английский, русские только заполняют пробелы | native_extract.py · merge.py · data/manual/native_music_en.csv | native_routines_raw.csv → routines_merged.csv (source native_wiki_es / _ru), native_music_todo.csv |
 | 19а | Проверка владелицей (Google Таблицы): 178 переводов, 8 расхождений, 8 новых одноимённых названий (второй раунд) | work_review.py --new / --import --review · merge.py | native_music_en.csv (reviewed_by), native_conflict_decisions.csv, work_review_decisions.csv |
 | 20 | Прогон этапов одной командой: время каждого этапа и сравнение с прошлым коммитом (потерянные решения владелицы, подозрительные склейки) | pipeline.py | pipeline_report.json; журнал docs/session_efficiency.md |
+| 22 | Обновление из Википедии без тихих изменений: какие статьи изменились (ревизии по 50 за запрос), сравнение строк по содержанию; музыка там, где её не было (новая строка, пустая ячейка, «??»), добавляется по правилу; замена или удаление известной музыки ждёт решения владелицы | update.py (extract.page_rows, native_extract.native_rows) · merge.py | update_review.csv → data/manual/wiki_updates.csv, update_report.json |
 
 Branches and loops:
+- Step 22 (manual, e.g. in January when the new season appears): `python -m rg_music.update` → owner's sheet `update_review` → `update --import` → `pipeline --from merge` → `work_review --new` for new music. `extract --refresh` is no longer used for updates: it would overwrite the raw files silently.
 - Step 3 starts after step 2 of the first run: a bigger gymnast list was needed (the loop back is step 6 on 533 gymnasts).
 - Step 4 runs only for names the review sheet marks as disputed (a fork).
 - Six ambiguous music cells: manual split chosen, the LLM module (`llm_parse.py`) was written and tested but not used.

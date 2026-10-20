@@ -20,3 +20,10 @@
 - [confirmed 2026-10-20] `routine_id` уникален; каждая строка `routine_events.csv` ссылается на существующее выступление, повторов событий нет — подсчёт
 - [confirmed 2026-10-20] Каждое решение владелицы шага применено: строки `routine_exclusions.csv` нет в выходе; пары `same_routine.csv` слиты (пометка `same_routine_by_owner`, отдельной строки соревнования нет); `native_conflict_decisions.csv`: both → испанская строка есть, english → её нет, spanish → она есть, а английские id из `english_routine_ids` удалены — сверка скриптом
 - [confirmed 2026-10-20] Счёт в `merge_report.json` сходится: `competition_rows_in` = skipped + merged + added; `routines_out` = сумма `by_source` = строк в `routines_merged.csv`; `native_music_todo.csv` пуст (все испанские ячейки переведены) — подсчёт
+
+## Шаг 22 · Обновление из Википедии без тихих изменений (update.py; применяется в merge.py)
+- [confirmed 2026-10-20] Замена или удаление уже известной музыки не попадает в данные без решения владелицы: до импорта решение в листе пустое — сверка скриптом (`wiki_updates.csv`: каждая строка `changed` / `removed` имеет `decided_by = owner`)
+- [confirmed 2026-10-20] Каждая строка новой музыки есть в базе и стоит в листе проверки, пока владелица её не просмотрела — сверка скриптом (`routines_merged.csv`, `update_review.csv`, колонка `reviewed`)
+- [confirmed 2026-10-20] Отклонённое не применяется и больше не показывается; повторный запуск без новых правок ничего не добавляет — `tests/test_update.py`, `update_report.json`
+- [confirmed 2026-10-20] Обновление запускается только вручную: ни конвейер, ни GitHub его не вызывают — `grep rg_music.update` в `pipeline.py` и `.github/workflows/`
+- [confirmed 2026-10-20] Все принятые изменения действительно применены: каждое нашло свою старую строку — `merge_report.json`: нет `wiki_updates:` в `unused_owner_rows`, `wiki_updates_applied` = числу строк `accept`

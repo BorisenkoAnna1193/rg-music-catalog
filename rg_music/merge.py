@@ -53,6 +53,7 @@ from rg_music.crosscheck import FUZZY_OK, norm_music, similarity
 from rg_music.music_parser import parse_music
 from rg_music.native_extract import split_year, translate_apparatus
 from rg_music.tables import PLACEHOLDERS
+from rg_music.update import apply_updates, load_updates
 from rg_music.years import expand_years, parse_years
 
 INTERIM = Path("data/interim")
@@ -326,12 +327,17 @@ def main(argv: list[str] | None = None) -> int:
     args = ap.parse_args(argv)
 
     read = lambda name: list(csv.DictReader((args.dir / name).open(encoding="utf-8")))  # noqa: E731
-    routines, competitions = read("routines_raw.csv"), read("competitions_raw.csv")
+    updates = load_updates()
+    routines, missing_r = apply_updates(read("routines_raw.csv"), "routine", updates)
+    competitions, missing_c = apply_updates(read("competitions_raw.csv"), "competition", updates)
     merged, events, stats = merge_sources(routines, competitions, load_same_routine(), load_exclusions())
+    stats["unused_owner_rows"] += [f"wiki_updates: {k}" for k in missing_r + missing_c]
+    stats["wiki_updates_applied"] = sum(u["decision"] == "accept" for u in updates)
     native_path = args.dir / "native_routines_raw.csv"
     if native_path.exists():
-        added, todo, native_stats = merge_native(merged, read("native_routines_raw.csv"), load_native_music(),
-                                                 load_native_decisions())
+        native, missing_n = apply_updates(read("native_routines_raw.csv"), "native", updates)
+        stats["unused_owner_rows"] += [f"wiki_updates: {k}" for k in missing_n]
+        added, todo, native_stats = merge_native(merged, native, load_native_music(), load_native_decisions())
         dropped = set(native_stats["dropped_english"])
         merged = sorted([m for m in merged if m["routine_id"] not in dropped] + added, key=_sort_key)
         native_stats["unused_owner_rows"] = stats["unused_owner_rows"] + native_stats["unused_owner_rows"]

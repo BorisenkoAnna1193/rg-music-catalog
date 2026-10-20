@@ -8,6 +8,7 @@
   "added_with_conflict": 2,
   "competition_rows_merged": 167,
   "unused_owner_rows": [],
+  "wiki_updates_applied": 6,
   "native_rows_same_as_english": 346,
   "native_rows_not_compared": 110,
   "native_rows_without_music": 20,
@@ -20,12 +21,12 @@
   "dropped_english": [
     "Carolina Rodríguez (gymnast)|0|46"
   ],
-  "routines_in": 3850,
+  "routines_in": 3856,
   "competition_rows_in": 317,
-  "routines_out": 4191,
+  "routines_out": 4197,
   "events": 229,
   "by_source": {
-    "routine_table": 3731,
+    "routine_table": 3737,
     "competition_table": 62,
     "both": 167,
     "native_wiki_es": 229,
