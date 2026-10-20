@@ -62,6 +62,14 @@ undoes an earlier decision fails the run instead of slipping through.
 More detail: `docs/pipeline.md` (the process step by step, with a diagram) and `docs/case_decisions.txt` (decisions and
 their reasons). Tests: `python -m pytest -q` (228, fixtures mimic real table layouts).
 
+## Good to know
+
+- Music is known only where an article lists it: so far for 196 of 1,395 gymnasts.
+- Wikipedia has errors. Clear ones are corrected and noted in the data; some may remain.
+- "Classical" follows the composer of a work, not the performer: a rock version of Vivaldi is still classical.
+- When a source does not name the excerpt (only "Swan Lake", for example), the excerpt is unknown, never assumed.
+- "Find on YouTube" opens a YouTube search; the site does not host or choose videos.
+
 ## Licences
 
 Data from Wikipedia is CC BY-SA 4.0; MusicBrainz data is CC0.

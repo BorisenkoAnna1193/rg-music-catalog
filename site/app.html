@@ -66,6 +66,12 @@ th { text-align: left; font-weight: 600; font-size: 12px; text-transform: upperc
 td { padding: 11px 8px 11px 0; border-top: 1px solid var(--line); vertical-align: top; }
 .scroll { overflow-x: auto; }
 .season h3 { font-size: 22px; font-weight: 800; margin: 28px 0 12px; }
+.about { max-width: 760px; }
+.about h2 { font-size: 20px; margin: 32px 0 10px; }
+.about p, .about li { max-width: 68ch; }
+.about ol, .about ul { padding-left: 1.3em; display: grid; gap: 8px; }
+.about td:first-child { font-weight: 700; white-space: nowrap; }
+.about a { text-decoration: underline; }
 .routine { border-top-width: 4px; }
 .app-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
 .timeline { display: grid; align-items: end; height: 110px; border-bottom: 1px solid var(--fg); min-width: 640px; }
@@ -101,7 +107,7 @@ footer a { text-decoration: underline; }
 <script>
 (() => {
   const T = {
-    en: { home: 'Home', gymnasts: 'Gymnasts', music: 'Music', rankings: 'Rankings', h1: 'What rhythmic gymnasts perform to',
+    en: { home: 'Home', gymnasts: 'Gymnasts', music: 'Music', rankings: 'Rankings', about: 'About', h1: 'What rhythmic gymnasts perform to',
       search: 'Search gymnasts and music', searchMusic: 'Title, composer or performer', searchName: 'Name, in Latin or Cyrillic',
       gymWithMusic: 'gymnasts with known music', allGyms: 'gymnasts from the World Championships', onlyMusic: 'Only with known music',
       wc: 'World Championships', musicUnknown: 'Music not known yet', noMusicNote: 'Her Wikipedia article has no information about her music yet.',
@@ -121,7 +127,7 @@ footer a { text-decoration: underline; }
       source: 'Data: English Wikipedia, with gaps filled from Spanish and Russian Wikipedia (CC BY-SA 4.0), and MusicBrainz (CC0). Music identified and reviewed by hand; Russian names in progress.', built: 'Built',
       support: 'Support the project', supportSoon: 'Support the project: donations via PayPal are coming soon.',
       supportNote: 'I build this catalogue on my own, in my free time. If it was useful to you, you can support it.' },
-    ru: { home: 'Главная', gymnasts: 'Гимнастки', music: 'Музыка', rankings: 'Рейтинги', h1: 'Под какую музыку выступают гимнастки',
+    ru: { home: 'Главная', gymnasts: 'Гимнастки', music: 'Музыка', rankings: 'Рейтинги', about: 'О проекте', h1: 'Под какую музыку выступают гимнастки',
       search: 'Поиск гимнасток и музыки', searchMusic: 'Название, композитор или исполнитель', searchName: 'Имя латиницей или кириллицей',
       gymWithMusic: 'гимнасток с известной музыкой', allGyms: 'гимнасток с чемпионатов мира', onlyMusic: 'Только с известной музыкой',
       wc: 'Чемпионаты мира', musicUnknown: 'Музыка пока неизвестна', noMusicNote: 'В статье Википедии о ней пока нет сведений о музыке.',
@@ -437,17 +443,90 @@ footer a { text-decoration: underline; }
               <span class="num">${main}<span class="muted small" style="display:block;font-weight:400">${other} ${esc(R ? s.gym : s.rou)}</span></span></div>`; }).join('') || `<p class="muted">${esc(s.nothing)}</p>`}</section>`;
       }).join('')}</div>`;
   }
+  // ---------- about ----------
+  const REPO = 'https://github.com/BorisenkoAnna1193/rg-music-catalog';
+  function about() {
+    const gyms = D.gymnasts.length, withMusic = D.gymRoutines.filter(rs => rs.length).length;
+    const ys = D.routines.map(r => r[1]).filter(Boolean), y0 = Math.min(...ys), y1 = Math.max(...ys);
+    const wcYears = D.gymnasts.flatMap(g => g[4]), wc0 = Math.min(...wcYears), wc1 = Math.max(...wcYears);
+    const n = { gyms: fmt(gyms), withMusic: fmt(withMusic), routines: fmt(D.routines.length), works: fmt(D.works.length), versions: fmt(D.versions.length) };
+    const src = ru() ? [
+      ['Википедия на английском', 'Список гимнасток (таблицы чемпионатов мира), музыка из статей о гимнастках', 'CC BY-SA 4.0', 'https://en.wikipedia.org'],
+      ['Википедия на испанском и русском', 'Музыка гимнасток, у которых её нет в английской статье; испанские тексты переведены на английский и проверены вручную', 'CC BY-SA 4.0', 'https://es.wikipedia.org'],
+      ['Викиданные', 'Имена гимнасток на русском, идентификаторы World Gymnastics', 'CC0', 'https://www.wikidata.org'],
+      ['Профили спортсменок World Gymnastics (бывшая FIG)', 'Официальное написание имени, когда в таблицах оно разное', '', 'https://www.gymnastics.sport'],
+      ['MusicBrainz', 'Доказательства, что две записи — одно произведение; авторы произведений', 'CC0', 'https://musicbrainz.org'],
+      ['ISO 3166', 'Коды и названия стран', '', ''],
+      ['YouTube', 'Только ссылки на поиск видео; с YouTube ничего не загружается', '', ''],
+    ] : [
+      ['English Wikipedia', 'The list of gymnasts (World Championship tables) and the music in gymnasts’ articles', 'CC BY-SA 4.0', 'https://en.wikipedia.org'],
+      ['Spanish and Russian Wikipedia', 'Music of gymnasts whose English article has none; Spanish text translated into English and checked by hand', 'CC BY-SA 4.0', 'https://es.wikipedia.org'],
+      ['Wikidata', 'Gymnasts’ names in Russian, World Gymnastics identifiers', 'CC0', 'https://www.wikidata.org'],
+      ['World Gymnastics athlete profiles (formerly FIG)', 'The official spelling of a name when the tables disagree', '', 'https://www.gymnastics.sport'],
+      ['MusicBrainz', 'Evidence that two recordings are the same work; authors of works', 'CC0', 'https://musicbrainz.org'],
+      ['ISO 3166', 'Country codes and names', '', ''],
+      ['YouTube', 'Search links only; nothing is loaded from YouTube', '', ''],
+    ];
+    const srcTable = `<div class="scroll"><table><thead><tr><th>${ru() ? 'Источник' : 'Source'}</th><th>${ru() ? 'Для чего' : 'Used for'}</th><th>${ru() ? 'Лицензия' : 'Licence'}</th></tr></thead><tbody>
+      ${src.map(([name, use, lic, url]) => `<tr><td>${url ? `<a href="${url}" target="_blank" rel="noopener">${esc(name)}</a>` : esc(name)}</td><td>${esc(use)}</td><td class="muted">${esc(lic || '—')}</td></tr>`).join('')}</tbody></table></div>`;
+    const repo = `<a href="${REPO}" target="_blank" rel="noopener">GitHub</a>`;
+    return ru() ? `<div class="about">
+      <h1>О проекте</h1>
+      <p class="sub">Каталог музыки, под которую выступают гимнастки в художественной гимнастике.</p>
+      <p>Это любительский проект от большой фанатки художественной гимнастики, который отражает не только её любовь к этому виду спорта, но и к цифрам, статистике и рейтингам.</p>
+      <p>Он отвечает на два вопроса: под какую музыку выступала гимнастка — по сезонам и предметам. И наоборот: для каждой когда-либо использованной в спорте песни можно посмотреть, кто выбирал эту музыку, в каком году и под какой предмет.</p>
+      <p>Сейчас в каталоге ${n.gyms} гимнасток с чемпионатов мира ${wc0}–${wc1}, у ${n.withMusic} из них известна музыка: ${n.routines} программ ${y0}–${y1} годов, ${n.works} произведений и ${n.versions} версий в исполнении разных музыкантов.</p>
+      <h2>Как он сделан</h2>
+      <ol>
+        <li><b>Гимнастки.</b> Все участницы индивидуальных соревнований чемпионатов мира с ${wc0} года, по таблицам Википедии. Если имя записано по-разному, берётся написание из профиля спортсменки на сайте World Gymnastics.</li>
+        <li><b>Музыка.</b> Таблицы «Год / Предмет / Музыка» из статей о гимнастках в английской Википедии. Для испанских гимнасток добавлены таблицы из испанской Википедии: они переведены на английский и проверены вручную. Английская статья остаётся главной, другие только дополняют её.</li>
+        <li><b>Произведения и версии.</b> Одна и та же музыка записана в статьях по-разному. Треки собираются в произведения; одинаковое название с разными авторами остаётся раздельным, пока нет доказательства, что это одно произведение (MusicBrainz или ручная проверка). Исполнитель указан так, как в источнике.</li>
+        <li><b>Ручная проверка.</b> Спорные случаи — одинаковые названия у разных песен, расхождения между источниками, переводы — проверены вручную, решения хранятся отдельно от исходных данных.</li>
+      </ol>
+      <h2>Источники данных</h2>
+      ${srcTable}
+      <h2>Благодарности</h2>
+      <p>Спасибо редакторам Википедии на английском, испанском и русском, которые годами ведут статьи о гимнастках и их музыке, и участникам MusicBrainz.</p>
+      <p>Спасибо всем фанатам гимнастики из чата RG Pirates, которые поддержали моё начинание.</p>
+      <p>В планах — архив музыки с форума rgforum.no. Когда он будет подключён, здесь появится благодарность людям, которые его собирали.</p>
+      <h2>Код и обратная связь</h2>
+      <p>Исходный код открыт на ${repo}. Нашли ошибку или знаете музыку, которой нет в каталоге, — напишите в разделе Issues на GitHub.</p>
+      <p class="muted">${supportHtml()}</p>
+    </div>` : `<div class="about">
+      <h1>About</h1>
+      <p class="sub">A catalogue of the music rhythmic gymnasts perform to.</p>
+      <p>This is an amateur project by a big fan of rhythmic gymnastics. It reflects her love not only for the sport but also for numbers, statistics and rankings.</p>
+      <p>It answers two questions: what a gymnast performed to, by season and apparatus. And the other way round: for every song ever used in the sport, you can see who chose it, in which year and for which apparatus.</p>
+      <p>The catalogue holds ${n.gyms} gymnasts from the World Championships ${wc0}–${wc1}. Music is known for ${n.withMusic} of them: ${n.routines} routines from ${y0}–${y1}, ${n.works} works and ${n.versions} versions by different performers.</p>
+      <h2>How it is made</h2>
+      <ol>
+        <li><b>Gymnasts.</b> Everyone in the individual events of the World Championships since ${wc0}, from the Wikipedia result tables. When a name is spelled in different ways, the spelling of the athlete’s World Gymnastics profile is used.</li>
+        <li><b>Music.</b> The “Year / Apparatus / Music” tables in gymnasts’ English Wikipedia articles. For Spanish gymnasts, the tables of the Spanish Wikipedia are added, translated into English and checked by hand. The English article stays the main source; the others only fill its gaps.</li>
+        <li><b>Works and versions.</b> The same music is written down in many ways. Tracks are grouped into works; one title with different authors stays split until there is evidence that it is one work (MusicBrainz or a manual check). The performer is shown as the source gives it.</li>
+        <li><b>Manual review.</b> Doubtful cases, such as one title for different songs, conflicts between sources and translations, are checked by hand, and the decisions are kept apart from the source data.</li>
+      </ol>
+      <h2>Data sources</h2>
+      ${srcTable}
+      <h2>Thanks</h2>
+      <p>Thanks to the editors of English, Spanish and Russian Wikipedia who have kept the articles about gymnasts and their music for years, and to the contributors of MusicBrainz.</p>
+      <p>Thanks to all the gymnastics fans in the RG Pirates chat who supported my project from the start.</p>
+      <p>The music archive of the rgforum.no forum is planned as another source. When it is added, the people who collected it will be credited here.</p>
+      <h2>Code and feedback</h2>
+      <p>The source code is on ${repo}. Found an error, or know music that is missing? Open an issue on GitHub.</p>
+      <p class="muted">${supportHtml()}</p>
+    </div>`;
+  }
   const notFound = () => `<h1>${esc(t().notFound)}</h1><p><a href="#home" style="text-decoration:underline">${esc(t().back)}</a></p>`;
 
   // ---------- routing and events ----------
   function route() {
     const h = (location.hash || '#home').slice(1);
     const m = h.match(/^(gymnast|work)-(\d+)$/);
-    const page = m ? m[1] : (['home', 'gymnasts', 'music', 'rankings'].includes(h) ? h : (h ? 'missing' : 'home'));
-    const tab = { home: 'home', gymnasts: 'gymnasts', gymnast: 'gymnasts', music: 'music', work: 'music', rankings: 'rankings' }[page];
-    document.getElementById('tabs').innerHTML = ['home', 'gymnasts', 'music', 'rankings'].map(k => `<a class="tab" href="#${k}"${k === tab ? ' aria-current="page"' : ''}>${bothKey(k)}</a>`).join('');
+    const page = m ? m[1] : (['home', 'gymnasts', 'music', 'rankings', 'about'].includes(h) ? h : (h ? 'missing' : 'home'));
+    const tab = { home: 'home', gymnasts: 'gymnasts', gymnast: 'gymnasts', music: 'music', work: 'music', rankings: 'rankings', about: 'about' }[page];
+    document.getElementById('tabs').innerHTML = ['home', 'gymnasts', 'music', 'rankings', 'about'].map(k => `<a class="tab" href="#${k}"${k === tab ? ' aria-current="page"' : ''}>${bothKey(k)}</a>`).join('');
     document.documentElement.lang = lang;
-    view.innerHTML = page === 'home' ? home() : page === 'gymnasts' ? gymnasts() : page === 'music' ? music() : page === 'rankings' ? rankings()
+    view.innerHTML = page === 'home' ? home() : page === 'gymnasts' ? gymnasts() : page === 'music' ? music() : page === 'rankings' ? rankings() : page === 'about' ? about()
       : page === 'gymnast' ? gymnast(+m[2]) : page === 'work' ? work(+m[2]) : notFound();
     if (page === 'home') homeSearch();
     document.getElementById('foot').innerHTML = `<span>${esc(t().source)}</span><span>${esc(t().built)}: ${esc(D.built)}</span>${supportHtml()}`;

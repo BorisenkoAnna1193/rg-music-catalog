@@ -71,6 +71,11 @@ MERGED_FIELDS = ["routine_id", "gymnast_page", "table_index", "row_index", "year
 EVENT_FIELDS = ["routine_id", "competition", "location", "event_year", "source_row"]
 
 
+def _track_names(cell: str) -> list[str]:
+    """Track titles and work names the parser finds in a music cell."""
+    return [n for t in parse_music(cell)[1] for n in (t.title, t.work) if n]
+
+
 def music_score(a: str, b: str) -> float:
     """Similarity of two music cells: the whole text, or the best pair of track titles.
 
@@ -79,9 +84,8 @@ def music_score(a: str, b: str) -> float:
     other ("Nur kein genieren" / "Nur kein genieren from Elisabeth") counts as the same.
     """
     best = similarity(a, b)
-    names = lambda cell: [n for t in parse_music(cell)[1] for n in (t.title, t.work) if n]  # noqa: E731
-    titles_a, titles_b = names(a), names(b)
-    for x in titles_a:
+    titles_b = _track_names(b)
+    for x in _track_names(a):
         for y in titles_b:
             nx, ny = norm_music(x), norm_music(y)
             contained = min(len(nx), len(ny)) >= 4 and (f" {nx} " in f" {ny} " or f" {ny} " in f" {nx} ")
@@ -104,6 +108,11 @@ def load_exclusions(path: Path = EXCLUSIONS) -> set[tuple]:
         return set()
     return {(r["gymnast_page"], r["year"].strip(), r["apparatus"].strip(), r["music"].strip())
             for r in csv.DictReader(path.open(encoding="utf-8-sig"))}
+
+
+def _sort_key(m: dict) -> tuple:
+    """Output order: gymnast, year (an unreadable year first), apparatus, id."""
+    return m["gymnast_page"], m["year"] if isinstance(m["year"], int) else 0, m["apparatus"], m["routine_id"]
 
 
 def _base_id(row: dict, prefix: str = "") -> str:
@@ -190,8 +199,7 @@ def merge_sources(routines: list[dict], competitions: list[dict], same_routine: 
         stats["competition_rows_added"] += 1
         stats["added_with_conflict"] += "differs_from_routine_table" in new["notes"]
 
-    merged.sort(key=lambda m: (m["gymnast_page"], m["year"] if isinstance(m["year"], int) else 0,
-                               m["apparatus"], m["routine_id"]))
+    merged.sort(key=_sort_key)
     return merged, events, dict(stats)
 
 
@@ -213,7 +221,7 @@ def _same_music(native: str, english: str, music_en: str) -> bool:
     if music_en:
         return music_score(music_en, english) >= FUZZY_OK
     text = f" {norm_music(native)} "
-    titles = [norm_music(n) for t in parse_music(english)[1] for n in (t.title, t.work) if n]
+    titles = [norm_music(n) for n in _track_names(english)]
     return any(len(t) >= 4 and f" {t} " in text for t in titles)
 
 
@@ -286,7 +294,7 @@ def merge_native(merged: list[dict], native: list[dict], translations: dict[tupl
                 "source": f"native_wiki_{lang}", "notes": ";".join(notes), "source_url": r["source_url"],
                 "revid": r["revid"],
             })
-            stats[f"native_rows_{decision or 'added'}_by_owner" if decision else
+            stats[f"native_rows_{decision}_by_owner" if decision else
                   "native_rows_added_with_conflict" if pool else "native_rows_added"] += 1
     stats["dropped_english"] = dropped
     return added, todo, dict(stats)
@@ -311,9 +319,8 @@ def main(argv: list[str] | None = None) -> int:
     if native_path.exists():
         added, todo, native_stats = merge_native(merged, read("native_routines_raw.csv"), load_native_music(),
                                                  load_native_decisions())
-        merged = [m for m in merged if m["routine_id"] not in set(native_stats["dropped_english"])]
-        merged = sorted(merged + added, key=lambda m: (m["gymnast_page"], m["year"] if isinstance(m["year"], int) else 0,
-                                                       m["apparatus"], m["routine_id"]))
+        dropped = set(native_stats["dropped_english"])
+        merged = sorted([m for m in merged if m["routine_id"] not in dropped] + added, key=_sort_key)
         stats.update(native_stats)
         _write_csv(args.dir / "native_music_todo.csv", TODO_FIELDS, todo)
 

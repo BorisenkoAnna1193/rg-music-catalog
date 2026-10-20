@@ -151,7 +151,21 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   and compares the result with a commit (`--check --base HEAD`): counts, split decisions (LOST_OWNER_DECISION fails the
   run), new tracks joined to a work whose credits share no name → `data/interim/pipeline_report.json`.
 
+## Agents (owner, 2026-10-20)
+Two project subagents in `.claude/agents/` (shared in git; the rest of `.claude/` stays local):
+- **task-verifier**: for every task that changes code or data, the main chat first writes `docs/tasks/<date>_<slug>.md`
+  (format `docs/tasks/_template.md`; owner's request, pipeline steps, what was done) and, when done, runs the agent with
+  that path. It checks the result against `docs/acceptance_criteria.md` (criteria per step; when a step has none it
+  returns ВОПРОСЫ ВЛАДЕЛИЦЕ: the main chat asks the owner with AskUserQuestion, records her answers as
+  `confirmed <date>` and runs it again), simplifies the step's code only when tests and outputs stay identical, and
+  writes `docs/steps/rg_music_cat_doc_step_<N>.md` (libraries, algorithm, Mermaid flowchart). Not for doc-only tasks.
+- **session-auditor** (Sonnet): at the end of a session or on request. Runs `python tools/session_stats.py` (exact token
+  use from Claude Code's transcripts), appends the session to `docs/session_efficiency.md` and returns savings in numbers.
+The main chat relays both reports to the owner; the agents never commit.
+
 ## Documentation map
+- `docs/tasks/` – one file per task (for task-verifier); `docs/acceptance_criteria.md` – criteria per step;
+  `docs/steps/rg_music_cat_doc_step_<N>.md` – code guide per step.
 - `docs/session_efficiency.md` – efficiency log: per-session numbers, Claude's optimization proposals and their status
   (owner, 2026-10-19: apply them by default, measure their effect in the next session).
 - `docs/db_schema.md` – SQLite schema (ER diagrams, Mermaid; the MVP tables are built by `rg_music/db.py`).
