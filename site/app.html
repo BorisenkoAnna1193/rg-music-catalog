@@ -445,6 +445,8 @@ footer a { text-decoration: underline; }
   }
   // ---------- about ----------
   const REPO = 'https://github.com/BorisenkoAnna1193/rg-music-catalog';
+  // Feedback for people without a GitHub account: the owner's Google Form (answers go to a sheet in her Drive)
+  const FEEDBACK_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScq1FhLCI8a63MFW8fCViEwgiU_PU3q8xgP8rjhcUH5ZPCELw/viewform';
   function about() {
     const gyms = D.gymnasts.length, withMusic = D.gymRoutines.filter(rs => rs.length).length;
     const ys = D.routines.map(r => r[1]).filter(Boolean), y0 = Math.min(...ys), y1 = Math.max(...ys);
@@ -489,8 +491,11 @@ footer a { text-decoration: underline; }
       <p>Спасибо редакторам Википедии на английском, испанском и русском, которые годами ведут статьи о гимнастках и их музыке, и участникам MusicBrainz.</p>
       <p>Спасибо всем фанатам гимнастики из чата RG Pirates, которые поддержали моё начинание.</p>
       <p>В планах — архив музыки с форума rgforum.no. Когда он будет подключён, здесь появится благодарность людям, которые его собирали.</p>
-      <h2>Код и обратная связь</h2>
-      <p>Исходный код открыт на ${repo}. Нашли ошибку или знаете музыку, которой нет в каталоге, — напишите в разделе Issues на GitHub.</p>
+      <h2>Обратная связь</h2>
+      <p>Нашли ошибку, знаете музыку, которой нет в каталоге, или есть идея для сайта? Напишите в форме — аккаунт не нужен.</p>
+      <p><a class="pill" style="text-decoration:none" href="${FEEDBACK_URL}" target="_blank" rel="noopener">Оставить отзыв</a></p>
+      <h2>Код</h2>
+      <p>Исходный код открыт на ${repo}. Если у вас есть аккаунт GitHub, ошибку можно описать и в разделе Issues.</p>
       <p class="muted">${supportHtml()}</p>
     </div>` : `<div class="about">
       <h1>About</h1>
@@ -511,8 +516,11 @@ footer a { text-decoration: underline; }
       <p>Thanks to the editors of English, Spanish and Russian Wikipedia who have kept the articles about gymnasts and their music for years, and to the contributors of MusicBrainz.</p>
       <p>Thanks to all the gymnastics fans in the RG Pirates chat who supported my project from the start.</p>
       <p>The music archive of the rgforum.no forum is planned as another source. When it is added, the people who collected it will be credited here.</p>
-      <h2>Code and feedback</h2>
-      <p>The source code is on ${repo}. Found an error, or know music that is missing? Open an issue on GitHub.</p>
+      <h2>Feedback</h2>
+      <p>Found an error, know music that is missing, or have an idea for the site? Write to us through the form; no account is needed. The form is in Russian for now.</p>
+      <p><a class="pill" style="text-decoration:none" href="${FEEDBACK_URL}" target="_blank" rel="noopener">Leave feedback</a></p>
+      <h2>Code</h2>
+      <p>The source code is on ${repo}. If you have a GitHub account, you can also report an error as an issue there.</p>
       <p class="muted">${supportHtml()}</p>
     </div>`;
   }
