@@ -17,7 +17,9 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   `docs/session_efficiency.md` first (owner: measure whether the applied proposals helped).
 - Rebuild: `python -m rg_music.pipeline --from merge` (add `--mb` for MusicBrainz); it compares the result with HEAD.
 - The owner works in Russian, reviews tables in Google Sheets (Drive folder rg_music), not in CSV files.
-- **Never `git push --all` / `--mirror`**; push only main, only after the owner's OK.
+- **Never `git push --all` / `--mirror`**; push only main and version tags (`v0.2.0`), only after the owner's OK.
+- Versions: `v.01` (owner, 2026-10-19, MVP) and `v0.2.0` (2026-10-20: Spanish Wikipedia, About tab); next ones use
+  semantic versions vX.Y.Z (owner). Commit only your own files: other sessions and the owner's agents share this tree.
 - Site changes: draft on the private claude.ai artifact → the owner comments on the page → apply, republish, resolve the
   thread → push to GitHub only when she says it can be published (owner, 2026-10-20).
 
