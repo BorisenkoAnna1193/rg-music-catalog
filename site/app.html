@@ -46,6 +46,7 @@ h2 { font-size: 16px; font-weight: 700; margin: 0 0 12px; }
 /* Fixed widths: a native select grows to its longest option, and Russian country names are longer */
 select.pill { width: 12.5em; flex: none; max-width: 100%; }
 #c-gyms { width: 15em; }
+select.period { width: 15em; }
 .pill, select.pill { font: inherit; font-size: 14px; min-height: 40px; padding: 0 16px; border-radius: 20px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
 .pill[aria-pressed="true"] { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
 .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
@@ -114,7 +115,8 @@ footer a { text-decoration: underline; }
       noArticle: 'There is no Wikipedia article about her yet; she is known from World Championship results.', works: 'works', routines: 'routines with known music', seasons: 'seasons',
       byApp: 'Routines by apparatus', top: 'Most used music', topNote: 'Number = gymnasts; bar = routines by apparatus',
       share: 'Classical share of routines', shareNote: 'Five-year periods; the last one is not finished.',
-      allCountries: 'All countries', allDecades: 'All decades', allApp: 'All apparatus', all: 'All', more: 'Show more',
+      allCountries: 'All countries', allDecades: 'All Olympic cycles', preOlympic: 'Pre-Olympic era, up to 1980', noMusicPeriod: 'No known music in these years', allApp: 'All apparatus', allGenres: 'All genres', all: 'All', more: 'Show more',
+      sortBy: 'Sort', sorts: { rouDesc: 'Most routines', rouAsc: 'Fewest routines', gymDesc: 'Most gymnasts', gymAsc: 'Fewest gymnasts', az: 'A → Z', za: 'Z → A' },
       gym: 'gymnasts', rou: 'routines', ver: 'versions', recNotStated: 'Recording not stated', noExcerpt: '—',
       season: 'Season', apparatus: 'Apparatus', gymnast: 'Gymnast', excerpt: 'Excerpt', recording: 'Recording',
       bySeason: 'Routines by season', versions: 'Versions', excerpts: 'Excerpts', fromWiki: 'Wikipedia article',
@@ -134,7 +136,8 @@ footer a { text-decoration: underline; }
       noArticle: 'Статьи в Википедии о ней пока нет; она известна по результатам чемпионатов мира.', works: 'произведений', routines: 'программ с известной музыкой', seasons: 'сезоны',
       byApp: 'Программы по предметам', top: 'Самая популярная музыка', topNote: 'Число — гимнастки; полоска — программы по предметам',
       share: 'Доля классики в программах', shareNote: 'Пятилетия; последнее ещё не закончилось.',
-      allCountries: 'Все страны', allDecades: 'Все десятилетия', allApp: 'Все предметы', all: 'Все', more: 'Показать ещё',
+      allCountries: 'Все страны', allDecades: 'Все олимпийские циклы', preOlympic: 'Доолимпийская эпоха, до 1980', noMusicPeriod: 'В эти годы музыка неизвестна', allApp: 'Все предметы', allGenres: 'Все жанры', all: 'Все', more: 'Показать ещё',
+      sortBy: 'Сортировка', sorts: { rouDesc: 'Больше программ', rouAsc: 'Меньше программ', gymDesc: 'Больше гимнасток', gymAsc: 'Меньше гимнасток', az: 'А → Я', za: 'Я → А' },
       gym: 'гимн.', rou: 'прогр.', ver: 'версий', recNotStated: 'Запись не указана', noExcerpt: '—',
       season: 'Сезон', apparatus: 'Предмет', gymnast: 'Гимнастка', excerpt: 'Фрагмент', recording: 'Запись',
       bySeason: 'Программы по сезонам', versions: 'Версии', excerpts: 'Фрагменты', fromWiki: 'Статья в Википедии',
@@ -158,7 +161,7 @@ footer a { text-decoration: underline; }
   const view = document.getElementById('view');
   let D = null, lang = 'en';
   try { lang = localStorage.getItem('rg-lang') === 'ru' ? 'ru' : 'en'; } catch (e) {}
-  const ui = { gym: {}, music: { kind: '', app: -1, dec: 0, q: '', shown: 60 }, gyms: { q: '', country: '', dec: 0, music: false }, rank: { mode: 'gymnasts', dec: 0, app: -1 }, work: { ex: -1 }, home: { q: '' } };
+  const ui = { gym: {}, music: { kind: '', app: -1, dec: 0, q: '', shown: 60, sort: 'gymDesc' }, gyms: { q: '', country: '', dec: 0, music: false, sort: 'rouDesc' }, rank: { mode: 'gymnasts', dec: 0, app: -1 }, work: { ex: -1 }, home: { q: '' } };
 
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const fold = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
@@ -198,10 +201,34 @@ footer a { text-decoration: underline; }
   const appName = a => { const x = D.apparatus[a]; return x ? (ru() && x[1] ? x[1] : x[0]) : ''; };
   const wName = i => { const w = D.works[i]; return ru() && w[1] ? w[1] : w[0]; };
   const wAuthor = i => { const w = D.works[i]; if (w[4] === 'performer' || !w[2]) return t().songAuthor(D.workStats[i].versions); return ru() && w[3] ? w[3] : w[2]; };
+  // Sorting of the Gymnasts and Music lists: by a count (ties alphabetical) or by the name shown in the page language.
+  // quotes and brackets are dropped, spaces kept: "Anna Bessonova" comes before "Annabel Smith"
+  const sortKey = x => x.replace(/[^\p{L}\p{N}\s]/gu, '').trim();
+  const byName = (name, a, b) => sortKey(name(a)).localeCompare(sortKey(name(b)), lang, { sensitivity: 'base' });
+  const sortList = (list, sort, name, counts) => {
+    if (sort === 'az' || sort === 'za') return list.sort((a, b) => (sort === 'az' ? 1 : -1) * byName(name, a, b));
+    const key = sort.slice(0, 3), dir = sort.endsWith('Desc') ? -1 : 1, keys = [key].concat(Object.keys(counts(list[0] ?? 0)).filter(k => k !== key && k !== 'last'));
+    return list.sort((a, b) => { const x = counts(a), y = counts(b);
+      return (x.last || 0) - (y.last || 0) || keys.reduce((c, k) => c || dir * (x[k] - y[k]), 0) || byName(name, a, b); });
+  };
+  // Counts of a list card within the chosen filters: gymnasts, routines and the apparatus split of the routines that pass
+  const statsIn = (rs, ok) => { const g = new Set(), split = {}; let n = 0;
+    rs.forEach(r => { if (!ok(r)) return; const R = D.routines[r]; n++; g.add(R[0]); split[R[2]] = (split[R[2]] || 0) + 1; });
+    return { g: g.size, n, split }; };
+  const sortSelect = (id, cur, keys) => `<label for="${id}" class="vh">${esc(t().sortBy)}</label>
+        <select id="${id}" class="pill" title="${esc(t().sortBy)}">${keys.map(k => `<option value="${k}"${k === cur ? ' selected' : ''}>${esc(t().sorts[k])}</option>`).join('')}</select>`;
   const splitBar = split => `<span class="bar" aria-hidden="true">${Object.keys(split).sort((a, b) => a - b).map(a => `<span style="flex:${split[a]} 1 0;background:${color(+a)}"></span>`).join('')}</span>`;
-  const decadeOk = (y, dec) => !dec || (y >= dec && y < dec + 10);
-  const decades = () => [1990, 2000, 2010, 2020];
-  const decLabel = d => ru() ? `${d}-е` : `${d}s`;
+  // Period filter = Olympic cycles, each ending with its Games (owner, 2026-10-22); Tokyo 2020 was held in 2021, so that
+  // cycle has five years and the next one three. `dec` in the UI state is the period number (0 = all periods).
+  const PERIODS = [[0, 1980]];
+  for (let y = 1981; y < 2017; y += 4) PERIODS.push([y, y + 3]);
+  PERIODS.push([2017, 2021], [2022, 2024], [2025, 9999]);
+  const decadeOk = (y, dec) => !dec || (y >= PERIODS[dec - 1][0] && y <= PERIODS[dec - 1][1]);
+  // a routine passes the period and apparatus filters of a page state f (Music, Rankings)
+  const periodAppOk = f => r => decadeOk(D.routines[r][1], f.dec) && (f.app < 0 || D.routines[r][2] === f.app);
+  const decLabel = k => { const [a, b] = PERIODS[k - 1]; return !a ? t().preOlympic : b === 9999 ? `${a}–` : `${a}–${b}`; };
+  const periodSelect = (id, cur) => `<label for="${id}" class="vh">${esc(t().allDecades)}</label>
+        <select id="${id}" class="pill period"><option value="0">${esc(t().allDecades)}</option>${PERIODS.map((_, k) => `<option value="${k + 1}"${k + 1 === cur ? ' selected' : ''}>${esc(decLabel(k + 1))}</option>`).join('')}</select>`;
 
   // ---------- pages ----------
   function home() {
@@ -263,14 +290,18 @@ footer a { text-decoration: underline; }
   function gymnasts() {
     const s = t(), f = ui.gyms, q = fold(f.q);
     const withMusic = D.gymRoutines.filter(rs => rs.length).length;
+    // routines inside the chosen period: the card number, the bar and the sort all follow it
+    const inP = D.gymRoutines.map(rs => rs.filter(r => decadeOk(D.routines[r][1], f.dec)));
     const list = D.gymnasts.map((g, i) => i).filter(i => {
       const g = D.gymnasts[i];
-      if (f.music && !D.gymRoutines[i].length) return false;
+      if (f.music && !inP[i].length) return false;
       if (q && !fold(g[0]).includes(q) && !fold(g[1]).includes(q)) return false;
       if (f.country && g[2] !== f.country) return false;
-      if (f.dec && !D.gymRoutines[i].some(r => decadeOk(D.routines[r][1], f.dec)) && !g[4].some(y => decadeOk(y, f.dec))) return false;
+      if (f.dec && !inP[i].length && !g[4].some(y => decadeOk(y, f.dec))) return false;
       return true;
-    }).sort((a, b) => D.gymRoutines[b].length - D.gymRoutines[a].length || D.gymnasts[b][4].length - D.gymnasts[a][4].length || gName(a).localeCompare(gName(b)));
+    });
+    if (f.sort === 'rouDesc') list.sort((a, b) => inP[b].length - inP[a].length || D.gymnasts[b][4].length - D.gymnasts[a][4].length || byName(gName, a, b));
+    else sortList(list, f.sort, gName, i => ({ last: inP[i].length ? 0 : 1, rou: inP[i].length }));
     const countries = [...new Set(D.gymnasts.map(g => g[2]).filter(Boolean))].sort((a, b) => country(a).localeCompare(country(b)));
     return `<h1>${esc(s.gymnasts)}</h1><p class="sub">${fmt(D.gymnasts.length)} ${esc(s.allGyms)} · ${withMusic} ${esc(s.gymWithMusic)}</p>
       <div class="filters">
@@ -278,20 +309,19 @@ footer a { text-decoration: underline; }
         <input id="q-gyms" class="search" type="search" placeholder="${esc(s.searchName)}" value="${esc(f.q)}" autocomplete="off">
         <label for="c-gyms" class="vh">${esc(s.allCountries)}</label>
         <select id="c-gyms" class="pill"><option value="">${esc(s.allCountries)}</option>${countries.map(c => `<option value="${c}"${c === f.country ? ' selected' : ''}>${esc(country(c))}</option>`).join('')}</select>
-        <label for="d-gyms" class="vh">${esc(s.allDecades)}</label>
-        <select id="d-gyms" class="pill"><option value="0">${esc(s.allDecades)}</option>${[1960, 1970, 1980].concat(decades()).map(d => `<option value="${d}"${d === f.dec ? ' selected' : ''}>${decLabel(d)}</option>`).join('')}</select>
+        ${periodSelect('d-gyms', f.dec)}
         <button type="button" class="pill" data-only="1" aria-pressed="${f.music}">${bothKey('onlyMusic')}</button>
+        ${sortSelect('s-gyms', f.sort, ['rouDesc', 'rouAsc', 'az', 'za'])}
       </div>
       <p class="muted small">${esc(s.found)}: ${list.length}</p>
       <div class="grid">${list.map(i => {
-        const rs = D.gymRoutines[i], ys = rs.map(r => D.routines[r][1]).filter(Boolean), split = {};
-        rs.forEach(r => { const a = D.routines[r][2]; split[a] = (split[a] || 0) + 1; });
-        if (!rs.length) return `<a class="card" href="#gymnast-${i}"><div class="t">${esc(gName(i))}</div>
+        const rs = inP[i], ys = rs.map(r => D.routines[r][1]).filter(Boolean), { split } = statsIn(rs, () => true);
+        if (!D.gymRoutines[i].length) return `<a class="card" href="#gymnast-${i}"><div class="t">${esc(gName(i))}</div>
           <div class="muted small">${esc(country(D.gymnasts[i][2]))}${wcLine(i) ? ' · ' + esc(wcLine(i)) : ''}</div>
           <div class="muted small" style="margin-top:10px">${esc(s.musicUnknown)}</div></a>`;
         return `<a class="card" href="#gymnast-${i}"><div style="display:flex;justify-content:space-between;gap:8px"><span class="t">${esc(gName(i))}</span><span class="num">${rs.length}</span></div>
           <div class="muted small">${esc(country(D.gymnasts[i][2]))}${ys.length ? ' · ' + Math.min(...ys) + '–' + Math.max(...ys) : ''}</div>
-          <div style="margin-top:12px">${splitBar(split)}</div></a>`;
+          ${rs.length ? `<div style="margin-top:12px">${splitBar(split)}</div>` : `<div class="muted small" style="margin-top:10px">${esc(s.noMusicPeriod)}</div>`}</a>`;
       }).join('')}</div>`;
   }
 
@@ -337,31 +367,33 @@ footer a { text-decoration: underline; }
 
   function music() {
     const s = t(), f = ui.music, q = fold(f.q);
+    // counts within the chosen apparatus and period: the card numbers, the bar and the sort all follow them
+    const ok = periodAppOk(f), st = D.works.map((_, i) => statsIn(D.workRoutines[i], ok));
     const list = D.order.filter(i => {
       const w = D.works[i];
       if (f.kind && w[5] !== f.kind) return false;
       if (q && ![w[0], w[1], w[2], w[3], w[6]].some(x => fold(x).includes(q)) && !D.workTracks[i].some(([, v]) => fold(D.versions[v][1]).includes(q))) return false;
-      if (f.app >= 0 && !D.workStats[i].split[f.app]) return false;
-      if (f.dec && ![...D.workRoutines[i]].some(r => decadeOk(D.routines[r][1], f.dec))) return false;
-      return true;
+      return st[i].n > 0;
     });
-    const kinds = ['', 'classical', 'song', 'film', 'folk'];
+    sortList(list, f.sort, wName, i => ({ gym: st[i].g, rou: st[i].n }));
+    const kinds = ['classical', 'song', 'film', 'folk'];
     return `<h1>${esc(s.music)}</h1><p class="sub">${fmt(D.works.length)} ${esc(s.works)} · ${esc(s.topNote)}</p>
       <div class="filters">
         <label for="q-music" class="vh">${esc(s.searchMusic)}</label>
         <input id="q-music" class="search" type="search" placeholder="${esc(s.searchMusic)}" value="${esc(f.q)}" autocomplete="off">
-        ${kinds.map(k => `<button type="button" class="pill" data-kind="${k}" aria-pressed="${f.kind === k}">${k ? bothKey(k, 'kinds') : bothKey('all')}</button>`).join('')}
+        <label for="g-music" class="vh">${esc(s.allGenres)}</label>
+        <select id="g-music" class="pill"><option value="">${esc(s.allGenres)}</option>${kinds.map(k => `<option value="${k}"${k === f.kind ? ' selected' : ''}>${esc(s.kinds[k])}</option>`).join('')}</select>
         <label for="a-music" class="vh">${esc(s.allApp)}</label>
         <select id="a-music" class="pill"><option value="-1">${esc(s.allApp)}</option>${[0, 1, 2, 3, 4].map(a => `<option value="${a}"${a === f.app ? ' selected' : ''}>${esc(appName(a))}</option>`).join('')}</select>
-        <label for="d-music" class="vh">${esc(s.allDecades)}</label>
-        <select id="d-music" class="pill"><option value="0">${esc(s.allDecades)}</option>${decades().map(d => `<option value="${d}"${d === f.dec ? ' selected' : ''}>${decLabel(d)}</option>`).join('')}</select>
+        ${periodSelect('d-music', f.dec)}
+        ${sortSelect('s-music', f.sort, ['gymDesc', 'gymAsc', 'rouDesc', 'rouAsc', 'az', 'za'])}
       </div>
       <p class="muted small">${esc(s.found)}: ${fmt(list.length)}</p>
       <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr))">${list.slice(0, f.shown).map(i => {
-        const st = D.workStats[i];
+        const c = st[i];
         return `<a class="card" href="#work-${i}"><div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start"><span class="t">${esc(wName(i))}</span><span class="badge">${esc(s.kinds[D.works[i][5]])}</span></div>
-          <div class="muted small">${esc(wAuthor(i))}</div><div style="margin-top:10px">${splitBar(st.split)}</div>
-          <div class="small" style="margin-top:8px"><b>${st.g}</b> <span class="muted">${esc(s.gym)}</span> · <b>${st.n}</b> <span class="muted">${esc(s.rou)}</span></div></a>`;
+          <div class="muted small">${esc(wAuthor(i))}</div><div style="margin-top:10px">${splitBar(c.split)}</div>
+          <div class="small" style="margin-top:8px"><b>${c.g}</b> <span class="muted">${esc(s.gym)}</span> · <b>${c.n}</b> <span class="muted">${esc(s.rou)}</span></div></a>`;
       }).join('')}</div>
       ${list.length > f.shown ? `<button type="button" class="pill more" id="more-music">${esc(s.more)}</button>` : ''}`;
   }
@@ -408,7 +440,7 @@ footer a { text-decoration: underline; }
 
   function rankings() {
     const s = t(), f = ui.rank, R = f.mode === 'routines';
-    const ok = r => decadeOk(D.routines[r][1], f.dec) && (f.app < 0 || D.routines[r][2] === f.app);
+    const ok = periodAppOk(f);
     const boards = [new Map(), new Map(), new Map(), new Map()];
     const add = (m, key, label, r) => { if (!key) return; const x = m.get(key) || { label, g: new Set(), n: new Set() }; x.g.add(D.routines[r][0]); x.n.add(r); m.set(key, x); };
     D.routines.forEach((Ro, r) => {
@@ -429,8 +461,7 @@ footer a { text-decoration: underline; }
             <button type="button" data-mode="gymnasts" aria-pressed="${!R}">${bothKey('byGym')}</button>
             <button type="button" data-mode="routines" aria-pressed="${R}">${bothKey('byRou')}</button>
           </div>
-          <label for="d-rank" class="vh">${esc(s.allDecades)}</label>
-          <select id="d-rank" class="pill"><option value="0">${esc(s.allDecades)}</option>${decades().map(d => `<option value="${d}"${d === f.dec ? ' selected' : ''}>${decLabel(d)}</option>`).join('')}</select>
+          ${periodSelect('d-rank', f.dec)}
           <label for="a-rank" class="vh">${esc(s.allApp)}</label>
           <select id="a-rank" class="pill"><option value="-1">${esc(s.allApp)}</option>${[0, 1, 2, 3, 4].map(a => `<option value="${a}"${a === f.app ? ' selected' : ''}>${esc(appName(a))}</option>`).join('')}</select>
         </div></div>
@@ -557,8 +588,11 @@ footer a { text-decoration: underline; }
     const id = e.target.id, v = e.target.value;
     if (id === 'c-gyms') ui.gyms.country = v;
     else if (id === 'd-gyms') ui.gyms.dec = +v;
+    else if (id === 'g-music') { ui.music.kind = v; ui.music.shown = 60; }
     else if (id === 'a-music') { ui.music.app = +v; ui.music.shown = 60; }
     else if (id === 'd-music') { ui.music.dec = +v; ui.music.shown = 60; }
+    else if (id === 's-music') { ui.music.sort = v; ui.music.shown = 60; }
+    else if (id === 's-gyms') ui.gyms.sort = v;
     else if (id === 'd-rank') ui.rank.dec = +v;
     else if (id === 'a-rank') ui.rank.app = +v;
     else return;
@@ -568,7 +602,6 @@ footer a { text-decoration: underline; }
     const b = e.target.closest('button'); if (!b) return;
     const h = (location.hash || '').match(/^#(gymnast|work)-(\d+)$/);
     if (b.dataset.year !== undefined && h) { ui.gym[+h[2]] = +b.dataset.year; route(); }
-    else if (b.dataset.kind !== undefined) { ui.music.kind = b.dataset.kind; ui.music.shown = 60; route(); }
     else if (b.dataset.ex !== undefined) { ui.work.ex = +b.dataset.ex; route(); }
     else if (b.dataset.mode) { ui.rank.mode = b.dataset.mode; route(); }
     else if (b.dataset.only) { ui.gyms.music = !ui.gyms.music; route(); }
