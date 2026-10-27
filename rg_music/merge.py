@@ -44,6 +44,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -61,6 +62,7 @@ SAME_ROUTINE = Path("data/manual/same_routine.csv")
 EXCLUSIONS = Path("data/manual/routine_exclusions.csv")
 NATIVE_MUSIC = Path("data/manual/native_music_en.csv")
 NATIVE_DECISIONS = Path("data/manual/native_conflict_decisions.csv")
+OWNER_ROUTINES = Path("data/manual/owner_routines.csv")  # music the owner found by hand (step 26, 2026-10-27)
 NATIVE_UNKNOWN = PLACEHOLDERS | {"desconocida", "desconocido", "неизвестно"}
 # Languages whose rows are also compared with the English routines of the same apparatus and year. The Russian articles
 # mirror the English ones (342 rows with the same music; the other rows checked are the same music written in Cyrillic),
@@ -314,6 +316,40 @@ def merge_native(merged: list[dict], native: list[dict], translations: dict[tupl
     return added, todo, dict(stats)
 
 
+def merge_owner(merged: list[dict], owner: list[dict]) -> tuple[list[dict], dict]:
+    """Music the owner found by hand (data/manual/owner_routines.csv: her sheet, with Claude's marked fixes in `music`),
+    merged like the home-language rows: Wikipedia stays first; the same music is only counted, a gap is filled
+    (source owner_manual), other music than Wikipedia for that gymnast, year and apparatus is added and flagged
+    differs_from_wikipedia. "Same as in 2012" in her note repeats the routine in that year."""
+    stats: Counter = Counter()
+    known: dict[tuple, list[dict]] = {}
+    for m in merged:
+        if m["music"] and isinstance(m["year"], int):
+            known.setdefault((m["gymnast_page"], m["year"], normalize_apparatus(m["apparatus"]).apparatus), []).append(m)
+    added = []
+    for r in owner:
+        if not r["music"].strip():
+            stats["owner_rows_without_music"] += 1
+            continue
+        years = [int(r["year"])] + [int(y) for y in re.findall(r"same as in (\d{4})", r["note"], re.I)]
+        apparatus = normalize_apparatus(r["apparatus"]).apparatus
+        for y in years:
+            pool = known.get((r["gymnast_page"], y, apparatus), [])
+            if any(_same_music(r["music"], m["music"], "") or music_score(r["music"], m["music"]) >= 0.8 for m in pool):
+                stats["owner_rows_same_as_wikipedia"] += 1
+                continue
+            notes = ["found_by_owner"] + (["repeated_from_owner_note"] if y != int(r["year"]) else []) \
+                + (["differs_from_wikipedia"] if pool else [])
+            added.append({
+                "routine_id": f"{r['gymnast_page']}|owner|{r['sheet_row']}" + (f"#{y}" if len(years) > 1 else ""),
+                "gymnast_page": r["gymnast_page"], "table_index": "owner", "row_index": r["sheet_row"], "year": y,
+                "year_source": r["year"] if y != int(r["year"]) else "", "apparatus": r["apparatus"], "music": r["music"],
+                "source": "owner_manual", "notes": ";".join(notes), "source_url": "", "revid": "",
+            })
+            stats["owner_rows_added_with_conflict" if pool else "owner_rows_added"] += 1
+    return added, dict(stats)
+
+
 def _write_csv(path: Path, fields: list[str], rows: list[dict]) -> None:
     with path.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields)
@@ -343,6 +379,11 @@ def main(argv: list[str] | None = None) -> int:
         native_stats["unused_owner_rows"] = stats["unused_owner_rows"] + native_stats["unused_owner_rows"]
         stats.update(native_stats)
         _write_csv(args.dir / "native_music_todo.csv", TODO_FIELDS, todo)
+
+    if OWNER_ROUTINES.exists():
+        added, owner_stats = merge_owner(merged, list(csv.DictReader(OWNER_ROUTINES.open(encoding="utf-8-sig"))))
+        merged = sorted(merged + added, key=_sort_key)
+        stats.update(owner_stats)
 
     _write_csv(args.dir / "routines_merged.csv", MERGED_FIELDS, merged)
     _write_csv(args.dir / "routine_events.csv", EVENT_FIELDS, events)

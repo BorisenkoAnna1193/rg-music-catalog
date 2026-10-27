@@ -19,6 +19,9 @@ A gymnast who competed for two countries gets the country of the latest champion
 A decision the owner typed into wc_name_review_fig.csv (a row with `decision_basis` empty)
 is never overwritten; rows filled by this script carry the reason in `decision_basis`.
 
+Then the owner's decisions on the official World Gymnastics spellings (data/manual/wg_name_decisions.csv, made from
+wg_names.py proposals) rename the accepted gymnasts (name_source = world_gymnastics).
+
 Usage:
     python -m rg_music.name_decisions
 Reads  data/interim/wc_name_review_fig.csv, wc_gymnasts.csv, wc_appearances.csv
@@ -37,12 +40,13 @@ from pathlib import Path
 
 from .countries import load_reference
 from .fig_names import normalize_fig_name
-from .worlds import _plain, name_key
+from .worlds import _plain, events_summary, name_key
 
 INTERIM = Path("data/interim")
+WG_DECISIONS = Path("data/manual/wg_name_decisions.csv")  # owner: accept / reject per World Gymnastics spelling
 FINAL_FIELDS = ["canonical_name", "name_ru", "name_source", "wiki_page", "fig_id", "country_id", "country", "country_ru",
                 "country_history",
-                "first_year", "last_year", "championships", "years", "spellings", "gymnast_keys"]
+                "first_year", "last_year", "championships", "years", "events", "spellings", "gymnast_keys"]
 
 
 def _read(path: Path) -> list[dict]:
@@ -58,20 +62,35 @@ def parse_spellings(spellings: str) -> list[tuple[str, list[int]]]:
     return out
 
 
+def wiki_order(official: str, reference: str) -> str:
+    """The official (FIG) spelling in the word order of Wikipedia (owner, 2026-10-26): 'Ling Zhong' + 'Zhong Ling'
+    -> 'Zhong Ling'. Only when both are the same words (ignoring case and accents); otherwise the official name as is."""
+    words, ref = official.split(), reference.split()
+    if sorted(_plain(w) for w in words) != sorted(_plain(w) for w in ref) or len(words) != len(ref):
+        return official
+    pool = list(words)
+    out = []
+    for w in ref:
+        match = next(x for x in pool if _plain(x) == _plain(w))
+        pool.remove(match)
+        out.append(match)
+    return " ".join(out)
+
+
 def best_name(rows: list[dict]) -> tuple[str, str]:
     """Canonical name for one person described by one or more review rows -> (name, source)."""
-    for r in rows:
-        if r["fig_name"]:
-            return normalize_fig_name(r["fig_name"]), "fig"
-    for r in rows:
-        if r["wiki_page"]:
-            return re.sub(r"\s*\(.*?\)$", "", r["wiki_page"]), "wikipedia"
+    title = next((re.sub(r"\s*\(.*?\)$", "", r["wiki_page"]) for r in rows if r["wiki_page"]), "")
     seen: dict[str, list[int]] = defaultdict(list)
     for r in rows:
         for name, years in parse_spellings(r["spellings"]):
             seen[name] += years
-    name = max(seen, key=lambda n: (len(seen[n]), max(seen[n], default=0)))
-    return name, "table"
+    table = max(seen, key=lambda n: (len(seen[n]), max(seen[n], default=0))) if seen else ""
+    for r in rows:
+        if r["fig_name"]:
+            return wiki_order(normalize_fig_name(r["fig_name"]), title or table), "fig"
+    if title:
+        return title, "wikipedia"
+    return table, "table"
 
 
 def pair_decision(a: dict, b: dict, same_table: bool) -> tuple[str, str]:
@@ -131,14 +150,14 @@ def decide(review: list[dict], appearances: list[dict]) -> None:
     """Fill decision / canonical_name / decision_basis in place (manual cells are kept)."""
     tables = defaultdict(set)
     for a in appearances:
-        tables[a["gymnast_key"]].add((a["year"], a["stage"]))
+        tables[a["gymnast_key"]].add((a.get("competition") or "world", a["year"], a["stage"]))
 
     groups: dict[str, list[dict]] = defaultdict(list)
     for r in review:
         r.setdefault("decision_basis", "")
         if r["reason"] == "possible_duplicate":
             groups[r["group"]].append(r)
-        elif not r["decision"] and not r["decision_basis"]:
+        elif r["decision_basis"] or not r["decision"]:  # filled by this script before (or empty): recomputed
             name, source = best_name([r])
             r["decision"], r["canonical_name"] = "ok", name
             r["decision_basis"] = f"canonical name from {source}"
@@ -160,6 +179,20 @@ def decide(review: list[dict], appearances: list[dict]) -> None:
             else:
                 r["canonical_name"], source = best_name(rows if decision == "same" else [r])
             r["decision_basis"] = f"{reason}; canonical name from {source}"
+
+
+def apply_wg_decisions(final: list[dict], decisions: list[dict]) -> list[dict]:
+    """Owner's decisions on the World Gymnastics spellings (data/manual/wg_name_decisions.csv, step 24): an accepted row
+    renames the gymnast when her name is still `name_before`; returns the decisions that matched nobody."""
+    by_key = {d["gymnast_key"]: d for d in decisions}
+    used = set()
+    for r in final:
+        d = next((by_key[k] for k in r["gymnast_keys"].split(" | ") if k in by_key), None)
+        if d and r["canonical_name"] == d["name_before"]:
+            used.add(d["gymnast_key"])
+            if d["decision"] == "accept":
+                r["canonical_name"], r["name_source"] = d["name_after"], "world_gymnastics"
+    return [d for d in decisions if d["gymnast_key"] not in used]
 
 
 def build_final(gymnasts: list[dict], review: list[dict], appearances: list[dict],
@@ -192,7 +225,8 @@ def build_final(gymnasts: list[dict], review: list[dict], appearances: list[dict
             name, source = rows[0]["canonical_name"], rows[0]["decision_basis"].rsplit("from ", 1)[-1] or "manual"
         else:
             name, source = gs[0]["display_name"], "table"
-        years = sorted({int(a["year"]) for a in apps[root]})
+        all_years = sorted({int(a["year"]) for a in apps[root]})
+        years = sorted({int(a["year"]) for a in apps[root] if (a.get("competition") or "world") == "world"})
         country_id, country, history = latest_country(apps[root], not_countries)
         page = next((g["wiki_page"] for g in gs if g["wiki_page"]), "")
         out.append({
@@ -201,8 +235,9 @@ def build_final(gymnasts: list[dict], review: list[dict], appearances: list[dict
             "fig_id": next((r["fig_id"] for r in rows if r.get("fig_id")), ""),
             "country_id": country_id, "country": country, "country_ru": countries_ru.get(country_id, ""),
             "country_history": history,
-            "first_year": years[0], "last_year": years[-1], "championships": len(years),
+            "first_year": all_years[0], "last_year": all_years[-1], "championships": len(years),
             "years": ",".join(map(str, years)),
+            "events": events_summary(apps[root]),
             "spellings": " | ".join(dict.fromkeys(a["name"] for a in apps[root])),
             "gymnast_keys": " | ".join(g["gymnast_key"] for g in gs),
         })
@@ -234,6 +269,10 @@ def main(argv: list[str] | None = None) -> int:
     names_ru = {r["wiki_page"]: r["name_ru"] for r in _read(ru_file)} if ru_file.exists() else {}
     countries_ru = {cid: c["name_ru"] for cid, c in ref.by_id.items()}
     final = build_final(_read(args.dir / "wc_gymnasts.csv"), review, appearances, not_countries, names_ru, countries_ru)
+    if WG_DECISIONS.exists():
+        for d in apply_wg_decisions(final, _read(WG_DECISIONS)):
+            print(f"World Gymnastics decision matched nobody: {d['name_before']} -> {d['name_after']} ({d['decision']})")
+        final.sort(key=lambda r: r["canonical_name"].lower())
     _write(args.dir / "wc_gymnasts_final.csv", FINAL_FIELDS, final)
 
     n_before = len(_read(args.dir / "wc_gymnasts.csv"))

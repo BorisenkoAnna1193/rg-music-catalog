@@ -62,6 +62,15 @@ IOC_TO_ID = {
     "POR": "PRT", "CRO": "HRV", "LAT": "LVA", "INA": "IDN", "RSA": "ZAF", "UAE": "ARE", "TPE": "TWN",
     "URS": "SUHH", "TCH": "CSHH", "GDR": "DDDE", "FRG": "DEU", "YUG": "YUCS", "MAS": "MYS", "SRI": "LKA",
     "CHI": "CHL", "URU": "URY", "PUR": "PRI", "HKG": "HKG", "KOS": "XKX",
+    # step 24 (continental championships): IOC codes of Africa, Asia, the Americas and Oceania that differ from ISO
+    "ANG": "AGO", "ALG": "DZA", "NGR": "NGA", "ZIM": "ZWE", "MRI": "MUS", "MAD": "MDG", "TAN": "TZA", "ZAM": "ZMB",
+    "BOT": "BWA", "LBA": "LBY", "SUD": "SDN", "GAM": "GMB", "TOG": "TGO", "MAW": "MWI", "SEY": "SYC", "GEQ": "GNQ",
+    "CGO": "COG", "CHA": "TCD", "NIG": "NER", "BUR": "BFA", "LES": "LSO", "KSA": "SAU", "KUW": "KWT", "PHI": "PHL",
+    "VIE": "VNM", "MGL": "MNG", "IRI": "IRN", "NEP": "NPL", "BAN": "BGD", "SIN": "SGP", "OMA": "OMN", "BRN": "BHR",
+    "MYA": "MMR", "CAM": "KHM", "LIB": "LBN", "PLE": "PSE", "GUA": "GTM", "CRC": "CRI", "HON": "HND", "ESA": "SLV",
+    "PAR": "PRY", "ARU": "ABW", "ISV": "VIR", "BAH": "BHS", "BAR": "BRB", "TRI": "TTO", "ANT": "ATG", "HAI": "HTI",
+    "CAY": "CYM", "BER": "BMU", "IVB": "VGB", "GRN": "GRD", "SKN": "KNA", "VIN": "VCT", "FIJ": "FJI", "SAM": "WSM",
+    "TGA": "TON", "VAN": "VUT", "SOL": "SLB", "ASA": "ASM", "MON": "MCO",
 }
 # aliases that ISO does not know: (alias, country_id, note)
 MANUAL_ALIASES = [
@@ -165,7 +174,8 @@ class CountryReference:
         self.by_alpha3 = {c["alpha3"]: c["country_id"] for c in countries if c["status"] == "current"}
         self.alias: dict[str, str] = {}
         for a in aliases:
-            self.alias.setdefault(normalize(a["alias"]), a["country_id"])
+            if a["country_id"] in self.by_id:  # an alias of a code the reference lacks (Kosovo, XKX) is skipped
+                self.alias.setdefault(normalize(a["alias"]), a["country_id"])
         # whole-word containment is only tried for names long enough not to hit by accident
         self._long = sorted((k for k in self.alias if len(k) >= 5), key=len, reverse=True)
 

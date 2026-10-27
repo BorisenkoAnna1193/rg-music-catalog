@@ -73,3 +73,24 @@ def test_second_pass_finds_a_cover_among_the_recordings_of_the_work():
     work_lookup = {"relations": [{"recording": {"artist-credit": [{"name": n}]}} for n in ("Michael Jackson", "David Garrett")]}
     fill_from_work_recordings(links, lambda url, params, key: work_lookup if key == "work|w1" else {}, lambda title: [])
     assert [(x["evidence"], x["mb_work_id"]) for x in links[1:]] == [("work_recording", "w1"), ("none", "")]
+
+
+def test_get_json_retries_a_dropped_connection():
+    import requests
+    from rg_music.mb_works import get_json
+
+    class Ok:
+        status_code = 200
+        headers = {}
+        def raise_for_status(self): pass
+        def json(self): return {"works": []}
+
+    calls = []
+    def get(url, **kw):
+        calls.append(url)
+        if len(calls) == 1:
+            raise requests.ConnectionError("reset by peer")
+        return Ok()
+    cache = {}
+    assert get_json("u", {}, cache, "k", get, "ua", sleep=lambda s: None) == {"works": []}
+    assert len(calls) == 2 and cache["k"] == {"works": []}

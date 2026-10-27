@@ -74,12 +74,17 @@ def same_name(credit: str, name: str) -> bool:
 
 def get_json(url: str, params: dict, cache: dict, key: str, get: Callable[..., requests.Response], user_agent: str,
              sleep=time.sleep):
-    """GET with a 1.1 s pause and retries on 429/503 (MusicBrainz's "slow down"); cached under key."""
+    """GET with a 1.1 s pause and retries on 429/503 (MusicBrainz's "slow down") and on a dropped connection or a
+    timeout; cached under key."""
     if key in cache:
         return cache[key]
     for attempt in range(1, 7):
         sleep(1.1)
-        resp = get(url, params={**params, "fmt": "json"}, headers={"User-Agent": user_agent}, timeout=30)
+        try:
+            resp = get(url, params={**params, "fmt": "json"}, headers={"User-Agent": user_agent}, timeout=30)
+        except (requests.ConnectionError, requests.Timeout):
+            sleep(5 * attempt)
+            continue
         if resp.status_code in (429, 503):
             sleep(float(resp.headers.get("Retry-After", 5 * attempt)))
             continue
@@ -89,7 +94,7 @@ def get_json(url: str, params: dict, cache: dict, key: str, get: Callable[..., r
         resp.raise_for_status()
         cache[key] = resp.json()
         return cache[key]
-    raise RuntimeError(f"MusicBrainz kept answering 429/503 for {key!r}")
+    raise RuntimeError(f"MusicBrainz kept answering 429/503 or failing for {key!r}")
 
 
 def matching_recordings(cluster: str, credit: str, recordings: list[dict]) -> list[dict]:

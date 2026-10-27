@@ -1,10 +1,13 @@
 ﻿title_a,title_b,similarity,gymnasts_a,gymnasts_b,artists_a,artists_b,why_not_merged
 piano concerto no 2 in c minor op 18 1 moderato,piano concerto no 2 in c minor op 18 i moderato,0.98,1,2,"Valentina Lisitsa, London Symphony Orchestra & Michael Francis",Sergei Rachmaninoff | Sviatoslav Richter,different numbers
+concierto de aranjuez adagio,concierto de aranjuez ii adagio,0.95,2,1,Joaquín Rodrigo,Joaquín Rodrigo,similarity below 0.95
+earth song,earthsong,0.95,2,1,Michael Jackson,Karunesh,short or generic title
 main title,main titles,0.95,6,1,Blake Neely | Brad Fiedel,Danny Elfman,short or generic title
 never tear us apart,never teas us apart,0.95,2,1,Bishop Briggs | Never Tear Us Apart,Bishop Briggs,similarity below 0.95
 nostalgia,nostalgias,0.95,2,1,Yanni,Juan Carlos Cobián,short or generic title
 revolution,revolutions,0.95,3,2,Eternal Eclipse,Jean Michel Jarre | Jean-Michel Jarre,short or generic title
 emigrant,emigrante,0.94,1,1,Tanghetto,Tanghetto,short or generic title
+les deux guitares,les deux quitares,0.94,1,1,Paul Mauriat,Charles Aznavour,similarity below 0.95
 tango cumparsita,tango kumparsita,0.94,1,1,Bulevard Tango Club,DJ Valer,similarity below 0.95
 caravan,caravane,0.93,10,1,The Brian Setzer Orchestra | Michel Camilo / Jorge Pardo,Radar,short or generic title
 carmen fantasia,carmen fantasie,0.93,1,1,Maxim Vengerov,David Garrett,similarity below 0.95
@@ -24,4 +27,5 @@ symphony no 5 in c minor op 67,symphony no 6 in b minor op 74,0.9,1,2,Ludwig van
 gravitational forces,gravitational forces inst,0.89,1,1,ITG Studios,"Drew J Lerdal, ASCAP",similarity below 0.95
 nocturne in c sharp minor,nocturne no 20 in c sharp minor,0.89,1,1,Chopin,Frédéric Chopin,different numbers
 oh pretty woman,pretty woman,0.89,1,1,Roy Orbison,,similarity below 0.95
+another level,another love,0.88,1,1,On the Larceny,Tom Odell,similarity below 0.95
 new dorp new york,new york new york,0.88,1,1,SBTRKT feat. Ezra Koenig,Ray Quinn | Frank Sinatra,similarity below 0.95

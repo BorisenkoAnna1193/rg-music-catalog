@@ -110,9 +110,9 @@ footer a { text-decoration: underline; }
   const T = {
     en: { home: 'Home', gymnasts: 'Gymnasts', music: 'Music', rankings: 'Rankings', about: 'About', h1: 'What rhythmic gymnasts perform to',
       search: 'Search gymnasts and music', searchMusic: 'Title, composer or performer', searchName: 'Name, in Latin or Cyrillic',
-      gymWithMusic: 'gymnasts with known music', allGyms: 'gymnasts from the World Championships', onlyMusic: 'Only with known music',
-      wc: 'World Championships', musicUnknown: 'Music not known yet', noMusicNote: 'Her Wikipedia article has no information about her music yet.',
-      noArticle: 'There is no Wikipedia article about her yet; she is known from World Championship results.', works: 'works', routines: 'routines with known music', seasons: 'seasons',
+      gymWithMusic: 'gymnasts with known music', allGyms: 'gymnasts from World and continental championships', onlyMusic: 'Only with known music',
+      wc: 'World Championships', champs: { europe: 'European Championships', asia: 'Asian Championships', africa: 'African Championships', panam: 'Pan American Championships' }, musicUnknown: 'Music not known yet', noMusicNote: 'Her Wikipedia article has no information about her music yet.',
+      noArticle: 'There is no Wikipedia article about her yet; she is known from championship results.', works: 'works', routines: 'routines with known music', seasons: 'seasons',
       byApp: 'Routines by apparatus', top: 'Most used music', topNote: 'Number = gymnasts; bar = routines by apparatus',
       share: 'Classical share of routines', shareNote: 'Five-year periods; the last one is not finished.',
       allCountries: 'All countries', allDecades: 'All Olympic cycles', preOlympic: 'Pre-Olympic era, up to 1980', noMusicPeriod: 'No known music in these years', allApp: 'All apparatus', allGenres: 'All genres', all: 'All', more: 'Show more',
@@ -131,9 +131,9 @@ footer a { text-decoration: underline; }
       supportNote: 'I build this catalogue on my own, in my free time. If it was useful to you, you can support it.' },
     ru: { home: 'Главная', gymnasts: 'Гимнастки', music: 'Музыка', rankings: 'Рейтинги', about: 'О проекте', h1: 'Под какую музыку выступают гимнастки',
       search: 'Поиск гимнасток и музыки', searchMusic: 'Название, композитор или исполнитель', searchName: 'Имя латиницей или кириллицей',
-      gymWithMusic: 'гимнасток с известной музыкой', allGyms: 'гимнасток с чемпионатов мира', onlyMusic: 'Только с известной музыкой',
-      wc: 'Чемпионаты мира', musicUnknown: 'Музыка пока неизвестна', noMusicNote: 'В статье Википедии о ней пока нет сведений о музыке.',
-      noArticle: 'Статьи в Википедии о ней пока нет; она известна по результатам чемпионатов мира.', works: 'произведений', routines: 'программ с известной музыкой', seasons: 'сезоны',
+      gymWithMusic: 'гимнасток с известной музыкой', allGyms: 'гимнасток с чемпионатов мира и континентов', onlyMusic: 'Только с известной музыкой',
+      wc: 'Чемпионаты мира', champs: { europe: 'Чемпионаты Европы', asia: 'Чемпионаты Азии', africa: 'Чемпионаты Африки', panam: 'Панамериканские чемпионаты' }, musicUnknown: 'Музыка пока неизвестна', noMusicNote: 'В статье Википедии о ней пока нет сведений о музыке.',
+      noArticle: 'Статьи в Википедии о ней пока нет; она известна по результатам чемпионатов.', works: 'произведений', routines: 'программ с известной музыкой', seasons: 'сезоны',
       byApp: 'Программы по предметам', top: 'Самая популярная музыка', topNote: 'Число — гимнастки; полоска — программы по предметам',
       share: 'Доля классики в программах', shareNote: 'Пятилетия; последнее ещё не закончилось.',
       allCountries: 'Все страны', allDecades: 'Все олимпийские циклы', preOlympic: 'Доолимпийская эпоха, до 1980', noMusicPeriod: 'В эти годы музыка неизвестна', allApp: 'Все предметы', allGenres: 'Все жанры', all: 'Все', more: 'Показать ещё',
@@ -286,7 +286,14 @@ footer a { text-decoration: underline; }
       ws.map(i => `<a href="#work-${i}"><b>${esc(wName(i))}</b> <span class="muted small">${esc(wAuthor(i))} · ${D.workStats[i].g} ${esc(t().gym)}</span></a>`).join('');
   }
 
-  const wcLine = i => { const ys = D.gymnasts[i][4]; return ys.length ? `${t().wc}: ${ys.length > 1 ? ys[0] + '–' + ys[ys.length - 1] : ys[0]} (${ys.length})` : ''; };
+  // Championships of a gymnast: World years in g[4], continental ones in g[5] = {europe: [years], ...} (step 24)
+  const CONTS = ['europe', 'asia', 'africa', 'panam'];
+  const champs = i => { const g = D.gymnasts[i], c = g[5] || {}; return [[t().wc, g[4]]].concat(CONTS.filter(k => c[k]).map(k => [t().champs[k], c[k]])).filter(x => x[1].length); };
+  const champYears = i => { const c = D.gymnasts[i][5] || {}; return D.gymnasts[i][4].concat(...CONTS.map(k => c[k] || [])); };
+  const spanLine = ([label, ys]) => `${label}: ${ys.length > 1 ? ys[0] + '–' + ys[ys.length - 1] : ys[0]} (${ys.length})`;
+  // card line: the World Championships, or the first continental championship for a gymnast who never was at Worlds
+  const wcLine = i => { const c = champs(i); return c.length ? spanLine(c[0]) : ''; };
+  const champsHtml = i => { const c = champs(i); return c.length ? `<p class="small" style="margin:-12px 0 20px">${c.map(([label, ys]) => `<span class="muted">${esc(label)}:</span> ${ys.join(', ')}`).join(' · ')}</p>` : ''; };
   function gymnasts() {
     const s = t(), f = ui.gyms, q = fold(f.q);
     const withMusic = D.gymRoutines.filter(rs => rs.length).length;
@@ -297,10 +304,10 @@ footer a { text-decoration: underline; }
       if (f.music && !inP[i].length) return false;
       if (q && !fold(g[0]).includes(q) && !fold(g[1]).includes(q)) return false;
       if (f.country && g[2] !== f.country) return false;
-      if (f.dec && !inP[i].length && !g[4].some(y => decadeOk(y, f.dec))) return false;
+      if (f.dec && !inP[i].length && !champYears(i).some(y => decadeOk(y, f.dec))) return false;
       return true;
     });
-    if (f.sort === 'rouDesc') list.sort((a, b) => inP[b].length - inP[a].length || D.gymnasts[b][4].length - D.gymnasts[a][4].length || byName(gName, a, b));
+    if (f.sort === 'rouDesc') list.sort((a, b) => inP[b].length - inP[a].length || champYears(b).length - champYears(a).length || byName(gName, a, b));
     else sortList(list, f.sort, gName, i => ({ last: inP[i].length ? 0 : 1, rou: inP[i].length }));
     const countries = [...new Set(D.gymnasts.map(g => g[2]).filter(Boolean))].sort((a, b) => country(a).localeCompare(country(b)));
     return `<h1>${esc(s.gymnasts)}</h1><p class="sub">${fmt(D.gymnasts.length)} ${esc(s.allGyms)} · ${withMusic} ${esc(s.gymWithMusic)}</p>
@@ -350,10 +357,10 @@ footer a { text-decoration: underline; }
     const wiki = g[3] ? ` · <a href="${esc(g[3])}" target="_blank" rel="noopener" style="text-decoration:underline">${esc(s.fromWiki)}</a>` : '';
     const head = `<p class="muted small" style="margin-top:12px"><a href="#gymnasts">${esc(s.gymnasts)}</a> / ${esc(gName(i))}</p>
       <h1 style="margin-top:6px">${esc(gName(i))}</h1>`;
-    if (!rs.length) return `${head}<p class="sub">${esc(country(g[2]))}${gOther(i) ? ' · ' + esc(gOther(i)) : ''}${wcLine(i) ? ' · ' + esc(wcLine(i)) : ''}${wiki}</p>
+    if (!rs.length) return `${head}<p class="sub">${esc(country(g[2]))}${gOther(i) ? ' · ' + esc(gOther(i)) : ''}${wiki}</p>${champsHtml(i)}
       <section class="panel" style="max-width:640px"><h2>${esc(s.musicUnknown)}</h2><p class="muted" style="margin:0">${esc(g[3] ? s.noMusicNote : s.noArticle)}</p></section>`;
     return `${head}
-      <p class="sub">${esc(country(g[2]))}${gOther(i) ? ' · ' + esc(gOther(i)) : ''} · ${years.length ? Math.min(...years) + '–' + Math.max(...years) : ''} · ${rs.length} ${esc(s.rou)}${wcLine(i) ? ' · ' + esc(wcLine(i)) : ''}${wiki}</p>
+      <p class="sub">${esc(country(g[2]))}${gOther(i) ? ' · ' + esc(gOther(i)) : ''} · ${years.length ? Math.min(...years) + '–' + Math.max(...years) : ''} · ${rs.length} ${esc(s.rou)}${wiki}</p>${champsHtml(i)}
       <div class="filters"><button type="button" class="pill" data-year="0" aria-pressed="${!pick}">${bothKey('all')}</button>${years.map(y => `<button type="button" class="pill" data-year="${y}" aria-pressed="${pick === y}">${y}</button>`).join('')}</div>
       ${shown.map(y => `<section class="season"><h3>${y}</h3><div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr))">
         ${rs.filter(r => D.routines[r][1] === y).sort((a, b) => D.routines[a][2] - D.routines[b][2]).map(r => {
@@ -482,6 +489,7 @@ footer a { text-decoration: underline; }
     const gyms = D.gymnasts.length, withMusic = D.gymRoutines.filter(rs => rs.length).length;
     const ys = D.routines.map(r => r[1]).filter(Boolean), y0 = Math.min(...ys), y1 = Math.max(...ys);
     const wcYears = D.gymnasts.flatMap(g => g[4]), wc0 = Math.min(...wcYears), wc1 = Math.max(...wcYears);
+    const contYears = D.gymnasts.flatMap(g => Object.values(g[5] || {}).flat()), c0 = Math.min(...contYears);
     const n = { gyms: fmt(gyms), withMusic: fmt(withMusic), routines: fmt(D.routines.length), works: fmt(D.works.length), versions: fmt(D.versions.length) };
     const src = ru() ? [
       ['Википедия на английском', 'Список гимнасток (таблицы чемпионатов мира), музыка из статей о гимнастках', 'CC BY-SA 4.0', 'https://en.wikipedia.org'],
@@ -508,10 +516,10 @@ footer a { text-decoration: underline; }
       <p class="sub">Каталог музыки, под которую выступают гимнастки в художественной гимнастике.</p>
       <p>Это любительский проект от большой фанатки художественной гимнастики, который отражает не только её любовь к этому виду спорта, но и к цифрам, статистике и рейтингам.</p>
       <p>Он отвечает на два вопроса: под какую музыку выступала гимнастка — по сезонам и предметам. И наоборот: для каждого когда-либо использованного в спорте музыкального произведения можно посмотреть, кто его выбирал, в каком году и под какой предмет.</p>
-      <p>Сейчас в каталоге ${n.gyms} гимнасток с чемпионатов мира ${wc0}–${wc1}, у ${n.withMusic} из них известна музыка: ${n.routines} программ ${y0}–${y1} годов, ${n.works} произведений и ${n.versions} версий в исполнении разных музыкантов.</p>
+      <p>Сейчас в каталоге ${n.gyms} гимнасток с чемпионатов мира (${wc0}–${wc1}) и континентальных чемпионатов (с ${c0} года), у ${n.withMusic} из них известна музыка: ${n.routines} программ ${y0}–${y1} годов, ${n.works} произведений и ${n.versions} версий в исполнении разных музыкантов.</p>
       <h2>Как он сделан</h2>
       <ol>
-        <li><b>Гимнастки.</b> Все участницы индивидуальных соревнований чемпионатов мира с ${wc0} года, по таблицам Википедии. Если имя записано по-разному, берётся написание из профиля спортсменки на сайте World Gymnastics.</li>
+        <li><b>Гимнастки.</b> Все участницы индивидуальных соревнований чемпионатов мира с ${wc0} года и взрослых чемпионатов Европы, Азии, Африки и Панамерики, по таблицам Википедии. У большинства континентальных чемпионатов в Википедии есть только таблица призёров: тогда в каталоге — призёры, а у гимнастки в списке чемпионатов видны только те, где она завоевала медаль. Если имя записано по-разному, берётся написание из профиля спортсменки на сайте World Gymnastics.</li>
         <li><b>Музыка.</b> Таблицы «Год / Предмет / Музыка» из статей о гимнастках в английской Википедии. Для испанских гимнасток добавлены таблицы из испанской Википедии: они переведены на английский и проверены вручную. Английская статья остаётся главной, другие только дополняют её.</li>
         <li><b>Произведения и версии.</b> Одна и та же музыка записана в статьях по-разному. Треки собираются в произведения; одинаковое название с разными авторами остаётся раздельным, пока нет доказательства, что это одно произведение (MusicBrainz или ручная проверка). Исполнитель указан так, как в источнике.</li>
         <li><b>Ручная проверка.</b> Спорные случаи — одинаковые названия у разных песен, расхождения между источниками, переводы — проверены вручную, решения хранятся отдельно от исходных данных.</li>
@@ -533,10 +541,10 @@ footer a { text-decoration: underline; }
       <p class="sub">A catalogue of the music rhythmic gymnasts perform to.</p>
       <p>This is an amateur project by a big fan of rhythmic gymnastics. It reflects her love not only for the sport but also for numbers, statistics and rankings.</p>
       <p>It answers two questions: what a gymnast performed to, by season and apparatus. And the other way round: for every piece of music ever used in the sport, you can see who chose it, in which year and for which apparatus.</p>
-      <p>The catalogue holds ${n.gyms} gymnasts from the World Championships ${wc0}–${wc1}. Music is known for ${n.withMusic} of them: ${n.routines} routines from ${y0}–${y1}, ${n.works} works and ${n.versions} versions by different performers.</p>
+      <p>The catalogue holds ${n.gyms} gymnasts from the World Championships (${wc0}–${wc1}) and the continental championships (since ${c0}). Music is known for ${n.withMusic} of them: ${n.routines} routines from ${y0}–${y1}, ${n.works} works and ${n.versions} versions by different performers.</p>
       <h2>How it is made</h2>
       <ol>
-        <li><b>Gymnasts.</b> Everyone in the individual events of the World Championships since ${wc0}, from the Wikipedia result tables. When a name is spelled in different ways, the spelling of the athlete’s World Gymnastics profile is used.</li>
+        <li><b>Gymnasts.</b> Everyone in the individual events of the World Championships since ${wc0} and of the senior European, Asian, African and Pan American Championships, from the Wikipedia result tables. For most continental championships Wikipedia has only the medal table: then the catalogue holds the medallists, and a gymnast’s list of championships shows only those where she won a medal. When a name is spelled in different ways, the spelling of the athlete’s World Gymnastics profile is used.</li>
         <li><b>Music.</b> The “Year / Apparatus / Music” tables in gymnasts’ English Wikipedia articles. For Spanish gymnasts, the tables of the Spanish Wikipedia are added, translated into English and checked by hand. The English article stays the main source; the others only fill its gaps.</li>
         <li><b>Works and versions.</b> The same music is written down in many ways. Tracks are grouped into works; one title with different authors stays split until there is evidence that it is one work (MusicBrainz or a manual check). The performer is shown as the source gives it.</li>
         <li><b>Manual review.</b> Doubtful cases, such as one title for different songs, conflicts between sources and translations, are checked by hand, and the decisions are kept apart from the source data.</li>

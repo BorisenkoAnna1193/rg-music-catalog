@@ -24,6 +24,7 @@ import json
 import re
 import sys
 import time
+from collections import defaultdict
 from pathlib import Path
 
 from .wiki_client import WikiClient
@@ -101,10 +102,23 @@ CARRIED = ["decision", "canonical_name", "decision_basis"]
 
 
 def carry_over(rows: list[dict], previous: list[dict]) -> list[dict]:
-    """Keep decisions made earlier (by the owner or by name_decisions) when the sheet is rebuilt."""
-    old = {(r["gymnast_key"], r["reason"]): r for r in previous}
-    for r in rows:
-        before = old.get((r["gymnast_key"], r["reason"]))
+    """Keep decisions made earlier (by the owner or by name_decisions) when the sheet is rebuilt.
+
+    A duplicate-pair decision belongs to the PAIR (both gymnast keys): when a new look-alike of the same gymnast
+    appears (step 24 added the continental championships), that new pair starts empty.
+    """
+    def keys(sheet: list[dict]) -> list[tuple]:
+        partners: dict[str, list[str]] = defaultdict(list)
+        for r in sheet:
+            if r["reason"] == "possible_duplicate":
+                partners[r.get("group", "")].append(r["gymnast_key"])
+        return [(r["gymnast_key"], r["reason"],
+                 next((k for k in partners[r.get("group", "")] if k != r["gymnast_key"]), "")
+                 if r["reason"] == "possible_duplicate" else "") for r in sheet]
+
+    old = dict(zip(keys(previous), previous))
+    for key, r in zip(keys(rows), rows):
+        before = old.get(key)
         for col in CARRIED:
             r[col] = before.get(col, "") if before else r.get(col, "")
     return rows

@@ -1,0 +1,25 @@
+﻿row_id,title_no,title,title_gymnasts,group,evidence,gymnast,year,apparatus,source_text,decision,owner_note,work_key,routine_id,track_no
+1,1,Fever,4,A,MusicBrainz: John Davenport / Eddie Cooley,Alina Maksymenko,2013,Clubs,"""Fever"" by A Fine Frenzy",A,,fever,Alina Maksymenko|0|2,1
+2,1,Fever,4,A,MusicBrainz: John Davenport / Eddie Cooley,Elizaveta Nazarenkova,2016,Ball,Fever by Bette Midler,A,,fever,Elizaveta Nazarenkova|0|1,1
+3,1,Fever,4,A,MusicBrainz: John Davenport / Eddie Cooley,Viktoriia Onopriienko,2018,Ball,"""Fever"" by Peggy Lee",A,,fever,Viktoriia Onopriienko|0|1,1
+4,1,Fever,4,A,MusicBrainz: John Davenport / Eddie Cooley,Viktoriia Onopriienko,2019,Ball,"""Fever"" by Peggy Lee",A,,fever,Viktoriia Onopriienko|0|5,1
+5,1,Fever,4,A,MusicBrainz: John Davenport / Eddie Cooley,Viktoriia Onopriienko,2020,Ball,"""Fever"" by Peggy Lee",A,,fever,Viktoriia Onopriienko|0|10,1
+6,1,Fever,4,B,none,Milana Parfilova,2024,Ball,"""FEVER"" (feat. SUPERBEE & Bibi) by Park Jin-young",B,,fever ~ park jin young,Milana Parfilova|0|1,1
+7,2,Ne me quitte pas,4,A,MusicBrainz: Jacques Brel,Kateryna Serebrianska,1993,Ball,Ne me quitte pas by Jacques Brel,A,,ne me quitte pas ~ jacques brel,Kateryna Serebrianska|0|20,1
+8,2,Ne me quitte pas,4,A,MusicBrainz: Jacques Brel,Kateryna Serebrianska,1994,Ball,Ne me quitte pas by Jacques Brel,A,,ne me quitte pas ~ jacques brel,Kateryna Serebrianska|0|16,1
+9,2,Ne me quitte pas,4,A,MusicBrainz: Jacques Brel,Margarita Mamun,2012,Ribbon,Ne Me Quitte Pas by Jacques Brel,A,,ne me quitte pas ~ jacques brel,Margarita Mamun|0|24,1
+10,2,Ne me quitte pas,4,A,MusicBrainz: Jacques Brel,Kseniya Moustafaeva,2015,Ball,"""Ne me quitte pas"" by Jacques Brel",A,,ne me quitte pas ~ jacques brel,Kseniya Moustafaeva|0|21,1
+11,2,Ne me quitte pas,4,B,none,Lala Kramarenko,2022,Ball,"""Ne Me Quitte Pas"", by Sylvie Vartan",B,,ne me quitte pas ~ sylvie vartan,Lala Kramarenko|1|15,1
+12,4,Quiteria And Basilio,2,A,none,Lala Kramarenko,2017,Ball,Don Quixote: Quiteria(Kitri) Enters by Hayden Todorov,A,,don quixote ~ hayden todorov,Lala Kramarenko|1|43,1
+13,4,Quiteria And Basilio,2,B,none,Anastasia Rogozhina,2023,Hoop,"""Quiteria And Basilio"" from Don Quixote by Sofia National Opera Orchestra",B,,don quixote ~ sofia national opera orchestra,Anastasia Rogozhina|0|12,1
+14,5,Everybody Wants to Rule the World,2,A,MusicBrainz: Ian Stanley / Roland Orzabal / Chris Hughes,Anastasia Simakova,2023,Hoop,Everybody Wants to Rule the World by Lorde,A,,everybody wants to rule the world ~ lorde,Anastasia Simakova|0|12,1
+15,5,Everybody Wants to Rule the World,2,A,MusicBrainz: Ian Stanley / Roland Orzabal / Chris Hughes,Anastasia Simakova,2024,Hoop,Everybody Wants to Rule the World by Lorde,A,,everybody wants to rule the world ~ lorde,Anastasia Simakova|0|8,1
+16,5,Everybody Wants to Rule the World,2,B,none,Maria Eduarda Alexandre,2026,Ball,"Everybody Wants to Rule the World by Cinematic Pop, Spencer Jones & Mckenna Breinholt",B,,everybody wants to rule the world ~ cinematic pop spencer jones mckenna breinholt,Maria Eduarda Alexandre|0|1,1
+17,10,Prodigy,2,A,none,Takhmina Ikromova,2023,Hoop,"""Main Title"" from The Queen's Gambit, ""Piano by Candlelight"", ""Prodigy"" by Carlos Rafael Rivera, Carl Doy, Kōtarō Nakagawa",A,,prodigy ~ carlos rafael rivera carl doy kotaro nakagawa,Takhmina Ikromova|0|12,3
+18,10,Prodigy,2,B,none,Viktoria Steinfeld,2026,Hoop,Prodigy by Nathan Lanier,B,,prodigy ~ nathan lanier,Viktoria Steinfeld|0|0,1
+19,12,Sway,2,A,none,Lala Kramarenko,2022,Ribbon,"""Sway"" by Chico & the Gypsies",A,,sway ~ chico the gypsies,Lala Kramarenko|1|19,1
+20,12,Sway,2,B,MusicBrainz: Pablo Beltrán Ruiz,Anastasiya Serdyukova,2016,Ball,Sway by Rosemary Clooney,B,,sway ~ rosemary clooney,Anastasiya Serdyukova|0|5,1
+21,13,Очи чёрные,2,A,none,Maria Borisova (gymnast),2026,Ball,Очи чёрные by EgorGayduk,A,,очи черные ~ egorgayduk,Maria Borisova (gymnast)|0|2,1
+22,13,Очи чёрные,2,B,none,Lala Kramarenko,2019,Clubs,Очи чёрные by Radmila Karaklajić,B,,очи черные ~ radmila karaklajic,Lala Kramarenko|1|36,1
+23,14,Снег,2,A,none,Andreea Verdeș,2023,Ball,Снег by Elena Vaenga,A,,снег ~ elena vaenga,Andreea Verdeș|0|25,1
+24,14,Снег,2,B,none,Lala Kramarenko,2024,Ball,СНЕГ by Елена Ваенга,B,,снег ~ елена ваенга,Lala Kramarenko|1|5,1

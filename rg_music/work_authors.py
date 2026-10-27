@@ -37,6 +37,7 @@ of values that break the owner's rules, each with its reason, so the owner can d
 Usage:
     python -m rg_music.work_authors
     python -m rg_music.work_authors --import <sheet exported as csv>
+    python -m rg_music.work_authors --new [--import <sheet>]   second round: works added since (step 25), rows added
 Reads  data/interim/works.csv, track_works.csv, tracks.csv, work_mb_links.csv, data/manual/work_aliases.csv
 Writes data/interim/work_author_proposals.csv
 """
@@ -181,12 +182,20 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--dir", type=Path, default=INTERIM)
     ap.add_argument("--import", dest="sheet", type=Path, help="the owner's review sheet exported as CSV")
+    ap.add_argument("--new", action="store_true",
+                    help="only the works not yet in data/manual/work_authors.csv -> work_author_proposals_new.csv; with "
+                         "--import: the sheet made from that file, its rows ADDED to work_authors.csv")
     args = ap.parse_args(argv)
+    proposals_file = "work_author_proposals_new.csv" if args.new else "work_author_proposals.csv"
     read = lambda name: list(csv.DictReader((args.dir / name).open(encoding="utf-8-sig")))  # noqa: E731
     if args.sheet:
         corrections = list(csv.DictReader(CORRECTIONS.open(encoding="utf-8-sig"))) if CORRECTIONS.exists() else []
-        rows = import_sheet(list(csv.DictReader(args.sheet.open(encoding="utf-8-sig"))), read("work_author_proposals.csv"),
+        rows = import_sheet(list(csv.DictReader(args.sheet.open(encoding="utf-8-sig"))), read(proposals_file),
                             corrections)
+        if args.new:  # a second round: the works decided before stay exactly as they are
+            old = list(csv.DictReader(AUTHORS.open(encoding="utf-8-sig")))
+            done = {r["work_key"] for r in old}
+            rows = sorted(old + [r for r in rows if r["work_key"] not in done], key=lambda r: r["work_key"])
         with AUTHORS.open("w", newline="", encoding="utf-8-sig") as f:
             wr = csv.DictWriter(f, fieldnames=AUTHOR_FIELDS)
             wr.writeheader()
@@ -198,6 +207,9 @@ def main(argv: list[str] | None = None) -> int:
     works = read("works.csv")
     todo = [w for w in works if int(w["n_gymnasts"]) >= 2
             or (w["is_classical"] == "1" and not (w["composer"] or w["classical_composer"]))]
+    if args.new:
+        done = {r["work_key"] for r in csv.DictReader(AUTHORS.open(encoding="utf-8-sig"))} if AUTHORS.exists() else set()
+        todo = [w for w in todo if w["work_key"] not in done]
     tracks = {(t["routine_id"], t["track_no"]): t for t in read("tracks.csv")}
     by_work: dict[str, list[dict]] = defaultdict(list)
     for t in read("track_works.csv"):
@@ -252,7 +264,7 @@ def main(argv: list[str] | None = None) -> int:
     finally:
         WORK_CACHE.write_text(json.dumps(work_cache, ensure_ascii=False), encoding="utf-8")
         REC_CACHE.write_text(json.dumps(rec_cache, ensure_ascii=False), encoding="utf-8")
-    with (args.dir / "work_author_proposals.csv").open("w", newline="", encoding="utf-8-sig") as f:
+    with (args.dir / proposals_file).open("w", newline="", encoding="utf-8-sig") as f:
         wr = csv.DictWriter(f, fieldnames=FIELDS)
         wr.writeheader()
         wr.writerows(out)

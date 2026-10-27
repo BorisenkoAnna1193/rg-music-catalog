@@ -8,7 +8,13 @@ A catalog of music used by rhythmic gymnasts, built from English Wikipedia, answ
 
 The owner talks in Russian; code, comments, README and commit messages are in English.
 
-## Status (2026-10-20) — start here
+## Status (2026-10-27) — start here
+- **Committed locally, not pushed (owner, 2026-10-27: "commit as a result; questions tomorrow")**: step 23 (sorting,
+  Genre select, Olympic cycles — pushed 2026-10-26, eaab93f), step 24 (continental championships: 1,550 gymnasts),
+  step 25 (music for the new gymnasts' articles) and the owner's hand-found music (data/manual/owner_routines.csv):
+  4,489 routine-years, 214 gymnasts with music, 2,755 works, 3,124 versions; 248 tests pass. Draft = artifact version 29.
+  Waiting for the owner: the three sheets in data/interim/owner_review/ (authors of 60 new works, 3 same-title joins,
+  Claude's 27 fixes of her sheet + 2 questions), then task-verifier for steps 24-25, then push.
 - **Published** (steps 19–22, 2026-10-20; release `v0.2.0`): https://borisenkoanna1193.github.io/rg-music-catalog/ (public,
   GitHub Pages) and https://claude.ai/artifact/2Hz5iyZiwAmbv2N35ManNv (private). Repo https://github.com/BorisenkoAnna1193/rg-music-catalog,
   `main` in sync, 237 tests pass. 1,395 gymnasts (196 with music), 4,197 routine-years (229 from Spanish and 2 from Russian
@@ -118,6 +124,19 @@ The owner talks in Russian; code, comments, README and commit messages are in En
   author_source to works.csv; a composer author makes a work classical when listed (Smetana, Rimsky-Korsakov:
   187 classical works); version_type original / cover from the original performer; FIG rule: a song with words
   (MusicBrainz) in a pre-2013 routine on an apparatus (not Gala) is an `instrumental` version of its own (43 tracks).
+- `rg_music/continental.py` – step 24: senior European / Asian / African / Pan American championships from Wikipedia
+  (88 articles; full all-around / qualification tables and apparatus finals where they exist, otherwise the "Medal
+  winners" tables, individual events only; no juniors, groups, teams or Oceania) → `cont_appearances.csv`, added to the
+  World Championship appearances by `worlds.py` (`--no-continental` = Worlds only). `years` stays the World years; the
+  column `events` lists every championship. Owner (2026-10-26): World Gymnastics is used for NAMES only (nobody is added
+  from its database); `rg_music/wg_names.py` (one public JSON request, cached in data/raw/wg/) proposes the official
+  spelling only for a real difference in letters (it drops accents and splits hyphens), in the Wikipedia word order
+  (`name_decisions.wiki_order`); her answers in `data/manual/wg_name_decisions.csv` (26 accepted, 5 rejected).
+  Duplicate-pair decisions now carry over by the PAIR (fig_names.carry_over).
+- Owner's hand-found music (2026-10-27): her Google Sheet `rg_music_manual` → `data/manual/owner_routines.csv` (her text +
+  Claude's marked fixes); `merge.merge_owner` adds it after Wikipedia (source `owner_manual`; same music counted, other
+  music flagged `differs_from_wikipedia`; "Same as in 2012" repeats the routine). `work_authors.py --new` = second round
+  of author proposals (rows added to work_authors.csv, the old Drive sheet keeps its row ids).
 - `rg_music/native_extract.py` – step 19: music tables of the home-language Wikipedia (Spanish; Russian fills gaps only),
   translated to English via `data/manual/native_music_en.csv`, merged in `merge.py` (see "Second language" below).
 - `data/manual/routine_exclusions.csv` – routines the source states wrongly, dropped in `merge.py` (raw files keep
@@ -333,8 +352,9 @@ Owner's additions (2026-10-13):
   age limit of that period (the limits changed over the years: check them), and labels in the source ("(Individual
   júnior)" in the Spanish tables, "Junior" in English ones). To decide with the owner: the age rule per period.
 - **Group routines.** A catalogue of group exercises: no gymnast names, the team = country + year + apparatus
-  combination (5 hoops, 3 ribbons + 2 balls...) + music; members optional. The owner is looking for a source with group
-  music. Schema idea: `group_routine(country_id, year, apparatus_combo, music...)` sharing work / version / track.
+  combination (5 hoops, 3 ribbons + 2 balls...) + music; members optional. Schema idea: `group_routine(country_id, year, apparatus_combo, music...)` sharing work / version / track.
+  Source (owner, 2026-10-26): the rgforum.no music archive in the Wayback Machine, https://web.archive.org/web/20221108045513/http://rgforum.no/music/results.php?search=groups
+  (~1,200 group-routine rows); check the rgforum / archive.org terms and robots first, 1 req/s.
 - YouTube stage 2 dropped (owner, 2026-10-20): the search links are enough; no YouTube Data API.
 - Planned (owner, 2026-10-20): a new home page (a richer dashboard; the classical-music statistics shown differently) and an
   "About" tab in EN/RU: the project, every data source with its licence, and credit to the people who kept them (the

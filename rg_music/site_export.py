@@ -6,7 +6,9 @@ small; the site computes every statistic (rankings by gymnasts and by routines, 
 
     apparatus  [name, name_ru]
     countries  {country_id: [name, name_ru]}
-    gymnasts   [name, name_ru, country_id, wikipedia_url or "", [World Championship years]] - every gymnast, music or not
+    gymnasts   [name, name_ru, country_id, wikipedia_url or "", [World Championship years],
+                {continent: [years]}] - every gymnast, music or not; continent = europe / asia / africa / panam
+                (step 24: full results or, for most championships, only the medallists)
     works      [name, name_ru, author, author_ru, author_type, kind, from_title, from_type, original_performer]
                kind = classical / folk / film / song / other
     versions   [work, performer, version_type]
@@ -56,7 +58,7 @@ def export(con: sqlite3.Connection) -> dict:
     routines = [r for r in q("""SELECT routine_id, gymnast_id, year, apparatus_id, variant, context FROM routine
                                 ORDER BY gymnast_id, year, apparatus_id, routine_id""") if r[0] in keep]
 
-    gymnasts = q("""SELECT gymnast_id, canonical_name, name_ru, country_id, wiki_page, wc_years FROM gymnast
+    gymnasts = q("""SELECT gymnast_id, canonical_name, name_ru, country_id, wiki_page, wc_years, events FROM gymnast
                     ORDER BY canonical_name""")
     gym_ix = {g[0]: i for i, g in enumerate(gymnasts)}
 
@@ -84,7 +86,7 @@ def export(con: sqlite3.Connection) -> dict:
         "apparatus": [[a[1], a[2] or ""] for a in apparatus],
         "countries": countries,
         "gymnasts": [[g[1], g[2] or "", g[3] or "", "https://en.wikipedia.org/wiki/" + g[4].replace(" ", "_") if g[4] else "",
-                      [int(y) for y in (g[5] or "").split(",") if y.strip().isdigit()]] for g in gymnasts],
+                      [int(y) for y in (g[5] or "").split(",") if y.strip().isdigit()], continental(g[6])] for g in gymnasts],
         "works": [[w[1], w[2] or "", w[3] or "", w[4] or "", w[5] or "", kind(w[5], w[6], w[7]), w[7] or "", w[8] or "", w[9] or ""]
                   for w in works],
         "versions": [[work_ix[v[1]], v[2] or "", v[3] or ""] for v in versions],
@@ -103,6 +105,16 @@ def page(fragment: str, data_json: str) -> str:
     return ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
             f'{head.strip()}\n<script>window.RG_DATA = {inline};</script>\n</head>\n<body>\n<div class="wrap">{body}</body>\n</html>\n')
+
+
+def continental(events: str | None) -> dict[str, list[int]]:
+    """'world 2019; europe 2018,2020' -> {'europe': [2018, 2020]} (World years are exported on their own)."""
+    out = {}
+    for part in (events or "").split(";"):
+        comp, _, years = part.strip().partition(" ")
+        if comp and comp != "world":
+            out[comp] = [int(y) for y in years.split(",") if y.isdigit()]
+    return out
 
 
 def main(argv: list[str] | None = None) -> int:

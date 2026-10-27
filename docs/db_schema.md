@@ -29,7 +29,7 @@ erDiagram
     }
     gymnast {
         int gymnast_id PK
-        text canonical_name "FIG > Wikipedia > table"
+        text canonical_name "World Gymnastics (owner) > FIG > Wikipedia > table; Wikipedia word order"
         text name_ru "Wikidata, empty if unknown"
         text name_source
         text wiki_page
@@ -48,7 +48,7 @@ erDiagram
     }
     event {
         int event_id PK
-        text name "World Championships"
+        text name "World / European / Asian / African / Pan American Championships"
         int year "year actually held"
         text city
     }
@@ -56,7 +56,7 @@ erDiagram
         int entry_id PK
         int gymnast_id FK
         int event_id FK
-        text stage "qualification / all-around"
+        text stage "qualification / all-around / final / medal"
         text country_id FK "as in that table"
         text nation_in_table
         text name_in_table
@@ -165,3 +165,8 @@ erDiagram
 - gymnast -> music: `gymnast -> routine -> track -> work`, filtered by `routine.year` and `apparatus`.
 - music -> gymnasts: `work (excerpt) -> track -> routine -> gymnast`; "classical or not" and its share by year come from
   `work.is_classical` joined to `routine.year`.
+
+Built today by `rg_music/db.py` (simpler than the target above): `gymnast` carries `wc_years` (World Championship
+years) and, since step 24, `events` ("world 2019,2021; europe 2020"): every championship of the gymnast, World and
+continental (European, Asian, African, Pan American; for most continental championships Wikipedia lists only the
+medallists, so only those are known).

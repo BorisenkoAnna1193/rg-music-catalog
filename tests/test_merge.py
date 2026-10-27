@@ -119,3 +119,20 @@ def test_owner_rows_that_match_nothing_are_reported():
     _, _, stats = merge_sources([r], [c], same, exclusions={stale})
     assert stats["unused_owner_rows"] == ["routine_exclusions: A B | 2020 | Hoop | text before the article was edited",
                                           "same_routine: A B | 2009 | Ball | old text | older text"]
+
+
+def test_owner_rows_fill_gaps_repeat_noted_years_and_flag_conflicts():
+    from rg_music.merge import merge_owner
+    merged = [{"gymnast_page": "G", "year": 2012, "apparatus": "Ribbon", "music": "Move by Said Mrad"},
+              {"gymnast_page": "G", "year": 2011, "apparatus": "Ball", "music": "Yesterday by the Beatles"}]
+    owner = [{"sheet_row": "2", "gymnast_page": "G", "year": "2011", "apparatus": "Ribbon", "music": "19 Palqu by X",
+              "note": "Same as in 2012"},
+             {"sheet_row": "3", "gymnast_page": "G", "year": "2011", "apparatus": "Ball", "music": "Yesterday by The Beatles",
+              "note": ""},
+             {"sheet_row": "4", "gymnast_page": "G", "year": "2011", "apparatus": "Hoop", "music": "", "note": ""}]
+    added, stats = merge_owner(merged, owner)
+    assert [(a["year"], a["apparatus"], a["notes"]) for a in added] == [
+        (2011, "Ribbon", "found_by_owner"),
+        (2012, "Ribbon", "found_by_owner;repeated_from_owner_note;differs_from_wikipedia")]
+    assert stats == {"owner_rows_added": 1, "owner_rows_added_with_conflict": 1, "owner_rows_same_as_wikipedia": 1,
+                     "owner_rows_without_music": 1}

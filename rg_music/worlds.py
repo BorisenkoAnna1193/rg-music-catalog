@@ -60,6 +60,8 @@ class Appearance:
     country_id: str = ""  # filled by attach_countries(): row of the ISO-based country reference
     country: str = ""  # short name from the reference
     country_match: str = ""  # how the nation text was matched: code | exact | contained | fuzzy | none
+    competition: str = "world"  # world | europe | asia | africa | panam (continental.py)
+    event: str = ""  # medal tables only: the event of the medal (All-Around, Hoop...)
 
 
 # ---------------------------------------------------------------- index
@@ -243,24 +245,49 @@ def aggregate(apps: list[Appearance], resolved: dict[str, tuple[str, int | None]
         for a in items:
             a.gymnast_key = key
         spell = Counter(a.name for a in items)
-        years = sorted({a.year for a in items})
+        all_years = sorted({a.year for a in items})
+        years = sorted({a.year for a in items if a.competition == "world"})  # World Championship years only
         nations = Counter(a.country or a.nation for a in items if a.country or a.nation)
         page, pageid = resolved.get(items[0].wiki_title, ("", None)) if items[0].wiki_title else ("", None)
         rows.append({
             "gymnast_key": key,
-            "display_name": spell.most_common(1)[0][0],
+            # the World Championship spelling stays the name; continental tables only name the gymnasts who never
+            # competed at Worlds (they often drop diacritics: 'Kutkaite' for 'Kutkaitė')
+            "display_name": (Counter(a.name for a in items if a.competition == "world") or spell).most_common(1)[0][0],
             "wiki_page": page if pageid else "",
             "pageid": pageid or "",
             "has_page": bool(pageid),
             "nations": " | ".join(n for n, _ in nations.most_common()),
-            "first_year": years[0], "last_year": years[-1], "championships": len(years),
+            "first_year": all_years[0], "last_year": all_years[-1], "championships": len(years),
             "years": ",".join(map(str, years)),
+            "events": events_summary(items),
             "spellings": " | ".join(f"{s} ({','.join(str(y) for y in sorted({a.year for a in items if a.name == s}))})"
                                     for s, _ in spell.most_common()),
             "n_spellings": len({_plain(s) for s in spell}),
             "merged_by_name": key in merged,
         })
     return sorted(rows, key=lambda r: (r["display_name"].lower()))
+
+
+COMPETITIONS = ["world", "europe", "asia", "africa", "panam"]
+
+
+def events_summary(items) -> str:
+    """'world 2019,2021; europe 2020' - every championship of one gymnast, World Championships first."""
+    by: dict[str, set[int]] = defaultdict(set)
+    for a in items:
+        comp = a.competition if isinstance(a, Appearance) else a.get("competition") or "world"
+        by[comp].add(int(a.year if isinstance(a, Appearance) else a["year"]))
+    return "; ".join(f"{c} {','.join(map(str, sorted(by[c])))}" for c in COMPETITIONS if c in by)
+
+
+def load_continental(path: Path) -> list[Appearance]:
+    """Appearances written by continental.py (cont_appearances.csv); none if it has not been run."""
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8") as f:
+        return [Appearance(**{**{k: v for k, v in r.items() if k in Appearance.__dataclass_fields__},
+                              "year": int(r["year"])}) for r in csv.DictReader(f)]
 
 
 def _merge_unlinked(groups: dict[str, list[Appearance]], resolved: dict[str, tuple[str, int | None]]) -> set[str]:
@@ -332,7 +359,7 @@ def _review_cols(g: dict) -> dict:
 REVIEW_FIELDS = ["group", "reason", "kind", "similarity", "display_name", "wiki_page", "nations", "years",
                  "spellings", "gymnast_key", "decision", "canonical_name"]
 GYMNAST_FIELDS = ["gymnast_key", "display_name", "wiki_page", "pageid", "has_page", "nations", "first_year",
-                  "last_year", "championships", "years", "spellings", "n_spellings", "merged_by_name"]
+                  "last_year", "championships", "years", "events", "spellings", "n_spellings", "merged_by_name"]
 
 
 def _write_csv(path: Path, fields: list[str], rows: list[dict]) -> None:
@@ -347,6 +374,8 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--refresh", action="store_true", help="re-download the articles")
     ap.add_argument("--out", type=Path, default=INTERIM)
+    ap.add_argument("--no-continental", action="store_true",
+                    help="World Championships only (without data/interim/cont_appearances.csv)")
     args = ap.parse_args(argv)
 
     client = WikiClient()
@@ -360,6 +389,10 @@ def main(argv: list[str] | None = None) -> int:
         report.append({"year": year, "page": page.title, "revid": page.revid, "appearances": len(found), "tables": used})
         print(f"{year}: {len(found):4} names  {[(t['stage'], t['rows']) for t in used]}")
 
+    if not args.no_continental:  # step 24: the list is the union of World and continental championships
+        cont = load_continental(args.out / "cont_appearances.csv")
+        print(f"+ {len(cont)} continental appearances")
+        apps += cont
     mapping = attach_countries(apps, load_reference())
     resolved = client.resolve_titles([a.wiki_title for a in apps if a.wiki_title])
     gymnasts = aggregate(apps, resolved)

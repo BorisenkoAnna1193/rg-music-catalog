@@ -40,7 +40,7 @@ CREATE TABLE apparatus (apparatus_id INTEGER PRIMARY KEY, name TEXT UNIQUE NOT N
 CREATE TABLE gymnast (
     gymnast_id INTEGER PRIMARY KEY, canonical_name TEXT NOT NULL, name_ru TEXT, wiki_page TEXT UNIQUE,
     fig_id TEXT, country_id TEXT REFERENCES country, first_year INTEGER, last_year INTEGER,
-    wc_years TEXT, championships INTEGER);
+    wc_years TEXT, championships INTEGER, events TEXT);
 CREATE TABLE routine (
     routine_id TEXT PRIMARY KEY, gymnast_id INTEGER NOT NULL REFERENCES gymnast, year INTEGER, year_source TEXT,
     apparatus_id INTEGER REFERENCES apparatus, variant TEXT, context TEXT, music_raw TEXT, parse_status TEXT,
@@ -96,13 +96,14 @@ def build(con: sqlite3.Connection, interim: Path = INTERIM, reference: Path = RE
     seen = {g["wiki_page"] for g in gymnasts if g["wiki_page"]}
     for page in sorted({r["gymnast_page"] for r in routines} - seen):  # a page with music but no World Championship
         gymnasts.append({"canonical_name": page, "name_ru": "", "wiki_page": page, "fig_id": "", "country_id": "",
-                         "first_year": "", "last_year": "", "years": "", "championships": ""})
+                         "first_year": "", "last_year": "", "years": "", "championships": "", "events": ""})
     con.executemany(
         """INSERT INTO gymnast (canonical_name, name_ru, wiki_page, fig_id, country_id, first_year, last_year, wc_years,
-           championships) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+           championships, events) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
         [(g["canonical_name"], names_ru.get(g["wiki_page"]) or g["name_ru"] or None, g["wiki_page"] or None, g["fig_id"] or None,
           overrides.get(g["wiki_page"]) or (g["country_id"] if g["country_id"] not in not_countries else None) or None,
-          _int(g["first_year"]), _int(g["last_year"]), g["years"] or None, _int(g["championships"])) for g in gymnasts])
+          _int(g["first_year"]), _int(g["last_year"]), g["years"] or None, _int(g["championships"]),
+          g.get("events") or None) for g in gymnasts])
     gym_id = {page: i for i, page in con.execute("SELECT gymnast_id, wiki_page FROM gymnast WHERE wiki_page IS NOT NULL")}
 
     con.executemany("INSERT INTO routine VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", [

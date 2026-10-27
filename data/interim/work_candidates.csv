@@ -1,90 +1,106 @@
 ﻿work_key,title,artists,n_gymnasts,n_routines,n_tracks,first_year,last_year,n_artist_variants,artist_check
-bolero,Boléro,"Maurice Ravel (7) | Dmitriy Khvorostovskiy (3) | Prequell (3) | Shlomo, The Swingle Singers & The Vocal Orchestra (2)",13,19,19,1995,2026,7,different_authors
+bolero,Bolero,Maurice Ravel (7) | Dmitriy Khvorostovskiy (3) | Prequell (3) | Georges Bizet & Rodion Shchedrin (2),14,21,21,1995,2026,8,different_authors
 caravan,Caravan,The Brian Setzer Orchestra (2) | Michel Camilo / Jorge Pardo (2) | Anatoly Vekshin (2) | Fabrizio Bosso & Antonello Salis (1),10,15,15,1999,2025,9,different_authors
+summertime,Summertime,"George Gershwin (3) | Angelique Kadjo (2) | Kenny G, George Benson (2) | Janis Joplin (2)",9,14,17,1988,2024,11,different_authors
 feeling good,Feeling Good,Muse (6) | Michael Bublé (2) | J Ram (1) | Jennifer Hudson (1),9,12,12,2012,2026,6,different_authors
 carmen,Carmen,"Georges Bizet (2) | Arcadian (2) | Antonio de Lucena (1) | Michelle Minke, James Noble (1)",9,10,10,2001,2026,7,different_authors
+i put a spell on you,I Put A Spell On You,Garou (3) | Annie Lennox (2) | Jay Hawkins (1) | Screamin' Jay Hawkins (1),9,9,9,2013,2023,5,different_authors
 swan lake,Swan Lake,"Pyotr Ilyich Tchaikovsky (2) | Smolensk Symphonic Orchestra (2) | Pyotr Ilyich Tchaikovsky, David Garrett (1) | Tchaikovsky (1)",9,9,9,1990,2024,6,different_authors
+malaguena,Malagueña,Connie Francis (6) | Stanley Black (3) | Brian Setzer (3) | Caterina Valente (1),8,13,13,2012,2024,4,different_authors
+libertango,Libertango,Astor Piazzolla (4) | Layers Classic (2) | Aydar Gaynullin (1) | Astor Piazzola (1),8,12,12,1997,2024,8,different_authors
+smooth criminal,Smooth Criminal,David Garrett (6) | Michael Jackson (4) | Aubrey Logan (1) | 2 Cellos (1),8,12,12,2009,2024,4,different_authors
+la cumparsita,La Cumparsita,Yasmin Levy (3) | Milva (1) | Ensemble Contraste (1) | Klazz Brothers & Cuba Percussion (1),8,9,9,2013,2026,7,different_authors
 caruso,Caruso,Lara Fabian (2) | Luciano Pavarotti (2) | Benedetta Caretta (1) | Katherine Jenkins (1),8,8,8,2012,2025,6,different_authors
-i put a spell on you,I Put A Spell On You,Garou (2) | Annie Lennox (2) | Jay Hawkins (1) | Screamin' Jay Hawkins (1),8,8,8,2013,2023,5,different_authors
-malaguena,Malagueña,Connie Francis (6) | Stanley Black (3) | Brian Setzer (2) | Caterina Valente (1),7,12,12,2012,2022,4,different_authors
-libertango,Libertango,Astor Piazzolla (4) | Layers Classic (2) | Aydar Gaynullin (1) | Astor Piazzola (1),7,11,11,1997,2024,7,different_authors
-smooth criminal,Smooth Criminal,David Garrett (6) | Michael Jackson (3) | Aubrey Logan (1) | 2 Cellos (1),7,11,11,2009,2024,4,different_authors
-summertime,Summertime,"George Gershwin (3) | Angelique Kadjo (2) | Kenny G, George Benson (2) | The Smooth Ballroom Band (2)",7,11,14,1988,2024,9,different_authors
+el tango de roxanne,El Tango de Roxanne,"José Feliciano, Ewan McGregor, Jacek Koman (3) | José Feliciano, Ewan McGregor & Jacek Koman (2) | Ewan McGregor & Jose Feliciano & Jacek Koman (2) | José Feliciano & Ewan McGregror & Jacek Koman (1)",7,11,11,2003,2026,6,different_authors
 ave maria,Ave Maria,Vladimir Vavilov (2) | Franz Schubert (2) | 2WEI and Ali Christenhusz (1) | Libera (1),7,8,8,2003,2025,6,different_authors
+who wants to live forever,Who Wants To Live Forever,"The Tenors (3) | David Garrett (2) | Queen / The Tenors feat. Lindsey Stirling (1) | Queen, Sarah Brightman version (1)",7,8,8,2010,2026,5,different_authors
 romani holiday,Romani Holiday (Antonius Remix),Hans Zimmer (13),6,13,13,2014,2023,1,same_author
-el tango de roxanne,El Tango de Roxanne,"José Feliciano, Ewan McGregor, Jacek Koman (3) | José Feliciano, Ewan McGregor & Jacek Koman (2) | Ewan McGregor & Jose Feliciano & Jacek Koman (2) | José Feliciano & Ewan McGregror & Jacek Koman (1)",6,10,10,2003,2026,5,different_authors
+eye of the tiger,Eye Of The Tiger,2Cellos (5) | Tommee Proffit feat. FJØRA (2) | Survivors (1) | Djemadelgado (1),6,10,11,1985,2025,6,different_authors
+besame mucho,Besame Mucho,Gadjo (2) | Buddha Bar (1) | Sean Finn and Picco ft. Carolina Lopez (1) | Consuelo Velazques (1),6,8,8,1994,2016,5,different_authors
 espana cani,España cañí,"Pascual Marquina Narro (3) | Manhattan Pops Orchestra, Trio Norté (2) | Narro Pascual Marquina (2) | Cincinnati Pops Orchestra (1)",6,8,9,1984,2021,5,different_authors
-besame mucho,Besame Mucho,Gadjo (2) | Buddha Bar (1) | Sean Finn and Picco ft. Carolina Lopez (1) | Consuelo Velazques (1),6,7,7,1994,2016,5,different_authors
-la cumparsita,La Cumparsita,Yasmin Levy (2) | Milva (1) | Ensemble Contraste (1) | Danny Malando (1),6,7,7,2013,2025,6,different_authors
 main title,Main Title,"Blake Neely (2) | Brad Fiedel (2) | Simon Goldenberg & Geoff MacCormack (1) | Carlos Rafael Rivera, Carl Doy, Kōtarō Nakagawa (1)",6,7,7,1992,2026,5,different_authors
 moonlight sonata,Moonlight Sonata,"William Robinson (2) | Tommee Profitt (1) | Dave Moore, Dick Heckstall-Smith (1) | Tom Barabas (1)",6,7,7,2013,2026,5,different_authors
 seven nation army,Seven Nation Army,"The White Stripes (3) | Postmodern Jukebox (2) | SKÁLD (1) | Scott Bradlee's Postmodern Jukebox, feat. Haley Reinhart (1)",6,7,7,2014,2025,4,different_authors
 spartacus,Spartacus,"Aram Khachaturian (3) | Aram Khatchaturian (3) | Aram Khachaturian, Royal Philharmonic Orchestra, Yuri Simonov (1)",6,7,7,1997,2018,3,same_author
-eye of the tiger,Eye of the Tiger,"2Cellos (5) | Survivors (1) | Djemadelgado (1) | Tommee Profitt, FJØRA, Joseph William Morgan (1)",5,8,9,1985,2025,5,different_authors
+bumble bee boogie,Bumble Bee Boogie,Robert Wells (9),5,9,9,2000,2021,1,same_author
+carmina burana,Carmina Burana,Carl Orff (3) | Ed Starink (2) | Synthesizer (2) | André Rieu (1),5,9,9,1993,2024,4,different_authors
+kalinka,Kalinka,Ivan Larionov (2) | André Rieu (1) | Nikolay Baskov (1),5,9,9,1995,2018,3,different_authors
 gopak,Gopak,Igor Kornelyuk (2) | Vladimir Bustriakov (1) | Aram Khachaturian (1),5,8,8,1992,2014,3,different_authors
+tango,Tango,"Sultan Ali (4) | Dianne Reeves, Raul Midon (2) | Denis SungHô, Soledad Group (1) | Konstantin Meladze (1)",5,8,8,2009,2025,4,different_authors
+hava nagila,Hava Nagila,London Festival Orchestra & Chorus (3) | DJ Jacob (1) | Andre Rieu (1),5,7,7,2009,2018,3,different_authors
+je suis malade,Je Suis Malade,Lara Fabian (7),5,7,7,2014,2024,1,same_author
 love story,Love Story,Shirley Bassey (3) | Indila (2) | Francis Lai (1) | Arthur Fidler & Boston Pops Orchestra (1),5,7,7,2005,2025,4,different_authors
+night on bald mountain,Night on Bald Mountain,Modest Mussorgsky (4) | Sir Adrian Boult (2) | David Shire (1),5,7,7,2007,2022,3,different_authors
 adios,Adiós,Benjamin Clementine (5) | Stanislav Zeltser (1),5,6,6,2012,2023,2,different_authors
+carol of the bells,Carol of the Bells,Lindsey Stirling (3) | Libera (1) | The Piano Guys (1) | Tommee Profit (1),5,6,6,2016,2026,4,different_authors
 flamenco,Flamenco,Didulya (2) | Timmy Trumpet & JETFIRE (2) | Pepe Romero (1) | Timmy Trumpet & Jetfire & Rage (1),5,6,6,2002,2023,4,different_authors
 perhaps perhaps perhaps,Perhaps Perhaps Perhaps,The Pussycat Dolls (4) | Pussycat Dolls (1) | Mantovani (1),5,6,6,2012,2025,3,different_authors
-who wants to live forever,Who Wants To Live Forever,"The Tenors (2) | Queen / The Tenors feat. Lindsey Stirling (1) | Queen, Sarah Brightman version (1) | Queen / Who Wants To Live Forever (1)",5,6,6,2010,2026,5,different_authors
+plaza of execution,Plaza of Execution,James Horner (3) | James Horner & Orchestra (2),5,6,6,1999,2023,2,same_author
 carmen suite,Carmen Suite,"Rodion Shchedrin (3) | Georges Bizet, Moscow Virtuosi Chamber Orchestra (1) | Rodion Shchedrin/ Bizet (1)",5,5,5,1995,2019,3,different_authors
 concerto de berlin,Concerto de Berlin,"Vladimir Cosma (4) | Vladimir Cosma, Ivry Gitlis (1)",5,5,5,2010,2026,2,same_author
+hit the road jack,Hit the Road Jack,Pentatonix (1) | 2WEI (1) | Ray Charles (1) | Throttle (1),5,5,5,2015,2025,4,different_authors
 requiem,Requiem,"Aram Mp3, Forsh (1) | Aram MP3 & Forsh (1) | Alma (1) | Trans-Siberian Orchestra (1)",5,5,5,2006,2025,5,different_authors
 firebird,The Firebird,Igor Stravinsky (9),4,9,9,2007,2021,1,same_author
-bumble bee boogie,Bumble Bee Boogie,Robert Wells (8),4,8,8,2000,2021,1,same_author
-carmina burana,Carmina Burana,Carl Orff (3) | Ed Starink (2) | Synthesizer (2) | André Rieu (1),4,8,8,1993,2024,4,different_authors
-kalinka,Kalinka,Ivan Larionov (2) | André Rieu (1) | Nikolay Baskov (1),4,7,7,1995,2018,3,different_authors
+adagio of spartacus and phrygia,Adagio of Spartacus and Phrygia,Aram Khatchaturian (3) | Aram Khachaturian (3),4,6,6,1996,2024,2,same_author
 another one bites the dust,Another One Bites the Dust,Queen (4) | Pink Floyd (1) | Alexander Jean (1),4,6,6,2017,2025,3,different_authors
+fever,Fever,Peggy Lee (3) | A Fine Frenzy (1) | Bette Midler (1) | Park Jin-young (1),4,6,6,2013,2024,4,different_authors
 grand guignol,Grand Guignol,Bajofondo (6),4,6,6,2010,2020,1,same_author
 guarda che luna,Guarda che luna,"Petra Magoni (2) | Roberto Romagnoli (2) | Kvatro (1) | Petra Magoni, Ferruccio Spinetti (1)",4,6,6,2012,2023,4,different_authors
 i will always love you,I Will Always Love You,Whitney Houston (4),4,6,6,2008,2023,1,same_author
-je suis malade,Je Suis Malade,Lara Fabian (6),4,6,6,2014,2024,1,same_author
+money money money,"Money, Money, Money","Meryl Streep, Julie Walters, Christine Baranski (3) | Meryl Streep & Julie Walters & Christine Baranski (2) | The Butterfly Effect (1) | The royal philharmonic orchestra (1)",4,6,7,2012,2025,4,different_authors
 mutation,Mutation,Cirque du Soleil (4) | Cirque de Soleil (1) | Guy Dubuc & Marc Lessard (1),4,6,6,2014,2025,3,different_authors
-night on bald mountain,Night on Bald Mountain,Modest Mussorgsky (3) | Sir Adrian Boult (2) | David Shire (1),4,6,6,2007,2022,3,different_authors
+sing sing sing,"Sing, Sing, Sing",Benjamin Goodman (3) | Bob Fosse (2) | Louis Prima (1) | Benny Goodman (1),4,6,7,1995,2012,4,different_authors
 tetsujin,Tetsujin,"Juno Reactor, Don Davis (3) | Juno Reactor & Don Davis (2) | Juno Reactor and Don Davis (1)",4,6,6,2004,2022,3,same_author
 5th,The 5th,David Garrett (5),4,5,5,2012,2024,1,same_author
 asturias,Asturias,William Joseph (2) | Joja Wendt (1) | Isaac Albéniz (1) | David Garrett (1),4,5,5,2012,2016,4,different_authors
 crazy in love,Crazy in Love,Beyoncé (2) | Swing Republic (2) | Sofia Karlberg (1),4,5,5,2016,2024,3,different_authors
-hava nagila,Hava Nagila,DJ Jacob (1) | London Festival Orchestra & Chorus (1) | Andre Rieu (1),4,5,5,2009,2017,3,different_authors
 illusionist,The Illusionist,Maxime Rodriguez (5),4,5,5,2021,2025,1,same_author
 kiss,Kiss,Prince (3) | Phonograph Sympho-Jazz (2),4,5,5,2016,2024,2,different_authors
+l ete indien,L'eté indien,Piano Bar Band (2) | Joe Dassin (2) | Quadro Nuevo (1),4,5,5,2010,2016,3,different_authors
 mama,Mama,Dalida (3) | Paul Mauriat (1) | Gianna Nannini (1),4,5,5,2013,2023,3,different_authors
 me too,Me Too,Meghan Trainor (5),4,5,5,2017,2024,1,same_author
-plaza of execution,Plaza of Execution,James Horner (3) | James Horner & Orchestra (1),4,5,5,1999,2019,2,same_author
+ne me quitte pas,Ne me quitte pas,Jacques Brel (4) | Sylvie Vartan (1),4,5,5,1993,2022,2,different_authors
 skyfall,Skyfall,Adele (3) | by Jaimee Paul (1) | Jaimee Paul (1),4,5,5,2013,2025,3,different_authors
+still loving you,Still Loving You,Scorpions (4) | Sonata Arctica (1),4,5,5,2014,2023,2,different_authors
 tanguera,Tanguera,Sexteto Mayor (5),4,5,5,2007,2016,1,same_author
 toccata and fugue in d minor,Toccata and Fugue in D Minor,Johann Sebastian Bach (4) | Vanessa Mae (1),4,5,5,1987,2000,2,different_authors
 vogue,Vogue,Madonna (5),4,5,5,2024,2026,1,same_author
 believer,Believer,Tommee Profitt feat. Colton Dixon (1) | Christina (1) | Chase Holfelder (1) | Christina Milian (1),4,4,4,2015,2025,4,different_authors
+berghain,Berghain,"Rosalía, Björk, Yves Tumor (1) | Rosalía, Björk and Yves Tumor (1) | Rosalía (1) | Rosalía, Björk & Yves Tumor (1)",4,4,4,2026,2026,4,same_author
 footloose,Footloose,Glee Cast (1) | Kenny Loggins (1),4,4,4,2018,2023,2,different_authors
 hey pachuco,Hey Pachuco,Royal Crown Revue (3) | DJ Ruslan Nigmatullin (1),4,4,4,2002,2018,2,different_authors
-hit the road jack,Hit the Road Jack,Pentatonix (1) | 2WEI (1) | Ray Charles (1),4,4,4,2015,2024,3,different_authors
 padam padam,Padam Padam,Édith Piaf (1) | Edith Piaf (1) | Mireille Mathieu (1),4,4,4,1994,2021,3,different_authors
+pink panther theme,The Pink Panther Theme,Henry Mancini (2) | Bobby McFerrin (1) | The City of Prague Philharmonic Orchestra (1),4,4,4,2007,2024,3,different_authors
 ride,The Ride,James Horner (2) | ZZ WARD feat Gary Clark jr (1),4,4,4,2006,2021,2,different_authors
+run the world,Run the World (Girls),Beyoncé (3) | Beyonce (1),4,4,4,2016,2025,2,same_author
 storm,Storm,Otyken (1) | Balázs Havasi (1) | Havasi (1) | Burkard Dalwitz (1),4,4,4,2000,2023,4,different_authors
 sweet dreams,Sweet Dreams (Are Made of This),"Kat León (1) | Kat Leon (1) | Emily Browning (1) | Tanghetto, Avicii (1)",4,4,4,2014,2026,4,different_authors
+we will rock you,We Will Rock You,"Elvis Presley and Queen (1) | Queen (1) | Queen, Pink (1) | Queen, VonLichten (1)",4,4,4,2013,2023,4,same_author
 ninja,Ninja,Maxime Rodriguez (6),3,6,6,2008,2022,1,same_author
 rise,Rise,Safri Duo (6),3,6,6,2005,2023,1,same_author
 bensonhurst blues,Bensonhurst Blues,Oscar Benton (5),3,5,5,2020,2023,1,same_author
 circle of life,Circle Of Life,"Carmen Twillie, Lebo M (3) | Swingrowers, District 78, J Balvin & Skrillex (1) | Caba and Lion King (1)",3,5,5,2019,2025,3,different_authors
+el conquistador,El Conquistador,Maxime Rodriguez (5),3,5,5,2008,2025,1,same_author
 fanatico master,Fanatico Master,John Corigliano / Edvin Marton & Ari Zakaryan (5),3,5,5,2011,2021,1,same_author
-fever,Fever,Peggy Lee (3) | A Fine Frenzy (1) | Bette Midler (1),3,5,5,2013,2020,3,different_authors
 final act,Final Act,"Power-Haus, Ros Stephen (4) | Power-Haus, Ros Stephen-哀 (1)",3,5,5,2024,2026,2,same_author
 gypsies,The Gypsies,,3,5,5,2011,2021,0,no_credit
 journey across europe,Journey Across Europe,John Corigliano / Edvin Marton & Ari Zakaryan (5),3,5,5,2011,2021,1,same_author
 mon amour,Mon amour,Slimane (5),3,5,5,2024,2026,1,same_author
-sing sing sing,"Sing, Sing, Sing",Benjamin Goodman (3) | Bob Fosse (2) | Benny Goodman (1),3,5,6,1995,2012,3,different_authors
+nos folies,À nos folies,Léa Paci (5),3,5,5,2024,2026,1,same_author
 soul sacrifice,Soul Sacrifice,Santana (4) | Carlos Santana (1),3,5,5,2009,2016,2,same_author
 sphynx,Sphynx (Club Mix),"Giampiero Ponte (3) | Giampiero Ponte, Moran (2)",3,5,5,2004,2014,2,same_author
 thunderstruck,Thunderstruck,David Garrett (3) | Hinder (2),3,5,5,2014,2024,2,different_authors
 unstoppable,Unstoppable,E.S. Posthumus (5),3,5,5,2015,2023,1,same_author
 we found love,We Found Love (Rihanna Cover),"2WEI, Ali Christenhusz, Tiffany Aris (2) | Calvin Harris feat Rihanna (2) | Nora En Pure, Ashibah (1)",3,5,5,2019,2026,3,different_authors
+act 1 appearance of kitri,Act 1 - Appearance Of Kitri,Leon Minkus (4),3,4,4,1996,2021,1,same_author
 adagio,Adagio,"Rodion Shchedrin, Georges Bizet (2) | Aram Khatchaturian (2)",3,4,4,1992,2009,2,different_authors
-adagio of spartacus and phrygia,Adagio of Spartacus and Phrygia,Aram Khatchaturian (3) | Aram Khachaturian (1),3,4,4,1996,2024,2,same_author
 and the waltz goes on,And The Waltz Goes On,André Rieu (4),3,4,4,2015,2016,1,same_author
 at the circus,At the Circus,Aram Khatchaturian (4),3,4,4,1996,2003,1,same_author
 bad guy,Bad Guy,Postmodern Jukebox (2) | Billie Eilish (1) | KONG (1),3,4,4,2021,2024,3,different_authors
 bohemian rhapsody,Bohemian Rhapsody,Queen (4),3,4,4,1984,2022,1,same_author
+brothers in arms,Brothers in Arms (Extended Version),Junkie XL (4),3,4,4,2020,2025,1,same_author
+buleria,Buleria,David Bisbal (4),3,4,4,2016,2024,1,same_author
+carmen s entrance and habanera,Carmen's entrance and Habanera,Georges Bizet & Rodion Shchedrin (2) | Georges Bizet (1) | Rodion Shchedrin (1),3,4,4,2004,2014,3,different_authors
 carnavalera,Carnavalera,Havana Delirio (4),3,4,4,2014,2023,1,same_author
 clair de lune,Clair de Lune,"Claude Debussy (3) | Charles Gerhardt, National Philharmonic Orchestra & Skaila Kanga (1)",3,4,4,2014,2023,2,different_authors
 cry me a river,Cry Me a River,Michael Bublé (2) | Eklipse (1) | EKLIPSE (1),3,4,4,2017,2025,3,different_authors
@@ -97,11 +113,9 @@ haze,Haze,"Power-Haus, Christian Reindl & Lucie Paradis (2) | Power-Haus, Christ
 historia de un amor,Historia de un amor,Brendon Stoun (1) | Carlos Eleta Almarán (1) | Perez Prado (1),3,4,4,2015,2018,3,different_authors
 hopak,Hopak (Ukrainian Folk),Igor Kornelyuk (2),3,4,4,2008,2021,1,same_author
 i will survive,I Will Survive,Igudesman & Joo (2) | Musica Nuda (1) | Anatoly Vekshin (1),3,4,4,1999,2023,3,different_authors
-l ete indien,L'eté indien,Piano Bar Band (2) | Joe Dassin (1) | Quadro Nuevo (1),3,4,4,2011,2016,3,different_authors
 le temps des cathedrales,Le temps des cathédrales,Josh Groban (3),3,4,4,2017,2025,1,same_author
 main theme,Main Theme,Jerry Goldsmith (2) | Graeme Revell (2),3,4,4,1999,2006,2,different_authors
-money money money,"Money, Money, Money","Meryl Streep & Julie Walters & Christine Baranski (2) | The Butterfly Effect (1) | Meryl Streep, Julie Walters, Christine Baranski (1) | The royal philharmonic orchestra (1)",3,4,5,2012,2024,4,different_authors
-ne me quitte pas,Ne me quitte pas,Jacques Brel (4),3,4,4,1993,2015,1,same_author
+no good,No Good,"KALEO (2) | Kaleo, Jökull Júlíusson (2)",3,4,4,2020,2026,2,same_author
 obsidian,Obsidian,Audiomachine (4),3,4,4,2018,2023,1,same_author
 overture,Overture,London Philharmonic Orchestra and David Parry (2) | Trans-Siberian Orchestra (1) | Andrew Lloyd Webber (1),3,4,4,2012,2018,3,different_authors
 prologue,Prologue,Woodkid (2) | James Newton Howard (1) | Alala (1),3,4,4,2024,2025,3,different_authors
@@ -111,14 +125,12 @@ rhapsody on a theme of paganini,Rhapsody on a Theme of Paganini,"Vladimir Ashken
 rock around the clock,Rock Around the Clock,Bill Haley & His Comets (2) | Dany Brillant (1) | Bill Haley (1),3,4,4,2021,2025,3,different_authors
 royal blood,Royal Blood (as featured in The Redeem Team),Caleb Swift (4),3,4,4,2023,2025,1,same_author
 show me how you burlesque,Show Me How You Burlesque,Christina Aguilera (4),3,4,4,2017,2025,1,same_author
-still loving you,Still Loving You,Scorpions (3) | Sonata Arctica (1),3,4,4,2017,2023,2,different_authors
-tango,Tango,"Sultan Ali (2) | Denis SungHô, Soledad Group (1) | Konstantin Meladze (1)",3,4,4,2009,2014,3,different_authors
+show must go on,The Show Must Go On,Queen (4),3,4,4,2014,2025,1,same_author
 tango jalousie,Tango Jalousie,Jacob Gade (3) | Barcelona Symphony Orchestra (1),3,4,4,1983,2016,2,different_authors
 adagio in g minor,Adagio in G Minor,"Tomaso Albinoni (1) | Remo Giazotto (1) | Budapest Film Orchestra, Dominic Miller and Nick Ingman (1)",3,3,3,1990,2025,3,different_authors
-berghain,Berghain,"Rosalía, Björk, Yves Tumor (1) | Rosalía, Björk and Yves Tumor (1) | Rosalía (1)",3,3,3,2026,2026,3,same_author
 black gold,Black Gold,Armand Amar (3),3,3,3,2012,2022,1,same_author
+boom boom,Boom Boom,2WEI (3),3,3,3,2022,2026,1,same_author
 carmen s story,Carmen's Story,Edith Piaf (3),3,3,3,2017,2021,1,same_author
-carol of the bells,Carol Of The Bells,Libera (1) | The Piano Guys (1) | Tommee Profit (1),3,3,3,2016,2022,3,different_authors
 codigo de barra,Codigo de Barra,Bajofondo (3),3,3,3,2014,2017,1,same_author
 concerto in f,Concerto in F,George Gershwin (2) | Gershwin (1),3,3,3,2008,2020,2,same_author
 danza ritual del fuego,Danza ritual del fuego,"Manuel de Falla (1) | Paco de Lucía, Carlos Montoya (1) | Paco De Lucía (1)",3,3,3,1992,2017,3,different_authors
@@ -131,6 +143,7 @@ grande amore,Grande Amore,Il Volo (3),3,3,3,2022,2024,1,same_author
 heat,The Heat,Peter Gabriel (3),3,3,3,1997,2026,1,same_author
 hope,Hope,NF (3),3,3,3,2024,2025,1,same_author
 innuendo,Innuendo,Queen (3),3,3,3,2018,2025,1,same_author
+is it right,Is It Right,Elaiza (3),3,3,3,2015,2017,1,same_author
 jota aragonesa,Jota Aragonesa,Mikhail Glinka (2) | Glinka (1),3,3,3,2008,2016,2,same_author
 la boheme,La bohème,Charles Aznavour (2) | Ornella Vanoni (1),3,3,3,2012,2024,2,different_authors
 leave no witnesses,Leave No Witnesses,James Horner (2),3,3,3,2006,2018,1,same_author
@@ -139,23 +152,23 @@ mind demons,Mind Demons,Audiomachine (3),3,3,3,2023,2025,1,same_author
 miserlou,Miserlou,"Caroline Campbell & William Joseph (1) | Caroline Campbell, William Joseph & Tina Guo (1) | Caroline Campbell and William Joseph (1)",3,3,3,2018,2024,3,same_author
 my way,My Way,André Rieu (1) | Andre Rieu (1),3,3,3,2013,2018,2,same_author
 never enough,Never Enough,Loren Allred (2) | Emin Agalarov (1),3,3,3,2016,2024,2,different_authors
+new world concerto,New World Concerto,"Maksim & Royal Philharmonic Orchestra (2) | MAKSIM, Royal Philharmonic Orchestra & Julian Kershaw (1)",3,3,3,2018,2023,2,same_author
 nocturne,Nocturne,"Yuri Vesnyak (1) | Tamara Gverdtsiteli, Dmitry Duzhev (1) | Chopin (1)",3,3,3,2003,2021,3,different_authors
 non je ne regrette rien,"Non, je ne regrette rien",Édith Piaf (2) | Edith Piaf (1),3,3,3,2014,2024,2,same_author
 paint it black,Paint It Black (feat. Rånya) [Epic Trailer Version],Hidden Citizens (1) | Ramin DJawadi (1),3,3,3,2018,2025,2,different_authors
 phantom of the opera,The Phantom of the Opera,Prague Cello Quartet (1) | Andrew Lloyd Webber (1) | Nightwish (1),3,3,3,1993,2023,3,different_authors
-pink panther theme,The Pink Panther Theme,Henry Mancini (2) | The City of Prague Philharmonic Orchestra (1),3,3,3,2007,2024,2,different_authors
 por una cabeza,Por una Cabeza,Itzhak Perlman (1) | Sumi Jo (1) | Carlos Gardel (1),3,3,3,1995,2025,3,different_authors
 private investigations,Private Investigations,Dire Straits (3),3,3,3,1998,2019,1,same_author
 quixote,Quixote,Bond (3),3,3,3,2002,2009,1,same_author
 revolution,Revolution,Eternal Eclipse (3),3,3,3,2025,2026,1,same_author
-run the world,Run the World (Girls),Beyoncé (2) | Beyonce (1),3,3,3,2016,2025,2,same_author
 samb adagio,Samb Adagio,Safri Duo (2) | Safri duo (1),3,3,3,2002,2011,2,same_author
+second waltz,The Second Waltz,Dmitri Shostakovich (1) | André Rieu (1) | Andre Rieu (1),3,3,3,2016,2021,3,different_authors
 song for the little sparrow,Song for the Little Sparrow,Abel Korzeniowski (2) | Patricia Kaas (1),3,3,3,2014,2026,2,different_authors
 tango amore,Tango Amore,Edvin Marton (3),3,3,3,2011,2019,1,same_author
 to victory,To Victory,Tyler Bates (3),3,3,3,2009,2017,1,same_author
+tristan iseult,Tristan & Iseult,Maxime Rodriguez (3),3,3,3,2008,2021,1,same_author
 tsyganochka,Tsyganochka,,3,3,3,2000,2008,0,no_credit
 volare,Volare,"Dean Martin (1) | JJ Vianello, Tito Nieves, Enzo Diaz (1) | DJ BoBo (1)",3,3,3,2012,2017,3,different_authors
-we will rock you,We Will Rock You,"Elvis Presley and Queen (1) | Queen, Pink (1) | Queen, VonLichten (1)",3,3,3,2013,2023,3,same_author
 winter,Winter,Duomo (1) | Bond (1) | Ulytau (1),3,3,3,2004,2026,3,different_authors
 dying swan,The Dying Swan,Saint-Saëns Camille (4) | Camille Saint-Saëns (2),2,6,6,1996,2017,2,same_author
 grand central,Grand Central,Patrick Doyle (5),2,5,5,1997,2021,1,same_author
@@ -170,6 +183,7 @@ christ trilogy,The Christ Trilogy,HAVASI (2) | Balázs Havasi (2),2,4,4,2016,202
 dance at the gym,Dance at the Gym,Leonard Bernstein (4),2,4,4,1991,2007,1,same_author
 el choclo,El Choclo,Destiny Quartet (3) | Cello Project (1),2,4,4,2018,2024,2,different_authors
 escape from slavery,Escape from Slavery,Hans Zimmer and PP Music (3) | PP Music (1),2,4,4,2019,2022,2,different_authors
+experience,Experience,"Ludovico Einaudi (2) | Ludovico Einaudi, Daniel Hope (2)",2,4,4,2013,2026,2,same_author
 ghost of sky,Ghost Of Sky,Steed Lord (4),2,4,4,2017,2019,1,same_author
 i m so excited,I'm So Excited,Sound Of Legend (3) | Retro Spectres (1),2,4,4,2019,2026,2,different_authors
 in this shirt,In This Shirt,The Irrepressibles (4),2,4,4,2017,2023,1,same_author
@@ -179,26 +193,28 @@ kill of the night,Kill Of The Night,Gin Wigmore (4),2,4,4,2022,2026,1,same_autho
 kismet,Kismet,Bond (4),2,4,4,2002,2003,1,same_author
 lash out,Lash Out,Alice Merton (4),2,4,4,2019,2020,1,same_author
 misirlou,Misirlou,David Garrett (4),2,4,4,2014,2024,1,same_author
+night on disco mountain,Night On Disco Mountain,David Shire (4),2,4,4,2018,2021,1,same_author
 o fortuna,O Fortuna,Carl Orff (4),2,4,4,2020,2023,1,same_author
 o mio babbino caro,O mio babbino caro,Giacomo Puccini (2) | Joshua Bell (2),2,4,4,2007,2012,2,different_authors
+oogie boogie s song,Oogie Boogie's Song,"Ken Page, Ed Ivory (2) | Danny Elfman (2)",2,4,4,2020,2023,2,different_authors
 pango pango,Pango Pango,The Atomic Fireballs (4),2,4,4,2013,2025,1,same_author
 primavera tango,Primavera Tango,"Gustavo Montesano & Royal Philharmonic Orchestra & Carlos Gomez (3) | Royal Philharmonic Orchestra, Gustavo Montesanos Gonzales, Carlos Gome (1)",2,4,4,2013,2019,2,same_author
 saltimbanco,Saltimbanco,René Dupéré (2) | Rene Dupere (2),2,4,4,1997,2004,2,same_author
 scat,Scat,"Club des Belugas & Iain Mackenzie (2) | Club des Belugas, Iain Mackenzie (2)",2,4,4,2022,2025,2,same_author
+scene,Scene,"Georges Bizet & Rodion Shchedrin (2) | Rodion Shchedrin, Georges Bizet (2)",2,4,4,1992,2012,2,same_author
 shame on me,Shame On Me,Avicii (4),2,4,4,2019,2021,1,same_author
 stanga,Stanga,Sagi Abitbul & Guy Haliva (4),2,4,4,2022,2024,1,same_author
 what a wonderful world,What a Wonderful World,"2WEI, Ali Christenhusz, Edda Hayes (2) | 2WEI, Ali Christenhusz & Edda Hayes (2)",2,4,4,2022,2025,2,same_author
 you don t own me,You Don't Own Me,Saygrace feat. G-Eazy (2) | Saygrace and G-Eazy (2),2,4,4,2017,2021,2,same_author
 2nd law unsustainable,The 2nd Law: Unsustainable,Muse (3),2,3,3,2014,2026,1,same_author
 act 1 finale death of giselle love scene,"Act 1 finale Death of Giselle, Love Scene",Adolphe Adam (3),2,3,3,2004,2007,1,same_author
+act 1 variation kitri,Act 1 - Variation: Kitri,Leon Minkus (3),2,3,3,1996,2021,1,same_author
 all by myself,All By Myself,Larry Dalton (2) | Celine Dion (1),2,3,3,2016,2023,2,different_authors
 angel,Angel,Ralph Fridge (2) | Manolo Carrasco & SAINT PETERSBURG VIRTUOSO SYMPHONY ORCHESTRA (1),2,3,3,2001,2026,2,different_authors
 another cha cha,Another Cha Cha,Santa Esmeralda (3),2,3,3,2014,2016,1,same_author
 attack,Attack,Hans Zimmer (3),2,3,3,2002,2006,1,same_author
 black betty,Black Betty,Ram Jam (3),2,3,3,2020,2026,1,same_author
 boat chase,Boat Chase,John Powell (3),2,3,3,2009,2019,1,same_author
-brothers in arms,Brothers in Arms (Extended Version),Junkie XL (3),2,3,3,2020,2025,1,same_author
-buleria,Buleria,David Bisbal (3),2,3,3,2016,2017,1,same_author
 bury a friend,Bury a Friend,Billie Eilish (3),2,3,3,2020,2021,1,same_author
 can t hold us,Can't Hold Us (feat. Ray Dalton),Macklemore & Ryan Lewis (2) | Macklemore & Ryan Lewis feat Ray Dalton (1),2,3,3,2019,2021,2,same_author
 celem celem,"Celem, Celem",Yildiz Ibrahimova (2) | Yıldız İbrahimova (1),2,3,3,2009,2014,2,same_author
@@ -206,25 +222,31 @@ cell block tango,Cell Block Tango,John Kander (3),2,3,3,2011,2018,1,same_author
 come together,Come Together,the Beatles (2) | Michael Jackson (1),2,3,3,2019,2023,2,different_authors
 como se anda en el campo,Como Se Anda En El Campo,"Manolo Carrasco (1) | Jorge Padro, Manolito Soler, Manolo Carrasco (1) | Jorge Pardo, Manolito Soler, Manolo Carrasco (1)",2,3,3,2013,2016,3,same_author
 dance of the comedians,Dance of The Comedians,The Manhattan Pops (2) | The Manhattan Pops Orchestra (1),2,3,3,2015,2020,2,same_author
+dance of the sugar plum fairy,Dance of the Sugar Plum Fairy,Lindsey Stirling (2) | Jennifer Thomas (1),2,3,3,2020,2023,2,different_authors
 dangerous,Dangerous,"David Garrett (2) | David Garrett, Royal Philharmonic Orchestra, and Franck van der Heijden (1)",2,3,3,2018,2021,2,same_author
 dark angel,Dark Angel,Edvin Marton (2) | 8 O'clock (1),2,3,3,2013,2021,2,different_authors
 disfruto,Disfruto,Carla Morrison (3),2,3,3,2022,2026,1,same_author
 do something crazy,Do Something Crazy,Outasight (3),2,3,3,2020,2024,1,same_author
 don t stop me now,Don't Stop Me Now,Queen (3),2,3,3,2017,2022,1,same_author
-el conquistador,El Conquistador,Maxime Rodriguez (3),2,3,3,2008,2022,1,same_author
+earth song,Earth Song,Michael Jackson (3),2,3,3,2017,2025,1,same_author
 elegie o doux printemps d autrefois,Elegie: O doux printemps d'autrefois,Joshua Bell (3),2,3,3,2021,2023,1,same_author
 escape from east berlin,Escape from East Berlin,Daniel Pemberton (3),2,3,3,2016,2018,1,same_author
+everybody wants to rule the world,Everybody Wants to Rule the World,"Lorde (2) | Cinematic Pop, Spencer Jones & Mckenna Breinholt (1)",2,3,3,2023,2026,2,different_authors
 fantasy on ice,Fantasy On Ice,Sarah Àlainn (3),2,3,3,2023,2025,1,same_author
 feelings,Feelings,Edvin Marton (2) | Morris Albert (1),2,3,3,1983,2021,2,different_authors
 flight of the bumblebee,Flight of the Bumblebee,Rousseau (2) | Nikolai Rimsky-Korsakov (1),2,3,3,1986,2020,2,different_authors
 gaston,Gaston,"Josh Gad, Luke Evans & Ensemble (2) | Josh Gad, Luke Evans (1)",2,3,3,2022,2026,2,same_author
 hallelujah,Hallelujah,Rob Landes (2) | Susan Boyle (1),2,3,3,2016,2017,2,different_authors
+halo theme song,Halo Theme Song,"William Joseph, Lindsey Stirling (2) | William Joseph & Lindsey Stirling (1)",2,3,3,2015,2020,2,same_author
 heat of the day,The Heat of the Day,Pat Metheny Group (2) | Pat Metheny (1),2,3,3,1998,2002,2,same_author
 hero with a red mask,Hero With A Red Mask,Rok Nardin (3),2,3,3,2017,2022,1,same_author
+hood jump,Hood Jump,John Powell (3),2,3,3,2010,2023,1,same_author
+house of the rising sun,House of the Rising Sun,Jeremy Renner (2) | Heavy Young Heathens (1),2,3,3,2019,2025,2,different_authors
 human,Human,Rag'n'Bone Man (3),2,3,3,2017,2024,1,same_author
 hurt,Hurt,Christina Aguilera (3),2,3,3,2020,2023,1,same_author
 i love rock n roll,I Love Rock 'n'Roll,Joan Jett & The Blackhearts (2) | Joan Jett (1),2,3,3,2018,2020,2,same_author
 i wanna dance,I Wanna Dance,Artem Uzunov (2) | Artem Uznov (1),2,3,3,2017,2019,2,same_author
+imagine,Imagine,Artem Uzanov (2) | Blowing Free (1),2,3,3,2011,2021,2,different_authors
 introduction moderato assai allegro ma non troppo from swan lake,Introduction: Moderato Assai – Allegro Ma Non Troppo from Swan Lake,Tchaikovsky (3),2,3,3,1998,2008,1,same_author
 katyusha,Katyusha (Russian traditional),DJ Ras Putin (1),2,3,3,1995,2008,1,same_author
 killer game,Killer Game,FreshmanSound (3),2,3,3,2025,2026,1,same_author
@@ -241,12 +263,12 @@ memory,Memory,Joseph William Morgan (2) | Andrew Lloyd Webber (1),2,3,3,1984,202
 mesecina,Mesecina,Goran Bregović (3),2,3,3,1998,2026,1,same_author
 mystic moon,Mystic Moon,Bowfire (3),2,3,3,2002,2011,1,same_author
 never tear us apart,Never Tear Us Apart,Bishop Briggs (2) | Never Tear Us Apart (1),2,3,3,2024,2026,2,different_authors
-no good,No Good,"Kaleo, Jökull Júlíusson (2) | KALEO (1)",2,3,3,2020,2021,2,same_author
-nos folies,À nos folies,Léa Paci (3),2,3,3,2024,2026,1,same_author
 nostalgia,Nostalgia,Yanni (3),2,3,3,2005,2012,1,same_author
 nothing else matters,Nothing Else Matters,Metallica (1),2,3,3,2019,2021,1,same_author
 on the floor,On The Floor,"Jennifer Lopez feat Pitbull (2) | Jennifer Lopez, feat. Pitbull (1)",2,3,3,2020,2023,2,same_author
+one man s dream,One Man's Dream,Yanni (3),2,3,3,1997,2009,1,same_author
 pa bailar,Pa'Bailar,Bajofondo (3),2,3,3,2011,2014,1,same_author
+parla piu piano,Parla Più Piano (El Padrino),Filippa Giordano (3),2,3,3,2016,2026,1,same_author
 peer gynt suite no 1 in the hall of the mountain king,Peer Gynt Suite No.1: In The Hall Of The Mountain King,Edvard Grieg (3),2,3,3,1992,1994,1,same_author
 piano concerto no 2 in c minor op 18 i moderato,"Piano Concerto No. 2 In C-minor, Op. 18: I. Moderato",Sergei Rachmaninoff (2) | Sviatoslav Richter (1),2,3,3,2011,2020,2,different_authors
 porto,Porto,Dulce Pontes (3),2,3,3,2008,2024,1,same_author
@@ -263,6 +285,7 @@ sky,Sky,,2,3,3,1995,1999,0,no_credit
 speak softly love,Speak Softly Love,Simone (3),2,3,3,2023,2024,1,same_author
 spice up your life,Spice Up Your Life,Spice Girls (3),2,3,3,2023,2026,1,same_author
 strange birds,Strange Birds,Birdy (3),2,3,3,2020,2021,1,same_author
+succession,Succession,Brand X Music (3),2,3,3,2024,2025,1,same_author
 sunrise sunset,"Sunrise, Sunset",Roby Lakatos (2) | Fiddler on the Roof (1),2,3,3,2009,2018,2,different_authors
 supremacy,Supremacy,Muse (3),2,3,3,2016,2025,1,same_author
 symphony no 6 in b minor op 74,"Symphony No. 6 in B minor, Op. 74",Pyotr Ilyich Tchaikovsky (2) | Pyotr Tchaikovsky (1),2,3,3,1990,2021,2,same_author
@@ -278,6 +301,7 @@ trouble,Trouble,Jake Warren & Dana Kelson (2) | Alan Cumming (1),2,3,3,2023,2026
 tsar s bride overture,The Tsar's Bride: Overture,"Евгений Светланов, Оркестр Большого театра (2) | Orchestra of the Bolshoi Theatre & Fouat Mansourov (1)",2,3,3,2020,2023,2,different_authors
 tsigany,Tsigany,Moiseyev Dance Ensemble (3),2,3,3,2015,2023,1,same_author
 una musica brutal,Una música brutal,Gotan Project (3),2,3,3,2008,2012,1,same_author
+undone,Undone,"Tommee Profitt, Fleurie (2) | Tommee Profitt (1)",2,3,3,2025,2026,2,same_author
 vai vedrai,Vai Vedrai,Cirque du Soleil (3),2,3,3,2014,2022,1,same_author
 vandals,Vandals,Jo Blankenburg (3),2,3,3,2023,2026,1,same_author
 view of silence,View of Silence,Joe Hisaishi (3),2,3,3,2019,2026,1,same_author
@@ -286,7 +310,7 @@ waterfall fight,Waterfall Fight,Ludwig Göransson (3),2,3,3,2024,2026,1,same_aut
 zorba s dance,Zorba's Dance,LCD (2) | David Garrett (1),2,3,3,2003,2014,2,different_authors
 поговори со мнои,Поговори со мной,Мария Чайковская (1) | Марія Чайковська (1) | Maria Tchaikovskaya (1),2,3,3,2019,2023,3,different_authors
 abracadabra,Abracadabra,Lady Gaga (2),2,2,2,2025,2026,1,same_author
-act 1 appearance of kitri,Act 1 – Appearance Of Kitri,Leon Minkus (2),2,2,2,1996,2009,1,same_author
+alambre alto,Alambre Alto,Cirque du Soleil (2),2,2,2,2011,2023,1,same_author
 amanecer andaluz,Amanecer andaluz,,2,2,2,1991,1991,0,no_credit
 angry birds main theme,Angry Birds Main Theme,"London Philharmonic Orchestra & Andrew Skeet (1) | London Philharmonic Orchestra, Andrew Skeet (1)",2,2,2,2012,2013,2,same_author
 apres moi,Après Moi,Regina Spektor (2),2,2,2,2013,2018,1,same_author
@@ -304,17 +328,16 @@ beirut taxi,Beirut Taxi,Alexandre Desplat (2),2,2,2,2007,2019,1,same_author
 big drum small world,"Big Drum, Small World",Dhol Foundation (2),2,2,2,2002,2005,1,same_author
 billie jean,Billie Jean,"Michael Jackson (1) | Michael Jackson, AyseDeniz (1)",2,2,2,2013,2020,2,same_author
 blue suede shoes,Blue Suede Shoes,"Dany Brillant (1) | Brenda Lee, Dany Brillant (1)",2,2,2,2022,2026,2,same_author
-boom boom,Boom Boom,2WEI (2),2,2,2,2022,2026,1,same_author
 butterflies and hurricanes,Butterflies and Hurricanes,Muse (2),2,2,2,2022,2023,1,same_author
 camel race,Camel Race,Jerry Goldsmith (2),2,2,2,2000,2006,1,same_author
 capriccio espagnol,Capriccio Espagnol,Nikolai Rimsky-Korsakov (2),2,2,2,1990,2017,1,same_author
-carmen s entrance and habanera,Carmen's entrance and Habanera,Georges Bizet (1) | Rodion Shchedrin (1),2,2,2,2004,2014,2,different_authors
 casting,Casting,Christophe Maé (2),2,2,2,2022,2024,1,same_author
 cemetery,The Cemetery,Danny Elfman (2),2,2,2,1993,1996,1,same_author
 chandelier,Chandelier (Piano Version),Sia (2),2,2,2,2015,2016,1,same_author
 charms,Charms,Abel Korzeniowski (2),2,2,2,2014,2021,1,same_author
 clash,Clash,Scylla & Sofiane Pamart (2),2,2,2,2024,2025,1,same_author
 cleopatra,Cleopatra,Trevor Jones (1) | Efendi (1),2,2,2,2022,2025,2,different_authors
+code,The Code (Orchestral Version),Nemo & Sinfonie Orchester Biel Solothurn (1) | Nemo (1),2,2,2,2025,2025,2,same_author
 code name vivaldi,Code Name Vivaldi,The Piano Guys (2),2,2,2,2014,2014,1,same_author
 compassion,Compassion,Ilya Beshevli (2),2,2,2,2020,2020,1,same_author
 concerto no 1 in g for cello and orchestra op 49 i allegro,"Concerto No. 1 in G for Cello and Orchestra, Op. 49: I. Allegro","Yo-Yo Ma, Dmitri Kabalevsky & Dmitry Shostakovich (2)",2,2,2,2016,2018,1,same_author
@@ -322,29 +345,36 @@ concierto de aranjuez,Concierto De Aranjuez,André Rieu (1) | Joaquín Rodrigo (
 concierto de aranjuez adagio,Concierto de Aranjuez: Adagio,Joaquín Rodrigo (2),2,2,2,1988,1993,1,same_author
 confessa,Confessa,Adriano Celentano (2),2,2,2,2017,2026,1,same_author
 dance with the dragon,Dance With the Dragon,Dark Sarah ft. Jp Leppäluoto (2),2,2,2,2019,2025,1,same_author
+danse macabre op 40,"Danse macabre, Op.40","Philharmonia Orchestra, Charles Dutoit (1) | Saint-Saëns (1)",2,2,2,2012,2015,2,different_authors
 differente,Differente,Gotan Project (2),2,2,2,2010,2013,1,same_author
 doowit,Doowit,Pharrell Williams (2),2,2,2,2021,2022,1,same_author
 dream,A Dream,"Charles Gerhardt, Christian Steiner, RCA Symphony Orchestra (1) | Vladimir Bustriakov (1)",2,2,2,1995,2017,2,different_authors
 duck duck goose,Duck Duck Goose,"Power-Haus & Joni Fuller (1) | Power-Haus, Joni Fuller (1)",2,2,2,2025,2026,2,same_author
 dulcea si tandra mea fiara,Dulcea Si Tandra Mea Fiara,Catalina Caraus and Eugen Doga (1) | Eugen Doga & Victoria Demici (1),2,2,2,2021,2023,2,same_author
+dum taka,Dum-Taka,Elitsa Todorova (2),2,2,2,2014,2016,1,same_author
+eleanor rigby,Eleanor Rigby,SARAFINE (1) | The Beatles (1),2,2,2,2016,2025,2,different_authors
 elegy in e flat minor,Elegy in E-Flat Minor,"Sergey Rachmaninoff, Vladimir Ashkenazy (1) | Sergey Rachmaninov (1)",2,2,2,2011,2020,2,same_author
 esa diva,Esa Diva,Melody (2),2,2,2,2025,2026,1,same_author
 europa,Europa,Mónica Naranjo (1) | Monica Naranjo (1),2,2,2,2021,2026,2,same_author
 everything,Everything,Safri Duo (1) | Sean Christopher (1),2,2,2,2016,2022,2,different_authors
 farruca,Farruca (Miller's Dance),Manuel de Falla (1) | Paco de Lucía (1),2,2,2,1989,2010,2,different_authors
+fearsome flight,Fearsome Flight,Cirque du Soleil (2),2,2,2,2021,2025,1,same_author
 fencing lesson,The Fencing Lesson,James Horner (1),2,2,2,2006,2010,1,same_author
 gangsta s paradise,Gangsta's Paradise,2WEI (2),2,2,2,2018,2024,1,same_author
 great balls of fire,Great Balls Of Fire,Jerry Lee Lewis (2),2,2,2,2023,2024,1,same_author
 green hornet,Green Hornet,Al Hirt (2),2,2,2,2004,2011,1,same_author
 harem,Harem,Sarah Brightman (2),2,2,2,2004,2004,1,same_author
 havana,Havana,Kenny G (1) | Linda Eder (1),2,2,2,2012,2023,2,different_authors
+heart of courage,Heart of Courage,Two Steps from Hell (2),2,2,2,2013,2016,1,same_author
 heat miser,Heat Miser,Massive Attack (2),2,2,2,1999,2002,1,same_author
 hello,Hello,Adele (1) | Lionel Richie (1),2,2,2,2017,2024,2,different_authors
 hero,Hero,Mariah Carey (1) | Hans Zimmer & John Powell (1),2,2,2,1998,2020,2,different_authors
 highway to hell,Highway To Hell,"Jonathan Groff, Glee Cast (1) | AC/DC (1)",2,2,2,2019,2020,2,different_authors
+horchat hai caliptus,Horchat Hai Caliptus,Ishtar (2),2,2,2,2009,2014,1,same_author
 hound dog,Hound Dog,Dany Brillant (1) | Tonya Graves (1),2,2,2,2022,2025,2,different_authors
 house always wins,The House Always Wins,Christophe Beck (2),2,2,2,2017,2021,1,same_author
 humanity,Humanity,Scorpions (2),2,2,2,2017,2021,1,same_author
+i am the best,I Am the Best,2NE1 (2),2,2,2,2016,2017,1,same_author
 i got you,I Got You (I Feel Good),Jessie J (1) | James Brown (1),2,2,2,2023,2024,2,different_authors
 i will never forget you,I Will Never Forget You,Alexey Rybnikov (1) | Dmitriy Malikov (1),2,2,2,2013,2020,2,different_authors
 il mondo,Il Mondo,Il Volo (1) | Jacopo Rossetto (1),2,2,2,2022,2023,2,different_authors
@@ -353,7 +383,6 @@ immortelle,Immortelle,Lara Fabian (2),2,2,2,2012,2019,1,same_author
 introduction and rondo capriccioso for violin orchestra in a minor op 28,"Introduction and Rondo Capriccioso, for violin & orchestra in A minor, Op. 28",Camille Saint-Saëns (2),2,2,2,2002,2003,1,same_author
 io ci saro,Io ci sarò,Andrea Bocelli and Lang Lang (1) | Andrea Bocelli & Lang Lang (1),2,2,2,2013,2025,2,same_author
 irna,Irna,Alegría (1) | Cirque du Soleil (1),2,2,2,2023,2026,2,different_authors
-is it right,Is It Right,Elaiza (2),2,2,2,2015,2017,1,same_author
 jailhouse rock,Jailhouse Rock,Dany Brillant (1) | Elvis Presley (1),2,2,2,2022,2023,2,different_authors
 jazz machine,Jazz Machine,Black Machine (2),2,2,2,2012,2016,1,same_author
 je n attendais que vous,Je n'attendais que vous,Garou (2),2,2,2,2018,2023,1,same_author
@@ -362,11 +391,14 @@ la canzone dei vecchi amanti,La canzone dei vecchi amanti,Delia Buglisi (2),2,2,
 la foule,La foule,Édith Piaf (2),2,2,2,2013,2018,1,same_author
 la habanera,La Habanera,Yello (2),2,2,2,2007,2009,1,same_author
 la terre vue du ciel,La Terre Vue Du Ciel,Armand Amar (2),2,2,2,2019,2022,1,same_author
+la vie en rose,La Vie En Rose,Louis Armstrong (1),2,2,2,2011,2014,1,same_author
 laissez moi me griser,Laissez Moi Me Griser,Maurice El Mediouni (1) | Maurice El Medioni (1),2,2,2,2004,2005,2,same_author
 land of 1000 dances,Land of 1000 Dances,Wilson Pickett (1) | Siggi Schwars & The Legends (1),2,2,2,2022,2025,2,different_authors
 let s get loud,Let's Get Loud,"Jennifer Lopez (1) | Camila Cabello, Nicholas Galitzine, Idina Menzel, Cinderella Cast (1)",2,2,2,2013,2023,2,different_authors
+limelight,Limelight (Main Theme),André Rieu (1) | André Rieu ft The Johann Strauss Orchestra (1),2,2,2,2012,2013,2,same_author
 lolai,Lolaï,Ishtar Alabina (1) | Alabina (1),2,2,2,2019,2026,2,same_author
 love runs out,Love Runs Out,OneRepublic (2),2,2,2,2016,2022,1,same_author
+lust of power,Lust of Power,Gabriel Saban (2),2,2,2,2024,2024,1,same_author
 madame papillon,Madame Papillon,René Aubry (2),2,2,2,2016,2020,1,same_author
 madcap masquerade,Madcap Masquerade,Caleb Swift & Hypersonic Music (1) | Caleb Swift and Hypersonic Music (1),2,2,2,2023,2026,2,same_author
 malaguena salerosa,Malagueña Salerosa ( Remix ),Chingón (1),2,2,2,2004,2019,1,same_author
@@ -388,7 +420,6 @@ nazende sevgilim,Nazende sevgilim,Bilen Yildirir (2),2,2,2,2012,2014,1,same_auth
 nelle tue mani,Nelle tue mani,Andrea Bocelli (2),2,2,2,2025,2025,1,same_author
 nemesis,Nemesis,Benjamin Clementine (2),2,2,2,2022,2022,1,same_author
 new swan queen night of terror perfection,"A New Swan Queen, Night Of Terror, Perfection",Clint Mansell (1),2,2,2,2014,2016,1,same_author
-new world concerto,New World Concerto,"MAKSIM, Royal Philharmonic Orchestra & Julian Kershaw (1) | Maksim & Royal Philharmonic Orchestra (1)",2,2,2,2018,2023,2,same_author
 night borders,Night Borders,Jerry Goldsmith (2),2,2,2,2000,2006,1,same_author
 no hay problema,No Hay Problema,Pink Martini (2),2,2,2,2011,2020,1,same_author
 oblivion,Oblivion,Astor Piazzolla (2),2,2,2,2010,2015,1,same_author
@@ -405,31 +436,37 @@ pistolero,Pistolero,Juno Reactor (1) | Dave Grusin (1),2,2,2,2003,2012,2,differe
 poeta en el viento,Poeta en el Víento,Vicente Amigo (2),2,2,2,2020,2021,1,same_author
 pogonya,Pogonya,Yan Frenkel (1),2,2,2,2008,2021,1,same_author
 primavera portena,Primavera Portena (Spring in Buenos Aires),Astor Piazzolla (2),2,2,2,2012,2019,1,same_author
+prodigy,Prodigy,"Carlos Rafael Rivera, Carl Doy, Kōtarō Nakagawa (1) | Nathan Lanier (1)",2,2,2,2023,2026,2,different_authors
 pulling a thread,Pulling a Thread,The Chamber Orchestra of London and Andrew Skeet (1) | Audiomachine and The Chamber Orchestra of London and Andrew Skeet (1),2,2,2,2018,2022,2,same_author
 pump it,Pump It,Black Eyed Peas (2),2,2,2,2022,2022,1,same_author
 puss suite,The Puss Suite,Henry Jackman (2),2,2,2,2012,2018,1,same_author
 quien como tu,Quien Como Tu,"JJ Vianello (1) | JJ Vianello, Tito Nieves, Enzo Diaz (1)",2,2,2,2012,2014,2,same_author
 ramkoph s dance,Ramkoph's Dance,Roman Surzha (2),2,2,2,2015,2024,1,same_author
 ready or not,Ready or Not,"Mischa ""Book"" Chillak feat. Esthero (1) | Mischa Book Chillak and Esthero (1)",2,2,2,2024,2024,2,same_author
+remains of the day,Remains Of The Day,Danny Elfman (2),2,2,2,2017,2017,1,same_author
 rhapsody in blue,Rhapsody In Blue,George Gershwin (2),2,2,2,1993,2015,1,same_author
 romance,Romance,Dmitri Shostakovich (1) | Georgy Sviridov (1),2,2,2,2012,2017,2,different_authors
 rondo,Rondo,René Dupéré & Benoît Jutras (1) | Alfred Schnittke (1),2,2,2,2001,2008,2,different_authors
 run boy run,Run Boy Run,Woodkid (2),2,2,2,2019,2019,1,same_author
 runnin,Runnin' (Lose It All),"Naughty Boy, Beyonce, Arrow Benjamin (1) | Ludwig Görannson feat A$AP Rocky & Jacob Banks (1)",2,2,2,2021,2022,2,different_authors
 sabre dance,Sabre Dance,Aram Khachaturian (1) | Leonard Slatkin & National Philharmonic Orchestra (1),2,2,2,2014,2024,2,different_authors
+sail,Sail,AWOLNATION (2),2,2,2,2014,2024,1,same_author
 samba do mundo,Samba Do Mundo,Gregor Salto Feat. Saxsymbol & Todorov (1) | Alcione (1),2,2,2,2019,2025,2,different_authors
 samba vocalizado,Samba Vocalizado,Luciano Perrone (2),2,2,2,2013,2022,1,same_author
 santa maria,Santa María (Del Buen Aires),Gotan Project (1) | Gotan project (1),2,2,2,2006,2011,2,same_author
-second waltz,The Second Waltz,Dmitri Shostakovich (1) | André Rieu (1),2,2,2,2016,2018,2,different_authors
 seisouso,Seisouso,Benoit Jutras (1) | Benoît Jutras (1),2,2,2,1998,2001,2,same_author
 si te vas,Si te vas (flamenco),,2,2,2,1999,1999,0,no_credit
+single ladies,Single Ladies (Put a Ring on It),Beyoncé (2),2,2,2,2015,2016,1,same_author
 smells like teen spirit,Smells Like Teen Spirit,"Tommee Profitt, Fleurie (1) | Nirvana (1)",2,2,2,2025,2026,2,different_authors
+snakefood,Snakefood,Safri duo (1) | Safri Duo (1),2,2,2,2008,2017,2,same_author
 sos d un terrien en detresse,SOS d'un terrien en détresse,Dimash Qudaibergen (2),2,2,2,2024,2026,1,same_author
 stalker s tango,Stalker's Tango,Autoheart (2),2,2,2,2022,2024,1,same_author
 starvation,Starvation,Thomas Bergersen (2),2,2,2,2021,2023,1,same_author
 summer,Summer,David Garrett (2),2,2,2,2011,2016,1,same_author
 sur,Sur,Dorantes (2),2,2,2,2006,2006,1,same_author
 survivor,Survivor,2WEI (1) | 2WEI from Tomb Raider (1),2,2,2,2019,2023,2,same_author
+sway,Sway,Rosemary Clooney (1) | Chico & the Gypsies (1),2,2,2,2016,2022,2,different_authors
+syrtaki,Syrtaki,D. Moutsis (2),2,2,2,2004,2019,1,same_author
 take you down,Take You Down,Daniel Pemberton (2),2,2,2,2016,2019,1,same_author
 theme from love story,Theme From Love Story,101 Strings Orchestra (1) | Francis Lai (1),2,2,2,2015,2021,2,different_authors
 tico tico,Tico Tico,Dalida (1) | K.T. Sullivan (1),2,2,2,2019,2025,2,different_authors
@@ -437,9 +474,11 @@ total eclipse of the heart,Total Eclipse of the Heart,Bonnie Tyler (1) | Westlif
 trashin the camp,Trashin' the Camp,Phil Collins (2),2,2,2,2007,2008,1,same_author
 tudo bom,Tudo bom,"Static & Ben El (1) | Static, Ben El (1)",2,2,2,2025,2025,2,same_author
 turandot,Turandot,Giacomo Puccini (1),2,2,2,2007,2013,1,same_author
+una mattina,Una Mattina,Ludovico Einaudi (2),2,2,2,2021,2023,1,same_author
 una patada en los huevos,Una Patada En Los Huevos,Alberto Iglesias (2),2,2,2,2012,2012,1,same_author
 unending story,An Unending Story,Jerry Goldsmith (3),2,2,3,1997,2013,1,same_author
 uptown funk,Uptown Funk,"Mark Ronson, Bruno Mars (1) | Mark Ronson ft. Bruno Mars (1)",2,2,2,2018,2023,2,same_author
+vampire,vampire,Olivia Rodrigo (2),2,2,2,2025,2025,1,same_author
 van den budenmayer funeral music,Van Den Budenmayer - Funeral Music (Full Orchestra),Zbigniew Preisner (2),2,2,2,2001,2001,1,same_author
 vanity,Vanity,Brand X Music (2),2,2,2,2022,2026,1,same_author
 vivo tango,Vivo Tango,Maxime Rodriguez (2),2,2,2,2025,2026,1,same_author
@@ -449,11 +488,14 @@ we are justice,We Are Justice,Gabriel Saban (2),2,2,2,2023,2024,1,same_author
 weather storm,Weather Storm,Craig Armstrong (2),2,2,2,2014,2024,1,same_author
 why don t you do right,Why Don't You Do Right,Beth Hart & Joe Bonamassa (1) | Amy Irving (1),2,2,2,2015,2025,2,different_authors
 wolf pack,Wolf Pack,Bachar Mar-Khalifé (2),2,2,2,2019,2022,1,same_author
+yesterday,Yesterday,the Beatles (1) | Ofra Harnoy (1),2,2,2,2009,2011,2,different_authors
 you don t give up on love,You Don't Give Up On Love,"Mark Minkov, Alla Pugacheva (1) | Mark Minkov (1)",2,2,2,2014,2018,2,same_author
 you re x men end titles,You're X-Men/End Titles,John Ottman (2),2,2,2,2017,2021,1,same_author
 you should see me in a crown,you should see me in a crown,Billie Eilish (2),2,2,2,2021,2021,1,same_author
 zitti e buoni,Zitti e buoni,Måneskin (2),2,2,2,2022,2024,1,same_author
 були на селі,Були на селі,Vopli Vidopliassova (2),2,2,2,2019,2021,1,same_author
+очи черные,Очи чёрные,Radmila Karaklajić (1) | EgorGayduk (1),2,2,2,2019,2026,2,different_authors
+снег,Снег,Elena Vaenga (1) | Елена Ваенга (1),2,2,2,2023,2024,2,different_authors
 rachuli mokle kaba,"Rachuli, Mokle Kaba",Jgufi Bani (5),1,5,5,2013,2021,1,same_author
 batwannis beek,Batwannis Beek,REM Project (3) | REG Project (1),1,4,4,2003,2006,2,same_author
 garganta con arena,Garganta con arena,Cacho Castaña (4),1,4,4,2022,2025,1,same_author
@@ -479,8 +521,10 @@ carmen habanera,Carmen: Habanera,Georges Bizet (2) | Vienna Symphony Orchestra (
 carnaval de paris,Carnaval de Paris,Dario G (3),1,3,3,2009,2011,1,same_author
 cello song,The Cello Song,The Piano Guys (3),1,3,3,2016,2018,1,same_author
 cloak and dagger fate of the clockmaker,Cloak and Dagger & Fate of the Clockmaker,Eternal Eclipse (3),1,3,3,2022,2024,1,same_author
+clouds the mind on the wind,"Clouds, The Mind on the (Re)wind",Ezio Bosso (3),1,3,3,2023,2025,1,same_author
 czardas,Czardas (remix),Vittorio Monti (3),1,3,3,2003,2005,1,same_author
 despair,Despair,Hans Zimmer and PP Music (3),1,3,3,2020,2022,1,same_author
+donauwalzer,Donauwalzer,Johann Strauss (3),1,3,3,2009,2011,1,same_author
 fandango for elise,Fandango for Elise,Gustavo Montesano and the Royal Philharmonic Orchestra (3),1,3,3,2010,2012,1,same_author
 fast and the furious tokyo drift,The Fast And The Furious: Tokyo Drift,Brian Tyler (3),1,3,3,2010,2012,1,same_author
 finale andante allegro agitatoo,Finale – Andante – Allegro Agitatoo -,,1,3,3,2002,2004,0,no_credit
@@ -490,6 +534,7 @@ girl from ipanema,The Girl from Ipanema,Elise Trouw (3),1,3,3,2023,2025,1,same_a
 happiness does not wait,Happiness Does Not Wait,Ólafur Arnalds (3),1,3,3,2019,2021,1,same_author
 houdini,Houdini,Yello (3),1,3,3,2022,2024,1,same_author
 i was born in mexico,I was born in Mexico,Michael Kamen (3),1,3,3,1996,1998,1,same_author
+jungle,Jungle,Last Voices (3),1,3,3,2023,2025,1,same_author
 jungle bill,Jungle Bill,Yello (3),1,3,3,2022,2024,1,same_author
 kalashnikov,Kalashnikov,Goran Bregović (3),1,3,3,1997,1999,1,same_author
 kalki,Kalki,E.S.Pothumus (3),1,3,3,2010,2012,1,same_author
@@ -499,6 +544,7 @@ l amore si muove,L'amore si Muove,Il Volo (3),1,3,3,2019,2021,1,same_author
 la copa de la vida,La Copa de la Vida,Ricky Martin (3),1,3,3,2024,2026,1,same_author
 le temps qui reste,Le temps qui reste,Serge Reggiani (3),1,3,3,2022,2024,1,same_author
 man with the harmonica,Man with the Harmonica,Ennio Morricone (3),1,3,3,1991,1993,1,same_author
+mana part 2,Mana Part 2,Last Voices (3),1,3,3,2023,2025,1,same_author
 mi nina baila music,Mi Niña Baila (Fandangos de Huelva) music,Jean-Baptiste Marino (3),1,3,3,2011,2013,1,same_author
 mother tongue,Mother Tongue,Dead Can Dance (3),1,3,3,2004,2006,1,same_author
 muchachos,Muchachos,La Mosca Tse Tse (3),1,3,3,2009,2011,1,same_author
@@ -511,18 +557,21 @@ once upon a december,Once Upon a December,Liz Callaway (3),1,3,3,2019,2021,1,sam
 ooh aah just a little bit,Ooh Aah... Just A Little Bit,Gina G (3),1,3,3,2019,2021,1,same_author
 prelude to an end,Prelude to an end,Mystery of Bulgarian Voices (3),1,3,3,2019,2021,1,same_author
 que viyera,Qué Viyéra,Cirque du Soleil (3),1,3,3,2014,2016,1,same_author
+quest for souls,Quest For Souls,David Marsden (3),1,3,3,2023,2025,1,same_author
 quiero verte mal,Quiero Verte Mal,La Mosca Tse Tse (3),1,3,3,2009,2011,1,same_author
 se equivoco la paloma,Se equivocó la paloma,Carlos Guastavino (3),1,3,3,1999,2001,1,same_author
 send in the clowns,Send in the Clowns,Barbra Streisand (3),1,3,3,2015,2018,1,same_author
 shallow grave,Shallow Grave,Steve Mason Experience (3),1,3,3,2016,2018,1,same_author
 song for sara,Song for Sara,Greg Baker (3),1,3,3,2015,2017,1,same_author
 thriller,Thriller,Michael Jackson (3),1,3,3,2024,2026,1,same_author
+tree of life,Tree of Life,Clint Mansell (3),1,3,3,2009,2011,1,same_author
 voodoo people,Voodoo People,The Prodigy (3),1,3,3,2016,2018,1,same_author
 voulez vous,Voulez-Vous,the cast of Mamma Mia! the Movie (3),1,3,3,2024,2026,1,same_author
 xeiropedes,Xeiropedes,Giorgos Alkaios (3),1,3,3,2002,2004,1,same_author
 yo soy maria,Yo Soy Maria,Milva and Astor Piazzolla (3),1,3,3,2019,2021,1,same_author
 四季歌,四季歌,Beijing Livetion Orchestra (3),1,3,3,2020,2022,1,same_author
 19 no 03 veris leta facies,19 No. 03 Veris Leta Facies (Soprano 2),Transform Studios (2),1,2,2,2015,2016,1,same_author
+19 palqu,19 Palqu (Remix),Backside Artists & Antoine Montana (2),1,2,2,2011,2012,1,same_author
 24000 baci,24000 baci,Hans Zimmer (2),1,2,2,2011,2012,1,same_author
 3 to tango,3 to Tango,Pitbull (2),1,2,2,2020,2021,1,same_author
 4 minutes,4 Minutes (Scissors Remix),Madonna ft. Justin Timberlake and Timbaland (1) | Madonna feat. Justin Timberlake (1),1,2,2,2024,2025,2,same_author
@@ -540,6 +589,7 @@ all about that bass,All About That Bass,Postmodern Jukebox (2),1,2,2,2020,2021,1
 all that jazz,All that Jazz,Catherine Zeta-Jones & Renee Zellweger (2),1,2,2,2019,2020,1,same_author
 allegro non molto,Allegro Non Molto,The Classical Royal Orchestra (2),1,2,2,2025,2026,1,same_author
 alma de guitarra,Alma de Guitarra,Banderas (2),1,2,2,2021,2022,1,same_author
+almoraima,Almoraima,Paco de Lucía (1) | Paco de Lucia (1),1,2,2,2011,2012,2,same_author
 anastasia,Anastasia,Sergey Lazarev (2),1,2,2,2020,2021,1,same_author
 anathema,Anathema,Balkan Horses Band (2),1,2,2,2009,2010,1,same_author
 ange et demon,Ange et démon,Maxime Rodriguez (2),1,2,2,2007,2008,1,same_author
@@ -552,19 +602,23 @@ arabian nights,Arabian Nights,"Grace Park, feat. Waltz (2)",1,2,2,2023,2024,1,sa
 army arrives from evolution,The Army Arrives from Evolution,John Powell (2),1,2,2,2002,2003,1,same_author
 aspan,Aspan,"Paco de Lucía, Al Di Meola & John McLaughlin (2)",1,2,2,1989,1990,1,same_author
 assault soundtrack from the athena,Assault soundtrack from The Athena,Gener8ion (2),1,2,2,2023,2024,1,same_author
+attack at tajikistan,Attack At Tajikistan,BT (2),1,2,2,2009,2010,1,same_author
 babylon,Babylon,Lady Gaga (2),1,2,2,2024,2025,1,same_author
 backstage romance,Backstage Romance,Ricky Rojas & Robyn Hurder & Original Broadway Cast of Moulin Rouge! The Musical (2),1,2,2,2023,2024,1,same_author
 batshit ilkay sencan,Batshit - Ilkay Sencan Remix,Sofi Tukker (2),1,2,2,2024,2025,1,same_author
 be my lover,Be My Lover,La Bouche (2),1,2,2,2022,2023,1,same_author
 beautiful lie,Beautiful Lie,,1,2,2,2023,2024,0,no_credit
+beauty song,Beauty Song,Shigeru Umebayashi & Bi Xiaodi (2),1,2,2,2024,2025,1,same_author
 because you loved me,Because You Loved Me,Céline Dion (2),1,2,2,2013,2014,1,same_author
 beethoven s 5 secrets,Beethoven's 5 Secrets,The Piano Guys (2),1,2,2,2023,2024,1,same_author
 beethoven scherzo,Beethoven Scherzo,David Garrett (2),1,2,2,2014,2015,1,same_author
 belle,Belle,"Garou, Daniel Lavoie & Patrick Fiori (2)",1,2,2,2022,2023,1,same_author
+best friend,Best Friend,Sofi Tukker (2),1,2,2,2025,2026,1,same_author
 betray the queen,Betray The Queen,Brand X Music (2),1,2,2,2024,2025,1,same_author
 between heaven and earth,Between Heaven and Earth,Camerata (2),1,2,2,2020,2021,1,same_author
 bhootni ke,Bhootni Ke,Daler Mehndi (2),1,2,2,2009,2010,1,same_author
 big band feat nicolle rochette charlie magoo,Big Band (Electro Swing English Radio Edit) (feat. Nicolle Rochette & Charlie Magoo,Bart&Baker (2),1,2,2,2018,2019,1,same_author
+big hunk o love,A Big Hunk o' Love,"Elvis Presley, The Royal Philharmonic Orchestra (2)",1,2,2,2023,2024,1,same_author
 birimbau,Birimbau,Rene Dupere (2),1,2,2,1997,1998,1,same_author
 black heart,Black Heart,Jake Warren & Dana Kelson (2),1,2,2,2025,2026,1,same_author
 black or white,Black Or White,Michael Jackson (2),1,2,2,2013,2014,1,same_author
@@ -578,6 +632,7 @@ brave heart,Brave Heart,Jean-Philippe Rio-Py (2),1,2,2,2016,2017,1,same_author
 brindisi music,Brindisi music,André Rieu (2),1,2,2,2013,2014,1,same_author
 bruant,Bruant,Grand Orchestre du Moulin Rouge (2),1,2,2,2013,2014,1,same_author
 buckbeak s flight,Buckbeak's Flight,John Williams (2),1,2,2,2020,2021,1,same_author
+bumblebee boogie,Bumblebee Boogie,Robert Wells (2),1,2,2,2023,2024,1,same_author
 burned letter,Burned Letter,James Newton (2),1,2,2,2015,2016,1,same_author
 cad 15297,The Cad-15297,Unchained (2),1,2,2,2025,2026,1,same_author
 cafe europa,Cafe Europa (Live),Deep Forest (2),1,2,2,2024,2025,1,same_author
@@ -601,7 +656,9 @@ chopin fantasie,Chopin: Fantasie,Robert Wells (2),1,2,2,2021,2023,1,same_author
 chopper chase face off,Chopper Chase & Face Off,John Powell (2),1,2,2,2018,2019,1,same_author
 come gentle night,"Come, Gentle Night",Abel Korzeniowski (2),1,2,2,2020,2021,1,same_author
 come get it,Come & Get it,Klayton (2),1,2,2,2026,2026,1,same_author
+come live your life with me,Come Live Your Life With Me (Album Version),Peter Cincotti (2),1,2,2,2025,2026,1,same_author
 coming home,Coming Home,HAVASI (1) | Havasi Balazs (1),1,2,2,2018,2019,2,same_author
+comptine d un autre ete l apres midi,"Comptine d'Un Autre Été, l'après-midi",Yann Tiersen (2),1,2,2,2009,2010,1,same_author
 conte d amour,Conte d'Amour (Mouvements du désir),Zbigniew Preisner (2),1,2,2,2005,2006,1,same_author
 corps,Corps,Yseult (2),1,2,2,2022,2023,1,same_author
 crane white lightning,Crane/White Lightning,"Quincy Jones, Charles Bernstein & RZA, Santa Esmeralda (2)",1,2,2,2020,2021,1,same_author
@@ -635,6 +692,7 @@ earthquake,Earthquake,Andries de Haan (2),1,2,2,2025,2026,1,same_author
 earthsong,Earthsong,Karunesh (2),1,2,2,2006,2006,1,same_author
 echa pa delante,Echa Pa' Delante,Thalía (2),1,2,2,2017,2018,1,same_author
 el cosechero,El Cosechero,Ginevra Di Marco (2),1,2,2,2023,2024,1,same_author
+el mar y tu,El Mar Y Tu,"Andrea Bocelli, Dulce Pontes (2)",1,2,2,2022,2023,1,same_author
 embrace,Embrace,Nicholas Gunn (2),1,2,2,2009,2010,1,same_author
 en ville,En Ville,René Dupéré & Benoît Jutras (2),1,2,2,2001,2002,1,same_author
 encanto rojo,Encanto Rojo,Fabio Hager Sexteto (2),1,2,2,2020,2021,1,same_author
@@ -643,11 +701,11 @@ end,The End (slowed down + reverbed),JPOLND (2),1,2,2,2023,2024,1,same_author
 endangered species,Endangered Species,Dianne Reeves (2),1,2,2,2022,2023,1,same_author
 enter sandman,Enter Sandman,New Orleans Band (2),1,2,2,2020,2021,1,same_author
 eternal triangle,The Eternal Triangle,Mychael Danna (2),1,2,2,1999,2000,1,same_author
+etre un homme comme vous,Etre Un Homme Comme Vous,Ben l'Oncle Soul (2),1,2,2,2022,2023,1,same_author
 etude in d sharp minor op 8 no 12,"Etude in D-sharp minor, Op. 8, No. 12",Maksim Mrvica (2),1,2,2,2011,2012,1,same_author
 european taxim,European Taxim,Marios Strofalis (2),1,2,2,2015,2016,1,same_author
-everybody wants to rule the world,Everybody Wants to Rule the World,Lorde (2),1,2,2,2023,2024,1,same_author
 execution,The Execution,Mychael Danna (2),1,2,2,1999,2000,1,same_author
-experience,Experience,Ludovico Einaudi (2),1,2,2,2013,2014,1,same_author
+exercise in free love,Exercise in Free Love (New Orchestrated Version),Freddie Mercury & Montserrat Caballe (2),1,2,2,2022,2023,1,same_author
 explosive,Explosive,Bond (2),1,2,2,2005,2006,1,same_author
 fall in line,Fall in Line,"Christina Aguilera, Demi Lovato (2)",1,2,2,2019,2020,1,same_author
 fallin,Fallin',Nicola Cavallaro (2),1,2,2,2020,2021,1,same_author
@@ -657,6 +715,7 @@ feeling begins,The Feeling Begins,Peter Gabriel (2),1,2,2,1999,2000,1,same_autho
 final frontier,Final Frontier,Thomas Bergersen (2),1,2,2,2015,2016,1,same_author
 fireball,Fireball,Pitbull feat John Ryan (2),1,2,2,2022,2023,1,same_author
 flamenco guitar improvisation,Flamenco guitar improvisation,,1,2,2,1987,1988,0,no_credit
+flight to tajikistan,Flight To Tajikistan,BT (2),1,2,2,2009,2010,1,same_author
 fogo,FOGO,Garmiani feat. Julimar Santos (2),1,2,2,2020,2021,1,same_author
 for the departed,For the Departed,Shayfer James (2),1,2,2,2025,2026,1,same_author
 forsaken,Forsaken,Peter Crowley (2),1,2,2,2022,2023,1,same_author
@@ -671,6 +730,7 @@ gia,Gia (Despina Vandi cover),Said Mrad (2),1,2,2,2004,2005,1,same_author
 gimme gimme gimme,Gimme Gimme Gimme,Royal Philharmonic Orchestra (2),1,2,2,2015,2016,1,same_author
 gladiator soundtrack barbarian horde,"Gladiator soundtrack – ""Barbarian Horde",,1,2,2,2007,2008,0,no_credit
 glass onion string quartet in b minor,Glass Onion String Quartet in B♭ Minor,Nathan Johnson (2),1,2,2,2024,2025,1,same_author
+godfather,The Godfather,Edvin Marton (2),1,2,2,2009,2010,1,same_author
 gods awaken,Gods Awaken,Filip Lackovic (2),1,2,2,2024,2025,1,same_author
 gold dust bacchanalia,Gold Dust Bacchanalia,Mychael Danna (2),1,2,2,1999,2000,1,same_author
 goliath,Goliath,Woodkid (2),1,2,2,2025,2026,1,same_author
@@ -682,7 +742,6 @@ great spirit,Great Spirit (feat. Hilight Tribe),Armin van Buuren and Vini Vici (
 guerila lamentos,Guerila Lamentos,Diablo Swing Orchestra (2),1,2,2,2014,2015,1,same_author
 gypsy potion,Gypsy Potion,Guido Luciani (2),1,2,2,2001,2003,1,same_author
 habanera music,Habanera music,Wolf Hoffman (2),1,2,2,2013,2014,1,same_author
-halo theme song,Halo Theme Song,"William Joseph, Lindsey Stirling (2)",1,2,2,2019,2020,1,same_author
 hanuman,Hanuman,Rodrigo y Gabriela (2),1,2,2,2011,2012,1,same_author
 hardest button to button,The Hardest Button to Button,The White Stripes (2),1,2,2,2020,2021,1,same_author
 hartaetoi,Hartaetoi,Thanasis Polykandriotis (2),1,2,2,2023,2024,1,same_author
@@ -697,7 +756,6 @@ hip hip chin chin,Hip Hip Chin Chin,Club Des Belugas (2),1,2,2,2022,2023,1,same_
 histoire du tango nightclub 1960,Histoire du tango: Nightclub 1960,Agustín Hadelich y Pablo Sainz Villegas (2),1,2,2,2023,2024,1,same_author
 hit by a brick,Hit By a Brick,The Atomic Fireballs (2),1,2,2,2014,2015,1,same_author
 honor by duel,Honor By Duel,Brand X Music (2),1,2,2,2025,2026,1,same_author
-hood jump,Hood Jump,John Powell (2),1,2,2,2022,2023,1,same_author
 horse races,Horse Races (2023),UUTAi (2),1,2,2,2024,2025,1,same_author
 hovercraft chase,Hovercraft Chase,David Arnold (2),1,2,2,2003,2004,1,same_author
 hunger,Hunger,Hans Zimmer (2),1,2,2,2015,2016,1,same_author
@@ -710,8 +768,8 @@ i will follow him,I Will Follow Him,God's Angels (2),1,2,2,2022,2023,1,same_auth
 if i can dream,If I Can Dream,Elvis Presley (2),1,2,2,2025,2026,1,same_author
 il sultano di babilonia e la prostituta,Il Sultano di Babilonia e la prostituta,Angelo Branduardi (2),1,2,2,2011,2012,1,same_author
 illumination,Illumination,Jennifer Thomas (2),1,2,2,2023,2024,1,same_author
+ilusion,Ilusión,Manolo Carrasco (2),1,2,2,2025,2026,1,same_author
 image without reflection,Image Without Reflection,The Funk on Me (2),1,2,2,2017,2018,1,same_author
-imagine,Imagine,Artem Uzanov (2),1,2,2,2020,2021,1,same_author
 impromptu,Impromptu,Giovanni (2),1,2,2,2009,2010,1,same_author
 in the army now,In The Army Now,Captain Jack (2),1,2,2,2018,2019,1,same_author
 in the closet,In the Closet,Michael Jackson (2),1,2,2,2024,2025,1,same_author
@@ -725,6 +783,7 @@ jackseye s tale escape from east berlin take you down,"Jackseye's Tale, Escape f
 james bond theme,James Bond Theme (Oscar Salguero Mix Edit),Le Chiffre (2),1,2,2,2018,2019,1,same_author
 je t aime,Je t'aime,Lara Fabian (2),1,2,2,2014,2015,1,same_author
 john drops in,John Drops In,John Powell (2),1,2,2,2021,2022,1,same_author
+joke tango,Joke Tango,Stanislav Zeltser (2),1,2,2,2011,2012,1,same_author
 junkie xl,Junkie XL,"Hans Zimmer, Junkle XL (2)",1,2,2,2023,2024,1,same_author
 kakamora,Kakamora,Mark Mancina (2),1,2,2,2020,2021,1,same_author
 kapris 24,Kapris 24,Bilen Yildirir (2),1,2,2,2014,2015,1,same_author
@@ -732,12 +791,14 @@ ki te mu,Ki Te Mu,Faraualla (2),1,2,2,2023,2024,1,same_author
 kinckoff,Kinckoff,Josh Leake (2),1,2,2,2025,2026,1,same_author
 kung fu performance yin yang,"Kung Fu Performance ""Yin Yang",ESAEM (2),1,2,2,2025,2026,1,same_author
 l assasymphonie from mozart l opera rock,"L'assasymphonie from Mozart, l'Opéra Rock",Florent Mothe (2),1,2,2,2020,2021,1,same_author
+l oiseau et l enfant,L'oiseau et l'enfant (Live),Kids United (2),1,2,2,2023,2024,1,same_author
 la bamba,La Bamba (song),Ritchie Valens (2),1,2,2,2023,2024,1,same_author
 la boda de luis alfonso,La boda de Luis Alfonso,,1,2,2,2022,2023,0,no_credit
 la cavalera from mission impossible ii,La Cavalera from Mission Impossible II,Hans Zimmer and Elliot Goldenthal (2),1,2,2,2003,2004,1,same_author
 la danse nouvelle jeanne avril,La Danse Nouvelle/Jeanne Avril,Grand Orchestre du Moulin Rouge (2),1,2,2,2013,2014,1,same_author
 la donna cannone,La donna cannone,Francesco De Gregori (2),1,2,2,2022,2023,1,same_author
 la flamenca,La Flamenca,Canteca De Macao (2),1,2,2,2009,2010,1,same_author
+la malaguena,La Malagueña,Gaby Moreno (2),1,2,2,2022,2023,1,same_author
 la saeta,La Saeta,India Martínez (2),1,2,2,2022,2023,1,same_author
 la tieta,La tieta,Joan Manuel Serrat (2),1,2,2,2001,2002,1,same_author
 la ultima curda,La Última Curda,Yasmin Levy (2),1,2,2,2025,2026,1,same_author
@@ -789,10 +850,10 @@ mummy,The Mummy (Soundtrack),Jerry Goldsmith (2),1,2,2,2011,2012,1,same_author
 music from avrora,music from Avrora,Valeri Tishler (2),1,2,2,2007,2008,1,same_author
 music from les parapluies de cherbourg ost,music from Les parapluies de Cherbourg OST,Michel Legrand (2),1,2,2,2011,2012,1,same_author
 nature boy,Nature Boy,Nat King Cole (2),1,2,2,1997,1998,1,same_author
+new day will rise,New Day Will Rise,Yuval Raphael (2),1,2,2,2025,2026,1,same_author
 new dorp new york,NEW DORP. NEW YORK,SBTRKT feat. Ezra Koenig (2),1,2,2,2017,2018,1,same_author
 new orleans tango,The New Orleans Tango (2024),Tony DeSare (2),1,2,2,2025,2026,1,same_author
 night king,The Night King,Ramin Djawadi (2),1,2,2,2020,2021,1,same_author
-night on disco mountain,Night On Disco Mountain,David Shire (2),1,2,2,2018,2019,1,same_author
 nimbooda,Nimbooda,Ismail Darbar (2),1,2,2,2009,2010,1,same_author
 noche en el sur,Noche en el sur,José Luis Encinas (2),1,2,2,1999,2000,1,same_author
 nostalgias,Nostalgias,Juan Carlos Cobián (2),1,2,2,1998,1999,1,same_author
@@ -800,9 +861,7 @@ nur kein genieren from elisabeth,Nur kein genieren from Elisabeth,,1,2,2,1995,19
 obijmy,Obijmy,Okean Elzy (2),1,2,2,2022,2023,1,same_author
 oeroun baljaguk,Oeroun Baljaguk (Main Title),Ryo Yoshimata (2),1,2,2,2020,2021,1,same_author
 on then and now,On Then And Now,Woodkid (2),1,2,2,2023,2024,1,same_author
-one man s dream,One Man's Dream,Yanni (2),1,2,2,1997,1998,1,same_author
 one moment in time,One Moment in Time,Whitney Houston (2),1,2,2,2020,2021,1,same_author
-oogie boogie s song,Oogie Boogie's Song,Danny Elfman (2),1,2,2,2020,2021,1,same_author
 orchis i introduction new creation,Orchis: I.Introduction-New Creation,Sonya Belousova (2),1,2,2,2022,2023,1,same_author
 otchi tchornia russian traditional music,Otchi Tchornia (Dark Eyes) – Russian traditional music,,1,2,2,1997,1998,0,no_credit
 otto,Otto,Woodkid (2),1,2,2,2025,2026,1,same_author
@@ -836,6 +895,7 @@ poem without words 2 journey by night,Poem Without Words 2 - Journey By Night,An
 por ti,Por ti,Ruben Moran (2),1,2,2,2001,2002,1,same_author
 psycho girls and psycho boys,Psycho Girls and Psycho Boys,Solal (2),1,2,2,2018,2019,1,same_author
 punta del faro,Punta del Faro,Paco de Lucia (2),1,2,2,2015,2016,1,same_author
+queen of spades,The Queen of Spades,Pyotr Ilyich Tchaikovsky (2),1,2,2,2022,2023,1,same_author
 queens,Queens,Benoît Jutras (2),1,2,2,2003,2004,1,same_author
 quizas quizas quizas,"Quizás, Quizás, Quizás",Lucrecia (2),1,2,2,2023,2024,1,same_author
 rabbits in the pea patch,Rabbits in the Pea Patch,Maceo Parker (2),1,2,2,2008,2009,1,same_author
@@ -849,6 +909,7 @@ rajadao,Rajadão,Pabllo Vittar (2),1,2,2,2022,2023,1,same_author
 ratata,Ratata,Victoria (2),1,2,2,2025,2026,1,same_author
 red capes are coming,The Red Capes Are Coming (Lex Luthor Theme),,1,2,2,2023,2024,0,no_credit
 red detachment of women act iv,The Red Detachment of Women: Act IV,You-Sheng Lin (2),1,2,2,2013,2014,1,same_author
+red shirt,Red shirt,Harry Gregson-Williams from film Spy Game (2),1,2,2,2011,2012,1,same_author
 reel around the sun,Reel Around the Sun,Bill Whelan (2),1,2,2,2020,2021,1,same_author
 refazenda,Refazenda,Gilberto Gil (2),1,2,2,2025,2026,1,same_author
 represent cuba,Represent Cuba (Feat. Heather Hadley),Orishas (2),1,2,2,2018,2019,1,same_author
@@ -859,6 +920,7 @@ rio rita,Rio Rita,Dj Valer Orchestra (2),1,2,2,2014,2015,1,same_author
 rise of the warriors,Rise Of The Warriors,audiomachine (2),1,2,2,2013,2014,1,same_author
 rite of spring,The Rite of Spring,Igor Stravinsky (2),1,2,2,2010,2012,1,same_author
 rite of spring pt 1 the adoration of the earth,"The Rite of Spring, Pt.1 ""The Adoration of the Earth",Igor Stravinsky (2),1,2,2,2025,2026,1,same_author
+ritim solo 2,Ritim Solo 2,Fatma Donmez (2),1,2,2,2011,2012,1,same_author
 riverdance,Riverdance,Finale Riverdance International (2),1,2,2,2015,2016,1,same_author
 rouans,Rouans,Anatoly Vekshin (2),1,2,2,2001,2002,1,same_author
 rumba,Rumba,Anatoly Vekshin (2),1,2,2,2001,2002,1,same_author
@@ -869,22 +931,23 @@ samba saiao,Samba Saiao,Fiesta Brasil (2),1,2,2,2019,2020,1,same_author
 same old stories,Same Old Stories,Gothic Storm (2),1,2,2,2025,2026,1,same_author
 san sanana,San Sanana,"Anu Malik, Alka Yagnik, Hema Sardesai (2)",1,2,2,2025,2026,1,same_author
 satellite,Satellite,Lena (2),1,2,2,2015,2016,1,same_author
-scene,Scene,"Rodion Shchedrin, Georges Bizet (2)",1,2,2,1992,1993,1,same_author
 scheherazade young prince and princess,Scheherazade: Young Prince And Princess,Nikolai Rimsky-Korsakov (2),1,2,2,2015,2016,1,same_author
 scratch,Scratch,Power-Haus (2),1,2,2,2025,2026,1,same_author
 season of the witch,Season Of The Witch,Audiomachine feat Molly (2),1,2,2,2021,2022,1,same_author
 seasoned oak,Seasoned Oak,Daniel Pemberton (2),1,2,2,2022,2023,1,same_author
 secret love,Secret Love,Nicos (2),1,2,2,2003,2004,1,same_author
 seguidilla,Seguidilla,Georges Bizet (2),1,2,2,2020,2021,1,same_author
+seven devils,Seven Devils,Florence + the Machine (2),1,2,2,2023,2024,1,same_author
 sexyback,SexyBack,Justin Timberlake (2),1,2,2,2020,2021,1,same_author
 shaman s dance,Shaman's Dance,Rishi & Harshil (2),1,2,2,2019,2020,1,same_author
 shang chi main theme,Shang-Chi Main Theme,Samuel Kim (2),1,2,2,2022,2023,1,same_author
+shape of lies,The Shape of Lies,Eternal Eclipse (2),1,2,2,2024,2025,1,same_author
 shchedrin concerto for orchestra no 1 naughty limericks,Shchedrin Concerto for Orchestra No.1 Naughty Limericks,Russian National Orchestra (2),1,2,2,2022,2023,1,same_author
 she,She,Daniel Boaventura (2),1,2,2,2025,2026,1,same_author
 she wants me dead,She Wants Me Dead,CAZZETTE vs. AronChupa ft. The High Sound (2),1,2,2,2018,2019,1,same_author
 shear plum,Shear Plum,Lu Siqing (2),1,2,2,2013,2014,1,same_author
-show must go on,The Show Must Go On,Queen (2),1,2,2,2014,2015,1,same_author
 silence,The silence (original mix),Recovery Mafia (2),1,2,2,2018,2019,1,same_author
+simarik,Simarik,Tarkan (2),1,2,2,2019,2022,1,same_author
 sleep paralysis,Sleep Paralysis,Ros Stephen & Nick Tzios-怒 (1) | Ros Stephen & Nick Tzios (1),1,2,2,2025,2026,2,same_author
 solo ess3,Solo ESS3,Edith Salazar (2),1,2,2,2017,2018,1,same_author
 someone else,Someone else,"Allegro Feat. L.V., Fresh Game & Cokni O'Dire (2)",1,2,2,2015,2016,1,same_author
@@ -895,6 +958,7 @@ sos new york,SOS New York,Borislav Slavov (1) | Borislav Slavnov (1),1,2,2,2015,
 soundtrack esto es cine,"Soundtrack ""Esto es cine",Juan Antonio Simarro (2),1,2,2,2024,2025,1,same_author
 space jam,Space Jam,Quad City DJ's (2),1,2,2,2023,2024,1,same_author
 spain story,Spain story,Maria Selezneva (2),1,2,2,2015,2016,1,same_author
+spartacus act i,"Spartacus, Act I",Aram Khachaturian (2),1,2,2,2011,2012,1,same_author
 spartacus adagio of spartacus and phrygia,Spartacus: Adagio of Spartacus and Phrygia,Wiener Philharmoniker & Aram Khachaturian (2),1,2,2,2020,2021,1,same_author
 spectre,Spectre,Power-Haus (2),1,2,2,2025,2026,1,same_author
 stealing the map,Stealing the Map,James Horner (2),1,2,2,1999,2000,1,same_author
@@ -902,7 +966,6 @@ stomp and claps,Stomp and Claps,Action Alexi (2),1,2,2,2026,2026,1,same_author
 strauss jr die fledermaus overture,Strauss Jr.(J) : Die Fledermaus Overture,Stanley Black: Mantovani Orchestra (2),1,2,2,2011,2012,1,same_author
 street passions,Street Passions,Didulya (2),1,2,2,2013,2014,1,same_author
 suat a,Suat'a,Okay Temiz (2),1,2,2,2017,2019,1,same_author
-succession,Succession,Brand X Music (2),1,2,2,2024,2025,1,same_author
 suerte de la gonlondrina,Suerte de la gonlondrina (Bulerias),Gerardo Nuñez (2),1,2,2,2024,2025,1,same_author
 suite no 1 les toreadors,Suite No. 1: Les Toréadors,Georges Bizet (2),1,2,2,2022,2023,1,same_author
 summer night city,Summer Night City,Royal Philharmonic Orchestra (2),1,2,2,2015,2016,1,same_author
@@ -914,12 +977,14 @@ sus ojos se cerraron,Sus ojos se cerraron,Carlos Gardel (2),1,2,2,1999,2000,1,sa
 sviridov romance from musical illustration,Sviridov: Romance From Musical Illustration,Large Symphony Orchestra (2),1,2,2,2013,2015,1,same_author
 swing baby,Swing Baby,Park Jin-young (2),1,2,2,2013,2014,1,same_author
 swing break,Swing Break,The McMash Clan feat. Kate Mullins (2),1,2,2,2020,2021,1,same_author
+symphony no 4 in f minor op 36 iv finale allegro con fueoco,"Symphony No.4 In F Minor, Op. 36: IV. Finale-Allegro Con Fueoco",Tchaikovsky (2),1,2,2,2020,2021,1,same_author
 taka yak ti,Taka Yak Ti,Okean Elzy (2),1,2,2,2013,2014,1,same_author
 tango de amor,Tango de Amor,"Nathan Lane, Bebe Neuwirth (2)",1,2,2,2020,2021,1,same_author
 tango kumparsita,Tango Kumparsita,DJ Valer (2),1,2,2,2015,2016,1,same_author
 tarantella,Tarantella,Anatoly Vekshin (2),1,2,2,2001,2002,1,same_author
 tarantella napoletana the godfather players,Tarantella Napoletana – The Godfather Players,,1,2,2,2010,2011,0,no_credit
 taste of elegance,A Taste of Elegance,Anne-Sophie Versnaeyen and Gabriel Saban (2),1,2,2,2022,2023,1,same_author
+technologique park,Technologique Park,Orbital (2),1,2,2,2010,2011,1,same_author
 tema de sira entre costuras,"Tema De Sira, Entre Costuras",Cesar Benito (2),1,2,2,2014,2015,1,same_author
 tennessee,Tennessee,Hans Zimmer (2),1,2,2,2002,2003,1,same_author
 tension,Tension,Benoît Jutras (2),1,2,2,2006,2007,1,same_author
@@ -931,9 +996,11 @@ theme from schindler s list,Theme From Schindler's List (Reprise),John Williams 
 these boots are made for walkin,These Boots Are Made for Walkin' (Nancy Sinatra cover),Velvet 99 (2),1,2,2,2003,2004,1,same_author
 time will catch me first,Time Will Catch Me First,Peter Crowley (2),1,2,2,2023,2024,1,same_author
 tipsy bumblebee,Tipsy Bumblebee,Günter Noris Gala Big Band (2),1,2,2,1996,1997,1,same_author
+tocala america amado mio espana cani,"Tocala América, Amado Mio, Espana Cani","Cantores De Hispaliz, Cinema Serenade Ensemble (2)",1,2,2,2015,2016,1,same_author
 tom s diner,Tom's Diner,Suzanne Vega/DNA (2),1,2,2,1992,1993,1,same_author
 tomb,Tomb,Elephant Music (2),1,2,2,2025,2026,1,same_author
 toni,Toni,Zakir Hussain (2),1,2,2,1992,1993,1,same_author
+torero,Torero,Georges Bizet & Rodion Shchedrin (2),1,2,2,2011,2012,1,same_author
 trøllabundin,Trøllabundin,Eivør (2),1,2,2,2025,2026,1,same_author
 tsunami,Tsunami (Jump) (Radio Edit),"DVBBS, Borgeous (2)",1,2,2,2023,2024,1,same_author
 ty rozhdena trepat mne nervy,Ty Rozhdena Trepat' Mne Nervy,Log Dog (2),1,2,2,2014,2015,1,same_author
@@ -942,7 +1009,7 @@ uccen,Uccen (DWTS Remix),Taalbi Brothers (2),1,2,2,2022,2023,1,same_author
 un due tre amen,Un Due Tre Amen!,Faraualla (2),1,2,2,2025,2026,1,same_author
 un tiro al aire,Un tiro al aire,Camaron de la isla (2),1,2,2,2011,2012,1,same_author
 uncovered,Uncovered,Joseph William Morgan (2),1,2,2,2025,2026,1,same_author
-undone,Undone,"Tommee Profitt, Fleurie (2)",1,2,2,2025,2026,1,same_author
+unknown remix give it up,"Unknown remix, Give It Up (The Good Men song)",The Good Men (2),1,2,2,2017,2018,1,same_author
 unleashed,Unleashed (Amanda Duet Version),Epica (2),1,2,2,2022,2023,1,same_author
 uzbek traditional,Uzbek traditional,,1,2,2,2013,2014,0,no_credit
 vampire olivia rodrigo,Vampire - Olivia Rodrigo (Cello & Piano Cover),Brooklyn Duo (2),1,2,2,2025,2026,1,same_author
@@ -952,12 +1019,14 @@ vihma,Vihma,Värttinä (2),1,2,2,2020,2021,1,same_author
 vokaliz,Vokaliz,Brilliant Dadashova (2),1,2,2,2015,2016,1,same_author
 vole,Vole,Celine Dion (2),1,2,2,2023,2024,1,same_author
 walls of akendora,Walls of Akendora,Keiko Matsui (2),1,2,2,2006,2007,1,same_author
+waltzing cat,The Waltzing Cat,Leroy Anderson (2),1,2,2,2022,2023,1,same_author
 wedding celebration,Wedding Celebration,Jerry Bock (2),1,2,2,1994,1995,1,same_author
 wednesday soundtrack paint it black,"Wednesday Soundtrack, Paint It Black",The Cramps (2),1,2,2,2023,2024,1,same_author
 weeping mountains war cry,"The Weeping Mountains, War Cry",Inro Joo (2),1,2,2,2020,2021,1,same_author
 wepa,Wepa,Gloria Estefan (2),1,2,2,2025,2026,1,same_author
 white roses are blooming,White Roses Are Blooming,101 Strings Orchestra (2),1,2,2,2015,2016,1,same_author
 whole lotta love,Whole Lotta Love,Beth Hart (2),1,2,2,2023,2024,1,same_author
+wild,Wild,LOLO (2),1,2,2,2024,2025,1,same_author
 wintersun,Wintersun (Yoad Nevo Mix),Bond (2),1,2,2,2025,2026,1,same_author
 wipe out,Wipe Out,"The Surfaris, Fat Boys & The Beach Boys, Gary Hoey (2)",1,2,2,2013,2014,1,same_author
 woman,WOMAN,Lady Bri (2),1,2,2,2024,2025,1,same_author
@@ -978,10 +1047,13 @@ zorbas dance sirtaki,Zorbas Dance - Sirtaki,Mikis Theodorakis (2),1,2,2,2015,201
 московская кадриль,Московская кадриль,ЧИБАТУХА (2),1,2,2,2024,2025,1,same_author
 нанэ цоха,Нанэ цоха (Nane Tsoxa),,1,2,2,2011,2012,0,no_credit
 обіими,Обійми,Okean Elzy (2),1,2,2,2020,2021,1,same_author
+палсо была влюбляться,Палсо была влюбляться,Rada Volshaninova (2),1,2,2,2020,2021,1,same_author
 рух,Рух,Президенттік оркестр (2),1,2,2,2025,2026,1,same_author
 сауыт,Сауыт,Ибрагим Ескендір (2),1,2,2,2025,2026,1,same_author
+симфоническая,Симфоническая,Vitas (2),1,2,2,2023,2024,1,same_author
 токката и фуга ре минор,токката и фуга ре минор,Bel Suono (2),1,2,2,2017,2018,1,same_author
 торо ко ко пэк пэк,Торо - Ко - Ко Пэк - Пэк,Дидюля (2),1,2,2,2023,2024,1,same_author
+חביב אלבי,חביב אלבי,"Static & Ben El, Nasrin Kadri (2)",1,2,2,2025,2026,1,same_author
 醉太平,醉太平,Seven Kwan (2),1,2,2,2023,2024,1,same_author
 鸿雁,鸿雁 (Live),沙宝亮 (2),1,2,2,2020,2022,1,same_author
 10 dollar,10 Dollar,M.I.A (1),1,1,1,2007,2007,1,same_author
@@ -996,13 +1068,13 @@ act 1 kitri and basilio variation kitri,"Act 1 – Kitri and Basilio, Variation:
 act 1 largo al factotum,Act 1 Largo al factotum,Gioachino Rossini (1),1,1,1,2007,2007,1,same_author
 act 1 no 8 pas d action,Act 1 no. 8 Pas d'action,Tchaikovsky (1),1,1,1,2007,2007,1,same_author
 act 1 scene 2,Act 1 Scene 2,Tchaikovsky (1),1,1,1,2004,2004,1,same_author
-act 1 variation kitri,Act 1 – Variation: Kitri,Leon Minkus (1),1,1,1,1996,1996,1,same_author
 act 1 variation kitri from don quixote,Act 1 – Variation: Kitri from Don Quixote,Leon Minkus (1),1,1,1,2009,2009,1,same_author
 act i danse generale,Act I: Danse Generale (Valse-Coda),Adolphe Adam (1),1,1,1,1999,1999,1,same_author
 act i heia heia in den bergen ist mein heimatland,"Act I - Heia, heia, in den Bergen ist mein Heimatland","Kálmán, Anna Netrebko, Emmanuel Villaume, Prague Philharmonia and Phillharmonic Choir (1)",1,1,1,2022,2022,1,same_author
 act iii,ACT III,: (Quiteria's Variation) (1),1,1,1,2015,2015,1,same_author
 ad martem,Ad Martem,HAVASI (1),1,1,1,2024,2024,1,same_author
 adagio in g,Adagio in G (Battlefield Version),Imagine Music (1),1,1,1,2026,2026,1,same_author
+adiemus,Adiemus,Miriam Stockley (1),1,1,1,2025,2025,1,same_author
 adios nonino,Adiós Nonino,Astor Piazzolla (1),1,1,1,1991,1991,1,same_author
 afflicted,The Afflicted,Audiomachine (1),1,1,1,2023,2023,1,same_author
 african djembe drums,African Djembe Drums,"Drums Of The World, Madou Djembe (1)",1,1,1,2013,2013,1,same_author
@@ -1010,6 +1082,7 @@ african samba,African samba,,1,1,1,2014,2014,0,no_credit
 against the wind,Against The Wind,Keiko Matsui (1),1,1,1,2007,2007,1,same_author
 agent shavers,Agent Shavers,Christophe Beck (1),1,1,1,2017,2017,1,same_author
 agnus dei,Agnus Dei,Noella (1),1,1,1,2016,2016,1,same_author
+agony suite iii tango,Agony Suite: III. Tango,Alfred Schnittke (1),1,1,1,2013,2013,1,same_author
 agua y mezcal,Agua y Mezcal,Guitarricadelafuente (1),1,1,1,2026,2026,1,same_author
 aha,Aha!,Imogen Heap (1),1,1,1,2020,2020,1,same_author
 ai coracao,Ai Coração,Mimicat (1),1,1,1,2025,2025,1,same_author
@@ -1018,31 +1091,36 @@ aire,Aire,Leslie Grace (1),1,1,1,2019,2019,1,same_author
 aire mozarabe,Aire mozárabe,,1,1,1,2000,2000,0,no_credit
 akkadian empire,Akkadian Empire (Paul Dinletir Remix),,1,1,1,2019,2019,0,no_credit
 al andaluz,Al-Andaluz (Balada Española),Manolo Carrasco (1),1,1,1,2021,2021,1,same_author
-alambre alto,Alambre Alto,Cirque du Soleil (1),1,1,1,2023,2023,1,same_author
 alatau,Alatau,Otyken (1),1,1,1,2026,2026,1,same_author
 albinoni in rock,Albinoni in Rock,Claudio Simonetti (1),1,1,1,2015,2015,1,same_author
 alcoba azul,Alcoba Azul,Elliot Goldenthal (1),1,1,1,2023,2023,1,same_author
+algo pequenitto,Algo pequeñitto,Daniel Diges (1),1,1,1,2015,2015,1,same_author
 all that there had been,All That There Had Been,Kvatro (1),1,1,1,2023,2023,1,same_author
 allegro,Allegro,Rene Aubry (1),1,1,1,2015,2015,1,same_author
 allegro from swan lake,Allegro from Swan Lake,Tchaikovsky (1),1,1,1,2005,2005,1,same_author
 allumez le feu,Allumez le Feu,Johnny Hallyday (1),1,1,1,2022,2022,1,same_author
-almoraima,Almoraima,Paco de Lucia (1),1,1,1,2012,2012,1,same_author
 always,Always,AySel feat. Arash (1),1,1,1,2019,2019,1,same_author
 amar mongolia,Amar: Mongolia,Armand Amar (1),1,1,1,2021,2021,1,same_author
 amara terra mia,Amara Terra Mia,Ermal Meta (1),1,1,1,2019,2019,1,same_author
 amazonas,Amazonas,Strunz & Farah (1),1,1,1,1992,1992,1,same_author
+amazonic,Amazonic,Maksim Mrvica (1),1,1,1,2010,2010,1,same_author
 ambition 15297,Ambition (No Choir Mix)-15297,Really Slow Motion & Giant Apes (1),1,1,1,2026,2026,1,same_author
+americano,Americano,Lady Gaga (1),1,1,1,2024,2024,1,same_author
 anastasia paris tu nous ouvres ton,"Anastasia - Paris, Tu Nous Ouvres Ton",Stephen Flaherty & David Newman (1),1,1,1,2024,2024,1,same_author
 anatolian deluxe,Anatolian Deluxe,Loreena McKennitt / Turkish Percussion Group (1),1,1,1,2004,2004,1,same_author
+ancient secrets,Ancient Secrets,Karunesh (1),1,1,1,2009,2009,1,same_author
 and inshalla,and Inshalla (Ya Salam),Angel Tears (1),1,1,1,2005,2005,1,same_author
 andalucia,Andalucia,Bill Whelan (1),1,1,1,2012,2012,1,same_author
 andaluza,Andaluza,Granados (1),1,1,1,1999,1999,1,same_author
 andiamo a comandare,Andiamo a comandare,Fabio Rovazzi (1),1,1,1,2017,2017,1,same_author
 andrew jarod smith bmi,"Andrew Jarod Smith, BMI",,1,1,1,2026,2026,0,no_credit
+andromeda,Andromeda,Q-Factory (1),1,1,1,2017,2017,1,same_author
 angst,Angst,Power-Haus feat. Christian Reindl (1),1,1,1,2026,2026,1,same_author
 angustias,Angustias,Manolo Sanlúcar (1),1,1,1,1990,1990,1,same_author
 animals,Animals,X-Mode (1),1,1,1,2005,2005,1,same_author
 animus,Animus,Sarah Álainn (1),1,1,1,2023,2023,1,same_author
+another day of sun,Another Day of Sun,La La Land Cast (1),1,1,1,2023,2023,1,same_author
+another level,ANOTHER LEVEL,On the Larceny (1),1,1,1,2021,2021,1,same_author
 another love,Another Love,Tom Odell (1),1,1,1,2023,2023,1,same_author
 anya,Anya,Deep Purple (1),1,1,1,2021,2021,1,same_author
 anyuta,Anyuta,Valeri Gavrilin (1),1,1,1,2009,2009,1,same_author
@@ -1060,10 +1138,12 @@ arise,Arise,E. S. Posthumus (1),1,1,1,2017,2017,1,same_author
 armour piercing bullets,Armour Piercing Bullets,Michael Kamen (1),1,1,1,1993,1993,1,same_author
 army of drummers,Army of Drummers,Audiomachine (1),1,1,1,2017,2017,1,same_author
 arno s waltz,Arno's Waltz,Joshua Kyan Aalampour (1),1,1,1,2024,2024,1,same_author
+arrival of the birds,Arrival of the Birds,The Cinematic Orchestra (1),1,1,1,2021,2021,1,same_author
 art on ice,Art on Ice,Edvin Marton (1),1,1,1,2007,2007,1,same_author
 arte y compas,Arte y compás,Manolo Carrasco (1),1,1,1,2016,2016,1,same_author
 artsakh,Artsakh,Ara Gevorkian (1),1,1,1,2008,2008,1,same_author
 asereje,Asereje (Hippy),Las Ketchup (1),1,1,1,2025,2025,1,same_author
+ashes to ashes,Ashes to Ashes,Groove Addicts (1),1,1,1,2011,2011,1,same_author
 assassin s tango,Assassin's Tango,John Powell (1),1,1,1,2019,2019,1,same_author
 astor piazzolla contrastes,Astor Piazzolla: Contrastes,Ensemble Contraste (1),1,1,1,2013,2013,1,same_author
 at home among strangers,At Home Among Strangers,Eduard Artemyev (1),1,1,1,2016,2016,1,same_author
@@ -1078,6 +1158,7 @@ axios,Axios,Nathan Lanier (1),1,1,1,2018,2018,1,same_author
 b minor,B Minor,Leahy (1),1,1,1,2024,2024,1,same_author
 baba yaga,Baba Yaga,Modest Petrovich Mussorgsky (1),1,1,1,2003,2003,1,same_author
 baby i don t know,Baby I Don't Know (I Love You Remix),DJ Jessie Cole (1),1,1,1,2017,2017,1,same_author
+baby outlaw,Baby Outlaw,Elle King (1),1,1,1,2023,2023,1,same_author
 back in the u s s r,Back in the U.S.S.R.,,1,1,1,2009,2009,0,no_credit
 bad blood,Bad Blood,Rok Nardin (1),1,1,1,2026,2026,1,same_author
 bad kitty,A Bad Kitty,Henry Jackman (1),1,1,1,2019,2019,1,same_author
@@ -1129,11 +1210,13 @@ better have some ky,Better Have Some Ky,Harry Gregson-Williams (1),1,1,1,2007,20
 better man,Better Man,,1,1,1,2010,2010,0,no_credit
 bienvenida,Bienvenida,Selena Gomez (1),1,1,1,2026,2026,1,same_author
 big bad me,Big Bad Me,"Power-Haus, REVANANT (1)",1,1,1,2026,2026,1,same_author
+big bang,The big bang,Rock Mafia (1),1,1,1,2026,2026,1,same_author
 big beat,Big Beat,Touch 'n Go (1),1,1,1,2004,2004,1,same_author
 big in japan,Big in Japan,Ane Brun (1),1,1,1,2021,2021,1,same_author
 big spender,Big Spender,Fosse Ensemble & Valarie Pettiford (1),1,1,1,2024,2024,1,same_author
 bilməzdim,Bilməzdim,Flora Karimova (1),1,1,1,2022,2022,1,same_author
 black book,Black Book,ORI (1),1,1,1,2025,2025,1,same_author
+black friday,Black Friday,Tom Odell (1),1,1,1,2026,2026,1,same_author
 black horse and the cherry tree,Black Horse and the Cherry Tree,KT Tunstall (1),1,1,1,2023,2023,1,same_author
 black lord,Black Lord,Eronika (1),1,1,1,2025,2025,1,same_author
 black skinhead,Black Skinhead,Kanye West (1),1,1,1,2016,2016,1,same_author
@@ -1146,6 +1229,7 @@ boat chase bull run,"Boat Chase, Bull Run",John Powell (1),1,1,1,2016,2016,1,sam
 bocca di rosa,Bocca di rosa,musica nuda (1),1,1,1,2026,2026,1,same_author
 body funk,Body Funk,Purple Disco Machine (1),1,1,1,2021,2021,1,same_author
 bolero tempo di bolero,Boléro: Tempo di Bolero,"London Symphony Orchestra, Claudio Abbado (1)",1,1,1,2021,2021,1,same_author
+boogie bumper,The Boogie Bumper,Big Bad Voodoo Daddy (1),1,1,1,2010,2010,1,same_author
 boogie wonderland,Boogie Wonderland,"Earth, Wind & Fire (1)",1,1,1,2026,2026,1,same_author
 bora bora bora bora,"Bora Bora, Bora Bora (Bollywood Cafe Mix)",Arash (1),1,1,1,2005,2005,1,same_author
 borgia season 2 main titles from the borgias soundtrack,The Borgia Season 2 – Main Titles from The Borgias soundtrack,Eric Neveux (1),1,1,1,2015,2015,1,same_author
@@ -1163,6 +1247,7 @@ brides,The Brides,Wojciech Kilar (1),1,1,1,1993,1993,1,same_author
 bring on the men from the musical jekyll hyde,Bring On the Men from the musical Jekyll & Hyde,,1,1,1,2024,2024,0,no_credit
 bring the pain,Bring The Pain,Brand X Music (1),1,1,1,2023,2023,1,same_author
 bubamara,Bubamara (ladybug),Dejan Sparavalo (1),1,1,1,2014,2014,1,same_author
+burn butcher burn from the witcher season 2 soundtrack,Burn Butcher Burn from The Witcher Season 2 Soundtrack,Joey Batey (1),1,1,1,2024,2024,1,same_author
 bust in windows,Bust In Windows,Jazmine Sullivan (1),1,1,1,2015,2015,1,same_author
 butter,Butter,BTS (1),1,1,1,2024,2024,1,same_author
 buttons,Buttons,The Pussycat Dolls (1),1,1,1,2022,2022,1,same_author
@@ -1172,6 +1257,7 @@ cad really slow motion giant apes,The Cad - Really Slow Motion & Giant Apes,,1,1
 cadenza,Cadenza,Alfred Schnittke (1),1,1,1,2008,2008,1,same_author
 cahuita,Cahuita,Øystein Sevåg (1),1,1,1,2008,2008,1,same_author
 call me cruella,Call me Cruella,Florence + the Machine (1),1,1,1,2022,2022,1,same_author
+calm before the storm,Calm Before The Storm,Bijan Mortazavi (1),1,1,1,2013,2013,1,same_author
 camino,Camino,Lili Ivanova / Ivan Peev (1),1,1,1,2018,2018,1,same_author
 camptown races,Camptown Races,,1,1,1,1991,1991,0,no_credit
 can t get you out of my head,Can't Get You out of My Head,Kylie Minogue (1),1,1,1,2026,2026,1,same_author
@@ -1181,6 +1267,7 @@ can you hear the music,Can you hear the music,Ludwig Göransson (1),1,1,1,2024,2
 can you hold me,Can You Hold Me,NF (1),1,1,1,2023,2023,1,same_author
 can you see me,Can You See Me,Power-Haus (1),1,1,1,2026,2026,1,same_author
 can you see me shyloom,Can You See Me - Shyloom Remix,"Power-Haus, Duomo, Shyloom (1)",1,1,1,2024,2024,1,same_author
+canaro en paris,Canaro En Paris,Quinteto Real (1),1,1,1,2013,2013,1,same_author
 cancao do mar cancao do mar,"Canção Do Mar (Chill Guitar Mix), Canção Do Mar","Blue System, Dulce Pontes (1)",1,1,1,2015,2015,1,same_author
 cancion del mariachi,Cancion del mariachi,Max Hauer (1),1,1,1,2022,2022,1,same_author
 candy land,Candy land,Loïc Nottet (1),1,1,1,2026,2026,1,same_author
@@ -1196,8 +1283,10 @@ carmen fantasy violin,Carmen Fantasy Violin,,1,1,1,2017,2017,0,no_credit
 carmen prelude to act 1,Carmen: Prelude To Act 1,Alain Lombard (1),1,1,1,2020,2020,1,same_author
 carmen suite carmen s entrance and habanera,Carmen Suite: Carmen's Entrance and Habanera,"Gennady Rozhdestvensky, String Section of Bolshoi Theatre Orchestra (1)",1,1,1,2019,2019,1,same_author
 carmen suite ii dance,Carmen Suite: II. Dance,"Gennady Rozhdestvensky, Orchestra of the Bolshoi Theatre (1)",1,1,1,2025,2025,1,same_author
+carmen suite no 1 les toreadors,Carmen Suite No. 1 Les toreadors,"Alfred Schols, London Festival Orchestra (1)",1,1,1,2022,2022,1,same_author
 carmina burana o fortuna,Carmina Burana: O Fortuna,Carl Orff (1),1,1,1,2018,2018,1,same_author
 carmino,Carmino,Lili Ivanova (1),1,1,1,2014,2014,1,same_author
+carnaval de venise,Carnaval De Venise,André Rieu & His Johann Strauss Orchestra-Medley (1),1,1,1,2013,2013,1,same_author
 carol of the bells epic,Carol of the Bells - Epic Version,Samuel Kim (1),1,1,1,2023,2023,1,same_author
 carrots shots,Carrots/Shots,,1,1,1,2009,2009,0,no_credit
 carson city,Carson City,Mark Mancina & Trevor Rabin (1),1,1,1,2003,2003,1,same_author
@@ -1206,6 +1295,7 @@ casta diva,Casta Diva,Filippa Giordano (1),1,1,1,2013,2013,1,same_author
 cat and mouse,Cat and Mouse,Brian Tyler (1),1,1,1,2005,2005,1,same_author
 catch the falling sky,Catch the Falling Sky,Immediate Music (1),1,1,1,2011,2011,1,same_author
 catgroove,Catgroove,Parov Stelar (1),1,1,1,2016,2016,1,same_author
+caucasian dances,Caucasian Dances (folk),,1,1,1,2017,2017,0,no_credit
 cello,Cello) cover,Jennifer Thomas and Armen Ksajikian (1),1,1,1,2022,2022,1,same_author
 ceux qui revent,Ceux Qui Revent,Isak Danielson (1),1,1,1,2022,2022,1,same_author
 chainsmoking,Chainsmoking,Jacob Banks (1),1,1,1,2024,2024,1,same_author
@@ -1227,6 +1317,7 @@ children of the sun,Children of the sun,Thomas Bergersen feat. Merethe Soltvedt 
 chinese music of beijing,Chinese Music of Beijing,"Drums Of The World, Madou Djembe (1)",1,1,1,2013,2013,1,same_author
 chiquito,Chiquito,Los Chiquitos (1),1,1,1,2020,2020,1,same_author
 chopin impression,Chopin Impression,Jan Vayne (1),1,1,1,2016,2016,1,same_author
+chopin nocturne,Chopin Nocturne,David Garrett feat David Foster (1),1,1,1,2021,2021,1,same_author
 chopper chase,Chopper Chase,John Powell (1),1,1,1,2009,2009,1,same_author
 chrono,Chrono,Mammoth (1),1,1,1,2026,2026,1,same_author
 ciganka sam mala,Ciganka sam mala,Jelena Tomašević (1),1,1,1,2026,2026,1,same_author
@@ -1234,8 +1325,9 @@ cigany,Cigany,"and, !DelaDap (1)",1,1,1,2015,2015,1,same_author
 cinderella honeymoon from hiromi iwasaki,Cinderella Honeymoon from Hiromi Iwasaki,,1,1,1,2026,2026,0,no_credit
 ciocarlia,Ciocârlia (Romanian folk tune),George Enescu (1),1,1,1,2014,2014,1,same_author
 circle dance,The Circle Dance,Didulya (1),1,1,1,2012,2012,1,same_author
+clubbed to death,Clubbed To Death (Remix),Luche (1),1,1,1,2026,2026,1,same_author
 cobra s dance,The Cobra's Dance (feat. Luru),TSVI (1),1,1,1,2021,2021,1,same_author
-code,The Code,Nemo (1),1,1,1,2025,2025,1,same_author
+code of the sword,Code of the Sword,The Flight (1),1,1,1,2026,2026,1,same_author
 color of the night,The Color Of The Night,Lauren Christy (1),1,1,1,2018,2018,1,same_author
 colour of the night,The Colour Of The Night,Stepan Mezentsev (1),1,1,1,2015,2015,1,same_author
 come check this,Come Check This,Fetish (1),1,1,1,2025,2025,1,same_author
@@ -1253,12 +1345,14 @@ concerto for sitar orchestra sholay theme,"Concerto for Sitar & Orchestra, Shola
 concerto gorsso no 1 i preludio,Concerto Gorsso No.1: I. Preludio,"Lev Markiz, New Stockholm Chamber Orchestra (1)",1,1,1,2027,2027,1,same_author
 concerto grosso no 1,Concerto Grosso No. 1,Alfred Schnittke (1),1,1,1,2015,2015,1,same_author
 concerto no 1 in g minor for cello and orchestra op 49 i allegro,"Concerto No. 1 in G Minor for Cello and Orchestra, Op. 49: I. Allegro",,1,1,1,2023,2023,0,no_credit
+concierto de aranjuez ii adagio,Concierto de Aranjuez: II. Adagio,Joaquín Rodrigo (1),1,1,1,2013,2013,1,same_author
 concierto para quinteto,Concierto Para Quinteto,Astor Piazzolla (1),1,1,1,2001,2001,1,same_author
 confident,Confident,Demi Lovato (1),1,1,1,2026,2026,1,same_author
 conga,Conga (Psyk Remix),Gloria Estefan & Miami Sound Machine (1),1,1,1,2024,2024,1,same_author
 conga fury,Conga Fury,Juno Reactor (1),1,1,1,2006,2006,1,same_author
 continent,Continent,Adrián Berenguer (1),1,1,1,2022,2022,1,same_author
 cookie factory,The Cookie Factory,Danny Elfman (1),1,1,1,1993,1993,1,same_author
+coracao,CORAÇAO,"Jerry Ropero, Hugel, Mijangos, Jesus Fernandez (1)",1,1,1,2026,2026,1,same_author
 corazon encadenado,Corazon Encadenado,Gisselle y Sergio Vargas (1),1,1,1,2019,2019,1,same_author
 cornfield chase,Cornfield Chase (Interstellar Piano Cover),Dorian Marko (1),1,1,1,2025,2025,1,same_author
 cornish rhapsody,Cornish Rhapsody,Hubert Bath (1),1,1,1,2015,2015,1,same_author
@@ -1273,10 +1367,12 @@ creep,Creep,Postmodern Jukebox (1),1,1,1,2022,2022,1,same_author
 cria da ivete,Cria Da Ivete (Ao Vivo),Ivete Sangalo (1),1,1,1,2025,2025,1,same_author
 criminal,Criminal,Gotan Project (1),1,1,1,2015,2015,1,same_author
 croatian rhapsody,Croatian Rhapsody,Maksim Mrvica (1),1,1,1,2005,2005,1,same_author
+crowd caffeine,Crowd Caffeine,SOFIA ISELLA (1),1,1,1,2026,2026,1,same_author
 csardas,Csárdás (Hungarian Folk dance),Roby Lakatos (1),1,1,1,2017,2017,1,same_author
 cu ti lu dissi,'Cu Ti Lu Dissi,Redi Hasa & Maria Mazzotta (1),1,1,1,2025,2025,1,same_author
 cuba,Cuba,Robert Abigail and DJ Rebel ft. The Gibson Brothers (1),1,1,1,2020,2020,1,same_author
 cucurrucucu paloma,Cucurrucucú Paloma,Silvia Perez Cruz & Raul Fernandez (1),1,1,1,2023,2023,1,same_author
+cyganskaja,Cyganskaja,Marina Devyatova (1),1,1,1,2018,2018,1,same_author
 czardas from classic meets cuba,"Czardas (Monti, Czardas Pr Violon & Piano) from Classic Meets Cuba",Klazz Brothers & Cuba Percussion (1),1,1,1,2008,2008,1,same_author
 dai mi go dai,Dai mi go dai,Azis (1),1,1,1,2003,2003,1,same_author
 dame un grrr,Dame Un Grrr (Provi Extended Remix),"Fantomel, KATE LINN & Provi (1)",1,1,1,2026,2026,1,same_author
@@ -1287,12 +1383,11 @@ dance of curse,Dance of Curse,Yoko Kanno (1),1,1,1,2019,2019,1,same_author
 dance of the basques,Dance of the Basques,Boris Asafyev (1),1,1,1,2017,2017,1,same_author
 dance of the soviet sailors,Dance Of The Soviet Sailors,Reinhold Gliere (1),1,1,1,2009,2009,1,same_author
 dance of the soviet sailors from the red poppy,Dance of the Soviet Sailors from The Red Poppy,Reinhold Gliere (1),1,1,1,2012,2012,1,same_author
-dance of the sugar plum fairy,Dance of the Sugar Plum Fairy,Jennifer Thomas (1),1,1,1,2020,2020,1,same_author
+dancin fool,Dancin' Fool,Gary Wilmot & The Copacabana Ensemble (1),1,1,1,2025,2025,1,same_author
 dancing with the muse,Dancing with the Muse,Chris Spheeris (1),1,1,1,2003,2003,1,same_author
 dangerous affairs,Dangerous Affairs,Inon Zur (1),1,1,1,2023,2023,1,same_author
 danse de phryne,Danse de Phryne,Charles Gounod (1),1,1,1,2015,2015,1,same_author
 danse de phryne from faust,Danse de Phryné (Walpurgis Night) from Faust,Charles Gounod (1),1,1,1,2008,2008,1,same_author
-danse macabre op 40,"Danse macabre, Op.40","Philharmonia Orchestra, Charles Dutoit (1)",1,1,1,2015,2015,1,same_author
 danu dana,Danu Dana,Aleksey Rybnikov (1),1,1,1,2020,2020,1,same_author
 danube,Danube,Abel Korzeniowski (1),1,1,1,2019,2019,1,same_author
 danza de la molinera from el sombrero de tres picos,Danza de la molinera from El sombrero de tres picos,Manuel de Falla (1),1,1,1,2000,2000,1,same_author
@@ -1317,17 +1412,22 @@ demonic,Demonic,Non-Stop Producer Series and Marnik (1),1,1,1,2023,2023,1,same_a
 der bauch,Der Bauch,MC Sultan (1),1,1,1,2011,2011,1,same_author
 derniere danse,Dernière Danse,Indila (1),1,1,1,2017,2017,1,same_author
 desengano y pasion,Desengaño y Pasión (Solea por Bulerias),"Tino de Geraldo, Carles Benabent, Jorge Pardo & Manolo Carrasco (1)",1,1,1,2020,2020,1,same_author
+desert,Desert,Benoit Jutras (1),1,1,1,2010,2010,1,same_author
 desert from cirque du soleil s o,"Desert from Cirque Du Soleil's ""O",Benoit Jutras (1),1,1,1,2021,2021,1,same_author
+desert rose,Desert Rose,Sting (1),1,1,1,2022,2022,1,same_author
 desire caught by the tail,Desire Caught by the Tail,Juan Martín (1),1,1,1,2000,2000,1,same_author
 devil in the business class,Devil in the Business Class,Emir Kusturica (1),1,1,1,2002,2002,1,same_author
 devil in the details,Devil in the Details,Max Schad (1),1,1,1,2026,2026,1,same_author
 devil inside me,Devil Inside Me (feat. KARRA),Kshmr Kazza (1),1,1,1,2021,2021,1,same_author
+dhoom taana,Dhoom Taana,Shreya Ghoshal (1),1,1,1,2013,2013,1,same_author
+dhoom tana,Dhoom Tana,Om Shanti Om (1),1,1,1,2009,2009,1,same_author
 diablo rojo,Diablo Rojo,Rodrigo Y Gabriela (1),1,1,1,2012,2012,1,same_author
 diabolo,Diabolo,Xavier Mortimer & Maxime Rodriguez (1),1,1,1,2022,2022,1,same_author
 dibidy dap,Dibidy Dap,Club des Belugas (1),1,1,1,2016,2016,1,same_author
 die another day,Die Another Day,Madonna (1),1,1,1,2022,2022,1,same_author
 diles,Diles,Malú (1),1,1,1,2023,2023,1,same_author
 dilorom,Dilorom,Yulduz Usmanova and Shahzod (1),1,1,1,2000,2000,1,same_author
+dinner,Dinner,John Powell (1),1,1,1,2010,2010,1,same_author
 dirty diana,Dirty Diana,Michael Jackson (1),1,1,1,2017,2017,1,same_author
 discoteque,Discoteque,The Roop (1),1,1,1,2023,2023,1,same_author
 diva,Diva,Filipp Kirkorov (1),1,1,1,2023,2023,1,same_author
@@ -1343,6 +1443,7 @@ doin time,Doin' Time,Lana Del Rey (1),1,1,1,2022,2022,1,same_author
 domingo,Domingo,Gotan Project (1),1,1,1,2010,2010,1,same_author
 dominicano,Dominicano,Egor Grushin (1),1,1,1,2019,2019,1,same_author
 don alfonso,Don Alfonso,Michael Kamen (1),1,1,1,2001,2001,1,same_author
+don quixote quiteria enters,Don Quixote: Quiteria(Kitri) Enters,Hayden Todorov (1),1,1,1,2017,2017,1,same_author
 don t speak,Don't Speak,Postmodern Jukebox (1),1,1,1,2025,2025,1,same_author
 don t tell mama,Don't tell mama,"Natasha Richardson, Alan Cumming and Cabaret Ensemble (1)",1,1,1,2024,2024,1,same_author
 dona francisquita fadango,"Doña Francisquita: ""Fadango",Amadeo Vives (1),1,1,1,2022,2022,1,same_author
@@ -1362,7 +1463,6 @@ drums of war,The Drums Of War,Daniel Pemberton (1),1,1,1,2016,2016,1,same_author
 due vite,Due vite (Live),Marco Mengoni (1),1,1,1,2026,2026,1,same_author
 duel,The Duel,HAVASI (1),1,1,1,2021,2021,1,same_author
 duet improvisation and duet improvisation,Duet Improvisation (Part 1) and Duet Improvisation (Part 2),Chick Corea Trio Music (1),1,1,1,1992,1992,1,same_author
-dum taka,Dum-Taka,Elitsa Todorova (1),1,1,1,2014,2014,1,same_author
 dune mosse,Dune Mosse (feat. Miles Davis),Zucchero (1),1,1,1,2025,2025,1,same_author
 durch den monsun,Durch den Monsun,Tokio Hotel (1),1,1,1,2026,2026,1,same_author
 dy,Dy,Vitas (1),1,1,1,2003,2003,1,same_author
@@ -1380,15 +1480,16 @@ ego,Ego,Willy William (1),1,1,1,2022,2022,1,same_author
 egypt is yours for only one day,Egypt Is Yours For Only One Day,Trevor Jones (1),1,1,1,2012,2012,1,same_author
 ehyeh,Ehyeh,Alessandro Safina (1),1,1,1,2023,2023,1,same_author
 el amor brujo danza rituel del fuego,El amor brujo: Danza Rituel del Fuego,Manuel de Falla (1),1,1,1,2021,2021,1,same_author
+el anillo,El Anillo,Jennifer Lopez (1),1,1,1,2022,2022,1,same_author
 el desierto,El Desierto,Lhasa (1),1,1,1,2023,2023,1,same_author
 el entrerriano,El entrerriano,Rosendo Mendizábal (1),1,1,1,1996,1996,1,same_author
+el porompompero,El Porompompero,Chico & The Gypsies (1),1,1,1,2020,2020,1,same_author
 el silencio,El Silencio,Caro Luna (1),1,1,1,2025,2025,1,same_author
 el tango de roxanne from moulin rouge ost,El Tango de Roxanne from Moulin Rouge! OST,"Ewan McGregor, José Feliciano and Jacek Koman (1)",1,1,1,2018,2018,1,same_author
 el verano,El Verano,Novak (1),1,1,1,2018,2018,1,same_author
 el vuelo de moscardon,El Vuelo De Moscardón (Flight of the Bumblebee),Prague Festival Orchestra (1),1,1,1,2015,2015,1,same_author
 elastics hearts,Elastics Hearts,Sia (1),1,1,1,2019,2019,1,same_author
 elea,Elea,Worakls (1),1,1,1,2019,2019,1,same_author
-eleanor rigby,Eleanor Rigby,SARAFINE (1),1,1,1,2025,2025,1,same_author
 electrotech love no roots,"Electrotech Love, No Roots","Mark Holiday, Alice Merton (1)",1,1,1,2023,2023,1,same_author
 elegie opus 3 no 1,Elegie Opus 3 No. 1,Rachmaninoff (1),1,1,1,2018,2018,1,same_author
 elements,Elements (Orchestral Version),Lindsey Stirling (1),1,1,1,2015,2015,1,same_author
@@ -1396,6 +1497,7 @@ elephant,Elephant,Cut Capers (1),1,1,1,2026,2026,1,same_author
 emergerncy,Emergerncy,Icona Pop (1),1,1,1,2019,2019,1,same_author
 emigrant,Emigrant,Tanghetto (1),1,1,1,2011,2011,1,same_author
 emigrante,Emigrante,Tanghetto (1),1,1,1,2015,2015,1,same_author
+emocoes,Emoções,Roberto Carlos (1),1,1,1,2025,2025,1,same_author
 en 80 dias suite,En 80 días - Suite,Pascal Gaigne (1),1,1,1,2018,2018,1,same_author
 en lo alto del cerro,En lo Alto del Cerro,Estrella Morente (1),1,1,1,2025,2025,1,same_author
 encore un soir,Encore Un Soir,Celine Dion (1),1,1,1,2018,2018,1,same_author
@@ -1422,8 +1524,10 @@ eyes like yours,Eyes Like Yours,Shakira (1),1,1,1,2018,2018,1,same_author
 ezio s family,Ezio's family,Jesper Kyd (1),1,1,1,2010,2010,1,same_author
 face off,Face Off,John Powell (1),1,1,1,2009,2009,1,same_author
 false awakening suite,False Awakening Suite,Dream Theater (1),1,1,1,2015,2015,1,same_author
+false king,False King,Two Steps From Hell (1),1,1,1,2011,2011,1,same_author
 fantaisie impromptu in c sharp minor op 66,Fantaisie-Impromptu in C-Sharp Minor op. 66,Johan Åhlén (1),1,1,1,2022,2022,1,same_author
 fantasia on russian folksongs,Fantasia on Russian Folksongs,Anton Arensky (1),1,1,1,2009,2009,1,same_author
+fantasia on themes of ryabinin op 48 for piano and orchestra,"Fantasia on Themes of Ryabinin, Op. 48, for piano and orchestra",Russian State Symphony Orchestra (1),1,1,1,2017,2017,1,same_author
 fantasie brillante sur gounod s faust op 20,"Fantasie Brillante sur Gounod's ""Faust"", Op. 20",Henryk Wieniawski (1),1,1,1,2020,2020,1,same_author
 fantasie tableaux op 5 barcarolle,Fantasie-tableaux Op. 5 Barcarolle,Sergei Rachmaninoff (1),1,1,1,2016,2016,1,same_author
 fantastic beasts the crimes of grindelwald main theme,Fantastic Beasts: The Crimes of Grindelwald main theme,James Newton Howard (1),1,1,1,2019,2019,1,same_author
@@ -1442,7 +1546,6 @@ fate of the clockmaker,Fate of the Clockmaker,Eternal Eclipse (1),1,1,1,2022,202
 fato mori dusmanke,"Fato, mori dušmanke",Louis (1),1,1,1,2024,2024,1,same_author
 fearless,Fearless,Thomas Bergersen (1),1,1,1,2025,2025,1,same_author
 fearless living,Fearless Living,Brain Delgado (1),1,1,1,2026,2026,1,same_author
-fearsome flight,Fearsome Flight,Cirque du Soleil (1),1,1,1,2021,2021,1,same_author
 feel it still,Feel It Still,Portugal. The Man (1),1,1,1,2019,2019,1,same_author
 feel this moment,Feel This Moment,Pitbull ft. Christina Aguilera (1),1,1,1,2024,2024,1,same_author
 felicia music tango forever,Felicia music Tango Forever,Luis Bravo (1),1,1,1,2007,2007,1,same_author
@@ -1481,6 +1584,7 @@ forever for now,Forever for Now,LP (1),1,1,1,2023,2023,1,same_author
 formidable,Formidable,Giordana Angi (1),1,1,1,2024,2024,1,same_author
 found,Found (Grand Version),Kerry Muzzey (1),1,1,1,2015,2015,1,same_author
 four seasons winter,"The Four Seasons, Winter (Concerto No. 4 in F Minor, Op. 8, RV 297)",Antonio Vivaldi (1),1,1,1,2015,2015,1,same_author
+fox,The Fox,Pierre Montana (1),1,1,1,2011,2011,1,same_author
 fragrant branch of white acacia,Fragrant branch of white acacia (Russian Romance),,1,1,1,2008,2008,0,no_credit
 francesca da rimini op 32,"Francesca da Rimini, Op. 32","Daniel Barenboim, Chicago Symphony Orchestra (1)",1,1,1,2014,2014,1,same_author
 freedom,Freedom,Pharrell Williams (1),1,1,1,2019,2019,1,same_author
@@ -1491,6 +1595,7 @@ from the movies,From the Movies,Voca People (1),1,1,1,2025,2025,1,same_author
 from within,From Within,Michel Camilo (1),1,1,1,2007,2007,1,same_author
 frozen in time,Frozen in time,Secret Garden (1),1,1,1,2012,2012,1,same_author
 fruit machine,The Fruit Machine,Hans Zimmer (1),1,1,1,1999,1999,1,same_author
+full moon and shrine,Full Moon and Shrine,Keiko Matsui (1),1,1,1,2010,2010,1,same_author
 funiculi funicula,"Funiculi, Funicula",Russell Watson (1),1,1,1,2019,2019,1,same_author
 fur elise jam,Für Elise Jam,The Piano Guys (1),1,1,1,2025,2025,1,same_author
 furia espanola,Furia española,,1,1,1,1993,1993,0,no_credit
@@ -1512,11 +1617,13 @@ giselle,Giselle,Adolphe Charles Adam (1),1,1,1,2021,2021,1,same_author
 giselle act i no 8 waltz,"Giselle, Act I: No. 8, Waltz",Pyotr Tchaikovsky (1),1,1,1,2015,2015,1,same_author
 giselle no 12 allegro mosso and giselle andante,Giselle No. 12 - Allegro Mosso and Giselle: Andante,Adolphe Adams (1),1,1,1,2018,2018,1,same_author
 giselle no 18 giselle no 19 allegro,"Giselle: No. 18, Giselle: No. 19 – Allegro",London Philharmonic Orchestra (1),1,1,1,2014,2014,1,same_author
+gitanerias,Gitanerías (1997 Remastered),Morton Gould and His Orchestra (1),1,1,1,2024,2024,1,same_author
 gitanos,Gitanos,Csilla Szentpéteri (1),1,1,1,2017,2017,1,same_author
 gladiator medley,Gladiator Medley (Live),Hans Zimmer (1),1,1,1,2024,2024,1,same_author
 glam,Glam (electro-swing remix),Dimie Cat (1),1,1,1,2019,2019,1,same_author
 glinka nocturne in f minor,Glinka (la separation) nocturne in F minor,"Ensemble of Soloists Concertino, Victor Kozodov (1)",1,1,1,2017,2017,1,same_author
 gloria,Gloria,Gloria Trevi (1),1,1,1,2026,2026,1,same_author
+gnomus,Gnomus,Modest Mussorgsky (1),1,1,1,2011,2011,1,same_author
 go down moses,Go Down Moses,Louis Armstrong (1),1,1,1,2017,2017,1,same_author
 god is gipsy from foua,God is Gipsy from Foua,Municipale Balcanica (1),1,1,1,2010,2010,1,same_author
 god s fury,God's Fury,Udi Harpaz (1),1,1,1,2013,2013,1,same_author
@@ -1538,12 +1645,14 @@ grand duet for cello and piano,Grand Duet for cello and piano,Galina Ustvolskaya
 gratta keka,Gratta Keka,Appart (1),1,1,1,2013,2013,1,same_author
 gravitational forces,Gravitational Forces,ITG Studios (1),1,1,1,2025,2025,1,same_author
 gravitational forces inst,Gravitational Forces INST,"Drew J Lerdal, ASCAP (1)",1,1,1,2026,2026,1,same_author
+great gig in the sky,The Great Gig In The Sky,Pink Floyd (1),1,1,1,2011,2011,1,same_author
 greatest show,The Greatest Show,"Hugh Jackman, Keala Settle, Zac Efron, Zendaya etc (1)",1,1,1,2026,2026,1,same_author
 grotto,THE GROTTO,Audiomachine (1),1,1,1,2025,2025,1,same_author
 growing up londinium daniel pemberton,Growing Up Londinium Daniel Pemberton,,1,1,1,2019,2019,0,no_credit
 guapa,Guapa,Jons Pistoor (1),1,1,1,2004,2004,1,same_author
 guerrileros,Guerrileros,Maxime Rodriguez (1),1,1,1,2022,2022,1,same_author
 guide me home,Guide Me Home,Freddie Mercury (1),1,1,1,2024,2024,1,same_author
+guitarria,Guitarria,Roni Benise (1),1,1,1,2011,2011,1,same_author
 gulli gulli,Gulli Gulli,The Rhythmagic Orchestra (1),1,1,1,2013,2013,1,same_author
 gumbie cat from cats,The Gumbie Cat from Cats,Andrew Lloyd Webber (1),1,1,1,2005,2005,1,same_author
 gunmetal black,Gunmetal Black,Varíen (1),1,1,1,2022,2022,1,same_author
@@ -1551,6 +1660,7 @@ gusta,A Gusta,Safri Duo (1),1,1,1,2003,2003,1,same_author
 gypsy dance,Gypsy Dance,Leon Minkus (1),1,1,1,1996,1996,1,same_author
 habanera scene,"Habanera, Scene",Rodion Shchedrin / Bizet (1),1,1,1,1996,1996,1,same_author
 habibi min zaman manea k,"Habibi Min Zaman, Manea-K","Balkan Beat Box, Max Pashm (1)",1,1,1,2018,2018,1,same_author
+hafanana,Hafanana,Afric Simone (1),1,1,1,2011,2011,1,same_author
 haklek rahtak,Haklek rahtak (حقلق راحتك),Myriam Fares and Fahir Atakoğlu (1),1,1,1,2021,2021,1,same_author
 hakuryu kokuryu ii,Hakuryu&Kokuryu - II,Drum Tao (1),1,1,1,2025,2025,1,same_author
 handel s sarabande,Handel's Sarabande,Maksim (1),1,1,1,2008,2008,1,same_author
@@ -1563,8 +1673,8 @@ hartita de llorar,Hartita de Llorar,Lachispa (1),1,1,1,2026,2026,1,same_author
 haunted ocean 1,The Haunted Ocean 1,Max Richter (1),1,1,1,2017,2017,1,same_author
 have you been hanging out with vicars,Have You Been Hanging Out With Vicars?,,1,1,1,2010,2010,0,no_credit
 he feeling begins,he Feeling Begins,Peter Gabriel (1),1,1,1,1991,1991,1,same_author
-heart of courage,Heart of Courage,Two Steps from Hell (1),1,1,1,2013,2013,1,same_author
 heartbreak hotel blue suede shoes,"Heartbreak Hotel, Blue Suede Shoes",Elvis Presley (1),1,1,1,2025,2025,1,same_author
+hector s death,Hector's Death,James Horner (1),1,1,1,2024,2024,1,same_author
 helele safri duo,Helele-Safri Duo Extended Mix,"Velile,Safri Duo (1)",1,1,1,2021,2021,1,same_author
 hello afrika,Hello Afrika,Dr. Alban (1),1,1,1,2025,2025,1,same_author
 henry s death,Henry's Death',BT (1),1,1,1,2016,2016,1,same_author
@@ -1574,12 +1684,12 @@ hey momma,Hey Momma,Pentatonix (1),1,1,1,2020,2020,1,same_author
 hey pachico,Hey Pachico,"Majas Band, Kseniya Shamarina, Ivonna Freidmane (1)",1,1,1,2016,2016,1,same_author
 higher,Higher,Michael Bublé (1),1,1,1,2024,2024,1,same_author
 hijo de la luna,Hijo De La Luna,Mecano (1),1,1,1,2014,2014,1,same_author
+holding hands,Holding Hands (Opening Theme),Marsel Mihaylov (1),1,1,1,2011,2011,1,same_author
 holding out for a hero,Holding Out For A Hero,Zympzz (1) | Bonnie Tyler (1),1,1,2,2023,2023,2,different_authors
 homage to the rabbits,Homage to the Rabbits,Éric Serra (1),1,1,1,2016,2016,1,same_author
 homicidal dependence,Homicidal Dependence,Jardines May (1),1,1,1,2024,2024,1,same_author
 hopeless violin,Hopeless Violin,Stefan Rodescu & Yannick Kalfayan (1),1,1,1,2024,2024,1,same_author
 hora zero,Hora Zero,Rodrigo Y Gabriela (1),1,1,1,2013,2013,1,same_author
-horchat hai caliptus,Horchat Hai Caliptus,Ishtar (1),1,1,1,2014,2014,1,same_author
 horizon of memories,Horizon of Memories,Eternal Eclipse (1),1,1,1,2025,2025,1,same_author
 horizon part i,Horizon Part I,Safri Duo (1),1,1,1,2011,2011,1,same_author
 horizon part i hey pachuco my humps,"Horizon Part I, Hey Pachuco, My Humps","Safri Duo, DJ Ruslan Nigmatullin, Black Eyed Peas (1)",1,1,1,2014,2014,1,same_author
@@ -1587,7 +1697,6 @@ horror trailer,Horror Trailer,FreshmanSound (1),1,1,1,2025,2025,1,same_author
 hosgeldin,Hoşgeldin,Nida Öz (1),1,1,1,2019,2019,1,same_author
 hot fuji,Hot Fuji,Brian Tyler (1),1,1,1,2010,2010,1,same_author
 hotel regina,Hotel Regina,John Powell (1),1,1,1,2003,2003,1,same_author
-house of the rising sun,House of the Rising Sun,Heavy Young Heathens (1),1,1,1,2019,2019,1,same_author
 how insensitive,How insensitive,Lyn Stanley and Tamir Hendelman (1),1,1,1,2026,2026,1,same_author
 how you like that,How You Like That,Blackpink (1),1,1,1,2022,2022,1,same_author
 hoy tengo ganas de ti,Hoy Tengo Ganas de Ti,"Alejandro Fernández, Christina Aguilera (1)",1,1,1,2017,2017,1,same_author
@@ -1595,10 +1704,10 @@ hpe116_02_1 i see red_instrumental 14115,HPE116_02_1 I SEE RED_INSTRUMENTAL-1411
 hu ha,Hu Ha,Montefiori Cocktail (1),1,1,1,2004,2004,1,same_author
 hummell gets the rockets,Hummell Gets the Rockets,Harry Gregson-Williams & Nick Glennie-Smith & Hans Zimmer (1),1,1,1,2002,2002,1,same_author
 hungarian rhapsody,Hungarian Rhapsody,Edvin Marton (1),1,1,1,2007,2007,1,same_author
+hut on hen s legs,The Hut on Hen's Legs (Baba Yaga),Modest Mussorgsky (1),1,1,1,2011,2011,1,same_author
 hydrology,Hydrology,Glenn Morrison (1),1,1,1,2022,2022,1,same_author
 hypnotic tango,Hypnotic Tango (VIZE Edit),Alex Christensen & The Berlin Orchestra (1),1,1,1,2022,2022,1,same_author
 i am not ready to die,I am not ready to die,Steve Jablonsky (1),1,1,1,2011,2011,1,same_author
-i am the best,I Am the Best,2NE1 (1),1,1,1,2016,2016,1,same_author
 i can do anything,I Can Do Anything,Christopher Lennertz (1),1,1,1,2025,2025,1,same_author
 i got it,I Got It,Ryan Innes (1),1,1,1,2025,2025,1,same_author
 i know what you want,I Know What You Want,"and, !DelaDap (1)",1,1,1,2015,2015,1,same_author
@@ -1616,6 +1725,7 @@ i wanna be like you,I Wanna Be Like You,Big Bad Voodoo Daddy (1),1,1,1,2003,2003
 i want to know what love is,I Want to Know What Love Is,Mariah Carey (1),1,1,1,2025,2025,1,same_author
 i was made for lovin you,I Was Made for Lovin' You,Kiss (1),1,1,1,2024,2024,1,same_author
 i will not die,I Will Not Die,Ingrid Kup (1),1,1,1,2018,2018,1,same_author
+i will wait for you,I Will Wait for You,Michel Legrand (1),1,1,1,2017,2017,1,same_author
 icare,Icare,Cirque du Soleil (1),1,1,1,2005,2005,1,same_author
 ich schau in die blaue see,Ich Schau In Die Blaue See,Marinechor Der Schwarzmeerflotte (1),1,1,1,2014,2014,1,same_author
 ii mio rifugio,II Mio Rifugio,Nicola Cavallaro (1),1,1,1,2022,2022,1,same_author
@@ -1625,6 +1735,7 @@ il est ou le bonheur,Il est où le bonheur,Christophe Maé (1),1,1,1,2019,2019,1
 il trovatore,Il Trovatore,Therion (1),1,1,1,2020,2020,1,same_author
 im ele hahaim,Im Ele HaHaim,Keren Peles (1),1,1,1,2019,2019,1,same_author
 imaginando,Imaginando,Diana Navarro (1),1,1,1,2016,2016,1,same_author
+immortal combat,Immortal Combat,Trevor Morris (1),1,1,1,2013,2013,1,same_author
 impression,Impression,Jan Vayne (1),1,1,1,2016,2016,1,same_author
 in da getto,In Da Getto,"Swingrowers, District 78, J Balvin & Skrillex (1)",1,1,1,2023,2023,1,same_author
 in love,In Love,Carly Simon (1),1,1,1,1991,1991,1,same_author
@@ -1632,6 +1743,7 @@ in odd we trust,In Odd We Trust,Jasha Alain Klebe (1),1,1,1,2026,2026,1,same_aut
 in the eyes of the gods we are one,In The Eyes of the Gods We Are One,Trevor Jones (1),1,1,1,2012,2012,1,same_author
 in the hall of the mountain king,In the Hall of the Mountain King,"VoicePlay, Elizabeth Garozzo (1)",1,1,1,2025,2025,1,same_author
 in the middle somewhat elevated,In the Middle Somewhat Elevated,Thom Willems (1),1,1,1,2016,2016,1,same_author
+in the mood,In The Mood,Glenn Miller (1),1,1,1,2010,2010,1,same_author
 in the summertime,In The Summertime,Mungo Jerry (1),1,1,1,2021,2021,1,same_author
 in the tunnels,In the Tunnels,Harry Gregson-Williams & Nick Glennie-Smith & Hans Zimmer (1),1,1,1,2002,2002,1,same_author
 in the van,In The Van,"Nathaniel Mechaly, Eminem, Rihanna (1)",1,1,1,2013,2013,1,same_author
@@ -1644,6 +1756,7 @@ introducci,Introducci,,1,1,1,2009,2009,0,no_credit
 introduction moderato assai allegro ma non troppo,Introduction: Moderato Assai - Allegro Ma Non Troppo,Tchaikovsky (1),1,1,1,2010,2010,1,same_author
 invincible,Invincible,Thomas J. Bergersen (1),1,1,1,2015,2015,1,same_author
 invitation to the jellicle ball,The Invitation To The Jellicle Ball,,1,1,1,2005,2005,0,no_credit
+io kant,Io Kant,Banda Osiris (1),1,1,1,2022,2022,1,same_author
 io ti penso amore,Io Ti Penso Amore,David Garrett feat Nicole Scherzinger (1),1,1,1,2017,2017,1,same_author
 iridian,Iridian,Dhol Foundation (1),1,1,1,2002,2002,1,same_author
 iron badabum cha cha dancina day n night,"Iron, Badabum Cha Cha, Dancina, Day N Night","Woodkid, Marracash, Yemi Alade, Aiyo (1)",1,1,1,2022,2022,1,same_author
@@ -1679,7 +1792,6 @@ jesus is carried down,Jesus is Carried Down,John Debney (1),1,1,1,2005,2005,1,sa
 jeszcze raz vabank von anna dereszowska machina del tango,Jeszcze Raz Vabank von Anna Dereszowska & Machina Del Tango,,1,1,1,2025,2025,0,no_credit
 jimmy shake,Jimmy Shake,Apashe (1),1,1,1,2022,2022,1,same_author
 john nineteen forty one superstar overture,John Nineteen: Forty One/Superstar/Overture,Andrew Lloyd Webber (1),1,1,1,2009,2009,1,same_author
-joke tango,Joke Tango,Stanislav Zeltser (1),1,1,1,2012,2012,1,same_author
 joker,The Joker (music from The Motion Picture),Joaquin Phoenix (1),1,1,1,2025,2025,1,same_author
 jovano jovanke,"Jovano, Jovanke",Leb i Sol (1),1,1,1,2004,2004,1,same_author
 jugglers in obsidian,Jugglers in Obsidian,Andreas Vollenwieder (1),1,1,1,1998,1998,1,same_author
@@ -1703,6 +1815,7 @@ kick it,Kick It (Stephan F Trumpet Remix),"Raim, Village Girls, Rockin' Nation (
 kiliki taka ti,Kiliki Taka Ti,Toño Rosario (1),1,1,1,2025,2025,1,same_author
 king and his sons landtrain,"The King And His Sons, Landtrain","Harry Gregson-Williams, Brian Tyler (1)",1,1,1,2012,2012,1,same_author
 kirwani,Kirwani (Badmarsh & Shri Remix),Night Session / Indiazz / Jolly Mukherjee (1),1,1,1,2010,2010,1,same_author
+kiss of the spider woman,Kiss of the Spider Woman,"Jennifer Lopez, Diego Luna & Tonatiuh (1)",1,1,1,2026,2026,1,same_author
 kitri entrance coda,"Kitri, Entrance, Coda",Leon Minkus (1),1,1,1,1996,1996,1,same_author
 knock on wood,Knock On Wood,Safari Duo (1),1,1,1,2019,2019,1,same_author
 kolibre,Kolibre,Maksim (1),1,1,1,2008,2008,1,same_author
@@ -1723,6 +1836,7 @@ l estate,L'estate,Vivaldi (1),1,1,1,2008,2008,1,same_author
 l immensita,L'immensità,Mina (1),1,1,1,2021,2021,1,same_author
 l o v e,L-O-V-E,Nat King Cole (1),1,1,1,2012,2012,1,same_author
 la alegria,La Alegria,Yasmin Levy (1),1,1,1,2015,2015,1,same_author
+la boxeuse amoureuse,La boxeuse amoureuse,Arthur H (1),1,1,1,2024,2024,1,same_author
 la cabane de baba yaga sur des pattes de poule gnomus,"La Cabane de Baba Yaga Sur des Pattes de Poule, Gnomus",Modest Petrovich Mussorgsky (1),1,1,1,2017,2017,1,same_author
 la calle,La Calle,Astor Piazzolla (1),1,1,1,2006,2006,1,same_author
 la casa azul,La casa azul,Marco Mengoni (1),1,1,1,2023,2023,1,same_author
@@ -1733,6 +1847,7 @@ la despedida,La Despedida,Cami (1),1,1,1,2025,2025,1,same_author
 la donna e mobile,La donna è mobile,"Giuseppe Verdi, Luciano Pavarotti (1)",1,1,1,2014,2014,1,same_author
 la felicita,La Felicità,"Simona Molinari, Peter Cincotti (1)",1,1,1,2017,2017,1,same_author
 la forza del destino,La forza del destino,"Pompon Finkelstein, Giuseppe Verdi (1)",1,1,1,2007,2007,1,same_author
+la gloria,La Gloria,Gotan Project (1),1,1,1,2011,2011,1,same_author
 la gorda,La Gorda,Roberto Polisano (1),1,1,1,2013,2013,1,same_author
 la goutte d or,La Goutte D'Or,Saint Germain (1),1,1,1,2005,2005,1,same_author
 la identidad inaccesible,La identidad inaccesible,Alberto Iglesias (1),1,1,1,2012,2012,1,same_author
@@ -1743,11 +1858,11 @@ la morocha,La Morocha,Hector Varela (1),1,1,1,2012,2012,1,same_author
 la salvaora,La salvaora,Concha Buika and Jacob Sureda (1),1,1,1,2023,2023,1,same_author
 la tani,La Tani,Asociación Flamenca de Andalucía (1),1,1,1,1990,1990,1,same_author
 la valse d amelie j y suis jamais alle from amelie ost,La valse d'Amélie & J'y suis jamais allé (remix version) from Amélie OST,Yann Tiersen (1),1,1,1,2011,2011,1,same_author
-la vie en rose,La Vie En Rose,,1,1,1,2014,2014,0,no_credit
 la voce del silenzio,La Voce Del Silenzio,"Massimo Ranieri, Silvia Mezzanotte, Linda Valori (1)",1,1,1,2012,2012,1,same_author
 la voce del silenzio se bruciasse la citta,La Voce Del Silenzio / Se Bruciasse La Citta,"Massimo Ranieri, Silvia Mezzanotte, Linda Valor (1)",1,1,1,2017,2017,1,same_author
 lacrimosa,Lacrimosa,"David Garrett, Royal Philharmonic Orchestra & Franck van der Heijden (1)",1,1,1,2021,2021,1,same_author
 ladder fight,Ladder Fight,Joseph LoDuca (1),1,1,1,2022,2022,1,same_author
+lament to birch bark,Lament To Birch Bark,Moscow Balalaika Quartet (1),1,1,1,2018,2018,1,same_author
 lament to birch bark from the best of russian folk music,Lament To Birch Bark from The Best Of Russian Folk Music,Moscow Balalaika Quartet (1),1,1,1,2004,2004,1,same_author
 land of a thousand dances,Land Of A Thousand Dances,Jessica Mauboy (1),1,1,1,2013,2013,1,same_author
 land of spice,The Land Of Spice,Taraana (1),1,1,1,2024,2024,1,same_author
@@ -1765,12 +1880,15 @@ le corsaire pas de deux and variations,Le Corsaire-Pas De Deux And Variations,"L
 le freak,Le Freak,Chic (1),1,1,1,2025,2025,1,same_author
 le poulpe,Le Poulpe,Dimie Cat (1),1,1,1,2019,2019,1,same_author
 le sacrifice,Le Sacrifice,Igor Stravinsky (1),1,1,1,2020,2020,1,same_author
+leather for hell,Leather for Hell,Bitter Ruin (1),1,1,1,2026,2026,1,same_author
 leelos tune,Leelos Tune,Maksim (1),1,1,1,2008,2008,1,same_author
 legendary,Legendary,Welshly Arms (1),1,1,1,2022,2022,1,same_author
 lela lela,Lela Lela,Reg Project (1),1,1,1,2014,2014,1,same_author
 leningrad,Leningrad,William Joseph (1),1,1,1,2016,2016,1,same_author
 les demoiselles,Les Demoiselles,Rochefort Theme (1),1,1,1,2016,2016,1,same_author
+les deux guitares,Les Deux Guitares,Paul Mauriat (1),1,1,1,2010,2010,1,same_author
 les deux quitares,Les Deux Quitares,Charles Aznavour (1),1,1,1,2013,2013,1,same_author
+les temps des cathedrales,Les Temps des Cathédrales,Josh Groban (1),1,1,1,2021,2021,1,same_author
 les toreadors,Les Toreadors,Georges Bizet (1),1,1,1,2000,2000,1,same_author
 les yeux noirs,Les Yeux Noirs (Dark Eyes) cover,Polmamoose ft The Vignes Rooftop Revival (1),1,1,1,2022,2022,1,same_author
 let me think about it,Let Me Think About It (Fedde Le Grand Club Mix),Ida Corr (1),1,1,1,2026,2026,1,same_author
@@ -1789,7 +1907,6 @@ lightless,Lightless,Serenity Elipse (1),1,1,1,2026,2026,1,same_author
 lights that flicker,Lights That Flicker,Tonal Chaos Trailer Music (1),1,1,1,2025,2025,1,same_author
 lijo,Lijo,Alina Orlova (1),1,1,1,2019,2019,1,same_author
 limanlar,Limanlar (Harbors-piano version),Rashid Afandiyev Nasiboghlu (1),1,1,1,2016,2016,1,same_author
-limelight,Limelight (Main Theme),André Rieu ft The Johann Strauss Orchestra (1),1,1,1,2013,2013,1,same_author
 limelight theme,Limelight Theme,André Rieu (1),1,1,1,2012,2012,1,same_author
 linda looks for love,Linda Looks For Love (Part 1),,1,1,1,2009,2009,0,no_credit
 lion,Lion,Kodo (1),1,1,1,2019,2019,1,same_author
@@ -1803,8 +1920,10 @@ live percussion,Live percussion,Durundatu (1),1,1,1,2010,2010,1,same_author
 livin la vida loca,Livin' la Vida Loca,Ricky Martin (1),1,1,1,2014,2014,1,same_author
 ljubav nije dug,Ljubav Nije Dug,Šaban Šaulić (1),1,1,1,1996,1996,1,same_author
 lo que vendra,Lo Que Vendra,Astor Piazzolla (1),1,1,1,2007,2007,1,same_author
+lo sceicco bianco,Lo Sceicco Bianco,Nino Rota (1),1,1,1,2013,2013,1,same_author
 loca,Loca,Shakira (1),1,1,1,2023,2023,1,same_author
 locomotivo,Locomotivo,Andy J. Forest & Snapshots (1),1,1,1,2009,2009,1,same_author
+lolita,Lolita,Victor Zinchuk (1),1,1,1,2009,2009,1,same_author
 lolo,Lolo,Sevda Alekper Zadeh (1),1,1,1,2019,2019,1,same_author
 lolo lolo lolo,"Lolo, Lolo, Lolo",Sevda Alakbarzadeh (1),1,1,1,2014,2014,1,same_author
 lon lon,Lon Lon (Ravel's Bolero),Angelique Kidjo (1),1,1,1,2019,2019,1,same_author
@@ -1812,6 +1931,7 @@ london,London,Zemfira (1),1,1,1,2018,2018,1,same_author
 look,The Look,The Baseballs (1),1,1,1,2019,2019,1,same_author
 look at me,Look at Me,Geri Halliwell (1),1,1,1,2014,2014,1,same_author
 lord is back,The Lord Is Back,Bernat Font Trio (1),1,1,1,2014,2014,1,same_author
+lord master,Lord & Master,Apashe (1),1,1,1,2023,2023,1,same_author
 lose control,Lose Control,Teddy Swims (1),1,1,1,2025,2025,1,same_author
 lose my breath,Lose My Breath,Destiny's Child (1),1,1,1,2007,2007,1,same_author
 lose my faith,Lose My Faith,Gold Brother (1),1,1,1,2026,2026,1,same_author
@@ -1820,6 +1940,7 @@ loud taiko drumming of japan,Loud Taiko Drumming of Japan,"Drums Of The World, M
 love,Love,B-Tribe (1),1,1,1,2013,2013,1,same_author
 love bomb,LOVE BOMB,"MARVIN BROOKS 2WEI, JOZNEZ, KATAEM (1)",1,1,1,2025,2025,1,same_author
 love is a gift,Love Is a Gift,Kentucky Thunder (1),1,1,1,2017,2017,1,same_author
+love is a lie,Love is a Lie,Beth Hart (1),1,1,1,2026,2026,1,same_author
 love on the brain,Love on the Brain,Rihanna (1),1,1,1,2026,2026,1,same_author
 love song,Love Song,Mark Fradkin (1),1,1,1,2011,2011,1,same_author
 love story theme,Love Story Theme,Arthur Fiedler (1),1,1,1,2016,2016,1,same_author
@@ -1831,7 +1952,6 @@ luna caliente,Luna Caliente,Prandi Sound Tango Orch (1),1,1,1,2013,2013,1,same_a
 luna de paris,Luna de Paris,Raúl di Blasio (1),1,1,1,1998,1998,1,same_author
 luna mezz o mare,Luna mezz'o mare,Patrizio Buanne (1),1,1,1,2016,2016,1,same_author
 luna mezzo mare,Luna Mezzo Mare,Patrizio Buanne (1),1,1,1,2014,2014,1,same_author
-lust of power,Lust of Power,Gabriel Saban (1),1,1,1,2024,2024,1,same_author
 lyra,Lyra,Maksim Mrvica (1),1,1,1,2019,2019,1,same_author
 lyrica,Lyrica,Todes (1),1,1,1,2006,2006,1,same_author
 ma fi nom,Ma Fi Nom,Najwa Karam (1),1,1,1,2022,2022,1,same_author
@@ -1843,6 +1963,7 @@ mad world,Mad World,"2WEI, Tommee Profitt and Fleurie (1)",1,1,1,2026,2026,1,sam
 madam,The Madam,Jesper Kyd (1),1,1,1,2010,2010,1,same_author
 madrid,Madrid,Sayed Balaha (1),1,1,1,2018,2018,1,same_author
 mafia wars 22926,Mafia Wars-22926,"Micah Cadis, Andrew Jarod Smith, BMI (1)",1,1,1,2024,2024,1,same_author
+magdalenha,Magdalenha,Sergio Mendes (1),1,1,1,2013,2013,1,same_author
 magic mirror,Magic Mirror,Xavier Mortimer & Maxime Rodriguez (1),1,1,1,2021,2021,1,same_author
 magnifica presenze,Magnifica Presenze,Orchestra (1),1,1,1,2016,2016,1,same_author
 main theme from the saint,Main Theme from The Saint,Graeme Revell (1),1,1,1,1999,1999,1,same_author
@@ -1852,7 +1973,10 @@ make up,Make-up,The Hardkiss (1),1,1,1,2023,2023,1,same_author
 make you a believer,Make You a Believer,THE K!X (1),1,1,1,2022,2022,1,same_author
 makeba,Makeba,Jain (1),1,1,1,2019,2019,1,same_author
 making christmas remix pentatonix the citizens of halloween,Making Christmas Remix (from The Nightmare Before Christmas) Pentatonix & The Citizens of Halloween,,1,1,1,2025,2025,0,no_credit
+malo,Malo,Bebe (1),1,1,1,2026,2026,1,same_author
+mambo,Mambo,,1,1,1,2022,2022,0,no_credit
 mambo italiano,Mambo Italiano,Dany Brillant (1),1,1,1,2017,2017,1,same_author
+mambo no 5,Mambo No.5,,1,1,1,2012,2012,0,no_credit
 man o to,Man O To,Arash (1),1,1,1,2005,2005,1,same_author
 man with the harmonica song,The man with the harmonica Song,Ennio Morricone (1),1,1,1,2021,2021,1,same_author
 man with the hex,Man With the Hex,Atomic Fireballs (1),1,1,1,2014,2014,1,same_author
@@ -1870,6 +1994,7 @@ marketplace,Marketplace,Alan Menken (1),1,1,1,1993,1993,1,same_author
 marrakesh night market,Marrakesh Night Market,Loreena McKennitt / Turkish Percussion Group (1),1,1,1,2004,2004,1,same_author
 marry the night,Marry The Night (Afrojack Remix),Lady Gaga (1),1,1,1,2019,2019,1,same_author
 mary goes to jesus,Mary Goes to Jesus,John Debney (1),1,1,1,2005,2005,1,same_author
+mascagni,Mascagni,Andrea Bocelli & Celso Valli (1),1,1,1,2025,2025,1,same_author
 mascara,Mascara,Violet (1),1,1,1,2016,2016,1,same_author
 masciare witch,Masciare Witch Mix,Faraualla (1),1,1,1,2025,2025,1,same_author
 mask of zorro,The Mask of Zorro,,1,1,1,2006,2006,0,no_credit
@@ -1882,6 +2007,7 @@ me gusta,Me Gusta,Adolescent’s Orquesta (1),1,1,1,2019,2019,1,same_author
 me tut kamav,Me Tut Kamav,G-Night (1),1,1,1,2014,2014,1,same_author
 me voy,Me Voy (I am leaving),Yasmin Levy (1),1,1,1,2024,2024,1,same_author
 mean,Mean,Persephone (1),1,1,1,2026,2026,1,same_author
+medley bamboleo volare djobi djoba pida me la baila me,"Medley: Bamboleo, Volare, Djobi Djoba, Pida Me La, Baila Me",Gipsy Kings (1),1,1,1,2013,2013,1,same_author
 megalith,Megalith,T-Square (1),1,1,1,1999,1999,1,same_author
 megi gogitidze,Megi Gogitidze,Nu Geshinia (1),1,1,1,2018,2018,1,same_author
 melagholia mou,Melagholia Mou,Giorgos Alkaios (1),1,1,1,2003,2003,1,same_author
@@ -1901,6 +2027,7 @@ mi bombon,Mi Bombón (Extended Remix),Caba and Lion King (1),1,1,1,2019,2019,1,s
 microneseren,Microneseren,Bobby Hughes Combination (1),1,1,1,2005,2005,1,same_author
 miko s testimony,Miko's Testimony,Éric Serra (1),1,1,1,2005,2005,1,same_author
 mind heist evolution,Mind Heist: Evolution,Zack Hemsey (1),1,1,1,2024,2024,1,same_author
+mir ne znaet,Mir ne znaet,Iryna Bilyk (1),1,1,1,2011,2011,1,same_author
 mirage,Mirage,Night Session / Indiazz / Jolly Mukherjee (1),1,1,1,2010,2010,1,same_author
 mirko,Mirko,Rene Dupere (1),1,1,1,2005,2005,1,same_author
 mirror,The Mirror,Alexandre Desplat (1),1,1,1,2017,2017,1,same_author
@@ -1922,6 +2049,7 @@ monde inverse,Monde Inversé,Cirque Du Soleil (1),1,1,1,2016,2016,1,same_author
 mondo a go go,Mondo A Go Go!,Eat Static (1),1,1,1,2012,2012,1,same_author
 money,Money,Alan Cumming (1),1,1,1,2019,2019,1,same_author
 mongolia,Mongolia,Armand Amar (1),1,1,1,2017,2017,1,same_author
+monsieur l amour,Monsieur L'Amour,Dalida (1),1,1,1,2017,2017,1,same_author
 monster,Monster (Astrix Remix),Astrix & Infected Mushroom (1),1,1,1,2021,2021,1,same_author
 montagues capulets,Montagues & Capulets,"Richard Clayderman, Bulgarian Symphony Orchestra, Deyan Pavlov (1)",1,1,1,2021,2021,1,same_author
 moon s waterfalls,Moon's Waterfalls,Roland Brant (1),1,1,1,2000,2000,1,same_author
@@ -1956,6 +2084,7 @@ my heart will go on,My Heart Will Go On (Love Theme from Titanic),Céline Dion (
 my humps,My Humps,Black Eyed Peas (1),1,1,1,2011,2011,1,same_author
 my love music and solo darbuka,My love...Music and Solo Darbuka,Artem Uzunov (1),1,1,1,2025,2025,1,same_author
 my mother told me,My Mother Told Me (Extended Mix),"L.B. One, Datamotion & Perly I Lotry (1)",1,1,1,2022,2022,1,same_author
+my na lodochke katalis,My Na Lodochke Katalis (мы на лодочке катались),Valentina Tolkunova (1),1,1,1,2013,2013,1,same_author
 my nocturnal serenade,My Nocturnal Serenade,Yohio (1),1,1,1,2023,2023,1,same_author
 mysterious ways,Mysterious Ways,Color Purple New Broadway Cast (1),1,1,1,2024,2024,1,same_author
 mystics lullaby,Mystics Lullaby,Loreena McKennitt / Turkish Percussion Group (1),1,1,1,2004,2004,1,same_author
@@ -1976,10 +2105,12 @@ never seen the rain,Never Seen the Rain,Tones And I (1),1,1,1,2022,2022,1,same_a
 never teas us apart,Never Teas Us Apart,Bishop Briggs (1),1,1,1,2019,2019,1,same_author
 new life,A New Life,Burkard Dalwitz (1),1,1,1,2000,2000,1,same_author
 newton s cradle,Newton's Cradle,Ludovico Einaudi (1),1,1,1,2015,2015,1,same_author
+night of terror,Night of Terror,Clint Mansell (1),1,1,1,2025,2025,1,same_author
 night running,Night Running,,1,1,1,2009,2009,0,no_credit
 nightmare,Nightmare,Ronan Hardiman (1),1,1,1,2000,2000,1,same_author
 ninkou latora,Ninkou Latora,Violaine Corradi (1),1,1,1,2003,2003,1,same_author
 no 12 in c minor revolutionary etude,No. 12 in C Minor Revolutionary Etude,"Frédéric Chopin, Maurizio Pollini (1)",1,1,1,2019,2019,1,same_author
+no 14 pas de deux intrada variation i ii coda,No. 14 Pas De Deux: Intrada-Variation I/II-Coda,Pyotr Ilyich Tchaikovsky (1),1,1,1,2022,2022,1,same_author
 no face no name no number,No Face No Name No Number,Modern Talking (1),1,1,1,2022,2022,1,same_author
 no lo dire,No lo Diré,María Peláe (1),1,1,1,2026,2026,1,same_author
 no man no cry,No Man No Cry (Jimmy Sax Version),Jimmy Sax (1),1,1,1,2023,2023,1,same_author
@@ -1991,6 +2122,7 @@ nocturne in c sharp minor,Nocturne in C sharp minor,Chopin (1),1,1,1,2013,2013,1
 nocturne in f sharp minor op 48 no 2,"Nocturne in F-sharp minor, Op. 48 No. 2",Frédéric Chopin (1),1,1,1,2008,2008,1,same_author
 nocturne no 2 op 9 in e flat major,Nocturne No. 2 Op. 9 in E Flat Major,Chopin (1),1,1,1,2013,2013,1,same_author
 nocturne no 20 in c sharp minor op posth,"Nocturne No. 20 in C Sharp Minor, Op. Posth",Frederique Chopin (1),1,1,1,2022,2022,1,same_author
+nocturne razluka,"Nocturne ""Razluka",Mikhail Glinka (1),1,1,1,2013,2013,1,same_author
 non andare via,Non Andare Via,Petra Magoni (1),1,1,1,2019,2019,1,same_author
 nostradamus,Nostradamus,Royal Philharmonic Orchestra (1),1,1,1,2022,2022,1,same_author
 not about angels,Not About Angels,Birdy (1),1,1,1,2024,2024,1,same_author
@@ -1999,6 +2131,7 @@ notre dame de paris,Notre Dame de Paris,,1,1,1,2010,2010,0,no_credit
 notte stellata,Notte Stellata (The Swan),Il Volo (1),1,1,1,2016,2016,1,same_author
 nu geshinia,Nu Geshinia,Megi Gogitidze (1),1,1,1,2017,2017,1,same_author
 nuestro poema,Nuestro Poema,Raul di Blasio (1),1,1,1,1999,1999,1,same_author
+nureyev,Nureyev,Lisa Batiashvili & Dudana Mazmanishvili (1),1,1,1,2023,2023,1,same_author
 nyah and ethan,Nyah and Ethan,"Hans Zimmer, Elliot Goldenthal (1)",1,1,1,2018,2018,1,same_author
 nyana wam,Nyana Wam,"Ludwig Göransson, feat. Baaba Maal and Massamba Diop (1)",1,1,1,2026,2026,1,same_author
 o mundo vai,O Mundo Vai,Ivete Sangalo (1),1,1,1,2022,2022,1,same_author
@@ -2011,6 +2144,7 @@ od ebra do dunava,Od Ebra do Dunava,Barcelona Gipsy balKan Orchestra (1),1,1,1,2
 ode to joy,Ode to Joy,Imagine Music (1),1,1,1,2023,2023,1,same_author
 oh pretty woman,"Oh, Pretty Woman",Roy Orbison (1),1,1,1,2023,2023,1,same_author
 oh saint stephen,Oh Saint Stephen,Havasi (1),1,1,1,2025,2025,1,same_author
+ohoku,Ohoku (main theme),Arisa Okehazama (1),1,1,1,2026,2026,1,same_author
 old money,Old Money,Lana Del Rey (1),1,1,1,2026,2026,1,same_author
 ole guapa,Ole Guapa,Malando (1),1,1,1,1996,1996,1,same_author
 olei,Olei (Black),Nino Katamadze & Insight (1),1,1,1,2016,2016,1,same_author
@@ -2046,6 +2180,7 @@ oy u luzi chervona kalyna,Oy U Luzi Chervona Kalyna,The Kiffness (1),1,1,1,2023,
 oye negra,Oye Negra,Terry Snyder (1),1,1,1,2016,2016,1,same_author
 paco de lucia concierto aranjuez adagio,Paco de Lucía Concierto Aranjuez - Adagio,Paco de Lucia (1),1,1,1,2017,2017,1,same_author
 pacto de olivos,Pacto de Olivos,Sergei Grosny (1),1,1,1,2026,2026,1,same_author
+palestine pursuit,Palestine Pursuit,Greg J Walker (1),1,1,1,2022,2022,1,same_author
 palladio,Palladio,Escala (1),1,1,1,2010,2010,1,same_author
 palladio a cappella,Palladio 'a cappella' cover,SeiOttavi (1),1,1,1,2022,2022,1,same_author
 panda,Panda,Desiigner (1),1,1,1,2021,2021,1,same_author
@@ -2055,7 +2190,6 @@ paquita variation 2 moderato,Paquita: Variation 2: Moderato,"Leon Minkus, Anna T
 paris by night,Paris By Night,Bob Sinclar (1),1,1,1,2025,2025,1,same_author
 paris holds the key lynn ahrens stephen flaherty,"Paris Holds The Key (To Your Heart) – Lynn Ahrens, Stephen Flaherty",,1,1,1,2023,2023,0,no_credit
 paris sera toujours paris,Paris sera toujours paris,Zaz (1),1,1,1,2017,2017,1,same_author
-parla piu piano,Parla Piu Piano,Filippa Giordano (1),1,1,1,2016,2016,1,same_author
 partition,Partition,Beyoncé (1),1,1,1,2016,2016,1,same_author
 pasodoble,Pasodoble,Pasqual Narro (1),1,1,1,2014,2014,1,same_author
 passacaglia in g minor,Passacaglia in G minor,Georg Frideric Handel (1),1,1,1,1988,1988,1,same_author
@@ -2079,6 +2213,7 @@ piano sonata no 23 in f minor op 57 appassionata iii allegro ma non troppo,"Pian
 picture of dorian gray,Picture of Dorian Gray,Charlie Mole (1),1,1,1,2011,2011,1,same_author
 pied dans la main,Pied Dans La Main,Sylvain Durand (1),1,1,1,2015,2015,1,same_author
 pigalle,Pigalle (Interlude),Patricia Kaas (1),1,1,1,2010,2010,1,same_author
+ping pong,Ping Pong,Hyuna & Dawn (1),1,1,1,2023,2023,1,same_author
 pink panther,Pink Panther,Henry Mancini (1),1,1,1,1996,1996,1,same_author
 pirates of the caribbean,Pirates of the Caribbean,Klaus Badelt (1),1,1,1,2004,2004,1,same_author
 pitbull terrier,Pitbull Terrier,Emir Kusturica (1),1,1,1,2002,2002,1,same_author
@@ -2110,7 +2245,6 @@ pretty woman,Pretty Woman,,1,1,1,2013,2013,0,no_credit
 primavera,Primavera,Corciolli (1),1,1,1,2013,2013,1,same_author
 prison break,Prison Break,Ramin Djawadi (1),1,1,1,2008,2008,1,same_author
 private investigation,Private Investigation,Dire Straits (1),1,1,1,2011,2011,1,same_author
-prodigy,Prodigy,"Carlos Rafael Rivera, Carl Doy, Kōtarō Nakagawa (1)",1,1,1,2023,2023,1,same_author
 progeria,Progeria,Bachar Mar-Khalifé (1),1,1,1,2019,2019,1,same_author
 prologue marco polo,"Prologue, Marco Polo",Loreena McKennitt (1),1,1,1,2001,2001,1,same_author
 prophetic whispers,Prophetic Whispers,Brand X Music (1),1,1,1,2026,2026,1,same_author
@@ -2120,7 +2254,9 @@ psycho suite,Psycho Suite,Bernard Hermann (1),1,1,1,2023,2023,1,same_author
 puente roto,Puente Roto,Nicola Cruz (1),1,1,1,2025,2025,1,same_author
 puerto rico,Puerto Rico,The Rumbar (1),1,1,1,2019,2019,1,same_author
 pushin on,Pushin On,"2WEI, Marvin Brooks (1)",1,1,1,2021,2021,1,same_author
+puttin on the ritz,Puttin' on the Ritz (Jazzy Radio Mix),Taco feat. tomX (1),1,1,1,2025,2025,1,same_author
 puzzle box,The Puzzle Box,Nathan Johnson (1),1,1,1,2024,2024,1,same_author
+qele qele,"Qélé, Qélé",Sirusho (1),1,1,1,2023,2023,1,same_author
 quality of mercy,The Quality of Mercy,Max Richter (1),1,1,1,2019,2019,1,same_author
 quand c est,Quand C’est,Stromae (1),1,1,1,2023,2023,1,same_author
 quantum utopia,Quantum Utopia (feat. Eugene Hütz),Goran Bregović (1),1,1,1,2023,2023,1,same_author
@@ -2138,8 +2274,11 @@ queremos paz,Queremos Paz,Gotan Project (1),1,1,1,2013,2013,1,same_author
 querer,Querer,René Dupéré (1),1,1,1,2001,2001,1,same_author
 questa notte,Questa Notte,Ludovico Einaudi (1),1,1,1,2020,2020,1,same_author
 quidam,Quidam,Benoit Jutras (1),1,1,1,2001,2001,1,same_author
+quiteria and basilio,Quiteria And Basilio,Sofia National Opera Orchestra (1),1,1,1,2023,2023,1,same_author
 rabiosa,Rabiosa (Feat. Pitbull),Shakira (1),1,1,1,2024,2024,1,same_author
+radetzky march,Radetzky March,Johann Strauss I (1),1,1,1,2012,2012,1,same_author
 raid on leonesse,Raid on Leonesse,Jerry Goldsmith (1),1,1,1,2001,2001,1,same_author
+rasputin rocking son moskau,Rasputin/Rocking Son/Moskau,Dschinghis Khan (1),1,1,1,2020,2020,1,same_author
 rat d hotel,Rat d'hôtel,Maxime Rodriguez (1),1,1,1,2008,2008,1,same_author
 rave de favela,Rave de Favela,"Major Lazer, MC Lan, BEAM (1)",1,1,1,2021,2021,1,same_author
 ravel s bolero,Ravel's Bolero,Ray Conniff (1),1,1,1,2017,2017,1,same_author
@@ -2151,7 +2290,6 @@ red army ensemble kamarinskaya,"The Red Army Ensemble ""Kamarinskaya"" (Russian 
 red men,Red Men,Benoît Jutras (1),1,1,1,2009,2009,1,same_author
 reflection,Reflection,Christina Aguilera (1),1,1,1,2024,2024,1,same_author
 regarde,REGARDE !,Monroe and Violin Phonix (1),1,1,1,2026,2026,1,same_author
-remains of the day,Remains Of The Day,Danny Elfman (1),1,1,1,2017,2017,1,same_author
 remember my name,Remember My Name,"Power-Haus, Lloren, Berlin Aires, Jonathon Deering (1)",1,1,1,2026,2026,1,same_author
 remix oriental 2020 darbuka,Remix Oriental 2020 Darbuka,Mehdi Ryan (1),1,1,1,2024,2024,1,same_author
 renovatio,Renovatio,Steve Jablonsky (1),1,1,1,2006,2006,1,same_author
@@ -2203,7 +2341,6 @@ russian folk,Russian Folk,,1,1,1,2010,2010,0,no_credit
 russian sailor dance,Russian Sailor Dance,Reinhold Glière (1),1,1,1,2007,2007,1,same_author
 sabe de sangre,Sabe de sangre,Marina Heredia (1),1,1,1,2017,2017,1,same_author
 sahara,Sahara,Bond Girls (1),1,1,1,2003,2003,1,same_author
-sail,Sail (Glitch Hop Remix Mongoose),AWOLNATION (1),1,1,1,2014,2014,1,same_author
 saltanat dedikleri,Saltanat Dedikleri (feat. Bekir Unluataer),Myriam Fares and Fahir Atakoğlu (1),1,1,1,2021,2021,1,same_author
 salut,Salut,Hélène Ségara & Joe Dassin (1),1,1,1,2022,2022,1,same_author
 sam s blues,Sam's Blues,Sam Taylor (1),1,1,1,2011,2011,1,same_author
@@ -2237,19 +2374,21 @@ seyra,Seyra,Petr Dranga (1),1,1,1,2014,2014,1,same_author
 shadow hunter,Shadow Hunter,"Power-Haus, Christian Reindl (1)",1,1,1,2025,2025,1,same_author
 shadows and dust,Shadows and Dust,Adam Burns (1),1,1,1,2022,2022,1,same_author
 shake shake,Shake Shake,Nessi (1),1,1,1,2021,2021,1,same_author
+shape of you indian,Shape Of You Indian Mix (New Age Carnatic),IndianRaga & Aditya Rao (1),1,1,1,2023,2023,1,same_author
 she is dead,She is Dead,Eric Serra (1),1,1,1,1996,1996,1,same_author
 shehnai song,Shehnai Song,Sheila Chandra (1),1,1,1,2005,2005,1,same_author
 shel me versty,Shel me versty,Loyko [ru] (1),1,1,1,2012,2012,1,same_author
 shema,Shema (Hava Nagila),"Stanley Black, London Festival Orchestra, London Festival Chorus (1)",1,1,1,2020,2020,1,same_author
 shik shak shok,Shik Shak Shok,Yasar Akpence (1),1,1,1,2025,2025,1,same_author
+shine on you crazy diamond,Shine On You Crazy Diamond (Parts I - V),Pink Floyd (1),1,1,1,2008,2008,1,same_author
 shiro s estate,Shiro's Estate,Brian Tyler (1),1,1,1,2008,2008,1,same_author
 shot me down,Shot Me Down,David Guetta ft. Skylar Grey (1),1,1,1,2019,2019,1,same_author
 show me your love,Show Me Your Love,Tina Karol (1),1,1,1,2014,2014,1,same_author
 shurale,Shurale,Firad Yarullin (1),1,1,1,2003,2003,1,same_author
 si tu etais,Si tu etais,Salvatore Adamo (1),1,1,1,2017,2017,1,same_author
 si un jour,Si Un Jour,,1,1,1,2019,2019,0,no_credit
+sid s sing a long,Sid's Sing-A-Long,John Powell (1),1,1,1,2023,2023,1,same_author
 sind,Sind',Faraualla (1),1,1,1,2024,2024,1,same_author
-single ladies,Single Ladies (Put a Ring on It),Beyoncé (1),1,1,1,2015,2015,1,same_author
 sinyo,Sinyo,Desi Dobreva (1),1,1,1,2014,2014,1,same_author
 skeletons,Skeletons,Drehz (1),1,1,1,2018,2018,1,same_author
 skibidi,SKIBIDI,Little Big (1),1,1,1,2021,2021,1,same_author
@@ -2259,11 +2398,11 @@ sleuth ost,Sleuth OST,Patrick Doyle (1),1,1,1,2012,2012,1,same_author
 sling the decks,Sling The Decks,The Crystal Method (1),1,1,1,2015,2015,1,same_author
 sloppy soup samba,Sloppy Soup Samba,Daniel Pemberton (1),1,1,1,2021,2021,1,same_author
 slovanic march op 31,Slovanic March op.31,Tchaikovsky (1),1,1,1,2009,2009,1,same_author
+smoke on the water,Smoke on the water,Deep Purple (1),1,1,1,2012,2012,1,same_author
 smuglyanka,Smuglyanka,the Alexandrov Ensemble (1),1,1,1,2019,2019,1,same_author
 smuglyanka moldovanka,Smuglyanka Moldovanka,,1,1,1,2010,2010,0,no_credit
 smuglyanochka,Smuglyanochka,Anatoly Vekshin (1),1,1,1,2000,2000,1,same_author
 snake s dream,Snake's Dream,Night Session / Indiazz / Jolly Mukherjee (1),1,1,1,2010,2010,1,same_author
-snakefood,Snakefood,Safri duo (1),1,1,1,2008,2008,1,same_author
 so far,So Far,Ólafur Arnalds feat. Arnór Dan Arnarson (1),1,1,1,2022,2022,1,same_author
 so say we all,So Say We All,Audiomachine (1),1,1,1,2023,2023,1,same_author
 sogoni coun,Sogoni Coun,"Drums Of The World, Madou Djembe (1)",1,1,1,2013,2013,1,same_author
@@ -2280,12 +2419,14 @@ son uvidenny vo sne,Son uvidenny vo sne,Igor Krutoy (1),1,1,1,2007,2007,1,same_a
 song about bears,Song about Bears (Песня о Медведях),Alsou (1),1,1,1,2014,2014,1,same_author
 song on the beach,Song on the Beach,Arcade Fire (1),1,1,1,2016,2016,1,same_author
 song to miko,Song to Miko,Éric Serra (1),1,1,1,2005,2005,1,same_author
+soul makossa uk,Soul Makossa (Money) - UK Radio Edit,Yolanda Be Cool & DCUP (1),1,1,1,2023,2023,1,same_author
 soul man,Soul Man,Pitingo feat. Sam Moore (1),1,1,1,2019,2019,1,same_author
 sous le ciel de paris,Sous le ciel de Paris (song),Mireille Mathieu (1),1,1,1,2024,2024,1,same_author
 sozalah,Sozalah,Bijan Mortazavi (1),1,1,1,2009,2009,1,same_author
 spain,Spain (originally Malagueña),Anatoly Vekshin (1),1,1,1,2000,2000,1,same_author
 spanish dance,Spanish Dance,Taro Hakase (1),1,1,1,2013,2013,1,same_author
 spanish flame,Spanish Flame,Maxime Rodriguez (1),1,1,1,2026,2026,1,same_author
+spanish salsa,Spanish Salsa,,1,1,1,2016,2016,0,no_credit
 sparkling diamonds from moulin rouge,Sparkling Diamonds from Moulin Rouge!,,1,1,1,2024,2024,0,no_credit
 spartacus act i scene i the triumph of rome,"Spartacus, Act I, Scene I ""The Triumph of Rome","Rafael Baghdasaryan, Algis Zhuraitis, USSR State Symphony Orchestra (1)",1,1,1,2017,2017,1,same_author
 spartacus ballet suite no 2 adagio of spartacus and phrygia,Spartacus – Ballet Suite No. 2: Adagio of Spartacus and Phrygia,Aram Khachaturian (1),1,1,1,2014,2014,1,same_author
@@ -2319,6 +2460,7 @@ stranger,Stranger,"Dimash Kudaybergen, Igor Krutoy (1)",1,1,1,2026,2026,1,same_a
 street of sorrow,Street Of Sorrow,HAVASI (1),1,1,1,2022,2022,1,same_author
 strength of a thousand men,Strength of a Thousand Men (Instrumental),Two Steps From Hell (1),1,1,1,2023,2023,1,same_author
 string quartet no 8 in c minor op 110 ii allegro molto,String Quartet No. 8 in C Minor Op. 110: II. Allegro Molto,Dmitri Shostakovich (1),1,1,1,2022,2022,1,same_author
+strobe s nanafushi,Strobe's Nanafushi,Kodō (1),1,1,1,2019,2019,1,same_author
 struggle for ebullience,Struggle For Ebullience,,1,1,1,2009,2009,0,no_credit
 su chow prison from spy game,Su-Chow Prison (from Spy Game,Harry Gregson-Williams (1),1,1,1,2003,2003,1,same_author
 submission,Submission,Tyler Bates (1),1,1,1,2009,2009,1,same_author
@@ -2335,11 +2477,11 @@ super trouper,Super Trouper,"Meryl Streep, Julie Walters, Christine Baranski (1)
 supersonic,Supersonic (Brainbug Remix),Music Instructor (1),1,1,1,2001,2001,1,same_author
 superstar,Superstar,Andrew Lloyd Webber & Tim Rice (1),1,1,1,1991,1991,1,same_author
 surrounded,Surrounded,Nick Glennie-Smith (1),1,1,1,2002,2002,1,same_author
+survive,Survive,Junkie XL (1),1,1,1,2022,2022,1,same_author
 svanrand,Svanrand (Live),Heilung (1),1,1,1,2026,2026,1,same_author
 swag se swagat,Swag Se Swagat,Neha Bhasin (1),1,1,1,2026,2026,1,same_author
 swan lake act iii op 20,"Swan Lake, Act III, Op.20",Kirov Opera and Ballet Theatre (1),1,1,1,2022,2022,1,same_author
 swan song,Swan Song,Power-Haus & Ros Stephen (1),1,1,1,2026,2026,1,same_author
-sway,Sway,Rosemary Clooney (1),1,1,1,2016,2016,1,same_author
 swept away,Swept Away,Yanni (1),1,1,1,1991,1991,1,same_author
 swing brother swing,"Swing, Brother Swing",Billie Holiday (1),1,1,1,2015,2015,1,same_author
 swing phenomenon,The Swing Phenomenon (Radio Edit),Back&Baker (1),1,1,1,2020,2020,1,same_author
@@ -2348,7 +2490,6 @@ swing rave,Swing Rave,Farbwende (1),1,1,1,2026,2026,1,same_author
 sympathique,Sympathique,Pink Martini (1),1,1,1,2022,2022,1,same_author
 symphony no 25 in g minor l allegro con brio,"Symphony No. 25 In G Minor, l. Allegro con brio mix",Mozart (1),1,1,1,2007,2007,1,same_author
 symphony no 5 in c minor op 67,"Symphony No. 5 in C Minor, Op. 67",Ludwig van Beethoven (1),1,1,1,1987,1987,1,same_author
-syrtaki,Syrtaki,D. Moutsis (1),1,1,1,2004,2004,1,same_author
 t es ou,T'es oú,Camille Lellouche (1),1,1,1,2024,2024,1,same_author
 taiko music,Taiko Music,"Drums Of The World, Madou Djembe (1)",1,1,1,2013,2013,1,same_author
 taka takata,Taka takata,Irakere (1),1,1,1,2019,2019,1,same_author
@@ -2362,6 +2503,7 @@ taliquete,Taliquete,Miguel Czachowski (1),1,1,1,2012,2012,1,same_author
 tamacun,Tamacun,Rodrigo Y Gabriela (1),1,1,1,2012,2012,1,same_author
 tamally maak,Tamally Maak,Amr Diab (1),1,1,1,2005,2005,1,same_author
 taming of the fire,Taming of the Fire,Andrey Petrov (1),1,1,1,2017,2017,1,same_author
+tandav music,Tandav Music,Anu Malik (1),1,1,1,2023,2023,1,same_author
 tango 2000,Tango 2000 (Kut and Swel Tribal Remix),Degg & Blakker (1),1,1,1,2013,2013,1,same_author
 tango and resurgence,Tango and Resurgence,Sultan Ali (1),1,1,1,2008,2008,1,same_author
 tango ballet for violin and string orchestra titulos,Tango Ballet For Violin And String Orchestra: Titulos,Astor Piazzolla (1),1,1,1,2006,2006,1,same_author
@@ -2381,7 +2523,6 @@ te aviso te anuncio,"Te aviso, te anuncio (Tango)",Shakira (1),1,1,1,2003,2003,1
 teahouse from the matrix reloaded,Teahouse from The Matrix Reloaded,Don Davis (1),1,1,1,2005,2005,1,same_author
 tears,Tears,Clean Bandit feat. Louisa Johnson (1),1,1,1,2025,2025,1,same_author
 technologicque park,Technologicque Park,Orbital (1),1,1,1,2004,2004,1,same_author
-technologique park,Technologique Park,Orbital (1),1,1,1,2011,2011,1,same_author
 tema de sira el tiempo entre costuras,"Tema De Sira, El tiempo entre costuras",Cesar Benito (1),1,1,1,2016,2016,1,same_author
 tempest,The Tempest,Gabriel Saban (1),1,1,1,2026,2026,1,same_author
 terry s theme,Terry's Theme,Charlie Chaplin (1),1,1,1,2007,2007,1,same_author
@@ -2402,6 +2543,7 @@ theme from west side story,Theme from West Side Story,Leonard Bernstein (1),1,1,
 think,Think,Aretha Franklin (1),1,1,1,2019,2019,1,same_author
 this is halloween,This Is Halloween,Danny Elfman (1),1,1,1,2012,2012,1,same_author
 tholoni i matia mou,Tholoni I Matia Mou,Giorgos Alkaios (1),1,1,1,2003,2003,1,same_author
+thought i d ring you,Thought I'd Ring You,Alain Delon & Shirley Bassey (1),1,1,1,2024,2024,1,same_author
 three musicians,Three Musicians,Juan Martín (1),1,1,1,2000,2000,1,same_author
 ti si mi u krvi,Ti si mi u krvi,Zdravko Čolić (1),1,1,1,2017,2017,1,same_author
 tico tico no fuba,Tico-Tico no fubá,Zequinha de Abreu (1),1,1,1,2019,2019,1,same_author
@@ -2440,12 +2582,12 @@ tribe,Tribe,Kim Viera (1),1,1,1,2024,2024,1,same_author
 tribletrouble,Tribletrouble,bard beadle (1),1,1,1,2025,2025,1,same_author
 trije ljubcki,Trije ljubčki,Helena Blagne (1),1,1,1,2023,2023,1,same_author
 trisha,Trisha,Mark Mancina & Trevor Rabin (1),1,1,1,2003,2003,1,same_author
-tristan iseult,Tristan & Iseult,Maxime Rodriguez (1),1,1,1,2008,2008,1,same_author
 triumph,Triumph,Edvin Marton (1),1,1,1,2021,2021,1,same_author
 tschubtschik,Tschubtschik,Khoronko Orchestra (1),1,1,1,2016,2016,1,same_author
 tsigani,Tsigani,Yildiz Ibrahimova (1),1,1,1,2011,2011,1,same_author
 tu si na cosa grande,Tu si' na cosa grande,Domenico Modugno (1),1,1,1,2025,2025,1,same_author
 tunnel part 1,The Tunnel Part 1,Harry Gregson-Williams / Trevor Rabin (1),1,1,1,2000,2000,1,same_author
+turandot act iii nessun dorma,"Turandot, Act III: Nessun dorma","Luciano Pavarotti John Alldis Choir, Wandsworth School Boys Choir, London Philharmonic Orchestra & Zubin Mehta (1)",1,1,1,2024,2024,1,same_author
 turn down for what,Turn Down for What,"DJ Snake, Lil John (1)",1,1,1,2024,2024,1,same_author
 tutti frutti,Tutti Frutti,Dany Brillant (1),1,1,1,2022,2022,1,same_author
 twisted tales,Twisted Tales,"Power-Haus, Joni Fuller (1)",1,1,1,2025,2025,1,same_author
@@ -2459,7 +2601,6 @@ ulichnie strasti,Ulichnie strasti,Didulya (1),1,1,1,2005,2005,1,same_author
 un amore grande,Un Amore Grande,Peppino Gagliardi (1),1,1,1,2024,2024,1,same_author
 un bel di vedremo from madame butterfly,Un bel di vedremo from Madame Butterfly,Giacomo Puccini (1),1,1,1,2012,2012,1,same_author
 un vie d amour,Un Vie D'amour,Charles Aznavour & Mireille Mathieu (1),1,1,1,2019,2019,1,same_author
-una mattina,Una Mattina,Ludovico Einaudi (1),1,1,1,2021,2021,1,same_author
 una notte sul monte calvo,Una Notte Sul Monte Calvo,Festival Symphony Orchestra (1),1,1,1,2017,2017,1,same_author
 unchain my heart,Unchain My Heart,Joe Cocker (1),1,1,1,2018,2018,1,same_author
 under lock and key,Under Lock and Key,Audiomachine (1),1,1,1,2024,2024,1,same_author
@@ -2483,7 +2624,6 @@ valsapena,Valsapena,Cirque du Soleil (1),1,1,1,2026,2026,1,same_author
 valsapena from cirque du soleil discography,Valsapena from Cirque du Soleil discography,Alegría (1),1,1,1,2023,2023,1,same_author
 valse,Valse,Nicolas Jorelle (1),1,1,1,2016,2016,1,same_author
 valse triste,Valse Triste,Jean Sibelius (1),1,1,1,2016,2016,1,same_author
-vampire,vampire,Olivia Rodrigo (1),1,1,1,2025,2025,1,same_author
 vampire hunters,Vampire Hunters,Wojciech Kilar (1),1,1,1,1993,1993,1,same_author
 vampires lesbian vampires,Vampires? Lesbian vampires!,,1,1,1,2010,2010,0,no_credit
 vas dis,Vas Dis,Wishbone Ash (1),1,1,1,2003,2003,1,same_author
@@ -2492,6 +2632,7 @@ vegas rehearsal that s all right,Vegas Rehearsal/That's All Right,Austin Butler 
 velocity,Velocity,Nathan Lanier (1),1,1,1,2018,2018,1,same_author
 vencer al amor,Vencer al Amor,India Martínez (1),1,1,1,2019,2019,1,same_author
 vendetta sciliana,Vendetta Sciliana,Angelo Petisi Orchestra and Tarantella (1),1,1,1,2013,2013,1,same_author
+vengo anch io,Vengo Anch'io,Paolo Belli (1),1,1,1,2024,2024,1,same_author
 venice rooftops,Venice rooftops,Jesper Kyd (1),1,1,1,2010,2010,1,same_author
 venus,Venus,The Music Makers (1),1,1,1,2022,2022,1,same_author
 verdi requiem dies irae,"Verdi: Requiem, Dies irae",,1,1,1,2019,2019,0,no_credit
@@ -2504,6 +2645,7 @@ violet s dance of passion,Violet's Dance of Passion (ヴァイオレット情熱
 violet theme,Violet Theme,Pochill (1),1,1,1,2003,2003,1,same_author
 vivaldi storm,Vivaldi Storm,2Cellos (1),1,1,1,2020,2020,1,same_author
 vive el verano,Vive el Verano,Paulina Rubio (1),1,1,1,2003,2003,1,same_author
+vivire paraty,Vivire Paraty,Los Niños de Sara (1),1,1,1,2018,2018,1,same_author
 vocalise,Vocalise,Lara Fabian & Igor Krutoy (1),1,1,1,2011,2011,1,same_author
 voces del danubio,Voces del Danubio,Luis Cobos (1),1,1,1,2016,2016,1,same_author
 volante,Volante,Caleb Swift and Hypersonic Music (1),1,1,1,2024,2024,1,same_author
@@ -2535,6 +2677,7 @@ we can runaway,We Can Runaway (Trailerized),Juneau Marie (1),1,1,1,2025,2025,1,s
 we go on snoopy elevator chase,"We Go On Snoopy, Elevator Chase",Christophe Beck (1),1,1,1,2017,2017,1,same_author
 we know what you whisper,We Know What You Whisper (feat. Busiswa),Ludwig Göransson (1),1,1,1,2024,2024,1,same_author
 we no speak americano,We No Speak Americano,Yolanda Be Cool & DCUP (1),1,1,1,2026,2026,1,same_author
+we will find it,We Will Find It,"Emily Glass, Dasychira (1)",1,1,1,2026,2026,1,same_author
 weary sun,Weary Sun,Jerzy Peterburgski (1),1,1,1,2009,2009,1,same_author
 welcome to wonderland,Welcome to Wonderland,"Janet Dacal, Karen Mason, Edward Staudenmayer, Danny Stiles, Kate Shindle & Wonderland Ensemble (1)",1,1,1,2024,2024,1,same_author
 westside story prologue,Westside Story Prologue,Columbia Studio Orchestra (1),1,1,1,2018,2018,1,same_author
@@ -2545,6 +2688,7 @@ wheat,The Wheat,Hans Zimmer (1),1,1,1,2014,2014,1,same_author
 when you came into my life,When You Came Into My Life,Scorpions (1),1,1,1,2019,2019,1,same_author
 when you re good to mama,When You're Good To Mama,Queen Latifah and Taye Diggs (1),1,1,1,2022,2022,1,same_author
 where have you been,Where Have You Been,Rihanna (1),1,1,1,2025,2025,1,same_author
+where were you at st rhino s day,Where were you at St Rhino's Day,John Powell (1),1,1,1,2010,2010,1,same_author
 whip,Whip,Arca (1),1,1,1,2026,2026,1,same_author
 whirled you,The Whirled You Live,Etherfox (1),1,1,1,2007,2007,1,same_author
 white darbouka,White Darbouka,Hovannes K (1),1,1,1,2010,2010,1,same_author
@@ -2554,6 +2698,7 @@ who s that creepin,Who's That Creepin'?,Big Bad Voodoo Daddy (1),1,1,1,2012,2012
 who you really are,Who You Really Are,"Michael Price, David Arnold (1)",1,1,1,2023,2023,1,same_author
 wiegenlied op 49 no 4,"Wiegenlied, Op. 49 Nº 4",Johannes Brahms (1),1,1,1,2006,2006,1,same_author
 wild dances,Wild Dances,Ruslana (1),1,1,1,2023,2023,1,same_author
+wildschutz rap,Wildschütz Räp,Hubert von Goisern & die Alpinkatzen (1),1,1,1,2012,2012,1,same_author
 william tell overture,William Tell Overture,Gioachino Rossini (1),1,1,1,2015,2015,1,same_author
 wings,Wings,Little Mix (1),1,1,1,2022,2022,1,same_author
 winner takes it all,The Winner Takes It All,Carla Bruni (1),1,1,1,2022,2022,1,same_author
@@ -2566,6 +2711,7 @@ womanizer,Womanizer,Britney Spears (1),1,1,1,2025,2025,1,same_author
 wonder woman a call to stand,"Wonder Woman, a Call to Stand",Junxie XL (1),1,1,1,2026,2026,1,same_author
 word,The Word [PMT Remix],Dope Smugglaz (1),1,1,1,2002,2002,1,same_author
 world awakened,A World Awakened,Junxie XL (1),1,1,1,2026,2026,1,same_author
+world has gone insane,The World Has Gone Insane,Anthony Warlow (1),1,1,1,2024,2024,1,same_author
 worth it,Worth It,Fifth Harmony feat. Kid Ink (1),1,1,1,2015,2015,1,same_author
 would you and,Would You... (Radio Edit) and (Long Dance Mix),Touch and Go (1),1,1,1,2002,2002,1,same_author
 would you run,WOULD YOU RUN,TRI.BE (1),1,1,1,2026,2026,1,same_author
@@ -2577,7 +2723,6 @@ ya ya ringe ringe raja,Ya Ya Ringe Ringe Raja,Goran Bregović (1),1,1,1,1998,199
 yama,Yama (feat. Tribal Dance & Natalie Wamba Berry),"Armin van Buuren & Vini Vici, PEDRO SAMPAIO, Anitta & Dadju (1)",1,1,1,2025,2025,1,same_author
 yas mowed clover,Yas mowed clover (Jackpot Hot Remix),Misha FM (1),1,1,1,2022,2022,1,same_author
 yes sir i can boogie,"Yes Sir, I Can Boogie",The Fratellis (1),1,1,1,2025,2025,1,same_author
-yesterday,Yesterday,Ofra Harnoy (1),1,1,1,2009,2009,1,same_author
 yo tambien,Yo también,Camela (1),1,1,1,2011,2011,1,same_author
 yo tengo una cosa,Yo Tengo una Cosa,Niña Pastori (1),1,1,1,2025,2025,1,same_author
 yodel song,The Yodel Song,,1,1,1,2010,2010,0,no_credit
@@ -2607,8 +2752,10 @@ zion,Zion,Fluke (1),1,1,1,2003,2003,1,same_author
 zycie kocham cie nad zycie,"Życie, Kocham Cię Nad Życie",Edyta Geppert (1),1,1,1,2022,2022,1,same_author
 белыи лебедь,Белый лебедь,Tamara Gverdtsiteli (1),1,1,1,2021,2021,1,same_author
 веселая кадриль,Весёлая кадриль,Anna Litvinenko (1),1,1,1,2018,2018,1,same_author
+вечная любовь,Вечная любовь (feat. Tamara Gverdtsiteli),,1,1,1,2023,2023,0,no_credit
 восточные сказки блестящие,Восточные сказки - Блестящие,,1,1,1,2023,2023,0,no_credit
 вярвам в чудеса,Вярвам в чудеса (feat. Hassan & Ibrahim),"Krisia Todorova, Ku-Ku Band and Slavi Trifonov (1)",1,1,1,2022,2022,1,same_author
+глаза,Глаза,Jamilya Serkebaeva (1),1,1,1,2011,2011,1,same_author
 гоп ця,Гоп-ця,Vidopolasov's shriek (1),1,1,1,2020,2020,1,same_author
 двигаться,Двигаться,"Raim, Village Girls, Rockin' Nation (1)",1,1,1,2020,2020,1,same_author
 динь динь динь,Динь – динь динь (Din Din Din),Oleg Pogudin (1),1,1,1,2012,2012,1,same_author
@@ -2623,8 +2770,6 @@ zycie kocham cie nad zycie,"Życie, Kocham Cię Nad Życie",Edyta Geppert (1),1,
 не исчезаи,Не исчезай,Галина Беседина and Сергей Тараненко (1),1,1,1,2025,2025,1,same_author
 не твоя віина,не твоя війна,Okean Elzy (1),1,1,1,2022,2022,1,same_author
 ночь на лысои горе,Ночь на лысой горе,BELSUONO (1),1,1,1,2022,2022,1,same_author
-очи черные,Очи чёрные,EgorGayduk (1),1,1,1,2026,2026,1,same_author
-снег,Снег,Elena Vaenga (1),1,1,1,2023,2023,1,same_author
 собирая желтые листья,Собирая Желтые Листья (Collect Yellow Leaves),Andrei Dani (1),1,1,1,2013,2013,1,same_author
 там нет меня,Там нет меня,Sevara Nazarkhan (1),1,1,1,2024,2024,1,same_author
 танго,ТАНГО,Lili Ivanova (1),1,1,1,2026,2026,1,same_author
