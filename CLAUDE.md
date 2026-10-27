@@ -9,12 +9,12 @@ A catalog of music used by rhythmic gymnasts, built from English Wikipedia, answ
 The owner talks in Russian; code, comments, README and commit messages are in English.
 
 ## Status (2026-10-27) — start here
-- **Committed locally, not pushed (owner, 2026-10-27: "commit as a result; questions tomorrow")**: step 23 (sorting,
+- **Published 2026-10-27, release tag `v0.3.0`** (GitHub Pages and the artifact, version 33): step 23 (sorting,
   Genre select, Olympic cycles — pushed 2026-10-26, eaab93f), step 24 (continental championships: 1,550 gymnasts),
   step 25 (music for the new gymnasts' articles) and the owner's hand-found music (data/manual/owner_routines.csv):
   4,488 routine-years, 214 gymnasts with music, 2,735 works, 3,115 versions; 248 tests pass. Draft = artifact version 33.
   The owner answered the review sheets (2026-10-27); task-verifier passed after the Bolero fix (Alyabyeva's Carmen
-  Suite numbers had split Ravel's Bolero); person pages (#person-N) and the PayPal link added. Waiting: her "publish".
+  Suite numbers had split Ravel's Bolero); person pages (#person-N) and the PayPal link added.
   Later (owner): authors of 10 new works used by 2+ gymnasts (third round `work_authors --new`).
 - **Published** (steps 19–22, 2026-10-20; release `v0.2.0`): https://borisenkoanna1193.github.io/rg-music-catalog/ (public,
   GitHub Pages) and https://claude.ai/artifact/2Hz5iyZiwAmbv2N35ManNv (private). Repo https://github.com/BorisenkoAnna1193/rg-music-catalog,
