@@ -1,40 +1,24 @@
 {
  "counts_head": {
-  "routines": 4489,
-  "works": 2755,
-  "versions": 3124,
-  "gymnasts_with_music": 214
- },
- "counts_now": {
   "routines": 4488,
   "works": 2750,
   "versions": 3121,
   "gymnasts_with_music": 214
  },
- "split_changes": [
-  {
-   "title": "imagine",
-   "before": "split_by_credit",
-   "after": "joined_by_owner",
-   "flag": ""
-  },
-  {
-   "title": "yesterday",
-   "before": "split_by_credit",
-   "after": "joined_by_owner",
-   "flag": ""
-  }
- ],
+ "counts_now": {
+  "routines": 4488,
+  "works": 2750,
+  "versions": 3120,
+  "gymnasts_with_music": 214
+ },
+ "split_changes": [],
  "suspicious_joins": [],
  "unused_owner_rows": [],
  "timings": {
-  "merge": 0.5709077090000001,
-  "parse": 0.284795959,
-  "works": 0.16762458299999994,
-  "resolve": 79.64413179099999,
-  "db": 0.33329904199999305,
-  "site_export": 0.14873445799999274,
-  "tests": 1.439665000000005
+  "resolve": 78.646477958,
+  "db": 0.3299943749999983,
+  "site_export": 0.1526033749999982,
+  "tests": 1.3906903749999913
  },
  "failed_stage": "",
  "base": "HEAD"

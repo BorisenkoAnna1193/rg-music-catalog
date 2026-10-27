@@ -80,7 +80,7 @@ ninja,Ninja,,3,6,6,1,2008,2022,,1,Maxime Rodriguez (6),same_author,0,default,,un
 rise,Rise,,3,6,6,1,2005,2023,,1,Safri Duo (6),same_author,0,default,,unknown,,,,,,proposal
 turandot,Turandot,,3,6,6,1,2007,2018,Nessun dorma (4),2,Giacomo Puccini (5),same_author,1,composer,Giacomo Puccini,composer,Giacomo Puccini,,,,yes,rule
 bensonhurst blues,Bensonhurst Blues,,3,5,5,1,2020,2023,,1,Oscar Benton (5),same_author,0,default,,performer,,,,,yes,proposal
-black cat white cat,"Black Cat, White Cat",,3,5,5,3,2001,2014,Bubamara (ladybug) (1),2,"Nele Karajlić, Vojislav Aralica & Dejan Sparavalo (2) | Goran Bregovic (2) | Dejan Sparavalo (1)",different_authors,0,default,,composer,Goran Bregović,,"Black Cat, White Cat",film,,owner
+black cat white cat,"Black Cat, White Cat",,3,5,5,2,2001,2014,Bubamara (ladybug) (1),2,"Nele Karajlić, Vojislav Aralica & Dejan Sparavalo (2) | Goran Bregovic (2) | Dejan Sparavalo (1)",different_authors,0,default,,composer,"Nele Karajlić, Dejan Sparavalo, Vojislav Aralica",,"Black Cat, White Cat",film,,owner
 california dreamin,California Dreamin',,3,5,5,2,2019,2026,,2,Sia (2) | 33Tours (2) | 33 Tours (1),different_authors,0,default,,performer,,,,,yes,proposal
 circle of life,Circle Of Life,,3,5,5,3,2019,2025,,3,"Carmen Twillie, Lebo M (3) | Swingrowers, District 78, J Balvin & Skrillex (1) | Caba and Lion King (1)",different_authors,0,default,,performer,,,,,yes,proposal
 el conquistador,El Conquistador,,3,5,5,2,2008,2025,,1,Maxime Rodriguez (5),same_author,0,default,,performer,,,,,yes,proposal
@@ -436,7 +436,7 @@ sail,Sail,,2,2,2,1,2014,2024,,2,AWOLNATION (2),same_author,0,default,,performer,
 samba do mundo,Samba Do Mundo,,2,2,2,2,2019,2025,,2,Gregor Salto Feat. Saxsymbol & Todorov (1) | Alcione (1),different_authors,0,default,,unknown,,,,,,proposal
 samba vocalizado,Samba Vocalizado,,2,2,2,1,2013,2022,,1,Luciano Perrone (2),same_author,0,default,,unknown,,,,,,proposal
 santa maria,Santa María (Del Buen Aires),,2,2,2,1,2006,2011,,2,Gotan Project (1) | Gotan project (1),same_author,0,default,,unknown,,,,,,proposal
-si te vas,Si te vas (flamenco),,2,2,2,1,1999,1999,,1,,no_credit,0,default,,unknown,,,,,,owner
+si te vas,Si te vas (flamenco),,2,2,2,1,1999,1999,,1,,no_credit,0,default,,folk,folk music,,,,,owner
 single ladies,Single Ladies (Put a Ring on It),,2,2,2,1,2015,2016,,1,Beyoncé (2),same_author,0,default,,performer,,,,,yes,proposal
 sleeping beauty,The Sleeping Beauty,Pyotr Ilyich Tchaikovsky,2,2,2,1,1994,2007,"Act 1, no. 8 Pas d'action (1)",2,Pyotr Tchaikovsky (1) | Tchaikovsky (1),same_author,1,composer,Pyotr Ilyich Tchaikovsky,composer,Pyotr Ilyich Tchaikovsky,,,,,rule
 smells like teen spirit,Smells Like Teen Spirit,,2,2,2,2,2025,2026,,1,"Tommee Profitt, Fleurie (1) | Nirvana (1)",different_authors,0,default,,performer,,,,,yes,proposal

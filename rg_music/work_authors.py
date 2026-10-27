@@ -192,10 +192,13 @@ def main(argv: list[str] | None = None) -> int:
         corrections = list(csv.DictReader(CORRECTIONS.open(encoding="utf-8-sig"))) if CORRECTIONS.exists() else []
         rows = import_sheet(list(csv.DictReader(args.sheet.open(encoding="utf-8-sig"))), read(proposals_file),
                             corrections)
+        old = list(csv.DictReader(AUTHORS.open(encoding="utf-8-sig"))) if AUTHORS.exists() else []
         if args.new:  # a second round: the works decided before stay exactly as they are
-            old = list(csv.DictReader(AUTHORS.open(encoding="utf-8-sig")))
             done = {r["work_key"] for r in old}
             rows = sorted(old + [r for r in rows if r["work_key"] not in done], key=lambda r: r["work_key"])
+        else:  # re-importing the first sheet must not drop the rows added by later rounds (--new)
+            mine = {r["work_key"] for r in rows}
+            rows = sorted(rows + [r for r in old if r["work_key"] not in mine], key=lambda r: r["work_key"])
         with AUTHORS.open("w", newline="", encoding="utf-8-sig") as f:
             wr = csv.DictWriter(f, fieldnames=AUTHOR_FIELDS)
             wr.writeheader()

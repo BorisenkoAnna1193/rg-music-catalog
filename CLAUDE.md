@@ -429,7 +429,7 @@ Decided to offer English and Russian. What gets a Russian version:
   ones Claude is sure of (source `claude`); the owner reviews and completes them later.
 - `rg_music/site_export.py` → `site/data.json` (compact, references by list position, ~460 KB) and `site/index.html`
   (= `site/app.html` wrapped into a full document). `site/app.html` is the whole static site (vanilla JS, hash routes
-  #home #gymnasts #gymnast-N #music #work-N #rankings, EN/RU, light only like the mockups, both ranking modes); it computes every
+  #home #gymnasts #gymnast-N #music #work-N #person-N #rankings (a person = a work author or a version performer, linked wherever the name appears; step 23), EN/RU, light only like the mockups, both ranking modes); it computes every
   statistic in the browser. Pipeline end: `python -m rg_music.db && python -m rg_music.site_export`.
 - Published: claude.ai artifact https://claude.ai/artifact/2Hz5iyZiwAmbv2N35ManNv (republish `site/app.html` with
   files {"data.json": "site/data.json"}) and GitHub Pages https://borisenkoanna1193.github.io/rg-music-catalog/

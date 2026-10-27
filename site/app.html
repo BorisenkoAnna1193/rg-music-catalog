@@ -55,6 +55,7 @@ select.period { width: 15em; }
 .card { display: block; border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px; min-width: 0; }
 .card:hover { border-color: var(--muted); color: inherit; }
 .card .t { font-weight: 700; font-size: 16px; }
+.plink { text-decoration: underline dotted; text-underline-offset: 3px; }
 .yt { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: var(--link); margin-top: 10px; min-height: 28px; }
 .yt:hover { text-decoration: underline; }
 .badge { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 10px; background: var(--soft); white-space: nowrap; }
@@ -123,7 +124,7 @@ footer a { text-decoration: underline; }
       countBy: 'Count by', byGym: 'By gymnasts', byRou: 'By routines',
       exG: 'How many different gymnasts chose it.', exR: 'How often it was heard: every routine counts, so the same music on another apparatus or in another season counts again.',
       boards: [['Music', 'Works'], ['Performers', 'Whose version the gymnast uses'], ['Composers', 'Classical, jazz, tango, film, musical'], ['Films', 'Music written for a film, musical or game']],
-      kpiG: 'gymnasts', kpiR: 'routines', kpiV: 'versions', findYt: 'Find on YouTube', video: 'Video', kinds: { classical: 'Classical', song: 'Song', film: 'Film', folk: 'Folk', other: 'Other' }, songAuthor: n => `song · ${n} version${n === 1 ? '' : 's'}`,
+      kpiG: 'gymnasts', kpiR: 'routines', kpiV: 'versions', kpiW: 'works', asAuthor: 'As composer / author', asPerformer: 'As performer', findYt: 'Find on YouTube', video: 'Video', kinds: { classical: 'Classical', song: 'Song', film: 'Film', folk: 'Folk', other: 'Other' }, songAuthor: n => `song · ${n} version${n === 1 ? '' : 's'}`,
       vt: { original: 'original', cover: 'cover', remix: 'remix', medley: 'medley', cast: 'cast', instrumental: 'instrumental', arrangement: 'arrangement', unknown: '' },
       found: 'Found', nothing: 'Nothing found.', notFound: 'This page does not exist.', back: 'Back to home', events: 'Performed at',
       source: 'Data: English Wikipedia, with gaps filled from Spanish and Russian Wikipedia (CC BY-SA 4.0), and MusicBrainz (CC0). Music identified and reviewed by hand; Russian names in progress.', built: 'Built',
@@ -144,7 +145,7 @@ footer a { text-decoration: underline; }
       countBy: 'Считать по', byGym: 'По гимнасткам', byRou: 'По программам',
       exG: 'Сколько разных гимнасток выбрали эту музыку.', exR: 'Как часто она звучала: считается каждая программа — та же музыка на другом предмете или в следующем сезоне засчитывается ещё раз.',
       boards: [['Музыка', 'Произведения'], ['Исполнители', 'Чью версию использует гимнастка'], ['Композиторы', 'Классика, джаз, танго, кино, мюзиклы'], ['Фильмы', 'Музыка, написанная для фильма, мюзикла или игры']],
-      kpiG: 'гимнасток', kpiR: 'программ', kpiV: 'версий', findYt: 'Найти на YouTube', video: 'Видео', kinds: { classical: 'Классика', song: 'Песня', film: 'Кино', folk: 'Народная', other: 'Другое' }, songAuthor: n => `песня · версий: ${n}`,
+      kpiG: 'гимнасток', kpiR: 'программ', kpiV: 'версий', kpiW: 'произведений', asAuthor: 'Как композитор / автор', asPerformer: 'Как исполнитель', findYt: 'Найти на YouTube', video: 'Видео', kinds: { classical: 'Классика', song: 'Песня', film: 'Кино', folk: 'Народная', other: 'Другое' }, songAuthor: n => `песня · версий: ${n}`,
       vt: { original: 'оригинал', cover: 'кавер', remix: 'ремикс', medley: 'попурри', cast: 'актёры', instrumental: 'инструментал', arrangement: 'аранжировка', unknown: '' },
       found: 'Найдено', nothing: 'Ничего не найдено.', notFound: 'Такой страницы нет.', back: 'На главную', events: 'Выступления',
       source: 'Данные: английская Википедия, пробелы дополнены из испанской и русской (CC BY-SA 4.0), и MusicBrainz (CC0). Музыка сопоставлена и проверена вручную; русские названия дополняются.', built: 'Собрано',
@@ -192,6 +193,14 @@ footer a { text-decoration: underline; }
       const ys = rs.map(r => d.routines[r][1]).filter(Boolean);
       return { g: gs.size, n: rs.length, split, y0: Math.min(...ys), y1: Math.max(...ys), versions: new Set(d.workTracks[i].map(x => x[1])).size };
     });
+    // people: a work's author (composer, folk...) and every performer named in a version ("A / B" = two people);
+    // one name = one page, whether the person wrote the music, performed it or both
+    d.people = new Map();
+    const person = n => d.people.get(n) || d.people.set(n, { name: n, ru: '', asAuthor: new Set(), asPerf: new Set() }).get(n);
+    d.works.forEach((w, i) => { if (w[2] && w[4] !== 'performer') { const p = person(w[2]); p.asAuthor.add(i); p.ru = p.ru || w[3] || ''; } });
+    d.versions.forEach(v => v[1].split(' / ').filter(Boolean).forEach(n => person(n).asPerf.add(v[0])));
+    d.personList = [...d.people.values()];
+    d.personList.forEach((p, i) => { p.i = i; });
     d.order = d.works.map((_, i) => i).sort((a, b) => d.workStats[b].g - d.workStats[a].g || d.workStats[b].n - d.workStats[a].n);
     return d;
   }
@@ -201,6 +210,11 @@ footer a { text-decoration: underline; }
   const appName = a => { const x = D.apparatus[a]; return x ? (ru() && x[1] ? x[1] : x[0]) : ''; };
   const wName = i => { const w = D.works[i]; return ru() && w[1] ? w[1] : w[0]; };
   const wAuthor = i => { const w = D.works[i]; if (w[4] === 'performer' || !w[2]) return t().songAuthor(D.workStats[i].versions); return ru() && w[3] ? w[3] : w[2]; };
+  const pName = p => ru() && p.ru ? p.ru : p.name;
+  const pLink = (name, label) => { const p = D.people.get(name); return p ? `<a class="plink" href="#person-${p.i}">${esc(label || pName(p))}</a>` : esc(label || name); };
+  const perfLinks = perf => perf.split(' / ').map(n => pLink(n)).join(' / ');
+  // the author line of a work: a link to the composer's page; a pop work names no author ("song · 3 versions")
+  const authorHtml = i => { const w = D.works[i]; return w[4] === 'performer' || !w[2] ? esc(wAuthor(i)) : pLink(w[2]); };
   // Sorting of the Gymnasts and Music lists: by a count (ties alphabetical) or by the name shown in the page language.
   // quotes and brackets are dropped, spaces kept: "Anna Bessonova" comes before "Annabel Smith"
   const sortKey = x => x.replace(/[^\p{L}\p{N}\s]/gu, '').trim();
@@ -260,7 +274,7 @@ footer a { text-decoration: underline; }
       <div class="row" style="margin-top:16px">
         <section class="panel" style="flex:1.4 1 480px"><h2>${esc(s.top)}</h2>
           ${D.order.slice(0, 10).map(i => `<div class="list-row" style="grid-template-columns:minmax(0,1fr) minmax(80px,160px) 32px">
-            <div><a href="#work-${i}" style="font-weight:700">${esc(wName(i))}</a><div class="muted small">${esc(wAuthor(i))}</div></div>
+            <div><a href="#work-${i}" style="font-weight:700">${esc(wName(i))}</a><div class="muted small">${authorHtml(i)}</div></div>
             ${splitBar(D.workStats[i].split)}<span class="num">${D.workStats[i].g}</span></div>`).join('')}
           <p class="muted small" style="margin:10px 0 0">${esc(s.topNote)}</p>
         </section>
@@ -346,8 +360,8 @@ footer a { text-decoration: underline; }
   function trackLine(v, e, title) {
     const w = D.versions[v][0], perf = D.versions[v][1], name = wName(w), wt = D.works[w];
     const extra = title && fold(title) !== fold(wt[0]) && fold(title) !== fold(wt[1]) && !ru() ? title : (e >= 0 ? D.excerpts[e][1] : '');
-    const by = [wt[4] === 'performer' ? '' : (ru() && wt[3] ? wt[3] : wt[2]), perf].filter(Boolean).join(' · ');
-    return `<div style="margin-top:6px"><a href="#work-${w}" style="font-weight:700">${esc(name)}</a>${extra ? `<div class="small">${esc(extra)}</div>` : ''}<div class="muted small">${esc(by)}</div></div>`;
+    const by = [wt[4] === 'performer' || !wt[2] ? '' : pLink(wt[2]), perf ? perfLinks(perf) : ''].filter(Boolean).join(' · ');
+    return `<div style="margin-top:6px"><a href="#work-${w}" style="font-weight:700">${esc(name)}</a>${extra ? `<div class="small">${esc(extra)}</div>` : ''}<div class="muted small">${by}</div></div>`;
   }
   function gymnast(i) {
     const s = t(), g = D.gymnasts[i]; if (!g) return notFound();
@@ -420,7 +434,7 @@ footer a { text-decoration: underline; }
     const rows = tracks.filter(x => !seen.has(x[0]) && seen.add(x[0])).sort((a, b) => D.routines[b[0]][1] - D.routines[a[0]][1]);
     return `<p class="muted small" style="margin-top:12px"><a href="#music">${esc(s.music)}</a> / ${esc(wName(i))}</p>
       <h1 style="margin-top:6px">${esc(wName(i))}</h1>
-      <p class="sub">${esc(wAuthor(i))} · ${esc(s.kinds[w[5]])}${from}${other ? ' · ' + esc(other) : ''}</p>
+      <p class="sub">${authorHtml(i)} · ${esc(s.kinds[w[5]])}${from}${other ? ' · ' + esc(other) : ''}</p>
       <div class="kpis">
         <div class="panel kpi"><b>${st.g}</b><span class="muted">${esc(s.kpiG)}</span></div>
         <div class="panel kpi"><b>${st.n}</b><span class="muted">${esc(s.kpiR)}</span></div>
@@ -435,14 +449,42 @@ footer a { text-decoration: underline; }
       ${Object.keys(exCount).length ? `<div class="filters"><button type="button" class="pill" data-ex="-1" aria-pressed="${ex < 0}">${bothKey('all')}</button>${Object.keys(exCount).map(e => `<button type="button" class="pill" data-ex="${e}" aria-pressed="${ex === +e}">${esc(D.excerpts[e][1])} <span class="muted">${exCount[e]}</span></button>`).join('')}</div>` : ''}
       <div class="row" style="margin-top:16px">
         <section class="panel" style="flex:1 1 300px"><h2>${esc(s.versions)}</h2>
-          ${Object.keys(vCount).sort((a, b) => vCount[b].size - vCount[a].size).map(v => `<div class="list-row"><div>${esc(D.versions[v][1] || s.recNotStated)}${s.vt[D.versions[v][2]] ? ` <span class="badge">${esc(s.vt[D.versions[v][2]])}</span>` : ''}</div><span class="num">${vCount[v].size}</span></div>`).join('')}
+          ${Object.keys(vCount).sort((a, b) => vCount[b].size - vCount[a].size).map(v => `<div class="list-row"><div>${D.versions[v][1] ? perfLinks(D.versions[v][1]) : esc(s.recNotStated)}${s.vt[D.versions[v][2]] ? ` <span class="badge">${esc(s.vt[D.versions[v][2]])}</span>` : ''}</div><span class="num">${vCount[v].size}</span></div>`).join('')}
         </section>
         <section class="panel" style="flex:2 1 460px"><div class="scroll"><table><thead><tr><th>${esc(s.gymnast)}</th><th>${esc(s.season)}</th><th>${esc(s.apparatus)}</th><th>${esc(s.excerpt)}</th><th>${esc(s.recording)}</th><th>${esc(s.video)}</th></tr></thead><tbody>
           ${rows.map(([r, v, e]) => { const R = D.routines[r]; return `<tr><td><a href="#gymnast-${R[0]}" style="font-weight:700">${esc(gName(R[0]))}</a></td><td>${R[1]}</td>
             <td><span style="display:inline-flex;align-items:center;gap:6px"><span class="dot" style="background:${color(R[2])}"></span>${esc(appName(R[2]))}</span></td>
-            <td class="muted">${esc(e >= 0 ? D.excerpts[e][1] : s.noExcerpt)}</td><td class="muted">${esc(D.versions[v][1] || '—')}</td><td>${ytLink(r, 'YouTube').replace('class="yt"', 'class="yt" style="margin-top:0"')}</td></tr>`; }).join('')}
+            <td class="muted">${esc(e >= 0 ? D.excerpts[e][1] : s.noExcerpt)}</td><td class="muted">${D.versions[v][1] ? perfLinks(D.versions[v][1]) : '—'}</td><td>${ytLink(r, 'YouTube').replace('class="yt"', 'class="yt" style="margin-top:0"')}</td></tr>`; }).join('')}
         </tbody></table></div></section>
       </div>`;
+  }
+
+  // a person's page (step 23): the works she / he wrote and the versions performed, with their gymnasts and routines
+  function person(i) {
+    const s = t(), p = D.personList[i]; if (!p) return notFound();
+    const perfRoutines = w => new Set(D.workTracks[w].filter(([, v]) => D.versions[v][1].split(' / ').includes(p.name)).map(x => x[0]));
+    const routines = new Set();
+    p.asAuthor.forEach(w => D.workRoutines[w].forEach(r => routines.add(r)));
+    p.asPerf.forEach(w => perfRoutines(w).forEach(r => routines.add(r)));
+    const gyms = new Set([...routines].map(r => D.routines[r][0]));
+    const works = new Set([...p.asAuthor, ...p.asPerf]);
+    const card = (w, rs) => { const c = statsIn([...rs], () => true);
+      return `<a class="card" href="#work-${w}"><div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start"><span class="t">${esc(wName(w))}</span><span class="badge">${esc(s.kinds[D.works[w][5]])}</span></div>
+        <div style="margin-top:10px">${splitBar(c.split)}</div>
+        <div class="small" style="margin-top:8px"><b>${c.g}</b> <span class="muted">${esc(s.gym)}</span> · <b>${c.n}</b> <span class="muted">${esc(s.rou)}</span></div></a>`; };
+    const section = (title, ws, rsOf) => ws.length ? `<h2 style="font-size:20px;margin:28px 0 12px">${esc(title)}</h2>
+      <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr))">${ws
+        .map(w => [w, rsOf(w)]).sort((a, b) => new Set([...b[1]].map(r => D.routines[r][0])).size - new Set([...a[1]].map(r => D.routines[r][0])).size || byName(wName, a[0], b[0]))
+        .map(([w, rs]) => card(w, rs)).join('')}</div>` : '';
+    return `<p class="muted small" style="margin-top:12px"><a href="#music">${esc(s.music)}</a> / ${esc(pName(p))}</p>
+      <h1 style="margin-top:6px">${esc(pName(p))}</h1>${ru() && p.ru ? `<p class="sub">${esc(p.name)}</p>` : ''}
+      <div class="kpis">
+        <div class="panel kpi"><b>${works.size}</b><span class="muted">${esc(s.kpiW)}</span></div>
+        <div class="panel kpi"><b>${gyms.size}</b><span class="muted">${esc(s.kpiG)}</span></div>
+        <div class="panel kpi"><b>${routines.size}</b><span class="muted">${esc(s.kpiR)}</span></div>
+      </div>
+      ${section(s.asAuthor, [...p.asAuthor], w => D.workRoutines[w])}
+      ${section(s.asPerformer, [...p.asPerf].filter(w => !p.asAuthor.has(w)), perfRoutines)}`;
   }
 
   function rankings() {
@@ -455,8 +497,8 @@ footer a { text-decoration: underline; }
       Ro[5].forEach(([v]) => {
         const w = D.versions[v][0], W = D.works[w];
         add(boards[0], 'w' + w, `<a href="#work-${w}">${esc(wName(w))}</a>`, r);
-        D.versions[v][1].split(' / ').filter(Boolean).forEach(p => add(boards[1], p, esc(p), r));
-        if (W[4] === 'composer' && W[2]) add(boards[2], W[2], esc(ru() && W[3] ? W[3] : W[2]), r);
+        D.versions[v][1].split(' / ').filter(Boolean).forEach(p => add(boards[1], p, pLink(p), r));
+        if (W[4] === 'composer' && W[2]) add(boards[2], W[2], pLink(W[2]), r);
         if (W[6]) add(boards[3], W[6], esc(W[6]), r);
       });
     });
@@ -568,13 +610,13 @@ footer a { text-decoration: underline; }
   // ---------- routing and events ----------
   function route() {
     const h = (location.hash || '#home').slice(1);
-    const m = h.match(/^(gymnast|work)-(\d+)$/);
+    const m = h.match(/^(gymnast|work|person)-(\d+)$/);
     const page = m ? m[1] : (['home', 'gymnasts', 'music', 'rankings', 'about'].includes(h) ? h : (h ? 'missing' : 'home'));
-    const tab = { home: 'home', gymnasts: 'gymnasts', gymnast: 'gymnasts', music: 'music', work: 'music', rankings: 'rankings', about: 'about' }[page];
+    const tab = { home: 'home', gymnasts: 'gymnasts', gymnast: 'gymnasts', music: 'music', work: 'music', person: 'music', rankings: 'rankings', about: 'about' }[page];
     document.getElementById('tabs').innerHTML = ['home', 'gymnasts', 'music', 'rankings', 'about'].map(k => `<a class="tab" href="#${k}"${k === tab ? ' aria-current="page"' : ''}>${bothKey(k)}</a>`).join('');
     document.documentElement.lang = lang;
     view.innerHTML = page === 'home' ? home() : page === 'gymnasts' ? gymnasts() : page === 'music' ? music() : page === 'rankings' ? rankings() : page === 'about' ? about()
-      : page === 'gymnast' ? gymnast(+m[2]) : page === 'work' ? work(+m[2]) : notFound();
+      : page === 'gymnast' ? gymnast(+m[2]) : page === 'work' ? work(+m[2]) : page === 'person' ? person(+m[2]) : notFound();
     if (page === 'home') homeSearch();
     document.getElementById('foot').innerHTML = `<span>${esc(t().source)}</span><span>${esc(t().built)}: ${esc(D.built)}</span>${supportHtml()}`;
     document.title = 'RG Music Catalog';
