@@ -22,18 +22,17 @@
     "Carolina Rodríguez (gymnast)|0|46"
   ],
   "owner_rows_added": 72,
-  "owner_rows_added_with_conflict": 1,
-  "owner_rows_same_as_wikipedia": 2,
+  "owner_rows_same_as_wikipedia": 3,
   "owner_rows_without_music": 4,
   "routines_in": 4071,
   "competition_rows_in": 317,
-  "routines_out": 4489,
+  "routines_out": 4488,
   "events": 229,
   "by_source": {
     "routine_table": 3956,
     "competition_table": 62,
     "both": 167,
-    "owner_manual": 73,
+    "owner_manual": 72,
     "native_wiki_es": 229,
     "native_wiki_ru": 2
   }

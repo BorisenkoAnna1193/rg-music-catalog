@@ -33,3 +33,5 @@ la zarzamora,author,folk music,"2026-10-12, owner: folk includes folk motifs, pa
 la zarzamora,original_performer,Paco de Lucía,"2026-10-12, owner: Paco de Lucía is the performer"
 mutation,from_title,,"2026-10-12, owner: no 'performance' source type"
 mutation,from_type,,
+el tango de roxanne,from_title,Moulin Rouge!,owner 2026-10-27: not Sting's Roxanne; written for the Moulin Rouge! film
+el tango de roxanne,from_type,film,owner 2026-10-27

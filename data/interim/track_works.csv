@@ -177,7 +177,7 @@ Aleksandra Soldatova|0|1,1,I Like the Way You're Not Ill With Me,Alla Pugacheva,
 Aleksandra Soldatova|0|0,1,The Promise,Secret Garden,promise,The Promise,,,title,promise,,,Secret Garden,promise | secretgarden,unknown
 Alessia Verstappen|0|5,1,The Illusionist,Maxime Rodriguez,illusionist,The Illusionist,,,title,illusionist,,,Maxime Rodriguez,illusionist | maximerodriguez,unknown
 Alessia Verstappen|0|4,1,Believer,Tommee Profitt feat. Colton Dixon,believer ~ chase holfelder,Believer,,,title,believer,joined_by_owner,believer ~ tommee profitt feat colton dixon,Tommee Profitt feat. Colton Dixon,believer ~ chase holfelder | tommeeprofittfeatcoltondixon,unknown
-Alessia Verstappen|0|7,1,Lust of Power,Gabriel Saban,lust of power,Lust of Power,,,title,lust of power,,,Gabriel Saban,lust of power | gabrielsaban,unknown
+Alessia Verstappen|0|7,1,Lust of Power,Gabriel Saban,lust of power,Lust of Power,,,title,lust of power,,,,lust of power | unknown,unknown
 Alessia Verstappen|0|1,1,Black Lord,Eronika,black lord,Black Lord,,,title,black lord,,,Eronika,black lord | eronika,unknown
 Alexandra Agiurgiuculese|1|1,1,Your Love,Ennio Morricone & Dulce Pontes,your love,Your Love,,,title,your love,,,Ennio Morricone & Dulce Pontes,your love | enniomorriconedulcepontes,unknown
 Alexandra Agiurgiuculese|1|0,1,Batucada,The Booty Jocks,batucada ~ booty jocks,Batucada,,,title,batucada,split_by_credit,batucada ~ booty jocks,The Booty Jocks,batucada ~ booty jocks | bootyjocks,unknown
@@ -324,12 +324,12 @@ Alina Kabaeva|c0|9,1,Les Toreadors,Georges Bizet,carmen,Carmen,Les Toreadors,Geo
 Alina Kabaeva|c0|7,1,Dilorom,Yulduz Usmanova and Shahzod,dilorom,Dilorom,,,title,dilorom,,,Yulduz Usmanova and Shahzod,dilorom | yulduzusmanovaandshahzod,unknown
 Alina Kabaeva|c0|7,2,Yor Yor,Yulduz Usmanova and Shahzod,yor yor,Yor Yor,,,title,yor yor,,,Yulduz Usmanova and Shahzod,yor yor | yulduzusmanovaandshahzod,unknown
 Alina Kabaeva|c0|10,1,Tsyganochka,,tsyganochka,Tsyganochka,,,title,tsyganochka,,,,tsyganochka | unknown,unknown
-Alina Kabaeva|c0|2,1,Syrtaki,D. Moutsis,syrtaki,Syrtaki,,,title,syrtaki,,,D. Moutsis,syrtaki | dmoutsis,unknown
+Alina Kabaeva|c0|2,1,Syrtaki,D. Moutsis,syrtaki,Syrtaki,,,title,syrtaki,,,,syrtaki | unknown,unknown
 Alina Kabaeva|c0|4,1,Sphynx (Club Mix),"Giampiero Ponte, Moran",sphynx,Sphynx (Club Mix),,,title,sphynx,,,"Giampiero Ponte, Moran",sphynx | giampieropontemoran,unknown
 Alina Kabaeva|c0|3,1,Carmen's entrance and Habanera,Georges Bizet,carmen,Carmen,Carmen's Entrance and Habanera,Georges Bizet,alias,carmen,,,,carmen | unknown,unknown
 Alina Kabaeva|c0|1,1,Sphynx,Giampiero Ponte,sphynx,Sphynx (Club Mix),,,title,sphynx,,,Giampiero Ponte,sphynx | giampieroponte,unknown
 Alina Maksymenko|owner|43,1,Desert,Benoit Jutras,desert,Desert,,,title,desert,,,Benoit Jutras,desert | benoitjutras,unknown
-Alina Maksymenko|owner|43,2,Tristan & Iseult,Maxime Rodriguez,tristan iseult,Tristan & Iseult,,,title,tristan iseult,,,Maxime Rodriguez,tristan iseult | maximerodriguez,unknown
+Alina Maksymenko|owner|43,2,Tristan & Iseult,Maxime Rodriguez,tristan iseult,Tristan & Iseult,,,title,tristan iseult,,,,tristan iseult | unknown,unknown
 Alina Maksymenko|owner|42,1,Technologique Park,Orbital,technologique park,Technologique Park,,,title,technologique park,,,Orbital,technologique park | orbital,unknown
 Alina Maksymenko|owner|44,1,In The Mood,Glenn Miller,in the mood,In The Mood,,,title,in the mood,,,Glenn Miller,in the mood | glennmiller,unknown
 Alina Maksymenko|owner|44,2,The Boogie Bumper,Big Bad Voodoo Daddy,boogie bumper,The Boogie Bumper,,,title,boogie bumper,,,Big Bad Voodoo Daddy,boogie bumper | bigbadvoodoodaddy,unknown
@@ -372,16 +372,13 @@ Aliya Garayeva|c1|1,1,Danse de Phryné (Walpurgis Night) from Faust,Charles Goun
 Aliya Garayeva|owner|3,1,La Vie En Rose,Louis Armstrong,la vie en rose,La Vie En Rose,,,title,la vie en rose,,,Louis Armstrong,la vie en rose | louisarmstrong,unknown
 Aliya Garayeva|owner|4,1,Alambre Alto,Cirque du Soleil,alambre alto,Alambre Alto,,,title,alambre alto,,,Cirque du Soleil,alambre alto | cirquedusoleil,unknown
 Aliya Garayeva|owner|2,1,Sing sing sing,Louis Prima,sing sing sing ~ louis prima,Sing sing sing,,,title,sing sing sing,split_by_credit,sing sing sing ~ louis prima,Louis Prima,sing sing sing ~ louis prima | louisprima,unknown
-Aliya Garayeva|owner|5#2011,1,19 Palqu (Remix),Backside Artists & Antoine Montana,19 palqu,19 Palqu (Remix),,,title,19 palqu,,,Backside Artists & Antoine Montana,19 palqu | backsideartistsantoinemontana,remix
-Aliya Garayeva|owner|5#2011,2,Ritim Solo 2,Fatma Donmez,ritim solo 2,Ritim Solo 2,,,title,ritim solo 2,,,Fatma Donmez,ritim solo 2 | fatmadonmez,unknown
+Aliya Garayeva|owner|5#2011,1,"Move, 19 Palqü (Original Mix)","Said Mrad, Backside Artists Vs. Antoine Montana",move 19 palqu,"Move, 19 Palqü (Original Mix)",,,title,move 19 palqu,,,"Said Mrad, Backside Artists Vs. Antoine Montana",move 19 palqu | saidmradbacksideartistsvsantoinemontana,unknown
 Aliya Garayeva|c0|2,1,You Can Leave Your Hat On,Joe Cocker,you can leave your hat on,You Can Leave Your Hat On,,,title,you can leave your hat on,,,Joe Cocker,you can leave your hat on | joecocker,unknown
 Aliya Garayeva|c0|3,1,Nazende sevgilim,Bilen Yildirir,nazende sevgilim,Nazende sevgilim,,,title,nazende sevgilim,,,Bilen Yildirir,nazende sevgilim | bilenyildirir,unknown
 Aliya Garayeva|c0|1,1,Volare,Dean Martin,volare,Volare,,,title,volare,split_by_credit,volare ~ dean martin,Dean Martin,volare | deanmartin,cover
 Aliya Garayeva|c0|1,2,Bang Bang,Tito Nieves,bang bang,Bang Bang,,,title,bang bang,,,Tito Nieves,bang bang | titonieves,unknown
 Aliya Garayeva|c0|1,3,Quien Como Tu,JJ Vianello,quien como tu,Quien Como Tu,,,title,quien como tu,,,JJ Vianello,quien como tu | jjvianello | instrumental,instrumental
 Aliya Garayeva|c0|4,1,"Move, 19 Palqü (Original Mix)","Said Mrad, Backside Artists Vs. Antoine Montana",move 19 palqu,"Move, 19 Palqü (Original Mix)",,,title,move 19 palqu,,,"Said Mrad, Backside Artists Vs. Antoine Montana",move 19 palqu | saidmradbacksideartistsvsantoinemontana,unknown
-Aliya Garayeva|owner|5#2012,1,19 Palqu (Remix),Backside Artists & Antoine Montana,19 palqu,19 Palqu (Remix),,,title,19 palqu,,,Backside Artists & Antoine Montana,19 palqu | backsideartistsantoinemontana,remix
-Aliya Garayeva|owner|5#2012,2,Ritim Solo 2,Fatma Donmez,ritim solo 2,Ritim Solo 2,,,title,ritim solo 2,,,Fatma Donmez,ritim solo 2 | fatmadonmez,unknown
 Aliya Yussupova|c1|1,1,Mystics Lullaby,Loreena McKennitt / Turkish Percussion Group,mystics lullaby,Mystics Lullaby,,,title,mystics lullaby,,,Loreena McKennitt / Turkish Percussion Group,mystics lullaby | loreenamckennittturkishpercussiongroup,unknown
 Aliya Yussupova|c1|1,2,Anatolian Deluxe,Loreena McKennitt / Turkish Percussion Group,anatolian deluxe,Anatolian Deluxe,,,title,anatolian deluxe,,,Loreena McKennitt / Turkish Percussion Group,anatolian deluxe | loreenamckennittturkishpercussiongroup,unknown
 Aliya Yussupova|c1|1,3,Marrakesh Night Market,Loreena McKennitt / Turkish Percussion Group,marrakesh night market,Marrakesh Night Market,,,title,marrakesh night market,,,Loreena McKennitt / Turkish Percussion Group,marrakesh night market | loreenamckennittturkishpercussiongroup,unknown
@@ -449,8 +446,8 @@ Almudena Cid|es0|22#2001,3,Railway Station,"Nele Karajlić, Vojislav Aralica & D
 Almudena Cid|es0|14#2001,1,Se equivocó la paloma,Carlos Guastavino,se equivoco la paloma,Se equivocó la paloma,,,title,se equivoco la paloma,,,Carlos Guastavino,se equivoco la paloma | carlosguastavino,unknown
 Almudena Cid|es0|24#2001,1,Angel,Ralph Fridge,angel ~ ralph fridge,Angel,,,title,angel,split_by_credit,angel ~ ralph fridge,Ralph Fridge,angel ~ ralph fridge | ralphfridge,unknown
 Almudena Cid|es0|24#2001,2,Melo G,G-Spott,melo g,Melo G,,,title,melo g,,,G-Spott,melo g | gspott,unknown
-Almudena Cid|es0|23,1,Martin vs. Tavington,John Williams,martin vs tavington,Martin vs. Tavington,,,title,martin vs tavington,,,John Williams,martin vs tavington | johnwilliams,unknown
-Almudena Cid|es0|23,2,Van Den Budenmayer - Funeral Music (Full Orchestra),Zbigniew Preisner,van den budenmayer funeral music,Van Den Budenmayer - Funeral Music (Full Orchestra),,,title,van den budenmayer funeral music,,,Zbigniew Preisner,van den budenmayer funeral music | zbigniewpreisner,unknown
+Almudena Cid|es0|23,1,Martin vs. Tavington,John Williams,martin vs tavington,Martin vs. Tavington,,,title,martin vs tavington,,,,martin vs tavington | unknown,unknown
+Almudena Cid|es0|23,2,Van Den Budenmayer - Funeral Music (Full Orchestra),Zbigniew Preisner,van den budenmayer funeral music,Van Den Budenmayer - Funeral Music (Full Orchestra),,,title,van den budenmayer funeral music,,,,van den budenmayer funeral music | unknown,unknown
 Almudena Cid|es0|21,1,Played-A-Live (The Bongo Song),Safri Duo,played a,Played-A-Live (The Bongo Song),,,title,played a,,,Safri Duo,played a | safriduo,unknown
 Almudena Cid|es0|21,2,Rondo,René Dupéré & Benoît Jutras,rondo ~ rene dupere benoit jutras,Rondo,,,title,rondo,split_by_credit,rondo ~ rene dupere benoit jutras,René Dupéré & Benoît Jutras,rondo ~ rene dupere benoit jutras | reneduperebenoitjutras,unknown
 Almudena Cid|es0|20#2002,1,La tieta,Joan Manuel Serrat,la tieta,La tieta,,,title,la tieta,,,Joan Manuel Serrat,la tieta | joanmanuelserrat,unknown
@@ -465,14 +462,14 @@ Almudena Cid|es0|25,1,Isla Dorada,Ben Shift,isla dorada,Isla Dorada,,,title,isla
 Almudena Cid|es0|25,2,Samb-Adagio,Safri Duo,samb adagio,Samb Adagio,,,title,samb adagio,,,Safri Duo,samb adagio | safriduo,unknown
 Almudena Cid|es0|29,1,The Promise,Secret Garden,promise,The Promise,,,title,promise,,,Secret Garden,promise | secretgarden,unknown
 Almudena Cid|es0|30#2003,1,These Boots Are Made for Walkin' (Nancy Sinatra cover),Velvet 99,these boots are made for walkin,These Boots Are Made for Walkin' (Nancy Sinatra cover),,,title,these boots are made for walkin,,,Velvet 99,these boots are made for walkin | velvet99,unknown
-Almudena Cid|es0|30#2003,2,Saltimbanco,René Dupéré,saltimbanco,Saltimbanco,,,title,saltimbanco,,,René Dupéré,saltimbanco | renedupere,unknown
+Almudena Cid|es0|30#2003,2,Saltimbanco,René Dupéré,saltimbanco,Saltimbanco,,,title,saltimbanco,,,,saltimbanco | unknown,unknown
 Almudena Cid|es0|31#2003,1,Secret Love,Nicos,secret love,Secret Love,,,title,secret love,,,Nicos,secret love | nicos,unknown
 Almudena Cid|es0|26#2003,1,Xeiropedes,Giorgos Alkaios,xeiropedes,Xeiropedes,,,title,xeiropedes,,,Giorgos Alkaios,xeiropedes | giorgosalkaios,unknown
 Almudena Cid|es0|28,1,Violet Theme,Pochill,violet theme,Violet Theme,,,title,violet theme,,,Pochill,violet theme | pochill,unknown
 Almudena Cid|es0|28,2,Take It Easy,Mint Royale,take it easy,Take It Easy,,,title,take it easy,,,Mint Royale,take it easy | mintroyale,unknown
 Almudena Cid|es0|33#2004,1,Ave Maria,Vladimir Vavilov,ave maria vavilov caccini,Ave Maria (Vavilov/Caccini),,Vladimir Vavilov/Giulio Caccini,alias,ave maria vavilov caccini,,,,ave maria vavilov caccini | unknown,unknown
 Almudena Cid|es0|30#2004,1,These Boots Are Made for Walkin' (Nancy Sinatra cover),Velvet 99,these boots are made for walkin,These Boots Are Made for Walkin' (Nancy Sinatra cover),,,title,these boots are made for walkin,,,Velvet 99,these boots are made for walkin | velvet99,unknown
-Almudena Cid|es0|30#2004,2,Saltimbanco,René Dupéré,saltimbanco,Saltimbanco,,,title,saltimbanco,,,René Dupéré,saltimbanco | renedupere,unknown
+Almudena Cid|es0|30#2004,2,Saltimbanco,René Dupéré,saltimbanco,Saltimbanco,,,title,saltimbanco,,,,saltimbanco | unknown,unknown
 Almudena Cid|es0|31#2004,1,Secret Love,Nicos,secret love,Secret Love,,,title,secret love,,,Nicos,secret love | nicos,unknown
 Almudena Cid|es0|34,1,Harem,Sarah Brightman,harem,Harem,,,title,harem,,,Sarah Brightman,harem | sarahbrightman,unknown
 Almudena Cid|es0|26#2004,1,Xeiropedes,Giorgos Alkaios,xeiropedes,Xeiropedes,,,title,xeiropedes,,,Giorgos Alkaios,xeiropedes | giorgosalkaios,unknown
@@ -493,7 +490,7 @@ Almudena Cid|es0|41#2007,1,Ange et démon,Maxime Rodriguez,ange et demon,Ange et
 Almudena Cid|es0|38#2007,1,Nessun dorma,Giacomo Puccini,turandot,Turandot,Nessun dorma,,from_work,turandot,,,,turandot | unknown,unknown
 Almudena Cid|es0|39,1,L'enfant pur,Maxime Rodriguez,l enfant pur,L'enfant pur,,,title,l enfant pur,,,Maxime Rodriguez,l enfant pur | maximerodriguez,unknown
 Almudena Cid|es0|39,2,Art on Ice,Edvin Marton,art on ice,Art on Ice,,,title,art on ice,,,Edvin Marton,art on ice | edvinmarton,unknown
-Almudena Cid|es0|43,1,Arraigo (ballet),Jerónimo Maesso,arraigo,Arraigo (ballet),,,title,arraigo,,,Jerónimo Maesso,arraigo | jeronimomaesso,unknown
+Almudena Cid|es0|43,1,Arraigo (ballet),Jerónimo Maesso,arraigo,Arraigo (ballet),,,title,arraigo,,,,arraigo | unknown,unknown
 Almudena Cid|es0|41#2008,1,Ange et démon,Maxime Rodriguez,ange et demon,Ange et démon,,,title,ange et demon,,,Maxime Rodriguez,ange et demon | maximerodriguez,unknown
 Almudena Cid|es0|38#2008,1,Nessun dorma,Giacomo Puccini,turandot,Turandot,Nessun dorma,,from_work,turandot,,,,turandot | unknown,unknown
 Almudena Cid|es0|42,1,Ninja,Maxime Rodriguez,ninja,Ninja,,,title,ninja,,,Maxime Rodriguez,ninja | maximerodriguez,unknown
@@ -842,7 +839,7 @@ Anna Bessonova|0|13,1,Conga Fury,Juno Reactor,conga fury,Conga Fury,,,title,cong
 Anna Bessonova|0|10,1,"Gladiator soundtrack – ""Barbarian Horde",,gladiator soundtrack barbarian horde,"Gladiator soundtrack – ""Barbarian Horde",,,title,gladiator soundtrack barbarian horde,,,,gladiator soundtrack barbarian horde | unknown,unknown
 Anna Bessonova|0|8,1,music from Avrora,Valeri Tishler,music from avrora,music from Avrora,,,title,music from avrora,,,Valeri Tishler,music from avrora | valeritishler,unknown
 Anna Bessonova|0|11,1,Boléro,Maurice Ravel,bolero ~ maurice ravel,Boléro,,,title,bolero,split_by_credit,bolero ~ maurice ravel,,bolero ~ maurice ravel | unknown,unknown
-Anna Bessonova|0|9,1,The Dance At The Gym,Leonard Bernstein,dance at the gym,Dance at the Gym,,,title,dance at the gym,,,Leonard Bernstein,dance at the gym | leonardbernstein,unknown
+Anna Bessonova|0|9,1,The Dance At The Gym,Leonard Bernstein,dance at the gym,Dance at the Gym,,,title,dance at the gym,,,,dance at the gym | unknown,unknown
 Anna Bessonova|0|6,1,"Gladiator soundtrack – ""Barbarian Horde",,gladiator soundtrack barbarian horde,"Gladiator soundtrack – ""Barbarian Horde",,,title,gladiator soundtrack barbarian horde,,,,gladiator soundtrack barbarian horde | unknown,unknown
 Anna Bessonova|0|4,1,music from Avrora,Valeri Tishler,music from avrora,music from Avrora,,,title,music from avrora,,,Valeri Tishler,music from avrora | valeritishler,unknown
 Anna Bessonova|0|7,1,Hopak (Ukrainian Folk),,gopak folk,Gopak,,folk music,alias,gopak folk,,,,gopak folk | unknown,unknown
@@ -1025,7 +1022,7 @@ Bárbara Domingos|0|6,1,The Girl from Ipanema,Elise Trouw,girl from ipanema,The 
 Bárbara Domingos|0|6,2,Batucada Samba Enredo 2,MML Latin,batucada samba enredo 2,Batucada Samba Enredo 2,,,title,batucada samba enredo 2,,,MML Latin,batucada samba enredo 2 | mmllatin,unknown
 Bárbara Domingos|0|6,3,Garota de Ipanema,Melim,garota de ipanema,Garota de Ipanema,,,title,garota de ipanema,,,Melim,garota de ipanema | melim,unknown
 Bárbara Domingos|0|4,1,Circle Of Life,"Carmen Twillie, Lebo M",circle of life,Circle Of Life,,,title,circle of life,split_by_credit,circle of life ~ carmen twillie lebo m,"Carmen Twillie, Lebo M",circle of life | carmentwillielebom,unknown
-Bárbara Domingos|0|7,1,El Tango de Roxanne,José Feliciano & Ewan McGregror & Jacek Koman,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,José Feliciano & Ewan McGregror & Jacek Koman,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman | josefelicianoewanmcgregrorjacekkoman,unknown
+Bárbara Domingos|0|7,1,El Tango de Roxanne,José Feliciano & Ewan McGregror & Jacek Koman,el tango de roxanne,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,José Feliciano & Ewan McGregror & Jacek Koman,el tango de roxanne | josefelicianoewanmcgregrorjacekkoman,unknown
 Bárbara Domingos|0|8,1,Aquele abraço,Gilberto Gil,aquele abraco,Aquele abraço,,,title,aquele abraco,,,Gilberto Gil,aquele abraco | gilbertogil,unknown
 Bárbara Domingos|0|8,2,Refazenda,Gilberto Gil,refazenda,Refazenda,,,title,refazenda,,,Gilberto Gil,refazenda | gilbertogil,unknown
 Bárbara Domingos|0|1,1,Never Tear Us Apart,Bishop Briggs,never tear us apart,Never Tear Us Apart,,,title,never tear us apart,split_by_credit,never tear us apart ~ bishop briggs,Bishop Briggs,never tear us apart | bishopbriggs,unknown
@@ -1073,8 +1070,8 @@ Carmen Acedo|es0|4#1992,1,On the Rooftops,Ennio Morricone,on the rooftops,On the
 Carmen Acedo|es0|4#1992,2,Man with the Harmonica,Ennio Morricone,man with the harmonica,Man with the Harmonica,,,title,man with the harmonica,,,Ennio Morricone,man with the harmonica | enniomorricone,unknown
 Carmen Acedo|es0|7,1,Training Montage,Vince DiCola,training montage,Training Montage,,,title,training montage,,,Vince DiCola,training montage | vincedicola,unknown
 Carmen Acedo|es0|5#1993,1,Chi Mai,Ennio Morricone,chi mai,Chi Mai,,,title,chi mai,,,Ennio Morricone,chi mai | enniomorricone,unknown
-Carmen Acedo|es0|9,1,The Cemetery,Danny Elfman,cemetery,The Cemetery,,,title,cemetery,,,Danny Elfman,cemetery | dannyelfman,unknown
-Carmen Acedo|es0|10,1,Arraigo (ballet),Jerónimo Maesso,arraigo,Arraigo (ballet),,,title,arraigo,,,Jerónimo Maesso,arraigo | jeronimomaesso,unknown
+Carmen Acedo|es0|9,1,The Cemetery,Danny Elfman,cemetery,The Cemetery,,,title,cemetery,,,,cemetery | unknown,unknown
+Carmen Acedo|es0|10,1,Arraigo (ballet),Jerónimo Maesso,arraigo,Arraigo (ballet),,,title,arraigo,,,,arraigo | unknown,unknown
 Carmen Acedo|es0|6#1993,1,Carmen's Entrance,"Rodion Shchedrin, Georges Bizet",carmen suite,Carmen Suite,Carmen's Entrance,,from_work,carmen suite,,,,carmen suite | unknown,unknown
 Carmen Acedo|es0|6#1993,2,Adagio,"Rodion Shchedrin, Georges Bizet",carmen suite,Carmen Suite,Adagio,,from_work,carmen suite,,,,carmen suite | unknown,unknown
 Carmen Acedo|es0|6#1993,3,Scene,"Rodion Shchedrin, Georges Bizet",carmen suite,Carmen Suite,Scene,,from_work,carmen suite,,,,carmen suite | unknown,unknown
@@ -1086,9 +1083,9 @@ Carolina Pascual|es0|2,1,"Symphony No. 6 in B minor, Op. 74",Pyotr Ilyich Tchaik
 Carolina Pascual|es0|3,1,Swan Lake,Pyotr Ilyich Tchaikovsky,swan lake,Swan Lake,,Pyotr Ilyich Tchaikovsky,alias,swan lake,,,,swan lake | unknown,unknown
 Carolina Pascual|es0|4,1,La Tani,Asociación Flamenca de Andalucía,la tani,La Tani,,,title,la tani,,,Asociación Flamenca de Andalucía,la tani | asociacionflamencadeandalucia,unknown
 Carolina Pascual|es0|5,1,Rhapsody on a Theme of Paganini,Sergei Rachmaninoff,rhapsody on a theme of paganini,Rhapsody on a Theme of Paganini,,,title,rhapsody on a theme of paganini,kept_classical_title,,,rhapsody on a theme of paganini | unknown,unknown
-Carolina Pascual|es0|7#1991,1,Dance at the Gym,Leonard Bernstein,dance at the gym,Dance at the Gym,,,title,dance at the gym,,,Leonard Bernstein,dance at the gym | leonardbernstein,unknown
+Carolina Pascual|es0|7#1991,1,Dance at the Gym,Leonard Bernstein,dance at the gym,Dance at the Gym,,,title,dance at the gym,,,,dance at the gym | unknown,unknown
 Carolina Pascual|es0|6,1,Superstar,Andrew Lloyd Webber & Tim Rice,superstar,Superstar,,,title,superstar,,,Andrew Lloyd Webber & Tim Rice,superstar | andrewlloydwebbertimrice,unknown
-Carolina Pascual|es0|7#1992,1,Dance at the Gym,Leonard Bernstein,dance at the gym,Dance at the Gym,,,title,dance at the gym,,,Leonard Bernstein,dance at the gym | leonardbernstein,unknown
+Carolina Pascual|es0|7#1992,1,Dance at the Gym,Leonard Bernstein,dance at the gym,Dance at the Gym,,,title,dance at the gym,,,,dance at the gym | unknown,unknown
 Carolina Pascual|es0|8,1,Sarah on the Run,Brad Fiedel,sarah on the run,Sarah on the Run,,,title,sarah on the run,,,Brad Fiedel,sarah on the run | bradfiedel,unknown
 Carolina Pascual|es0|8,2,Main Title,Brad Fiedel,main title ~ brad fiedel,Main Title,,,title,main title,split_by_credit,main title ~ brad fiedel,Brad Fiedel,main title ~ brad fiedel | bradfiedel,unknown
 Carolina Pascual|es0|9,1,Danza ritual del fuego,Manuel de Falla,danza ritual del fuego,Danza ritual del fuego,,,title,danza ritual del fuego,kept_classical_title,,,danza ritual del fuego | unknown,unknown
@@ -1097,7 +1094,7 @@ Carolina Pascual|es0|11,1,Vampire Hunters,Wojciech Kilar,vampire hunters,Vampire
 Carolina Pascual|es0|11,2,The Brides,Wojciech Kilar,brides,The Brides,,,title,brides,,,Wojciech Kilar,brides | wojciechkilar,unknown
 Carolina Pascual|es0|14,1,The Cookie Factory,Danny Elfman,cookie factory,The Cookie Factory,,,title,cookie factory,,,Danny Elfman,cookie factory | dannyelfman,unknown
 Carolina Pascual|es0|14,2,Rooftops/Wild Ride Part I,Danny Elfman,rooftops wild ride part i,Rooftops/Wild Ride Part I,,,title,rooftops wild ride part i,,,Danny Elfman,rooftops wild ride part i | dannyelfman,unknown
-Carolina Pascual|es0|7#1993,1,Dance at the Gym,Leonard Bernstein,dance at the gym,Dance at the Gym,,,title,dance at the gym,,,Leonard Bernstein,dance at the gym | leonardbernstein,unknown
+Carolina Pascual|es0|7#1993,1,Dance at the Gym,Leonard Bernstein,dance at the gym,Dance at the Gym,,,title,dance at the gym,,,,dance at the gym | unknown,unknown
 Carolina Pascual|es0|12,1,Armour Piercing Bullets,Michael Kamen,armour piercing bullets,Armour Piercing Bullets,,,title,armour piercing bullets,,,Michael Kamen,armour piercing bullets | michaelkamen,unknown
 Carolina Pascual|es0|13,1,Furia española,,furia espanola,Furia española,,,title,furia espanola,,,,furia espanola | unknown,unknown
 Carolina Pascual|es0|15,1,Main Title,Brad Fiedel,main title ~ brad fiedel,Main Title,,,title,main title,split_by_credit,main title ~ brad fiedel,Brad Fiedel,main title ~ brad fiedel | bradfiedel,unknown
@@ -1128,7 +1125,7 @@ Carolina Rodríguez (gymnast)|0|47,1,Caravan,Michel Camilo / Jorge Pardo,caravan
 Carolina Rodríguez (gymnast)|0|41,1,Summertime,Angelique Kadjo,summertime,Summertime,,,title,summertime,kept_classical_title,,Angelique Kadjo / Kenny G,summertime | angeliquekadjokennyg,medley
 Carolina Rodríguez (gymnast)|0|41,2,Summertime,"Kenny G, George Benson",summertime,Summertime,,,title,summertime,kept_classical_title,,Angelique Kadjo / Kenny G,summertime | angeliquekadjokennyg,medley
 Carolina Rodríguez (gymnast)|0|42,1,Conte d'Amour (Mouvements du desir),Zbigniew Preisner,conte d amour,Conte d'Amour (Mouvements du désir),,,title,conte d amour,,,Zbigniew Preisner,conte d amour | zbigniewpreisner,unknown
-Carolina Rodríguez (gymnast)|es0|21,1,Sur,Dorantes,sur,Sur,,,title,sur,,,Dorantes,sur | dorantes,unknown
+Carolina Rodríguez (gymnast)|es0|21,1,Sur,Dorantes,sur,Sur,,,title,sur,,,,sur | unknown,unknown
 Carolina Rodríguez (gymnast)|es0|24#2006,1,Summertime,Angelique Kidjo,summertime,Summertime,,,title,summertime,kept_classical_title,,Angelique Kidjo / Kenny G,summertime | angeliquekidjokennyg,medley
 Carolina Rodríguez (gymnast)|es0|24#2006,2,Summertime,Kenny G & George Benson,summertime,Summertime,,,title,summertime,kept_classical_title,,Angelique Kidjo / Kenny G,summertime | angeliquekidjokennyg,medley
 Carolina Rodríguez (gymnast)|0|43,1,Caravan,Michel Camilo / Jorge Pardo,caravan,Caravan,,"Juan Tizol, Duke Ellington",alias,caravan,,,Michel Camilo / Jorge Pardo,caravan | michelcamilojorgepardo,unknown
@@ -1159,11 +1156,11 @@ Carolina Rodríguez (gymnast)|0|17,1,Kalki,E.S.Pothumus,kalki,Kalki,,,title,kalk
 Carolina Rodríguez (gymnast)|0|19,1,This I love,Vika Yermovleva,this i love,This I love,,,title,this i love,,,Vika Yermovleva,this i love | vikayermovleva,unknown
 Carolina Rodríguez (gymnast)|0|13,1,Aqua,Stephan Moccio & Jorane,aqua,Aqua,,,title,aqua,,,Stephan Moccio & Jorane,aqua | stephanmocciojorane,unknown
 Carolina Rodríguez (gymnast)|0|14,1,Ritmo De Bulerias De Cadiz,El Junco,ritmo de bulerias de cadiz,Ritmo De Bulerias De Cadiz,,,title,ritmo de bulerias de cadiz,,,El Junco,ritmo de bulerias de cadiz | eljunco,unknown
-Carolina Rodríguez (gymnast)|0|12,1,Experience,Ludovico Einaudi,experience,Experience,,,title,experience,,,Ludovico Einaudi,experience | ludovicoeinaudi,unknown
+Carolina Rodríguez (gymnast)|0|12,1,Experience,Ludovico Einaudi,experience,Experience,,,title,experience,,,,experience | unknown,unknown
 Carolina Rodríguez (gymnast)|0|15,1,Barrio San Miguel,Gino D'Auri,barrio san miguel,Barrio San Miguel,,,title,barrio san miguel,,,Gino D'Auri,barrio san miguel | ginodauri,unknown
 Carolina Rodríguez (gymnast)|0|9,1,Aqua,Stephan Moccio & Jorane,aqua,Aqua,,,title,aqua,,,Stephan Moccio & Jorane,aqua | stephanmocciojorane,unknown
 Carolina Rodríguez (gymnast)|0|10,1,Ritmo De Bulerias De Cadiz,El Junco,ritmo de bulerias de cadiz,Ritmo De Bulerias De Cadiz,,,title,ritmo de bulerias de cadiz,,,El Junco,ritmo de bulerias de cadiz | eljunco,unknown
-Carolina Rodríguez (gymnast)|0|8,1,Experience,Ludovico Einaudi,experience,Experience,,,title,experience,,,Ludovico Einaudi,experience | ludovicoeinaudi,unknown
+Carolina Rodríguez (gymnast)|0|8,1,Experience,Ludovico Einaudi,experience,Experience,,,title,experience,,,,experience | unknown,unknown
 Carolina Rodríguez (gymnast)|0|11,1,"Tema De Sira, Entre Costuras",Cesar Benito,tema de sira entre costuras,"Tema De Sira, Entre Costuras",,,title,tema de sira entre costuras,,,Cesar Benito,tema de sira entre costuras | cesarbenito,unknown
 Carolina Rodríguez (gymnast)|0|5,1,Aqua,Stephan Moccio & Jorane,aqua,Aqua,,,title,aqua,,,Stephan Moccio & Jorane,aqua | stephanmocciojorane,unknown
 Carolina Rodríguez (gymnast)|0|6,1,Ritmo De Bulerias De Cadiz,El Junco,ritmo de bulerias de cadiz,Ritmo De Bulerias De Cadiz,,,title,ritmo de bulerias de cadiz,,,El Junco,ritmo de bulerias de cadiz | eljunco,unknown
@@ -1208,14 +1205,14 @@ Celeste D'Arcángelo|0|14,1,Bring The Pain,Brand X Music,bring the pain,Bring Th
 Celeste D'Arcángelo|0|12,1,Heist,Dresz,heist,Heist,,,title,heist,,,Dresz,heist | dresz,unknown
 Celeste D'Arcángelo|0|15,1,Granada,Luciano Pavarotti,granada,Granada,,,title,granada,joined_by_musicbrainz,granada ~ luciano pavarotti,Luciano Pavarotti,granada | lucianopavarotti,unknown
 Celeste D'Arcángelo|0|9,1,Garganta Con Arena,Cacho Castaña,garganta con arena,Garganta con arena,,,title,garganta con arena,,,Cacho Castaña,garganta con arena | cachocastana,unknown
-Celeste D'Arcángelo|0|8,1,El Tango De Roxanne,"José Feliciano, Ewan McGregor, Jacek Koman",el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,"José Feliciano, Ewan McGregor, Jacek Koman",el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman | josefelicianoewanmcgregorjacekkoman,unknown
+Celeste D'Arcángelo|0|8,1,El Tango De Roxanne,"José Feliciano, Ewan McGregor, Jacek Koman",el tango de roxanne,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,"José Feliciano, Ewan McGregor, Jacek Koman",el tango de roxanne | josefelicianoewanmcgregorjacekkoman,unknown
 Celeste D'Arcángelo|0|11,1,Granada,Luciano Pavarotti,granada,Granada,,,title,granada,joined_by_musicbrainz,granada ~ luciano pavarotti,Luciano Pavarotti,granada | lucianopavarotti,unknown
 Celeste D'Arcángelo|0|5,1,Garganta Con Arena,Cacho Castaña,garganta con arena,Garganta con arena,,,title,garganta con arena,,,Cacho Castaña,garganta con arena | cachocastana,unknown
-Celeste D'Arcángelo|0|4,1,El Tango De Roxanne,"José Feliciano, Ewan McGregor, Jacek Koman",el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,"José Feliciano, Ewan McGregor, Jacek Koman",el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman | josefelicianoewanmcgregorjacekkoman,unknown
+Celeste D'Arcángelo|0|4,1,El Tango De Roxanne,"José Feliciano, Ewan McGregor, Jacek Koman",el tango de roxanne,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,"José Feliciano, Ewan McGregor, Jacek Koman",el tango de roxanne | josefelicianoewanmcgregorjacekkoman,unknown
 Celeste D'Arcángelo|0|7,1,Get the Party Started,Shirley Bassey,get the party started,Get the Party Started,,,title,get the party started,,,Shirley Bassey,get the party started | shirleybassey,unknown
 Celeste D'Arcángelo|0|1,1,Pacto de Olivos,Sergei Grosny,pacto de olivos,Pacto de Olivos,,,title,pacto de olivos,,,Sergei Grosny,pacto de olivos | sergeigrosny,unknown
 Celeste D'Arcángelo|0|2,1,Bad Blood,Rok Nardin,bad blood,Bad Blood,,,title,bad blood,,,Rok Nardin,bad blood | roknardin,unknown
-Celeste D'Arcángelo|0|0,1,El Tango De Roxanne,"José Feliciano, Ewan McGregor, Jacek Koman",el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,"José Feliciano, Ewan McGregor, Jacek Koman",el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman | josefelicianoewanmcgregorjacekkoman,unknown
+Celeste D'Arcángelo|0|0,1,El Tango De Roxanne,"José Feliciano, Ewan McGregor, Jacek Koman",el tango de roxanne,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,"José Feliciano, Ewan McGregor, Jacek Koman",el tango de roxanne | josefelicianoewanmcgregorjacekkoman,unknown
 Celeste D'Arcángelo|0|3,1,Get the Party Started,Shirley Bassey,get the party started,Get the Party Started,,,title,get the party started,,,Shirley Bassey,get the party started | shirleybassey,unknown
 Daniela Munits|0|22,1,Caravan,Fabrizio Bosso & Antonello Salis,caravan,Caravan,,"Juan Tizol, Duke Ellington",alias,caravan,,,Fabrizio Bosso & Antonello Salis,caravan | fabriziobossoantonellosalis,unknown
 Daniela Munits|0|23,1,Body Funk,Purple Disco Machine,body funk,Body Funk,,,title,body funk,,,Purple Disco Machine,body funk | purplediscomachine,unknown
@@ -1311,7 +1308,7 @@ Daria Svatkovskaya|0|10,1,Mambo No.5,,mambo no 5,Mambo No.5,,,title,mambo no 5,,
 Daria Svatkovskaya|0|8,1,Danse macabre op.40,Saint-Saëns,danse macabre op 40,"Danse macabre, Op.40",,,title,danse macabre op 40,kept_classical_title,,,danse macabre op 40 | unknown,unknown
 Daria Svatkovskaya|0|11,1,Limelight (Main Theme),André Rieu,limelight chaplin,Limelight,,Charlie Chaplin,alias,limelight chaplin,,,André Rieu,limelight chaplin | andrerieu,unknown
 Daria Svatkovskaya|0|3,1,Canaro En Paris,Quinteto Real,canaro en paris,Canaro En Paris,,,title,canaro en paris,,,Quinteto Real,canaro en paris | quintetoreal,unknown
-Daria Svatkovskaya|0|2,1,El tango de Roxanne,Edvin Marton,el tango de roxanne ~ edvin marton,El tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ edvin marton,Edvin Marton,el tango de roxanne ~ edvin marton | edvinmarton,unknown
+Daria Svatkovskaya|0|2,1,El tango de Roxanne,Edvin Marton,el tango de roxanne,El Tango de Roxanne,,,title,el tango de roxanne,joined_by_owner,el tango de roxanne ~ edvin marton,Edvin Marton,el tango de roxanne | edvinmarton,unknown
 Daria Svatkovskaya|0|1,1,"Nocturne ""Razluka",Mikhail Glinka,nocturne razluka,"Nocturne ""Razluka",,,title,nocturne razluka,,,,nocturne razluka | unknown,unknown
 Daria Svatkovskaya|0|0,1,My Na Lodochke Katalis (мы на лодочке катались),Valentina Tolkunova,my na lodochke katalis,My Na Lodochke Katalis (мы на лодочке катались),,,title,my na lodochke katalis,,,Valentina Tolkunova,my na lodochke katalis | valentinatolkunova,unknown
 Daria Svatkovskaya|0|7,1,Lo Sceicco Bianco,Nino Rota,lo sceicco bianco,Lo Sceicco Bianco,,,title,lo sceicco bianco,,,Nino Rota,lo sceicco bianco | ninorota,unknown
@@ -1358,7 +1355,7 @@ Darya Dmitriyeva|0|20,1,"The Red Army Ensemble ""Kamarinskaya"" (Russian folk)",
 Darya Dmitriyeva|0|15,1,Adagio,Aram Khatchaturian,spartacus,Spartacus,Adagio of Spartacus and Phrygia,Aram Khachaturian,alias,spartacus,,,,spartacus | unknown,unknown
 Darya Dmitriyeva|0|14,1,Introducci,,introducci,Introducci,,,title,introducci,,,,introducci | unknown,unknown
 Darya Dmitriyeva|0|14,2,"Moderato Assai, Allegro from Swan lake",Pyotr Tchaikovsky,swan lake,Swan Lake,"Moderato Assai, Allegro",Pyotr Ilyich Tchaikovsky,alias,swan lake,,,,swan lake | unknown,unknown
-Darya Dmitriyeva|0|13,1,El Tango de Roxanne,,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,El Tango de Roxanne,,,title,el tango de roxanne,joined_by_owner,el tango de roxanne ~ no credit,,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman | unknown,unknown
+Darya Dmitriyeva|0|13,1,El Tango de Roxanne,,el tango de roxanne,El Tango de Roxanne,,,title,el tango de roxanne,joined_by_owner,el tango de roxanne ~ no credit,,el tango de roxanne | unknown | instrumental,instrumental
 Darya Dmitriyeva|0|16,1,Mozzarella (Gaeten Fabri Remix),Kal,mozzarella,Mozzarella (Gaeten Fabri Remix),,,title,mozzarella,,,Kal,mozzarella | kal,remix
 Darya Dmitriyeva|0|10,1,A naposledok ya skazhu (А на последок я скажу) from Zhestokiy romans Ruthless Romance,Andrei Petrov,naposledok ya skazhu from zhestokiy romans ruthless romance,A naposledok ya skazhu (А на последок я скажу) from Zhestokiy romans Ruthless Romance,,,title,naposledok ya skazhu from zhestokiy romans ruthless romance,,,Andrei Petrov,naposledok ya skazhu from zhestokiy romans ruthless romance | andreipetrov,unknown
 Darya Dmitriyeva|0|9,1,Vdol po Piterskoy (Russia folk music),,vdol po piterskoy,Vdol po Piterskoy (Russia folk music),,,title,vdol po piterskoy,,,,vdol po piterskoy | unknown,unknown
@@ -1388,7 +1385,7 @@ Darya Viarenich|0|4,1,Speed Mongolia,Mathias Duplessy,speed mongolia,Speed Mongo
 Delphine Ledoux|owner|26,1,Tree of Life,Clint Mansell,tree of life,Tree of Life,,,title,tree of life,,,Clint Mansell,tree of life | clintmansell,unknown
 Delphine Ledoux|owner|25,1,Tree of Life,Clint Mansell,tree of life,Tree of Life,,,title,tree of life,,,Clint Mansell,tree of life | clintmansell,unknown
 Delphine Ledoux|owner|24,1,Tree of Life,Clint Mansell,tree of life,Tree of Life,,,title,tree of life,,,Clint Mansell,tree of life | clintmansell,unknown
-Delphine Ledoux|owner|29,1,Imagine,Blowing Free,imagine ~ blowing free,Imagine,,,title,imagine,split_by_credit,imagine ~ blowing free,Blowing Free,imagine ~ blowing free | blowingfree,unknown
+Delphine Ledoux|owner|29,1,Imagine,Blowing Free,imagine,Imagine,,,title,imagine,joined_by_owner,imagine ~ blowing free,Blowing Free,imagine | blowingfree,unknown
 Delphine Ledoux|owner|31,1,Ashes to Ashes,Groove Addicts,ashes to ashes,Ashes to Ashes,,,title,ashes to ashes,,,Groove Addicts,ashes to ashes | grooveaddicts,unknown
 Delphine Ledoux|owner|30,1,False King,Two Steps From Hell,false king,False King,,,title,false king,,,Two Steps From Hell,false king | twostepsfromhell,unknown
 Deng Senyue|2|21,1,Bombay Dreams' (Album Version),Ensemble,bombay dreams,Bombay Dreams' (Album Version),,,title,bombay dreams,,,Ensemble,bombay dreams | ensemble,unknown
@@ -1587,7 +1584,7 @@ Elizaveta Nazarenkova|0|0,1,Grand Guignol,Bajofondo,grand guignol,Grand Guignol,
 Elizaveta Nazarenkova|0|3,1,Chopin Impression,Jan Vayne,chopin impression,Chopin Impression,,,title,chopin impression,,,Jan Vayne,chopin impression | janvayne,unknown
 Elvira Krasnobaeva|0|17,1,Chopin Nocturne,David Garrett feat David Foster,chopin nocturne,Chopin Nocturne,,,title,chopin nocturne,,,David Garrett feat David Foster,chopin nocturne | davidgarrettfeatdavidfoster,unknown
 Elvira Krasnobaeva|0|18,1,We Will Rock You,Queen,we will rock you,We Will Rock You,,,title,we will rock you,,,Queen,we will rock you | queen,unknown
-Elvira Krasnobaeva|0|16,1,Tristan & Iseult,Maxime Rodriguez,tristan iseult,Tristan & Iseult,,,title,tristan iseult,,,Maxime Rodriguez,tristan iseult | maximerodriguez,unknown
+Elvira Krasnobaeva|0|16,1,Tristan & Iseult,Maxime Rodriguez,tristan iseult,Tristan & Iseult,,,title,tristan iseult,,,,tristan iseult | unknown,unknown
 Elvira Krasnobaeva|0|19,1,Les Temps des Cathédrales,Josh Groban,le temps des cathedrales,Les Temps des Cathédrales,,,spelling_variant,le temps des cathedrales,,,Josh Groban,le temps des cathedrales | joshgroban,unknown
 Elvira Krasnobaeva|0|13,1,Exercise in Free Love (New Orchestrated Version),Freddie Mercury & Montserrat Caballe,exercise in free love,Exercise in Free Love (New Orchestrated Version),,,title,exercise in free love,,,Freddie Mercury & Montserrat Caballe,exercise in free love | freddiemercurymontserratcaballe,unknown
 Elvira Krasnobaeva|0|14,1,Palestine Pursuit,Greg J Walker,palestine pursuit,Palestine Pursuit,,,title,palestine pursuit,,,Greg J Walker,palestine pursuit | gregjwalker,unknown
@@ -1661,19 +1658,19 @@ Esther Domínguez|es0|3,1,El entrerriano,Rosendo Mendizábal,el entrerriano,El e
 Esther Domínguez|es0|4,1,Ivette,Aníbal Troilo & Roberto Grela,ivette,Ivette,,,title,ivette,,,Aníbal Troilo & Roberto Grela,ivette | anibaltroilorobertogrela,unknown
 Esther Domínguez|es0|5,1,Chica ye ye,Augusto Algueró,chica ye ye,Chica ye ye,,,title,chica ye ye,,,Augusto Algueró,chica ye ye | augustoalguero,unknown
 Esther Domínguez|es0|6,1,Rumbo a Jerez,Luis Cobos,rumbo a jerez,Rumbo a Jerez,,,title,rumbo a jerez,,,Luis Cobos,rumbo a jerez | luiscobos,unknown
-Esther Domínguez|es0|2,1,The Cemetery,Danny Elfman,cemetery,The Cemetery,,,title,cemetery,,,Danny Elfman,cemetery | dannyelfman,unknown
+Esther Domínguez|es0|2,1,The Cemetery,Danny Elfman,cemetery,The Cemetery,,,title,cemetery,,,,cemetery | unknown,unknown
 Esther Domínguez|es0|9,1,Ya Ya Ringe Ringe Raja,Goran Bregović,ya ya ringe ringe raja,Ya Ya Ringe Ringe Raja,,,title,ya ya ringe ringe raja,,,Goran Bregović,ya ya ringe ringe raja | goranbregovic,unknown
-Esther Domínguez|es0|9,2,Mesecina,Goran Bregović,mesecina,Mesecina,,,title,mesecina,,,Goran Bregović,mesecina | goranbregovic,unknown
-Esther Domínguez|es0|10#1998,1,The Heat of the Day,Pat Metheny Group,heat of the day,The Heat of the Day,,,title,heat of the day,,,Pat Metheny Group,heat of the day | patmethenygroup,unknown
+Esther Domínguez|es0|9,2,Mesecina,Goran Bregović,mesecina,Mesecina,,,title,mesecina,,,,mesecina | unknown,unknown
+Esther Domínguez|es0|10#1998,1,The Heat of the Day,Pat Metheny Group,heat of the day,The Heat of the Day,,,title,heat of the day,,,,heat of the day | unknown,unknown
 Esther Domínguez|es0|12#1999,1,Sus ojos se cerraron,Carlos Gardel,sus ojos se cerraron,Sus ojos se cerraron,,,title,sus ojos se cerraron,,,Carlos Gardel,sus ojos se cerraron | carlosgardel,unknown
 Esther Domínguez|es0|14,1,Si te vas (flamenco),,si te vas,Si te vas (flamenco),,,title,si te vas,,,,si te vas | unknown,unknown
 Esther Domínguez|es0|13,1,The Fruit Machine,Hans Zimmer,fruit machine,The Fruit Machine,,,title,fruit machine,,,Hans Zimmer,fruit machine | hanszimmer,unknown
 Esther Domínguez|es0|11#1999,1,Noche en el sur,José Luis Encinas,noche en el sur,Noche en el sur,,,title,noche en el sur,,,José Luis Encinas,noche en el sur | joseluisencinas,unknown
 Esther Domínguez|es0|11#1999,2,Luna de fiesta,José Luis Encinas,luna de fiesta,Luna de fiesta,,,title,luna de fiesta,,,José Luis Encinas,luna de fiesta | joseluisencinas,unknown
-Esther Domínguez|es0|10#1999,1,The Heat of the Day,Pat Metheny Group,heat of the day,The Heat of the Day,,,title,heat of the day,,,Pat Metheny Group,heat of the day | patmethenygroup,unknown
+Esther Domínguez|es0|10#1999,1,The Heat of the Day,Pat Metheny Group,heat of the day,The Heat of the Day,,,title,heat of the day,,,,heat of the day | unknown,unknown
 Esther Domínguez|es0|12#2000,1,Sus ojos se cerraron,Carlos Gardel,sus ojos se cerraron,Sus ojos se cerraron,,,title,sus ojos se cerraron,,,Carlos Gardel,sus ojos se cerraron | carlosgardel,unknown
 Esther Domínguez|es0|15,1,Yulunga (Spirit Dance),Dead Can Dance,yulunga,Yulunga (Spirit Dance),,,title,yulunga,,,Dead Can Dance,yulunga | deadcandance,unknown
-Esther Domínguez|es0|15,2,Minus One,Greg Ellis,minus one,Minus One,,,title,minus one,,,Greg Ellis,minus one | gregellis,unknown
+Esther Domínguez|es0|15,2,Minus One,Greg Ellis,minus one,Minus One,,,title,minus one,,,,minus one | unknown,unknown
 Esther Domínguez|es0|11#2000,1,Noche en el sur,José Luis Encinas,noche en el sur,Noche en el sur,,,title,noche en el sur,,,José Luis Encinas,noche en el sur | joseluisencinas,unknown
 Esther Domínguez|es0|11#2000,2,Luna de fiesta,José Luis Encinas,luna de fiesta,Luna de fiesta,,,title,luna de fiesta,,,José Luis Encinas,luna de fiesta | joseluisencinas,unknown
 Esther Domínguez|es0|16,1,Mario Takes a Walk,Jesse Cook,mario takes a walk,Mario Takes a Walk,,,title,mario takes a walk,,,Jesse Cook,mario takes a walk | jessecook,unknown
@@ -1749,11 +1746,11 @@ Evelina Atalyants|0|4,2,March Of Khan (Polovtsian Dances),"Cavendish Music, Alex
 Evelina Atalyants|0|9,1,Demonic,Non-Stop Producer Series and Marnik,demonic,Demonic,,,title,demonic,,,Non-Stop Producer Series and Marnik,demonic | nonstopproducerseriesandmarnik,unknown
 Evelina Atalyants|0|9,2,Matador (feat. Marano),Non-Stop Producer Series and Marnik,matador ~ non stop producer series and marnik,Matador (feat. Marano),,,title,matador,split_by_credit,matador ~ non stop producer series and marnik,Non-Stop Producer Series and Marnik,matador ~ non stop producer series and marnik | nonstopproducerseriesandmarnik,unknown
 Evgeniya Kanaeva|1|62,1,I Wanna Be Like You,Big Bad Voodoo Daddy,i wanna be like you,I Wanna Be Like You,,,title,i wanna be like you,,,Big Bad Voodoo Daddy,i wanna be like you | bigbadvoodoodaddy,unknown
-Evgeniya Kanaeva|1|59,1,"Black Cat, White Cat",Goran Bregovic,black cat white cat,"Black Cat, White Cat",,,title,black cat white cat,split_by_credit,black cat white cat ~ goran bregovic,Goran Bregovic,black cat white cat | goranbregovic,unknown
+Evgeniya Kanaeva|1|59,1,"Black Cat, White Cat",Goran Bregovic,black cat white cat,"Black Cat, White Cat",,,title,black cat white cat,split_by_credit,black cat white cat ~ goran bregovic,,black cat white cat | unknown,unknown
 Evgeniya Kanaeva|1|55,1,"PC Game Pharaoh OST, mix of jakb+jrj-Hb-sd",,pc game pharaoh ost mix of jakb jrj hb sd,"PC Game Pharaoh OST, mix of jakb+jrj-Hb-sd",,,title,pc game pharaoh ost mix of jakb jrj hb sd,,,,pc game pharaoh ost mix of jakb jrj hb sd | unknown,unknown
 Evgeniya Kanaeva|1|56,1,Hey Pachuco,Royal Crown Revue,hey pachuco,Hey Pachuco,,,title,hey pachuco,split_by_credit,hey pachuco ~ royal crown revue,Royal Crown Revue,hey pachuco | royalcrownrevue | instrumental,instrumental
 Evgeniya Kanaeva|1|58,1,Besame Mucho,Gadjo,besame mucho,Bésame Mucho,,Consuelo Velázquez,alias,besame mucho,,,Gadjo,besame mucho | gadjo,unknown
-Evgeniya Kanaeva|1|54,1,"Black Cat, White Cat",Goran Bregovic,black cat white cat,"Black Cat, White Cat",,,title,black cat white cat,split_by_credit,black cat white cat ~ goran bregovic,Goran Bregovic,black cat white cat | goranbregovic,unknown
+Evgeniya Kanaeva|1|54,1,"Black Cat, White Cat",Goran Bregovic,black cat white cat,"Black Cat, White Cat",,,title,black cat white cat,split_by_credit,black cat white cat ~ goran bregovic,,black cat white cat | unknown,unknown
 Evgeniya Kanaeva|1|52,1,Animals,X-Mode,animals,Animals,,,title,animals,,,X-Mode,animals | xmode,unknown
 Evgeniya Kanaeva|1|51,1,"Big Drum, Small World",Dhol Foundation,big drum small world,"Big Drum, Small World",,,title,big drum small world,,,Dhol Foundation,big drum small world | dholfoundation,unknown
 Evgeniya Kanaeva|1|53,1,Besame Mucho,Gadjo,besame mucho,Bésame Mucho,,Consuelo Velázquez,alias,besame mucho,,,Gadjo,besame mucho | gadjo,unknown
@@ -1773,7 +1770,7 @@ Evgeniya Kanaeva|1|32,1,Jota Aragonesa,Glinka,jota aragonesa,Jota Aragonesa,,,ti
 Evgeniya Kanaeva|1|33,1,Song #1,Serebro,song 1,Song #1,,,title,song 1,,,Serebro,song 1 | serebro,unknown
 Evgeniya Kanaeva|1|35,1,Kadril Veselaya,Svetoch,kadril veselaya,Kadril Veselaya,,,title,kadril veselaya,split_by_credit,kadril veselaya ~ svetoch,Svetoch,kadril veselaya | svetoch,unknown
 Evgeniya Kanaeva|1|36,1,You are in My September,Igor Krotoy,you are in my september,You are in My September,,,title,you are in my september,,,Igor Krotoy,you are in my september | igorkrotoy,unknown
-Evgeniya Kanaeva|1|31,1,Tristan & Iseult,Maxime Rodriguez,tristan iseult,Tristan & Iseult,,,title,tristan iseult,,,Maxime Rodriguez,tristan iseult | maximerodriguez,unknown
+Evgeniya Kanaeva|1|31,1,Tristan & Iseult,Maxime Rodriguez,tristan iseult,Tristan & Iseult,,,title,tristan iseult,,,,tristan iseult | unknown,unknown
 Evgeniya Kanaeva|1|34,1,Moscow Nights,"Vasily Solovyov-Sedoi, Igor Krutoy",moscow nights,Moscow Nights,,,title,moscow nights,,,"Vasily Solovyov-Sedoi, Igor Krutoy",moscow nights | vasilysolovyovsedoiigorkrutoy,unknown
 Evgeniya Kanaeva|1|30,1,El Conquistador,Maxime Rodriguez,el conquistador,El Conquistador,,,title,el conquistador,,,Maxime Rodriguez,el conquistador | maximerodriguez | instrumental,instrumental
 Evgeniya Kanaeva|1|26,1,Spartacus,Aram Khachaturian,spartacus,Spartacus,,Aram Khachaturian,alias,spartacus,,,,spartacus | unknown,unknown
@@ -1995,11 +1992,11 @@ Havana Hopman|0|2,1,Once Upon a Dream,Lana Del Rey,once upon a dream,Once Upon a
 Havana Hopman|0|0,1,What's This,VoicePlay,what s this,What's This,,,title,what s this,,,VoicePlay,what s this | voiceplay,unknown
 Havana Hopman|0|3,1,The Countdown Is Final,Séarlas Mag Uidhir,countdown is final,The Countdown Is Final,,,title,countdown is final,,,Séarlas Mag Uidhir,countdown is final | searlasmaguidhir,unknown
 Hélène Karbanov|0|21#2020,1,Feelings,Edvin Marton,feelings ~ edvin marton,Feelings,,,title,feelings,split_by_credit,feelings ~ edvin marton,Edvin Marton,feelings ~ edvin marton | edvinmarton,unknown
-Hélène Karbanov|0|22#2020,1,Imagine,Artem Uzanov,imagine ~ artem uzanov,Imagine,,,title,imagine,split_by_credit,imagine ~ artem uzanov,Artem Uzanov,imagine ~ artem uzanov | artemuzanov,unknown
+Hélène Karbanov|0|22#2020,1,Imagine,Artem Uzanov,imagine,Imagine,,,title,imagine,split_by_credit,imagine ~ artem uzanov,Artem Uzanov,imagine | artemuzanov,unknown
 Hélène Karbanov|0|20#2020,1,Je suis malade,Lara Fabian,je suis malade,Je Suis Malade,,,title,je suis malade,,,Lara Fabian,je suis malade | larafabian,unknown
 Hélène Karbanov|0|23#2020,1,Black Betty,Ram Jam,black betty,Black Betty,,,title,black betty,,,Ram Jam,black betty | ramjam,unknown
 Hélène Karbanov|0|21#2021,1,Feelings,Edvin Marton,feelings ~ edvin marton,Feelings,,,title,feelings,split_by_credit,feelings ~ edvin marton,Edvin Marton,feelings ~ edvin marton | edvinmarton,unknown
-Hélène Karbanov|0|22#2021,1,Imagine,Artem Uzanov,imagine ~ artem uzanov,Imagine,,,title,imagine,split_by_credit,imagine ~ artem uzanov,Artem Uzanov,imagine ~ artem uzanov | artemuzanov,unknown
+Hélène Karbanov|0|22#2021,1,Imagine,Artem Uzanov,imagine,Imagine,,,title,imagine,split_by_credit,imagine ~ artem uzanov,Artem Uzanov,imagine | artemuzanov,unknown
 Hélène Karbanov|0|20#2021,1,Je suis malade,Lara Fabian,je suis malade,Je Suis Malade,,,title,je suis malade,,,Lara Fabian,je suis malade | larafabian,unknown
 Hélène Karbanov|0|23#2021,1,Black Betty,Ram Jam,black betty,Black Betty,,,title,black betty,,,Ram Jam,black betty | ramjam,unknown
 Hélène Karbanov|0|17,1,Le temps qui reste,Serge Reggiani,le temps qui reste,Le temps qui reste,,,title,le temps qui reste,,,Serge Reggiani,le temps qui reste | sergereggiani,unknown
@@ -2097,7 +2094,7 @@ Irina Tchachina|0|17,1,The Mall Chase,John Powell,mall chase,The Mall Chase,,,ti
 Irina Tchachina|0|17,2,The Army Arrives from Evolution,John Powell,army arrives from evolution,The Army Arrives from Evolution,,,title,army arrives from evolution,,,John Powell,army arrives from evolution | johnpowell,unknown
 Irina Tchachina|0|15,1,Iridian,Dhol Foundation,iridian,Iridian,,,title,iridian,,,Dhol Foundation,iridian | dholfoundation,unknown
 Irina Tchachina|0|15,2,Big Drum Small World,Dhol Foundation,big drum small world,"Big Drum, Small World",,,title,big drum small world,,,Dhol Foundation,big drum small world | dholfoundation,unknown
-Irina Tchachina|0|16,1,Heat of the Day,Pat Metheny,heat of the day,The Heat of the Day,,,title,heat of the day,,,Pat Metheny,heat of the day | patmetheny,unknown
+Irina Tchachina|0|16,1,Heat of the Day,Pat Metheny,heat of the day,The Heat of the Day,,,title,heat of the day,,,,heat of the day | unknown,unknown
 Irina Tchachina|0|11,1,Mystic Moon,Bowfire,mystic moon,Mystic Moon,,,title,mystic moon,,,Bowfire,mystic moon | bowfire,unknown
 Irina Tchachina|0|12,1,The Mall Chase,John Powell,mall chase,The Mall Chase,,,title,mall chase,,,John Powell,mall chase | johnpowell,unknown
 Irina Tchachina|0|12,2,The Army Arrives from Evolution,John Powell,army arrives from evolution,The Army Arrives from Evolution,,,title,army arrives from evolution,,,John Powell,army arrives from evolution | johnpowell,unknown
@@ -2196,10 +2193,10 @@ Jelizaveta Polstjanaja|0|14,1,Jimmy Shake,Apashe,jimmy shake,Jimmy Shake,,,title
 Jelizaveta Polstjanaja|0|17,1,Grande Amore,Il Volo,grande amore,Grande Amore,,,title,grande amore,,,Il Volo,grande amore | ilvolo,unknown
 Jennifer Colino|es0|0#2001,1,Caravena,René Dupéré & Benoît Jutras,caravena,Caravena,,,title,caravena,,,René Dupéré & Benoît Jutras,caravena | reneduperebenoitjutras,unknown
 Jennifer Colino|es0|0#2001,2,En Ville,René Dupéré & Benoît Jutras,en ville,En Ville,,,title,en ville,,,René Dupéré & Benoît Jutras,en ville | reneduperebenoitjutras,unknown
-Jennifer Colino|es0|1,1,Martin vs. Tavington,John Williams,martin vs tavington,Martin vs. Tavington,,,title,martin vs tavington,,,John Williams,martin vs tavington | johnwilliams,unknown
-Jennifer Colino|es0|1,2,Van Den Budenmayer - Funeral Music (Full Orchestra),Zbigniew Preisner,van den budenmayer funeral music,Van Den Budenmayer - Funeral Music (Full Orchestra),,,title,van den budenmayer funeral music,,,Zbigniew Preisner,van den budenmayer funeral music | zbigniewpreisner,unknown
+Jennifer Colino|es0|1,1,Martin vs. Tavington,John Williams,martin vs tavington,Martin vs. Tavington,,,title,martin vs tavington,,,,martin vs tavington | unknown,unknown
+Jennifer Colino|es0|1,2,Van Den Budenmayer - Funeral Music (Full Orchestra),Zbigniew Preisner,van den budenmayer funeral music,Van Den Budenmayer - Funeral Music (Full Orchestra),,,title,van den budenmayer funeral music,,,,van den budenmayer funeral music | unknown,unknown
 Jennifer Colino|es0|3,1,Don Alfonso,Michael Kamen,don alfonso,Don Alfonso,,,title,don alfonso,,,Michael Kamen,don alfonso | michaelkamen,unknown
-Jennifer Colino|es0|2,1,Minus One,Greg Ellis,minus one,Minus One,,,title,minus one,,,Greg Ellis,minus one | gregellis,unknown
+Jennifer Colino|es0|2,1,Minus One,Greg Ellis,minus one,Minus One,,,title,minus one,,,,minus one | unknown,unknown
 Jennifer Colino|es0|0#2002,1,Caravena,René Dupéré & Benoît Jutras,caravena,Caravena,,,title,caravena,,,René Dupéré & Benoît Jutras,caravena | reneduperebenoitjutras,unknown
 Jennifer Colino|es0|0#2002,2,En Ville,René Dupéré & Benoît Jutras,en ville,En Ville,,,title,en ville,,,René Dupéré & Benoît Jutras,en ville | reneduperebenoitjutras,unknown
 Jennifer Colino|es0|4,1,Seleni,Pavlo,seleni,Seleni,,,title,seleni,,,Pavlo,seleni | pavlo,unknown
@@ -2229,7 +2226,7 @@ Jennifer Colino|es0|22,1,Flor de la noche,Vicente Amigo,flor de la noche,Flor de
 Jennifer Colino|es0|20#2006,1,Sphynx (Club Mix),Giampiero Ponte,sphynx,Sphynx (Club Mix),,,title,sphynx,,,Giampiero Ponte,sphynx | giampieroponte,unknown
 Jennifer Colino|es0|23,1,Without You,Badfinger,without you,Without You,,,title,without you,,,Badfinger,without you | badfinger,unknown
 Jennifer Colino|es0|24,1,My All,Mariah Carey,my all,My All,,,title,my all,,,Mariah Carey,my all | mariahcarey,unknown
-Jennifer Colino|es0|25,1,Sur,Dorantes,sur,Sur,,,title,sur,,,Dorantes,sur | dorantes,unknown
+Jennifer Colino|es0|25,1,Sur,Dorantes,sur,Sur,,,title,sur,,,,sur | unknown,unknown
 Jennifer Colino|es0|17#2006,1,Explosive,Bond,explosive,Explosive,,,title,explosive,,,Bond,explosive | bond,unknown
 Jennifer Colino|es0|19#2006,1,Leyla,Özcan Deniz,leyla,Leyla,,,title,leyla,,,Özcan Deniz,leyla | ozcandeniz,unknown
 Jimena Dominguez|0|13,1,"Quizás, Quizás, Quizás",Lucrecia,quizas quizas quizas,"Quizás, Quizás, Quizás",,,title,quizas quizas quizas,,,Lucrecia,quizas quizas quizas | lucrecia,unknown
@@ -2514,7 +2511,7 @@ Lala Kramarenko|1|39,1,Vivire Paraty,Los Niños de Sara,vivire paraty,Vivire Par
 Lala Kramarenko|1|40,1,Lament To Birch Bark,Moscow Balalaika Quartet,lament to birch bark,Lament To Birch Bark,,,title,lament to birch bark,,,Moscow Balalaika Quartet,lament to birch bark | moscowbalalaikaquartet,unknown
 Lala Kramarenko|1|38,1,Cyganskaja,Marina Devyatova,cyganskaja,Cyganskaja,,,title,cyganskaja,,,Marina Devyatova,cyganskaja | marinadevyatova,unknown
 Lala Kramarenko|1|41,1,"Unknown remix, Give It Up (The Good Men song)",The Good Men,unknown remix give it up,"Unknown remix, Give It Up (The Good Men song)",,,title,unknown remix give it up,,,The Good Men,unknown remix give it up | goodmen,remix
-Lala Kramarenko|1|35,1,Syrtaki,D. Moutsis,syrtaki,Syrtaki,,,title,syrtaki,,,D. Moutsis,syrtaki | dmoutsis,unknown
+Lala Kramarenko|1|35,1,Syrtaki,D. Moutsis,syrtaki,Syrtaki,,,title,syrtaki,,,,syrtaki | unknown,unknown
 Lala Kramarenko|1|36,1,Очи чёрные,Radmila Karaklajić,очи черные,Очи чёрные,,,title,очи черные,joined_by_owner,очи черные ~ radmila karaklajic,Radmila Karaklajić,очи черные | radmilakaraklajic,unknown
 Lala Kramarenko|1|33,1,Simarik,Tarkan,simarik,Simarik,,,title,simarik,,,Tarkan,simarik | tarkan,unknown
 Lala Kramarenko|1|34,1,Strobe's Nanafushi,Kodō,strobe s nanafushi,Strobe's Nanafushi,,,title,strobe s nanafushi,,,Kodō,strobe s nanafushi | kodo,unknown
@@ -2765,7 +2762,7 @@ Maelle Millet|0|17,1,Comme toi,Amel Bent,comme toi,Comme toi,,,title,comme toi,,
 Maelle Millet|0|18,1,I Wanna Dance,Artem Uznov,i wanna dance,I Wanna Dance,,,title,i wanna dance,,,Artem Uznov,i wanna dance | artemuznov,unknown
 Maelle Millet|0|19,1,Lon Lon (Ravel's Bolero),Angelique Kidjo,lon lon,Lon Lon (Ravel's Bolero),,,title,lon lon,,,Angelique Kidjo,lon lon | angeliquekidjo,unknown
 Maelle Millet|0|16,1,Knock On Wood,Safari Duo,knock on wood,Knock On Wood,,,title,knock on wood,,,Safari Duo,knock on wood | safariduo,unknown
-Maelle Millet|0|13,1,Una Mattina,Ludovico Einaudi,una mattina,Una Mattina,,,title,una mattina,,,Ludovico Einaudi,una mattina | ludovicoeinaudi,unknown
+Maelle Millet|0|13,1,Una Mattina,Ludovico Einaudi,una mattina,Una Mattina,,,title,una mattina,,,,una mattina | unknown,unknown
 Maelle Millet|0|14,1,Can't Hold Us,Macklemore & Ryan Lewis feat Ray Dalton,can t hold us,Can't Hold Us (feat. Ray Dalton),,,title,can t hold us,,,Macklemore & Ryan Lewis feat Ray Dalton,can t hold us | macklemoreryanlewisfeatraydalton,unknown
 Maelle Millet|0|12,1,Who Am I?,The Mystery of Bulgarian Voices,who am i,Who Am I?,,,title,who am i,,,The Mystery of Bulgarian Voices,who am i | mysteryofbulgarianvoices,unknown
 Maelle Millet|0|15,1,Dark Angel (Original Mix),8 O'clock,dark angel ~ 8 o clock,Dark Angel (Original Mix),,,title,dark angel,split_by_credit,dark angel ~ 8 o clock,8 O'clock,dark angel ~ 8 o clock | 8oclock,unknown
@@ -3010,7 +3007,7 @@ Marina Malpica|0|0,1,Otto,Woodkid,otto,Otto,,,title,otto,,,Woodkid,otto | woodki
 Marina Malpica|0|3,1,Honor By Duel,Brand X Music,honor by duel,Honor By Duel,,,title,honor by duel,,,Brand X Music,honor by duel | brandxmusic,unknown
 Marta Bobo|es0|0,1,Feelings,Morris Albert,feelings ~ morris albert,Feelings,,,title,feelings,split_by_credit,feelings ~ morris albert,Morris Albert,feelings ~ morris albert | morrisalbert,unknown
 Marta Bobo|es0|1#1983,1,Raindrops Keep Fallin' on My Head,Burt Bacharach & Hal David,raindrops keep fallin on my head,Raindrops Keep Fallin' on My Head,,,title,raindrops keep fallin on my head,,,Burt Bacharach & Hal David,raindrops keep fallin on my head | burtbacharachhaldavid,unknown
-Marta Bobo|es0|2,1,Memory,Andrew Lloyd Webber,memory,Memory,,,title,memory,split_by_credit,memory ~ andrew lloyd webber,Andrew Lloyd Webber,memory | andrewlloydwebber,unknown
+Marta Bobo|es0|2,1,Memory,Andrew Lloyd Webber,memory,Memory,,,title,memory,split_by_credit,memory ~ andrew lloyd webber,,memory | unknown,unknown
 Marta Bobo|es0|1#1984,1,Raindrops Keep Fallin' on My Head,Burt Bacharach & Hal David,raindrops keep fallin on my head,Raindrops Keep Fallin' on My Head,,,title,raindrops keep fallin on my head,,,Burt Bacharach & Hal David,raindrops keep fallin on my head | burtbacharachhaldavid,unknown
 Marta Cantón|es0|0,1,Tango Jalousie,Jacob Gade,tango jalousie,Tango Jalousie,,Jacob Gade,alias,tango jalousie,,,,tango jalousie | unknown,unknown
 Marta Cantón|es0|1,1,España cañí,Pascual Marquina Narro,espana cani,España cañí,,,title,espana cani,split_by_credit,espana cani ~ pascual marquina narro,,espana cani | unknown,unknown
@@ -3062,12 +3059,12 @@ Maëna Millon|0|0,1,You Are My Destiny,Paul Anka feat. Il Divo,you are my destin
 Maëna Millon|0|3,1,Road to Hell,André De Shields,road to hell,Road to Hell,,,title,road to hell,,,André De Shields,road to hell | andredeshields,unknown
 Maša Nikolić|0|10,1,Welcome to Wonderland,"Janet Dacal, Karen Mason, Edward Staudenmayer, Danny Stiles, Kate Shindle & Wonderland Ensemble",welcome to wonderland,Welcome to Wonderland,,,title,welcome to wonderland,,,"Janet Dacal, Karen Mason, Edward Staudenmayer, Danny Stiles, Kate Shindle & Wonderland Ensemble",welcome to wonderland | janetdacalkarenmasonedwardstaudenmayerdannystileskateshindlewonderlandensemble,unknown
 Maša Nikolić|0|8,1,Aide (Original Mix),Bang La Decks,aide,Aide (Original Mix),,,title,aide,,,Bang La Decks,aide | bangladecks,unknown
-Maša Nikolić|0|5,1,El Tango de Roxanne,"José Feliciano, Ewan McGregor & Jacek Koman",el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,"José Feliciano, Ewan McGregor & Jacek Koman",el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman | josefelicianoewanmcgregorjacekkoman,unknown
-Maša Nikolić|0|4,1,Mesecina,Goran Bregović,mesecina,Mesecina,,,title,mesecina,,,Goran Bregović,mesecina | goranbregovic,unknown
+Maša Nikolić|0|5,1,El Tango de Roxanne,"José Feliciano, Ewan McGregor & Jacek Koman",el tango de roxanne,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,"José Feliciano, Ewan McGregor & Jacek Koman",el tango de roxanne | josefelicianoewanmcgregorjacekkoman,unknown
+Maša Nikolić|0|4,1,Mesecina,Goran Bregović,mesecina,Mesecina,,,title,mesecina,,,,mesecina | unknown,unknown
 Maša Nikolić|0|4,2,Moonlight,Goran Bregović,moonlight,Moonlight,,,title,moonlight,,,Goran Bregović,moonlight | goranbregovic,unknown
-Maša Nikolić|0|1,1,El Tango de Roxanne,"José Feliciano, Ewan McGregor & Jacek Koman",el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,"José Feliciano, Ewan McGregor & Jacek Koman",el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman | josefelicianoewanmcgregorjacekkoman,unknown
+Maša Nikolić|0|1,1,El Tango de Roxanne,"José Feliciano, Ewan McGregor & Jacek Koman",el tango de roxanne,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,"José Feliciano, Ewan McGregor & Jacek Koman",el tango de roxanne | josefelicianoewanmcgregorjacekkoman,unknown
 Maša Nikolić|0|2,1,99 Luftballons (40th Anniversary Remastered 2023),Nena,99 luftballons,99 Luftballons (40th Anniversary Remastered 2023),,,title,99 luftballons,,,Nena,99 luftballons | nena,unknown
-Maša Nikolić|0|0,1,Mesecina,Goran Bregović,mesecina,Mesecina,,,title,mesecina,,,Goran Bregović,mesecina | goranbregovic,unknown
+Maša Nikolić|0|0,1,Mesecina,Goran Bregović,mesecina,Mesecina,,,title,mesecina,,,,mesecina | unknown,unknown
 Maša Nikolić|0|0,2,Moonlight,Goran Bregović,moonlight,Moonlight,,,title,moonlight,,,Goran Bregović,moonlight | goranbregovic,unknown
 Maša Nikolić|0|3,1,Sapphire,Ed Sheeran,sapphire,Sapphire,,,title,sapphire,,,Ed Sheeran,sapphire | edsheeran,unknown
 Megan Chu|0|13,1,Se Dice De Mí,Yolanda Rayo,se dice de mi,Se Dice De Mi (Betty la fea),,,title,se dice de mi,,,Yolanda Rayo,se dice de mi | yolandarayo,unknown
@@ -3146,7 +3143,7 @@ Mikayla Angeline Yang|0|0,1,Sugar Like That,Gin Wigmore,sugar like that,Sugar Li
 Mikayla Angeline Yang|0|3,1,Land of 1000 Dances,Wilson Pickett,land of 1000 dances,Land of 1000 Dances,,,title,land of 1000 dances,joined_by_owner,land of 1000 dances ~ wilson pickett,Wilson Pickett,land of 1000 dances | wilsonpickett,unknown
 Milana Parfilova|0|9,1,El Anillo,Jennifer Lopez,el anillo,El Anillo,,,title,el anillo,,,Jennifer Lopez,el anillo | jenniferlopez,unknown
 Milana Parfilova|0|8,1,Carmen Suite No. 1 Les toreadors,"Alfred Schols, London Festival Orchestra",carmen suite no 1 les toreadors,Carmen Suite No. 1 Les toreadors,,,title,carmen suite no 1 les toreadors,,,"Alfred Schols, London Festival Orchestra",carmen suite no 1 les toreadors | alfredscholslondonfestivalorchestra,unknown
-Milana Parfilova|0|5,1,Una Mattina,Ludovico Einaudi,una mattina,Una Mattina,,,title,una mattina,,,Ludovico Einaudi,una mattina | ludovicoeinaudi,unknown
+Milana Parfilova|0|5,1,Una Mattina,Ludovico Einaudi,una mattina,Una Mattina,,,title,una mattina,,,,una mattina | unknown,unknown
 Milana Parfilova|0|5,2,Ping Pong,Hyuna & Dawn,ping pong,Ping Pong,,,title,ping pong,,,Hyuna & Dawn,ping pong | hyunadawn,unknown
 Milana Parfilova|0|6,1,Soul Makossa (Money) - UK Radio Edit,Yolanda Be Cool & DCUP,soul makossa uk,Soul Makossa (Money) - UK Radio Edit,,,title,soul makossa uk,,,Yolanda Be Cool & DCUP,soul makossa uk | yolandabecooldcup,unknown
 Milana Parfilova|0|4,1,"Qélé, Qélé",Sirusho,qele qele,"Qélé, Qélé",,,title,qele qele,,,Sirusho,qele qele | sirusho,unknown
@@ -3154,7 +3151,7 @@ Milana Parfilova|0|7,1,Bumblebee Boogie,Robert Wells,bumble bee boogie,Bumble Be
 Milana Parfilova|0|1,1,FEVER,Park Jin-young,fever ~ park jin young,FEVER,,,title,fever,split_by_credit,fever ~ park jin young,Park Jin-young,fever ~ park jin young | parkjinyoung,unknown
 Milana Parfilova|0|2,1,Hector's Death,James Horner,hector s death,Hector's Death,,,title,hector s death,,,James Horner,hector s death | jameshorner,unknown
 Milana Parfilova|0|2,2,Succession,Brand X Music,succession,Succession,,,title,succession,,,Brand X Music,succession | brandxmusic,unknown
-Milana Parfilova|0|0,1,Lust of Power,Gabriel Saban,lust of power,Lust of Power,,,title,lust of power,,,Gabriel Saban,lust of power | gabrielsaban,unknown
+Milana Parfilova|0|0,1,Lust of Power,Gabriel Saban,lust of power,Lust of Power,,,title,lust of power,,,,lust of power | unknown,unknown
 Milana Parfilova|0|3,1,Bumblebee Boogie,Robert Wells,bumble bee boogie,Bumble Bee Boogie,,,spelling_variant,bumble bee boogie,,,Robert Wells,bumble bee boogie | robertwells,unknown
 Milena Baldassarri|2|37,1,Guarda che luna,Petra Magoni,guarda che luna,Guarda che luna,,,title,guarda che luna,split_by_credit,guarda che luna ~ petra magoni,Petra Magoni,guarda che luna | petramagoni,unknown
 Milena Baldassarri|2|38,1,Monde Inversé,Cirque Du Soleil,monde inverse,Monde Inversé,,,title,monde inverse,,,Cirque Du Soleil,monde inverse | cirquedusoleil,unknown
@@ -3374,7 +3371,7 @@ Neta Rivkin|owner|47,1,Attack At Tajikistan,BT,attack at tajikistan,Attack At Ta
 Neta Rivkin|owner|47,2,Flight To Tajikistan,BT,flight to tajikistan,Flight To Tajikistan,,,title,flight to tajikistan,,,BT,flight to tajikistan | bt,unknown
 Neta Rivkin|owner|46,1,L'été indien,Joe Dassin,l ete indien,L'eté indien,,,title,l ete indien,joined_by_owner,l ete indien ~ joe dassin,Joe Dassin,l ete indien | joedassin | instrumental,instrumental
 Neta Rivkin|owner|49,1,Amazonic,Maksim Mrvica,amazonic,Amazonic,,,title,amazonic,,,Maksim Mrvica,amazonic | maksimmrvica,unknown
-Neta Rivkin|owner|12,1,Yesterday,the Beatles,yesterday ~ beatles,Yesterday,,,title,yesterday,split_by_credit,yesterday ~ beatles,the Beatles,yesterday ~ beatles | beatles,unknown
+Neta Rivkin|owner|12,1,Yesterday,the Beatles,yesterday,Yesterday,,,title,yesterday,split_by_credit,yesterday ~ beatles,the Beatles,yesterday | beatles,unknown
 Neta Rivkin|owner|13,1,Joke Tango,Stanislav Zeltser,joke tango,Joke Tango,,,title,joke tango,,,Stanislav Zeltser,joke tango | stanislavzeltser,unknown
 Neta Rivkin|owner|11,1,Guitarria,Roni Benise,guitarria,Guitarria,,,title,guitarria,,,Roni Benise,guitarria | ronibenise,unknown
 Neta Rivkin|c0|2,1,Adios,Stanislav Zeltser,adios ~ stanislav zeltser,Adios,,,title,adios,split_by_credit,adios ~ stanislav zeltser,Stanislav Zeltser,adios ~ stanislav zeltser | stanislavzeltser,unknown
@@ -3443,7 +3440,7 @@ Nicol Zelikman|0|20,1,Perdóname,David Civera,perdoname,Perdóname,,,title,perdo
 Nicol Zelikman|0|17,1,And The Waltz Goes On,André Rieu,and the waltz goes on,And The Waltz Goes On,,,title,and the waltz goes on,,,André Rieu,and the waltz goes on | andrerieu,unknown
 Nicol Zelikman|0|16,1,Perdóname,David Civera,perdoname,Perdóname,,,title,perdoname,,,David Civera,perdoname | davidcivera,unknown
 Nicol Zelikman|0|13,1,Si tu etais,Salvatore Adamo,si tu etais,Si tu etais,,,title,si tu etais,,,Salvatore Adamo,si tu etais | salvatoreadamo,unknown
-Nicol Zelikman|0|14,1,Remains Of The Day,Danny Elfman,remains of the day,Remains Of The Day,,,title,remains of the day,,,Danny Elfman,remains of the day | dannyelfman,unknown
+Nicol Zelikman|0|14,1,Remains Of The Day,Danny Elfman,remains of the day,Remains Of The Day,,,title,remains of the day,,,,remains of the day | unknown,unknown
 Nicol Zelikman|0|12,1,The Children of Captain Grant (Ouverture),Isaak Dunayevsky,children of captain grant,The Children of Captain Grant (Ouverture),,,title,children of captain grant,,,Isaak Dunayevsky,children of captain grant | isaakdunayevsky,unknown
 Nicol Zelikman|0|9,1,Je n'attendais que vous,Garou,je n attendais que vous,Je n'attendais que vous,,,title,je n attendais que vous,,,Garou,je n attendais que vous | garou,unknown
 Nicol Zelikman|0|10,1,Proud Mary,Tina Turner,proud mary,Proud Mary,,,title,proud mary,,,Tina Turner,proud mary | tinaturner,unknown
@@ -3494,11 +3491,11 @@ Olena Vitrychenko|0|23,1,Pink Panther,Henry Mancini,pink panther,Pink Panther,,,
 Olena Vitrychenko|0|21,1,"Sing, Sing, Sing",Benjamin Goodman,sing sing sing ~ benjamin goodman,"Sing, Sing, Sing",,,title,sing sing sing,split_by_credit,sing sing sing ~ benjamin goodman,Benjamin Goodman,sing sing sing ~ benjamin goodman | benjamingoodman,unknown
 Olena Vitrychenko|0|17,1,Latino,Anatoly Vekshin,latino,Latino,,,title,latino,,,Anatoly Vekshin,latino | anatolyvekshin,unknown
 Olena Vitrychenko|0|16,1,Birimbau,Rene Dupere,birimbau,Birimbau,,,title,birimbau,,,Rene Dupere,birimbau | renedupere,unknown
-Olena Vitrychenko|0|15,1,Saltimbanco,Rene Dupere,saltimbanco,Saltimbanco,,,title,saltimbanco,,,Rene Dupere,saltimbanco | renedupere,unknown
+Olena Vitrychenko|0|15,1,Saltimbanco,Rene Dupere,saltimbanco,Saltimbanco,,,title,saltimbanco,,,,saltimbanco | unknown,unknown
 Olena Vitrychenko|0|19,1,One Man's Dream,Yanni,one man s dream,One Man's Dream,,,title,one man s dream,,,Yanni,one man s dream | yanni,unknown
 Olena Vitrychenko|0|18,1,The Heat,Peter Gabriel,heat,The Heat,,,title,heat,,,Peter Gabriel,heat | petergabriel,unknown
 Olena Vitrychenko|0|12,1,Birimbau,Rene Dupere,birimbau,Birimbau,,,title,birimbau,,,Rene Dupere,birimbau | renedupere,unknown
-Olena Vitrychenko|0|11,1,Saltimbanco,Rene Dupere,saltimbanco,Saltimbanco,,,title,saltimbanco,,,Rene Dupere,saltimbanco | renedupere,unknown
+Olena Vitrychenko|0|11,1,Saltimbanco,Rene Dupere,saltimbanco,Saltimbanco,,,title,saltimbanco,,,,saltimbanco | unknown,unknown
 Olena Vitrychenko|0|14,1,One Man's Dream,Yanni,one man s dream,One Man's Dream,,,title,one man s dream,,,Yanni,one man s dream | yanni,unknown
 Olena Vitrychenko|0|13,1,Seisouso,Benoît Jutras,quidam,Quidam,Seisouso,,from_work,quidam,,,,quidam | unknown,unknown
 Olena Vitrychenko|0|8,1,Apassionata,Secret Garden,apassionata,Apassionata,,,title,apassionata,,,Secret Garden,apassionata | secretgarden,unknown
@@ -3673,7 +3670,7 @@ Polina Shmatko|0|13,1,Kalinka (Russian Folk),,kalinka,Kalinka,,,title,kalinka,jo
 Polina Shmatko|0|14,1,Single Ladies (Put a Ring on It),Beyoncé,single ladies,Single Ladies (Put a Ring on It),,,title,single ladies,,,Beyoncé,single ladies | beyonce,unknown
 Polina Shmatko|0|6,1,Monsieur L'Amour,Dalida,monsieur l amour,Monsieur L'Amour,,,title,monsieur l amour,,,Dalida,monsieur l amour | dalida,unknown
 Polina Shmatko|0|5,1,Earth Song,Michael Jackson,earth song,Earth Song,,,title,earth song,,,Michael Jackson,earth song | michaeljackson,unknown
-Polina Shmatko|0|8,1,Remains of the Day,Danny Elfman,remains of the day,Remains Of The Day,,,title,remains of the day,,,Danny Elfman,remains of the day | dannyelfman,unknown
+Polina Shmatko|0|8,1,Remains of the Day,Danny Elfman,remains of the day,Remains Of The Day,,,title,remains of the day,,,,remains of the day | unknown,unknown
 Polina Shmatko|0|7,1,I Am the Best (내가 제일 잘 나가),2NE1,i am the best,I Am the Best,,,title,i am the best,,,2NE1,i am the best | 2ne1,unknown
 Polina Shmatko|0|4,1,Andromeda,Q-Factory,andromeda,Andromeda,,,title,andromeda,,,Q-Factory,andromeda | qfactory,unknown
 Polina Shmatko|0|10,1,"Fantasia on Themes of Ryabinin, Op. 48, for piano and orchestra",Russian State Symphony Orchestra,fantasia on themes of ryabinin op 48 for piano and orchestra,"Fantasia on Themes of Ryabinin, Op. 48, for piano and orchestra",,,title,fantasia on themes of ryabinin op 48 for piano and orchestra,,,Russian State Symphony Orchestra,fantasia on themes of ryabinin op 48 for piano and orchestra | russianstatesymphonyorchestra,unknown
@@ -3899,7 +3896,7 @@ Sofia Raffaeli|2|13,1,Vesoul,Mouron and Terry Truck,vesoul,Vesoul,,,title,vesoul
 Sofia Raffaeli|2|7,1,Making Christmas Remix (from The Nightmare Before Christmas) Pentatonix & The Citizens of Halloween,,making christmas remix pentatonix the citizens of halloween,Making Christmas Remix (from The Nightmare Before Christmas) Pentatonix & The Citizens of Halloween,,,title,making christmas remix pentatonix the citizens of halloween,,,,making christmas remix pentatonix the citizens of halloween | unknown,unknown
 Sofia Raffaeli|2|8,1,'Cu Ti Lu Dissi,Redi Hasa & Maria Mazzotta,cu ti lu dissi,'Cu Ti Lu Dissi,,,title,cu ti lu dissi,,,Redi Hasa & Maria Mazzotta,cu ti lu dissi | redihasamariamazzotta,unknown
 Sofia Raffaeli|2|6,1,Tu si' na cosa grande,Domenico Modugno,tu si na cosa grande,Tu si' na cosa grande,,,title,tu si na cosa grande,,,Domenico Modugno,tu si na cosa grande | domenicomodugno,unknown
-Sofia Raffaeli|2|9,1,El Tango De Roxanne,Roxane Del,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,El Tango de Roxanne,,,title,el tango de roxanne,joined_by_owner,el tango de roxanne ~ roxane del,Roxane Del,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman | roxanedel,unknown
+Sofia Raffaeli|2|9,1,El Tango De Roxanne,Roxane Del,el tango de roxanne,El Tango de Roxanne,,,title,el tango de roxanne,joined_by_owner,el tango de roxanne ~ roxane del,Roxane Del,el tango de roxanne | roxanedel,unknown
 Sofia Raffaeli|2|1,1,"Chopin: 24 Préludes, Op. 28: No. 4 in E Minor. Largo",Maurizio Pollini,24 preludes op 28 no 4 in e minor largo,"24 Préludes, Op. 28: No. 4 in E Minor. Largo",,Chopin,composer_prefix,24 preludes op 28 no 4 in e minor largo,,,Maurizio Pollini,24 preludes op 28 no 4 in e minor largo | mauriziopollini,unknown
 Sofia Raffaeli|2|1,2,Jane B.,Jane Birkin,jane b,Jane B.,,,title,jane b,,,Jane Birkin,jane b | janebirkin,unknown
 Sofia Raffaeli|2|2,1,"Chopin: 24 Préludes, Op. 28: No. 4 in E Minor. Largo",Maurizio Pollini,24 preludes op 28 no 4 in e minor largo,"24 Préludes, Op. 28: No. 4 in E Minor. Largo",,Chopin,composer_prefix,24 preludes op 28 no 4 in e minor largo,,,Maurizio Pollini,24 preludes op 28 no 4 in e minor largo | mauriziopollini,unknown
@@ -4181,13 +4178,13 @@ Tamara Yerofeeva|0|10,2,Hummell Gets the Rockets,Harry Gregson-Williams & Nick G
 Tamara Yerofeeva|0|8,1,"Barbarian Horde, The Battle",Hans Zimmer,barbarian horde the battle,"Barbarian Horde, The Battle",,,title,barbarian horde the battle,,,Hans Zimmer,barbarian horde the battle | hanszimmer,unknown
 Tamara Yerofeeva|0|9,1,Tribal War,Hans Zimmer,tribal war,Tribal War,,,title,tribal war,,,Hans Zimmer,tribal war | hanszimmer,unknown
 Tamara Yerofeeva|0|5,1,Spring Love,Giovanni Marradi,spring love,Spring Love,,,title,spring love,,,Giovanni Marradi,spring love | giovannimarradi,unknown
-Tamara Yerofeeva|0|6,1,El Tango de Roxanne,Ewan McGregor & Jose Feliciano & Jacek Koman,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,Ewan McGregor & Jose Feliciano & Jacek Koman,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman | ewanmcgregorjosefelicianojacekkoman,unknown
+Tamara Yerofeeva|0|6,1,El Tango de Roxanne,Ewan McGregor & Jose Feliciano & Jacek Koman,el tango de roxanne,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,Ewan McGregor & Jose Feliciano & Jacek Koman,el tango de roxanne | ewanmcgregorjosefelicianojacekkoman | instrumental,instrumental
 Tamara Yerofeeva|0|4,1,Baba Yaga,Modest Petrovich Mussorgsky,baba yaga,Baba Yaga,,,title,baba yaga,,,,baba yaga | unknown,unknown
 Tamara Yerofeeva|0|7,1,The Apartment,John Powell,apartment,The Apartment,,,title,apartment,,,John Powell,apartment | johnpowell,unknown
 Tamara Yerofeeva|0|7,2,At the Bank,John Powell,at the bank,At the Bank,,,title,at the bank,,,John Powell,at the bank | johnpowell,unknown
 Tamara Yerofeeva|0|7,3,Hotel Regina,John Powell,hotel regina,Hotel Regina,,,title,hotel regina,,,John Powell,hotel regina | johnpowell,unknown
 Tamara Yerofeeva|0|1,1,Music from The Life of David Gale,,music from the life of david gale,Music from The Life of David Gale,,,title,music from the life of david gale,,,,music from the life of david gale | unknown,unknown
-Tamara Yerofeeva|0|2,1,El Tango de Roxanne,Ewan McGregor & Jose Feliciano & Jacek Koman,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,Ewan McGregor & Jose Feliciano & Jacek Koman,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman | ewanmcgregorjosefelicianojacekkoman,unknown
+Tamara Yerofeeva|0|2,1,El Tango de Roxanne,Ewan McGregor & Jose Feliciano & Jacek Koman,el tango de roxanne,El Tango de Roxanne,,,title,el tango de roxanne,split_by_credit,el tango de roxanne ~ jose feliciano ewan mcgregor jacek koman,Ewan McGregor & Jose Feliciano & Jacek Koman,el tango de roxanne | ewanmcgregorjosefelicianojacekkoman | instrumental,instrumental
 Tamara Yerofeeva|0|0,1,Music from Pirates of the Caribbean,Klaus Badelt,music from pirates of the caribbean,Music from Pirates of the Caribbean,,,title,music from pirates of the caribbean,,,Klaus Badelt,music from pirates of the caribbean | klausbadelt,unknown
 Tamara Yerofeeva|0|3,1,"Act 1 finale Death of Giselle, Love Scene",Adolphe Adam,giselle,Giselle,"Act 1 finale: Death of Giselle, Love Scene",Adolphe Adam,alias,giselle,,,,giselle | unknown,unknown
 Tara Dragas|1|26,1,Ya Mustafa,Manifico,ya mustafa,Ya Mustafa,,,title,ya mustafa,,,Manifico,ya mustafa | manifico,unknown
@@ -4340,7 +4337,7 @@ Vera Sessina|0|7,2,Rondo,Alfred Schnittke,rondo ~ alfred schnittke,Rondo,,,title
 Vera Sessina|0|5,1,Beetlejuice,"Music For A Darkened Theatre Vol. 1, Danny Elfman",beetlejuice,Beetlejuice,,,title,beetlejuice,,,"Music For A Darkened Theatre Vol. 1, Danny Elfman",beetlejuice | musicforadarkenedtheatrevol1dannyelfman,unknown
 Vera Sessina|0|1,1,John Nineteen: Forty One/Superstar/Overture,Andrew Lloyd Webber,john nineteen forty one superstar overture,John Nineteen: Forty One/Superstar/Overture,,,title,john nineteen forty one superstar overture,,,Andrew Lloyd Webber,john nineteen forty one superstar overture | andrewlloydwebber,unknown
 Vera Sessina|0|0,1,Theme from 'Pique Dame',Tchaikovsky,theme from pique dame,Theme from 'Pique Dame',,,title,theme from pique dame,,,,theme from pique dame | unknown,unknown
-Vera Sessina|0|3,1,Yesterday,Ofra Harnoy,yesterday ~ ofra harnoy,Yesterday,,,title,yesterday,split_by_credit,yesterday ~ ofra harnoy,Ofra Harnoy,yesterday ~ ofra harnoy | ofraharnoy,unknown
+Vera Sessina|0|3,1,Yesterday,Ofra Harnoy,yesterday,Yesterday,,,title,yesterday,joined_by_owner,yesterday ~ ofra harnoy,Ofra Harnoy,yesterday | ofraharnoy,unknown
 Vera Sessina|0|2,1,Back in the U.S.S.R.,,back in the u s s r,Back in the U.S.S.R.,,,title,back in the u s s r,,,,back in the u s s r | unknown,unknown
 Vera Tugolukova|1|18,1,Come prima (Weekend à Rome),Dany Brillant,come prima,Come prima (Weekend à Rome),,,title,come prima,,,Dany Brillant,come prima | danybrillant,unknown
 Vera Tugolukova|1|19,1,Bella Ciao,David Garrett,bella ciao,Bella Ciao (Música Original de la Serie la Casa de Papel/Money Heist),,,title,bella ciao,joined_by_musicbrainz,bella ciao ~ david garrett,David Garrett,bella ciao | davidgarrett,unknown
@@ -4438,11 +4435,11 @@ Viktoria Steinfeld|0|5,1,Vampire,Olivia Rodrigo,vampire,vampire,,,title,vampire,
 Viktoria Steinfeld|0|6,1,Puttin' on the Ritz (Jazzy Radio Mix),Taco feat. tomX,puttin on the ritz,Puttin' on the Ritz (Jazzy Radio Mix),,,title,puttin on the ritz,,,Taco feat. tomX,puttin on the ritz | tacofeattomx,unknown
 Viktoria Steinfeld|0|6,2,Hit the Road Jack,Throttle,hit the road jack ~ throttle,Hit the Road Jack,,,title,hit the road jack,split_by_credit,hit the road jack ~ throttle,Throttle,hit the road jack ~ throttle | throttle,unknown
 Viktoria Steinfeld|0|4,1,Fearsome Flight,Cirque du Soleil,fearsome flight,Fearsome Flight,,,title,fearsome flight,,,Cirque du Soleil,fearsome flight | cirquedusoleil,unknown
-Viktoria Steinfeld|0|7,1,Experience,"Ludovico Einaudi, Daniel Hope",experience,Experience,,,title,experience,,,"Ludovico Einaudi, Daniel Hope",experience | ludovicoeinaudidanielhope,unknown
+Viktoria Steinfeld|0|7,1,Experience,"Ludovico Einaudi, Daniel Hope",experience,Experience,,,title,experience,,,Daniel Hope,experience | danielhope,unknown
 Viktoria Steinfeld|0|1,1,Black Friday,Tom Odell,black friday,Black Friday,,,title,black friday,,,Tom Odell,black friday | tomodell,unknown
 Viktoria Steinfeld|0|2,1,CORAÇAO,"Jerry Ropero, Hugel, Mijangos, Jesus Fernandez",coracao,CORAÇAO,,,title,coracao,,,"Jerry Ropero, Hugel, Mijangos, Jesus Fernandez",coracao | jerryroperohugelmijangosjesusfernandez,unknown
 Viktoria Steinfeld|0|0,1,Prodigy,Nathan Lanier,prodigy ~ nathan lanier,Prodigy,,,title,prodigy,split_by_credit,prodigy ~ nathan lanier,Nathan Lanier,prodigy ~ nathan lanier | nathanlanier,unknown
-Viktoria Steinfeld|0|3,1,Experience,"Ludovico Einaudi, Daniel Hope",experience,Experience,,,title,experience,,,"Ludovico Einaudi, Daniel Hope",experience | ludovicoeinaudidanielhope,unknown
+Viktoria Steinfeld|0|3,1,Experience,"Ludovico Einaudi, Daniel Hope",experience,Experience,,,title,experience,,,Daniel Hope,experience | danielhope,unknown
 Viktoriia Onopriienko|0|1,1,Fever,Peggy Lee,fever,Fever,,,title,fever,joined_by_musicbrainz,fever ~ peggy lee,Peggy Lee,fever | peggylee,unknown
 Viktoriia Onopriienko|0|2,1,Canto Elvolvente,Carrapicho,canto elvolvente,Canto Elvolvente,,,title,canto elvolvente,,,Carrapicho,canto elvolvente | carrapicho,unknown
 Viktoriia Onopriienko|0|0,1,My Way,Andre Rieu,my way,My Way,,,title,my way,,,Andre Rieu,my way | andrerieu,unknown
