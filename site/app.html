@@ -154,7 +154,7 @@ footer a { text-decoration: underline; }
   };
   // The PayPal "Donate" link (paypal.com/donate/?hosted_button_id=...). Empty until the account is verified: the page
   // then says donations are coming soon; once set, the same places show a "Support the project" link.
-  const SUPPORT_URL = '';
+  const SUPPORT_URL = 'https://www.paypal.com/donate/?hosted_button_id=L2GUNHK4MGGEJ';
   const supportHtml = () => SUPPORT_URL
     ? `<a class="yt" style="margin:0" href="${esc(SUPPORT_URL)}" target="_blank" rel="noopener">${esc(t().support)} · PayPal</a>`
     : `<span>${esc(t().supportSoon)}</span>`;
