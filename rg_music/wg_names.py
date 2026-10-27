@@ -29,7 +29,7 @@ import csv
 import json
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 import requests
@@ -71,11 +71,7 @@ def propose(gymnasts: list[dict], bios: list[dict]) -> list[dict]:
     by_key: dict[str, list[dict]] = defaultdict(list)
     for b in bios:
         by_key[name_key(f"{b['preferredfirstname']} {b['preferredlastname']}")].append(b)
-    country_of = {}
-    for b in bios:
-        code = b["code"]
-        if code not in country_of:
-            country_of[code] = ref.match(code).country_id or code
+    country_of = {code: ref.match(code).country_id or code for code in dict.fromkeys(b["code"] for b in bios)}
     out = []
     for g in gymnasts:
         keys = {name_key(g["canonical_name"])} | {name_key(s) for s in g["spellings"].split(" | ") if s}
@@ -122,9 +118,7 @@ def main(argv: list[str] | None = None) -> int:
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()
         w.writerows(rows)
-    counts: dict[str, int] = defaultdict(int)
-    for r in rows:
-        counts[r["match"]] += 1
+    counts = Counter(r["match"] for r in rows)
     print(f"{len(rows)} gymnasts: {dict(counts)}; name would change for {sum(r['change'] == 'yes' for r in rows)}")
     return 0
 

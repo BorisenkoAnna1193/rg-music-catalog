@@ -66,7 +66,7 @@ def wiki_order(official: str, reference: str) -> str:
     """The official (FIG) spelling in the word order of Wikipedia (owner, 2026-10-26): 'Ling Zhong' + 'Zhong Ling'
     -> 'Zhong Ling'. Only when both are the same words (ignoring case and accents); otherwise the official name as is."""
     words, ref = official.split(), reference.split()
-    if sorted(_plain(w) for w in words) != sorted(_plain(w) for w in ref) or len(words) != len(ref):
+    if sorted(_plain(w) for w in words) != sorted(_plain(w) for w in ref):
         return official
     pool = list(words)
     out = []
